@@ -1232,6 +1232,202 @@
             transform: scale(1.1);
         }
 
+        /* --- POPUP DE CONTATO (TELEFONE) --- */
+        .contact-modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-color: rgba(0, 26, 49, 0.95);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .contact-modal-overlay.active {
+            opacity: 1;
+        }
+
+        .contact-modal-content {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .contact-modal-overlay.active .contact-modal-content {
+            transform: scale(1);
+        }
+
+        .contact-modal-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .contact-modal-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .contact-form input {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            padding: 14px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            color: var(--text-dark);
+            outline: none;
+            width: 100%;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus {
+            border-color: var(--primary-blue);
+        }
+
+        .contact-form-submit {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--cta-color);
+            color: #000;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form-submit:hover {
+            background-color: var(--cta-hover);
+            transform: translateY(-2px);
+        }
+
+        .contact-form-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .contact-form-success {
+            padding: 10px 0;
+        }
+
+        .contact-form-success i {
+            font-size: 40px;
+            color: #10b981;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .contact-form-success p {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .contact-modal-close {
+            position: absolute;
+            top: -15px; right: -15px;
+            background-color: var(--cta-color);
+            color: #000;
+            border: none;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .contact-modal-close:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- DOIS PLANOS NA SEÇÃO DE PREÇOS --- */
+        .pricing-plans-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .pricing-plans-grid .pricing-card-modern {
+            margin: 0;
+            flex: 1 1 380px;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-plans-grid .pricing-features {
+            flex: 1;
+        }
+
+        .pricing-card-modern.featured {
+            border-color: var(--cta-color);
+            box-shadow: 0 25px 60px rgba(255, 183, 0, 0.25);
+        }
+
+        .plan-period {
+            display: block;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-top: 8px;
+        }
+
+        .plan-savings-tag {
+            display: inline-block;
+            margin: 12px auto 0;
+            background: #10b981;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 13px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .plan-savings-wrap {
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
             .video-carousel-container {
                 justify-content: flex-start;
@@ -1465,7 +1661,7 @@
         </div>
 
 <div class="header-contacts">
-            <div><i class="fa-brands fa-whatsapp"></i> (27) ver telefone</div>
+            <div id="btn-ver-telefone" style="cursor: pointer;"><i class="fa-brands fa-whatsapp"></i> (27) ver telefone</div>
             <div><i class="fa-regular fa-envelope"></i> contato@normaseng.com.br</div>
         </div>
 
@@ -1839,6 +2035,25 @@
                 </div>
             </div>
 
+            <!-- POPUP DE CONTATO (TELEFONE) -->
+            <div class="contact-modal-overlay" id="contactModalOverlay">
+                <div class="contact-modal-content">
+                    <button class="contact-modal-close" id="closeContactModal"><i class="fa-solid fa-xmark"></i></button>
+                    <h3 class="contact-modal-title">Fale Conosco</h3>
+                    <p class="contact-modal-text">Para entrar em contato por telefone, preencha os campos abaixo que nossa equipe retorna rapidamente para você.</p>
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="nome" id="contact-nome" placeholder="Nome" required>
+                        <input type="tel" name="whatsapp" id="contact-whatsapp" placeholder="WhatsApp" required>
+                        <input type="email" name="email" id="contact-email" placeholder="Email" required>
+                        <button type="submit" class="contact-form-submit" id="contactSubmitBtn">Enviar</button>
+                    </form>
+                    <div class="contact-form-success" id="contactFormSuccess" style="display:none;">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Mensagem enviada com sucesso! Em breve nossa equipe entrará em contato com você.</p>
+                    </div>
+                </div>
+            </div>
+
 </div>
 
     </section>
@@ -1854,27 +2069,56 @@
             <i class="fa-solid fa-triangle-exclamation"></i> Vagas limitadas nesta turma — condição promocional por tempo limitado
         </p>
 
-        <div class="pricing-card-modern">
-            <div class="pricing-badge">Oferta Exclusiva</div>
-            
-            <div class="pricing-header">
-                <h3>Licença Profissional Completa</h3>
-                <span class="price-strike">De R$ 2.497,00</span>
-                <div class="price-amount">
-                    <span class="price-currency">R$</span>997<span style="font-size: 24px; margin-top: 35px;">,00</span>
+        <div class="pricing-plans-grid">
+
+            <div class="pricing-card-modern">
+                <div class="pricing-header">
+                    <h3>Plano Mensal</h3>
+                    <div class="price-amount">
+                        <span class="price-currency">R$</span>197<span style="font-size: 24px; margin-top: 35px;">,00</span>
+                    </div>
+                    <span class="plan-period">por mês</span>
                 </div>
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Gerador de Laudos NR-13 em 1 Clique</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Memorial de Cálculo Injetado (ASME VIII)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Croqui e Modelagem 3D Inteligente</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Gestão de Vencimentos e Acessórios</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Assinatura Digital e Integração A-R-T</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Suporte Técnico de Engenharia</li>
+                </ul>
+
+                <a href="https://pay.kiwify.com.br/O9KdzEI" class="btn-pricing">Assinar Plano Mensal</a>
             </div>
 
-            <ul class="pricing-features">
-                <li><i class="fa-solid fa-circle-check"></i> Gerador de Laudos NR-13 em 1 Clique</li>
-                <li><i class="fa-solid fa-circle-check"></i> Memorial de Cálculo Injetado (ASME VIII)</li>
-                <li><i class="fa-solid fa-circle-check"></i> Croqui e Modelagem 3D Inteligente</li>
-                <li><i class="fa-solid fa-circle-check"></i> Gestão de Vencimentos e Acessórios</li>
-                <li><i class="fa-solid fa-circle-check"></i> Assinatura Digital e Integração A-R-T</li>
-                <li><i class="fa-solid fa-circle-check"></i> Suporte Técnico de Engenharia</li>
-            </ul>
+            <div class="pricing-card-modern featured">
+                <div class="pricing-badge">Mais Popular</div>
 
-            <a href="https://pay.kiwify.com.br/27J91RK" class="btn-pricing">Garantir Meu Acesso Agora</a>
+                <div class="pricing-header">
+                    <h3>Plano Anual</h3>
+                    <span class="price-strike">12x de R$ 197,00 = R$ 2.364,00</span>
+                    <div class="price-amount">
+                        <span class="price-currency">R$</span>997<span style="font-size: 24px; margin-top: 35px;">,00</span>
+                    </div>
+                    <span class="plan-period">por ano</span>
+                    <div class="plan-savings-wrap">
+                        <span class="plan-savings-tag">Economize 58%</span>
+                    </div>
+                </div>
+
+                <ul class="pricing-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Gerador de Laudos NR-13 em 1 Clique</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Memorial de Cálculo Injetado (ASME VIII)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Croqui e Modelagem 3D Inteligente</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Gestão de Vencimentos e Acessórios</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Assinatura Digital e Integração A-R-T</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Suporte Técnico de Engenharia</li>
+                </ul>
+
+                <a href="https://pay.kiwify.com.br/27J91RK" class="btn-pricing">Garantir Meu Acesso Agora</a>
+            </div>
+
         </div>
     </section>
 
@@ -1996,6 +2240,76 @@
                 }
             });
         }
+
+
+
+
+        // --- SCRIPT DO POPUP DE CONTATO (TELEFONE) ---
+        const btnVerTelefone = document.getElementById('btn-ver-telefone');
+        const contactModalOverlay = document.getElementById('contactModalOverlay');
+        const closeContactModalBtn = document.getElementById('closeContactModal');
+        const contactForm = document.getElementById('contactForm');
+        const contactFormSuccess = document.getElementById('contactFormSuccess');
+        const contactSubmitBtn = document.getElementById('contactSubmitBtn');
+
+        function openContactModal() {
+            contactModalOverlay.style.display = 'flex';
+            setTimeout(() => contactModalOverlay.classList.add('active'), 10);
+        }
+
+        function closeContactModal() {
+            contactModalOverlay.classList.remove('active');
+            setTimeout(() => {
+                contactModalOverlay.style.display = 'none';
+                contactForm.reset();
+                contactForm.style.display = 'flex';
+                contactFormSuccess.style.display = 'none';
+                contactSubmitBtn.disabled = false;
+                contactSubmitBtn.textContent = 'Enviar';
+            }, 300);
+        }
+
+        if (btnVerTelefone) {
+            btnVerTelefone.addEventListener('click', openContactModal);
+        }
+
+        if (closeContactModalBtn) closeContactModalBtn.addEventListener('click', closeContactModal);
+
+        if (contactModalOverlay) {
+            contactModalOverlay.addEventListener('click', function(e) {
+                if (e.target === contactModalOverlay) closeContactModal();
+            });
+        }
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                contactSubmitBtn.disabled = true;
+                contactSubmitBtn.textContent = 'Enviando...';
+
+                fetch('https://formspree.io/f/xvznaowy', {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        contactForm.style.display = 'none';
+                        contactFormSuccess.style.display = 'block';
+                    } else {
+                        throw new Error('Falha no envio');
+                    }
+                })
+                .catch(() => {
+                    contactSubmitBtn.disabled = false;
+                    contactSubmitBtn.textContent = 'Enviar';
+                    alert('Não foi possível enviar sua mensagem agora. Tente novamente em instantes ou utilize o WhatsApp/email no rodapé da página.');
+                });
+            });
+        }
+
+
+
 
 // --- SCRIPT DO CARROSSEL DE RELATÓRIOS ---
         const reportCarousel = document.getElementById('reportCarousel');
