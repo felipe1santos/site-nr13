@@ -9,4 +9,4 @@ Disallow: /prova-social/
 Disallow: /*.mp4$
 
 # Sitemap
-Sitemap: https://nr13autodocs.com.br/sitemap.xml
+Sitemap: https://www.nr13sistema.com.br/sitemap.xml

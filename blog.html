@@ -6,7 +6,7 @@
     <title>Blog NR-13 | Inspeção, Laudos e Memorial de Cálculo ASME VIII</title>
     <meta name="description" content="Conteúdo para engenheiros de inspeção: NR-13, laudos, prontuário de equipamentos, memorial de cálculo ASME VIII, PMTA, categoria de risco e produtividade na inspeção de vasos de pressão e caldeiras.">
     <meta name="keywords" content="blog nr13, inspeção de vasos de pressão, laudo nr-13, prontuário de equipamento, memorial de cálculo ASME VIII, PMTA, categoria de risco NR-13, caldeira">
-    <link rel="canonical" href="https://nr13autodocs.com.br/blog.html">
+    <link rel="canonical" href="https://www.nr13sistema.com.br/blog.html">
     <meta property="og:title" content="Blog NR-13 | NR13 AutoDocs">
     <meta property="og:description" content="Conteúdo técnico sobre NR-13, laudos e memorial de cálculo ASME VIII para engenheiros de inspeção.">
     <meta property="og:type" content="website">
@@ -19,7 +19,11 @@
         .blog-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
         .post-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
         .post-card:hover { transform: translateY(-5px); box-shadow: 0 18px 36px rgba(0,26,49,0.10); }
-        .post-card .pc-top { height: 90px; background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue)); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 30px; }
+        .post-card .pc-img { position: relative; height: 180px; overflow: hidden; }
+        .post-card .pc-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+        .post-card:hover .pc-img img { transform: scale(1.06); }
+        .post-card .pc-img .pc-icon { position: absolute; top: 12px; left: 12px; width: 38px; height: 38px; border-radius: 10px; background: rgba(0,26,49,0.78); color: var(--cta-color); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+        .post-card.soon .pc-img::after { content: 'Em breve'; position: absolute; top: 12px; right: 12px; background: var(--cta-color); color: #00251a; font-family: 'Outfit',sans-serif; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: .5px; }
         .post-card .pc-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
         .post-card .pc-tag { font-size: 11px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: var(--primary-blue); margin-bottom: 8px; }
         .post-card h2 { font-size: 18px; color: var(--dark-blue); line-height: 1.3; margin-bottom: 10px; }
@@ -46,7 +50,7 @@
             <a href="index.html#planos">Planos</a>
         </nav>
         <div class="header-right">
-            <a href="https://nr13.nr1sistema.com.br/index.php" class="client-area-btn">Área de Login <i class="fa-regular fa-user"></i></a>
+            <a href="https://app.nr13sistema.com.br/login" class="client-area-btn">Área de Login <i class="fa-regular fa-user"></i></a>
         </div>
     </header>
 
@@ -61,37 +65,62 @@
         <div class="blog-grid">
 
             <article class="post-card">
-                <div class="pc-top"><i class="fa-solid fa-file-signature"></i></div>
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-file-signature"></i></span>
+                    <img src="https://images.pexels.com/photos/16442684/pexels-photo-16442684.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Engenheiro inspecionando equipamento industrial para laudo de inspeção NR-13" loading="lazy" decoding="async">
+                </div>
                 <div class="pc-body">
                     <span class="pc-tag">Laudos NR-13</span>
-                    <h2>Laudo de inspeção NR-13: o que é e como fazer passo a passo</h2>
-                    <p>O que não pode faltar em um laudo NR-13, os erros mais comuns e como gerar o documento em uma fração do tempo.</p>
+                    <h2>Como fazer laudo de inspeção NR-13: guia passo a passo</h2>
+                    <p>O que a norma exige, o que não pode faltar e o passo a passo completo para emitir o laudo sem retrabalho.</p>
+                    <a class="pc-link" href="como-fazer-laudo-inspecao-nr13.html">Ler artigo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-calculator"></i></span>
+                    <img src="https://images.pexels.com/photos/5915147/pexels-photo-5915147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Cálculo de PMTA de vaso de pressão conforme ASME VIII" loading="lazy" decoding="async">
+                </div>
+                <div class="pc-body">
+                    <span class="pc-tag">Memorial de Cálculo</span>
+                    <h2>Como calcular a PMTA de um vaso de pressão (ASME VIII)</h2>
+                    <p>A fórmula da Pressão Máxima de Trabalho Admissível, a influência da corrosão e um exemplo prático para o laudo.</p>
+                    <a class="pc-link" href="como-calcular-pmta-vaso-pressao.html">Ler artigo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-layer-group"></i></span>
+                    <img src="https://images.pexels.com/photos/11489637/pexels-photo-11489637.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Cilindros sob pressão classificados por categoria de risco NR-13" loading="lazy" decoding="async">
+                </div>
+                <div class="pc-body">
+                    <span class="pc-tag">Categoria de Risco</span>
+                    <h2>Categoria de risco NR-13: como classificar vasos e caldeiras</h2>
+                    <p>Os grupos de potencial de risco, como calcular o produto P.V e como a categoria muda a periodicidade da inspeção.</p>
+                    <a class="pc-link" href="categoria-risco-nr13.html">Ler artigo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+                    <img src="https://images.pexels.com/photos/8960942/pexels-photo-8960942.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Profissional com checklist realizando inspeção de campo NR-13" loading="lazy" decoding="async">
+                </div>
+                <div class="pc-body">
+                    <span class="pc-tag">Laudos NR-13</span>
+                    <h2>Laudo de inspeção NR-13: o que é e o que não pode faltar</h2>
+                    <p>Os itens obrigatórios do documento, os erros mais comuns e como gerar o laudo em uma fração do tempo.</p>
                     <a class="pc-link" href="blog-laudo-nr13-passo-a-passo.html">Ler artigo <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
             <article class="post-card soon">
-                <div class="pc-top"><i class="fa-solid fa-calculator"></i></div>
-                <div class="pc-body">
-                    <span class="pc-tag">Memorial de Cálculo</span>
-                    <h2>PMTA e espessura mínima pela ASME VIII Div. 1: guia prático</h2>
-                    <p>Como calcular a Pressão Máxima de Trabalho Admissível e a espessura mínima requerida de um vaso de pressão.</p>
-                    <span class="pc-link">Em breve</span>
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-fire-burner"></i></span>
+                    <img src="https://images.pexels.com/photos/7865898/pexels-photo-7865898.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Válvula e manômetros de equipamento sob pressão" loading="lazy" decoding="async">
                 </div>
-            </article>
-
-            <article class="post-card soon">
-                <div class="pc-top"><i class="fa-solid fa-layer-group"></i></div>
-                <div class="pc-body">
-                    <span class="pc-tag">Categoria de Risco</span>
-                    <h2>Categorias de risco da NR-13: como classificar seu equipamento</h2>
-                    <p>Entenda os grupos de potencial de risco e como a classificação muda a periodicidade das inspeções.</p>
-                    <span class="pc-link">Em breve</span>
-                </div>
-            </article>
-
-            <article class="post-card soon">
-                <div class="pc-top"><i class="fa-solid fa-fire-burner"></i></div>
                 <div class="pc-body">
                     <span class="pc-tag">Caldeiras</span>
                     <h2>Inspeção de caldeiras: prazos, exigências e documentação</h2>
@@ -101,7 +130,10 @@
             </article>
 
             <article class="post-card soon">
-                <div class="pc-top"><i class="fa-solid fa-folder-open"></i></div>
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-folder-open"></i></span>
+                    <img src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Engenheiro inspecionando equipamento industrial em planta" loading="lazy" decoding="async">
+                </div>
                 <div class="pc-body">
                     <span class="pc-tag">Prontuário</span>
                     <h2>Reconstituição de prontuário de equipamentos antigos</h2>
@@ -111,7 +143,10 @@
             </article>
 
             <article class="post-card soon">
-                <div class="pc-top"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="pc-img">
+                    <span class="pc-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <img src="https://images.pexels.com/photos/4440143/pexels-photo-4440143.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Inspeção de equipamento industrial em campo" loading="lazy" decoding="async">
+                </div>
                 <div class="pc-body">
                     <span class="pc-tag">Produtividade</span>
                     <h2>Inspeção mobile em campo: como ganhar horas por laudo</h2>
@@ -159,12 +194,12 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contato.html">Contato e Quem Somos</a></li>
                     <li><a href="index.html#planos">Planos e Preço</a></li>
-                    <li><a href="https://nr13.nr1sistema.com.br/index.php">Área do Cliente</a></li>
+                    <li><a href="https://app.nr13sistema.com.br/login">Área do Cliente</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contato</h4>
-                <div class="footer-contact"><i class="fa-solid fa-envelope"></i><div>contato@nr13autodocs.com.br</div></div>
+                <div class="footer-contact"><i class="fa-solid fa-envelope"></i><div>contato@nr13sistema.com.br</div></div>
                 <div class="footer-contact"><i class="fa-solid fa-location-dot"></i><div>Jardim Camburi, Vitória — ES<br>CEP 29092-060</div></div>
                 <div class="footer-contact"><i class="fa-solid fa-truck-fast"></i><div>Atendimento na Grande Vitória (Vitória, Vila Velha, Serra e Cariacica) e em todo o Brasil — sistema 100% online.</div></div>
             </div>

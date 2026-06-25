@@ -32,7 +32,7 @@ Arquivos de apoio: `assets/site.css` (design compartilhado), `assets/site.js` (m
 Coluna `.kw-rail` posicionada **à direita da seção "O QUE TEM DENTRO DO SISTEMA"** na Home (`#funcionalidades`), em layout de 2 colunas (`.func-layout`). É **sticky** (`position: sticky; top: 110px`) — fica "fixa" enquanto a seção rola. Caixa "INFORMAÇÕES" com:
 
 - Lista de **frases-chave** (atualmente **vazias** — slots prontos para o cliente preencher). Cada link já aponta para a Home (`index.html`) = **backlink SEO**.
-- Botão com o **link do site** (`nr13autodocs.com.br`) no rodapé da caixa.
+- Botão com o **link do site** (`www.nr13sistema.com.br`) no rodapé da caixa.
 
 **Como preencher:** edite a `<ul>` dentro do `<aside class="kw-rail">` no `index.html` — basta escrever o texto dentro de cada `<a href="index.html">...</a>`. No mobile (<992px) a coluna desce para baixo dos cards.
 
@@ -66,7 +66,7 @@ Motivo: o Google pune **endereços falsos** principalmente no **Google Business 
 
 ## 6. Próximos passos (para subir no ranking)
 
-1. Registrar o domínio definitivo e **trocar `nr13autodocs.com.br`** se for outro (canonicals, sitemap, JSON-LD).
+1. Registrar o domínio definitivo e **trocar `www.nr13sistema.com.br`** se for outro (canonicals, sitemap, JSON-LD).
 2. Cadastrar o site no **Google Search Console** e enviar o `sitemap.xml`.
 3. **Publicar 1 post por semana** no blog (os 5 cards "Em breve" já são pautas: PMTA/ASME, categorias de risco, inspeção de caldeiras, reconstituição de prontuário, inspeção mobile). Use o post existente como modelo de estrutura.
 4. Conseguir backlinks externos (parcerias, CREA, associações de engenharia, diretórios do setor).

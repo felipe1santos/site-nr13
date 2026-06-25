@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Calcular PMTA de Vaso de Pressão (ASME VIII) Passo a Passo | NR13 AutoDocs</title>
+    <meta name="description" content="Aprenda como calcular a PMTA de um vaso de pressão pela ASME VIII Div. 1: fórmula, espessura mínima, eficiência de junta, margem de corrosão e exemplo prático para o laudo NR-13.">
+    <meta name="keywords" content="como calcular PMTA, PMTA vaso de pressão, cálculo de PMTA ASME VIII, fórmula PMTA, pressão máxima de trabalho admissível, espessura mínima requerida, memorial de cálculo NR-13">
+    <link rel="canonical" href="https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="NR13 AutoDocs">
+    <meta name="geo.region" content="BR-ES">
+    <meta name="geo.placename" content="Vitória, Espírito Santo">
+
+    <meta property="og:title" content="Como Calcular PMTA de Vaso de Pressão (ASME VIII) Passo a Passo">
+    <meta property="og:description" content="Fórmula da PMTA, espessura mínima, eficiência de junta e exemplo prático conforme a ASME VIII Div. 1 para o laudo NR-13.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="NR13 AutoDocs">
+    <meta property="og:image" content="https://images.pexels.com/photos/5915147/pexels-photo-5915147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Como Calcular PMTA de Vaso de Pressão (ASME VIII) Passo a Passo">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/5915147/pexels-photo-5915147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/site.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Como calcular a PMTA de um vaso de pressão (ASME VIII Div. 1)",
+      "description": "Passo a passo para calcular a Pressão Máxima de Trabalho Admissível de um vaso de pressão conforme a ASME Sec. VIII Div. 1.",
+      "image": "https://images.pexels.com/photos/5915147/pexels-photo-5915147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Levante os dados de projeto", "text": "Reúna material, tensão admissível (S), raio interno (R), eficiência de junta (E), espessura medida e margem de corrosão.", "url": "https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html#passo-1" },
+        { "@type": "HowToStep", "position": 2, "name": "Calcule a espessura disponível", "text": "Subtraia a margem de corrosão da espessura medida em campo para obter a espessura efetiva resistente.", "url": "https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html#passo-2" },
+        { "@type": "HowToStep", "position": 3, "name": "Aplique a fórmula da PMTA", "text": "Use P = (S · E · t) / (R + 0,6 · t) para o costado cilíndrico sob pressão interna.", "url": "https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html#passo-3" },
+        { "@type": "HowToStep", "position": 4, "name": "Verifique tampos e bocais", "text": "Calcule também a PMTA dos tampos e regiões de bocal e adote o menor valor como PMTA do equipamento.", "url": "https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html#passo-4" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.nr13sistema.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.nr13sistema.com.br/blog.html" },
+        { "@type": "ListItem", "position": 3, "name": "Como calcular PMTA", "item": "https://www.nr13sistema.com.br/como-calcular-pmta-vaso-pressao.html" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "O que é PMTA?", "acceptedAnswer": { "@type": "Answer", "text": "PMTA é a Pressão Máxima de Trabalho Admissível: a maior pressão que o vaso pode operar com segurança no topo, considerando material, espessura, eficiência de junta e temperatura, conforme a ASME VIII Div. 1." } },
+        { "@type": "Question", "name": "Qual a fórmula da PMTA do costado cilíndrico?", "acceptedAnswer": { "@type": "Answer", "text": "Para pressão interna no costado cilíndrico: P = (S · E · t) / (R + 0,6 · t), onde S é a tensão admissível, E a eficiência de junta, t a espessura disponível e R o raio interno." } },
+        { "@type": "Question", "name": "A PMTA muda com a corrosão?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Como a PMTA usa a espessura disponível (espessura medida menos a margem de corrosão), a perda de espessura por corrosão reduz a PMTA e a vida útil restante do equipamento." } }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a class="logo" href="index.html"><div>NR13<span>AUTODOCS</span></div></a>
+        </div>
+        <nav class="header-nav">
+            <a href="index.html">Início</a>
+            <a href="funcionamento.html">Funcionamento</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contato.html">Contato</a>
+            <a href="index.html#planos">Planos</a>
+        </nav>
+        <div class="header-right">
+            <a href="https://app.nr13sistema.com.br/login" class="client-area-btn">Área de Login <i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="breadcrumb"><a href="index.html">Início</a> &rsaquo; <a href="blog.html">Blog</a> &rsaquo; Como calcular PMTA</div>
+        <h1>Como calcular a PMTA de um vaso de pressão (ASME VIII) passo a passo</h1>
+        <p>A fórmula da Pressão Máxima de Trabalho Admissível, a influência da espessura e da corrosão, e um exemplo prático para o memorial de cálculo do laudo NR-13.</p>
+    </section>
+
+    <section class="page-section">
+        <div class="article-layout">
+
+            <article class="prose">
+                <p>Saber <strong>como calcular a PMTA de um vaso de pressão</strong> é o coração do memorial de cálculo NR-13. A PMTA — Pressão Máxima de Trabalho Admissível — diz a maior pressão que o equipamento aguenta com segurança e sustenta toda a conclusão do laudo. Veja a fórmula, as variáveis e um exemplo.</p>
+
+                <figure class="article-figure">
+                    <img src="https://images.pexels.com/photos/5915147/pexels-photo-5915147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                         alt="Calculadora sobre projeto de engenharia representando o cálculo de PMTA de vaso de pressão" loading="lazy" decoding="async">
+                    <figcaption>O cálculo de PMTA conforme a ASME VIII Div. 1 sustenta o memorial do laudo.</figcaption>
+                </figure>
+
+                <div class="toc">
+                    <h2>Neste guia</h2>
+                    <ul>
+                        <li><a href="#o-que-e">O que é PMTA</a></li>
+                        <li><a href="#variaveis">Variáveis da fórmula</a></li>
+                        <li><a href="#passo-a-passo">Passo a passo do cálculo</a></li>
+                        <li><a href="#exemplo">Exemplo prático</a></li>
+                        <li><a href="#corrosao">PMTA, corrosão e vida útil</a></li>
+                        <li><a href="#automatizar">Como calcular automaticamente</a></li>
+                    </ul>
+                </div>
+
+                <h2 id="o-que-e">O que é PMTA</h2>
+                <p>A <strong>PMTA (Pressão Máxima de Trabalho Admissível)</strong> é a maior pressão permitida no topo do vaso, na posição de operação, para uma dada temperatura, considerando o material, a espessura disponível e a eficiência das juntas soldadas. É calculada pela <strong>ASME Sec. VIII Div. 1</strong> e usada como referência de segurança do equipamento.</p>
+
+                <h2 id="variaveis">Variáveis da fórmula</h2>
+                <ul>
+                    <li><strong>S</strong> — tensão admissível do material na temperatura de projeto (MPa).</li>
+                    <li><strong>E</strong> — eficiência da junta soldada (0,70 a 1,00 conforme o radiografia/tipo de junta).</li>
+                    <li><strong>t</strong> — espessura disponível (espessura medida − margem de corrosão).</li>
+                    <li><strong>R</strong> — raio interno do costado (mm).</li>
+                </ul>
+
+                <h2 id="passo-a-passo">Passo a passo do cálculo</h2>
+
+                <div class="step-block" id="passo-1">
+                    <h3>1. Levante os dados de projeto</h3>
+                    <p>Reúna material, tensão admissível (S) na temperatura de projeto, raio interno (R), eficiência de junta (E), espessura medida em campo e a margem de corrosão adotada.</p>
+                </div>
+                <div class="step-block" id="passo-2">
+                    <h3>2. Calcule a espessura disponível</h3>
+                    <p>Subtraia a margem de corrosão da espessura medida por ultrassom: <strong>t = espessura medida − margem de corrosão</strong>.</p>
+                </div>
+                <div class="step-block" id="passo-3">
+                    <h3>3. Aplique a fórmula da PMTA (costado cilíndrico)</h3>
+                    <div class="callout"><p><strong>P = (S · E · t) / (R + 0,6 · t)</strong></p></div>
+                    <p>Essa é a expressão para pressão interna no costado cilíndrico. Use unidades coerentes (MPa e mm).</p>
+                </div>
+                <div class="step-block" id="passo-4">
+                    <h3>4. Verifique tampos e bocais</h3>
+                    <p>Calcule a PMTA também dos tampos e das regiões de bocal. A <strong>PMTA do equipamento é o menor valor</strong> entre os componentes — é o elo mais fraco que limita a pressão.</p>
+                </div>
+
+                <figure class="article-figure">
+                    <img src="https://images.pexels.com/photos/7865898/pexels-photo-7865898.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+                         alt="Manômetro de vaso de pressão usado para verificar a PMTA na inspeção NR-13" loading="lazy" decoding="async">
+                    <figcaption>A PMTA calculada é comparada à pressão de operação registrada nos manômetros.</figcaption>
+                </figure>
+
+                <h2 id="exemplo">Exemplo prático</h2>
+                <table class="data-table">
+                    <thead><tr><th>Variável</th><th>Valor</th></tr></thead>
+                    <tbody>
+                        <tr><td>S (tensão admissível)</td><td>118 MPa</td></tr>
+                        <tr><td>E (eficiência de junta)</td><td>0,85</td></tr>
+                        <tr><td>t (espessura disponível)</td><td>9,5 mm</td></tr>
+                        <tr><td>R (raio interno)</td><td>500 mm</td></tr>
+                        <tr><td><strong>PMTA = (118 · 0,85 · 9,5) / (500 + 0,6 · 9,5)</strong></td><td><strong>≈ 1,88 MPa</strong></td></tr>
+                    </tbody>
+                </table>
+                <p style="font-size:13px; color:var(--text-gray);">Exemplo ilustrativo. O cálculo oficial deve usar os parâmetros reais do equipamento e o julgamento do PLH.</p>
+
+                <h2 id="corrosao">PMTA, corrosão e vida útil</h2>
+                <p>Como a fórmula usa a <strong>espessura disponível</strong>, a corrosão reduz a PMTA ao longo do tempo. Acompanhar as medições de espessura por ultrassom permite estimar a <strong>vida útil restante</strong> e antecipar quando o equipamento deixará de atender à pressão de operação. Esse cruzamento entra no <a href="como-fazer-laudo-inspecao-nr13.html">laudo de inspeção</a> junto à <a href="categoria-risco-nr13.html">categoria de risco</a>.</p>
+
+                <h2 id="automatizar">Como calcular a PMTA automaticamente</h2>
+                <p>O <a href="index.html">NR13 AutoDocs</a> <strong>calcula a PMTA, a espessura mínima requerida e a vida útil restante automaticamente</strong> a partir dos dados do equipamento, injetando o memorial ASME VIII direto no laudo — sem planilha manual. Veja na página de <a href="funcionamento.html">funcionamento</a> ou conheça os <a href="index.html#planos">planos</a>.</p>
+
+                <div style="text-align:center; margin-top:36px;">
+                    <a href="index.html#planos" class="btn-cta"><i class="fa-solid fa-bolt"></i> Calcular PMTA automaticamente</a>
+                </div>
+
+                <p style="margin-top:40px;"><a href="blog.html">&larr; Voltar para o Blog</a> &nbsp;|&nbsp; <a href="index.html">Voltar para a Home</a></p>
+            </article>
+
+            <aside class="kw-rail" aria-label="Temas relacionados de inspeção NR-13">
+                <div class="kw-box">
+                    <div class="kw-box-head"><i class="fa-solid fa-circle-info"></i> Informações</div>
+                    <ul>
+                        <li><a href="como-fazer-laudo-inspecao-nr13.html"><i class="fa-solid fa-angle-right"></i> Como fazer laudo de inspeção NR-13</a></li>
+                        <li><a href="como-calcular-pmta-vaso-pressao.html"><i class="fa-solid fa-angle-right"></i> Como calcular PMTA</a></li>
+                        <li><a href="categoria-risco-nr13.html"><i class="fa-solid fa-angle-right"></i> Categoria de risco NR-13</a></li>
+                        <li><a href="blog-laudo-nr13-passo-a-passo.html"><i class="fa-solid fa-angle-right"></i> Laudo NR-13 passo a passo</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Memorial de cálculo ASME VIII Div. 1</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Inspeção de vasos de pressão</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Espessura mínima requerida</a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Teste hidrostático e ultrassom</a></li>
+                    </ul>
+                </div>
+                <div class="kw-cta-box">
+                    <h4>PMTA calculada em 1 clique</h4>
+                    <p>Memorial ASME VIII injetado no laudo, sem planilha manual.</p>
+                    <a href="index.html#planos" class="btn-cta"><i class="fa-solid fa-bolt"></i> Ver planos</a>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <section class="fale-conosco-section">
+        <div class="fale-conosco-card">
+            <div class="fale-conosco-img">
+                <img src="atendentex.webp" alt="Atendente do NR13 AutoDocs" loading="lazy" decoding="async">
+            </div>
+            <div class="fale-conosco-text">
+                <span class="fc-tag"><i class="fa-solid fa-headset"></i> Atendimento</span>
+                <h2>Fale Conosco</h2>
+                <p>Quer ver o sistema calculando a PMTA e o memorial ASME VIII com os seus equipamentos? Deixe seu contato e agende uma demonstração.</p>
+                <button class="btn-cta" data-open-contato><i class="fa-solid fa-paper-plane"></i> Deixar meu contato</button>
+                <p class="fc-resp"><i class="fa-solid fa-clock"></i> Tempo médio de resposta: de 3 a 6 horas em dias úteis.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>NR13 AutoDocs</h4>
+                <p>A solução definitiva para engenheiros que buscam escala, segurança e produtividade na gestão de integridade estrutural e inspeção NR-13.</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@nr13sistema" target="_blank" rel="noopener" aria-label="YouTube — @nr13sistema"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Início (Home)</a></li>
+                    <li><a href="funcionamento.html">Funcionamento do Sistema</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato e Quem Somos</a></li>
+                    <li><a href="index.html#planos">Planos e Preço</a></li>
+                    <li><a href="https://app.nr13sistema.com.br/login">Área do Cliente</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <div class="footer-contact"><i class="fa-solid fa-envelope"></i><div>contato@nr13sistema.com.br</div></div>
+                <div class="footer-contact"><i class="fa-solid fa-location-dot"></i><div>Jardim Camburi, Vitória — ES<br>CEP 29092-060</div></div>
+                <div class="footer-contact"><i class="fa-solid fa-truck-fast"></i><div>Atendimento na Grande Vitória (Vitória, Vila Velha, Serra e Cariacica) e em todo o Brasil — sistema 100% online.</div></div>
+            </div>
+            <div class="footer-col">
+                <h4>Onde estamos</h4>
+                <iframe class="footer-map" title="Localização NR13 AutoDocs — Jardim Camburi, Vitória/ES" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Jardim%20Camburi%2C%20Vit%C3%B3ria%20-%20ES%2C%2029092-060&z=14&output=embed"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 NR13 AutoDocs. Todos os direitos reservados. &nbsp;|&nbsp;
+            <a href="index.html">Voltar para a Home</a>
+        </div>
+    </footer>
+
+    <div class="contact-modal-overlay" id="contactModalOverlay">
+        <div class="contact-modal-content">
+            <button class="contact-modal-close" id="closeContactModal"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="contact-modal-title">Fale Conosco</h3>
+            <p class="contact-modal-text">Preencha os dados para agendar uma demonstração. Nossa equipe responde em média de 3 a 6 horas em dias úteis.</p>
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit" class="contact-form-submit" id="contactSubmitBtn">Enviar</button>
+            </form>
+            <div class="contact-form-success" id="contactFormSuccess" style="display:none;">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Mensagem enviada com sucesso! Em breve nossa equipe entrará em contato com você.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>
