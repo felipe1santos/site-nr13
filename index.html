@@ -258,34 +258,50 @@
 /* --- HERO CSS --- */
     
         .hero-section {
-            /* Define o arquivo de imagem que será usado como fundo */
-            background-image: url('fundo1.webp');
-            
-            /* Força a imagem a preencher toda a largura e altura da seção sem achatar ou distorcer */
-            background-size: cover; 
-            
-            /* Ajuste fino da posição: 'center' centraliza na horizontal. 
-               O '15%' (antes estava 25%) mexe na vertical. Quanto menor o número, mais a imagem "desce". 
-               Se precisar descer ainda mais, teste 10%. Se desceu muito, teste 20%. */
-            background-position: center 25%; 
-            
-            /* Garante que a imagem não vire um mosaico se repetindo várias vezes */
-            background-repeat: no-repeat; 
-            
-            /* Espaçamento interno: 100px de teto, 5% nas laterais, 120px de chão */
-            padding: 100px 5% 120px; 
-            
+            /* Cor de fundo de segurança (aparece antes das imagens do carrossel carregarem) */
+            background-color: var(--dark-blue);
+
+            /* Espaçamento interno reduzido: teto menor para o texto subir e a altura diminuir */
+            padding: 60px 5% 75px;
+
             /* Ativa o Flexbox, um sistema inteligente para organizar os itens dentro da seção */
-            display: flex; 
-            
+            display: flex;
+
             /* Empurra todo o conteúdo interno (textos e botão) para a esquerda */
-            justify-content: flex-start; 
-            
+            justify-content: flex-start;
+
             /* Alinha os textos e o botão perfeitamente no centro vertical da seção */
-            align-items: center; 
-            
-            /* Transforma esta seção na "âncora" para o filtro de degradê escuro (::before) não vazar para fora */
-            position: relative; 
+            align-items: center;
+
+            /* Âncora para o degradê (::before) e para os slides do carrossel não vazarem */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- CARROSSEL DE FUNDO DO HERO (só a imagem muda; texto/botão ficam fixos) --- */
+        .hero-slides { position: absolute; inset: 0; z-index: 0; }
+        .hero-slide {
+            position: absolute; inset: 0;
+            background-size: cover;
+            background-position: center 25%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: heroFade 21s infinite;
+        }
+        .hero-slide:nth-child(1) { background-image: url('fundo1.webp'); animation-delay: 0s; }
+        .hero-slide:nth-child(2) { background-image: url('fundo2.jpg');  animation-delay: 7s; }
+        .hero-slide:nth-child(3) { background-image: url('fundo3.jpg');  animation-delay: 14s; }
+        @keyframes heroFade {
+            0%   { opacity: 0; }
+            4%   { opacity: 1; }
+            30%  { opacity: 1; }
+            36%  { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        /* Acessibilidade: quem prefere menos animação vê só o banner principal fixo */
+        @media (prefers-reduced-motion: reduce) {
+            .hero-slide { animation: none; }
+            .hero-slide:nth-child(1) { opacity: 1; }
         }
 
         /* Degradê para garantir a leitura do texto sobre a imagem */
@@ -312,7 +328,7 @@
             line-height: 1.1;
             margin-bottom: 25px;
             letter-spacing: -1px;
-            padding-top: 100px;
+            padding-top: 20px;
         }
 
         .hero-text {
@@ -612,10 +628,12 @@
 
         .logos-track-container {
             width: 100%;
+            max-width: 40%;
+            margin: 0 auto;
             overflow: hidden;
             position: relative;
-            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
         }
 
         .logos-track {
@@ -656,9 +674,13 @@
         @media (max-width: 992px) {
             .equip-grid { grid-template-columns: 1fr 1fr; }
         }
+        @media (max-width: 992px) {
+            .logos-track-container { max-width: 70%; }
+        }
         @media (max-width: 600px) {
             .equip-grid { grid-template-columns: 1fr; }
             .logos-track img { max-height: 38px; }
+            .logos-track-container { max-width: 90%; }
         }
 
 /* --- GALERIA DE PRINTS DO SISTEMA (GRADE) --- */
@@ -1770,62 +1792,34 @@
             gap: 36px;
             align-items: stretch;
         }
-        .kw-rail {
-            display: flex;
-        }
-        .kw-box {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            box-shadow: 0 12px 34px rgba(0,26,49,0.08);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .kw-box-head {
-            background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
-            color: #fff;
+        .kw-rail { display: block; }
+        .kw-simple-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 800;
-            letter-spacing: 1px;
+            letter-spacing: .5px;
             text-transform: uppercase;
-            padding: 18px 22px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            color: var(--text-gray);
+            margin: 0 0 10px;
         }
-        .kw-box-head i { color: var(--cta-color); }
-        .kw-box ul {
-            list-style: none;
-            margin: 0;
-            padding: 6px 0;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-        .kw-box ul li { border-bottom: 1px solid #f1f5f9; display: flex; flex: 1; }
-        .kw-box ul li:last-child { border-bottom: none; }
-        .kw-box ul li a {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            width: 100%;
-            padding: 0 22px;
+        .kw-simple { list-style: none; margin: 0; padding: 0; }
+        .kw-simple li { margin: 0; }
+        .kw-simple li a {
+            display: block;
+            padding: 5px 0;
             font-family: 'Inter', sans-serif;
             font-size: 14.5px;
             font-weight: 500;
-            color: var(--text-dark);
+            color: var(--primary-blue);
             text-decoration: none;
-            line-height: 1.35;
-            transition: background .2s ease, color .2s ease, padding-left .2s ease;
+            line-height: 1.4;
+            border-bottom: 1px solid #f1f5f9;
+            transition: color .2s ease, padding-left .2s ease;
         }
-        .kw-box ul li a i { color: var(--primary-blue); font-size: 13px; flex-shrink: 0; transition: color .2s ease; }
-        .kw-box ul li a:hover { background-color: var(--light-blue); color: var(--primary-blue); padding-left: 28px; }
+        .kw-simple li:last-child a { border-bottom: none; }
+        .kw-simple li a:hover { color: var(--dark-blue); padding-left: 5px; text-decoration: underline; }
         @media (max-width: 992px) {
             .func-layout { grid-template-columns: 1fr; }
-            .kw-box ul li a { padding-top: 13px; padding-bottom: 13px; }
         }
 
         /* --- BLOCO DE PALAVRAS-CHAVE NO RODAPÉ (SEO) --- */
@@ -1895,6 +1889,11 @@
     </header>
 
 <section class="hero-section">
+        <div class="hero-slides" aria-hidden="true">
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+            <div class="hero-slide"></div>
+        </div>
         <div class="hero-content">
             <h1 class="hero-title">Gere Relatorios de inspeção NR-13 Completos em Segundos e Escale sua produtividade e lucro</h1>
             <p class="hero-text">Esqueça o Word e planilhas manuais. Centralize clientes, organize inspeções em campo com sua equipe e entregue laudos com memoriais de cálculo injetados automaticamente em 1 clique.</p>
@@ -1984,18 +1983,16 @@
 
             <!-- COLUNA DE PALAVRAS-CHAVE / ACESSO RÁPIDO (links internos para SEO) -->
             <aside class="kw-rail" aria-label="Acesso rápido — temas de inspeção NR-13">
-                <div class="kw-box">
-                    <div class="kw-box-head"><i class="fa-solid fa-circle-info"></i> Informações</div>
-                    <ul>
-                        <li><a href="como-fazer-laudo-inspecao-nr13.html"><i class="fa-solid fa-angle-right"></i> Como fazer laudo de inspeção NR-13</a></li>
-                        <li><a href="como-calcular-pmta-vaso-pressao.html"><i class="fa-solid fa-angle-right"></i> Cálculo de PMTA passo a passo</a></li>
-                        <li><a href="categoria-risco-nr13.html"><i class="fa-solid fa-angle-right"></i> Categoria de risco NR-13</a></li>
-                        <li><a href="blog-laudo-nr13-passo-a-passo.html"><i class="fa-solid fa-angle-right"></i> Laudo NR-13 passo a passo</a></li>
-                        <li><a href="funcionamento.html"><i class="fa-solid fa-angle-right"></i> Como funciona o sistema</a></li>
-                        <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog técnico NR-13</a></li>
-                        <li><a href="contato.html"><i class="fa-solid fa-angle-right"></i> Fale com um especialista</a></li>
-                    </ul>
-                </div>
+                <p class="kw-simple-title">Informações</p>
+                <ul class="kw-simple">
+                    <li><a href="como-fazer-laudo-inspecao-nr13.html">Como fazer laudo de inspeção NR-13</a></li>
+                    <li><a href="como-calcular-pmta-vaso-pressao.html">Cálculo de PMTA passo a passo</a></li>
+                    <li><a href="categoria-risco-nr13.html">Categoria de risco NR-13</a></li>
+                    <li><a href="blog-laudo-nr13-passo-a-passo.html">Laudo NR-13 passo a passo</a></li>
+                    <li><a href="funcionamento.html">Como funciona o sistema</a></li>
+                    <li><a href="blog.html">Blog técnico NR-13</a></li>
+                    <li><a href="contato.html">Fale com um especialista</a></li>
+                </ul>
             </aside>
         </div>
     </section>
