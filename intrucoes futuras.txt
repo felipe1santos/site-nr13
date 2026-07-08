@@ -1,7 +1,0 @@
-Site institucional nr13
-vai ter a pagina inicial que é pagina de vendas do software (saas);
-outra pagina para contato e quem somos (tudo junto) [e não vamos disponibilizar contato direto numero de wpp, a pessoa vai ter q deixar o contato dela, email para entramos em contato - 'colocar uma mensagem dizendo q tempo medio de resposta é rapido em torno de 3 a 4 horas'] 
-outra pagina pra funcionamento do sistema onde vai ter todos os vídeos explicando o sistema;
-outra pagina de BLOG, onde vamos postar toda semana um conteúdo relevante buscando as melhores palavras chave para ranquear o sistema no google.
-
-Usar as fontes da stripe, ver depois qual são as fontes e coloca-las aqui..
