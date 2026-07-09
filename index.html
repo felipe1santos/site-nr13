@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -6,7 +6,10 @@
 <title>Software NR13: prontuários, relatórios e vencimentos | NR13 Sistema</title>
 <meta name="description" content="Sistema online para cadastrar vasos de pressão, caldeiras e autoclaves, automatizar relatórios e prontuários e nunca perder um vencimento. Peça uma demonstração.">
 <meta name="robots" content="index,follow">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="preload" as="image" href="img/hero-industrial.webp" fetchpriority="high">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 <style>
   :root{
     --navy:#002548;
@@ -78,8 +81,8 @@
   }
 
   /* ===== Hero ===== */
-  /* banner: foto Pexels 31257317 (img/hero-industrial.jpg) sob overlay navy */
-  .hero{position:relative;z-index:1;background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial.jpg") center/cover no-repeat;color:#fff;padding:150px 0 90px}
+  /* banner: foto Pexels 31257317 (img/hero-industrial.webp) sob overlay navy */
+  .hero{position:relative;z-index:1;background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial.webp") center/cover no-repeat;color:#fff;padding:150px 0 90px}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
   @media(max-width:900px){.hero{padding:120px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}}
   @media(max-width:480px){.hero{padding:104px 0 50px}}
@@ -368,7 +371,7 @@
     </ul>
     <div class="nav-right">
       <a class="btn btn-orange nav-cta" href="#demonstracao"><span class="cta-full">Solicitar demonstração</span><span class="cta-short">Demonstração</span></a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
     </div>
   </div>
   <nav class="mobile-menu" id="mobile-menu">
@@ -397,7 +400,7 @@
     <div class="laptop-wrap">
       <div class="laptop">
         <div class="laptop-screen">
-          <img src="tela-modal-notebook.png" alt="Dashboard do NR13 Sistema com lista de equipamentos cadastrados">
+          <img fetchpriority="high" decoding="async" src="tela-modal-notebook.webp" alt="Dashboard do NR13 Sistema com lista de equipamentos cadastrados">
         </div>
         <div class="laptop-base"><div class="laptop-stand"></div></div>
       </div>
@@ -414,7 +417,7 @@
       <p>Dois minutos para entender como o NR13 Sistema organiza equipamentos, vencimentos e documentos.</p>
     </div>
     <div class="video-frame">
-      <video controls preload="metadata" playsinline src="video-principal.mp4">
+      <video controls preload="none" playsinline poster="img/poster-video-principal.webp" src="video-principal.mp4">
         Seu navegador não suporta vídeo HTML5.
       </video>
     </div>
@@ -481,22 +484,22 @@
     </div>
     <div class="prints-grid">
       <figure class="print-fig b1">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/dashboard-equipamentos.png" alt="Painel de equipamentos cadastrados"><span class="cap">Painel de equipamentos</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/dashboard-equipamentos.webp" alt="Painel de equipamentos cadastrados"><span class="cap">Painel de equipamentos</span></div></div>
       </figure>
       <figure class="print-fig b2">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/calibracao.png" alt="Calibrações e certificados de instrumentos"><span class="cap">Calibrações e certificados</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/calibracao.webp" alt="Calibrações e certificados de instrumentos"><span class="cap">Calibrações e certificados</span></div></div>
       </figure>
       <figure class="print-fig b3">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/prontuario.png" alt="Prontuário técnico gerado pelo sistema"><span class="cap">Prontuário técnico</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/prontuario.webp" alt="Prontuário técnico gerado pelo sistema"><span class="cap">Prontuário técnico</span></div></div>
       </figure>
       <figure class="print-fig b4">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/livro-registro.png" alt="Livro de registro de segurança gerado automaticamente"><span class="cap">Livro de registro automático</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/livro-registro.webp" alt="Livro de registro de segurança gerado automaticamente"><span class="cap">Livro de registro automático</span></div></div>
       </figure>
       <figure class="print-fig b5">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/gerar-relatorio.png" alt="Configuração de novo relatório de inspeção"><span class="cap">Configurar relatório</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/gerar-relatorio.webp" alt="Configuração de novo relatório de inspeção"><span class="cap">Configurar relatório</span></div></div>
       </figure>
       <figure class="print-fig b6">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img src="img/prints/relatorios.png" alt="Histórico de relatórios de inspeção por equipamento"><span class="cap">Relatórios por equipamento</span></div></div>
+        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/relatorios.webp" alt="Histórico de relatórios de inspeção por equipamento"><span class="cap">Relatórios por equipamento</span></div></div>
       </figure>
     </div>
   </div>
@@ -518,23 +521,23 @@
     </div>
     <div class="docs-grid">
       <figure class="doc-fig">
-        <div class="doc-sheet"><img src="IMAGENS-SOFTWARE/capa.png" alt="Capa da documentação gerada pelo NR13 Sistema"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/capa.webp" alt="Capa da documentação gerada pelo NR13 Sistema"></div>
         <figcaption>Capa</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img src="IMAGENS-SOFTWARE/prontuario.png" alt="Prontuário do equipamento gerado pelo sistema"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/prontuario.webp" alt="Prontuário do equipamento gerado pelo sistema"></div>
         <figcaption>Prontuário</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img src="IMAGENS-SOFTWARE/memorial-calculo.png" alt="Memorial de cálculo — página 1"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/memorial-calculo.webp" alt="Memorial de cálculo — página 1"></div>
         <figcaption>Memorial de cálculo — 1</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img src="IMAGENS-SOFTWARE/memorial-calculo2.png" alt="Memorial de cálculo — página 2"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/memorial-calculo2.webp" alt="Memorial de cálculo — página 2"></div>
         <figcaption>Memorial de cálculo — 2</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img src="IMAGENS-SOFTWARE/resumo-memorial-calculo.png" alt="Resumo do memorial de cálculo"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/resumo-memorial-calculo.webp" alt="Resumo do memorial de cálculo"></div>
         <figcaption>Resumo do memorial</figcaption>
       </figure>
     </div>
@@ -557,12 +560,12 @@
     <div class="portal-grid">
       <figure class="portal-card">
         <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img src="IMAGENS-SOFTWARE/portal1.png" alt="Portal do Cliente com a lista de equipamentos sob inspeção NR13"></div>
+        <div class="zoomable"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/portal1.webp" alt="Portal do Cliente com a lista de equipamentos sob inspeção NR13"></div>
         <figcaption>Portal do cliente — equipamentos</figcaption>
       </figure>
       <figure class="portal-card">
         <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img src="IMAGENS-SOFTWARE/portal2.png" alt="Portal do Cliente com documentação e histórico de um equipamento"></div>
+        <div class="zoomable"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/portal2.webp" alt="Portal do Cliente com documentação e histórico de um equipamento"></div>
         <figcaption>Portal do cliente — documentação e histórico</figcaption>
       </figure>
     </div>
@@ -574,7 +577,7 @@
   <div class="wrap mobile-split">
     <div class="phone-mockup">
       <div class="phone-screen">
-        <img src="img/prints/celular-inspecao.png" alt="Checklist de inspeção NR13 sendo preenchido no celular">
+        <img loading="lazy" decoding="async" src="img/prints/celular-inspecao.webp" alt="Checklist de inspeção NR13 sendo preenchido no celular">
       </div>
     </div>
     <div>
@@ -612,7 +615,7 @@
 <section class="section expert" id="engenheiro">
   <div class="wrap expert-grid">
     <div class="expert-photo">
-      <img src="gabriel-borges-eng-responsavel.png" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
+      <img loading="lazy" decoding="async" src="gabriel-borges-eng-responsavel.webp" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
     </div>
     <div>
       <div class="section-head">
@@ -641,11 +644,11 @@
     </div>
     <div class="social-grid">
       <figure class="social-card" style="margin:0">
-        <video controls preload="metadata" playsinline src="prova-social-1.mp4"></video>
+        <video controls preload="none" playsinline poster="img/poster-prova-1.webp" src="prova-social-1.mp4"></video>
         <figcaption>Depoimento de cliente — 01</figcaption>
       </figure>
       <figure class="social-card" style="margin:0">
-        <video controls preload="metadata" playsinline src="prova-social-2.mp4"></video>
+        <video controls preload="none" playsinline poster="img/poster-prova-2.webp" src="prova-social-2.mp4"></video>
         <figcaption>Depoimento de cliente — 02</figcaption>
       </figure>
     </div>
@@ -818,13 +821,13 @@
   navToggle.addEventListener('click', function () {
     var open = mobileMenu.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', open);
-    navToggle.querySelector('i').className = open ? 'bi bi-x-lg' : 'bi bi-list';
+    navToggle.textContent = open ? '✕' : '☰';
   });
   mobileMenu.querySelectorAll('a').forEach(function (a) {
     a.addEventListener('click', function () {
       mobileMenu.classList.remove('open');
       navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.querySelector('i').className = 'bi bi-list';
+      navToggle.textContent = '☰';
     });
   });
 
