@@ -111,20 +111,22 @@
   .social-card figcaption{padding:14px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
 
   /* ===== Expert / engenheiro responsável ===== */
-  .expert{background:var(--navy-black);color:#fff;padding:56px 0}
-  .expert-grid{display:grid;grid-template-columns:270px 1fr;gap:48px;align-items:center}
-  @media(max-width:900px){.expert-grid{grid-template-columns:1fr;gap:32px}}
-  .expert-photo{position:relative;z-index:0;max-width:270px}
-  .expert-photo img{width:100%;display:block;border-radius:4px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
-  .expert-photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--orange);border-radius:4px;z-index:-1}
+  /* fundo: azul petróleo escuro + foto Pexels 7937300 bem sutil (img/expert-bg.webp) */
+  .expert{position:relative;background:linear-gradient(105deg,rgba(5,32,40,.97) 0%,rgba(6,38,47,.94) 50%,rgba(5,32,40,.9) 100%),url("img/expert-bg.webp") center/cover no-repeat;color:#fff;padding:72px 0;border-top:3px solid var(--orange)}
+  .expert-grid{display:grid;grid-template-columns:290px 1fr;gap:56px;align-items:center}
+  @media(max-width:900px){.expert-grid{grid-template-columns:1fr;gap:36px}}
+  .expert-photo{position:relative;z-index:0;max-width:290px}
+  .expert-photo img{width:100%;display:block;border-radius:6px;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+  .expert-photo::after{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--orange);border-radius:6px;z-index:-1;opacity:.85}
+  .expert-photo .expert-crea-tag{position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);white-space:nowrap;background:var(--orange);color:#161616;font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.12em;padding:8px 16px;border-radius:3px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
   .expert h2{color:#fff}
-  .expert .section-head{margin-bottom:22px}
-  .expert .section-head p{color:#b7c6d4}
-  .expert-name{font-size:20px;font-weight:800;color:#fff;margin-bottom:2px}
+  .expert .section-head{margin-bottom:20px;max-width:none}
+  .expert .section-head p{color:#a9c0c9}
+  .expert-name{font-size:24px;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:.01em}
   .expert-role{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
-  .expert-bio{color:#b7c6d4;font-size:15.5px;max-width:560px;margin-bottom:24px}
+  .expert-bio{color:#a9c0c9;font-size:15.5px;max-width:580px;margin-bottom:28px;border-left:3px solid rgba(240,160,40,.5);padding-left:18px}
   .expert-creds{display:flex;flex-wrap:wrap;gap:12px}
-  .expert-cred{display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.18);padding:12px 18px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;color:#d7e0ea}
+  .expert-cred{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);padding:12px 18px;border-radius:4px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;color:#dbe7ec;backdrop-filter:blur(2px)}
   .expert-cred i{color:var(--orange);font-size:16px}
 
   /* ===== Solução (painel dentro da seção de dores) ===== */
@@ -616,6 +618,7 @@
   <div class="wrap expert-grid">
     <div class="expert-photo">
       <img loading="lazy" decoding="async" src="gabriel-borges-eng-responsavel.webp" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
+      <span class="expert-crea-tag">CREA-SP 5070146920</span>
     </div>
     <div>
       <div class="section-head">
@@ -624,10 +627,10 @@
       </div>
       <p class="expert-name">Eng. Gabriel Borges Dadona de Camargo</p>
       <p class="expert-role">Engenheiro responsável técnico — CREA-SP 5070146920</p>
-      <p class="expert-bio">Com mais de 20 anos de experiência em NR13, Gabriel revisa os cálculos e a documentação gerada pelo sistema. Relatórios, prontuários e memoriais de cálculo seguem o que a norma exige na prática de quem inspeciona vasos de pressão, caldeiras e autoclaves todos os dias.</p>
+      <p class="expert-bio">Com 10 anos de experiência em NR13, Gabriel revisa os cálculos e a documentação gerada pelo sistema. Relatórios, prontuários e memoriais de cálculo seguem o que a norma exige na prática de quem inspeciona vasos de pressão, caldeiras e autoclaves todos os dias.</p>
       <div class="expert-creds">
-        <span class="expert-cred"><i class="bi bi-patch-check-fill"></i>CREA-SP 5070146920</span>
-        <span class="expert-cred"><i class="bi bi-award-fill"></i>+20 anos de experiência em NR13</span>
+        <span class="expert-cred"><i class="bi bi-award-fill"></i>10 anos de experiência em NR13</span>
+        <span class="expert-cred"><i class="bi bi-patch-check-fill"></i>Engenheiro habilitado — CREA</span>
         <span class="expert-cred"><i class="bi bi-shield-fill-check"></i>Responsável técnico do sistema</span>
       </div>
     </div>
