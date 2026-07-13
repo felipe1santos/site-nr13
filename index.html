@@ -908,6 +908,7 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    if (submitBtn.disabled) return; // evita envio duplo (Enter repetido)
 
     var empresa = document.getElementById('f-empresa').value.trim();
     var qtd = document.getElementById('f-qtd').value;
@@ -921,13 +922,23 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
       + 'WhatsApp: ' + whats;
     var waUrl = 'https://wa.me/5527992534407?text=' + encodeURIComponent(msg);
 
-    if (window.fbq) fbq('track', 'Lead');
-
     submitBtn.disabled = true;
     statusEl.style.display = 'block';
     statusEl.textContent = 'Enviando…';
 
-    var goWhatsApp = function () { window.location.href = waUrl; };
+    var leadEnviado = false;
+    var goWhatsApp = function () {
+      if (!leadEnviado && typeof window.fbq === 'function') {
+        leadEnviado = true;
+        fbq('track', 'Lead', {
+          content_name: 'Solicitação de demonstração',
+          content_category: 'SaaS NR13',
+          content_type: 'product'
+        });
+      }
+      // pequena espera para o navegador concluir o envio do evento antes do redirect
+      setTimeout(function () { window.location.href = waUrl; }, 500);
+    };
 
     fetch(form.action, {
       method: 'POST',
