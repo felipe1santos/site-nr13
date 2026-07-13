@@ -6,8 +6,10 @@
 <title>Software NR13: prontuários, relatórios e vencimentos | NR13 Sistema</title>
 <meta name="description" content="Sistema online para cadastrar vasos de pressão, caldeiras e autoclaves, automatizar relatórios e prontuários e nunca perder um vencimento. Peça uma demonstração.">
 <meta name="robots" content="index,follow">
-<link rel="preload" as="image" href="img/hero-industrial.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-industrial.webp" media="(min-width:601px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-industrial-mobile.webp" media="(max-width:600px)" fetchpriority="high">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 <style>
@@ -28,7 +30,7 @@
   html{scroll-behavior:smooth}
   html,body{overflow-x:hidden;max-width:100%}
   body{font-family:var(--sans);color:var(--ink);line-height:1.6;background:#fff}
-  img{max-width:100%;display:block}
+  img{max-width:100%;height:auto;display:block}
   a{color:inherit}
   .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
   .wrap-wide{max-width:1360px;margin:0 auto;padding:0 24px}
@@ -83,6 +85,7 @@
   /* ===== Hero ===== */
   /* banner: foto Pexels 31257317 (img/hero-industrial.webp) sob overlay navy */
   .hero{position:relative;z-index:1;background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial.webp") center/cover no-repeat;color:#fff;padding:150px 0 90px}
+  @media(max-width:600px){.hero{background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial-mobile.webp") center/cover no-repeat}}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
   @media(max-width:900px){.hero{padding:120px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}}
   @media(max-width:480px){.hero{padding:104px 0 50px}}
@@ -419,7 +422,7 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
     <div class="laptop-wrap">
       <div class="laptop">
         <div class="laptop-screen">
-          <img fetchpriority="high" decoding="async" src="tela-modal-notebook.webp" alt="Dashboard do NR13 Sistema com lista de equipamentos cadastrados">
+          <img fetchpriority="high" decoding="async" width="1600" height="836" src="tela-modal-notebook.webp" alt="Dashboard do NR13 Sistema com lista de equipamentos cadastrados">
         </div>
         <div class="laptop-base"><div class="laptop-stand"></div></div>
       </div>
@@ -540,31 +543,31 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
     </div>
     <div class="docs-grid">
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/capa.webp" alt="Capa da documentação gerada pelo NR13 Sistema"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="540" height="757" src="IMAGENS-SOFTWARE/capa.webp" alt="Capa da documentação gerada pelo NR13 Sistema"></div>
         <figcaption>Capa</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/prontuario.webp" alt="Prontuário do equipamento gerado pelo sistema"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="532" height="755" src="IMAGENS-SOFTWARE/prontuario.webp" alt="Prontuário do equipamento gerado pelo sistema"></div>
         <figcaption>Prontuário</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/relatorio-ultrassom-1.png" alt="Relatório de ultrassom com medição de espessura — vaso de pressão vertical"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="502" height="712" src="IMAGENS-SOFTWARE/relatorio-ultrassom-1.webp" alt="Relatório de ultrassom com medição de espessura — vaso de pressão vertical"></div>
         <figcaption>Medição de espessura — 1</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/relatorio-ultrassom-2.png" alt="Relatório de ultrassom com medição de espessura — vaso de pressão horizontal"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="502" height="712" src="IMAGENS-SOFTWARE/relatorio-ultrassom-2.webp" alt="Relatório de ultrassom com medição de espessura — vaso de pressão horizontal"></div>
         <figcaption>Medição de espessura — 2</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/memorial-calculo.webp" alt="Memorial de cálculo — página 1"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="527" height="747" src="IMAGENS-SOFTWARE/memorial-calculo.webp" alt="Memorial de cálculo — página 1"></div>
         <figcaption>Memorial de cálculo — 1</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/memorial-calculo2.webp" alt="Memorial de cálculo — página 2"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="552" height="765" src="IMAGENS-SOFTWARE/memorial-calculo2.webp" alt="Memorial de cálculo — página 2"></div>
         <figcaption>Memorial de cálculo — 2</figcaption>
       </figure>
       <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/resumo-memorial-calculo.webp" alt="Resumo do memorial de cálculo"></div>
+        <div class="doc-sheet"><img loading="lazy" decoding="async" width="535" height="747" src="IMAGENS-SOFTWARE/resumo-memorial-calculo.webp" alt="Resumo do memorial de cálculo"></div>
         <figcaption>Resumo do memorial</figcaption>
       </figure>
     </div>
@@ -587,12 +590,12 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
     <div class="portal-grid">
       <figure class="portal-card">
         <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/portal1.webp" alt="Portal do Cliente com a lista de equipamentos sob inspeção NR13"></div>
+        <div class="zoomable"><img loading="lazy" decoding="async" width="1400" height="782" src="IMAGENS-SOFTWARE/portal1.webp" alt="Portal do Cliente com a lista de equipamentos sob inspeção NR13"></div>
         <figcaption>Portal do cliente — equipamentos</figcaption>
       </figure>
       <figure class="portal-card">
         <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img loading="lazy" decoding="async" src="IMAGENS-SOFTWARE/portal2.webp" alt="Portal do Cliente com documentação e histórico de um equipamento"></div>
+        <div class="zoomable"><img loading="lazy" decoding="async" width="1400" height="868" src="IMAGENS-SOFTWARE/portal2.webp" alt="Portal do Cliente com documentação e histórico de um equipamento"></div>
         <figcaption>Portal do cliente — documentação e histórico</figcaption>
       </figure>
     </div>
@@ -604,7 +607,7 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
   <div class="wrap mobile-split">
     <div class="phone-mockup">
       <div class="phone-screen">
-        <img loading="lazy" decoding="async" src="img/prints/celular-inspecao.webp" alt="Checklist de inspeção NR13 sendo preenchido no celular">
+        <img loading="lazy" decoding="async" width="402" height="877" src="img/prints/celular-inspecao.webp" alt="Checklist de inspeção NR13 sendo preenchido no celular">
       </div>
     </div>
     <div>
@@ -642,7 +645,7 @@ src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
 <section class="section expert" id="engenheiro">
   <div class="wrap expert-grid">
     <div class="expert-photo">
-      <img loading="lazy" decoding="async" src="gabriel-borges-eng-responsavel.webp" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
+      <img loading="lazy" decoding="async" width="700" height="700" src="gabriel-borges-eng-responsavel.webp" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
       <span class="expert-crea-tag">CREA-SP 5070146920</span>
     </div>
     <div>
