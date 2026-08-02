@@ -1,955 +1,946 @@
-﻿<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Software NR13: prontuários, relatórios e vencimentos | NR13 Sistema</title>
-<meta name="description" content="Sistema online para cadastrar vasos de pressão, caldeiras e autoclaves, automatizar relatórios e prontuários e nunca perder um vencimento. Peça uma demonstração.">
-<meta name="robots" content="index,follow">
-<link rel="preload" as="image" href="img/hero-industrial.webp" media="(min-width:601px)" fetchpriority="high">
-<link rel="preload" as="image" href="img/hero-industrial-mobile.webp" media="(max-width:600px)" fetchpriority="high">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
-<style>
-  :root{
-    --navy:#002548;
-    --navy-deep:#0d2035;
-    --navy-black:#0a1018;
-    --orange:#f0a028;
-    --orange-dark:#d98d15;
-    --ink:#1e2b3a;
-    --muted:#5a6b7e;
-    --line:#e3e8ee;
-    --bg-alt:#f5f6f8;
-    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    --mono:ui-monospace,"Cascadia Mono","Segoe UI Mono",Menlo,Consolas,monospace;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Engenharia Mecânica em Vitória ES | PREENCHER — nome fantasia, ex: Camargo Engenharia</title>
+<meta name="description" content="Engenharia mecânica em Vitória/ES: inspeção NR-13, adequação NR-12, PMOC, ensaios não destrutivos e combate a incêndio. Atendimento em toda a Grande Vitória. Fale no WhatsApp.">
+
+<link rel="canonical" href="https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="PREENCHER — nome fantasia, ex: Camargo Engenharia">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vitória, Espírito Santo">
+<meta name="geo.position" content="-20.3155;-40.3128">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PREENCHER — nome fantasia, ex: Camargo Engenharia">
+<meta property="og:title" content="Engenharia Mecânica em Vitória ES | PREENCHER — nome fantasia, ex: Camargo Engenharia">
+<meta property="og:description" content="Inspeção NR-13, adequação NR-12, PMOC, ensaios não destrutivos e combate a incêndio na Grande Vitória. Laudos com ART e prontuário completo.">
+<meta property="og:url" content="https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/">
+<meta property="og:image" content="https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0a1f33">
+
+<link rel="preload" as="image" href="img/hero-home.webp" fetchpriority="high">
+<link rel="stylesheet" href="css/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness"],
+  "@id": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/#empresa",
+  "name": "PREENCHER — nome fantasia, ex: Camargo Engenharia",
+  "legalName": "PREENCHER — razão social completa",
+  "description": "Engenharia mecânica em Vitória/ES e Grande Vitória: inspeção de caldeiras e vasos de pressão (NR-13), adequação de máquinas (NR-12), PMOC de climatização, ensaios não destrutivos e sistemas de combate a incêndio.",
+  "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/",
+  "image": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/img/og-image.jpg",
+  "logo": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/icon-512.png",
+  "telephone": "PREENCHER — +5527999999999",
+  "email": "PREENCHER — contato@exemplo.com.br",
+  "vatID": "PREENCHER — 00.000.000/0001-00",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "PREENCHER — Av. Exemplo, 100, sala 200",
+    "addressLocality": "PREENCHER — Vitória / Vila Velha / Serra ...",
+    "addressRegion": "ES",
+    "postalCode": "PREENCHER — 29000-000",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -20.3155, "longitude": -40.3128 },
+  "areaServed": [
+    "Vitória", "Vila Velha", "Serra", "Cariacica", "Viana", "Guarapari", "Fundão",
+    "Anchieta", "Aracruz", "Linhares", "Grande Vitória", "Espírito Santo"
+  ],
+  "sameAs": ["https://www.instagram.com/PREENCHER", "https://www.linkedin.com/company/PREENCHER"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00", "closes": "18:00"
+  }],
+  "priceRange": "$$",
+  "knowsAbout": [
+    "NR-13", "NR-12", "PMOC", "Ensaios não destrutivos", "NBR 12779",
+    "ASME Seção VIII", "Inspeção de caldeiras", "Vasos de pressão", "SPIE"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços de engenharia mecânica",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Inspeção NR-13 de caldeiras e vasos de pressão", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/inspecao-nr13-vitoria-es.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Adequação de máquinas à NR-12", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/adequacao-nr12-vitoria-es.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PMOC de sistemas de climatização", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/pmoc-vitoria-es.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ensaios não destrutivos", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/ensaios-nao-destrutivos-vitoria-es.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas de combate a incêndio", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/combate-a-incendio-vitoria-es.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema NR13 — gestão e integridade de equipamentos sob pressão", "url": "https://PREENCHER — ex: www.exemplo.com.br (sem https://, sem barra no fim)/sistema-nr13.html" } }
+    ]
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  html,body{overflow-x:hidden;max-width:100%}
-  body{font-family:var(--sans);color:var(--ink);line-height:1.6;background:#fff}
-  img{max-width:100%;height:auto;display:block}
-  a{color:inherit}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-  .wrap-wide{max-width:1360px;margin:0 auto;padding:0 24px}
-
-  .eyebrow{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--orange)}
-  h1,h2,h3{line-height:1.15;color:var(--navy)}
-  h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:14px}
-  .section{padding:80px 0}
-  .section.alt{background:var(--bg-alt)}
-  .section-head{max-width:720px;margin-bottom:48px}
-  .section-head p{color:var(--muted);font-size:17px}
-  .section-head .eyebrow{display:block;margin-bottom:14px}
-
-  .btn{display:inline-block;padding:16px 32px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;transition:background .15s,transform .15s}
-  .btn-orange{background:var(--orange);color:#161616}
-  .btn-orange:hover{background:var(--orange-dark)}
-  .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
-  .btn-ghost:hover{border-color:#fff}
-
-  /* ===== Header ===== */
-  header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--navy);box-shadow:0 2px 14px rgba(0,0,0,.25)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
-  .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-  .logo-mark{width:34px;height:34px;background:linear-gradient(135deg,var(--orange),#c77e10);clip-path:polygon(50% 0,100% 28%,100% 72%,50% 100%,0 72%,0 28%)}
-  .logo-text{color:#fff;font-weight:800;font-size:18px;letter-spacing:.04em}
-  .logo-text small{display:block;font-family:var(--mono);font-size:8.5px;font-weight:400;letter-spacing:.28em;color:#9fb2c5;text-transform:uppercase}
-  .nav-links{display:flex;gap:28px;list-style:none}
-  .nav-links a{color:#d7e0ea;text-decoration:none;font-size:13.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-  .nav-links a:hover{color:#fff}
-  .nav-right{display:flex;align-items:center;gap:12px}
-  .nav-cta{padding:11px 20px;font-size:12.5px;white-space:nowrap}
-  .nav-cta .cta-short{display:none}
-  .nav-toggle{display:none;background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:4px 2px}
-  .mobile-menu{display:none;background:var(--navy);border-top:1px solid rgba(255,255,255,.08)}
-  .mobile-menu a{display:block;padding:15px 24px;color:#d7e0ea;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.06)}
-  .mobile-menu a:active{color:#fff;background:rgba(255,255,255,.04)}
-  @media(max-width:900px){
-    .nav-links{display:none}
-    .nav-toggle{display:block}
-    .mobile-menu.open{display:block}
-  }
-  @media(max-width:480px){
-    .nav{height:64px}
-    .logo-mark{width:28px;height:28px}
-    .logo-text{font-size:14px}
-    .logo-text small{display:none}
-    .nav-cta{padding:9px 13px;font-size:10px;letter-spacing:.03em}
-    .nav-cta .cta-full{display:none}
-    .nav-cta .cta-short{display:inline}
-  }
-
-  /* ===== Hero ===== */
-  /* banner: foto Pexels 31257317 (img/hero-industrial.webp) sob overlay navy */
-  .hero{position:relative;z-index:1;background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial.webp") center/cover no-repeat;color:#fff;padding:150px 0 90px}
-  @media(max-width:600px){.hero{background:linear-gradient(100deg,rgba(0,29,58,.97) 0%,rgba(0,37,72,.88) 55%,rgba(0,37,72,.72) 100%),url("img/hero-industrial-mobile.webp") center/cover no-repeat}}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  @media(max-width:900px){.hero{padding:120px 0 60px}.hero-grid{grid-template-columns:1fr;gap:40px}}
-  @media(max-width:480px){.hero{padding:104px 0 50px}}
-  .hero .eyebrow{display:block;margin-bottom:18px}
-  .hero h1{color:#fff;font-size:clamp(30px,4vw,46px);margin-bottom:18px}
-  .hero h1 em{font-style:normal;color:var(--orange)}
-  .hero-sub{color:#c3d1de;font-size:18px;max-width:540px;margin-bottom:30px}
-  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:26px}
-  .hero-note{font-family:var(--mono);font-size:12px;color:#8fa3b6;letter-spacing:.06em}
-
-  /* ===== Vídeo em destaque (seção própria) ===== */
-  .video-section{background:var(--navy-deep);padding-top:210px}
-  @media(max-width:900px){.video-section{padding-top:80px}}
-  .video-section .section-head{margin-left:auto;margin-right:auto;text-align:center;max-width:640px}
-  .video-section .section-head h2{color:#fff}
-  .video-section .section-head p{color:#aebccb}
-  .video-frame{max-width:920px;margin:0 auto}
-  .video-frame video{display:block;width:100%;aspect-ratio:16/9;background:#0b1c2e;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 60px rgba(0,0,0,.4)}
-
-  /* ===== Prova social (depoimentos em vídeo) ===== */
-  .social-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:980px;margin:0 auto;align-items:stretch}
-  @media(max-width:760px){.social-grid{grid-template-columns:1fr}}
-  .social-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--orange);box-shadow:0 18px 46px rgba(2,20,40,.1);display:flex;flex-direction:column}
-  .social-card video{display:block;width:100%;height:440px;object-fit:contain;background:#0b1c2e}
-  @media(max-width:480px){.social-card video{height:360px}}
-  .social-card figcaption{padding:14px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-
-  /* ===== Expert / engenheiro responsável ===== */
-  /* fundo: azul petróleo escuro + foto Pexels 7937300 bem sutil (img/expert-bg.webp) */
-  .expert{position:relative;background:linear-gradient(105deg,rgba(5,32,40,.97) 0%,rgba(6,38,47,.94) 50%,rgba(5,32,40,.9) 100%),url("img/expert-bg.webp") center/cover no-repeat;color:#fff;padding:72px 0;border-top:3px solid var(--orange)}
-  .expert-grid{display:grid;grid-template-columns:290px 1fr;gap:56px;align-items:center}
-  @media(max-width:900px){.expert-grid{grid-template-columns:1fr;gap:36px}}
-  .expert-photo{position:relative;z-index:0;max-width:290px}
-  .expert-photo img{width:100%;display:block;border-radius:6px;box-shadow:0 30px 70px rgba(0,0,0,.55)}
-  .expert-photo::after{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--orange);border-radius:6px;z-index:-1;opacity:.85}
-  .expert-photo .expert-crea-tag{position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);white-space:nowrap;background:var(--orange);color:#161616;font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.12em;padding:8px 16px;border-radius:3px;box-shadow:0 10px 24px rgba(0,0,0,.4)}
-  .expert h2{color:#fff}
-  .expert .section-head{margin-bottom:20px;max-width:none}
-  .expert .section-head p{color:#a9c0c9}
-  .expert-name{font-size:24px;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:.01em}
-  .expert-role{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
-  .expert-bio{color:#a9c0c9;font-size:15.5px;max-width:580px;margin-bottom:28px;border-left:3px solid rgba(240,160,40,.5);padding-left:18px}
-  .expert-creds{display:flex;flex-wrap:wrap;gap:12px}
-  .expert-cred{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);padding:12px 18px;border-radius:4px;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;color:#dbe7ec;backdrop-filter:blur(2px)}
-  .expert-cred i{color:var(--orange);font-size:16px}
-
-  /* ===== Solução (painel dentro da seção de dores) ===== */
-  .solution-panel{margin-top:56px;background:var(--navy);color:#fff;padding:52px 48px}
-  @media(max-width:560px){.solution-panel{padding:34px 24px}}
-  .solution-panel .eyebrow{display:block;margin-bottom:14px}
-  .solution-panel h2{color:#fff}
-  .solution-panel>p{color:#b7c6d4;font-size:16.5px;max-width:640px;margin-bottom:28px}
-  .solution-panel .check-list{grid-template-columns:1fr 1fr;gap:14px 32px}
-  @media(max-width:760px){.solution-panel .check-list{grid-template-columns:1fr}}
-  .solution-panel .check-list li{color:#e7edf3}
-
-  /* ===== Mockup notebook (hero) ===== */
-  .laptop-wrap{position:relative;z-index:5;max-width:860px;margin:0 -60px -170px auto;perspective:2200px}
-  @media(max-width:900px){.laptop-wrap{margin:0 auto -60px;max-width:520px}}
-  .laptop{transform:rotateY(-24deg) rotateX(4deg) rotateZ(1deg);transform-style:preserve-3d;transition:transform .5s ease}
-  @media(max-width:900px){.laptop{transform:rotateY(-14deg) rotateX(3deg)}}
-  .laptop-screen{background:#0a1018;border:10px solid #0a1018;border-bottom:0;border-radius:14px 14px 2px 2px;overflow:hidden;box-shadow:40px 50px 90px rgba(0,0,0,.55)}
-  .laptop-screen img{width:100%;display:block}
-  .laptop-base{height:16px;background:linear-gradient(180deg,#22303f,#0a1018);border-radius:0 0 4px 4px;position:relative}
-  .laptop-stand{width:118%;margin-left:-9%;height:12px;background:linear-gradient(180deg,#1a2531,#060a10);border-radius:0 0 12px 12px;box-shadow:0 8px 18px rgba(0,0,0,.45)}
-  .laptop-stand::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:64px;height:5px;background:#324458;border-radius:0 0 5px 5px}
-
-  /* ===== Mockup celular ===== */
-  .phone-mockup{width:100%;max-width:270px;margin:0 auto;background:#0a1018;border-radius:36px;padding:14px 12px;box-shadow:0 30px 70px rgba(0,0,0,.45);position:relative}
-  .phone-mockup::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:76px;height:20px;background:#0a1018;border-radius:0 0 14px 14px;z-index:2}
-  .phone-screen{border-radius:24px;overflow:hidden;background:#fff;max-height:520px;overflow-y:hidden}
-  .phone-screen img{width:100%;display:block}
-
-  /* ===== Mobile / offline section ===== */
-  .mobile-split{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-  @media(max-width:900px){.mobile-split{grid-template-columns:1fr}.mobile-split .phone-mockup{order:-1}}
-  .mobile-badges{display:grid;gap:14px;margin-top:26px}
-  .mobile-badge{display:flex;gap:14px;align-items:flex-start}
-  .mobile-badge .bico{flex:none;width:40px;height:40px;border-radius:8px;background:var(--navy);color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:18px}
-  .mobile-badge h3{font-size:15.5px;margin-bottom:3px}
-  .mobile-badge p{color:var(--muted);font-size:14px}
-
-  /* ===== Dores ===== */
-  .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-  @media(max-width:1000px){.cards-4{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.cards-4{grid-template-columns:1fr}}
-  .pain{background:#fff;border:1px solid var(--line);border-top:3px solid var(--orange);padding:28px 24px}
-  .pain h3{position:relative;display:inline-block;font-size:17px;margin-bottom:8px;z-index:1}
-  .pain h3::before{content:"";position:absolute;inset:-4px -8px;background:rgba(240,160,40,.16);transform:scaleX(0);transform-origin:left;z-index:-1}
-  .cards-4.in-view .pain:nth-child(1) h3::before{animation:sweepIn .9s ease forwards}
-  .cards-4.in-view .pain:nth-child(2) h3::before{animation:sweepIn .9s ease forwards;animation-delay:.9s}
-  .cards-4.in-view .pain:nth-child(3) h3::before{animation:sweepIn .9s ease forwards;animation-delay:1.8s}
-  .cards-4.in-view .pain:nth-child(4) h3::before{animation:sweepIn .9s ease forwards;animation-delay:2.7s}
-  @keyframes sweepIn{
-    0%{transform:scaleX(0);transform-origin:left}
-    45%{transform:scaleX(1);transform-origin:left}
-    55%{transform:scaleX(1);transform-origin:right}
-    100%{transform:scaleX(0);transform-origin:right}
-  }
-  .pain p{color:var(--muted);font-size:14.5px}
-  .pain .num{font-family:var(--mono);font-size:12px;color:var(--orange);letter-spacing:.2em;display:block;margin-bottom:12px}
-
-  /* ===== Solução ===== */
-  .check-list{list-style:none;display:grid;gap:12px}
-  .check-list li{padding-left:30px;position:relative;color:var(--ink);font-size:15.5px}
-  .check-list li::before{content:"";position:absolute;left:0;top:7px;width:14px;height:8px;border-left:3px solid var(--orange);border-bottom:3px solid var(--orange);transform:rotate(-45deg)}
-
-  /* placeholder de print */
-  .print-ph{background:#fff;border:1px solid var(--line);box-shadow:0 18px 46px rgba(2,20,40,.12)}
-  .print-ph .bar{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid var(--line);background:#f2f4f7}
-  .print-ph .bar i{width:10px;height:10px;border-radius:50%;background:#d4dae2}
-  .print-ph .body{aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:repeating-linear-gradient(45deg,#f7f9fb,#f7f9fb 14px,#f1f4f8 14px,#f1f4f8 28px)}
-  .print-ph .body span{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:#9aa8b8;text-transform:uppercase;text-align:center;padding:0 16px}
-  .print-ph .body .ico{width:46px;height:46px;border:2px dashed #c3cdd8;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#c3cdd8;font-size:22px}
-
-  /* print real (screenshot dentro de moldura de navegador) */
-  .print-real{position:relative;height:100%;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);box-shadow:0 18px 46px rgba(2,20,40,.12);transition:box-shadow .3s ease}
-  .print-real:hover{box-shadow:0 30px 66px rgba(2,20,40,.24)}
-  .print-real .bar{flex:none;display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid var(--line);background:#f2f4f7}
-  .print-real .bar i{width:10px;height:10px;border-radius:50%;background:#d4dae2}
-  .print-real .shot{flex:1;position:relative;overflow:hidden;background:#f7f9fb;cursor:zoom-in}
-  .print-real .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-  .print-real .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 14px 9px;background:linear-gradient(0deg,rgba(0,20,40,.85),rgba(0,20,40,0));color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;z-index:2}
-
-  /* lightbox: amplia print apenas no clique */
-  .lightbox{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(4,12,24,.82);cursor:zoom-out}
-  .lightbox.open{display:flex}
-  .lightbox img{max-width:min(92vw,1000px);max-height:88vh;width:auto;height:auto;box-shadow:0 30px 80px rgba(0,0,0,.55);border-radius:6px;background:#fff}
-  figure.print-fig{margin:0}
-
-  /* ===== Funcionalidades ===== */
-  .feat{background:#fff;border:1px solid var(--line);padding:30px 26px;transition:box-shadow .15s,transform .15s}
-  .feat:hover{box-shadow:0 14px 34px rgba(2,20,40,.1);transform:translateY(-2px)}
-  .feat .ico{width:46px;height:46px;background:var(--navy);color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:18px}
-  .feat h3{font-size:16.5px;margin-bottom:8px}
-  .feat p{color:var(--muted);font-size:14px}
-
-  /* ===== Prints (bento masonry) ===== */
-  .prints-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:300px 220px;gap:22px}
-  .prints-grid .b1{grid-column:1/6;grid-row:1/2}
-  .prints-grid .b2{grid-column:6/11;grid-row:1/2}
-  .prints-grid .b3{grid-column:11/13;grid-row:1/3}
-  .prints-grid .b4{grid-column:1/5;grid-row:2/3}
-  .prints-grid .b5{grid-column:5/9;grid-row:2/3}
-  .prints-grid .b6{grid-column:9/11;grid-row:2/3}
-  @media(max-width:900px){
-    .prints-grid{grid-template-columns:1fr;grid-template-rows:none}
-    .prints-grid .print-fig{grid-column:auto;grid-row:auto;height:240px}
-    .prints-grid .print-fig .print-real{height:100%}
-  }
-
-  /* ===== Documentação gerada (folhas) ===== */
-  .docs-head{display:grid;grid-template-columns:1fr 460px;gap:40px;align-items:start;margin-bottom:48px}
-  @media(max-width:900px){.docs-head{grid-template-columns:1fr;gap:24px}}
-  .docs-head .section-head{margin-bottom:0}
-  .docs-note{background:#fdf8ee;border:1px solid #ecdfc3;border-left:4px solid var(--orange);padding:24px 26px;box-shadow:0 12px 30px rgba(2,20,40,.08)}
-  .docs-note h3{display:flex;align-items:center;gap:10px;font-size:15.5px;margin-bottom:8px}
-  .docs-note h3 i{color:var(--orange);font-size:19px}
-  .docs-note p{color:#5f5a4c;font-size:14px}
-
-  /* ===== Portal do cliente ===== */
-  .portal-section{background:#faf5ea}
-  .portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  @media(max-width:900px){.portal-grid{grid-template-columns:1fr}}
-  .portal-card{background:#fff;border:1px solid var(--line);box-shadow:0 18px 46px rgba(2,20,40,.12);display:flex;flex-direction:column;margin:0}
-  .portal-card .bar{display:flex;gap:6px;padding:11px 14px;border-bottom:1px solid var(--line);background:#f2f4f7}
-  .portal-card .bar i{width:10px;height:10px;border-radius:50%;background:#d4dae2}
-  .portal-card .zoomable{cursor:zoom-in}
-  .portal-card .zoomable img{width:100%;display:block}
-  .portal-card figcaption{padding:12px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
-  .portal-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:44px}
-  @media(max-width:900px){.portal-points{grid-template-columns:1fr}}
-
-  .docs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
-  @media(max-width:1000px){.docs-grid{grid-template-columns:repeat(3,1fr)}}
-  @media(max-width:560px){.docs-grid{grid-template-columns:repeat(2,1fr)}}
-  .doc-fig{margin:0}
-  .doc-sheet{position:relative;background:#fff;border:1px solid var(--line);box-shadow:0 12px 28px rgba(2,20,40,.12);cursor:zoom-in;transition:box-shadow .2s ease}
-  .doc-sheet:hover{box-shadow:0 18px 40px rgba(2,20,40,.22)}
-  .doc-sheet img{width:100%;display:block}
-  .doc-fig figcaption{padding:10px 2px 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center}
-
-  /* ===== Como funciona ===== */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
-  @media(max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.steps{grid-template-columns:1fr}}
-  .step{background:var(--navy);color:#fff;padding:30px 24px;counter-increment:step;position:relative}
-  .step::before{content:"0" counter(step);font-family:var(--mono);font-size:13px;color:var(--orange);letter-spacing:.2em;display:block;margin-bottom:14px}
-  .step h3{color:#fff;font-size:16.5px;margin-bottom:8px}
-  .step p{color:#b7c6d4;font-size:14px}
-
-  /* ===== Preço ===== */
-  .price-card{max-width:520px;margin:0 auto;background:#fff;border:1px solid var(--line);border-top:4px solid var(--orange);padding:46px 42px;text-align:center;box-shadow:0 20px 50px rgba(2,20,40,.1)}
-  @media(max-width:560px){.price-card{padding:34px 24px}}
-  .price-card .eyebrow{display:block;margin-bottom:16px}
-  .price-value{font-size:clamp(38px,11vw,54px);font-weight:800;color:var(--navy);line-height:1}
-  .price-value small{font-size:18px;font-weight:600;color:var(--muted)}
-  .price-card ul{list-style:none;margin:30px 0;display:grid;gap:11px;text-align:left}
-  .price-card ul li{padding-left:28px;position:relative;font-size:15px}
-  .price-card ul li::before{content:"";position:absolute;left:0;top:7px;width:13px;height:7px;border-left:3px solid var(--orange);border-bottom:3px solid var(--orange);transform:rotate(-45deg)}
-  .price-note{font-size:13px;color:var(--muted);margin-top:14px}
-
-  /* ===== FAQ ===== */
-  .faq{max-width:780px;margin:0 auto}
-  .faq details{background:#fff;border:1px solid var(--line);margin-bottom:10px}
-  .faq summary{cursor:pointer;padding:20px 24px;font-weight:700;color:var(--navy);font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
-  .faq summary::-webkit-details-marker{display:none}
-  .faq summary::after{content:"+";font-family:var(--mono);font-size:20px;color:var(--orange);flex-shrink:0}
-  .faq details[open] summary::after{content:"−"}
-  .faq .ans{padding:0 24px 20px;color:var(--muted);font-size:14.5px}
-
-  /* ===== Formulário ===== */
-  .form-section{background:var(--bg-alt)}
-  .form-box{max-width:620px;margin:0 auto;background:#fff;border:1px solid var(--line);border-top:4px solid var(--orange);padding:46px 44px;box-shadow:0 20px 50px rgba(2,20,40,.1)}
-  @media(max-width:560px){.form-box{padding:32px 22px}}
-  .form-box .section-head{margin-bottom:30px;text-align:center;max-width:none}
-  .field{margin-bottom:18px}
-  .field label{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
-  .field input,.field select{width:100%;padding:14px 16px;border:1px solid #c9d3dd;font-size:15.5px;font-family:var(--sans);background:#fff;color:var(--ink)}
-  .field input:focus,.field select:focus{outline:2px solid var(--orange);outline-offset:-1px;border-color:var(--orange)}
-  .form-box .btn{width:100%;padding:18px;font-size:15px}
-  .form-privacy{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
-  .form-status{display:none;text-align:center;font-size:14px;margin-top:14px;font-weight:600}
-
-  /* ===== Faixa CTA final ===== */
-  .cta-band{background:var(--navy-deep);color:#fff;padding:96px 0}
-  .cta-band .eyebrow{display:block;margin-bottom:22px}
-  .cta-band h2{color:#fff;font-size:clamp(26px,3.6vw,42px);margin-bottom:6px}
-  .cta-band h2 .l2{color:var(--orange);display:block}
-  .cta-band p{color:#aebccb;font-size:17px;max-width:520px;margin:18px 0 34px}
-  .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
-
-  /* ===== Rodapé ===== */
-  footer{background:var(--navy-black);color:#93a3b3;padding:72px 0 0}
-  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:56px}
-  @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
-  @media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
-  .foot-brand h3{color:#fff;font-size:17px;letter-spacing:.06em;margin-bottom:14px}
-  .foot-brand p{font-family:var(--mono);font-size:12.5px;line-height:1.7}
-  .foot-brand .cnpj{margin-top:16px;color:#5f7182}
-  .foot-col h4{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-bottom:20px}
-  .foot-col ul{list-style:none;display:grid;gap:12px}
-  .foot-col a{color:#aebccb;text-decoration:none;font-size:14px}
-  .foot-col a:hover{color:#fff}
-  .foot-col p{font-size:14px;line-height:1.8}
-  .socials{display:flex;gap:10px;margin-top:22px}
-  .socials a{width:36px;height:36px;border:1px solid #2a3a4a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10.5px;color:#aebccb;text-decoration:none}
-  .socials a:hover{border-color:var(--orange);color:var(--orange)}
-  .foot-bar{border-top:1px solid #1c2836;padding:22px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12.5px}
-  .foot-bar .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--orange)}
-
-  /* ===== Ajustes mobile ===== */
-  @media(max-width:560px){
-    .section{padding:56px 0}
-    .section-head{margin-bottom:32px}
-    .wrap,.wrap-wide{padding:0 18px}
-    .hero-ctas .btn{width:100%;text-align:center}
-    .cta-row .btn{width:100%;text-align:center;box-sizing:border-box}
-    .cta-band{padding:64px 0}
-    .expert{padding:48px 0}
-    .expert-photo{margin:0 auto}
-    .expert-photo::after{inset:10px -10px -10px 10px}
-    .expert-grid{text-align:left}
-    .solution-panel{margin-top:36px}
-    .video-section{padding-bottom:56px}
-    .docs-note{padding:20px 18px}
-    .social-card figcaption,.portal-card figcaption{padding:12px 14px}
-    .price-card .btn{box-sizing:border-box;font-size:13px;padding:16px 14px;letter-spacing:.05em}
-    .form-box .btn{font-size:12px;padding:16px 10px;letter-spacing:.03em}
-  }
-</style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1624371105202459');
-fbq('track', 'PageView');
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1624371105202459&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto custa uma inspeção NR-13 em Vitória ES?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O valor depende do tipo de equipamento, do volume, da categoria e do tipo de inspeção (inicial, periódica interna, externa ou extraordinária). Uma caldeira flamotubular de pequeno porte tem custo bem diferente de um vaso de pressão categoria I com teste hidrostático. O orçamento é fechado após identificar o equipamento pela placa e pelo prontuário. Envie a foto da placa pelo WhatsApp que devolvemos o valor no mesmo dia." }
+    },
+    {
+      "@type": "Question",
+      "name": "De quanto em quanto tempo a NR-13 exige nova inspeção?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Para caldeiras, a inspeção externa é anual e a interna varia de 12 meses a 6 anos conforme a categoria e a existência de SPIE. Para vasos de pressão, o intervalo vai de 1 a 10 anos conforme categoria e classe do fluido. Tubulações e tanques metálicos seguem os anexos específicos. O prazo real do seu equipamento fica registrado no prontuário e no registro de segurança." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês atendem em toda a Grande Vitória?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. Atendemos presencialmente Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari e Fundão, incluindo os polos industriais de CIVIT, TIMS, Jardim Limoeiro, Campo Grande e Barra do Riacho. Também atendemos Anchieta, Aracruz e Linhares com deslocamento programado. Consulte a seção de cidades e bairros atendidos no fim desta página." }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é PMOC e quem é obrigado a ter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "PMOC é o Plano de Manutenção, Operação e Controle exigido pela Lei 13.589/2018 e pela Portaria GM/MS 3.523/1998 para todo edifício de uso público ou coletivo com climatização artificial. Ele é obrigatório para shoppings, hospitais, clínicas, escolas, hotéis, órgãos públicos, escritórios e indústrias com ambientes climatizados, e precisa de responsável técnico habilitado com ART." }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre NR-12 e NR-13?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A NR-13 trata de caldeiras, vasos de pressão, tubulações e tanques metálicos — equipamentos que operam sob pressão e podem explodir. A NR-12 trata da segurança em máquinas e equipamentos em geral: proteções fixas e móveis, intertravamento, parada de emergência, categoria de segurança e apreciação de riscos. Uma indústria costuma precisar das duas." }
+    },
+    {
+      "@type": "Question",
+      "name": "O laudo emitido tem ART e é aceito em fiscalização?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. Todo laudo, relatório de inspeção e prontuário é assinado por engenheiro habilitado com Anotação de Responsabilidade Técnica registrada no CREA-ES. É esse conjunto — relatório, ART e registro de segurança atualizado — que a auditoria fiscal do trabalho, a seguradora e o cliente contratante pedem em fiscalização." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo demora para receber o laudo depois da inspeção?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O prazo padrão é de 5 a 10 dias úteis após o encerramento dos trabalhos em campo, contando ensaios de laboratório quando aplicável. Em parada de manutenção ou situação de fiscalização em curso, emitimos declaração de conformidade em até 48 horas e o relatório completo na sequência." }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso parar a produção para fazer a inspeção?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende do escopo. Inspeção externa, ensaios não destrutivos por ultrassom e verificação de dispositivos de segurança são feitos com o equipamento em operação ou em parada curta. Inspeção interna, teste hidrostático e adequação de máquinas exigem parada. Planejamos o cronograma junto com a manutenção para concentrar tudo em uma única janela." }
+    }
+  ]
+}
+</script>
 </head>
+
 <body>
 
-<!-- ============ HEADER ============ -->
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="#topo">
-      <span class="logo-mark"></span>
-      <span class="logo-text">NR13 SISTEMA<small>gestão de inspeções</small></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#funcionalidades">Funcionalidades</a></li>
-      <li><a href="#sistema">O sistema</a></li>
-      <li><a href="#depoimentos">Depoimentos</a></li>
-      <li><a href="#preco">Preço</a></li>
-      <li><a href="#faq">Dúvidas</a></li>
-    </ul>
-    <div class="nav-right">
-      <a class="btn btn-orange nav-cta" href="#demonstracao"><span class="cta-full">Solicitar demonstração</span><span class="cta-short">Demonstração</span></a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+<header class="site-header">
+  <div class="header-top">
+    <div class="wrap">
+      <span class="ht-left">CREA-ES PREENCHER — nº de registro da pessoa jurídica no CREA-ES · Engenharia mecânica e segurança de equipamentos</span>
+      <span class="ht-right">
+        <a href="tel:PREENCHER — +5527999999999">PREENCHER — (27) 99999-9999</a>
+        <a href="mailto:PREENCHER — contato@exemplo.com.br">PREENCHER — contato@exemplo.com.br</a>
+      </span>
     </div>
   </div>
-  <nav class="mobile-menu" id="mobile-menu">
-    <a href="#funcionalidades">Funcionalidades</a>
-    <a href="#sistema">O sistema</a>
-    <a href="#documentacao">Documentação</a>
-    <a href="#depoimentos">Depoimentos</a>
-    <a href="#preco">Preço</a>
-    <a href="#faq">Dúvidas</a>
-  </nav>
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html">
+      <img src="icon-192.png" alt="PREENCHER — nome fantasia, ex: Camargo Engenharia — engenharia mecânica em Vitória ES" width="40" height="40">
+      <span class="brand-txt">
+        <span class="brand-name">PREENCHER — nome fantasia, ex: Camargo Engenharia</span>
+        <span class="brand-tag">Engenharia Mecânica</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="sistema-nr13.html">Sistema NR13</a>
+      <a href="#atendimento">Onde atendemos</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-primary" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento%20de%20engenharia%20mec%C3%A2nica." rel="noopener">Pedir orçamento</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
 </header>
 
-<!-- ============ HERO / BANNER ============ -->
-<section class="hero" id="topo">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">// software de gestão nr13</span>
-      <h1>Software NR13 para automatizar <em>relatórios, prontuários</em> e controle de inspeções</h1>
-      <p class="hero-sub">Organize vasos de pressão, caldeiras e autoclaves em um sistema online com controle de vencimentos, documentos e histórico técnico — sem planilhas.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-orange" href="#demonstracao">Solicitar demonstração →</a>
-        <a class="btn btn-ghost" href="#funcionalidades">Ver funcionalidades</a>
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="img/hero-home.webp" alt="Planta industrial em operação ao entardecer, com torres de processo e tubulações iluminadas" width="1920" height="1000" fetchpriority="high">
+  </div>
+  <div class="wrap hero-wrap">
+    <div class="hero-inner">
+      <span class="geo-badge"><span id="geoPrefixo">Atendemos em</span>&nbsp;<span id="geoCidade">toda a Grande Vitória</span></span>
+      <span class="eyebrow">Engenharia mecânica · Espírito Santo</span>
+      <h1>Engenharia mecânica em Vitória/ES — <em><span class="nb">NR-13</span>, <span class="nb">NR-12</span>, PMOC e ensaios não destrutivos</em></h1>
+      <p class="hero-sub">
+        Inspeção de caldeiras e vasos de pressão, adequação de máquinas, plano de manutenção
+        de climatização e sistemas de combate a incêndio. Laudo com ART, prontuário completo
+        e equipamento liberado para operar dentro da norma — em toda a Grande Vitória.
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">NR-13</span>
+        <span class="hero-badge">NR-12</span>
+        <span class="hero-badge">PMOC</span>
+        <span class="hero-badge">END</span>
+        <span class="hero-badge">Combate a incêndio</span>
       </div>
-      <p class="hero-note">DEMONSTRAÇÃO GRATUITA · SEM CARTÃO · R$ 197/MÊS</p>
-    </div>
-    <div class="laptop-wrap">
-      <div class="laptop">
-        <div class="laptop-screen">
-          <img fetchpriority="high" decoding="async" width="1600" height="836" src="tela-modal-notebook.webp" alt="Dashboard do NR13 Sistema com lista de equipamentos cadastrados">
-        </div>
-        <div class="laptop-base"><div class="laptop-stand"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VÍDEO EM DESTAQUE ============ -->
-<section class="section video-section">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">// veja funcionando</span>
-      <h2>Assista à demonstração do sistema</h2>
-      <p>Dois minutos para entender como o NR13 Sistema organiza equipamentos, vencimentos e documentos.</p>
-    </div>
-    <div class="video-frame">
-      <video controls preload="none" playsinline poster="img/poster-video-principal.webp" src="video-principal.mp4">
-        Seu navegador não suporta vídeo HTML5.
-      </video>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DORES ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">// o problema</span>
-      <h2>Sua gestão NR13 ainda depende de planilhas?</h2>
-      <p>Quem gerencia inspeções em planilha e pasta de arquivos convive todo mês com os mesmos riscos:</p>
-    </div>
-    <div class="cards-4 pains-grid">
-      <div class="pain"><span class="num">01</span><h3>Vencimentos esquecidos</h3><p>Inspeção periódica vence sem ninguém perceber — e o cliente descobre na fiscalização.</p></div>
-      <div class="pain"><span class="num">02</span><h3>Prontuários incompletos</h3><p>Documentos espalhados em e-mail, pen drive e papel. Na hora da auditoria, falta sempre algum.</p></div>
-      <div class="pain"><span class="num">03</span><h3>Relatórios manuais</h3><p>Horas montando relatório no Word para cada equipamento, um por um, a cada inspeção.</p></div>
-      <div class="pain"><span class="num">04</span><h3>Sem histórico técnico</h3><p>Impossível responder rápido: quando foi a última inspeção? Quem fez? O que foi apontado?</p></div>
-    </div>
-    <div class="solution-panel">
-      <span class="eyebrow">// a solução</span>
-      <h2>Tudo da NR13 em um só painel</h2>
-      <p>O NR13 Sistema centraliza equipamentos, clientes, documentos e prazos em um único lugar, acessível de qualquer navegador.</p>
-      <ul class="check-list">
-        <li>Cadastro completo de vasos de pressão, caldeiras e autoclaves</li>
-        <li>Alertas automáticos antes de cada vencimento</li>
-        <li>Relatórios e prontuários gerados pelo sistema</li>
-        <li>Histórico técnico de cada equipamento, para sempre</li>
-        <li>Acesso online — nada para instalar</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FUNCIONALIDADES ============ -->
-<section class="section" id="funcionalidades">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">// funcionalidades</span>
-      <h2>O que o sistema faz por você</h2>
-      <p>Cada função foi pensada para quem presta serviço de inspeção ou gerencia equipamentos próprios sob a NR13.</p>
-    </div>
-    <div class="cards-4">
-      <div class="feat"><div class="ico"><i class="bi bi-database-fill-gear"></i></div><h3>Cadastro de equipamentos</h3><p>Vasos de pressão, caldeiras e autoclaves com dados técnicos, categoria e localização.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-calendar2-check-fill"></i></div><h3>Vencimentos com alertas</h3><p>O sistema calcula prazos por categoria e avisa antes de vencer. Nunca mais perca uma data.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-file-earmark-bar-graph-fill"></i></div><h3>Relatórios automáticos</h3><p>Relatórios de inspeção padronizados gerados em minutos, prontos para entregar.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-folder-fill"></i></div><h3>Prontuários organizados</h3><p>Prontuário digital de cada equipamento com todos os documentos anexados.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-people-fill"></i></div><h3>Gestão de clientes</h3><p>Empresas atendidas, contatos e equipamentos de cada cliente em um só cadastro.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-speedometer2"></i></div><h3>Dashboard geral</h3><p>Visão de tudo: equipamentos, próximos vencimentos e pendências em uma tela.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-clock-history"></i></div><h3>Histórico técnico</h3><p>Linha do tempo de inspeções, laudos e manutenções de cada equipamento.</p></div>
-      <div class="feat"><div class="ico"><i class="bi bi-person-badge-fill"></i></div><h3>Acesso por cliente</h3><p>Seus clientes acompanham os próprios equipamentos e documentos com login próprio.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VEJA O SISTEMA ============ -->
-<section class="section alt" id="sistema">
-  <div class="wrap-wide">
-    <div class="section-head">
-      <span class="eyebrow">// por dentro</span>
-      <h2>Veja o sistema por dentro</h2>
-      <p>Telas reais do NR13 Sistema em operação.</p>
-    </div>
-    <div class="prints-grid">
-      <figure class="print-fig b1">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/dashboard-equipamentos.webp" alt="Painel de equipamentos cadastrados"><span class="cap">Painel de equipamentos</span></div></div>
-      </figure>
-      <figure class="print-fig b2">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/calibracao.webp" alt="Calibrações e certificados de instrumentos"><span class="cap">Calibrações e certificados</span></div></div>
-      </figure>
-      <figure class="print-fig b3">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/prontuario.webp" alt="Prontuário técnico gerado pelo sistema"><span class="cap">Prontuário técnico</span></div></div>
-      </figure>
-      <figure class="print-fig b4">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/livro-registro.webp" alt="Livro de registro de segurança gerado automaticamente"><span class="cap">Livro de registro automático</span></div></div>
-      </figure>
-      <figure class="print-fig b5">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/gerar-relatorio.webp" alt="Configuração de novo relatório de inspeção"><span class="cap">Configurar relatório</span></div></div>
-      </figure>
-      <figure class="print-fig b6">
-        <div class="print-real"><div class="bar"><i></i><i></i><i></i></div><div class="shot"><img loading="lazy" decoding="async" src="img/prints/relatorios.webp" alt="Histórico de relatórios de inspeção por equipamento"><span class="cap">Relatórios por equipamento</span></div></div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DOCUMENTAÇÃO GERADA ============ -->
-<section class="section" id="documentacao">
-  <div class="wrap">
-    <div class="docs-head">
-      <div class="section-head">
-        <span class="eyebrow">// documentação pronta</span>
-        <h2>Como fica a documentação</h2>
-        <p>Páginas reais geradas pelo sistema: capa, prontuário e memorial de cálculo prontos para entrega e auditoria. Clique para ampliar.</p>
-      </div>
-      <div class="docs-note">
-        <h3><i class="bi bi-files"></i>Isto é só uma amostra</h3>
-        <p>As páginas abaixo são apenas alguns exemplos soltos dos arquivos gerados. A documentação completa é muito mais robusta: relatório de inspeção completo, prontuário, memorial de cálculo página a página, livro de registro e anexos — tudo padronizado e pronto para auditoria.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20de%20inspe%C3%A7%C3%A3o%20de%20equipamentos." rel="noopener">Falar com um engenheiro</a>
+        <a class="btn btn-ghost btn-lg" href="#servicos">Ver serviços</a>
       </div>
     </div>
-    <div class="docs-grid">
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="540" height="757" src="IMAGENS-SOFTWARE/capa.webp" alt="Capa da documentação gerada pelo NR13 Sistema"></div>
-        <figcaption>Capa</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="532" height="755" src="IMAGENS-SOFTWARE/prontuario.webp" alt="Prontuário do equipamento gerado pelo sistema"></div>
-        <figcaption>Prontuário</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="502" height="712" src="IMAGENS-SOFTWARE/relatorio-ultrassom-1.webp" alt="Relatório de ultrassom com medição de espessura — vaso de pressão vertical"></div>
-        <figcaption>Medição de espessura — 1</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="502" height="712" src="IMAGENS-SOFTWARE/relatorio-ultrassom-2.webp" alt="Relatório de ultrassom com medição de espessura — vaso de pressão horizontal"></div>
-        <figcaption>Medição de espessura — 2</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="527" height="747" src="IMAGENS-SOFTWARE/memorial-calculo.webp" alt="Memorial de cálculo — página 1"></div>
-        <figcaption>Memorial de cálculo — 1</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="552" height="765" src="IMAGENS-SOFTWARE/memorial-calculo2.webp" alt="Memorial de cálculo — página 2"></div>
-        <figcaption>Memorial de cálculo — 2</figcaption>
-      </figure>
-      <figure class="doc-fig">
-        <div class="doc-sheet"><img loading="lazy" decoding="async" width="535" height="747" src="IMAGENS-SOFTWARE/resumo-memorial-calculo.webp" alt="Resumo do memorial de cálculo"></div>
-        <figcaption>Resumo do memorial</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
 
-<!-- ============ PORTAL DO CLIENTE ============ -->
-<section class="section portal-section" id="portal">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">// portal do cliente</span>
-      <h2>Seu cliente acompanha tudo com acesso próprio</h2>
-      <p>Você disponibiliza um login exclusivo e cada cliente acompanha, no Portal do Cliente, toda a documentação dos próprios equipamentos — sem depender de e-mail ou papel.</p>
-    </div>
-    <div class="portal-points">
-      <div class="mobile-badge"><div class="bico"><i class="bi bi-person-badge"></i></div><div><h3>Login exclusivo por cliente</h3><p>Cada cliente enxerga apenas os próprios equipamentos e documentos.</p></div></div>
-      <div class="mobile-badge"><div class="bico"><i class="bi bi-folder-check"></i></div><div><h3>Documentação sempre à mão</h3><p>Relatórios, prontuários, registros e histórico disponíveis a qualquer momento.</p></div></div>
-      <div class="mobile-badge"><div class="bico"><i class="bi bi-patch-check"></i></div><div><h3>Situação de cada equipamento</h3><p>Categoria, PMTA e status de aprovação visíveis de forma clara.</p></div></div>
-    </div>
-    <div class="portal-grid">
-      <figure class="portal-card">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img loading="lazy" decoding="async" width="1400" height="782" src="IMAGENS-SOFTWARE/portal1.webp" alt="Portal do Cliente com a lista de equipamentos sob inspeção NR13"></div>
-        <figcaption>Portal do cliente — equipamentos</figcaption>
-      </figure>
-      <figure class="portal-card">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="zoomable"><img loading="lazy" decoding="async" width="1400" height="868" src="IMAGENS-SOFTWARE/portal2.webp" alt="Portal do Cliente com documentação e histórico de um equipamento"></div>
-        <figcaption>Portal do cliente — documentação e histórico</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MOBILE / OFFLINE ============ -->
-<section class="section alt">
-  <div class="wrap mobile-split">
-    <div class="phone-mockup">
-      <div class="phone-screen">
-        <img loading="lazy" decoding="async" width="402" height="877" src="img/prints/celular-inspecao.webp" alt="Checklist de inspeção NR13 sendo preenchido no celular">
-      </div>
-    </div>
-    <div>
-      <div class="section-head">
-        <span class="eyebrow">// funciona no seu bolso</span>
-        <h2>O sistema também funciona no celular — inclusive offline</h2>
-        <p>O técnico faz a inspeção em campo pelo celular, mesmo sem sinal. Assim que a conexão volta, tudo sincroniza automaticamente com o painel.</p>
-      </div>
-      <div class="mobile-badges">
-        <div class="mobile-badge"><div class="bico"><i class="bi bi-phone"></i></div><div><h3>Checklist completo no celular</h3><p>Preencha inspeções, fotos e laudos direto do smartphone, em campo.</p></div></div>
-        <div class="mobile-badge"><div class="bico"><i class="bi bi-wifi-off"></i></div><div><h3>Funciona sem internet</h3><p>Sem sinal na planta ou no cliente? O app continua funcionando normalmente.</p></div></div>
-        <div class="mobile-badge"><div class="bico"><i class="bi bi-arrow-repeat"></i></div><div><h3>Sincronização automática</h3><p>Quando o celular volta a ficar online, os dados sobem sozinhos para o sistema.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ COMO FUNCIONA ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">// como funciona</span>
-      <h2>Do cadastro ao relatório em 4 passos</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><h3>Cadastro</h3><p>Cadastre sua empresa, clientes e equipamentos — vasos, caldeiras e autoclaves.</p></div>
-      <div class="step"><h3>Coleta de dados em campo</h3><p>O técnico faz a inspeção pelo celular, direto no local — funciona também offline.</p></div>
-      <div class="step"><h3>Sincroniza com o sistema</h3><p>Assim que volta a conexão, os dados sobem automaticamente para o painel.</p></div>
-      <div class="step"><h3>Gera relatório no escritório</h3><p>Relatórios e prontuários saem prontos para entrega e auditoria.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ENGENHEIRO RESPONSÁVEL ============ -->
-<section class="section expert" id="engenheiro">
-  <div class="wrap expert-grid">
-    <div class="expert-photo">
-      <img loading="lazy" decoding="async" width="700" height="700" src="gabriel-borges-eng-responsavel.webp" alt="Eng. Gabriel Borges Dadona de Camargo, engenheiro responsável pelo NR13 Sistema">
-      <span class="expert-crea-tag">CREA-SP 5070146920</span>
-    </div>
-    <div>
-      <div class="section-head">
-        <span class="eyebrow">// engenheiro responsável</span>
-        <h2>Software e cálculos revisados por engenheiro habilitado</h2>
-      </div>
-      <p class="expert-name">Eng. Gabriel Borges Dadona de Camargo</p>
-      <p class="expert-role">Engenheiro responsável técnico — CREA-SP 5070146920</p>
-      <p class="expert-bio">Com 10 anos de experiência em NR13, Gabriel revisa os cálculos e a documentação gerada pelo sistema. Relatórios, prontuários e memoriais de cálculo seguem o que a norma exige na prática de quem inspeciona vasos de pressão, caldeiras e autoclaves todos os dias.</p>
-      <div class="expert-creds">
-        <span class="expert-cred"><i class="bi bi-award-fill"></i>10 anos de experiência em NR13</span>
-        <span class="expert-cred"><i class="bi bi-patch-check-fill"></i>Engenheiro habilitado — CREA</span>
-        <span class="expert-cred"><i class="bi bi-shield-fill-check"></i>Responsável técnico do sistema</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROVA SOCIAL ============ -->
-<section class="section" id="depoimentos">
-  <div class="wrap">
-    <div class="section-head" style="text-align:center;max-width:none">
-      <span class="eyebrow">// prova social</span>
-      <h2>Quem usa, recomenda</h2>
-      <p>Depoimentos reais de quem já gerencia a NR13 com o sistema.</p>
-    </div>
-    <div class="social-grid">
-      <figure class="social-card" style="margin:0">
-        <video controls preload="none" playsinline poster="img/poster-prova-1.webp" src="prova-social-1.mp4"></video>
-        <figcaption>Depoimento de cliente — 01</figcaption>
-      </figure>
-      <figure class="social-card" style="margin:0">
-        <video controls preload="none" playsinline poster="img/poster-prova-2.webp" src="prova-social-2.mp4"></video>
-        <figcaption>Depoimento de cliente — 02</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PREÇO ============ -->
-<section class="section" id="preco">
-  <div class="wrap">
-    <div class="section-head" style="text-align:center;max-width:none">
-      <span class="eyebrow">// investimento</span>
-      <h2>Um preço único. Tudo incluso.</h2>
-    </div>
-    <div class="price-card">
-      <span class="eyebrow">// plano completo</span>
-      <div class="price-value">R$ 197<small>/mês</small></div>
+    <aside class="hero-card">
+      <h2>Escopo técnico</h2>
       <ul>
-        <li>Equipamentos ilimitados</li>
-        <li>Relatórios e prontuários automáticos</li>
-        <li>Alertas de vencimento</li>
-        <li>Gestão de clientes com acesso próprio</li>
-        <li>Histórico técnico completo</li>
-        <li>Suporte por WhatsApp</li>
+        <li><b>NR-13</b><span>Caldeiras, vasos de pressão, tubulações e tanques</span></li>
+        <li><b>NR-12</b><span>Proteções, intertravamento e apreciação de riscos</span></li>
+        <li><b>PMOC</b><span>Climatização com responsável técnico e ART</span></li>
+        <li><b>END</b><span>Ultrassom, espessura, LP e partículas magnéticas</span></li>
+        <li><b>Incêndio</b><span>Hidrantes, mangueiras, extintores e sprinklers</span></li>
       </ul>
-      <a class="btn btn-orange" href="#demonstracao" style="width:100%">Solicitar demonstração →</a>
-      <p class="price-note">Sem fidelidade. Cancele quando quiser.</p>
+      <div class="hero-card-foot">
+        <strong>Orçamento pela foto da placa</strong>
+        <span>Resposta no mesmo dia útil</span>
+      </div>
+    </aside>
+  </div>
+  <div class="hero-strip">
+    <div class="wrap">
+      <div class="hero-stat"><b>NR-13</b><span>Caldeiras e vasos</span></div>
+      <div class="hero-stat"><b>NR-12</b><span>Máquinas seguras</span></div>
+      <div class="hero-stat"><b>PMOC</b><span>Lei 13.589/2018</span></div>
+      <div class="hero-stat"><b>ART</b><span>CREA-ES em todo laudo</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section>
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Quem responde tecnicamente</span>
+      <h2>Norma cumprida é equipamento operando — não papel na gaveta</h2>
+      <p>
+        Muita empresa descobre que o prontuário está incompleto no dia da fiscalização, do sinistro
+        ou da renovação do seguro. Nosso trabalho é o contrário disso: levantamos a condição real do
+        equipamento, apontamos o que impede a conformidade e entregamos o documento que sustenta a
+        decisão de continuar operando.
+      </p>
+      <p>
+        Atuamos em indústria, construção, hospital, condomínio, rede de alimentação e prestador de
+        serviço em toda a <strong>Grande Vitória</strong> — com deslocamento programado para os polos
+        de Anchieta, Aracruz e Linhares.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="#atendimento">Onde atendemos</a>
+        <a class="btn btn-outline" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20conformidade%20de%20equipamentos." rel="noopener">Chamar no WhatsApp</a>
+      </div>
+      <div class="creds">
+        <span>Engenheiro responsável com CREA ativo</span>
+        <span>ART em todo serviço</span>
+        <span>Atendimento presencial na Grande Vitória</span>
+      </div>
+    </div>
+    <div class="split-img">
+      <img src="img/equipe-engenharia.webp" alt="Dois técnicos de inspeção uniformizados em frente a um vaso de pressão de grande diâmetro em área industrial" width="1200" height="800" loading="lazy">
+    </div>
+  </div>
+
+  <div class="wrap sec-tags">
+    <span class="sec-tags-lbl">Termos relacionados</span>
+    <ul>
+      <li><a href="inspecao-nr13-vitoria-es.html">empresa de engenharia mecânica em Vitória ES</a></li>
+      <li><a href="inspecao-nr13-vitoria-es.html">engenheiro mecânico CREA-ES</a></li>
+      <li><a href="inspecao-nr13-vitoria-es.html">laudo técnico com ART</a></li>
+      <li><a href="inspecao-nr13-vitoria-es.html">responsável técnico por equipamento sob pressão</a></li>
+      <li><a href="index.html#atendimento">consultoria em normas regulamentadoras no Espírito Santo</a></li>
+      <li><a href="index.html#atendimento">engenharia de segurança de equipamentos Grande Vitória</a></li>
+      <li><a href="inspecao-nr13-vitoria-es.html">conformidade legal para auditoria fiscal do trabalho</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ NORMAS ============ -->
+<section class="sec-soft" style="padding-top:0;padding-bottom:clamp(2.5rem,5vw,4rem)">
+  <div class="wrap">
+    <div class="normas">
+      <div class="norma"><b>NR-13</b><span>Caldeiras e vasos</span></div>
+      <div class="norma"><b>NR-12</b><span>Máquinas</span></div>
+      <div class="norma"><b>NBR 12779</b><span>Mangueiras</span></div>
+      <div class="norma"><b>ASME VIII</b><span>Vasos de pressão</span></div>
+      <div class="norma"><b>Portaria 3.523</b><span>Climatização</span></div>
+      <div class="norma"><b>IT CBMES</b><span>Incêndio</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Onde podemos te ajudar</span>
+      <h2>Serviços de engenharia mecânica e segurança de equipamentos</h2>
+      <p>Seis frentes que cobrem o ciclo completo: identificar o equipamento, avaliar a condição, adequar o que falta e manter a documentação viva.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-nr13.webp" alt="Espelho frontal de caldeira flamotubular com tampa de visita parafusada e instrumentação" width="800" height="520" loading="lazy">
+          <span class="card-tag">NR-13</span>
+        </div>
+        <div class="card-body">
+          <h3>Inspeção de caldeiras e vasos de pressão</h3>
+          <p>Inspeção inicial, periódica e extraordinária, teste hidrostático, prontuário, registro de segurança e projeto de alteração ou reparo.</p>
+          <a class="card-link" href="inspecao-nr13-vitoria-es.html">Ver serviço NR-13</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-nr12.webp" alt="Máquina industrial com proteção fixa e etiquetas de advertência de segurança na zona de corte" width="800" height="520" loading="lazy">
+          <span class="card-tag">NR-12</span>
+        </div>
+        <div class="card-body">
+          <h3>Adequação de máquinas à NR-12</h3>
+          <p>Apreciação de riscos, projeto de proteções, intertravamento, categoria de segurança, laudo técnico e acompanhamento da adequação.</p>
+          <a class="card-link" href="adequacao-nr12-vitoria-es.html">Ver serviço NR-12</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-pmoc.webp" alt="Conjunto de unidades condensadoras de climatização instaladas na lateral de galpão industrial" width="800" height="520" loading="lazy">
+          <span class="card-tag">PMOC</span>
+        </div>
+        <div class="card-body">
+          <h3>PMOC e qualidade do ar</h3>
+          <p>Elaboração e execução do Plano de Manutenção, Operação e Controle, com responsável técnico, cronograma e análise da qualidade do ar interior.</p>
+          <a class="card-link" href="pmoc-vitoria-es.html">Ver serviço PMOC</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-end.webp" alt="Engenheira inspecionando peça metálica de grande porte em chão de fábrica" width="800" height="520" loading="lazy">
+          <span class="card-tag">END</span>
+        </div>
+        <div class="card-body">
+          <h3>Ensaios não destrutivos</h3>
+          <p>Ultrassom convencional e de medição de espessura, líquido penetrante, partículas magnéticas e inspeção visual dimensional com relatório.</p>
+          <a class="card-link" href="ensaios-nao-destrutivos-vitoria-es.html">Ver ensaios (END)</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-incendio.webp" alt="Rede de tubulação de combate a incêndio pintada em vermelho com registros e hidrante em área industrial" width="800" height="520" loading="lazy">
+          <span class="card-tag">Incêndio</span>
+        </div>
+        <div class="card-body">
+          <h3>Sistemas de combate a incêndio</h3>
+          <p>Projeto, manutenção e inspeção de hidrantes, extintores, sprinklers e mangueiras, com teste hidrostático e documentação para o Corpo de Bombeiros.</p>
+          <a class="card-link" href="combate-a-incendio-vitoria-es.html">Ver combate a incêndio</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-img">
+          <img src="img/card-caldeiraria.webp" alt="Profissional esmerilhando costado de equipamento metálico de grande diâmetro em oficina" width="800" height="520" loading="lazy">
+          <span class="card-tag">Reparos</span>
+        </div>
+        <div class="card-body">
+          <h3>Caldeiraria, reparos e projeto</h3>
+          <p>Projeto de alteração e reparo conforme NR-13, dimensionamento de costado e tampo, especificação de solda e acompanhamento da execução.</p>
+          <a class="card-link" href="#contato">Falar sobre reparo</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Serviços e termos de busca desta seção</span>
+      <ul>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção de caldeira em Vitória ES</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção de vaso de pressão NR-13</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">teste hidrostático de vaso de pressão</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">prontuário de caldeira</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">registro de segurança NR-13</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção de tubulação e tanque metálico</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">adequação de máquinas NR-12</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">apreciação de riscos de máquinas</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">projeto de proteção e intertravamento</a></li>
+        <li><a href="pmoc-vitoria-es.html">PMOC em Vitória ES</a></li>
+        <li><a href="pmoc-vitoria-es.html">qualidade do ar interior em ambiente climatizado</a></li>
+        <li><a href="ensaios-nao-destrutivos-vitoria-es.html">ensaio por ultrassom de espessura</a></li>
+        <li><a href="ensaios-nao-destrutivos-vitoria-es.html">líquido penetrante e partículas magnéticas</a></li>
+        <li><a href="combate-a-incendio-vitoria-es.html">manutenção de hidrantes e mangueiras</a></li>
+        <li><a href="combate-a-incendio-vitoria-es.html">laudo de sistema de combate a incêndio</a></li>
+        <li><a href="sistema-nr13.html">software de gestão NR-13</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASOS ============ -->
+<section class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Situações reais</span>
+      <h2>Alguns casos em que podemos te ajudar</h2>
+      <p>Se algum desses problemas é o seu, existe caminho técnico e prazo definido para resolver.</p>
+    </div>
+    <div class="grid grid-4">
+      <article class="caso">
+        <h3>Caldeira sem prontuário</h3>
+        <p>Equipamento comprado usado, sem documentação de origem e sem placa legível.</p>
+        <a href="inspecao-nr13-vitoria-es.html">Recompor prontuário →</a>
+      </article>
+      <article class="caso">
+        <h3>Fiscalização do trabalho na porta</h3>
+        <p>Auditor pediu registro de segurança e relatório de inspeção atualizado.</p>
+        <a href="inspecao-nr13-vitoria-es.html">Regularizar NR-13 →</a>
+      </article>
+      <article class="caso">
+        <h3>Máquina sem proteção</h3>
+        <p>Prensa, serra ou injetora com zona de risco exposta e sem parada de emergência.</p>
+        <a href="adequacao-nr12-vitoria-es.html">Adequar à NR-12 →</a>
+      </article>
+      <article class="caso">
+        <h3>Contrato exige PMOC</h3>
+        <p>Órgão público, hospital ou shopping cobrando plano de climatização com ART.</p>
+        <a href="pmoc-vitoria-es.html">Montar o PMOC →</a>
+      </article>
+      <article class="caso">
+        <h3>Suspeita de perda de espessura</h3>
+        <p>Corrosão em tubulação, tanque ou costado e dúvida se ainda pode operar.</p>
+        <a href="ensaios-nao-destrutivos-vitoria-es.html">Medir por ultrassom →</a>
+      </article>
+      <article class="caso">
+        <h3>AVCB parado no Bombeiro</h3>
+        <p>Sistema de hidrantes ou mangueiras sem teste hidrostático e sem laudo.</p>
+        <a href="combate-a-incendio-vitoria-es.html">Resolver incêndio →</a>
+      </article>
+      <article class="caso">
+        <h3>Válvula de segurança vencida</h3>
+        <p>PSV sem calibração registrada e sem relatório de bancada dentro do prazo.</p>
+        <a href="inspecao-nr13-vitoria-es.html">Calibrar e documentar →</a>
+      </article>
+      <article class="caso">
+        <h3>Vaso comprado sem projeto</h3>
+        <p>Equipamento nacional ou importado sem memorial de cálculo nem categoria definida.</p>
+        <a href="inspecao-nr13-vitoria-es.html">Classificar o vaso →</a>
+      </article>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Problemas que resolvemos</span>
+      <ul>
+        <li><a href="inspecao-nr13-vitoria-es.html">caldeira sem prontuário o que fazer</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">recompor prontuário de vaso de pressão</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">equipamento sem placa de identificação</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">calibração de válvula de segurança PSV</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">recálculo de PMTA</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">prensa sem proteção NR-12</a></li>
+        <li><a href="ensaios-nao-destrutivos-vitoria-es.html">medição de espessura por corrosão</a></li>
+        <li><a href="combate-a-incendio-vitoria-es.html">AVCB parado no Corpo de Bombeiros</a></li>
+        <li><a href="pmoc-vitoria-es.html">contrato público que exige PMOC</a></li>
+        <li><a href="index.html#faq">notificação da auditoria fiscal do trabalho</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESSO ============ -->
+<section class="sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do primeiro contato ao laudo assinado</h2>
+      <p>Quatro etapas, prazo definido em cada uma e nenhuma surpresa de escopo no meio do caminho.</p>
+    </div>
+    <div class="grid grid-4 steps">
+      <div class="step">
+        <h3>Levantamento</h3>
+        <p>Você envia foto da placa, prontuário existente e histórico. Definimos escopo, norma aplicável e o que já está pronto.</p>
+      </div>
+      <div class="step">
+        <h3>Proposta fechada</h3>
+        <p>Orçamento com escopo, prazo e entregáveis descritos. Sem cobrança por item que não estava combinado.</p>
+      </div>
+      <div class="step">
+        <h3>Campo</h3>
+        <p>Execução em data acordada com a manutenção, com registro fotográfico, ensaios e checagem dos dispositivos de segurança.</p>
+      </div>
+      <div class="step">
+        <h3>Laudo e ART</h3>
+        <p>Relatório técnico, recomendações com prazo, atualização do prontuário e do registro de segurança, mais a ART registrada.</p>
+      </div>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Como contratar</span>
+      <ul>
+        <li><a href="index.html#contato">orçamento de inspeção NR-13</a></li>
+        <li><a href="index.html#contato">quanto custa inspeção de caldeira</a></li>
+        <li><a href="index.html#contato">prazo de entrega de laudo de inspeção</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção em parada de manutenção programada</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">emissão de ART no CREA-ES</a></li>
+        <li><a href="sistema-nr13.html">entrega do laudo em portal digital</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SISTEMA NR-13 ============ -->
+<section id="sistema">
+  <div class="wrap split">
+    <div class="split-img">
+      <img src="img/sistema/sis-equipamentos.webp" alt="Tela do sistema de gestão NR-13 com cadastro de vasos de pressão, categoria, PMTA e resultado do teste hidrostático" width="1607" height="977" loading="lazy">
+    </div>
+    <div>
+      <span class="eyebrow">Software próprio · Gestão NR-13</span>
+      <h2>Sistema de gestão e integridade NR-13 para os seus equipamentos</h2>
+      <p>
+        Além da inspeção em campo, entregamos a documentação viva dentro de um
+        <strong>sistema online de gestão NR-13</strong>: cadastro de caldeiras e vasos de pressão,
+        prontuário digital, livro de registro de segurança gerado automaticamente, controle de
+        calibração de válvulas e manômetros e alerta de vencimento de inspeção.
+      </p>
+      <p>
+        O cliente acessa o portal e baixa relatório, prontuário e memória de cálculo na hora que a
+        fiscalização pedir — sem depender de e-mail antigo nem de pasta perdida na manutenção.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-outline" href="https://app.nr13sistema.com.br/login" rel="noopener">Testar grátis por 48h</a>
+      </div>
+      <div class="creds">
+        <span>Prontuário e livro de registro digitais</span>
+        <span>Memória de cálculo ASME VIII</span>
+        <span>Portal do cliente com histórico</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap sec-tags">
+    <span class="sec-tags-lbl">Termos relacionados</span>
+    <ul>
+      <li><a href="sistema-nr13.html">sistema de gestão NR-13</a></li>
+      <li><a href="sistema-nr13.html">software de inspeção de vasos de pressão</a></li>
+      <li><a href="sistema-nr13.html">prontuário digital de caldeira</a></li>
+      <li><a href="sistema-nr13.html">livro de registro de segurança online</a></li>
+      <li><a href="sistema-nr13.html">controle de vencimento de inspeção NR-13</a></li>
+      <li><a href="sistema-nr13.html">memória de cálculo ASME Seção VIII</a></li>
+      <li><a href="sistema-nr13.html">gestão de calibração de PSV e manômetro</a></li>
+      <li><a href="sistema-nr13.html">portal do cliente para laudos técnicos</a></li>
+    </ul>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="section alt" id="faq">
-  <div class="wrap">
-    <div class="section-head" style="text-align:center;max-width:none">
-      <span class="eyebrow">// dúvidas frequentes</span>
-      <h2>Perguntas frequentes</h2>
+<section id="faq" class="sec-soft">
+  <div class="wrap wrap-narrow" style="margin-inline:auto">
+    <div class="sec-head">
+      <span class="eyebrow">Perguntas frequentes</span>
+      <h2>Dúvidas de quem precisa regularizar equipamento</h2>
     </div>
     <div class="faq">
-      <details><summary>O sistema atende a NR-13 e o código ASME VIII Div. 1?</summary><p class="ans">Sim. O fluxo de inspeção segue os critérios da NR-13 e o memorial de cálculo é gerado conforme a ASME Sec. VIII Div. 1, incluindo cálculo de PMTA, espessura mínima requerida e classificação de categoria de risco.</p></details>
-      <details><summary>Quais equipamentos o sistema cobre?</summary><p class="ans">Vasos de pressão, caldeiras, autoclaves, tubulações, tanques, compressores e válvulas de segurança (PSV) — todos com fluxo de cadastro, inspeção e laudo dedicados.</p></details>
-      <details><summary>Quais inspeções dá para fazer?</summary><p class="ans">Ultrassom (medição de espessura), teste hidrostático, líquido penetrante, teste de estanqueidade, partícula magnética, entre outras modalidades de ensaio usadas na inspeção NR-13.</p></details>
-      <details><summary>O memorial de cálculo é gerado automaticamente?</summary><p class="ans">Sim. A partir dos dados técnicos cadastrados do equipamento, o sistema calcula PMTA, espessura mínima e vida útil restante, e injeta o memorial completo diretamente no laudo — sem necessidade de planilhas externas.</p></details>
-      <details><summary>O software emite relatórios e prontuários?</summary><p class="ans">Sim. Relatórios de inspeção, prontuários digitais, memorial de cálculo e livro de registro são gerados pelo sistema a partir dos dados cadastrados, prontos para entrega e auditoria.</p></details>
-      <details><summary>Consigo fazer a inspeção pelo celular em campo, mesmo sem internet?</summary><p class="ans">Sim. O app mobile permite registrar medições, marcar itens do checklist e anexar fotos direto da câmera mesmo offline. Os dados ficam salvos no aparelho e sincronizam automaticamente quando a conexão voltar.</p></details>
-      <details><summary>Posso colocar o logo e os dados da minha empresa nos laudos?</summary><p class="ans">Sim. Você personaliza o laudo com o logo, dados cadastrais e informações de contato da sua empresa de engenharia antes de gerar o documento final.</p></details>
-      <details><summary>Dá para dar acesso ao meu cliente para ele acompanhar os equipamentos dele?</summary><p class="ans">Sim. Você cria um acesso ao Portal do Cliente, onde ele visualiza apenas os próprios equipamentos, laudos e vencimentos — sem ver dados de outros clientes.</p></details>
-      <details><summary>Posso usar em mais de uma empresa?</summary><p class="ans">Sim. O sistema foi feito para quem atende múltiplas empresas: cada cliente fica separado, com seus equipamentos e documentos.</p></details>
-      <details><summary>Preciso instalar algo ou é 100% online?</summary><p class="ans">É 100% online. Basta acessar pelo navegador, no computador ou no celular, sem necessidade de instalar nenhum programa.</p></details>
-      <details><summary>Meus dados ficam seguros? Há backup?</summary><p class="ans">Sim. O sistema roda em nuvem com backups automáticos, então seus cadastros, inspeções e laudos ficam protegidos mesmo se você perder ou trocar de aparelho.</p></details>
-      <details><summary>O sistema substitui o engenheiro responsável?</summary><p class="ans">Não. O sistema é uma ferramenta de apoio ao Profissional Habilitado (PH). Laudos e ARTs continuam sendo responsabilidade do engenheiro — o sistema organiza, agiliza e documenta o trabalho dele.</p></details>
-      <details><summary>Tem suporte?</summary><p class="ans">Sim. Nossa equipe atende por WhatsApp para tirar dúvidas sobre o uso do sistema — do cadastro do equipamento à geração do laudo.</p></details>
-      <details><summary>Posso testar a ferramenta?</summary><p class="ans">Claro! Preencha o formulário, a conversa cai direto no nosso WhatsApp e agendamos uma demonstração gratuita ao vivo, mostrando o sistema funcionando com casos reais.</p></details>
+      <details>
+        <summary>Quanto custa uma inspeção NR-13 em Vitória ES?</summary>
+        <div class="faq-body"><p>O valor depende do tipo de equipamento, do volume, da categoria e do tipo de inspeção (inicial, periódica interna, externa ou extraordinária). Uma caldeira flamotubular de pequeno porte tem custo bem diferente de um vaso de pressão categoria I com teste hidrostático. O orçamento é fechado após identificar o equipamento pela placa e pelo prontuário. Envie a foto da placa pelo WhatsApp que devolvemos o valor no mesmo dia.</p></div>
+      </details>
+      <details>
+        <summary>De quanto em quanto tempo a NR-13 exige nova inspeção?</summary>
+        <div class="faq-body"><p>Para caldeiras, a inspeção externa é anual e a interna varia de 12 meses a 6 anos conforme a categoria e a existência de SPIE. Para vasos de pressão, o intervalo vai de 1 a 10 anos conforme categoria e classe do fluido. Tubulações e tanques metálicos seguem os anexos específicos. O prazo real do seu equipamento fica registrado no prontuário e no registro de segurança.</p></div>
+      </details>
+      <details>
+        <summary>Vocês atendem em toda a Grande Vitória?</summary>
+        <div class="faq-body"><p>Sim. Atendemos presencialmente Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari e Fundão, incluindo os polos industriais de CIVIT, TIMS, Jardim Limoeiro, Campo Grande e Barra do Riacho. Também atendemos Anchieta, Aracruz e Linhares com deslocamento programado. Consulte a seção de cidades e bairros atendidos no fim desta página.</p></div>
+      </details>
+      <details>
+        <summary>O que é PMOC e quem é obrigado a ter?</summary>
+        <div class="faq-body"><p>PMOC é o Plano de Manutenção, Operação e Controle exigido pela Lei 13.589/2018 e pela Portaria GM/MS 3.523/1998 para todo edifício de uso público ou coletivo com climatização artificial. Ele é obrigatório para shoppings, hospitais, clínicas, escolas, hotéis, órgãos públicos, escritórios e indústrias com ambientes climatizados, e precisa de responsável técnico habilitado com ART.</p></div>
+      </details>
+      <details>
+        <summary>Qual a diferença entre NR-12 e NR-13?</summary>
+        <div class="faq-body"><p>A NR-13 trata de caldeiras, vasos de pressão, tubulações e tanques metálicos — equipamentos que operam sob pressão e podem explodir. A NR-12 trata da segurança em máquinas e equipamentos em geral: proteções fixas e móveis, intertravamento, parada de emergência, categoria de segurança e apreciação de riscos. Uma indústria costuma precisar das duas.</p></div>
+      </details>
+      <details>
+        <summary>O laudo emitido tem ART e é aceito em fiscalização?</summary>
+        <div class="faq-body"><p>Sim. Todo laudo, relatório de inspeção e prontuário é assinado por engenheiro habilitado com Anotação de Responsabilidade Técnica registrada no CREA-ES. É esse conjunto — relatório, ART e registro de segurança atualizado — que a auditoria fiscal do trabalho, a seguradora e o cliente contratante pedem em fiscalização.</p></div>
+      </details>
+      <details>
+        <summary>Quanto tempo demora para receber o laudo depois da inspeção?</summary>
+        <div class="faq-body"><p>O prazo padrão é de 5 a 10 dias úteis após o encerramento dos trabalhos em campo, contando ensaios de laboratório quando aplicável. Em parada de manutenção ou situação de fiscalização em curso, emitimos declaração de conformidade em até 48 horas e o relatório completo na sequência.</p></div>
+      </details>
+      <details>
+        <summary>Preciso parar a produção para fazer a inspeção?</summary>
+        <div class="faq-body"><p>Depende do escopo. Inspeção externa, ensaios não destrutivos por ultrassom e verificação de dispositivos de segurança são feitos com o equipamento em operação ou em parada curta. Inspeção interna, teste hidrostático e adequação de máquinas exigem parada. Planejamos o cronograma junto com a manutenção para concentrar tudo em uma única janela.</p></div>
+      </details>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Dúvidas frequentes sobre a norma</span>
+      <ul>
+        <li><a href="inspecao-nr13-vitoria-es.html">periodicidade de inspeção NR-13</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">categoria de vaso de pressão</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">classe de fluido NR-13</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">SPIE serviço próprio de inspeção de equipamentos</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">diferença entre NR-12 e NR-13</a></li>
+        <li><a href="pmoc-vitoria-es.html">Lei 13.589/2018 climatização</a></li>
+        <li><a href="pmoc-vitoria-es.html">Portaria GM/MS 3.523/1998</a></li>
+        <li><a href="combate-a-incendio-vitoria-es.html">NBR 12779 teste de mangueira</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">ASME Seção VIII Divisão 1</a></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ============ FORMULÁRIO ============ -->
-<section class="section form-section" id="demonstracao">
+<!-- ============ CONTATO ============ -->
+<section id="contato">
   <div class="wrap">
-    <div class="form-box">
-      <div class="section-head">
-        <span class="eyebrow">// demonstração gratuita</span>
-        <h2>Veja o sistema funcionando na prática</h2>
-        <p>Preencha e continue direto no WhatsApp — agendamos sua demonstração na hora.</p>
+    <div class="sec-head">
+      <span class="eyebrow">Entre em contato</span>
+      <h2>Fale com a engenharia</h2>
+      <p>Descreva o equipamento e o prazo. Se tiver a foto da placa de identificação, o orçamento sai mais rápido.</p>
+    </div>
+    <div class="contato-grid">
+      <div>
+        <div class="nap">
+          <div class="nap-item">
+            <span class="nap-ico" aria-hidden="true">☎</span>
+            <div><b>Telefone e WhatsApp</b><a href="tel:PREENCHER — +5527999999999">PREENCHER — (27) 99999-9999</a></div>
+          </div>
+          <div class="nap-item">
+            <span class="nap-ico" aria-hidden="true">✉</span>
+            <div><b>E-mail</b><a href="mailto:PREENCHER — contato@exemplo.com.br">PREENCHER — contato@exemplo.com.br</a></div>
+          </div>
+          <div class="nap-item">
+            <span class="nap-ico" aria-hidden="true">⌖</span>
+            <div><b>Endereço</b><span>PREENCHER — Av. Exemplo, 100, sala 200 — PREENCHER — bairro, PREENCHER — Vitória / Vila Velha / Serra ... — ES, PREENCHER — 29000-000</span></div>
+          </div>
+          <div class="nap-item">
+            <span class="nap-ico" aria-hidden="true">◷</span>
+            <div><b>Horário</b><span>Segunda a sexta, das 08h às 18h</span></div>
+          </div>
+          <div class="nap-item">
+            <span class="nap-ico" aria-hidden="true">⚙</span>
+            <div><b>Área de atendimento</b><span>Grande Vitória, com deslocamento para Anchieta, Aracruz e Linhares</span></div>
+          </div>
+        </div>
+        <div class="btn-row" style="margin-top:1.8rem">
+          <a class="btn btn-primary" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento." rel="noopener">Pedir orçamento no WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:PREENCHER — contato@exemplo.com.br">Enviar e-mail</a>
+        </div>
       </div>
-      <form id="demo-form" action="https://formspree.io/f/xvznaowy" method="POST">
-        <div class="field">
-          <label for="f-empresa">Nome da empresa</label>
-          <input id="f-empresa" name="empresa" type="text" required placeholder="Ex.: Silva Inspeções Ltda">
-        </div>
-        <div class="field">
-          <label for="f-qtd">Quantos equipamentos você atende?</label>
-          <select id="f-qtd" name="quantidade_equipamentos" required>
-            <option value="" disabled selected>Selecione</option>
-            <option>Até 10</option>
-            <option>11 a 50</option>
-            <option>51 a 200</option>
-            <option>Mais de 200</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-email">E-mail</label>
-          <input id="f-email" name="email" type="email" required placeholder="voce@empresa.com.br">
-        </div>
-        <div class="field">
-          <label for="f-whats">WhatsApp</label>
-          <input id="f-whats" name="whatsapp" type="tel" required placeholder="(27) 99999-9999">
-        </div>
-        <button class="btn btn-orange" type="submit" id="demo-submit">Solicitar demonstração no WhatsApp →</button>
-        <p class="form-status" id="form-status">Enviando…</p>
-        <p class="form-privacy">Seus dados são usados apenas para o contato da demonstração.</p>
-      </form>
+      <div class="mapa">
+        <iframe
+          title="Localização de PREENCHER — nome fantasia, ex: Camargo Engenharia em PREENCHER — Vitória / Vila Velha / Serra ... - ES"
+          src="https://www.google.com/maps/embed/v1/place?key=PREENCHER — chave da Maps Embed API, RESTRITA por referenciador HTTP&q=PREENCHER — endereço codificado para URL, ex: Av.+Exemplo,+100,+Vitoria+-+ES&zoom=14&language=pt-BR&region=BR"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Também procurado como</span>
+      <ul>
+        <li><a href="index.html#contato">engenharia mecânica perto de mim Vitória ES</a></li>
+        <li><a href="index.html#contato">empresa de inspeção de equipamentos no Espírito Santo</a></li>
+        <li><a href="index.html#contato">orçamento de inspeção pelo WhatsApp</a></li>
+        <li><a href="index.html#contato">atendimento de urgência em fiscalização</a></li>
+        <li><a href="index.html#atendimento">inspeção NR-13 Grande Vitória</a></li>
+        <li><a href="sistema-nr13.html">gestão de ativos sob pressão online</a></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ============ FAIXA CTA FINAL ============ -->
-<section class="cta-band">
+<!-- ============ CTA ============ -->
+<section style="padding-top:0">
   <div class="wrap">
-    <span class="eyebrow">// solicite uma demonstração</span>
-    <h2>Gestão NR13 em planilhas?<span class="l2">Nunca mais.</span></h2>
-    <p>Veja o sistema funcionando na prática. Demonstração gratuita, ao vivo, direto pelo WhatsApp.</p>
-    <div class="cta-row">
-      <a class="btn btn-orange" href="#demonstracao">Solicitar demonstração →</a>
+    <div class="cta-band">
+      <div>
+        <h2 style="font-size:clamp(1.4rem,1.1rem+1vw,1.9rem)">Equipamento vencido para na próxima fiscalização</h2>
+        <p>Mande o modelo e o ano do equipamento. Em poucas horas você recebe o escopo, o prazo e o valor.</p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20preciso%20regularizar%20um%20equipamento." rel="noopener">Chamar no WhatsApp</a>
     </div>
   </div>
 </section>
+
+<!-- ============ ATENDIMENTO (cidades e bairros) ============ -->
+<section id="atendimento" class="sec-soft">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Onde atendemos</span>
+      <h2>Engenharia mecânica na Grande Vitória — cidades e bairros atendidos</h2>
+      <p>Atendimento presencial em toda a Região Metropolitana da Grande Vitória, incluindo os polos industriais.
+         Clique na sua cidade para ver os bairros e distritos atendidos.</p>
+    </div>
+
+    <div class="cidades-grid">
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Vitória</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Centro</li><li>Jardim da Penha</li><li>Jardim Camburi</li><li>Mata da Praia</li>
+            <li>Praia do Canto</li><li>Praia do Suá</li><li>Enseada do Suá</li><li>Barro Vermelho</li>
+            <li>Bento Ferreira</li><li>Santa Lúcia</li><li>Santa Helena</li><li>Ilha do Boi</li>
+            <li>Ilha do Frade</li><li>Goiabeiras</li><li>Maruípe</li><li>Bonfim</li>
+            <li>Consolação</li><li>Itararé</li><li>Andorinhas</li><li>São Cristóvão</li>
+            <li>Joana d'Arc</li><li>Tabuazeiro</li><li>Santa Martha</li><li>Gurigica</li>
+            <li>Da Penha</li><li>Jucutuquara</li><li>Horto</li><li>Fonte Grande</li>
+            <li>Parque Moscoso</li><li>Vila Rubim</li><li>Piedade</li><li>Santa Clara</li>
+            <li>Do Quadro</li><li>Do Cabral</li><li>Forte São João</li><li>Romão</li>
+            <li>Cruzamento</li><li>Ilha de Santa Maria</li><li>Nazareth</li><li>Ilha das Caieiras</li>
+            <li>Santo André</li><li>São Pedro</li><li>Redenção</li><li>Conquista</li>
+            <li>Resistência</li><li>Comdusa</li><li>República</li><li>Solon Borges</li>
+            <li>Boa Vista</li><li>Jabour</li><li>Antônio Honório</li><li>Segurança do Lar</li>
+            <li>Morada de Camburi</li><li>Maria Ortiz</li><li>São Benedito</li><li>Bela Vista</li>
+            <li>Inhanguetá</li><li>Estrelinha</li><li>Universitário</li><li>Ariovaldo Favalessa</li>
+            <li>Jesus de Nazareth</li><li>Ilha das Flores</li><li>Porto de Vitória</li><li>Aeroporto</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Vila Velha</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Centro</li><li>Praia da Costa</li><li>Itapuã</li><li>Itaparica</li>
+            <li>Coqueiral de Itaparica</li><li>Jockey de Itaparica</li><li>Divino Espírito Santo</li><li>Glória</li>
+            <li>Ilha dos Ayres</li><li>Jaburuna</li><li>Aribiri</li><li>Argolas</li>
+            <li>Paul</li><li>Ataíde</li><li>Soteco</li><li>Cocal</li>
+            <li>Santa Inês</li><li>São Torquato</li><li>Vila Garrido</li><li>Barramares</li>
+            <li>Interlagos</li><li>Riviera da Barra</li><li>Morada da Barra</li><li>Praia dos Recifes</li>
+            <li>Ponta da Fruta</li><li>Barra do Jucu</li><li>São Conrado</li><li>Terra Vermelha</li>
+            <li>Normília da Cunha</li><li>Rio Marinho</li><li>Cobilândia</li><li>Nova América</li>
+            <li>Santa Mônica</li><li>Guaranhuns</li><li>Vale Encantado</li><li>Jardim Colorado</li>
+            <li>Novo México</li><li>Boa Vista</li><li>Alvorada</li><li>Araçás</li>
+            <li>Praia das Gaivotas</li><li>Jardim Marilândia</li><li>Vila Nova</li><li>Santos Dumont</li>
+            <li>Prainha</li><li>Olaria</li><li>Sagrada Família</li><li>Residencial Coqueiral</li>
+            <li>Pontal das Garças</li><li>Jardim Asteca</li><li>Darly Santos</li><li>Ilha das Flores</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 na Serra</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Serra Sede</li><li>Laranjeiras</li><li>Colina de Laranjeiras</li><li>Morada de Laranjeiras</li>
+            <li>Parque Residencial Laranjeiras</li><li>Jardim Limoeiro</li><li>Valparaíso</li><li>Campinho da Serra</li>
+            <li>Serra Dourada</li><li>Novo Horizonte</li><li>Feu Rosa</li><li>Vila Nova de Colares</li>
+            <li>Jacaraípe</li><li>Manguinhos</li><li>Nova Almeida</li><li>Carapebus</li>
+            <li>Bairro de Fátima</li><li>Barcelona</li><li>Planalto Serrano</li><li>Planalto de Carapina</li>
+            <li>Carapina Grande</li><li>Civit I</li><li>Civit II</li><li>TIMS</li>
+            <li>Eurico Salles</li><li>Portal de Jacaraípe</li><li>André Carloni</li><li>Chácara Parreiral</li>
+            <li>Cidade Continental</li><li>José de Anchieta</li><li>Vila Betânia</li><li>Boa Vista</li>
+            <li>Divinópolis</li><li>Nova Zelândia</li><li>Jardim Tropical</li><li>Central Carapina</li>
+            <li>Porto Canoa</li><li>Bicanga</li><li>Capuba</li><li>São Diogo</li>
+            <li>Costa Bela</li><li>Diamantina</li><li>Taquara I</li><li>Taquara II</li>
+            <li>Parque Jacaraípe</li><li>Vista da Serra</li><li>Cidade Pomar</li><li>Mata da Serra</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Cariacica</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Campo Grande</li><li>Alto Lage</li><li>Jardim América</li><li>Itaquari</li>
+            <li>Itacibá</li><li>Bandeirantes</li><li>Cariacica Sede</li><li>Nova Rosa da Penha</li>
+            <li>Flexal I</li><li>Flexal II</li><li>Bela Aurora</li><li>Porto de Santana</li>
+            <li>Vila Capixaba</li><li>Nova Brasília</li><li>Padre Gabriel</li><li>Santana</li>
+            <li>Jardim Botânico</li><li>Mucuri</li><li>Vila Independência</li><li>Rio Branco</li>
+            <li>São Francisco</li><li>Castelo Branco</li><li>Presidente Médici</li><li>Sotelândia</li>
+            <li>Vale Esperança</li><li>Operário</li><li>Tucum</li><li>Nova Canaã</li>
+            <li>Oriente</li><li>Retiro Saudoso</li><li>Sotema</li><li>Cruzeiro do Sul</li>
+            <li>Nova Esperança</li><li>Morada de Campo Grande</li><li>Areinha</li><li>Piranema</li>
+            <li>Alzira Ramos</li><li>Bubu</li><li>Vila Merlo</li><li>Jardim de Alah</li>
+            <li>Prolar</li><li>Vale dos Reis</li><li>Itanguá</li><li>Bela Vista</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Viana</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Viana Sede</li><li>Vila Bethânia</li><li>Marcílio de Noronha</li><li>Universal</li>
+            <li>Canaã</li><li>Ipanema</li><li>Jucu</li><li>Areinha</li>
+            <li>Bom Pastor</li><li>Vale do Sol</li><li>Industrial Vale do Sol</li><li>Nova Bethânia</li>
+            <li>Km 21</li><li>Bela Vista</li><li>Nova Esperança</li><li>Vila Nova</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Guarapari</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Centro</li><li>Muquiçaba</li><li>Praia do Morro</li><li>Itapebussu</li>
+            <li>Kubitschek</li><li>Perocão</li><li>Santa Mônica</li><li>Ipiranga</li>
+            <li>Camurugi</li><li>Setiba</li><li>Meaípe</li><li>Enseada Azul</li>
+            <li>Nova Guarapari</li><li>Village do Sol</li><li>Jardim Boa Vista</li><li>Bela Vista</li>
+            <li>Coroado</li><li>Lagoa Funda</li><li>Adalberto Simão Nader</li><li>Praia do Riacho</li>
+            <li>Jardim Icaraí</li><li>Elza Nader</li><li>Sol Nascente</li><li>Olaria</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Engenharia mecânica e inspeção NR-13 em Fundão</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Fundão Sede</li><li>Timbuí</li><li>Praia Grande</li><li>Irundi</li>
+            <li>Santa Rita</li><li>Boa Esperança</li><li>Encantado</li><li>Nova Almeida Velha</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="cidade-item">
+        <summary>Polos industriais atendidos no Espírito Santo</summary>
+        <div class="bairros-lista">
+          <ul>
+            <li>Anchieta</li><li>Aracruz</li><li>Barra do Riacho</li><li>Linhares</li>
+            <li>Colatina</li><li>São Mateus</li><li>Cachoeiro de Itapemirim</li><li>Domingos Martins</li>
+            <li>Santa Leopoldina</li><li>Santa Teresa</li><li>Ibiraçu</li><li>João Neiva</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Buscas locais atendidas</span>
+      <ul>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção NR-13 em Vitória</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção de caldeira em Vila Velha</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">vaso de pressão Serra ES</a></li>
+        <li><a href="adequacao-nr12-vitoria-es.html">NR-12 em Cariacica</a></li>
+        <li><a href="pmoc-vitoria-es.html">PMOC em Guarapari</a></li>
+        <li><a href="ensaios-nao-destrutivos-vitoria-es.html">ensaios não destrutivos em Viana</a></li>
+        <li><a href="combate-a-incendio-vitoria-es.html">combate a incêndio em Fundão</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">inspeção de equipamentos em Anchieta</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">caldeira em Aracruz e Barra do Riacho</a></li>
+        <li><a href="inspecao-nr13-vitoria-es.html">NR-13 em Linhares</a></li>
+        <li><a href="index.html#atendimento">polo industrial CIVIT e TIMS</a></li>
+        <li><a href="index.html#atendimento">Jardim Limoeiro e Campo Grande</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <!-- ============ RODAPÉ ============ -->
-<footer>
+<footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true">
+    <img src="img/rodape-industrial.webp" alt="" width="1920" height="620" loading="lazy">
+  </div>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <h3>NR13 SISTEMA</h3>
-        <p>Software de gestão NR13. Equipamentos, vencimentos, relatórios e prontuários de vasos de pressão, caldeiras e autoclaves em um só painel.</p>
-        <!-- SUBSTITUIR: CNPJ real -->
-        <p class="cnpj">CNPJ [00.000.000/0000-00]</p>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="YouTube">YT</a>
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand">
+          <img src="icon-192.png" alt="PREENCHER — nome fantasia, ex: Camargo Engenharia" width="48" height="48" loading="lazy">
+          <span class="brand-txt">
+            <span class="brand-name">PREENCHER — nome fantasia, ex: Camargo Engenharia</span>
+            <span class="brand-tag">Engenharia Mecânica</span>
+          </span>
+        </div>
+        <p>
+          Engenharia mecânica aplicada à segurança de equipamentos: inspeção NR-13, adequação NR-12,
+          PMOC, ensaios não destrutivos e sistemas de combate a incêndio em toda a Grande Vitória — ES.
+        </p>
+        <span class="footer-reg">CREA-ES PREENCHER — nº de registro da pessoa jurídica no CREA-ES · CNPJ PREENCHER — 00.000.000/0001-00</span>
+        <div class="social-row">
+          <a href="https://www.instagram.com/PREENCHER" rel="noopener" aria-label="Instagram de PREENCHER — nome fantasia, ex: Camargo Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.3.84-.4.4-.64.8-.84 1.3-.16.4-.35 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 2.1.06 3.3c.05 1.1.24 1.7.4 2.1.2.5.44.9.84 1.3.4.4.8.64 1.3.84.4.16 1 .35 2.1.4 1.2.06 1.6.06 4.7.06s3.5 0 4.7-.06c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.3-.84.4-.4.64-.8.84-1.3.16-.4.35-1 .4-2.1.06-1.2.06-1.6.06-3.3s0-2.1-.06-3.3c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.84-1.3-.4-.4-.8-.64-1.3-.84-.4-.16-1-.35-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 1.8a3.1 3.1 0 100 6.2 3.1 3.1 0 000-6.2zm5.2-.1a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/PREENCHER" rel="noopener" aria-label="LinkedIn de PREENCHER — nome fantasia, ex: Camargo Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9.5 9h3.8v1.65h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21h-4z"/></svg>
+          </a>
+          <a href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)" rel="noopener" aria-label="WhatsApp de PREENCHER — nome fantasia, ex: Camargo Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.08.8.83-3-.2-.31a8.22 8.22 0 1115.13-4.4c0 4.53-3.68 8.24-8.2 8.24zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.11-.23-.17-.48-.29z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="foot-col">
-        <h4>Funcionalidades</h4>
-        <ul>
-          <li><a href="#funcionalidades">Cadastro de equipamentos</a></li>
-          <li><a href="#funcionalidades">Controle de vencimentos</a></li>
-          <li><a href="#funcionalidades">Relatórios automáticos</a></li>
-          <li><a href="#funcionalidades">Prontuários digitais</a></li>
-          <li><a href="#funcionalidades">Gestão de clientes</a></li>
-          <li><a href="#funcionalidades">Acesso por cliente</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>Institucional</h4>
-        <ul>
-          <li><a href="#sistema">O sistema</a></li>
-          <li><a href="#preco">Preço</a></li>
-          <li><a href="#faq">Dúvidas frequentes</a></li>
-          <li><a href="#demonstracao">Solicitar demonstração</a></li>
-          <li><a href="https://nr13sistema.com.br">Site NR13 Sistema</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
+
+      <div class="footer-contato">
         <h4>Contato</h4>
         <p>
-          Av. Henrique Moscoso, 2250<br>
-          Jaburuna, Vila Velha — ES<br><br>
-          Eng. responsável:<br>
-          Gabriel Borges Dadona de Camargo<br>
-          CREA-SP 5070146920
+          PREENCHER — Av. Exemplo, 100, sala 200<br>
+          PREENCHER — bairro — PREENCHER — Vitória / Vila Velha / Serra .../ES<br>
+          CEP: PREENCHER — 29000-000
         </p>
-        <a class="btn btn-orange" href="#demonstracao" style="margin-top:18px;padding:13px 22px;font-size:12px">Solicitar demonstração →</a>
+        <p><a href="tel:PREENCHER — +5527999999999">PREENCHER — (27) 99999-9999</a></p>
+        <p><a href="mailto:PREENCHER — contato@exemplo.com.br">PREENCHER — contato@exemplo.com.br</a></p>
+        <p>Segunda a sexta, 08h às 18h</p>
       </div>
+
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="inspecao-nr13-vitoria-es.html">Inspeção NR-13</a></li>
+          <li><a href="adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="pmoc-vitoria-es.html">PMOC e qualidade do ar</a></li>
+          <li><a href="ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="combate-a-incendio-vitoria-es.html">Combate a incêndio</a></li>
+          <li><a href="index.html#servicos">Caldeiraria e reparos</a></li>
+          <li><a href="sistema-nr13.html">Sistema NR13 — gestão online</a></li>
+          <li><a href="index.html#faq">Perguntas frequentes</a></li>
+          <li><a href="index.html#contato">Pedir orçamento</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Cidades atendidas</h4>
+        <ul>
+          <li><a href="index.html#atendimento">Vitória</a></li>
+          <li><a href="index.html#atendimento">Vila Velha</a></li>
+          <li><a href="index.html#atendimento">Serra</a></li>
+          <li><a href="index.html#atendimento">Cariacica</a></li>
+          <li><a href="index.html#atendimento">Viana</a></li>
+          <li><a href="index.html#atendimento">Guarapari</a></li>
+          <li><a href="index.html#atendimento">Fundão</a></li>
+          <li><a href="index.html#atendimento">Todas as cidades e bairros →</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div class="foot-bar">
-      <span>© 2026 NR13 Sistema. Todos os direitos reservados.</span>
-      <span class="tag">Feito para quem vive a NR13</span>
+
+    <div class="footer-home">
+      <a class="btn btn-ghost" href="index.html#inicio">Voltar para a página inicial</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="ano">2026</span> PREENCHER — nome fantasia, ex: Camargo Engenharia. Todos os direitos reservados. · <a href="privacidade.html">Política de Privacidade</a></span>
+      <span class="disclaimer">
+        Os serviços descritos neste site são executados sob responsabilidade técnica de engenheiro
+        habilitado, com ART registrada no CREA-ES. As informações desta página têm caráter informativo
+        e não substituem a análise técnica do equipamento em campo.
+      </span>
     </div>
   </div>
 </footer>
 
-<div class="lightbox" id="lightbox" aria-hidden="true"><img alt=""></div>
+<a class="wa-float" href="https://wa.me/PREENCHER — 5527999999999 (só dígitos, com 55 e DDD)?text=Ol%C3%A1%2C%20vim%20pelo%20site." rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.5 14.04c-.2.57-1.19 1.1-1.66 1.17-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.02-3.48-4.14-3.65-.12-.16-.99-1.31-.99-2.5s.63-1.77.85-2.02c.22-.25.49-.31.65-.31h.48c.16.01.36-.06.56.42.2.5.7 1.72.76 1.84.06.13.1.27.02.44-.09.16-.13.26-.25.41-.12.15-.26.33-.37.44-.13.12-.25.25-.11.5.14.25.64 1.06 1.37 1.71.94.84 1.73 1.1 1.98 1.22.25.12.4.1.54-.06.15-.17.63-.72.79-.97.17-.25.33-.21.56-.12.22.08 1.43.68 1.68.8.25.12.42.18.48.29.05.1.05.59-.15 1.17z"/></svg>
+  <span>WhatsApp</span>
+</a>
 
-<script>
-  // menu mobile
-  var navToggle = document.getElementById('nav-toggle');
-  var mobileMenu = document.getElementById('mobile-menu');
-  navToggle.addEventListener('click', function () {
-    var open = mobileMenu.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open);
-    navToggle.textContent = open ? '✕' : '☰';
-  });
-  mobileMenu.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      mobileMenu.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.textContent = '☰';
-    });
-  });
-
-  // lightbox: amplia os prints do sistema somente no clique
-  var lightbox = document.getElementById('lightbox');
-  var lightboxImg = lightbox.querySelector('img');
-  document.querySelectorAll('.print-real .shot, .doc-sheet, .zoomable').forEach(function (shot) {
-    shot.addEventListener('click', function () {
-      var img = shot.querySelector('img');
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-    });
-  });
-  var closeLightbox = function () {
-    lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden', 'true');
-    lightboxImg.src = '';
-  };
-  lightbox.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') closeLightbox();
-  });
-
-  // só um vídeo tocando por vez
-  var videos = document.querySelectorAll('video');
-  videos.forEach(function (v) {
-    v.addEventListener('play', function () {
-      videos.forEach(function (o) { if (o !== v) o.pause(); });
-    });
-  });
-
-  var painsGrid = document.querySelector('.pains-grid');
-  if (painsGrid) {
-    var painsObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          painsObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .3 });
-    painsObserver.observe(painsGrid);
-  }
-
-  var form = document.getElementById('demo-form');
-  var statusEl = document.getElementById('form-status');
-  var submitBtn = document.getElementById('demo-submit');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (submitBtn.disabled) return; // evita envio duplo (Enter repetido)
-
-    var empresa = document.getElementById('f-empresa').value.trim();
-    var qtd = document.getElementById('f-qtd').value;
-    var email = document.getElementById('f-email').value.trim();
-    var whats = document.getElementById('f-whats').value.trim();
-
-    var msg = 'Olá! Quero uma demonstração do NR13 Sistema.\n'
-      + 'Empresa: ' + empresa + '\n'
-      + 'Equipamentos atendidos: ' + qtd + '\n'
-      + 'E-mail: ' + email + '\n'
-      + 'WhatsApp: ' + whats;
-    var waUrl = 'https://wa.me/5527992534407?text=' + encodeURIComponent(msg);
-
-    submitBtn.disabled = true;
-    statusEl.style.display = 'block';
-    statusEl.textContent = 'Enviando…';
-
-    var leadEnviado = false;
-    var goWhatsApp = function () {
-      if (!leadEnviado && typeof window.fbq === 'function') {
-        leadEnviado = true;
-        fbq('track', 'Lead', {
-          content_name: 'Solicitação de demonstração',
-          content_category: 'SaaS NR13',
-          content_type: 'product'
-        });
-      }
-      // pequena espera para o navegador concluir o envio do evento antes do redirect
-      setTimeout(function () { window.location.href = waUrl; }, 500);
-    };
-
-    fetch(form.action, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    }).then(goWhatsApp, goWhatsApp); // lead salvo ou não, o WhatsApp abre — o lead nunca se perde
-  });
-</script>
-
+<script src="js/site.js" defer></script>
 </body>
 </html>
