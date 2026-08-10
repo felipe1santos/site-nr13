@@ -1,7 +1,7 @@
 {
-  "name": "PREENCHER — nome fantasia, ex: Camargo Engenharia — Engenharia Mecânica",
-  "short_name": "PREENCHER — nome fantasia, ex: Camargo Engenharia",
-  "description": "Inspeção NR-13, adequação NR-12, PMOC, ensaios não destrutivos e combate a incêndio na Grande Vitória — ES.",
+  "name": "Axial Engenharia — Sistema NR13",
+  "short_name": "Axial Engenharia",
+  "description": "Engenharia mecânica na Grande Vitória/ES e Sistema NR13: gestão e integridade de equipamentos sob pressão.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

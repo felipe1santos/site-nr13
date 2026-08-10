@@ -1,79 +1,78 @@
-# Site de Engenharia Mecânica — Grande Vitória/ES
+# Axial Engenharia — site + landing do Sistema NR13
 
-Site estático focado em **SEO local** para serviços de engenharia mecânica:
-NR-13, NR-12, PMOC, ensaios não destrutivos e combate a incêndio.
+Site estático focado em **SEO local** (engenharia mecânica na Grande Vitória/ES) que funciona como
+funil para o único produto vendido: o **Sistema NR13**.
 
 Sem framework, sem build, sem dependência de CDN. HTML + CSS + um arquivo JS.
 Fontes e imagens são servidas do próprio domínio.
 
+- **Domínio:** `nr13sistema.com.br` (sem `www`) — já embutido em todo canonical, og:url e JSON-LD.
+- **Checkout:** `https://pay.kiwify.com.br/O9KdzEI` — todos os botões de compra apontam para lá.
+- **Contato:** (27) 99253-4407 · nr13sistema@gmail.com · Av. Henrique Moscoso, 2250, Jaburuna, Vila Velha/ES, 29100-650.
+
 ---
-
-## Abrir para conferir
-
-Todos os caminhos são **relativos**, então dá para abrir com **duplo clique no `index.html`** —
-o CSS, as fontes e as imagens carregam normalmente, sem servidor.
-
-Duas ressalvas do modo duplo clique (`file://`), que somem quando o site está no servidor:
-
-- a pasta-fonte mostra `PREENCHER — nome fantasia, ex: Camargo Engenharia`, `{{TELEFONE}}` etc. — rode o `aplicar-dados.ps1` e abra o
-  `index.html` da pasta `site-engenharia-publicar` para ver com os dados reais;
-- o iframe do Google Maps não carrega em `file://` (a API exige domínio autorizado).
 
 ## Estrutura
 
 ```
 site-engenharia/
 ├── index.html                              Home (keyword principal)
+├── sistema-nr13.html                       LANDING DE VENDA (o produto)
 ├── inspecao-nr13-vitoria-es.html           Landing NR-13
 ├── adequacao-nr12-vitoria-es.html          Landing NR-12
 ├── pmoc-vitoria-es.html                    Landing PMOC
 ├── ensaios-nao-destrutivos-vitoria-es.html Landing END
 ├── combate-a-incendio-vitoria-es.html      Landing Incêndio
+├── blog/
+│   ├── index.html                          Hub de conteúdo
+│   └── 6 artigos do cluster NR-13
 ├── privacidade.html                        noindex
 ├── robots.txt · sitemap.xml · site.webmanifest
-├── favicon.ico · favicon-*.png · icon-192/512.png · apple-touch-icon.png
 ├── css/site.css        design system inteiro (um arquivo só)
-├── js/site.js          menu mobile, ano do rodapé, badge de cidade por IP
+├── js/site.js          menu mobile, ano, badge de cidade por IP, reveal no scroll
 ├── fonts/              Archivo · Inter · IBM Plex Mono (woff2 self-hosted)
 ├── img/                imagens WebP otimizadas
-│   └── _raw/           originais JPG do Pexels (NÃO vão para o servidor)
-├── docs/
-│   ├── INDEXACAO.md         controle do Search Console + fila de conteúdo
-│   └── CREDITOS-IMAGENS.md  origem das fotos e como trocar por fotos reais
-├── dados.json          ← VOCÊ PREENCHE ISTO
-└── aplicar-dados.ps1   gera a versão publicável
+└── docs/
+    ├── INDEXACAO.md         controle do Search Console + fila de conteúdo
+    └── CREDITOS-IMAGENS.md  origem das fotos e como trocar por fotos reais
 ```
+
+Não há mais `dados.json` nem `aplicar-dados.ps1`: os dados reais estão aplicados direto nos
+arquivos. Para trocar telefone, e-mail ou endereço, é busca e substituição global.
 
 ---
 
-## Como publicar (2 passos)
+## Publicar
 
-### 1. Preencher `dados.json`
+O site é servido por **nginx em VPS** no domínio `nr13sistema.com.br`. O deploy é a cópia do
+conteúdo desta pasta para a raiz do site no servidor. Depois de publicar:
 
-Todos os dados que se repetem no site ficam num arquivo só. Nada de caçar telefone em 6 páginas.
+1. Conferir que `https://nr13sistema.com.br/blog/` responde 200.
+2. Enviar o sitemap no Search Console (uma única vez).
+3. Solicitar indexação na ordem da fila em `docs/INDEXACAO.md`.
 
-Campos com `PREENCHER` bloqueiam o go-live. Os críticos:
+---
 
-| Campo | Por que importa |
-|---|---|
-| `DOMINIO` | Entra em **todo** canonical, og:url e JSON-LD. Decida com ou sem `www` e nunca mais mude. |
-| `WA_NUM` | Todos os botões de WhatsApp. Formato: só dígitos, com 55 + DDD. |
-| `TEL_EXIBE` / `RUA` / `CEP` | Formam o **NAP**. Precisa ser byte-a-byte igual ao do Perfil da Empresa no Google. |
-| `CREA_ENG` / `ENGENHEIRO` | Sinal de E-E-A-T. É o que diferencia de site de intermediário. |
-| `LAT` / `LNG` | Coordenada real do escritório no schema. Os valores atuais são o centro de Vitória. |
-| `MAPS_KEY` | Chave da Maps Embed API. **Restrinja por referenciador HTTP** no console do Google antes de publicar. |
+## Estratégia comercial embutida
 
-### 2. Rodar o script
+- **O site inteiro vende uma coisa só: o Sistema NR13.** Os serviços de engenharia existem para
+  ranquear e gerar autoridade; a conversão acontece na landing.
+- **Nenhuma menção a teste grátis.** A landing é de venda direta: todo CTA leva ao checkout Kiwify.
+- **Faixa `.sys-band` no fim de todas as páginas**, empurrando para `sistema-nr13.html`.
+- **Botão de assinatura no menu** de todas as páginas.
+- Os artigos do `blog/` fecham em CTA para a landing e para o WhatsApp.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\aplicar-dados.ps1
+### Onde colocar o preço
+
+Na seção `#assinar` de `sistema-nr13.html` existe um bloco marcado por comentário. Para exibir o
+valor, troque o par `oferta-preco-lbl` + `oferta-preco-txt` por:
+
+```html
+<span class="oferta-preco">R$ 000<small>/mês</small></span>
 ```
 
-Ele cria `..\site-engenharia-publicar` com todos os `{{TOKEN}}` já trocados, sem as pastas de
-trabalho (`img/_raw`, etc.). **É essa pasta que sobe para o servidor.**
-A pasta original continua com os marcadores — é nela que você edita.
-
-Se sobrar algum marcador, o script lista qual e em qual arquivo.
+Se exibir o preço, acrescente também `"price"` e `"priceValidUntil"` no bloco `offers` do JSON-LD
+no `<head>` — sem `price` o Google não gera rich result de produto.
 
 ---
 
@@ -81,37 +80,17 @@ Se sobrar algum marcador, o script lista qual e em qual arquivo.
 
 - **1 intenção de busca = 1 URL.** Nenhuma keyword principal se repete entre páginas.
 - **Dados estruturados:** `ProfessionalService` + `LocalBusiness` na home; `Service` +
-  `BreadcrumbList` nas landings; `FAQPage` em todas — com o texto do JSON-LD **idêntico** ao texto
-  visível dentro dos `<details>`.
-- **Sem `aggregateRating` e sem `review` inventados.** Avaliação falsa no schema gera penalização
-  manual. Assim que houver avaliações reais no Google, veja abaixo como adicionar.
+  `BreadcrumbList` nas landings; `SoftwareApplication` + `Offer` na landing do sistema;
+  `Article` + `BreadcrumbList` + `FAQPage` nos artigos — sempre com o texto do JSON-LD **idêntico**
+  ao texto visível.
+- **Sem `aggregateRating` e sem `review` inventados.** Avaliação falsa gera penalização manual.
 - **Seção de cidades e bairros** (`#atendimento`) com `<details>` nativo: ~280 termos geográficos
-  numa página só, indexáveis mesmo fechados, sem criar doorway page por bairro.
+  indexáveis mesmo fechados, sem criar doorway page por bairro.
 - **Rodapé idêntico em 100% das páginas**, funcionando como hub de link interno.
-- **Imagens em WebP** com `width`/`height` explícitos e `loading="lazy"` em tudo abaixo da dobra.
-  O hero de cada página é o LCP e **não** leva lazy — leva `fetchpriority="high"` e `preload`.
-- **Badge de cidade por IP** é truque de conversão, não de ranking: o HTML já nasce com
-  "Atendemos em toda a Grande Vitória" e o JS só substitui se a API responder.
-
-### Quando surgirem avaliações reais no Google
-
-Adicione dentro do bloco `ProfessionalService` da home (`index.html`) e replique o texto na
-página, em uma seção visível:
-
-```json
-"aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "5.0", "reviewCount": "12", "bestRating": "5", "worstRating": "1"
-},
-"review": [{
-  "@type": "Review",
-  "author": { "@type": "Person", "name": "Nome real do cliente" },
-  "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-  "reviewBody": "Texto copiado da avaliação real do Google."
-}]
-```
-
-Regra: só avaliação que existe de verdade, e o `reviewCount` acompanha o número real.
+- **Imagens em WebP** com `width`/`height` explícitos e `loading="lazy"` abaixo da dobra.
+  O hero de cada página é o LCP e leva `fetchpriority="high"` + `preload`.
+- **NAP idêntico** em rodapé, JSON-LD e página de contato — divergência é a causa nº 1 de mau
+  ranqueamento local. Se mudar, mudar junto no Perfil da Empresa no Google.
 
 ---
 
@@ -119,26 +98,35 @@ Regra: só avaliação que existe de verdade, e o `reviewCount` acompanha o núm
 
 Estética de documento técnico de engenharia, não de agência.
 
-- **Archivo** (grotesca condensada) nos títulos — peso e autoridade;
-- **Inter** no texto corrido — leitura longa sem fadiga;
-- **IBM Plex Mono** nos rótulos, números e dados técnicos — assinatura visual do site;
+- **Archivo** nos títulos, **Inter** no texto, **IBM Plex Mono** em rótulos e dados técnicos;
 - Navy `#0a1f33` para estrutura, laranja de segurança `#f26522` para ação e dado;
-- Cantos de 4px, sem sombra decorativa, sem gradiente colorido, sem ilustração;
-- Rodapé no padrão de site de associação de engenharia industrial: foto industrial esmaecida sob
-  camada azul, quatro colunas, ícones sociais circulares e faixa de copyright.
+- Cantos de 4 a 8px, sem gradiente colorido decorativo, sem ilustração.
 
-Tudo mora em `css/site.css`, dividido em 22 blocos numerados. Os tokens de cor e tipografia estão
-no `:root`, no topo do arquivo — mexer lá muda o site inteiro.
+### Elementos vivos da landing (blocos 23b a 23h do CSS)
+
+- `.feat-layout` — cards de vidro à esquerda sobrepondo a foto do vaso de pressão à direita.
+- `.phone` — mockup de celular do Módulo 02, com bezel, notch e botões laterais.
+- `.mod-link` — trilho vertical que **acende de cima para baixo** entre um módulo e o seguinte,
+  com seta que ganha halo laranja ao entrar na tela.
+- `.steps-flow` — setas SVG que **crescem no vão do grid** entre os cards de etapa.
+- `.oferta` / `.btn-buy` — bloco de checkout e o único botão da página com peso de compra.
+- `.sys-band` — faixa de venda no fim de todas as outras páginas.
+
+O reveal usa `IntersectionObserver` com `[data-reveal]`. O estado escondido só existe sob a classe
+`js-anim`, aplicada por um script inline no `<head>`: **sem JS, ou com `prefers-reduced-motion`,
+todo o conteúdo nasce visível** — nada de página em branco para o Googlebot.
+
+Tudo mora em `css/site.css`, em blocos numerados. Os tokens estão no `:root`, no topo.
 
 ---
 
 ## Manutenção
 
-**Página nova?** Copie uma landing existente e troque: `<title>`, `description`, `canonical`,
+**Página nova?** Copie uma landing existente e troque `<title>`, `description`, `canonical`,
 `og:*`, o H1, o JSON-LD e o conteúdo. Depois adicione a URL no `sitemap.xml` e em
 `docs/INDEXACAO.md` — no mesmo dia.
 
-**Mudou telefone ou endereço?** Só em `dados.json`, e rode o script de novo. Mudou o NAP? Atualize
-**junto** o Perfil da Empresa no Google — divergência de NAP é a causa nº 1 de mau ranqueamento local.
+**Artigo novo?** Mesma regra, dentro de `blog/`, e acrescente o link no rodapé (coluna
+"Conteúdo técnico") e no hub `blog/index.html`.
 
-**Foto nova?** Veja `docs/CREDITOS-IMAGENS.md` — tem as dimensões exatas e o comando de conversão.
+**Foto nova?** Veja `docs/CREDITOS-IMAGENS.md` — dimensões exatas e comando de conversão.
