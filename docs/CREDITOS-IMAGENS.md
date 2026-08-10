@@ -50,6 +50,8 @@ hero-<servico>.webp   1600 x  800
 equipe/detalhe        1200 x  800
 card-*.webp            800 x  520
 og-image.jpg          1200 x  630
+calibracao-manometro-
+vaso-de-pressao-nr13   800 x  600   (foto de detalhe da seção "O que o sistema faz")
 ```
 
 Comando de conversão usado (ffmpeg):
