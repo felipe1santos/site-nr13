@@ -51,7 +51,9 @@ equipe/detalhe        1200 x  800
 card-*.webp            800 x  520
 og-image.jpg          1200 x  630
 calibracao-manometro-
-vaso-de-pressao-nr13   800 x  600   (foto de detalhe da seção "O que o sistema faz")
+vaso-de-pressao-nr13   800 x  600   (foto da seção "O que o sistema faz"; a altura
+                                     do bloco é limitada a 600px justamente para
+                                     não ampliar a imagem além do tamanho nativo)
 ```
 
 Comando de conversão usado (ffmpeg):
