@@ -9,28 +9,51 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 > Só faz sentido solicitar indexação de URL que já está **no ar** — a página precisa
 > responder 200 no domínio antes do pedido.
 
-## Fila de indexação
+## Solicitadas em 10/08/2026
 
-Ordem por retorno esperado. A landing do sistema vem primeiro: é o único produto vendido no site.
+Sitemap `https://nr13sistema.com.br/sitemap.xml` reenviado no mesmo dia — status
+**Processado, 14 páginas encontradas**.
 
-- [ ] https://nr13sistema.com.br/sistema-nr13.html
-- [ ] https://nr13sistema.com.br/
-- [ ] https://nr13sistema.com.br/inspecao-nr13-vitoria-es.html
-- [ ] https://nr13sistema.com.br/blog/software-de-gestao-nr13-como-escolher.html
-- [ ] https://nr13sistema.com.br/blog/
-- [ ] https://nr13sistema.com.br/blog/quanto-custa-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/caldeira-sem-prontuario-o-que-fazer.html
-- [ ] https://nr13sistema.com.br/blog/categoria-de-vaso-de-pressao-como-classificar.html
-- [ ] https://nr13sistema.com.br/blog/teste-hidrostatico-quando-e-obrigatorio.html
-- [ ] https://nr13sistema.com.br/blog/livro-de-registro-de-seguranca-nr13.html
+Dez solicitações manuais aceitas; na décima primeira o Search Console respondeu
+**"A cota foi excedida"**. É o teto diário da ferramenta.
+
+- [x] https://nr13sistema.com.br/sistema-nr13.html
+- [x] https://nr13sistema.com.br/
+- [x] https://nr13sistema.com.br/inspecao-nr13-vitoria-es.html
+- [x] https://nr13sistema.com.br/blog/software-de-gestao-nr13-como-escolher.html
+- [x] https://nr13sistema.com.br/blog/
+- [x] https://nr13sistema.com.br/blog/quanto-custa-inspecao-nr13.html
+- [x] https://nr13sistema.com.br/blog/caldeira-sem-prontuario-o-que-fazer.html
+- [x] https://nr13sistema.com.br/blog/categoria-de-vaso-de-pressao-como-classificar.html
+- [x] https://nr13sistema.com.br/blog/teste-hidrostatico-quando-e-obrigatorio.html
+- [x] https://nr13sistema.com.br/blog/livro-de-registro-de-seguranca-nr13.html
+
+## Fila do próximo dia
+
 - [ ] https://nr13sistema.com.br/adequacao-nr12-vitoria-es.html
 - [ ] https://nr13sistema.com.br/pmoc-vitoria-es.html
 - [ ] https://nr13sistema.com.br/ensaios-nao-destrutivos-vitoria-es.html
 - [ ] https://nr13sistema.com.br/combate-a-incendio-vitoria-es.html
 
+## Estado de cada URL na inspeção (10/08/2026)
+
+| URL | Estado antes da solicitação |
+|---|---|
+| `/sistema-nr13.html` | Indexada |
+| `/inspecao-nr13-vitoria-es.html` | Indexada |
+| `/` | **Não indexada — "Cópia sem página canônica selecionada pelo usuário"** |
+| `/adequacao-nr12-vitoria-es.html` | Não indexada — "Detectada, mas não indexada no momento" |
+| `/blog/` e os 6 artigos | Não indexados — "O Google não reconhece o URL" (URLs novas) |
+
+> O diagnóstico da home é o mais importante da lista. "Cópia sem página canônica
+> selecionada pelo usuário" quer dizer que o Google encontrou duas versões da mesma
+> página e escolheu a outra como canônica — quase certamente `www.nr13sistema.com.br`,
+> que hoje responde 200 em vez de redirecionar. **Enquanto o 301 de www não existir, a
+> home dificilmente será indexada**, por mais indexações que se solicite.
+
 ## Indexadas
 
-(mover para cá após solicitar em "Inspecionar URL → Solicitar indexação")
+(mover para cá conforme o Search Console confirmar)
 
 ## Fora da lista de propósito
 
@@ -43,11 +66,20 @@ Ordem por retorno esperado. A landing do sistema vem primeiro: é o único produ
 - [x] Sitemap atualizado com as 14 URLs indexáveis
 - [x] `robots.txt` apontando para o sitemap no domínio correto
 - [x] NAP idêntico em rodapé, JSON-LD e página de contato
-- [ ] Arquivos publicados no servidor (o pedido de indexação depende disso)
-- [ ] Redirecionamento 301 de `www` → sem `www`
-- [ ] HTTPS ativo com redirecionamento de http → https
-- [ ] Propriedade verificada no Search Console (**tipo domínio**, não prefixo de URL)
-- [ ] Sitemap enviado no Search Console
+- [x] Arquivos publicados no servidor — deploy confirmado em 10/08/2026, 14 URLs em 200
+- [ ] **Redirecionamento 301 de `www` → sem `www`** — pendente e bloqueando a home:
+
+  ```nginx
+  server {
+      listen 443 ssl;
+      server_name www.nr13sistema.com.br;
+      return 301 https://nr13sistema.com.br$request_uri;
+  }
+  ```
+
+- [x] HTTPS ativo
+- [x] Propriedade verificada no Search Console (tipo domínio)
+- [x] Sitemap enviado no Search Console — processado, 14 URLs
 - [ ] Google Analytics 4 instalado
 - [ ] Perfil da Empresa no Google criado, com o **mesmo NAP** do rodapé e do JSON-LD
 - [ ] Teste de dados estruturados: https://search.google.com/test/rich-results
