@@ -35,6 +35,41 @@ Dez solicitações manuais aceitas; na décima primeira o Search Console respond
 - [ ] https://nr13sistema.com.br/ensaios-nao-destrutivos-vitoria-es.html
 - [ ] https://nr13sistema.com.br/combate-a-incendio-vitoria-es.html
 
+## Execução de 13/08/2026 — deploy no ar e cota estourada
+
+Deploy confirmado: as 10 URLs novas respondem **200**, `favicon-48x48.png` responde 200 e o
+`sitemap.xml` no ar já traz **24 URLs**. Sitemap reenviado no Search Console.
+
+Solicitações de indexação feitas hoje, com confirmação visual do aviso *"Indexação solicitada"*:
+
+- [x] https://nr13sistema.com.br/blog/como-gerar-laudo-nr13.html
+- [x] https://nr13sistema.com.br/blog/como-inspecionar-vaso-de-pressao.html
+- [x] https://nr13sistema.com.br/blog/como-inspecionar-caldeira-nr13.html
+
+Tentadas, **sem confirmação visual** (a solicitação pode ter entrado; a UI não confirmou):
+
+- [?] https://nr13sistema.com.br/blog/como-calibrar-manometro.html
+- [?] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
+
+Na sequência o Search Console respondeu **"A cota foi excedida — tente novamente amanhã"**.
+Cliques repetidos na mesma URL consomem cota, então o teto do dia chegou antes das 10.
+
+### Fila para o próximo dia (cota renovada)
+
+- [ ] https://nr13sistema.com.br/blog/como-calibrar-manometro.html
+- [ ] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html
+- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html
+- [ ] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html
+- [ ] https://nr13sistema.com.br/ — recrawl da home, necessário para o Google atualizar o favicon
+
+> Solicitação manual apenas **acelera** o rastreamento. As 24 URLs já estão no sitemap, então o
+> Google chega nelas sozinho. O que realmente trava a home continua sendo o 301 de `www`, ainda
+> **não aplicado** — verificado em 13/08/2026, `https://www.nr13sistema.com.br/` segue
+> respondendo 200. Ver `docs/NGINX-REDIRECTS.md`.
+
 ## Lote de 12/08/2026 — 10 guias novos
 
 Criados em 12/08/2026 e já incluídos no `sitemap.xml` (24 URLs no total).
