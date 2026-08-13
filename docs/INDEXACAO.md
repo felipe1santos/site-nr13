@@ -35,6 +35,43 @@ Dez solicitações manuais aceitas; na décima primeira o Search Console respond
 - [ ] https://nr13sistema.com.br/ensaios-nao-destrutivos-vitoria-es.html
 - [ ] https://nr13sistema.com.br/combate-a-incendio-vitoria-es.html
 
+## Lote de 12/08/2026 — 10 guias novos
+
+Criados em 12/08/2026 e já incluídos no `sitemap.xml` (24 URLs no total).
+**Reenviar o sitemap no Search Console** depois do deploy; a solicitação manual
+individual respeita o teto de ~10 por dia, então a fila abaixo vai em duas rodadas.
+
+Ordem de prioridade (intenção de busca mais forte primeiro):
+
+- [ ] https://nr13sistema.com.br/blog/como-gerar-laudo-nr13.html
+- [ ] https://nr13sistema.com.br/blog/como-inspecionar-vaso-de-pressao.html
+- [ ] https://nr13sistema.com.br/blog/como-inspecionar-caldeira-nr13.html
+- [ ] https://nr13sistema.com.br/blog/como-calibrar-manometro.html
+- [ ] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html
+- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html
+- [ ] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html
+- [ ] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html
+
+Palavra-chave alvo de cada uma:
+
+| URL | Consulta principal | Schema |
+|---|---|---|
+| `como-gerar-laudo-nr13` | como gerar laudo NR13 / modelo de laudo NR13 | Article + HowTo + FAQ |
+| `como-inspecionar-vaso-de-pressao` | como inspecionar vaso de pressão | Article + HowTo + FAQ |
+| `como-inspecionar-caldeira-nr13` | como inspecionar caldeira | Article + HowTo + FAQ |
+| `como-calibrar-manometro` | como calibrar manômetro | Article + HowTo + FAQ |
+| `sistema-de-inspecao-nr13` | sistema de inspeção NR13 | Article + FAQ |
+| `periodicidade-de-inspecao-nr13-por-categoria` | de quanto em quanto tempo inspecionar | Article + FAQ |
+| `checklist-de-inspecao-nr13` | checklist de inspeção NR13 | Article + FAQ |
+| `calibracao-de-valvula-de-seguranca-psv` | calibração de válvula de segurança PSV | Article + FAQ |
+| `bloco-padrao-de-inspecao-nr13` | bloco padrão de inspeção NR13 / ultrassom V1 V2 | Article + FAQ |
+| `vida-remanescente-e-taxa-de-corrosao` | como calcular vida remanescente | Article + FAQ |
+
+> As quatro páginas com `HowTo` são as que podem render resultado rico de passo a passo.
+> Vale rodá-las no teste de resultados aprimorados depois do deploy.
+
 ## Estado de cada URL na inspeção (10/08/2026)
 
 | URL | Estado antes da solicitação |
@@ -101,12 +138,21 @@ Dez solicitações manuais aceitas; na décima primeira o Search Console respond
 Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 
 **Cluster NR-13** (pilar: `/inspecao-nr13-vitoria-es.html`)
-- [ ] `blog/periodicidade-de-inspecao-nr13-por-categoria.html`
+- [x] `blog/periodicidade-de-inspecao-nr13-por-categoria.html` — 12/08/2026
+- [x] `blog/calibracao-de-valvula-de-seguranca-psv.html` — 12/08/2026
+- [x] `blog/vida-remanescente-e-taxa-de-corrosao.html` — 12/08/2026
+- [x] `blog/como-inspecionar-vaso-de-pressao.html` — 12/08/2026
+- [x] `blog/como-inspecionar-caldeira-nr13.html` — 12/08/2026
+- [x] `blog/como-gerar-laudo-nr13.html` — 12/08/2026
+- [x] `blog/como-calibrar-manometro.html` — 12/08/2026
+- [x] `blog/bloco-padrao-de-inspecao-nr13.html` — 12/08/2026
+- [x] `blog/checklist-de-inspecao-nr13.html` — 12/08/2026
 - [ ] `blog/spie-servico-proprio-de-inspecao-vale-a-pena.html`
-- [ ] `blog/calibracao-de-valvula-de-seguranca-psv.html`
-- [ ] `blog/vida-remanescente-e-taxa-de-corrosao.html`
+- [ ] `blog/inspecao-de-tubulacao-e-tanque-nr13.html`
+- [ ] `blog/placa-de-identificacao-ilegivel-o-que-fazer.html`
 
 **Cluster produto** (pilar: `/sistema-nr13.html`)
+- [x] `blog/sistema-de-inspecao-nr13.html` — 12/08/2026
 - [ ] `blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html`
 - [ ] `blog/portal-do-cliente-para-empresa-de-inspecao.html`
 
