@@ -54,9 +54,31 @@ Tentadas, **sem confirmação visual** (a solicitação pode ter entrado; a UI n
 Na sequência o Search Console respondeu **"A cota foi excedida — tente novamente amanhã"**.
 Cliques repetidos na mesma URL consomem cota, então o teto do dia chegou antes das 10.
 
+### Verificação posterior no mesmo dia
+
+Tentativa de retomar a fila: o Search Console respondeu **"A cota foi excedida"** de novo — a
+cota é diária e só renova no dia seguinte.
+
+Mas a inspeção (que não consome cota) trouxe boas notícias:
+
+- `blog/como-calibrar-manometro.html` → **"O URL está no Google — a página está indexada"**. Ou
+  seja, a solicitação sem confirmação visual **funcionou**.
+- `site:nr13sistema.com.br` mostra `https://nr13sistema.com.br/` (sem `www`) no índice — a home
+  canônica entrou, apesar do 301 ausente.
+- `blog/como-gerar-laudo-nr13.html` já aparece na busca.
+
+Dois problemas confirmados na SERP:
+
+1. **Favicon ainda é o globo genérico** em todos os resultados. Esperado: o PNG 48x48 só subiu
+   hoje e o Google ainda não recrawleou a home. Não há mais nada a fazer no código — é esperar o
+   recrawl.
+2. `/contato.html` continua indexada, **com o título da marca antiga** ("NR13 AutoDocs — Software
+   de Laudos"), e responde 404. Quem clicar nesse resultado cai em erro. É o argumento mais
+   concreto para aplicar os 301 de `docs/NGINX-REDIRECTS.md`.
+
 ### Fila para o próximo dia (cota renovada)
 
-- [ ] https://nr13sistema.com.br/blog/como-calibrar-manometro.html
+- [x] ~~blog/como-calibrar-manometro.html~~ — confirmada indexada, saiu da fila
 - [ ] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
 - [ ] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html
 - [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html
