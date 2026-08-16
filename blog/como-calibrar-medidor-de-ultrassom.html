@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Como Calibrar Medidor de Ultrassom (Espessura): Passo a Passo</title>
+<meta name="description" content="Como calibrar medidor de ultrassom de espessura na prática: diferença entre calibração de laboratório e padronização em campo, zeramento do transdutor, ajuste de velocidade sônica, calibração de dois pontos em bloco escalonado, verificação periódica durante o serviço e o que registrar no relatório NR-13.">
+<meta name="keywords" content="como calibrar medidor de ultrassom, calibração de medidor de espessura, ultrassom de espessura, padronização de ultrassom, velocidade sônica do aço, bloco escalonado de referência, zeramento do transdutor, certificado de calibração de ultrassom, medição de espessura NR13">
+
+<link rel="canonical" href="https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Axial Engenharia">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vila Velha, Espírito Santo">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axial Engenharia">
+<meta property="og:title" content="Como Calibrar Medidor de Ultrassom (Espessura): Passo a Passo">
+<meta property="og:description" content="Zeramento do transdutor, ajuste de velocidade sônica, calibração de dois pontos em bloco escalonado, verificação durante o serviço e o que registrar no relatório de inspeção NR-13.">
+<meta property="og:url" content="https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html">
+<meta property="og:image" content="https://nr13sistema.com.br/img/card-end.webp">
+<meta property="og:locale" content="pt_BR">
+<meta property="article:published_time" content="2026-08-16">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0a1f33">
+
+<link rel="preload" as="image" href="../img/card-end.webp" fetchpriority="high">
+<link rel="stylesheet" href="../css/site.css?v=20260816">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Como calibrar medidor de ultrassom de espessura: zero, velocidade sônica e verificação em campo",
+  "description": "Como calibrar medidor de ultrassom de espessura na prática: diferença entre calibração de laboratório e padronização em campo, zeramento do transdutor, ajuste de velocidade sônica, calibração de dois pontos em bloco escalonado, verificação periódica durante o serviço e o que registrar no relatório NR-13.",
+  "inLanguage": "pt-BR",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html"
+  },
+  "image": "https://nr13sistema.com.br/img/card-end.webp",
+  "datePublished": "2026-08-16",
+  "dateModified": "2026-08-16",
+  "author": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "url": "https://nr13sistema.com.br/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nr13sistema.com.br/icon-512.png"
+    }
+  },
+  "about": [
+    "Medidor de espessura por ultrassom",
+    "Ensaios não destrutivos",
+    "NR-13",
+    "Rastreabilidade metrológica"
+  ],
+  "keywords": "como calibrar medidor de ultrassom, calibração de medidor de espessura, padronização de ultrassom, velocidade sônica do aço, bloco escalonado de referência, certificado de calibração de ultrassom"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://nr13sistema.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conteúdo técnico",
+      "item": "https://nr13sistema.com.br/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Como calibrar medidor de ultrassom",
+      "item": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Como calibrar um medidor de espessura por ultrassom",
+  "description": "Roteiro de padronização de medidor de espessura por ultrassom: zeramento do transdutor, ajuste de velocidade sônica no material, calibração de dois pontos em bloco escalonado e verificação periódica durante o serviço.",
+  "inLanguage": "pt-BR",
+  "image": "https://nr13sistema.com.br/img/card-end.webp",
+  "totalTime": "PT20M",
+  "supply": [
+    { "@type": "HowToSupply", "name": "Acoplante" },
+    { "@type": "HowToSupply", "name": "Bloco escalonado de referência do mesmo material" },
+    { "@type": "HowToSupply", "name": "Certificado de calibração do aparelho e do bloco" },
+    { "@type": "HowToSupply", "name": "Lixa e material de limpeza da superfície" }
+  ],
+  "tool": [
+    { "@type": "HowToTool", "name": "Medidor de espessura por ultrassom" },
+    { "@type": "HowToTool", "name": "Transdutor duplo cristal com cabo" },
+    { "@type": "HowToTool", "name": "Termômetro de contato" }
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Conferir a documentação do aparelho e do bloco",
+      "text": "Antes de ligar, confirme que o medidor tem certificado de calibração vigente emitido por laboratório com rastreabilidade e que o bloco de referência também está certificado. Sem esses dois documentos a medição não sustenta laudo.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-1"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Inspecionar transdutor e cabo",
+      "text": "Verifique desgaste da face do transdutor, integridade da linha de retardo, conectores e cabo. Face gasta ou cabo com mau contato produz leitura instável que nenhuma calibração corrige.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-2"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Zerar o transdutor",
+      "text": "Execute o zeramento no disco de referência do próprio aparelho, com acoplante, para compensar o atraso da sapata. Repita o zero sempre que trocar transdutor, cabo ou houver mudança relevante de temperatura.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-3"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Ajustar a velocidade sônica do material",
+      "text": "Selecione ou levante a velocidade de propagação do material real a ser medido. Aço carbono e aço inoxidável têm velocidades diferentes, e usar o valor padrão de fábrica em material diverso introduz erro sistemático em todas as medições.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-4"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Calibrar em dois pontos no bloco escalonado",
+      "text": "Meça um degrau fino e um degrau espesso do bloco de referência, escolhidos de modo a envolver a faixa de espessura esperada no equipamento, e ajuste o aparelho até que ambas as leituras coincidam com os valores certificados.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-5"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Validar em um terceiro degrau",
+      "text": "Meça um degrau intermediário que não foi usado no ajuste e compare com o valor certificado. É essa leitura independente que comprova que a calibração ficou boa em toda a faixa, e não apenas nos dois pontos ajustados.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-6"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Preparar a superfície e medir",
+      "text": "Remova carepa, ferrugem solta, respingo e pintura descolada no ponto de medição, aplique acoplante e faça leituras estáveis, repetindo a medição em posições próximas para descartar valor isolado.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-7"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Verificar durante e ao fim do serviço",
+      "text": "Reconfira o aparelho no bloco de referência em intervalos definidos no procedimento e obrigatoriamente ao encerrar o serviço. Se a verificação final reprovar, todas as medições feitas desde a última verificação válida precisam ser refeitas.",
+      "url": "https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html#passo-8"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Calibrar o medidor de ultrassom é a mesma coisa que padronizar em campo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Calibração é o serviço de laboratório, com padrões rastreáveis, que gera o certificado do aparelho e costuma ter validade anual. Padronização é o ajuste feito em campo antes do ensaio, com zeramento do transdutor e ajuste de velocidade sônica em bloco de referência. As duas são necessárias: o certificado sem a padronização não garante a leitura do dia, e a padronização sem certificado não tem rastreabilidade."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "De quanto em quanto tempo o medidor de espessura precisa ser calibrado em laboratório?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A prática consolidada é calibração anual em laboratório com rastreabilidade, e calibração extraordinária após queda, reparo, troca de componente interno ou qualquer suspeita de leitura errada. O procedimento interno da empresa executante é que fixa o intervalo, e ele precisa estar escrito e ser cumprido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Com que frequência padronizar o aparelho durante a inspeção?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No início do serviço, sempre que trocar transdutor ou cabo, quando houver mudança relevante de temperatura ou de material medido, em intervalos definidos no procedimento e obrigatoriamente na verificação final. Se a verificação final reprovar, as medições feitas desde a última verificação válida devem ser repetidas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso medir espessura por cima da pintura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Só com aparelho e transdutor que operem em modo eco a eco, que descarta a camada de revestimento medindo entre dois ecos de fundo consecutivos. No modo convencional, a tinta entra na leitura e o resultado sai maior que a espessura real do metal — erro que trabalha contra a segurança, porque esconde perda de parede."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que o aparelho mostra metade da espessura em chapa fina?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É o efeito de duplicação: em espessuras muito próximas do limite inferior do transdutor, o aparelho pode travar no segundo eco e indicar o dobro, ou perder o primeiro eco e indicar a metade. A saída é usar transdutor adequado à faixa, conferir a leitura em bloco de referência de espessura similar e desconfiar de qualquer valor que seja exatamente o dobro ou a metade do esperado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O bloco V1 e V2 serve para calibrar medidor de espessura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os blocos V1 e V2 são padrões de referência para detector de descontinuidades por ultrassom: ajuste de faixa, ponto de emissão, ângulo do transdutor e resolução. Para medidor de espessura o usual é o bloco escalonado com espessuras conhecidas e certificadas, do mesmo material a ser medido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que registrar no relatório sobre a calibração do ultrassom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modelo e número de série do aparelho e do transdutor, número e validade do certificado de calibração, bloco de referência usado com seu certificado, velocidade sônica ajustada, resultado da padronização inicial e da verificação final, acoplante e temperatura da superfície. Sem esses dados, a tabela de espessuras não é auditável."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="../index.html">
+      <img src="../icon-192.png" alt="Axial Engenharia — engenharia mecânica e inspeção NR-13 em Vitória ES" width="40" height="40">
+      <span class="brand-txt">
+        <span class="brand-name">Axial Engenharia</span>
+        <span class="brand-tag">Engenharia Mecânica · ES</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../sistema-nr13.html">Sistema NR13</a>
+      <a href="index.html" aria-current="page">Conteúdo</a>
+      <a href="../index.html#atendimento">Onde atendemos</a>
+      <a href="../index.html#contato">Contato</a>
+      <a class="btn btn-primary" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="nav">Assinar o Sistema</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="../img/card-end.webp" alt="Engenheira inspecionando peça metálica de grande porte em chão de fábrica com equipamento de ensaio não destrutivo" width="1600" height="800" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Ensaios não destrutivos · NR-13</span>
+      <h1>Como calibrar medidor de ultrassom de espessura</h1>
+      <p class="hero-sub">A espessura medida define a taxa de corrosão, a vida remanescente e o prazo da próxima inspeção — tudo em cima de um número que o aparelho só entrega certo se estiver padronizado. Este guia mostra <strong>como calibrar medidor de ultrassom</strong> passo a passo: zeramento do transdutor, ajuste de velocidade sônica, calibração de dois pontos em bloco escalonado e a verificação final que valida (ou invalida) o serviço inteiro.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap breadcrumb">
+  <a href="../index.html">Início</a> › <a href="index.html">Conteúdo técnico</a> › <span>Como calibrar medidor de ultrassom</span>
+</div>
+
+<section>
+  <div class="wrap landing-layout">
+    <article class="prose">
+      <h2>Duas coisas diferentes chamadas de "calibração"</h2>
+      <p>
+        A confusão começa no vocabulário, e ela custa laudo em auditoria:
+      </p>
+      <ul>
+        <li>
+          <strong>Calibração metrológica</strong> — feita em laboratório, com padrões rastreáveis,
+          gera o <strong>certificado do aparelho</strong>, tipicamente com validade anual. É o
+          documento que a auditoria pede.
+        </li>
+        <li>
+          <strong>Padronização (ou ajuste em campo)</strong> — feita pelo inspetor antes e durante o
+          ensaio, no bloco de referência, para acertar <strong>zero e velocidade sônica</strong> nas
+          condições reais do dia. É o que garante a leitura daquela medição.
+        </li>
+      </ul>
+      <p>
+        Uma não substitui a outra. Certificado vigente com aparelho sem padronização entrega número
+        errado com documento bonito; padronização impecável em aparelho sem certificado entrega
+        número certo sem rastreabilidade. O <a href="relatorio-de-inspecao-de-vaso-de-pressao.html">relatório
+        de inspeção</a> precisa registrar as duas.
+      </p>
+
+      <div class="callout">
+        <p>
+          <b>Bloco escalonado, não V1/V2.</b> Os
+          <a href="bloco-padrao-de-inspecao-nr13.html">blocos V1 e V2</a> são padrões para
+          <strong>detector de descontinuidades</strong> — faixa, ponto de emissão, ângulo,
+          resolução. Para <strong>medidor de espessura</strong> o padrão usual é o
+          <strong>bloco escalonado</strong>, com degraus de espessura conhecida e certificada, do
+          mesmo material que será medido.
+        </p>
+      </div>
+
+      <h2>Passo a passo da padronização em campo</h2>
+
+      <h3 id="passo-1">1. Documentação antes de ligar o aparelho</h3>
+      <p>
+        Certificado do <strong>medidor</strong> dentro da validade e certificado do
+        <strong>bloco de referência</strong>. O bloco também é instrumento: um bloco desgastado,
+        corroído ou sem certificado transfere o próprio erro para todas as leituras do dia.
+      </p>
+
+      <h3 id="passo-2">2. Transdutor e cabo</h3>
+      <p>
+        Face gasta, linha de retardo riscada, conector frouxo ou cabo com mau contato produzem
+        leitura instável — e nenhuma calibração corrige defeito de hardware. Um transdutor duplo
+        cristal desgastado tende a perder sinal justamente onde a parede está mais fina, que é onde
+        você mais precisa dele.
+      </p>
+
+      <h3 id="passo-3">3. Zeramento do transdutor</h3>
+      <p>
+        O zero compensa o <strong>atraso da sapata</strong> — o tempo que o pulso leva dentro do
+        próprio transdutor antes de entrar no material. Faça no disco de referência do aparelho, com
+        acoplante. Refaça o zero sempre que trocar transdutor, trocar cabo ou quando a temperatura
+        mudar de forma relevante entre a padronização e a medição.
+      </p>
+
+      <h3 id="passo-4">4. Velocidade sônica: o erro sistemático mais comum</h3>
+      <p>
+        O aparelho não mede espessura: mede <strong>tempo</strong>. A espessura é o tempo
+        multiplicado pela velocidade de propagação no material, dividida por dois. Se a velocidade
+        estiver errada, <em>todas</em> as leituras saem erradas na mesma proporção — e como o erro é
+        sistemático, ele não aparece na repetição da medida.
+      </p>
+      <p>
+        Aço carbono e aço inoxidável austenítico têm velocidades longitudinais diferentes; alumínio,
+        cobre e ferro fundido, mais diferentes ainda. Duas saídas corretas: selecionar o material
+        real na biblioteca do aparelho <strong>ou</strong> levantar a velocidade medindo um bloco de
+        espessura certificada <strong>do mesmo material</strong> e deixando o aparelho calcular. O
+        que não vale é aceitar a velocidade que veio de fábrica sem conferir.
+      </p>
+
+      <h3 id="passo-5">5. Calibração de dois pontos</h3>
+      <p>
+        Um ponto só corrige o ganho; dois pontos corrigem ganho e offset ao mesmo tempo. Escolha um
+        degrau <strong>fino</strong> e um <strong>espesso</strong> do bloco escalonado, de modo que a
+        faixa de espessura esperada no equipamento fique <em>entre</em> eles — calibrar de 2 a 5 mm
+        e medir parede de 12 mm é extrapolar.
+      </p>
+
+      <h3 id="passo-6">6. Validação em um terceiro degrau</h3>
+      <p>
+        Meça um degrau intermediário que <strong>não</strong> foi usado no ajuste e compare com o
+        valor certificado. Essa é a única leitura verdadeiramente independente do procedimento —
+        conferir de novo os dois pontos que você acabou de ajustar não prova nada.
+      </p>
+
+      <h3 id="passo-7">7. Superfície, acoplante e temperatura</h3>
+      <ul>
+        <li>Remova carepa, ferrugem solta, respingo de solda e pintura descolada no ponto de medição;</li>
+        <li>Acoplante compatível com a temperatura da superfície — o gel comum evapora e desacopla em superfície quente;</li>
+        <li>Superfície quente altera a velocidade sônica: acima de cerca de 50 °C, aplique a correção do fabricante ou padronize na própria temperatura de trabalho;</li>
+        <li>Em superfície curva ou rugosa, aumente o número de leituras e considere a dispersão dos valores;</li>
+        <li>Repita a medição em posições próximas: valor isolado muito diferente dos vizinhos é suspeito antes de ser achado.</li>
+      </ul>
+
+      <h3 id="passo-8">8. Verificação durante e no fim do serviço</h3>
+      <p>
+        Reconfira o aparelho no bloco em intervalos definidos no procedimento e
+        <strong>obrigatoriamente ao encerrar</strong>. A regra é dura e é o que dá validade ao
+        conjunto: <strong>se a verificação final reprovar, todas as medições feitas desde a última
+        verificação válida são refeitas</strong>. Por isso a verificação intermediária vale a pena —
+        ela limita o prejuízo.
+      </p>
+
+      <div class="tabela-wrap">
+        <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+        <table class="tec">
+          <thead>
+            <tr>
+              <th>Sintoma</th>
+              <th>Causa provável</th>
+              <th>O que fazer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Todas as leituras deslocadas na mesma proporção</td>
+              <td>Velocidade sônica errada para o material</td>
+              <td>Levantar a velocidade em bloco do mesmo material</td>
+            </tr>
+            <tr>
+              <td>Leitura maior que a espessura nominal</td>
+              <td>Medição sobre pintura em modo convencional</td>
+              <td>Usar modo eco a eco ou remover o revestimento</td>
+            </tr>
+            <tr>
+              <td>Valor exatamente o dobro ou a metade</td>
+              <td>Duplicação de eco em chapa fina</td>
+              <td>Trocar para transdutor adequado à faixa e conferir em bloco</td>
+            </tr>
+            <tr>
+              <td>Leitura instável, pisca e some</td>
+              <td>Acoplamento ruim, face gasta ou cabo com mau contato</td>
+              <td>Preparar a superfície, trocar transdutor ou cabo</td>
+            </tr>
+            <tr>
+              <td>Zero não fecha no disco de referência</td>
+              <td>Desgaste da sapata ou temperatura muito diferente</td>
+              <td>Refazer o zero na condição real; substituir transdutor</td>
+            </tr>
+            <tr>
+              <td>Valor muito baixo em ponto isolado</td>
+              <td>Pite, corrosão localizada — ou eco espúrio</td>
+              <td>Repetir ao redor do ponto e confirmar com varredura</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>O que registrar no relatório</h2>
+      <ul>
+        <li>Modelo e <strong>número de série</strong> do aparelho e do transdutor;</li>
+        <li>Número e validade do <strong>certificado de calibração</strong> do medidor;</li>
+        <li><strong>Bloco de referência</strong> usado, com seu certificado;</li>
+        <li><strong>Velocidade sônica</strong> ajustada e material considerado;</li>
+        <li>Resultado da padronização inicial e da <strong>verificação final</strong>;</li>
+        <li>Acoplante e <strong>temperatura</strong> da superfície;</li>
+        <li>Identificação do inspetor e sua qualificação para o ensaio.</li>
+      </ul>
+      <p>
+        Esses dados são o que transforma a tabela de espessuras em evidência. Como montar a malha e
+        registrar os pontos está em
+        <a href="medicao-de-espessura-por-ultrassom.html">medição de espessura por ultrassom</a>, e o
+        que fazer com os números depois está em
+        <a href="vida-remanescente-e-taxa-de-corrosao.html">vida remanescente e taxa de corrosão</a>.
+      </p>
+
+      <h2>Controle de calibração de instrumento sem planilha</h2>
+      <p>
+        Medidor de ultrassom, manômetro padrão, bloco de referência e válvula de segurança têm o
+        mesmo problema de gestão: certificado com validade, vinculado a um número de série, que
+        precisa estar vigente <strong>na data</strong> da inspeção — e ninguém descobre que venceu no
+        dia certo olhando pasta de PDF.
+      </p>
+      <p>
+        No <a href="../sistema-nr13.html">Sistema NR13</a>, os certificados ficam presos ao ativo e à
+        inspeção que os exigiu, com data de vencimento e alerta antes de expirar, e entram
+        automaticamente como anexo do relatório. Quem faz medição de espessura em campanha grande
+        sente a diferença logo no primeiro serviço em que a verificação final reprova: dá para saber
+        exatamente quais pontos precisam ser refeitos.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-buy btn-lg" href="../sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-outline" href="sistema-de-inspecao-nr13.html">O que um sistema de inspeção precisa ter</a>
+      </div>
+
+      <h2 id="faq">Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Calibrar o medidor de ultrassom é a mesma coisa que padronizar em campo?</summary>
+          <div class="faq-body"><p>Não. Calibração é o serviço de laboratório, com padrões rastreáveis, que gera o certificado do aparelho e costuma ter validade anual. Padronização é o ajuste feito em campo antes do ensaio, com zeramento do transdutor e ajuste de velocidade sônica em bloco de referência. As duas são necessárias: o certificado sem a padronização não garante a leitura do dia, e a padronização sem certificado não tem rastreabilidade.</p></div>
+        </details>
+        <details>
+          <summary>De quanto em quanto tempo o medidor de espessura precisa ser calibrado em laboratório?</summary>
+          <div class="faq-body"><p>A prática consolidada é calibração anual em laboratório com rastreabilidade, e calibração extraordinária após queda, reparo, troca de componente interno ou qualquer suspeita de leitura errada. O procedimento interno da empresa executante é que fixa o intervalo, e ele precisa estar escrito e ser cumprido.</p></div>
+        </details>
+        <details>
+          <summary>Com que frequência padronizar o aparelho durante a inspeção?</summary>
+          <div class="faq-body"><p>No início do serviço, sempre que trocar transdutor ou cabo, quando houver mudança relevante de temperatura ou de material medido, em intervalos definidos no procedimento e obrigatoriamente na verificação final. Se a verificação final reprovar, as medições feitas desde a última verificação válida devem ser repetidas.</p></div>
+        </details>
+        <details>
+          <summary>Posso medir espessura por cima da pintura?</summary>
+          <div class="faq-body"><p>Só com aparelho e transdutor que operem em modo eco a eco, que descarta a camada de revestimento medindo entre dois ecos de fundo consecutivos. No modo convencional, a tinta entra na leitura e o resultado sai maior que a espessura real do metal — erro que trabalha contra a segurança, porque esconde perda de parede.</p></div>
+        </details>
+        <details>
+          <summary>Por que o aparelho mostra metade da espessura em chapa fina?</summary>
+          <div class="faq-body"><p>É o efeito de duplicação: em espessuras muito próximas do limite inferior do transdutor, o aparelho pode travar no segundo eco e indicar o dobro, ou perder o primeiro eco e indicar a metade. A saída é usar transdutor adequado à faixa, conferir a leitura em bloco de referência de espessura similar e desconfiar de qualquer valor que seja exatamente o dobro ou a metade do esperado.</p></div>
+        </details>
+        <details>
+          <summary>O bloco V1 e V2 serve para calibrar medidor de espessura?</summary>
+          <div class="faq-body"><p>Os blocos V1 e V2 são padrões de referência para detector de descontinuidades por ultrassom: ajuste de faixa, ponto de emissão, ângulo do transdutor e resolução. Para medidor de espessura o usual é o bloco escalonado com espessuras conhecidas e certificadas, do mesmo material a ser medido.</p></div>
+        </details>
+        <details>
+          <summary>O que registrar no relatório sobre a calibração do ultrassom?</summary>
+          <div class="faq-body"><p>Modelo e número de série do aparelho e do transdutor, número e validade do certificado de calibração, bloco de referência usado com seu certificado, velocidade sônica ajustada, resultado da padronização inicial e da verificação final, acoplante e temperatura da superfície. Sem esses dados, a tabela de espessuras não é auditável.</p></div>
+        </details>
+      </div>
+
+      <h2>Precisa da medição feita por engenharia habilitada?</h2>
+      <p>
+        A Axial Engenharia executa <strong>ensaios não destrutivos</strong> e
+        <strong>inspeção NR-13</strong> com Profissional Habilitado e ART registrada, atendendo
+        presencialmente <strong>Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari e
+        Fundão</strong>, com deslocamento programado para Anchieta, Aracruz, Linhares e São Mateus.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-primary" href="https://wa.me/5527992534407?text=Ol%C3%A1%2C%20preciso%20de%20medi%C3%A7%C3%A3o%20de%20espessura%20por%20ultrassom." rel="noopener">Falar com a engenharia</a>
+        <a class="btn btn-outline" href="../ensaios-nao-destrutivos-vitoria-es.html">Ver ensaios não destrutivos</a>
+      </div>
+    </article>
+
+    <aside class="landing-aside">
+      <div class="aside-box">
+        <h3>Resolva no sistema</h3>
+        <p>
+          O <strong>Sistema NR13</strong> guarda certificado de instrumento vinculado ao número de
+          série, avisa antes de vencer e anexa tudo ao relatório de inspeção.
+        </p>
+        <p><a class="btn btn-buy" href="../sistema-nr13.html">Conhecer o Sistema NR13</a></p>
+      </div>
+      <div class="aside-box">
+        <h3>Continue lendo</h3>
+        <ul>
+          <li><a href="medicao-de-espessura-por-ultrassom.html">Medição de espessura por ultrassom</a></li>
+          <li><a href="bloco-padrao-de-inspecao-nr13.html">Bloco padrão: V1, V2 e referência</a></li>
+          <li><a href="vida-remanescente-e-taxa-de-corrosao.html">Vida remanescente e taxa de corrosão</a></li>
+          <li><a href="como-calibrar-manometro.html">Como calibrar manômetro</a></li>
+        </ul>
+      </div>
+      <div class="aside-box">
+        <h3>Serviços relacionados</h3>
+        <ul>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13 em Vitória — ES</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec-soft" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Termos de busca desta página</span>
+      <ul>
+        <li><span>como calibrar medidor de ultrassom</span></li>
+        <li><span>calibração de medidor de espessura</span></li>
+        <li><span>padronização de ultrassom em campo</span></li>
+        <li><span>velocidade sônica do aço</span></li>
+        <li><a href="bloco-padrao-de-inspecao-nr13.html">bloco escalonado de referência</a></li>
+        <li><a href="medicao-de-espessura-por-ultrassom.html">medição de espessura por ultrassom</a></li>
+        <li><a href="relatorio-de-inspecao-de-vaso-de-pressao.html">registro do ensaio no relatório</a></li>
+        <li><a href="vida-remanescente-e-taxa-de-corrosao.html">taxa de corrosão a partir da espessura</a></li>
+        <li><a href="../sistema-nr13.html">controle de certificado de instrumento</a></li>
+        <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">ensaios não destrutivos em Vitória ES</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA: SISTEMA NR13 ============ -->
+<section class="sys-band">
+  <div class="sys-band-bg" aria-hidden="true">
+    <img src="../img/sistema-hero.webp" alt="" width="1920" height="1080" loading="lazy">
+  </div>
+  <div class="wrap sys-band-grid">
+    <div>
+      <span class="eyebrow">Software próprio</span>
+      <h2>Certificado de instrumento vencido não deveria ser descoberto em auditoria</h2>
+      <p>
+        Medidor de ultrassom, bloco de referência, manômetro e PSV entram como componentes com
+        número de série, e as calibrações ficam em lotes vinculados à inspeção que as exigiu — com
+        alerta antes do vencimento e anexo automático no relatório.
+      </p>
+      <ul class="sys-band-list">
+        <li>Certificado preso ao ativo, não a uma pasta solta</li>
+        <li>Alerta de vencimento por instrumento e por equipamento</li>
+        <li>Relatório de inspeção em PDF com os anexos já vinculados</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-buy btn-lg" href="../sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-ghost" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="faixa">Assinar agora</a>
+      </div>
+    </div>
+    <div class="sys-band-shot">
+      <img src="../img/sistema/sis-calibracao.webp" alt="Tela de controle de calibração do Sistema NR13 com lotes de instrumentos vinculados à inspeção" width="1607" height="977" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true">
+    <img src="../img/rodape-industrial.webp" alt="" width="1920" height="620" loading="lazy">
+  </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="../icon-192.png" alt="Axial Engenharia" width="48" height="48" loading="lazy">
+          <span class="brand-txt">
+            <span class="brand-name">Axial Engenharia</span>
+            <span class="brand-tag">Engenharia Mecânica · ES</span>
+          </span>
+        </div>
+        <p>
+          Engenharia mecânica aplicada à segurança de equipamentos: inspeção NR-13, adequação NR-12,
+          PMOC, ensaios não destrutivos e sistemas de combate a incêndio em toda a Grande Vitória — ES.
+        </p>
+        <span class="footer-reg">Responsável técnico habilitado · ART registrada em todo serviço · Atendimento em toda a Grande Vitória — ES</span>
+        <div class="social-row">
+          <a href="https://wa.me/5527992534407" rel="noopener" aria-label="WhatsApp da Axial Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.08.8.83-3-.2-.31a8.22 8.22 0 1115.13-4.4c0 4.53-3.68 8.24-8.2 8.24zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.11-.23-.17-.48-.29z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>
+          Av. Henrique Moscoso, 2250<br>
+          Jaburuna — Vila Velha/ES<br>
+          CEP: 29100-650
+        </p>
+        <p><a href="tel:+5527992534407">(27) 99253-4407</a></p>
+        <p><a href="mailto:nr13sistema@gmail.com">nr13sistema@gmail.com</a></p>
+        <p>Segunda a sexta, 08h às 18h</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC e qualidade do ar</a></li>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../combate-a-incendio-vitoria-es.html">Combate a incêndio</a></li>
+          <li><a href="../sistema-nr13.html">Sistema NR13 — gestão online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conteúdo técnico</h4>
+        <ul>
+          <li><a href="index.html">Todos os artigos</a></li>
+          <li><a href="como-gerar-laudo-nr13.html">Como gerar laudo NR-13</a></li>
+          <li><a href="relatorio-de-inspecao-de-vaso-de-pressao.html">Relatório de inspeção de vaso</a></li>
+          <li><a href="como-inspecionar-vaso-de-pressao.html">Como inspecionar vaso de pressão</a></li>
+          <li><a href="como-fazer-checklist-nr13.html">Como fazer checklist NR-13</a></li>
+          <li><a href="como-calibrar-medidor-de-ultrassom.html">Como calibrar medidor de ultrassom</a></li>
+          <li><a href="periodicidade-de-inspecao-nr13-por-categoria.html">Periodicidade de inspeção NR-13</a></li>
+          <li><a href="sistema-de-inspecao-nr13.html">Sistema de inspeção NR-13</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-home">
+      <a class="btn btn-ghost" href="../index.html#inicio">Voltar para a página inicial</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ano">2026</span> Axial Engenharia. Todos os direitos reservados. · <a href="../privacidade.html">Política de Privacidade</a></span>
+      <span class="disclaimer">
+        Conteúdo informativo. Não substitui a inspeção de segurança por Profissional Habilitado nem a
+        ART registrada no CREA-ES, exigidas pela NR-13.
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5527992534407?text=Ol%C3%A1%2C%20vim%20pelo%20conte%C3%BAdo%20do%20site." rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.5 14.04c-.2.57-1.19 1.1-1.66 1.17-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.02-3.48-4.14-3.65-.12-.16-.99-1.31-.99-2.5s.63-1.77.85-2.02c.22-.25.49-.31.65-.31h.48c.16.01.36-.06.56.42.2.5.7 1.72.76 1.84.06.13.1.27.02.44-.09.16-.13.26-.25.41-.12.15-.26.33-.37.44-.13.12-.25.25-.11.5.14.25.64 1.06 1.37 1.71.94.84 1.73 1.1 1.98 1.22.25.12.4.1.54-.06.15-.17.63-.72.79-.97.17-.25.33-.21.56-.12.22.08 1.43.68 1.68.8.25.12.42.18.48.29.05.1.05.59-.15 1.17z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="../js/site.js?v=20260816" defer></script>
+</body>
+</html>

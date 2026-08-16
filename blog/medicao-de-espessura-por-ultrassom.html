@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Medição de Espessura por Ultrassom: Malha de Pontos e Registro</title>
+<meta name="description" content="Como fazer medição de espessura por ultrassom em vaso de pressão e caldeira: onde colocar os pontos, como montar a malha e o croqui, quantas leituras por ponto, como identificar TML de forma rastreável, como comparar com a espessura requerida e o que registrar para o laudo NR-13 se sustentar.">
+<meta name="keywords" content="medição de espessura por ultrassom, malha de pontos de medição, croqui de medição de espessura, TML ponto de medição, espessura requerida ASME, ultrassom em vaso de pressão, medição de espessura NR13, relatório de medição de espessura">
+
+<link rel="canonical" href="https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Axial Engenharia">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vila Velha, Espírito Santo">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axial Engenharia">
+<meta property="og:title" content="Medição de Espessura por Ultrassom: Malha de Pontos e Registro">
+<meta property="og:description" content="Onde colocar os pontos, como montar a malha e o croqui, quantas leituras por ponto, como comparar com a espessura requerida e o que registrar para o laudo NR-13 se sustentar.">
+<meta property="og:url" content="https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html">
+<meta property="og:image" content="https://nr13sistema.com.br/img/hero-end.webp">
+<meta property="og:locale" content="pt_BR">
+<meta property="article:published_time" content="2026-08-16">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0a1f33">
+
+<link rel="preload" as="image" href="../img/hero-end.webp" fetchpriority="high">
+<link rel="stylesheet" href="../css/site.css?v=20260816">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Medição de espessura por ultrassom: malha de pontos, croqui e registro que sustenta o laudo",
+  "description": "Como fazer medição de espessura por ultrassom em vaso de pressão e caldeira: onde colocar os pontos, como montar a malha e o croqui, quantas leituras por ponto, como identificar TML de forma rastreável, como comparar com a espessura requerida e o que registrar para o laudo NR-13 se sustentar.",
+  "inLanguage": "pt-BR",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html"
+  },
+  "image": "https://nr13sistema.com.br/img/hero-end.webp",
+  "datePublished": "2026-08-16",
+  "dateModified": "2026-08-16",
+  "author": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "url": "https://nr13sistema.com.br/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nr13sistema.com.br/icon-512.png"
+    }
+  },
+  "about": [
+    "Medição de espessura",
+    "Ultrassom",
+    "Vaso de pressão",
+    "NR-13"
+  ],
+  "keywords": "medição de espessura por ultrassom, malha de pontos de medição, croqui de medição de espessura, espessura requerida, medição de espessura NR13"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://nr13sistema.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conteúdo técnico",
+      "item": "https://nr13sistema.com.br/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Medição de espessura por ultrassom",
+      "item": "https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quantos pontos de medição de espessura são necessários em um vaso de pressão?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não existe número fixo na NR-13. A quantidade vem do procedimento e da lógica de engenharia: cobrir costado por quadrantes e faixas, os dois tampos, a região de interface líquido-vapor, os bocais e as áreas de maior probabilidade de dano. Um vaso pequeno costuma fechar com poucas dezenas de pontos; um vaso grande, com centenas. O critério é cobertura da geometria e do mecanismo de dano, não o número em si."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso medir sempre nos mesmos pontos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, e é o ponto que a maioria das empresas erra. A taxa de corrosão vem da diferença entre duas medidas do mesmo lugar. Medir pontos diferentes a cada inspeção produz variação que é diferença de posição, não perda de material, e pode gerar tanto falso alarme quanto falsa segurança. Por isso o croqui com identificação rastreável dos pontos é obrigatório na prática."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quantas leituras fazer em cada ponto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A prática usual é fazer várias leituras dentro de uma pequena área ao redor do ponto e registrar a menor espessura encontrada, que é a que governa a avaliação de integridade. Leitura única não distingue perda real de erro de acoplamento, e valores muito dispersos entre si indicam superfície irregular ou corrosão localizada, que exige varredura mais densa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é espessura requerida e como comparar com a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Espessura requerida é a espessura mínima calculada pelo código de projeto para o equipamento resistir à pressão de trabalho, considerando material, diâmetro, eficiência de junta e tensão admissível. A avaliação compara a menor espessura medida com essa espessura requerida, e a diferença entre elas é a margem que ainda existe para corrosão futura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Medição de espessura substitui o exame interno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. A medição de espessura avalia perda de parede em pontos definidos; o exame interno avalia a superfície inteira, encontra pites, trincas, corrosão sob depósito e problemas de internos que a malha de pontos não alcança. São complementares, e a NR-13 trata cada um com regras próprias."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quem pode executar a medição de espessura por ultrassom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Profissional qualificado e certificado para o ensaio conforme o sistema de qualificação adotado, trabalhando sob procedimento escrito. A interpretação dos resultados para fins de avaliação de integridade e a conclusão do laudo continuam sendo responsabilidade do Profissional Habilitado definido pela NR-13."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="../index.html">
+      <img src="../icon-192.png" alt="Axial Engenharia — engenharia mecânica e inspeção NR-13 em Vitória ES" width="40" height="40">
+      <span class="brand-txt">
+        <span class="brand-name">Axial Engenharia</span>
+        <span class="brand-tag">Engenharia Mecânica · ES</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../sistema-nr13.html">Sistema NR13</a>
+      <a href="index.html" aria-current="page">Conteúdo</a>
+      <a href="../index.html#atendimento">Onde atendemos</a>
+      <a href="../index.html#contato">Contato</a>
+      <a class="btn btn-primary" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="nav">Assinar o Sistema</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="../img/hero-end.webp" alt="Inspetor com capacete de segurança examinando tubulações e conexões metálicas em planta industrial" width="1600" height="800" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Ensaios não destrutivos · NR-13</span>
+      <h1>Medição de espessura por ultrassom: malha de pontos, croqui e registro</h1>
+      <p class="hero-sub">Todo laudo NR-13 termina em uma tabela de espessuras — e é dela que saem taxa de corrosão, vida remanescente e prazo da próxima inspeção. Este guia mostra <strong>como fazer medição de espessura por ultrassom</strong> com malha rastreável: onde colocar os pontos, como identificá-los para poder repetir daqui a três anos, quantas leituras tirar e o que precisa ir para o relatório.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap breadcrumb">
+  <a href="../index.html">Início</a> › <a href="index.html">Conteúdo técnico</a> › <span>Medição de espessura por ultrassom</span>
+</div>
+
+<section>
+  <div class="wrap landing-layout">
+    <article class="prose">
+      <h2>O erro que invalida a série histórica</h2>
+      <p>
+        Medir espessura é fácil. O que é difícil — e o que separa um serviço técnico de uma coleta de
+        números — é medir <strong>no mesmo lugar</strong> na inspeção seguinte. A taxa de corrosão
+        vem da diferença entre duas medidas do mesmo ponto ao longo do tempo. Se a malha da inspeção
+        anterior não é reproduzível, você não tem taxa de corrosão: tem duas fotografias de lugares
+        diferentes.
+      </p>
+      <p>
+        Na prática, isso aparece assim: o costado media 12,3 mm em 2023 e mede 11,1 mm hoje. Perdeu
+        1,2 mm em três anos? Ou o inspetor de hoje mediu 40 cm mais abaixo, numa região que sempre
+        foi mais fina? Sem croqui, ninguém sabe — e o prazo da próxima inspeção passa a ser chute
+        documentado.
+      </p>
+
+      <div class="callout">
+        <p>
+          <b>Antes de medir, padronize o aparelho.</b> Zero do transdutor, velocidade sônica do
+          material e calibração em bloco escalonado. O passo a passo está em
+          <a href="como-calibrar-medidor-de-ultrassom.html">como calibrar medidor de ultrassom</a>.
+          Aparelho fora de padronização contamina a malha inteira, e o erro é sistemático: não
+          aparece na repetição.
+        </p>
+      </div>
+
+      <h2>Onde colocar os pontos</h2>
+      <p>
+        A malha não é sorteio nem grade uniforme por estética. Ela cobre <strong>geometria</strong> e
+        <strong>mecanismo de dano</strong>:
+      </p>
+      <ul>
+        <li><strong>Costado</strong> — dividido em quadrantes (norte, sul, leste, oeste) e faixas de altura, com pontos em cada cruzamento;</li>
+        <li><strong>Tampos</strong> — superior e inferior, incluindo o centro e a região de transição com o costado;</li>
+        <li><strong>Interface líquido-vapor</strong> — a faixa que alterna molhada e seca costuma ser a de maior corrosão em vaso de armazenamento;</li>
+        <li><strong>Fundo e regiões de acúmulo</strong> — onde deposita água, sedimento ou produto de corrosão;</li>
+        <li><strong>Bocais e conexões</strong> — entrada de produto, região de turbulência e erosão;</li>
+        <li><strong>Regiões de reparo</strong> e áreas com histórico de perda nas inspeções anteriores;</li>
+        <li><strong>Sob suporte, berço e chapa de reforço</strong> — corrosão em fresta é clássica e invisível no exame visual;</li>
+        <li><strong>Sob isolamento térmico</strong>, quando houver — a corrosão sob isolamento é um dos mecanismos mais agressivos e mais subestimados.</li>
+      </ul>
+
+      <h2>Identificação rastreável: o croqui é parte do ensaio</h2>
+      <p>
+        Cada ponto precisa de um código que outro inspetor consiga localizar sem você por perto.
+        A convenção que funciona combina três informações: <strong>região + posição angular +
+        altura</strong>. Por exemplo, <code>C-N-02</code> para costado, quadrante norte, segunda
+        faixa; <code>T-S-01</code> para tampo superior, ponto 1.
+      </p>
+      <p>
+        E o croqui precisa trazer a referência física de origem — normalmente uma marca permanente no
+        equipamento (um bocal, a placa de identificação, a solda longitudinal) e as distâncias a
+        partir dela. Marcação a giz não sobrevive a três anos de chuva; ponto medido "no meio do
+        costado" não é ponto.
+      </p>
+
+      <div class="tabela-wrap">
+        <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+        <table class="tec">
+          <thead>
+            <tr>
+              <th>Ponto</th>
+              <th>Região</th>
+              <th>Nominal (mm)</th>
+              <th>Anterior (mm)</th>
+              <th>Atual (mm)</th>
+              <th>Requerida (mm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C-N-01</td>
+              <td>Costado, norte, faixa 1</td>
+              <td>12,70</td>
+              <td>12,30</td>
+              <td>12,05</td>
+              <td>9,50</td>
+            </tr>
+            <tr>
+              <td>C-N-02</td>
+              <td>Costado, norte, faixa 2</td>
+              <td>12,70</td>
+              <td>11,80</td>
+              <td>11,20</td>
+              <td>9,50</td>
+            </tr>
+            <tr>
+              <td>C-S-02</td>
+              <td>Costado, sul, faixa 2</td>
+              <td>12,70</td>
+              <td>12,10</td>
+              <td>11,95</td>
+              <td>9,50</td>
+            </tr>
+            <tr>
+              <td>T-S-01</td>
+              <td>Tampo superior, centro</td>
+              <td>14,30</td>
+              <td>14,00</td>
+              <td>13,90</td>
+              <td>10,20</td>
+            </tr>
+            <tr>
+              <td>T-I-01</td>
+              <td>Tampo inferior, centro</td>
+              <td>14,30</td>
+              <td>13,10</td>
+              <td>12,40</td>
+              <td>10,20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Valores ilustrativos. O que importa é a estrutura: cada linha permite calcular perda no
+        intervalo, taxa de corrosão e margem até a espessura requerida — e o ponto
+        <code>C-N-02</code>, que perdeu mais que os vizinhos, é o que governa a decisão.
+      </p>
+
+      <h2>Quantas leituras por ponto</h2>
+      <p>
+        Leitura única não distingue perda real de acoplamento ruim. A prática é fazer
+        <strong>várias leituras numa pequena área ao redor do ponto</strong> e registrar a
+        <strong>menor</strong> — é a menor espessura que governa a avaliação de integridade.
+        Dispersão alta entre leituras vizinhas é sinal de superfície irregular ou corrosão
+        localizada, e pede varredura mais densa naquela região em vez de mais um número na tabela.
+      </p>
+
+      <h2>Da medida ao prazo: o que a malha alimenta</h2>
+      <p>
+        Com a menor espessura de cada ponto e a espessura da campanha anterior, sai a
+        <strong>taxa de corrosão</strong>; com a espessura requerida pelo código de projeto, sai a
+        <strong>vida remanescente</strong>. O cálculo completo, com exemplo numérico fechado, está em
+        <a href="vida-remanescente-e-taxa-de-corrosao.html">vida remanescente e taxa de corrosão</a>.
+      </p>
+      <p>
+        É esse resultado que sustenta tecnicamente o prazo proposto para a próxima inspeção — dentro
+        dos limites de <a href="periodicidade-de-inspecao-nr13-por-categoria.html">periodicidade por
+        categoria</a> — e que entra na conclusão do
+        <a href="relatorio-de-inspecao-de-vaso-de-pressao.html">relatório de inspeção</a>.
+      </p>
+
+      <h2>Erros que aparecem em auditoria</h2>
+      <ul>
+        <li>Tabela de espessuras <strong>sem croqui</strong> — impossível repetir a medição;</li>
+        <li>Pontos renumerados entre campanhas, quebrando a série histórica;</li>
+        <li>Medição <strong>sobre pintura</strong> em modo convencional, superestimando a parede;</li>
+        <li>Espessura requerida ausente — sem ela, não há critério de aceitação;</li>
+        <li>Só a média registrada, sem a menor leitura de cada ponto;</li>
+        <li>Aparelho <strong>sem verificação final</strong> no bloco ao encerrar o serviço;</li>
+        <li>Regiões críticas fora da malha: sob suporte, sob isolamento, interface líquido-vapor;</li>
+        <li>Qualificação do operador do ensaio não declarada no relatório.</li>
+      </ul>
+
+      <h2>A malha vive no equipamento, não no arquivo</h2>
+      <p>
+        O problema de gestão aqui é específico: a malha só vale se atravessar as campanhas. Planilha
+        por serviço resolve o dia da inspeção e falha três anos depois, quando outro inspetor precisa
+        encontrar o mesmo <code>C-N-02</code>.
+      </p>
+      <p>
+        No <a href="../sistema-nr13.html">Sistema NR13</a>, os pontos de medição pertencem ao
+        <strong>equipamento</strong>: cada ponto guarda a série histórica de espessuras, a taxa de
+        corrosão é calculada em cima dessa série, o croqui fica anexado ao ativo e a próxima inspeção
+        já abre com a malha da anterior carregada. O relatório sai com a tabela pronta, e o cliente
+        baixa pelo portal na hora da fiscalização.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-buy btn-lg" href="../sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-outline" href="sistema-de-inspecao-nr13.html">O que um sistema de inspeção precisa ter</a>
+      </div>
+
+      <h2 id="faq">Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Quantos pontos de medição de espessura são necessários em um vaso de pressão?</summary>
+          <div class="faq-body"><p>Não existe número fixo na NR-13. A quantidade vem do procedimento e da lógica de engenharia: cobrir costado por quadrantes e faixas, os dois tampos, a região de interface líquido-vapor, os bocais e as áreas de maior probabilidade de dano. Um vaso pequeno costuma fechar com poucas dezenas de pontos; um vaso grande, com centenas. O critério é cobertura da geometria e do mecanismo de dano, não o número em si.</p></div>
+        </details>
+        <details>
+          <summary>Preciso medir sempre nos mesmos pontos?</summary>
+          <div class="faq-body"><p>Sim, e é o ponto que a maioria das empresas erra. A taxa de corrosão vem da diferença entre duas medidas do mesmo lugar. Medir pontos diferentes a cada inspeção produz variação que é diferença de posição, não perda de material, e pode gerar tanto falso alarme quanto falsa segurança. Por isso o croqui com identificação rastreável dos pontos é obrigatório na prática.</p></div>
+        </details>
+        <details>
+          <summary>Quantas leituras fazer em cada ponto?</summary>
+          <div class="faq-body"><p>A prática usual é fazer várias leituras dentro de uma pequena área ao redor do ponto e registrar a menor espessura encontrada, que é a que governa a avaliação de integridade. Leitura única não distingue perda real de erro de acoplamento, e valores muito dispersos entre si indicam superfície irregular ou corrosão localizada, que exige varredura mais densa.</p></div>
+        </details>
+        <details>
+          <summary>O que é espessura requerida e como comparar com a medida?</summary>
+          <div class="faq-body"><p>Espessura requerida é a espessura mínima calculada pelo código de projeto para o equipamento resistir à pressão de trabalho, considerando material, diâmetro, eficiência de junta e tensão admissível. A avaliação compara a menor espessura medida com essa espessura requerida, e a diferença entre elas é a margem que ainda existe para corrosão futura.</p></div>
+        </details>
+        <details>
+          <summary>Medição de espessura substitui o exame interno?</summary>
+          <div class="faq-body"><p>Não. A medição de espessura avalia perda de parede em pontos definidos; o exame interno avalia a superfície inteira, encontra pites, trincas, corrosão sob depósito e problemas de internos que a malha de pontos não alcança. São complementares, e a NR-13 trata cada um com regras próprias.</p></div>
+        </details>
+        <details>
+          <summary>Quem pode executar a medição de espessura por ultrassom?</summary>
+          <div class="faq-body"><p>Profissional qualificado e certificado para o ensaio conforme o sistema de qualificação adotado, trabalhando sob procedimento escrito. A interpretação dos resultados para fins de avaliação de integridade e a conclusão do laudo continuam sendo responsabilidade do Profissional Habilitado definido pela NR-13.</p></div>
+        </details>
+      </div>
+
+      <h2>Precisa da medição executada e do laudo assinado?</h2>
+      <p>
+        A Axial Engenharia executa <strong>ensaios não destrutivos</strong> e
+        <strong>inspeção NR-13</strong> com Profissional Habilitado e ART registrada, atendendo
+        presencialmente <strong>Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari e
+        Fundão</strong>, com deslocamento programado para Anchieta, Aracruz, Linhares e São Mateus.
+        Mande a foto da placa do equipamento pelo WhatsApp e o escopo volta no mesmo dia útil.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-primary" href="https://wa.me/5527992534407?text=Ol%C3%A1%2C%20preciso%20de%20medi%C3%A7%C3%A3o%20de%20espessura%20por%20ultrassom%20em%20equipamento%20NR-13." rel="noopener">Falar com a engenharia</a>
+        <a class="btn btn-outline" href="../ensaios-nao-destrutivos-vitoria-es.html">Ver ensaios não destrutivos</a>
+      </div>
+    </article>
+
+    <aside class="landing-aside">
+      <div class="aside-box">
+        <h3>Resolva no sistema</h3>
+        <p>
+          No <strong>Sistema NR13</strong> os pontos de medição pertencem ao equipamento e guardam a
+          série histórica — a próxima inspeção já abre com a malha anterior carregada.
+        </p>
+        <p><a class="btn btn-buy" href="../sistema-nr13.html">Conhecer o Sistema NR13</a></p>
+      </div>
+      <div class="aside-box">
+        <h3>Continue lendo</h3>
+        <ul>
+          <li><a href="como-calibrar-medidor-de-ultrassom.html">Como calibrar medidor de ultrassom</a></li>
+          <li><a href="vida-remanescente-e-taxa-de-corrosao.html">Vida remanescente e taxa de corrosão</a></li>
+          <li><a href="relatorio-de-inspecao-de-vaso-de-pressao.html">Relatório de inspeção de vaso de pressão</a></li>
+          <li><a href="bloco-padrao-de-inspecao-nr13.html">Bloco padrão: V1, V2 e referência</a></li>
+        </ul>
+      </div>
+      <div class="aside-box">
+        <h3>Serviços relacionados</h3>
+        <ul>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13 em Vitória — ES</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec-soft" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Termos de busca desta página</span>
+      <ul>
+        <li><span>medição de espessura por ultrassom</span></li>
+        <li><span>malha de pontos de medição</span></li>
+        <li><span>croqui de medição de espessura</span></li>
+        <li><a href="vida-remanescente-e-taxa-de-corrosao.html">espessura requerida e vida remanescente</a></li>
+        <li><a href="como-calibrar-medidor-de-ultrassom.html">padronização do medidor de ultrassom</a></li>
+        <li><a href="como-inspecionar-vaso-de-pressao.html">ultrassom em vaso de pressão</a></li>
+        <li><a href="relatorio-de-inspecao-de-vaso-de-pressao.html">relatório de medição de espessura</a></li>
+        <li><a href="bloco-padrao-de-inspecao-nr13.html">bloco padrão de referência</a></li>
+        <li><a href="../sistema-nr13.html">histórico de espessuras por equipamento</a></li>
+        <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">ensaios não destrutivos em Vitória ES</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA: SISTEMA NR13 ============ -->
+<section class="sys-band">
+  <div class="sys-band-bg" aria-hidden="true">
+    <img src="../img/sistema-hero.webp" alt="" width="1920" height="1080" loading="lazy">
+  </div>
+  <div class="wrap sys-band-grid">
+    <div>
+      <span class="eyebrow">Software próprio</span>
+      <h2>A malha de espessuras pertence ao equipamento, não à planilha do serviço</h2>
+      <p>
+        Cada ponto guarda a série histórica, a taxa de corrosão sai da própria série, a memória de
+        cálculo segue o ASME Seção VIII e o croqui fica anexado ao ativo — a próxima campanha já
+        começa com a malha anterior carregada.
+      </p>
+      <ul class="sys-band-list">
+        <li>Pontos de medição com histórico por campanha</li>
+        <li>Vida remanescente calculada sobre a série real</li>
+        <li>Relatório em PDF com a tabela e o croqui anexados</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-buy btn-lg" href="../sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-ghost" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="faixa">Assinar agora</a>
+      </div>
+    </div>
+    <div class="sys-band-shot">
+      <img src="../img/sistema/sis-memorial.webp" alt="Tela de memória de cálculo do Sistema NR13 com espessuras medidas e vida remanescente" width="1607" height="977" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true">
+    <img src="../img/rodape-industrial.webp" alt="" width="1920" height="620" loading="lazy">
+  </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="../icon-192.png" alt="Axial Engenharia" width="48" height="48" loading="lazy">
+          <span class="brand-txt">
+            <span class="brand-name">Axial Engenharia</span>
+            <span class="brand-tag">Engenharia Mecânica · ES</span>
+          </span>
+        </div>
+        <p>
+          Engenharia mecânica aplicada à segurança de equipamentos: inspeção NR-13, adequação NR-12,
+          PMOC, ensaios não destrutivos e sistemas de combate a incêndio em toda a Grande Vitória — ES.
+        </p>
+        <span class="footer-reg">Responsável técnico habilitado · ART registrada em todo serviço · Atendimento em toda a Grande Vitória — ES</span>
+        <div class="social-row">
+          <a href="https://wa.me/5527992534407" rel="noopener" aria-label="WhatsApp da Axial Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.08.8.83-3-.2-.31a8.22 8.22 0 1115.13-4.4c0 4.53-3.68 8.24-8.2 8.24zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.11-.23-.17-.48-.29z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>
+          Av. Henrique Moscoso, 2250<br>
+          Jaburuna — Vila Velha/ES<br>
+          CEP: 29100-650
+        </p>
+        <p><a href="tel:+5527992534407">(27) 99253-4407</a></p>
+        <p><a href="mailto:nr13sistema@gmail.com">nr13sistema@gmail.com</a></p>
+        <p>Segunda a sexta, 08h às 18h</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC e qualidade do ar</a></li>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../combate-a-incendio-vitoria-es.html">Combate a incêndio</a></li>
+          <li><a href="../sistema-nr13.html">Sistema NR13 — gestão online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conteúdo técnico</h4>
+        <ul>
+          <li><a href="index.html">Todos os artigos</a></li>
+          <li><a href="como-gerar-laudo-nr13.html">Como gerar laudo NR-13</a></li>
+          <li><a href="relatorio-de-inspecao-de-vaso-de-pressao.html">Relatório de inspeção de vaso</a></li>
+          <li><a href="medicao-de-espessura-por-ultrassom.html">Medição de espessura por ultrassom</a></li>
+          <li><a href="como-fazer-checklist-nr13.html">Como fazer checklist NR-13</a></li>
+          <li><a href="como-calibrar-medidor-de-ultrassom.html">Como calibrar medidor de ultrassom</a></li>
+          <li><a href="periodicidade-de-inspecao-nr13-por-categoria.html">Periodicidade de inspeção NR-13</a></li>
+          <li><a href="sistema-de-inspecao-nr13.html">Sistema de inspeção NR-13</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-home">
+      <a class="btn btn-ghost" href="../index.html#inicio">Voltar para a página inicial</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ano">2026</span> Axial Engenharia. Todos os direitos reservados. · <a href="../privacidade.html">Política de Privacidade</a></span>
+      <span class="disclaimer">
+        Conteúdo informativo. Não substitui a inspeção de segurança por Profissional Habilitado nem a
+        ART registrada no CREA-ES, exigidas pela NR-13.
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5527992534407?text=Ol%C3%A1%2C%20vim%20pelo%20conte%C3%BAdo%20do%20site." rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.5 14.04c-.2.57-1.19 1.1-1.66 1.17-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.02-3.48-4.14-3.65-.12-.16-.99-1.31-.99-2.5s.63-1.77.85-2.02c.22-.25.49-.31.65-.31h.48c.16.01.36-.06.56.42.2.5.7 1.72.76 1.84.06.13.1.27.02.44-.09.16-.13.26-.25.41-.12.15-.26.33-.37.44-.13.12-.25.25-.11.5.14.25.64 1.06 1.37 1.71.94.84 1.73 1.1 1.98 1.22.25.12.4.1.54-.06.15-.17.63-.72.79-.97.17-.25.33-.21.56-.12.22.08 1.43.68 1.68.8.25.12.42.18.48.29.05.1.05.59-.15 1.17z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="../js/site.js?v=20260816" defer></script>
+</body>
+</html>

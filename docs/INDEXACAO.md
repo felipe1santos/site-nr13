@@ -92,6 +92,52 @@ Dois problemas confirmados na SERP:
 > **não aplicado** — verificado em 13/08/2026, `https://www.nr13sistema.com.br/` segue
 > respondendo 200. Ver `docs/NGINX-REDIRECTS.md`.
 
+## Lote de 16/08/2026 — 6 guias novos (cluster relatório / ultrassom / escopo)
+
+Criados em 16/08/2026 e já incluídos no `sitemap.xml` (**30 URLs** no total).
+**Ainda não estão no ar**: verificado em 16/08/2026,
+`https://nr13sistema.com.br/blog/relatorio-de-inspecao-de-vaso-de-pressao.html` responde **404**.
+Sem deploy na VPS, a solicitação de indexação é recusada — o Search Console só aceita URL que
+responde 200.
+
+Ordem de execução depois do deploy:
+
+1. Reenviar `https://nr13sistema.com.br/sitemap.xml` no Search Console (30 URLs).
+2. Solicitar indexação manual na ordem de prioridade abaixo (teto de ~10 por dia).
+
+- [ ] https://nr13sistema.com.br/blog/relatorio-de-inspecao-de-vaso-de-pressao.html
+- [ ] https://nr13sistema.com.br/blog/como-fazer-checklist-nr13.html
+- [ ] https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html
+- [ ] https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html
+- [ ] https://nr13sistema.com.br/blog/inspecao-de-tubulacao-e-tanque-nr13.html
+- [ ] https://nr13sistema.com.br/blog/placa-de-identificacao-ilegivel-o-que-fazer.html
+- [ ] https://nr13sistema.com.br/blog/ — recrawl do índice, que ganhou 6 cards novos
+
+Palavra-chave alvo de cada uma:
+
+| URL | Consulta principal | Schema |
+|---|---|---|
+| `relatorio-de-inspecao-de-vaso-de-pressao` | como fazer relatório de inspeção em vaso de pressão | Article + HowTo + FAQ |
+| `como-fazer-checklist-nr13` | como fazer checklist NR13 | Article + HowTo + FAQ |
+| `como-calibrar-medidor-de-ultrassom` | como calibrar medidor de ultrassom | Article + HowTo + FAQ |
+| `medicao-de-espessura-por-ultrassom` | medição de espessura por ultrassom | Article + FAQ |
+| `inspecao-de-tubulacao-e-tanque-nr13` | inspeção de tubulação e tanque NR13 | Article + FAQ |
+| `placa-de-identificacao-ilegivel-o-que-fazer` | placa de identificação ilegível | Article + HowTo + FAQ |
+
+> **Risco de canibalização controlado:** `como-fazer-checklist-nr13` (como *montar* o formulário)
+> e `checklist-de-inspecao-nr13` (o que *verificar* em campo) se referenciam mutuamente logo no
+> primeiro bloco, com intenção de busca declarada em cada uma. Mesma lógica entre
+> `como-calibrar-medidor-de-ultrassom` (o instrumento) e `medicao-de-espessura-por-ultrassom`
+> (a malha), e entre `relatorio-de-inspecao-de-vaso-de-pressao` (vaso, seção a seção) e
+> `como-gerar-laudo-nr13` (documento em qualquer equipamento da NR-13).
+
+Links internos novos apontando para as páginas deste lote (feitos em 16/08/2026):
+`checklist-de-inspecao-nr13`, `bloco-padrao-de-inspecao-nr13`, `como-gerar-laudo-nr13`,
+`como-inspecionar-vaso-de-pressao`, `vida-remanescente-e-taxa-de-corrosao`,
+`caldeira-sem-prontuario-o-que-fazer`, `periodicidade-de-inspecao-nr13-por-categoria` e
+`blog/index.html`. Todas as 6 páginas novas linkam `sistema-nr13.html` no corpo, no aside e na
+faixa final.
+
 ## Lote de 12/08/2026 — 10 guias novos
 
 Criados em 12/08/2026 e já incluídos no `sitemap.xml` (24 URLs no total).
@@ -204,9 +250,13 @@ Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 - [x] `blog/como-calibrar-manometro.html` — 12/08/2026
 - [x] `blog/bloco-padrao-de-inspecao-nr13.html` — 12/08/2026
 - [x] `blog/checklist-de-inspecao-nr13.html` — 12/08/2026
+- [x] `blog/relatorio-de-inspecao-de-vaso-de-pressao.html` — 16/08/2026
+- [x] `blog/como-fazer-checklist-nr13.html` — 16/08/2026
+- [x] `blog/como-calibrar-medidor-de-ultrassom.html` — 16/08/2026
+- [x] `blog/medicao-de-espessura-por-ultrassom.html` — 16/08/2026
+- [x] `blog/inspecao-de-tubulacao-e-tanque-nr13.html` — 16/08/2026
+- [x] `blog/placa-de-identificacao-ilegivel-o-que-fazer.html` — 16/08/2026
 - [ ] `blog/spie-servico-proprio-de-inspecao-vale-a-pena.html`
-- [ ] `blog/inspecao-de-tubulacao-e-tanque-nr13.html`
-- [ ] `blog/placa-de-identificacao-ilegivel-o-que-fazer.html`
 
 **Cluster produto** (pilar: `/sistema-nr13.html`)
 - [x] `blog/sistema-de-inspecao-nr13.html` — 12/08/2026
