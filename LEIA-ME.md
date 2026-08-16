@@ -30,6 +30,7 @@ site-engenharia/
 ├── robots.txt · sitemap.xml · site.webmanifest
 ├── css/site.css        design system inteiro (um arquivo só)
 ├── js/site.js          menu mobile, ano, badge de cidade por IP, reveal no scroll
+├── js/meta-pixel.js    Meta Pixel 1624371105202459: PageView + ViewContent + InitiateCheckout + Lead
 ├── fonts/              Archivo · Inter · IBM Plex Mono (woff2 self-hosted)
 ├── img/                imagens WebP otimizadas
 └── docs/
