@@ -92,6 +92,37 @@ Dois problemas confirmados na SERP:
 > **não aplicado** — verificado em 13/08/2026, `https://www.nr13sistema.com.br/` segue
 > respondendo 200. Ver `docs/NGINX-REDIRECTS.md`.
 
+## Lote de 16/08/2026 (2ª leva) — 3 páginas de intenção comercial "em minutos"
+
+Sitemap vai a **33 URLs**. Páginas de fundo de funil: a busca por "em minutos" é de quem já
+decidiu que o problema é tempo e está procurando ferramenta.
+
+- [ ] https://nr13sistema.com.br/blog/laudo-nr13-em-minutos.html
+- [ ] https://nr13sistema.com.br/blog/relatorio-nr13-em-minutos.html
+- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13-em-minutos.html
+
+| URL | Consulta principal | Ângulo (o que evita canibalizar) | Schema |
+|---|---|---|---|
+| `checklist-de-inspecao-nr13-em-minutos` | faça checklist de inspeção NR13 em minutos | **Campo**: preencher no celular, foto por item, offline | Article + HowTo + FAQ |
+| `relatorio-nr13-em-minutos` | relatório NR13 em minutos | **Montagem do documento**: os 7 gargalos e o que cadastrar antes | Article + FAQ |
+| `laudo-nr13-em-minutos` | como fazer laudo NR13 em minutos | **Escala**: padrão entre inspetores, fila do PH, portal de entrega | Article + HowTo + FAQ |
+
+> **Risco alto de canibalização, tratado de propósito.** "Relatório NR-13" e "laudo NR-13" são
+> sinônimos no mercado, e as duas páginas competiriam pela mesma SERP se tivessem o mesmo ângulo.
+> A separação é por **estágio do problema**: campo (checklist) → documento (relatório) →
+> operação com volume (laudo). Cada uma abre declarando o recorte e linka as outras duas.
+> **Acompanhar no Search Console:** se as três aparecerem para a mesma consulta com posição
+> oscilando entre elas, consolidar em duas.
+
+> Todas as três dizem explicitamente que o **exame do equipamento e a assinatura do Profissional
+> Habilitado não são acelerados** — promessa de "laudo automático" atrai clique e queima confiança
+> técnica, que é o ativo do site.
+
+Também corrigido neste lote: `width`/`height` dos heroes de 4 páginas do lote anterior estavam
+declarados como 1600x800 sem corresponder ao arquivo real (`equipe-engenharia`, `detalhe-inspecao`
+e `detalhe-tubulacao` são 1200x800). O hero de `como-calibrar-medidor-de-ultrassom` trocou
+`card-end.webp` (800x520, pequena demais para hero) por `detalhe-solda.webp` (1200x800).
+
 ## Lote de 16/08/2026 — 6 guias novos (cluster relatório / ultrassom / escopo)
 
 Criados em 16/08/2026 e já incluídos no `sitemap.xml` (**30 URLs** no total).
@@ -260,6 +291,9 @@ Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 
 **Cluster produto** (pilar: `/sistema-nr13.html`)
 - [x] `blog/sistema-de-inspecao-nr13.html` — 12/08/2026
+- [x] `blog/laudo-nr13-em-minutos.html` — 16/08/2026
+- [x] `blog/relatorio-nr13-em-minutos.html` — 16/08/2026
+- [x] `blog/checklist-de-inspecao-nr13-em-minutos.html` — 16/08/2026
 - [ ] `blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html`
 - [ ] `blog/portal-do-cliente-para-empresa-de-inspecao.html`
 
