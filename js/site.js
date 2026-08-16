@@ -92,41 +92,6 @@
     }
   }
 
-  /* ---- vídeo preguiçoso ----
-     Nada do vídeo disputa banda com o hero: o HTML guarda o poster em
-     data-poster e o arquivo em data-src, e nenhum dos dois é pedido enquanto o
-     bloco está longe da tela. Ao chegar perto, poster e <source> são ligados —
-     o MP4 em si continua parado até o visitante dar play, por causa do
-     preload="none". Sem IntersectionObserver, liga tudo de uma vez. */
-  var videos = document.querySelectorAll('video[data-lazy-video]');
-  for (var v = 0; v < videos.length; v++) {
-    (function (video) {
-      var ligar = function () {
-        if (video.getAttribute('data-poster')) {
-          video.poster = video.getAttribute('data-poster');
-          video.removeAttribute('data-poster');
-        }
-        var fontes = video.querySelectorAll('source[data-src]');
-        if (!fontes.length) return;
-        for (var f = 0; f < fontes.length; f++) {
-          fontes[f].src = fontes[f].getAttribute('data-src');
-          fontes[f].removeAttribute('data-src');
-        }
-        video.load();
-      };
-
-      if (!('IntersectionObserver' in window)) { ligar(); return; }
-      var obsV = new IntersectionObserver(function (entradas) {
-        entradas.forEach(function (e) {
-          if (!e.isIntersecting) return;
-          ligar();
-          obsV.unobserve(e.target);
-        });
-      }, { rootMargin: '300px 0px' });
-      obsV.observe(video);
-    })(videos[v]);
-  }
-
   /* ---- carrossel dos termos relacionados ----
      O HTML traz uma lista só, já rolável na horizontal. Aqui ela vira uma
      esteira: duplica a lista, mede a largura real e define a duração para que

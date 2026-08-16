@@ -30,7 +30,7 @@
 <meta name="theme-color" content="#0a1f33">
 
 <link rel="preload" as="image" href="img/sistema-hero.webp" fetchpriority="high">
-<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/site.css?v=20260816">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -273,9 +273,8 @@
 
     <figure class="sys-video" data-reveal>
       <video controls preload="none" playsinline width="1280" height="720"
-             data-lazy-video
-             data-poster="img/video/video-principal-poster.webp">
-        <source data-src="img/video/video-principal.mp4" type="video/mp4">
+             poster="img/video/video-principal-poster.webp">
+        <source src="img/video/video-principal.mp4" type="video/mp4">
         Seu navegador não reproduz vídeo.
         <a href="img/video/video-principal.mp4">Baixe a demonstração do Sistema NR13</a>.
       </video>
@@ -900,6 +899,6 @@
   <span>WhatsApp</span>
 </a>
 
-<script src="js/site.js" defer></script>
+<script src="js/site.js?v=20260816" defer></script>
 </body>
 </html>
