@@ -1253,9 +1253,107 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
   .sys-strip .wrap, .hero-strip .wrap { grid-template-columns: 1fr; }
 }
 
-/* ---------- 25. Impressão ---------- */
+/* ---------- 25. Formulário que antecede o WhatsApp ----------
+   Montado por js/wa-form.js. Nenhuma página traz essa marcação no HTML. */
+.wa-modal {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  padding: 1.2rem;
+}
+.wa-modal[hidden] { display: none; }
+.wa-modal-fundo {
+  position: absolute; inset: 0;
+  background: rgba(6, 20, 34, .72);
+  backdrop-filter: blur(2px);
+}
+.wa-modal-caixa {
+  position: relative;
+  width: 100%; max-width: 440px; max-height: calc(100vh - 2.4rem);
+  overflow-y: auto;
+  background: var(--white);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-hi);
+  animation: waSobe .18s ease-out;
+}
+@keyframes waSobe {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+.wa-modal-x {
+  position: absolute; top: .5rem; right: .6rem;
+  width: 34px; height: 34px; line-height: 1;
+  border: 0; border-radius: var(--r);
+  background: transparent; color: var(--steel-500);
+  font-size: 1.6rem; cursor: pointer;
+}
+.wa-modal-x:hover { background: var(--steel-50); color: var(--txt); }
+.wa-modal-corpo { padding: 2rem 1.8rem 1.6rem; }
+.wa-modal-tag {
+  margin: 0 0 .5rem;
+  font-family: var(--f-mono); font-size: .72rem; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--orange-600);
+}
+.wa-modal-corpo h2 {
+  margin: 0 0 .5rem;
+  font-family: var(--f-display); font-size: 1.42rem; line-height: 1.2; color: var(--navy-800);
+}
+.wa-modal-sub { margin: 0 0 1.3rem; font-size: .93rem; color: var(--txt-soft); }
+
+.wa-form { display: flex; flex-direction: column; }
+.wa-form label {
+  margin-bottom: .3rem;
+  font-size: .8rem; font-weight: 600; letter-spacing: .01em; color: var(--navy-700);
+}
+.wa-form input, .wa-form textarea {
+  margin-bottom: .9rem; padding: .72rem .85rem;
+  font-family: var(--f-body); font-size: .95rem; color: var(--txt);
+  background: var(--steel-50);
+  border: 1px solid var(--line); border-radius: var(--r);
+  resize: vertical;
+}
+.wa-form input:focus, .wa-form textarea:focus {
+  outline: none; background: var(--white);
+  border-color: var(--orange-500);
+  box-shadow: 0 0 0 3px var(--orange-100);
+}
+/* campo-armadilha do Formspree: invisível para gente, preenchido por robô */
+.wa-mel { position: absolute; left: -9999px; opacity: 0; height: 0; margin: 0; padding: 0; }
+.wa-erro {
+  margin: 0 0 .8rem; padding: .6rem .75rem;
+  font-size: .85rem; color: var(--red-600);
+  background: #fdecea; border-radius: var(--r);
+}
+.wa-enviar { justify-content: center; width: 100%; }
+.wa-modal-nota {
+  margin: .9rem 0 0;
+  font-size: .76rem; line-height: 1.5; color: var(--steel-500); text-align: center;
+}
+.wa-modal-nota a { color: var(--steel-500); }
+.wa-escape {
+  display: block; margin-top: .9rem;
+  font-size: .85rem; color: var(--txt-soft); text-align: center;
+}
+/* indicador das duas etapas: contato → dúvida */
+.wa-passos {
+  margin: .9rem 0 0;
+  font-family: var(--f-mono); font-size: .72rem; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--steel-300); text-align: center;
+}
+.wa-passo-on { color: var(--navy-700); font-weight: 600; }
+.wa-ok { text-align: center; }
+.wa-ok .btn { width: 100%; justify-content: center; margin-top: .4rem; }
+
+@media (max-width: 420px) {
+  .wa-modal-corpo { padding: 1.7rem 1.25rem 1.3rem; }
+  .wa-modal-corpo h2 { font-size: 1.24rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wa-modal-caixa { animation: none; }
+}
+
+/* ---------- 26. Impressão ---------- */
 @media print {
-  .site-header, .wa-float, .hero-bg, .mapa, .nav-toggle { display: none !important; }
+  .site-header, .wa-float, .wa-modal, .hero-bg, .mapa, .nav-toggle { display: none !important; }
   body { font-size: 11pt; color: #000; }
   .hero { background: none; color: #000; }
   .hero::after { display: none; }

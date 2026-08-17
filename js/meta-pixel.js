@@ -1,6 +1,7 @@
 /* Meta Pixel — Sistema NR13.
    Carrega o fbevents.js, dispara PageView em todas as páginas e marca as conversões
-   do site: clique no checkout da Kiwify (InitiateCheckout) e clique no WhatsApp (Lead).
+   do site: clique no checkout da Kiwify (InitiateCheckout) e envio do formulário que antecede
+   o WhatsApp (Lead).
    A página do sistema também dispara ViewContent, para separá-la do tráfego de blog. */
 (function () {
   'use strict';
@@ -48,11 +49,26 @@
       return;
     }
 
-    if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
-      fbq('track', 'Lead', {
-        content_name: 'WhatsApp',
-        content_category: document.title
-      });
-    }
   }, true);
+
+  /* ---- Lead ----
+     O clique no WhatsApp não é mais a conversão: quem clica cai no formulário de qualificação
+     (js/wa-form.js). O Lead só conta quando o formulário é enviado de verdade. */
+  document.addEventListener('axial:lead', function (e) {
+    fbq('track', 'Lead', {
+      content_name: 'Formulário WhatsApp — contato',
+      content_category: document.title,
+      origem: (e.detail && e.detail.origem) || ''
+    });
+  });
+
+  /* ---- Contact ----
+     Etapa 2 concluída: o visitante escreveu a dúvida e seguiu para a conversa. */
+  document.addEventListener('axial:contato', function (e) {
+    fbq('track', 'Contact', {
+      content_name: 'Formulário WhatsApp — dúvida enviada',
+      content_category: document.title,
+      origem: (e.detail && e.detail.origem) || ''
+    });
+  });
 })();
