@@ -3,11 +3,12 @@
    percorre duas etapas:
 
      1. quem é você      → nome, telefone e e-mail, enviados na hora para o Formspree
-     2. qual é a dúvida  → a mensagem, enviada para o Formspree e usada como texto da conversa
+     2. qual é a dúvida  → a mensagem, que vira o texto da conversa no WhatsApp
 
-   Só depois da etapa 2 o navegador vai para o wa.me, já com a dúvida escrita. Assim o contato
-   fica registrado mesmo se a pessoa desistir no meio, e a conversa começa com a pergunta dela —
-   não com uma frase pronta.
+   Só o contato da etapa 1 é registrado — um envio por lead. A dúvida não passa pelo Formspree:
+   ela viaja direto para a conversa. Como o registro acontece antes da etapa 2, o lead fica
+   guardado mesmo se a pessoa desistir no meio, e a conversa começa com a pergunta dela — não
+   com uma frase pronta.
 
    O modal é montado por JS: nenhuma das 34 páginas precisa carregar a marcação. */
 (function () {
@@ -200,7 +201,6 @@
       botao.textContent = 'Enviando...';
 
       enviarAoFormspree({
-        etapa: '1 de 2 — contato',
         nome: nome,
         whatsapp: fone,
         email: email,
@@ -221,30 +221,15 @@
       return;
     }
 
-    /* etapa 2 */
+    /* Etapa 2 não vai ao Formspree: a dúvida viaja como texto da conversa no WhatsApp.
+       O que fica registrado é o contato da etapa 1 — um envio por lead, não dois. */
     var duvida = form.duvida.value.trim();
     if (duvida.length < 10) return mostrarErro('Escreva sua dúvida com um pouco mais de detalhe.');
 
     limparErro();
     botao.disabled = true;
-    botao.textContent = 'Enviando...';
-
-    enviarAoFormspree({
-      etapa: '2 de 2 — dúvida',
-      nome: contato ? contato.nome : '',
-      whatsapp: contato ? contato.whatsapp : '',
-      email: contato ? contato.email : '',
-      duvida: duvida,
-      origem: origem || '(link sem rótulo)',
-      pagina: location.href,
-      titulo: document.title,
-      _subject: 'Dúvida do site — ' + (contato ? contato.nome : 'sem nome')
-    }).then(function () {
-      document.dispatchEvent(new CustomEvent('axial:contato', { detail: { origem: origem } }));
-      irParaWhatsApp(duvida);
-    }).catch(function () {
-      recuperarDeFalha(botao, rotulo);
-    });
+    document.dispatchEvent(new CustomEvent('axial:contato', { detail: { origem: origem } }));
+    irParaWhatsApp(duvida);
   }
 
   /* Duas falhas seguidas de rede não podem prender o visitante do lado de fora da conversa. */
