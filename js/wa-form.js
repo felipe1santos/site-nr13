@@ -2,7 +2,7 @@
    Todo link de WhatsApp do site passa por aqui. Em vez de abrir a conversa direto, o visitante
    percorre duas etapas:
 
-     1. quem é você      → nome e WhatsApp, enviados na hora para o Formspree
+     1. quem é você      → nome, telefone e e-mail, enviados na hora para o Formspree
      2. qual é a dúvida  → a mensagem, enviada para o Formspree e usada como texto da conversa
 
    Só depois da etapa 2 o navegador vai para o wa.me, já com a dúvida escrita. Assim o contato
@@ -79,15 +79,17 @@
     return '' +
       '<p class="wa-modal-tag">Falar no WhatsApp</p>' +
       '<h2 id="waFormTitulo">Antes de abrir a conversa</h2>' +
-      '<p class="wa-modal-sub">Deixe seu contato. Em seguida você escreve a sua dúvida e a conversa ' +
-        'abre já com ela.</p>' +
+      '<p class="wa-modal-sub">Preencha seus dados e entre em contato agora mesmo.</p>' +
       '<form class="wa-form" data-etapa="contato" novalidate>' +
         '<label for="waNome">Nome</label>' +
         '<input id="waNome" name="nome" type="text" autocomplete="name" required ' +
           'placeholder="Como podemos te chamar">' +
-        '<label for="waFone">WhatsApp</label>' +
+        '<label for="waFone">Telefone / WhatsApp</label>' +
         '<input id="waFone" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel" ' +
           'required placeholder="(27) 99999-9999">' +
+        '<label for="waEmail">E-mail</label>' +
+        '<input id="waEmail" name="email" type="email" inputmode="email" autocomplete="email" ' +
+          'required placeholder="voce@empresa.com.br">' +
         '<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="wa-mel">' +
         '<p class="wa-erro" role="alert" hidden></p>' +
         '<button type="submit" class="btn btn-primary btn-lg wa-enviar">Continuar</button>' +
@@ -179,8 +181,10 @@
     if (form.getAttribute('data-etapa') === 'contato') {
       var nome = form.nome.value.trim();
       var fone = form.whatsapp.value.trim();
+      var email = form.email.value.trim();
       if (nome.length < 2) return mostrarErro('Escreva seu nome.');
-      if (fone.replace(/\D/g, '').length < 10) return mostrarErro('Informe um WhatsApp com DDD.');
+      if (fone.replace(/\D/g, '').length < 10) return mostrarErro('Informe um telefone com DDD.');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return mostrarErro('Informe um e-mail válido.');
 
       limparErro();
       botao.disabled = true;
@@ -190,13 +194,14 @@
         etapa: '1 de 2 — contato',
         nome: nome,
         whatsapp: fone,
+        email: email,
         origem: origem || '(link sem rótulo)',
         pagina: location.href,
         titulo: document.title,
         _gotcha: form._gotcha.value,
         _subject: 'Contato do site — ' + nome
       }).then(function () {
-        contato = { nome: nome, whatsapp: fone };
+        contato = { nome: nome, whatsapp: fone, email: email };
         gravarContato(contato);
         /* o pixel escuta este evento e registra o Lead */
         document.dispatchEvent(new CustomEvent('axial:lead', { detail: { origem: origem } }));
@@ -219,6 +224,7 @@
       etapa: '2 de 2 — dúvida',
       nome: contato ? contato.nome : '',
       whatsapp: contato ? contato.whatsapp : '',
+      email: contato ? contato.email : '',
       duvida: duvida,
       origem: origem || '(link sem rótulo)',
       pagina: location.href,
