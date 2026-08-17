@@ -111,7 +111,7 @@
           'placeholder="Ex.: tenho uma caldeira em Serra sem prontuário. Quanto custa a inspeção e ' +
           'em quanto tempo sai o laudo?"></textarea>' +
         '<p class="wa-erro" role="alert" hidden></p>' +
-        '<button type="submit" class="btn btn-primary btn-lg wa-enviar">Enviar e abrir o WhatsApp</button>' +
+        '<button type="submit" class="btn btn-primary btn-lg wa-enviar">Enviar</button>' +
         '<p class="wa-passos"><span>1. Contato</span> · <span class="wa-passo-on">2. Sua dúvida</span></p>' +
       '</form>';
   }
