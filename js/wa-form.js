@@ -99,6 +99,17 @@
       '</form>';
   }
 
+  /* O exemplo do campo acompanha a página: quem chega pela página do software pergunta sobre o
+     software, quem chega pelas páginas de serviço pergunta sobre inspeção. */
+  function exemploDuvida() {
+    if (/sistema-nr13\.html$/.test(location.pathname)) {
+      return 'Ex.: quero assinar o Sistema NR13. Ele gera o livro de registro e a memória de ' +
+             'cálculo ASME automático? Quantos equipamentos e usuários entram no plano?';
+    }
+    return 'Ex.: preciso regularizar dois vasos de pressão na minha planta. Como funciona e qual ' +
+           'o prazo para sair o laudo?';
+  }
+
   /* ---- etapa 2: qual é a dúvida ---- */
   function telaDuvida() {
     var nome = contato && contato.nome ? contato.nome.split(' ')[0] : '';
@@ -109,9 +120,7 @@
         'imediatamente.</p>' +
       '<form class="wa-form" data-etapa="duvida" novalidate>' +
         '<label for="waMsg">Sua mensagem</label>' +
-        '<textarea id="waMsg" name="duvida" rows="4" required ' +
-          'placeholder="Ex.: tenho uma caldeira em Serra sem prontuário. Quanto custa a inspeção e ' +
-          'em quanto tempo sai o laudo?"></textarea>' +
+        '<textarea id="waMsg" name="duvida" rows="4" required placeholder="' + exemploDuvida() + '"></textarea>' +
         '<p class="wa-erro" role="alert" hidden></p>' +
         '<button type="submit" class="btn btn-primary btn-lg wa-enviar">Enviar</button>' +
         '<p class="wa-passos"><span>1. Contato</span> · <span class="wa-passo-on">2. Sua dúvida</span></p>' +
