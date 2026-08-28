@@ -212,6 +212,8 @@ section { padding: clamp(3.2rem, 6vw, 5.5rem) 0; }
 /* impede que "NR-13" quebre no hífen e fique "NR-" numa linha e "13" na outra */
 .nb { white-space: nowrap; }
 .hero-sub { font-size: clamp(1.03rem, .95rem + .4vw, 1.2rem); color: var(--steel-200); max-width: 640px; margin-bottom: 1.9rem; }
+/* o strong global e navy-800 e some no fundo escuro do hero */
+.hero-sub strong { color: var(--white); font-weight: 650; }
 .hero .eyebrow { color: var(--orange-400); }
 .hero-badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.6rem; }
 .hero-badge {
