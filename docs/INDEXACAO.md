@@ -9,6 +9,217 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 > Só faz sentido solicitar indexação de URL que já está **no ar** — a página precisa
 > responder 200 no domínio antes do pedido.
 
+## REGRA PERMANENTE — auditar indexação antes de fechar qualquer sessão
+
+**Obrigatório em toda sessão de trabalho no site**, mesmo que nenhuma página tenha sido criada:
+
+1. Rodar as duas auditorias de `LEIA-ME.md` (seção **REGRA OBRIGATÓRIA — indexação**):
+   nenhuma página indexável pode ficar fora do `sitemap.xml`, e nenhuma URL do sitemap
+   pode apontar para arquivo inexistente.
+2. Conferir se toda página criada nesta sessão tem linha própria neste arquivo.
+3. Solicitar indexação no Search Console de tudo o que já responde 200 — até a cota do dia
+   (teto prático de ~10 a 12 pedidos). **O que não couber fica na fila abaixo, com `[ ]`.**
+4. Reenviar o `sitemap.xml` sempre que o total de URLs mudar.
+5. Revisar as filas antigas: `[ ]` parado há muitos dias é sinal de deploy pendente ou de
+   URL esquecida. Anotar o motivo em vez de deixar em branco.
+
+> URL que não está no ar **não pode** ser solicitada — o Search Console recusa. Nesse caso a
+> linha fica `[ ]` com a observação "aguardando deploy".
+
+---
+
+## Auditoria de indexação — 04/09/2026
+
+Executada no Search Console (`sc-domain:nr13sistema.com.br`). Estado no painel:
+**36 páginas indexadas · 20 não indexadas (4 motivos)**.
+
+### Fila antiga: era falso-positivo — tudo já está indexado
+
+As 20 URLs que estavam marcadas `[ ]` nos lotes de 10/08, 12/08 e 16/08 foram inspecionadas
+uma a uma. **Todas responderam "O URL está no Google · A página está indexada".**
+Nenhuma solicitação manual foi necessária, nenhuma cota foi consumida.
+
+- [x] `adequacao-nr12-vitoria-es.html`
+- [x] `pmoc-vitoria-es.html`
+- [x] `ensaios-nao-destrutivos-vitoria-es.html`
+- [x] `combate-a-incendio-vitoria-es.html`
+- [x] `instalacao-sistema-de-incendio-vitoria-es.html`
+- [x] `blog/` (hub)
+- [x] `blog/sistema-de-inspecao-nr13.html`
+- [x] `blog/periodicidade-de-inspecao-nr13-por-categoria.html`
+- [x] `blog/checklist-de-inspecao-nr13.html`
+- [x] `blog/calibracao-de-valvula-de-seguranca-psv.html`
+- [x] `blog/bloco-padrao-de-inspecao-nr13.html`
+- [x] `blog/vida-remanescente-e-taxa-de-corrosao.html`
+- [x] `blog/relatorio-de-inspecao-de-vaso-de-pressao.html`
+- [x] `blog/como-fazer-checklist-nr13.html`
+- [x] `blog/como-calibrar-medidor-de-ultrassom.html`
+- [x] `blog/medicao-de-espessura-por-ultrassom.html`
+- [x] `blog/inspecao-de-tubulacao-e-tanque-nr13.html`
+- [x] `blog/placa-de-identificacao-ilegivel-o-que-fazer.html`
+- [x] `blog/laudo-nr13-em-minutos.html`
+- [x] `blog/relatorio-nr13-em-minutos.html`
+- [x] `blog/checklist-de-inspecao-nr13-em-minutos.html`
+
+> **Lição para os próximos lotes:** a fila deste arquivo só é confiável se for reconciliada
+> com o Search Console. Inspecionar URL **não consome cota** — inspecione antes de solicitar,
+> senão a cota diária é gasta em página que já está no índice.
+
+### Cobertura fechada — todas as 34 URLs no ar estão indexadas
+
+Além das 20 URLs da fila, foram inspecionadas as 14 restantes que já estavam publicadas — as que
+o arquivo marcava `[x]` desde 10/08 e 13/08 e que nunca tinham sido reconferidas. Vale repetir:
+`[x]` no histórico significa **solicitada**, não **indexada**.
+
+- [x] `/` (home) — indexada. Encerra o diagnóstico de 10/08, quando aparecia como
+      "Cópia sem página canônica selecionada pelo usuário".
+- [x] `/sistema-nr13.html` · `/inspecao-nr13-vitoria-es.html`
+- [x] `blog/quanto-custa-inspecao-nr13` · `blog/caldeira-sem-prontuario-o-que-fazer`
+- [x] `blog/categoria-de-vaso-de-pressao-como-classificar` · `blog/teste-hidrostatico-quando-e-obrigatorio`
+- [x] `blog/livro-de-registro-de-seguranca-nr13` · `blog/software-de-gestao-nr13-como-escolher`
+- [x] `blog/como-gerar-laudo-nr13` · `blog/como-inspecionar-vaso-de-pressao`
+- [x] `blog/como-inspecionar-caldeira-nr13` · `blog/como-calibrar-manometro`
+
+**Resultado: 34 de 34 URLs publicadas estão no índice.** Nenhuma solicitação manual foi
+necessária e nenhuma cota foi consumida — só inspeção, que é gratuita.
+
+> Consequência prática: as 2 páginas em "Rastreada, mas não indexada" **não são páginas nossas
+> do sitemap** — todas as 34 foram verificadas uma a uma. São URLs residuais que o Google conhece
+> de outra origem (marca antiga ou variação de `www`). Não há ação de código para elas.
+
+---
+
+### As 20 não indexadas, por motivo
+
+| Motivo | Páginas | O que é, na prática |
+|---|---|---|
+| Não encontrado (404) | 9 | URLs da marca antiga ("NR13 AutoDocs"), ainda no índice do Google. Resolve com os 301 de `docs/NGINX-REDIRECTS.md`. |
+| Página alternativa com tag canônica adequada | 8 | **6 são `www.`** + `nr13sistema.com.br/index.html` e `www.nr13sistema.com.br/index.html`. Comportamento correto do canonical, mas o `www` só some com o 301. |
+| Página com redirecionamento | 1 | Esperado. |
+| Rastreada, mas não indexada no momento | 2 | Decisão dos sistemas do Google, sem ação de código. Acompanhar. |
+
+Os exemplos confirmados no relatório de canônica alternativa foram:
+`www.nr13sistema.com.br/` · `www.nr13sistema.com.br/index.html` ·
+`www.nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html` ·
+`.../como-inspecionar-caldeira-nr13.html` · `.../como-calibrar-manometro.html` ·
+`.../bloco-padrao-de-inspecao-nr13.html` · `.../como-inspecionar-vaso-de-pressao.html` ·
+`nr13sistema.com.br/index.html`.
+
+### Ação nº 1 pendente, e é a mesma desde 10/08: o 301 de `www`
+
+Seis das oito "canônicas alternativas" são `www`. Enquanto `https://www.nr13sistema.com.br/`
+responder 200 em vez de redirecionar, o Google continua rastreando duas versões de cada página
+e queimando crawl budget. O bloco nginx está em `docs/NGINX-REDIRECTS.md`:
+
+```nginx
+server {
+    listen 443 ssl;
+    server_name www.nr13sistema.com.br;
+    return 301 https://nr13sistema.com.br$request_uri;
+}
+```
+
+### Ação nº 2: as 12 páginas novas não podem ser indexadas ainda
+
+Verificado por HTTP em 04/09/2026: `https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html`
+responde **404**. O `sitemap.xml` no ar ainda é o antigo (34 URLs); o deste repositório tem 46.
+O Search Console recusa solicitação de indexação para URL que não responde 200.
+
+Ordem depois do deploy:
+
+1. Confirmar 200 nas 12 URLs novas.
+2. Reenviar `https://nr13sistema.com.br/sitemap.xml` (46 URLs).
+3. Trabalhar a fila do **Lote de 04/09/2026** acima, respeitando o teto de ~10 por dia —
+   inspecionando cada URL antes de solicitar.
+4. Solicitar recrawl da home (`/`), que ganhou a seção `#obras`.
+
+---
+
+## Lote de 04/09/2026 — 12 landings do cluster obras e engenharia predial
+
+Origem: material comercial da empresa com as dez frentes de serviço (laudos e documentação,
+segurança e adequações, climatização e ventilação, projetos e estruturas, montagens industriais,
+condomínios e instalações, playgrounds, galpões/quadras/câmaras frias, reformas e fachadas,
+patologias e corrosão). As frentes que já tinham página — NR-13, NR-12, PMOC, END e incêndio —
+**não foram duplicadas**; AVCB continua em `combate-a-incendio-vitoria-es.html` e em
+`instalacao-sistema-de-incendio-vitoria-es.html`.
+
+Sitemap vai a **46 URLs**. Todas as 12 páginas fecham com `cta-band` para WhatsApp e
+**não levam a faixa `.sys-band`**: são serviços de engenharia sem relação com o Sistema NR13.
+
+### Fila de indexação (ordem de prioridade)
+
+- [ ] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html
+- [ ] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html
+- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html
+- [ ] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html
+- [ ] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html
+- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html
+- [ ] https://nr13sistema.com.br/camaras-frias-vitoria-es.html
+- [ ] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html
+- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html
+- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html
+- [ ] https://nr13sistema.com.br/ — recrawl da home, que ganhou a seção `#obras`
+
+### Palavra-chave alvo e ângulo de cada página
+
+| URL | Consulta principal | Ângulo (o que evita canibalizar) | Schema |
+|---|---|---|---|
+| `laudos-tecnicos-e-art-vitoria-es` | laudo técnico com ART em Vitória ES | **Pilar**: o que é laudo, os tipos e o que faz ser recusado | Service + Breadcrumb + FAQ |
+| `laudo-de-acessibilidade-nbr9050-vitoria-es` | laudo de acessibilidade NBR 9050 | **Norma própria**: rota acessível, rampa, sanitário PcD | Service + Breadcrumb + FAQ |
+| `projetos-estruturais-vitoria-es` | projeto estrutural em Vitória ES | **Papel/cálculo**: concepção, memória, detalhamento | Service + Breadcrumb + FAQ |
+| `montagem-industrial-vitoria-es` | montagem industrial em Vitória ES | **Campo/execução**: rigging, torque, solda, base mecânica | Service + Breadcrumb + FAQ |
+| `construcao-de-galpoes-e-quadras-vitoria-es` | construção de galpão em Vitória ES | **Obra completa**: da sondagem ao piso e às instalações | Service + Breadcrumb + FAQ |
+| `camaras-frias-vitoria-es` | câmara fria em Vitória ES | **Refrigeração**: carga térmica, painel, degelo, registro | Service + Breadcrumb + FAQ |
+| `exaustao-e-coifas-industriais-vitoria-es` | exaustão industrial e coifa | **Movimento de ar**: vazão, duto, captação na fonte | Service + Breadcrumb + FAQ |
+| `reformas-e-recuperacao-de-fachadas-vitoria-es` | recuperação de fachada em Vitória ES | **Obra em altura**: mapeamento, tratamento, pintura, NR-35 | Service + Breadcrumb + FAQ |
+| `patologias-e-corrosao-estrutural-vitoria-es` | patologia estrutural e corrosão | **Diagnóstico**: mecanismo, ensaio, perda de seção | Service + Breadcrumb + FAQ |
+| `manutencao-predial-para-condominios-vitoria-es` | manutenção predial para condomínio | **Gestão**: plano NBR 5674, periodicidade, responsabilidade | Service + Breadcrumb + FAQ |
+| `laudo-de-playground-vitoria-es` | laudo de playground NBR 16071 | **Área de lazer**: área de queda, piso amortecedor | Service + Breadcrumb + FAQ |
+| `nt23-recarga-de-veiculos-eletricos-vitoria-es` | NT 23 CBMES carro elétrico | **Cauda longa nova**: recarga em garagem, risco de lítio | Service + Breadcrumb + FAQ |
+
+### Canibalização controlada neste lote
+
+- `laudos-tecnicos-e-art` é o **pilar** e linka `laudo-de-acessibilidade` e
+  `patologias-e-corrosao` logo no bloco de tipos de laudo; as duas filhas declaram o recorte
+  no primeiro parágrafo e apontam de volta.
+- `projetos-estruturais` (papel) × `montagem-industrial` (campo) × `construcao-de-galpoes`
+  (obra completa) se referenciam mutuamente, com o recorte declarado em cada uma.
+- `camaras-frias` × `exaustao-e-coifas` × `pmoc-vitoria-es` são três escopos de ar/frio
+  distintos: refrigeração de produto, movimentação de ar contaminado e qualidade do ar
+  interior. Cada uma linka as outras duas.
+- `reformas-e-recuperacao-de-fachadas` (execução) × `patologias-e-corrosao` (diagnóstico)
+  se cruzam nos dois sentidos.
+- **Acompanhar no Search Console:** se `laudos-tecnicos-e-art` começar a competir com as
+  filhas pela mesma consulta, reforçar o recorte no primeiro parágrafo de cada uma.
+
+### Links internos criados neste lote
+
+- Rodapé de **todas** as páginas do site ganhou a coluna **"Obras e estruturas"** com as 12 URLs
+  (o `.footer-grid` do CSS passou de 4 para 5 colunas, com breakpoint novo em 1180px).
+- `index.html` ganhou a seção `#obras` com 12 cards `.caso` e um bloco `.sec-tags` de cauda longa.
+- Cada uma das 12 páginas leva de 5 a 8 links internos contextuais no corpo, mais
+  "Continue lendo" (6 links) e `aside` de "Serviços relacionados" (5 links).
+- Nenhuma das 12 páginas linka o checkout Kiwify nem carrega a faixa `.sys-band`.
+
+### Pendência conhecida deste lote
+
+- [x] **Imagens próprias do cluster.** Resolvido em 04/09/2026: 37 fotos novas baixadas do
+      Pexels e convertidas para WebP (heroes 1600x800, corpo 1200x800), registradas em
+      `docs/CREDITOS-IMAGENS.md`. Cada página ficou com 4 a 5 imagens — hero + 2 ou 3 no corpo,
+      ancoradas imediatamente antes do bloco que ilustram. O reuso caiu para no máximo 2 páginas
+      por arquivo (fora `rodape-industrial` e `sistema-hero`, que são rodapé e faixa).
+- [ ] **Trocar por fotos reais da empresa.** Banco de imagem converte menos que obra própria.
+      Ordem de prioridade em `docs/CREDITOS-IMAGENS.md`; os blocos já estão prontos, basta
+      substituir o arquivo mantendo as dimensões declaradas no HTML.
+- [ ] **Deploy na VPS.** Enquanto as 12 URLs não responderem 200 no domínio, o Search Console
+      recusa a solicitação de indexação. Publicar antes de trabalhar a fila acima.
+- [ ] `?v=` de CSS/JS foi para `20260904a` em todas as 47 páginas (o `.footer-grid` mudou).
+
+---
+
 ## Solicitadas em 10/08/2026
 
 Sitemap `https://nr13sistema.com.br/sitemap.xml` reenviado no mesmo dia — status

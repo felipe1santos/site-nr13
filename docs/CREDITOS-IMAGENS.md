@@ -65,3 +65,61 @@ ffmpeg -y -i entrada.jpg \
 ```
 
 E lembre de atualizar o `alt` da imagem no HTML: ele descreve a cena, não repete a palavra-chave.
+
+---
+
+## Lote de 04/09/2026 — cluster obras e engenharia predial
+
+Mesma origem e licença do lote anterior: **Pexels**, uso comercial livre. Baixadas em JPG para
+`img/_raw/` e convertidas para WebP com ffmpeg — heroes em 1600x800 e imagens de corpo em
+1200x800, com crop central.
+
+| Arquivo no site | Foto no Pexels |
+|---|---|
+| `acessibilidade-barreira.webp` | https://www.pexels.com/photo/8415494/ |
+| `acessibilidade-vaga-pcd.webp` | https://www.pexels.com/photo/3095954/ |
+| `camara-congelados.webp` | https://www.pexels.com/photo/29834274/ |
+| `camara-doca.webp` | https://www.pexels.com/photo/1267327/ |
+| `coifa-cozinha-industrial.webp` | https://www.pexels.com/photo/10511959/ |
+| `estrutural-fundacao.webp` | https://www.pexels.com/photo/37733179/ |
+| `estrutural-metalica.webp` | https://www.pexels.com/photo/9092855/ |
+| `ev-carregador.webp` | https://www.pexels.com/photo/34800670/ |
+| `ev-garagem.webp` | https://www.pexels.com/photo/11554746/ |
+| `exaustao-duto-externo.webp` | https://www.pexels.com/photo/29086539/ |
+| `exaustao-dutos.webp` | https://www.pexels.com/photo/8297856/ |
+| `fachada-lavagem.webp` | https://www.pexels.com/photo/12059710/ |
+| `fachada-pintura.webp` | https://www.pexels.com/photo/12741270/ |
+| `galpao-interior.webp` | https://www.pexels.com/photo/236709/ |
+| `hero-acessibilidade.webp` | https://www.pexels.com/photo/9808741/ |
+| `hero-camara-fria.webp` | https://www.pexels.com/photo/5953713/ |
+| `hero-carro-eletrico.webp` | https://www.pexels.com/photo/28851165/ |
+| `hero-estrutural.webp` | https://www.pexels.com/photo/15109999/ |
+| `hero-fachada.webp` | https://www.pexels.com/photo/18969812/ |
+| `hero-montagem.webp` | https://www.pexels.com/photo/29274538/ |
+| `hero-playground.webp` | https://www.pexels.com/photo/16431202/ |
+| `laudo-analise-projeto.webp` | https://www.pexels.com/photo/8961026/ |
+| `laudo-inspecao-equipamento.webp` | https://www.pexels.com/photo/39174644/ |
+| `laudo-vistoria-campo.webp` | https://www.pexels.com/photo/8960941/ |
+| `montagem-ponte-rolante.webp` | https://www.pexels.com/photo/29224552/ |
+| `montagem-vigas.webp` | https://www.pexels.com/photo/15947587/ |
+| `patologia-destacamento.webp` | https://www.pexels.com/photo/10224710/ |
+| `patologia-metalica.webp` | https://www.pexels.com/photo/12291236/ |
+| `patologia-trinca.webp` | https://www.pexels.com/photo/9348582/ |
+| `playground-condominio.webp` | https://www.pexels.com/photo/11986100/ |
+| `playground-piso.webp` | https://www.pexels.com/photo/7401101/ |
+| `predial-fachada.webp` | https://www.pexels.com/photo/10418970/ |
+| `predial-fachada.webp` | https://www.pexels.com/photo/12386248/ |
+| `predial-inspecao.webp` | https://www.pexels.com/photo/8293678/ |
+| `predial-quadro-eletrico.webp` | https://www.pexels.com/photo/32497160/ |
+| `quadra-coberta.webp` | https://www.pexels.com/photo/12883426/ |
+| `quadra-piso.webp` | https://www.pexels.com/photo/9787275/ |
+
+> Conferimos cada `alt` contra a foto renderizada antes de publicar. Descrição que não bate com
+> a imagem prejudica acessibilidade e não ajuda em SEO — oito `alt` deste lote foram reescritos
+> depois dessa conferência, e duas imagens trocaram de seção para ilustrar o bloco correto.
+
+**Comando de conversão usado:**
+
+```bash
+ffmpeg -y -i img/_raw/NOME.jpg \n  -vf "scale=L:A:force_original_aspect_ratio=increase,crop=L:A" \n  -quality 72 -compression_level 6 img/NOME.webp
+```
