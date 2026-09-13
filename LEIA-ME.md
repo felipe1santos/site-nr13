@@ -229,6 +229,78 @@ recuperação de fachada piora a experiência e a métrica de engajamento.
 - Ao mudar CSS ou JS, **incrementar o `?v=AAAAMMDD` em todas as páginas** — o nginx não manda
   `Cache-Control` e o navegador segura o arquivo velho.
 
+### 11. Hero: escurecer só atrás do texto
+
+A foto do hero é argumento de venda — ela precisa **aparecer**. O erro a evitar é apagar a
+imagem inteira para garantir contraste no título: o resultado é um banner cinza em que não se
+distingue o que está fotografado.
+
+A regra é **escurecer localmente, não globalmente**:
+
+- a foto fica em **opacidade alta** (`.9` ou mais), não em `.42`;
+- o escurecimento é um **gradiente radial ancorado na coluna de texto** — forte onde o H1 e o
+  subtítulo passam, e chegando a zero antes da borda oposta;
+- o lado do quadro que não tem texto fica **limpo**, mostrando a foto;
+- contraste do texto conferido no ponto mais claro do fundo sob ele, não no meio do gradiente.
+
+Implementado no bloco **30a** do `css/site.css`, sob o escopo `.pg-obras`:
+
+```css
+.pg-obras .hero-bg img { opacity: .92; }
+.pg-obras .hero::after {
+  background:
+    radial-gradient(115% 105% at 24% 52%,
+      rgba(6,20,34,.93) 0%, rgba(6,20,34,.86) 30%,
+      rgba(6,20,34,.52) 52%, rgba(6,20,34,.16) 70%, rgba(6,20,34,0) 84%),
+    linear-gradient(0deg, var(--navy-900) 0%, rgba(6,20,34,0) 20%);
+}
+```
+
+O segundo gradiente, vertical e curto, existe só para o rodapé do hero encostar no fundo navy
+sem emenda visível. Ele não deve subir além de ~20%, senão volta a apagar a foto.
+
+> As páginas do universo NR-13 continuam com o hero antigo (`opacity: .42` e gradiente de 88%
+> cobrindo tudo). Se um dia forem migradas, é só acrescentar `pg-obras` ao `<body>` delas —
+> mas conferir o contraste caso a caso, porque cada foto tem um ponto claro diferente.
+
+### 12. Efeito 3D na primeira dobra
+
+As 12 landings do cluster de obras têm uma malha técnica animada sobre o hero, feita com
+**three.js servido do próprio domínio** (`js/three.min.js`) — o site não usa CDN, e essa regra
+vale também aqui.
+
+O script é `js/hero-fx.js` e ele **se desliga sozinho** quando:
+
+- não existe `.hero-fx` na página ou o `THREE` não carregou;
+- o visitante pediu `prefers-reduced-motion: reduce`;
+- a largura da janela é menor que 900px (economia de bateria no celular);
+- o navegador não tem WebGL;
+- a aba está em segundo plano ou o hero saiu da viewport.
+
+Em qualquer um desses casos **o hero fica exatamente como sem o efeito** — o canvas nasce com
+`opacity: 0` e só recebe a classe `.on` depois de montar.
+
+**Custo:** o `three.min.js` tem ~654KB. Ele entra com `defer`, depois do HTML e do CSS, e não
+disputa banda com a imagem do hero, que é o LCP. Ainda assim é o arquivo mais pesado do site —
+se o Core Web Vitals piorar, o caminho é trocar por um efeito em canvas 2D, que faz o mesmo
+desenho sem a biblioteca.
+
+### 13. Corpo da landing: a coluna direita não pode morrer no meio
+
+O padrão `1fr + 320px` com `.prose` travado em `760px` deixava uma faixa morta à direita assim
+que o `aside` sticky parava de acompanhar. Nas landings do cluster de obras:
+
+- o texto usa a **coluna inteira** (`max-width: none` no `.prose`), com a coluna direita em
+  `372px` — a linha de leitura fica em torno de 780px, dentro do confortável;
+- o `aside` termina com um card **`.aside-fill`** ("o que ter em mãos antes de pedir"), que
+  fecha o vão visual e ainda qualifica o contato;
+- abaixo de 1080px a coluna direita encolhe para 320px, e abaixo de 900px o layout vira uma
+  coluna só.
+
+Ao criar landing nova nesse cluster, **role a página inteira antes de publicar** e verifique se
+existe algum trecho longo com o lado direito vazio. Se existir, o conteúdo do `aside` está curto
+demais para a altura da página.
+
 ### 10. Checklist antes de publicar página nova
 
 - [ ] `<h1>` único, hierarquia sem pulo
@@ -239,6 +311,8 @@ recuperação de fachada piora a experiência e a métrica de engajamento.
 - [ ] 2 páginas existentes apontando para a nova
 - [ ] `.sec-tags` com cauda longa
 - [ ] imagens com dimensão real e `alt`
+- [ ] hero com a foto visível: escuro só atrás do texto, nunca no quadro inteiro
+- [ ] página rolada de ponta a ponta, sem faixa vazia à direita
 - [ ] `?v=` incrementado se houve mudança em CSS/JS
 - [ ] **URL no `sitemap.xml`**
 - [ ] **URL em `docs/INDEXACAO.md`**

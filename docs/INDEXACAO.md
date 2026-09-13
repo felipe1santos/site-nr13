@@ -28,6 +28,107 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## Deploy e indexação — 04/09/2026 (noite)
+
+### Deploy: FEITO
+
+Push para `felipe1santos/site-nr13` (commit `095fd6f`, 90 arquivos) e deploy disparado no Coolify
+(painel em `http://187.77.34.112:8000`, projeto "My first project", aplicação **SITE NR13**,
+botão **Redeploy**). O repo **não tem webhook**, então push sozinho não publica — o Redeploy
+manual é obrigatório.
+
+Verificado depois do deploy:
+
+- 12/12 páginas novas respondendo **200**
+- `sitemap.xml` no ar com **46 URLs** (era 34)
+- `id="obras"` presente na home publicada
+- imagens novas e `css/site.css?v=20260904a` servindo
+
+### Sitemap: REENVIADO
+
+`https://nr13sistema.com.br/sitemap.xml` reenviado no Search Console — confirmação
+"Sitemap enviado", data de envio atualizada para 04/09/2026. A coluna "Páginas encontradas"
+ainda mostrava 34 no momento do envio, porque o Google só reprocessa depois.
+
+> Há um segundo sitemap cadastrado, `https://www.nr13sistema.com.br/sitemap.xml`, enviado em
+> 24/06/2026. Ele existe só por causa da ausência do 301 de `www` e deve ser removido do
+> Search Console assim que o redirect for aplicado.
+
+### Indexação: 1 de 12 — ERRO DE EXECUÇÃO, COTA QUEIMADA
+
+**O que deu errado.** Para trocar a URL inspecionada eu clicava na caixa de inspeção e digitava
+o endereço. O clique acertava a caixa, mas o texto não era aplicado e a página **continuava
+exibindo a URL anterior**. Como eu não conferia qual URL estava na tela antes de clicar em
+"Solicitar indexação", cliquei 12 vezes seguidas no botão da **mesma página**
+(`laudos-tecnicos-e-art`), em vez de uma vez em cada uma das 12.
+
+Resultado:
+
+- `laudos-tecnicos-e-art-vitoria-es.html` — solicitada e **já indexada** ("O URL está no Google")
+- as outras 11 — **nenhuma solicitação registrada**
+- cota diária **esgotada**: "Não foi possível processar a solicitação porque sua cota diária foi
+  excedida. Tente novamente amanhã."
+
+A home foi verificada e continua **indexada**; não precisava de solicitação.
+
+**Causa raiz.** O viewport real da aba é 1920x962, mas a captura de tela chega em 1565x784 — as
+coordenadas de clique não correspondem ao que a imagem mostra. O clique caía dentro da caixa mas
+o `type` subsequente não era aplicado ao campo.
+
+**Método que funciona** (validado): setar o valor pelo setter nativo do input e disparar Enter.
+
+```js
+const inp = [...document.querySelectorAll('input')]
+  .find(i => (i.getAttribute('aria-label') || '').startsWith('Inspecionar qualquer URL'));
+const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
+setter.call(inp, url);
+inp.dispatchEvent(new Event('input', { bubbles: true }));
+inp.focus();
+for (const t of ['keydown','keypress','keyup'])
+  inp.dispatchEvent(new KeyboardEvent(t, { key:'Enter', keyCode:13, which:13, bubbles:true }));
+```
+
+**Regra para a próxima vez:** antes de clicar em "Solicitar indexação", **confirmar que a URL
+exibida no topo é a URL pretendida**. Solicitar consome cota; inspecionar não. Clicar
+"Solicitar novamente" na mesma página consome cota igual.
+
+### Fila para amanhã (05/09) — 11 URLs, cota renovada
+
+- [ ] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html
+- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html
+- [ ] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html
+- [ ] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html
+- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html
+- [ ] https://nr13sistema.com.br/camaras-frias-vitoria-es.html
+- [ ] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html
+- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html
+- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html
+
+- [x] ~~laudos-tecnicos-e-art-vitoria-es.html~~ — solicitada e já indexada em 04/09
+
+> São 11 para uma cota de ~10 a 12: cabe em um dia, mas sem folga. Se a última for recusada,
+> ela entra no dia seguinte.
+
+### 301 de www: ainda PENDENTE — e não precisa de nginx
+
+A causa está no Coolify, não no nginx. Em **SITE NR13 → Configuration → General** existe o campo
+**Direction**, hoje em `Allow www & non-www.`. O dropdown tem a opção `Redirect to non-www.`,
+que resolve o 301 pelo proxy do próprio Coolify.
+
+Ao clicar em **Set Direction**, o Coolify abre um modal de confirmação com aviso vermelho —
+*"This operation is permanent and cannot be undone"* e *"All traffic will be redirected to the
+selected direction"* — e exige digitar a URL da aplicação
+(`https://nr13sistema.com.br,https://www.nr13sistema.com.br/`) para liberar o botão.
+
+Não foi aplicado nesta sessão, por decisão do Felipe depois de ver o aviso. O campo foi conferido
+e continua em `Allow www & non-www.` — nada foi salvo.
+
+`docs/NGINX-REDIRECTS.md` continua válido como alternativa, mas a via do Coolify é mais simples.
+
+---
+
 ## Auditoria de indexação — 04/09/2026
 
 Executada no Search Console (`sc-domain:nr13sistema.com.br`). Estado no painel:
@@ -214,8 +315,7 @@ Sitemap vai a **46 URLs**. Todas as 12 páginas fecham com `cta-band` para Whats
 - [ ] **Trocar por fotos reais da empresa.** Banco de imagem converte menos que obra própria.
       Ordem de prioridade em `docs/CREDITOS-IMAGENS.md`; os blocos já estão prontos, basta
       substituir o arquivo mantendo as dimensões declaradas no HTML.
-- [ ] **Deploy na VPS.** Enquanto as 12 URLs não responderem 200 no domínio, o Search Console
-      recusa a solicitação de indexação. Publicar antes de trabalhar a fila acima.
+- [x] **Deploy na VPS.** Feito em 04/09/2026: as 12 URLs respondem 200 e o sitemap no ar tem 46 URLs.
 - [ ] `?v=` de CSS/JS foi para `20260904a` em todas as 47 páginas (o `.footer-grid` mudou).
 
 ---
@@ -477,6 +577,21 @@ Palavra-chave alvo de cada uma:
 - [ ] Se o preço for exibido, incluir também `"price"` e `"priceValidUntil"` no
   bloco `offers` do JSON-LD — sem `price`, o Google não gera rich result de produto.
 - [ ] Criar a caixa de e-mail no domínio ou manter `nr13sistema@gmail.com`.
+
+## Página nova — 12/09/2026
+
+- [ ] `sistema-nr12.html` — página de produto do **Sistema NR12** (software de gestão NR-12
+  com módulo NR-10 integrado). Já está no `sitemap.xml` (`lastmod` 2026-09-12), linkada no
+  menu principal e no rodapé de todas as páginas do site. **Aguardando deploy**: só solicitar
+  indexação depois que `https://nr13sistema.com.br/sistema-nr12.html` responder 200.
+  Segundo pilar do site, ao lado de `/sistema-nr13.html` — o cluster NR-12 do blog
+  (`apreciacao-de-riscos-o-que-e`, `quanto-custa-adequar-maquina-nr12`) deve passar a apontar
+  para ela, além de `/adequacao-nr12-vitoria-es.html`.
+- Assets novos da página: `css/nr12.css`, `js/nr12-risco.js` e as fotos
+  `hero-sistema-nr12`, `nr12-inspecao-tablet`, `nr12-ponto-de-operacao`,
+  `nr12-painel-comando`, `nr10-painel-tecnico`, `nr10-quadro-disjuntores` (WebP em `img/`).
+- Versão de cache de todos os assets subiu de `?v=20260908a` para `?v=20260912a`
+  (o `css/site.css` mudou: media query nova do menu com sete itens).
 
 ## Próximos lotes de conteúdo
 

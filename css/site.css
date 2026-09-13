@@ -405,6 +405,49 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
 .norma b { display: block; font-family: var(--f-display); font-weight: 800; font-size: 1.02rem; color: var(--navy-900); }
 .norma span { font-family: var(--f-mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--steel-500); }
 
+/* ---------- 16b. Faixa de certificações e referências normativas ---------- */
+.certs-sec { border-top: 1px solid var(--line); }
+.certs-head { text-align: center; max-width: 720px; margin: 0 auto 2.2rem; }
+.certs-head p { color: var(--txt-soft); font-size: 1.02rem; margin-bottom: 0; }
+
+/* base 33,33% => 3 na primeira fila, 2 centralizadas na segunda */
+.certs {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: .9rem;
+}
+.certs > li {
+  flex: 0 1 calc(33.333% - .6rem);
+  min-width: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 1.4rem 1.2rem 1.25rem;
+  text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: .55rem;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.certs > li:hover { border-color: var(--steel-200); box-shadow: var(--shadow); transform: translateY(-2px); }
+.cert-logo {
+  height: 58px; width: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.cert-logo img {
+  max-height: 58px; width: auto; max-width: 150px;
+  object-fit: contain;
+  filter: saturate(.92);
+}
+.cert-nome {
+  font-family: var(--f-display); font-weight: 800; font-size: .95rem;
+  color: var(--navy-900); line-height: 1.2;
+}
+.cert-desc { font-size: .82rem; line-height: 1.45; color: var(--txt-soft); }
+.certs-nota {
+  margin: 1.6rem auto 0; max-width: 720px; text-align: center;
+  font-family: var(--f-mono); font-size: .72rem; letter-spacing: .04em;
+  color: var(--steel-500);
+}
+
 /* ---------- 17. Rodapé (padrão ABEMI: foto industrial esmaecida + azul) ---------- */
 .site-footer {
   position: relative; isolation: isolate;
@@ -545,6 +588,14 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .normas { grid-template-columns: repeat(3, 1fr); }
   .hero-strip .wrap { grid-template-columns: repeat(2, 1fr); }
+  .certs > li { flex-basis: calc(33.333% - .6rem); }
+}
+/* Com o item "Sistema NR12" a barra passou a ter sete links: entre 821 e 1080px
+   o menu aperta o espaçamento em vez de estourar a largura do cabeçalho. */
+@media (max-width: 1080px) and (min-width: 821px) {
+  .nav { gap: 1.05rem; }
+  .nav a { font-size: .88rem; }
+  .nav .btn { padding: .8rem 1.05rem; font-size: .88rem; }
 }
 @media (max-width: 820px) {
   body { font-size: 16.5px; }
@@ -570,6 +621,9 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
   .cta-band { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.8rem; }
   .landing-aside { grid-template-columns: 1fr; }
+  /* duas por fila: 2 + 2 + 1 centralizada */
+  .certs > li { flex-basis: calc(50% - .45rem); padding: 1.15rem 1rem 1rem; }
+  .cert-logo, .cert-logo img { height: 48px; max-height: 48px; }
 }
 @media (max-width: 520px) {
   .normas { grid-template-columns: repeat(2, 1fr); }
@@ -1361,4 +1415,89 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
   .hero { background: none; color: #000; }
   .hero::after { display: none; }
   a { text-decoration: underline; }
+}
+
+/* ==========================================================================
+   30. CLUSTER OBRAS E ENGENHARIA PREDIAL  ·  escopo .pg-obras
+   Só vale para as 12 landings do cluster de obras. As páginas do universo
+   NR-13 continuam com o hero e o layout originais.
+   ========================================================================== */
+
+/* --- 30a. hero: foto legível, escuro só atrás do texto ------------------- */
+
+/* A regra global deixa a foto em opacity .42 e cobre o quadro inteiro com um
+   gradiente de 88%. Aqui a foto aparece quase inteira e o escurecimento vira
+   uma elipse ancorada na coluna de texto: o lado direito da imagem fica limpo. */
+.pg-obras .hero-bg img { opacity: .92; }
+
+.pg-obras .hero::after {
+  background:
+    radial-gradient(115% 105% at 24% 52%,
+      rgba(6, 20, 34, .93) 0%,
+      rgba(6, 20, 34, .86) 30%,
+      rgba(6, 20, 34, .52) 52%,
+      rgba(6, 20, 34, .16) 70%,
+      rgba(6, 20, 34, 0) 84%),
+    linear-gradient(0deg, var(--navy-900) 0%, rgba(6, 20, 34, 0) 20%);
+}
+
+/* a malha estática sai: quem faz esse papel agora é o canvas do hero-fx */
+.pg-obras .hero::before { display: none; }
+
+/* --- 30b. camada 3D sobre a primeira dobra ------------------------------- */
+
+.pg-obras .hero-fx {
+  position: absolute; inset: 0; z-index: 1;
+  pointer-events: none;
+  opacity: 0; transition: opacity .9s ease;
+}
+.pg-obras .hero-fx.on { opacity: 1; }
+.pg-obras .hero-fx canvas { width: 100%; height: 100%; display: block; }
+
+/* sem JS, sem WebGL ou com movimento reduzido o hero fica exatamente como
+   antes do efeito — o canvas nunca chega a aparecer. */
+@media (prefers-reduced-motion: reduce) {
+  .pg-obras .hero-fx { display: none; }
+}
+
+/* --- 30c. corpo: coluna de texto mais larga, direita não fica vazia ------ */
+
+/* O padrão é 1fr + 320px com .prose travado em 760px, o que deixava uma faixa
+   morta à direita depois que o aside grudava. Aqui o texto usa a coluna toda
+   e o aside ganha corpo. */
+.pg-obras .landing-layout {
+  grid-template-columns: minmax(0, 1fr) 372px;
+  gap: clamp(2.4rem, 3.4vw, 3.6rem);
+}
+.pg-obras .landing-layout .prose { max-width: none; }
+
+/* o aside acompanha a rolagem e recebe um respiro entre os cards */
+.pg-obras .landing-aside { top: 100px; gap: 1.35rem; }
+
+/* a última caixa do aside estica até o fim da coluna, fechando o vão visual
+   que sobrava embaixo dos cards em páginas longas */
+.pg-obras .landing-aside .aside-fill {
+  border: 1px dashed var(--line);
+  border-radius: var(--r-lg);
+  padding: 1.1rem 1.2rem;
+  background: linear-gradient(180deg, rgba(10, 31, 51, .035), transparent);
+}
+.pg-obras .landing-aside .aside-fill h3 {
+  font-size: 1rem; margin-bottom: .55rem;
+}
+.pg-obras .landing-aside .aside-fill p {
+  font-size: .88rem; color: var(--txt-soft); margin: 0 0 .7rem;
+}
+.pg-obras .landing-aside .aside-fill ul {
+  list-style: none; padding: 0; margin: 0; font-size: .88rem;
+}
+.pg-obras .landing-aside .aside-fill li { margin-bottom: .45rem; }
+.pg-obras .landing-aside .aside-fill a { color: var(--navy-800); }
+
+@media (max-width: 1080px) {
+  .pg-obras .landing-layout { grid-template-columns: minmax(0, 1fr) 320px; }
+}
+@media (max-width: 900px) {
+  .pg-obras .landing-layout { grid-template-columns: 1fr; }
+  .pg-obras .hero-fx { display: none; }   /* economiza bateria no celular */
 }

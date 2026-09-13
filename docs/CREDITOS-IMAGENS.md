@@ -25,6 +25,12 @@ e as versões otimizadas em WebP estão em `img/`.
 | `detalhe-inspecao.webp` | `nr13-vaso-4.jpg` | cottonbro studio |
 | `detalhe-alarme.webp` | `b-fogo-sprinkler-3.jpg` | Steppe Walker |
 | `og-image.jpg` | `b-hero-planta-1.jpg` | Tom Fisk |
+| `hero-sistema-nr12.webp` | `nr12-prensas-linha.jpg` | Mazhar Ulazhar (Pexels 31352672) |
+| `nr12-inspecao-tablet.webp` | `nr12-inspecao-tablet.jpg` | Pexels 32845694 |
+| `nr12-ponto-de-operacao.webp` | `nr12-ponto-de-operacao.jpg` | Mikhail Nilov (Pexels 9242913) |
+| `nr12-painel-comando.webp` | `nr12-painel-comando.jpg` | Pexels 35072831 |
+| `nr10-painel-tecnico.webp` | `nr10-painel-tecnico.jpg` | Pexels 10871929 |
+| `nr10-quadro-disjuntores.webp` | `nr10-quadro-disjuntores.jpg` | Pixabay via Pexels 257736 |
 
 O índice completo do primeiro lote de downloads, com link para cada foto no Pexels, está em
 `img/_raw/manifest.csv`.
