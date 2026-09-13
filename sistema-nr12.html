@@ -31,7 +31,7 @@
 
 <link rel="preload" as="image" href="img/hero-sistema-nr12.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20260912a">
-<link rel="stylesheet" href="css/nr12.css?v=20260913a">
+<link rel="stylesheet" href="css/nr12.css?v=20260913b">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -566,7 +566,8 @@
       </p>
     </div>
 
-    <div class="calc" id="calcRisco" data-reveal>
+    <div id="calcRisco" data-reveal>
+    <div class="calc">
       <form class="calc-form" onsubmit="return false">
         <div class="calc-field">
           <label class="calc-label" for="cPreset">Máquina ou setor
@@ -727,6 +728,170 @@
       </aside>
     </div>
 
+      <!-- fluxograma: mostra ao vivo o caminho que a seleção percorre -->
+      <div class="calc-fluxo" aria-hidden="true">
+        <div class="calc-fluxo-head">
+          <span class="calc-fluxo-eyebrow">Como o resultado é montado</span>
+          <h3>O caminho da sua seleção, parâmetro por parâmetro</h3>
+        </div>
+
+        <div class="hrn-chain">
+          <div class="hrn-node">
+            <span>Probabilidade</span><b id="fLO">4,0</b><i id="fLOtxt">Alguma chance</i>
+          </div>
+          <span class="hrn-op">×</span>
+          <div class="hrn-node">
+            <span>Frequência</span><b id="fFE">4,0</b><i id="fFEtxt">A cada hora</i>
+          </div>
+          <span class="hrn-op">×</span>
+          <div class="hrn-node">
+            <span>Grau de dano</span><b id="fDPH">8,0</b><i id="fDPHtxt">Amputação de dois membros</i>
+          </div>
+          <span class="hrn-op">×</span>
+          <div class="hrn-node">
+            <span>Pessoas expostas</span><b id="fNP">1,0</b><i id="fNPtxt">1 a 2 pessoas</i>
+          </div>
+          <span class="hrn-op">=</span>
+          <div class="hrn-node hrn-res">
+            <span>HRN</span><b id="fHRN">128</b><i id="fFaixa">Risco muito alto</i>
+          </div>
+        </div>
+
+        <div class="calc-arvore">
+          <svg viewBox="0 0 1000 430" role="img" aria-hidden="true">
+            <g class="arv-cab">
+              <text x="74" y="26">INÍCIO</text>
+              <text x="232" y="26">GRAVIDADE · S</text>
+              <text x="398" y="26">FREQUÊNCIA · F</text>
+              <text x="578" y="26">EVITAR O DANO · P</text>
+              <text x="755" y="26">CATEGORIA</text>
+            </g>
+
+            <path class="arv-edge" data-caminho="1" d="M118 227.5 H154 V137.5 H190"/>
+            <path class="arv-edge" data-caminho="2" d="M118 227.5 H154 V317.5 H190"/>
+            <path class="arv-edge" data-caminho="1-1" d="M274 137.5 H315 V92.5 H356"/>
+            <path class="arv-edge" data-caminho="1-2" d="M274 137.5 H315 V182.5 H356"/>
+            <path class="arv-edge" data-caminho="2-1" d="M274 317.5 H315 V272.5 H356"/>
+            <path class="arv-edge" data-caminho="2-2" d="M274 317.5 H315 V362.5 H356"/>
+            <path class="arv-edge" data-caminho="1-1-1" d="M440 92.5 H488 V70 H536"/>
+            <path class="arv-edge" data-caminho="1-1-2" d="M440 92.5 H488 V115 H536"/>
+            <path class="arv-edge" data-caminho="1-2-1" d="M440 182.5 H488 V160 H536"/>
+            <path class="arv-edge" data-caminho="1-2-2" d="M440 182.5 H488 V205 H536"/>
+            <path class="arv-edge" data-caminho="2-1-1" d="M440 272.5 H488 V250 H536"/>
+            <path class="arv-edge" data-caminho="2-1-2" d="M440 272.5 H488 V295 H536"/>
+            <path class="arv-edge" data-caminho="2-2-1" d="M440 362.5 H488 V340 H536"/>
+            <path class="arv-edge" data-caminho="2-2-2" d="M440 362.5 H488 V385 H536"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="1-1-1" d="M620 70 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="1-1-2" d="M620 115 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="1-2-1" d="M620 160 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="1-2-2" d="M620 205 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="2-1-1" d="M620 250 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="2-1-2" d="M620 295 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="2-2-1" d="M620 340 H736"/>
+            <path class="arv-edge arv-edge-cat" data-caminho="2-2-2" d="M620 385 H736"/>
+
+            <g class="arv-no arv-inicio">
+              <rect x="30" y="209.5" width="88" height="36" rx="5"/>
+              <text class="arv-cod" x="74" y="232">MÁQUINA</text>
+            </g>
+
+            <g class="arv-no" data-caminho="1">
+              <rect x="190" y="119.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="232" y="137">S1</text>
+              <text class="arv-txt" x="232" y="149">lesão leve</text>
+            </g>
+            <g class="arv-no" data-caminho="2">
+              <rect x="190" y="299.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="232" y="317">S2</text>
+              <text class="arv-txt" x="232" y="329">lesão grave</text>
+            </g>
+
+            <g class="arv-no" data-caminho="1-1">
+              <rect x="356" y="74.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="398" y="92">F1</text>
+              <text class="arv-txt" x="398" y="104">rara ou curta</text>
+            </g>
+            <g class="arv-no" data-caminho="1-2">
+              <rect x="356" y="164.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="398" y="182">F2</text>
+              <text class="arv-txt" x="398" y="194">frequente ou longa</text>
+            </g>
+            <g class="arv-no" data-caminho="2-1">
+              <rect x="356" y="254.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="398" y="272">F1</text>
+              <text class="arv-txt" x="398" y="284">rara ou curta</text>
+            </g>
+            <g class="arv-no" data-caminho="2-2">
+              <rect x="356" y="344.5" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="398" y="362">F2</text>
+              <text class="arv-txt" x="398" y="374">frequente ou longa</text>
+            </g>
+
+            <g class="arv-no" data-caminho="1-1-1">
+              <rect x="536" y="52" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="69.5">P1</text>
+              <text class="arv-txt" x="578" y="81.5">dá para evitar</text>
+            </g>
+            <g class="arv-no" data-caminho="1-1-2">
+              <rect x="536" y="97" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="114.5">P2</text>
+              <text class="arv-txt" x="578" y="126.5">quase impossível</text>
+            </g>
+            <g class="arv-no" data-caminho="1-2-1">
+              <rect x="536" y="142" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="159.5">P1</text>
+              <text class="arv-txt" x="578" y="171.5">dá para evitar</text>
+            </g>
+            <g class="arv-no" data-caminho="1-2-2">
+              <rect x="536" y="187" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="204.5">P2</text>
+              <text class="arv-txt" x="578" y="216.5">quase impossível</text>
+            </g>
+            <g class="arv-no" data-caminho="2-1-1">
+              <rect x="536" y="232" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="249.5">P1</text>
+              <text class="arv-txt" x="578" y="261.5">dá para evitar</text>
+            </g>
+            <g class="arv-no" data-caminho="2-1-2">
+              <rect x="536" y="277" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="294.5">P2</text>
+              <text class="arv-txt" x="578" y="306.5">quase impossível</text>
+            </g>
+            <g class="arv-no" data-caminho="2-2-1">
+              <rect x="536" y="322" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="339.5">P1</text>
+              <text class="arv-txt" x="578" y="351.5">dá para evitar</text>
+            </g>
+            <g class="arv-no" data-caminho="2-2-2">
+              <rect x="536" y="367" width="84" height="36" rx="5"/>
+              <text class="arv-cod" x="578" y="384.5">P2</text>
+              <text class="arv-txt" x="578" y="396.5">quase impossível</text>
+            </g>
+
+            <g class="arv-cat" data-caminho="1-1-1"><circle cx="755" cy="70" r="19"/><text x="755" y="76">B</text></g>
+            <g class="arv-cat" data-caminho="1-1-2"><circle cx="755" cy="115" r="19"/><text x="755" y="121">1</text></g>
+            <g class="arv-cat" data-caminho="1-2-1"><circle cx="755" cy="160" r="19"/><text x="755" y="166">1</text></g>
+            <g class="arv-cat" data-caminho="1-2-2"><circle cx="755" cy="205" r="19"/><text x="755" y="211">2</text></g>
+            <g class="arv-cat" data-caminho="2-1-1"><circle cx="755" cy="250" r="19"/><text x="755" y="256">2</text></g>
+            <g class="arv-cat" data-caminho="2-1-2"><circle cx="755" cy="295" r="19"/><text x="755" y="301">3</text></g>
+            <g class="arv-cat" data-caminho="2-2-1"><circle cx="755" cy="340" r="19"/><text x="755" y="346">3</text></g>
+            <g class="arv-cat" data-caminho="2-2-2"><circle cx="755" cy="385" r="19"/><text x="755" y="391">4</text></g>
+
+            <g class="arv-selo" id="fSelo">
+              <rect x="790" y="373" width="134" height="24" rx="4"/>
+              <text x="802" y="389">SUA SELEÇÃO</text>
+            </g>
+          </svg>
+        </div>
+
+        <p class="calc-fluxo-nota">
+          O ramo aceso é o caminho que a sua seleção percorre no grafo de riscos da ABNT NBR 14153.
+          A pontuação HRN e a categoria de segurança são independentes: a primeira mede o tamanho do
+          risco, a segunda define o que o sistema de comando da máquina precisa ter.
+        </p>
+      </div>
+    </div>
+
     <div class="sec-tags">
       <span class="sec-tags-lbl">Como o cálculo funciona</span>
       <ul>
@@ -805,18 +970,20 @@
       </div>
     </div>
 
-    <div class="sec-tags">
+    <div class="sec-tags sec-tags-marquee">
       <span class="sec-tags-lbl">Recursos mais procurados</span>
-      <ul>
-        <li><a href="#telas">software de gestão NR-12</a></li>
-        <li><a href="#telas">sistema de apreciação de risco de máquinas online</a></li>
-        <li><a href="#telas">planilha de apreciação de risco NR-12 substituta</a></li>
-        <li><a href="#telas">programa para laudo NR-12 com ART</a></li>
-        <li><a href="#telas">controle de treinamento NR-12 e NR-10 vencimento</a></li>
-        <li><a href="#telas">prontuário de máquina digital por TAG</a></li>
-        <li><a href="#telas">gestão de plano de ação de segurança do trabalho</a></li>
-        <li><a href="#telas">software para engenharia de segurança de máquinas</a></li>
-      </ul>
+      <div class="sec-tags-vp">
+          <ul>
+          <li><a href="#telas">software de gestão NR-12</a></li>
+          <li><a href="#telas">sistema de apreciação de risco de máquinas online</a></li>
+          <li><a href="#telas">planilha de apreciação de risco NR-12 substituta</a></li>
+          <li><a href="#telas">programa para laudo NR-12 com ART</a></li>
+          <li><a href="#telas">controle de treinamento NR-12 e NR-10 vencimento</a></li>
+          <li><a href="#telas">prontuário de máquina digital por TAG</a></li>
+          <li><a href="#telas">gestão de plano de ação de segurança do trabalho</a></li>
+          <li><a href="#telas">software para engenharia de segurança de máquinas</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -910,17 +1077,19 @@
       </div>
     </div>
 
-    <div class="sec-tags">
+    <div class="sec-tags sec-tags-marquee">
       <span class="sec-tags-lbl">Documentos do módulo NR-10</span>
-      <ul>
-        <li><a href="#nr10">prontuário de instalações elétricas digital</a></li>
-        <li><a href="#nr10">análise de risco elétrico choque e arco elétrico</a></li>
-        <li><a href="#nr10">laudo de aterramento com valores medidos</a></li>
-        <li><a href="#nr10">relatório de termografia de painel elétrico</a></li>
-        <li><a href="#nr10">procedimento de bloqueio e etiquetagem lockout tagout</a></li>
-        <li><a href="#nr10">controle de treinamento NR-10 básico e SEP</a></li>
-        <li><a href="nt23-recarga-de-veiculos-eletricos-vitoria-es.html">instalação elétrica e NT 23</a></li>
-      </ul>
+      <div class="sec-tags-vp">
+          <ul>
+          <li><a href="#nr10">prontuário de instalações elétricas digital</a></li>
+          <li><a href="#nr10">análise de risco elétrico choque e arco elétrico</a></li>
+          <li><a href="#nr10">laudo de aterramento com valores medidos</a></li>
+          <li><a href="#nr10">relatório de termografia de painel elétrico</a></li>
+          <li><a href="#nr10">procedimento de bloqueio e etiquetagem lockout tagout</a></li>
+          <li><a href="#nr10">controle de treinamento NR-10 básico e SEP</a></li>
+          <li><a href="nt23-recarga-de-veiculos-eletricos-vitoria-es.html">instalação elétrica e NT 23</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -1798,6 +1967,6 @@
 <script src="js/meta-pixel.js?v=20260912a" defer></script>
 <script src="js/wa-form.js?v=20260912a" defer></script>
 <script src="js/site.js?v=20260912a" defer></script>
-<script src="js/nr12-risco.js?v=20260913a" defer></script>
+<script src="js/nr12-risco.js?v=20260913b" defer></script>
 </body>
 </html>

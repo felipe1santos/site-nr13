@@ -110,6 +110,7 @@
   var outPrazo = document.getElementById('cPrazo');
   var outMed   = document.getElementById('cMedidas');
   var outWa    = document.getElementById('cWhats');
+  var outCaixa = raiz.querySelector('.calc-out');
 
   function radio(nome) {
     var m = raiz.querySelector('input[name="' + nome + '"]:checked');
@@ -133,6 +134,53 @@
   /* comprimento da semicircunferência de raio 106 do <path> do medidor */
   var ARCO = Math.PI * 106;
 
+  /* ---- fluxograma ---- */
+  var caminhos = raiz.querySelectorAll('[data-caminho]');
+  var selo = document.getElementById('fSelo');
+  /* y de cada folha da árvore, na ordem S1F1P1 … S2F2P2 */
+  var FOLHA_Y = [70, 115, 160, 205, 250, 295, 340, 385];
+  var SELO_BASE = 385;
+
+  var chainNum = {
+    LO: document.getElementById('fLO'), FE: document.getElementById('fFE'),
+    DPH: document.getElementById('fDPH'), NP: document.getElementById('fNP')
+  };
+  var chainTxt = {
+    LO: document.getElementById('fLOtxt'), FE: document.getElementById('fFEtxt'),
+    DPH: document.getElementById('fDPHtxt'), NP: document.getElementById('fNPtxt')
+  };
+  var fHRN = document.getElementById('fHRN');
+  var fFaixa = document.getElementById('fFaixa');
+
+  function num(sel) {
+    var v = parseFloat(sel.value);
+    return (Math.round(v * 10) / 10).toFixed(v < 10 ? 1 : 0).replace('.', ',');
+  }
+  function rotulo(sel) { return sel.options[sel.selectedIndex].text; }
+
+  function desenharFluxo(S, F, P, hrnTexto, faixa) {
+    if (!caminhos.length) return;
+    var chave = S + '-' + F + '-' + P;
+    for (var i = 0; i < caminhos.length; i++) {
+      var el = caminhos[i];
+      var pref = el.getAttribute('data-caminho');
+      if (chave.indexOf(pref) === 0) el.classList.add('on');
+      else el.classList.remove('on');
+    }
+    if (selo) {
+      var idx = (S - 1) * 4 + (F - 1) * 2 + (P - 1);
+      selo.setAttribute('transform', 'translate(0,' + (FOLHA_Y[idx] - SELO_BASE) + ')');
+    }
+    if (chainNum.LO) {
+      chainNum.LO.textContent = num(selLO);   chainTxt.LO.textContent = rotulo(selLO);
+      chainNum.FE.textContent = num(selFE);   chainTxt.FE.textContent = rotulo(selFE);
+      chainNum.DPH.textContent = num(selDPH); chainTxt.DPH.textContent = rotulo(selDPH);
+      chainNum.NP.textContent = num(selNP);   chainTxt.NP.textContent = rotulo(selNP);
+      fHRN.textContent = hrnTexto;
+      fFaixa.textContent = faixa.nome;
+    }
+  }
+
   function calcular() {
     var S = radio('cS'), F = radio('cF'), P = radio('cP');
     var hrn = parseFloat(selLO.value) * parseFloat(selFE.value) *
@@ -152,7 +200,8 @@
       outArco.style.strokeDashoffset = ARCO * (1 - fracao(hrn));
       outArco.style.stroke = faixa.cor;
     }
-    raiz.style.setProperty('--risco-cor', faixa.cor);
+    if (outCaixa) outCaixa.style.setProperty('--risco-cor', faixa.cor);
+    desenharFluxo(Number(S), Number(F), Number(P), outHRN.textContent, faixa);
     outCat.textContent = cat;
     outCatTx.textContent = CAT_TXT[cat];
     outPrazo.textContent = faixa.prazo;

@@ -311,6 +311,99 @@
 .calc-nota { font-size: .78rem; line-height: 1.5; color: var(--steel-500); margin: .9rem 0 0; }
 .calc-sec .calc-nota { color: #6e8497; }
 
+/* ---------- 4b. Fluxograma da seleção ---------- */
+.calc-fluxo {
+  margin-top: 1.2rem; background: var(--navy-800);
+  border: 1px solid rgba(255, 255, 255, .16); border-top: 3px solid var(--sys-teal-500);
+  border-radius: var(--r-lg); padding: clamp(1.3rem, 2.8vw, 2rem);
+}
+.calc-fluxo-head { margin-bottom: 1.4rem; }
+.calc-fluxo-eyebrow {
+  display: block; font-family: var(--f-mono); font-size: .68rem; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; color: #4fc3d9; margin-bottom: .4rem;
+}
+.calc-fluxo-head h3 { font-size: clamp(1.05rem, .95rem + .5vw, 1.3rem); color: var(--white); margin: 0; }
+.calc-fluxo-nota { margin: 1.2rem 0 0; font-size: .8rem; line-height: 1.55; color: #6e8497; }
+
+/* cadeia do HRN */
+.hrn-chain {
+  display: flex; align-items: stretch; justify-content: space-between;
+  flex-wrap: wrap; gap: .5rem; margin-bottom: 1.6rem;
+}
+.hrn-node {
+  flex: 1 1 150px; min-width: 0;
+  background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: var(--r); padding: .7rem .8rem;
+}
+.hrn-node span {
+  display: block; font-family: var(--f-mono); font-size: .62rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--steel-500); margin-bottom: .25rem;
+}
+.hrn-node b {
+  display: block; font-family: var(--f-display); font-size: 1.5rem; font-weight: 800;
+  color: var(--white); line-height: 1.05; font-variant-numeric: tabular-nums;
+}
+.hrn-node i {
+  display: block; font-style: normal; font-size: .74rem; line-height: 1.35;
+  color: var(--steel-300); margin-top: .2rem;
+}
+.hrn-op {
+  align-self: center; flex: none; font-family: var(--f-display); font-size: 1.15rem;
+  font-weight: 700; color: var(--orange-500);
+}
+.hrn-res {
+  flex: 1 1 170px;
+  background: rgba(242, 101, 34, .12); border-color: rgba(242, 101, 34, .38);
+}
+.hrn-res span { color: var(--orange-400); }
+.hrn-res b { color: var(--orange-400); font-size: 1.9rem; }
+
+/* árvore do grafo de riscos */
+.calc-arvore { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.calc-arvore svg { display: block; width: 100%; min-width: 720px; height: auto; }
+
+.arv-cab text {
+  fill: #52697d; font-family: var(--f-mono); font-size: 9px;
+  letter-spacing: .12em; text-anchor: middle;
+}
+.arv-edge {
+  fill: none; stroke: rgba(255, 255, 255, .14); stroke-width: 1.6;
+  stroke-linejoin: round; stroke-linecap: round;
+  transition: stroke .3s ease, stroke-width .3s ease;
+}
+.arv-edge.on { stroke: var(--orange-500); stroke-width: 3; }
+
+.arv-no rect {
+  fill: rgba(255, 255, 255, .04); stroke: rgba(255, 255, 255, .14); stroke-width: 1.4;
+  transition: fill .3s ease, stroke .3s ease;
+}
+.arv-no text { text-anchor: middle; }
+.arv-cod { fill: var(--steel-500); font-family: var(--f-mono); font-size: 12px; font-weight: 600; transition: fill .3s ease; }
+.arv-txt { fill: #47596a; font-family: var(--f-body); font-size: 8.5px; transition: fill .3s ease; }
+.arv-no.on rect { fill: rgba(242, 101, 34, .16); stroke: var(--orange-500); }
+.arv-no.on .arv-cod { fill: var(--white); }
+.arv-no.on .arv-txt { fill: var(--orange-400); }
+.arv-inicio rect { fill: rgba(255, 255, 255, .08); stroke: var(--steel-500); }
+.arv-inicio .arv-cod { fill: var(--steel-200); font-size: 10px; letter-spacing: .1em; }
+
+.arv-cat circle {
+  fill: rgba(255, 255, 255, .04); stroke: rgba(255, 255, 255, .16); stroke-width: 1.4;
+  transition: fill .3s ease, stroke .3s ease;
+}
+.arv-cat text {
+  fill: var(--steel-500); font-family: var(--f-display); font-size: 16px; font-weight: 800;
+  text-anchor: middle; transition: fill .3s ease;
+}
+.arv-cat.on circle { fill: rgba(14, 111, 133, .5); stroke: #4fc3d9; stroke-width: 2; }
+.arv-cat.on text { fill: var(--white); }
+
+.arv-selo { transition: transform .35s cubic-bezier(.3, .8, .3, 1); }
+.arv-selo rect { fill: rgba(14, 111, 133, .25); stroke: #4fc3d9; stroke-width: 1.2; }
+.arv-selo text {
+  fill: #7fdcee; font-family: var(--f-mono); font-size: 9.5px;
+  font-weight: 600; letter-spacing: .12em;
+}
+
 /* ---------- 5. Faixa NR-10 ---------- */
 .nr10-band { background: linear-gradient(135deg, #062733 0%, #0a5a6e 130%); color: var(--steel-200); }
 .nr10-band h2, .nr10-band h3 { color: var(--white); }
