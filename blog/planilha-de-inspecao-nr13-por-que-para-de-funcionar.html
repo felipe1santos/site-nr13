@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Planilha de Inspeção NR13: Por Que Para de Funcionar</title>
+<meta name="description" content="Por que a planilha de inspeção NR13 funciona com 5 equipamentos e quebra com 30: versões por e-mail, prazo sem alerta e anexos soltos. Sinais e como migrar.">
+<meta name="keywords" content="planilha de inspeção NR13, planilha de controle NR-13, planilha Excel NR13, controle de vencimento em planilha, controle de inspeção de caldeiras e vasos, planilha de vencimento de inspeção, migrar planilha para sistema NR-13, histórico de inspeção NR-13, controle de calibração de PSV em planilha, gestão de prontuário NR-13">
+
+<link rel="canonical" href="https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Axial Engenharia">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vila Velha, Espírito Santo">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axial Engenharia">
+<meta property="og:title" content="Planilha de Inspeção NR13: Por Que Para de Funcionar">
+<meta property="og:description" content="Por que a planilha de inspeção NR13 funciona com 5 equipamentos e quebra com 30: versões por e-mail, prazo sem alerta e anexos soltos. Sinais e como migrar.">
+<meta property="og:url" content="https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html">
+<meta property="og:image" content="https://nr13sistema.com.br/img/sistema/sis-inspecao.webp">
+<meta property="og:locale" content="pt_BR">
+<meta property="article:published_time" content="2026-09-26">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta name="theme-color" content="#0a1f33">
+
+<link rel="preload" as="image" href="../img/sistema/sis-inspecao.webp" fetchpriority="high">
+<link rel="stylesheet" href="../css/site.css?v=20260912a">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Planilha de inspeção NR13: por que funciona com 5 equipamentos e para de funcionar com 30",
+  "description": "Por que a planilha de inspeção NR13 funciona com 5 equipamentos e quebra com 30: versões por e-mail, prazo sem alerta e anexos soltos. Sinais e como migrar.",
+  "inLanguage": "pt-BR",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html"
+  },
+  "image": "https://nr13sistema.com.br/img/sistema/sis-inspecao.webp",
+  "datePublished": "2026-09-26",
+  "dateModified": "2026-09-26",
+  "author": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "url": "https://nr13sistema.com.br/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nr13sistema.com.br/icon-512.png"
+    }
+  },
+  "about": [
+    "Planilha de controle de inspeção",
+    "NR-13",
+    "Controle de vencimento de inspeção",
+    "Migração de dados de inspeção"
+  ],
+  "keywords": "planilha de inspeção NR13, planilha de controle NR-13, planilha Excel NR13, controle de vencimento em planilha, controle de inspeção de caldeiras e vasos, planilha de vencimento de inspeção, migrar planilha para sistema NR-13, histórico de inspeção NR-13, controle de calibração de PSV em planilha, gestão de prontuário NR-13"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://nr13sistema.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conteúdo técnico",
+      "item": "https://nr13sistema.com.br/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Planilha de inspeção NR-13",
+      "item": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Como migrar o controle de inspeção NR-13 da planilha para um sistema sem perder histórico",
+  "description": "Checklist de migração da planilha de inspeção NR-13 para um sistema: congelar a versão oficial, sanear o cadastro, reunir anexos, importar histórico, conferir vencimentos e só então aposentar a planilha.",
+  "inLanguage": "pt-BR",
+  "image": "https://nr13sistema.com.br/img/sistema/sis-calibracao.webp",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Congelar uma única versão oficial da planilha",
+      "text": "Recolha as cópias que circulam por e-mail e pastas, eleja uma como oficial, salve-a como somente leitura com a data no nome e avise a equipe de que as outras deixam de valer.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-1"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Sanear o cadastro de equipamentos",
+      "text": "Confira tag, tipo, fabricante, número de série, PMTA, fluido e categoria de cada equipamento contra a placa de identificação e o prontuário. Elimine duplicados e equipamentos já desativados.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-2"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Levantar os anexos que estão fora da planilha",
+      "text": "Para cada equipamento, localize prontuário, relatórios de inspeção anteriores, registro de segurança, certificados de calibração de PSV e manômetro, memória de cálculo e ARTs. Anote o que falta.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-3"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Padronizar nomes e formatos dos arquivos",
+      "text": "Renomeie os arquivos com tag, tipo de documento e data, converta digitalizações para PDF legível e separe um diretório por equipamento antes de importar.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-4"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Cadastrar equipamentos e importar o histórico",
+      "text": "Cadastre cada equipamento no sistema e lance as inspeções passadas com as datas reais de realização, anexando o relatório correspondente, em vez de lançar apenas a última.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-5"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Cadastrar dispositivos de segurança e calibrações",
+      "text": "Vincule válvulas de segurança e manômetros ao equipamento em que estão instalados, com número de série e data do último certificado, para que o vencimento de cada um seja controlado separadamente.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-6"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Conferir vencimentos contra a planilha antiga",
+      "text": "Compare, equipamento por equipamento, a próxima data calculada pelo sistema com a da planilha. Toda divergência é investigada: ou a planilha tinha fórmula errada, ou o cadastro entrou incompleto.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-7"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 8,
+      "name": "Aposentar a planilha sem apagá-la",
+      "text": "Defina uma data de corte a partir da qual só o sistema vale, arquive a planilha congelada junto com o registro da migração e retire o acesso de edição.",
+      "url": "https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html#passo-8"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Planilha de Excel é aceita para controle de inspeção NR-13?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A NR-13 exige que a documentação do equipamento exista, esteja atualizada e disponível: prontuário, registro de segurança, projeto de instalação quando aplicável, relatórios de inspeção e certificados dos dispositivos. Ela não obriga o uso de software. A planilha é uma ferramenta de controle de prazos; o que o fiscal cobra são os documentos, e a planilha não substitui nenhum deles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Com quantos equipamentos a planilha deixa de funcionar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não existe um número fixo. O que derruba a planilha é a combinação de quantidade de equipamentos, quantidade de datas por equipamento (exame externo, interno, PSV, manômetro), número de pessoas editando e número de clientes ou unidades. Um parque pequeno, com um responsável e uma única cópia, costuma funcionar bem; várias dezenas de equipamentos com mais de um editor raramente funcionam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dá para migrar para um sistema sem perder o histórico das inspeções?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, desde que o histórico seja lançado como inspeções com as datas reais de realização e com o relatório correspondente anexado, e não apenas como a última data de vencimento. O ponto crítico é reunir antes os documentos que estão fora da planilha, em e-mails e pastas, e conferir os vencimentos calculados pelo sistema contra a planilha antiga."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A planilha pode substituir o livro de registro de segurança?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O registro de segurança é um documento próprio do equipamento, com termo de abertura e anotações das inspeções e ocorrências, e precisa estar disponível no estabelecimento. Uma aba de planilha editável por qualquer pessoa, sem controle de quem alterou o quê, não cumpre esse papel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vale a pena manter planilha e sistema ao mesmo tempo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Só durante a migração, como conferência. Depois da data de corte, manter as duas atualizadas cria exatamente o problema que se queria resolver: duas fontes da verdade que divergem. A planilha antiga deve ser arquivada congelada, sem acesso de edição."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="../index.html">
+      <img src="../icon-192.png" alt="Axial Engenharia — engenharia mecânica e inspeção NR-13 em Vitória ES" width="40" height="40">
+      <span class="brand-txt">
+        <span class="brand-name">Axial Engenharia</span>
+        <span class="brand-tag">Engenharia Mecânica · ES</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="../index.html#servicos">Serviços</a>
+      <a href="../sistema-nr13.html">Sistema NR13</a>
+      <a href="../sistema-nr12.html">Sistema NR12</a>
+      <a href="index.html" aria-current="page">Conteúdo</a>
+      <a href="../index.html#atendimento">Onde atendemos</a>
+      <a href="../index.html#contato">Contato</a>
+      <a class="btn btn-primary" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="nav">Assinar o Sistema</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="../img/sistema/sis-inspecao.webp" alt="Tela do Sistema NR13 com a janela Nova Inspeção aberta, listando os ensaios a atribuir: checklist NR-13, medição de espessura por ultrassom, inspeção visual externa e interna e teste hidrostático" width="1855" height="947" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Gestão · NR-13</span>
+      <h1>Planilha de inspeção NR13: por que funciona com 5 equipamentos e para de funcionar com 30</h1>
+      <p class="hero-sub">A <strong>planilha de controle NR-13</strong> nasce simples e resolve bem no começo. O problema aparece quando o parque cresce, mais gente passa a editar e os documentos ficam espalhados. Aqui está o diagnóstico: onde ela quebra, os sinais de que já passou do ponto e como migrar <strong>sem perder o histórico</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap breadcrumb">
+  <a href="../index.html">Início</a> › <a href="index.html">Conteúdo técnico</a> › <span>Planilha de inspeção NR-13</span>
+</div>
+
+<section>
+  <div class="wrap landing-layout">
+    <article class="prose">
+      <p>
+        Este artigo é um <strong>diagnóstico da planilha</strong>: por que o controle de inspeção em
+        Excel falha, como perceber isso antes de um vencimento estourar e o que fazer para sair dela
+        com o histórico inteiro. Se você já decidiu trocar e quer comparar ferramentas, o critério de
+        escolha está em <a href="software-de-gestao-nr13-como-escolher.html">como escolher um software
+        de gestão NR-13</a>; se quer entender o que um
+        <a href="sistema-de-inspecao-nr13.html">sistema de inspeção NR-13</a> precisa ter por dentro,
+        o conteúdo está lá. Aqui o foco é a planilha que você já tem aberta.
+      </p>
+
+      <h2>Por que a planilha funciona no começo</h2>
+      <p>
+        Com cinco equipamentos, uma planilha resolve. Uma linha por caldeira ou vaso de pressão,
+        colunas com tag, categoria, data da última inspeção e data da próxima, e uma formatação
+        condicional pintando de vermelho o que está perto de vencer. Uma pessoa cuida, todo mundo sabe
+        onde está o arquivo, e os relatórios cabem numa pasta da rede.
+      </p>
+      <p>
+        Isso não é amadorismo. Para um parque pequeno, estável, com um único responsável e um único
+        estabelecimento, uma planilha bem montada é uma ferramenta adequada de controle de prazos — e
+        é honesto dizer que muita empresa não precisa de mais do que isso. O que a NR-13 exige é que a
+        documentação exista, esteja atualizada e à disposição: prontuário, registro de segurança,
+        relatórios de inspeção, certificados dos dispositivos de segurança. A norma não exige software.
+      </p>
+      <p>
+        O ponto é que a planilha controla <strong>datas</strong>, não <strong>documentos</strong>. Enquanto
+        o volume é pequeno, a pessoa responsável compensa essa diferença de cabeça: sabe onde está cada
+        relatório, lembra que a PSV da caldeira foi trocada, sabe que o vaso da linha 2 teve o prazo
+        reduzido pelo Profissional Habilitado. Quando o volume cresce, a memória dessa pessoa deixa de
+        dar conta — e a planilha nunca soube dessas coisas.
+      </p>
+
+      <h2>Onde ela quebra: os sete pontos de falha</h2>
+      <p>
+        A passagem de "funciona" para "não funciona" raramente é um evento. É um acúmulo. Os pontos
+        abaixo aparecem quase sempre juntos, e cada um piora os outros.
+      </p>
+
+      <h3>1. Versões paralelas circulando por e-mail</h3>
+      <p>
+        Alguém manda a planilha para o gerente, o gerente edita uma célula e devolve, o inspetor salva
+        uma cópia no notebook para trabalhar em campo, o comprador abre uma versão antiga para cotar a
+        calibração. Em pouco tempo existem três ou quatro arquivos com nomes como
+        <em>controle_NR13_final_v2_revisado</em>, e ninguém sabe dizer qual é a fonte da verdade. A data
+        certa de uma inspeção pode estar em uma cópia e errada em outra.
+      </p>
+
+      <h3>2. Nenhum alerta de vencimento de verdade</h3>
+      <p>
+        Formatação condicional só avisa quem abre o arquivo. Se a pessoa está de férias, afastada ou
+        simplesmente não abriu a planilha naquele mês, o vermelho fica lá, sozinho. E cada equipamento
+        tem mais de um prazo: exame externo, exame interno, calibração da válvula de segurança,
+        calibração do manômetro. Multiplicado por trinta equipamentos, são mais de cem datas, cada uma
+        com sua própria regra — a <a href="periodicidade-de-inspecao-nr13-por-categoria.html">periodicidade
+        de inspeção por categoria</a> muda de um vaso para outro, e a caldeira segue regra própria.
+      </p>
+
+      <h3>3. Anexos fora da planilha</h3>
+      <p>
+        A célula diz "inspecionado em março". Mas onde está o relatório? O prontuário da caldeira está em
+        uma pasta física na caldeiraria, o relatório do ano passado está no e-mail de quem saiu da empresa,
+        o certificado da <a href="calibracao-de-valvula-de-seguranca-psv.html">calibração da PSV</a> ficou
+        com o fornecedor e o da <a href="como-calibrar-manometro.html">calibração do manômetro</a> nunca
+        chegou. Na hora da fiscalização ou de uma auditoria de seguro, a planilha mostra a data — e não
+        mostra a prova.
+      </p>
+
+      <h3>4. Sem trilha de auditoria</h3>
+      <p>
+        Quem alterou a data da próxima inspeção do vaso V-104? Quando? Com base em qual relatório? A
+        planilha comum não responde. Uma data pode ser adiantada por engano, ou "ajustada" para o
+        equipamento sair do vermelho, e não fica registro. Para um controle que sustenta documentação
+        de segurança, a ausência de histórico de alterações é uma fragilidade séria.
+      </p>
+
+      <h3>5. Fórmula quebrada sem ninguém perceber</h3>
+      <p>
+        Alguém insere uma linha no meio e a fórmula da próxima data não é copiada. Alguém cola um valor
+        por cima de uma fórmula. Alguém muda a categoria de um vaso, mas a coluna de prazo estava
+        digitada à mão e não acompanha. O arquivo continua abrindo normalmente, as cores continuam
+        aparecendo, e o erro fica invisível até o dia em que um equipamento aparece vencido há meses.
+      </p>
+
+      <h3>6. Dependência de uma pessoa</h3>
+      <p>
+        Toda planilha que funciona tem um dono que sabe as exceções de cor. Quando essa pessoa sai,
+        tira férias ou muda de função, o conhecimento sai junto: quais colunas são confiáveis, quais
+        equipamentos têm prazo reduzido, onde estão os anexos. Quem assume herda um arquivo que parece
+        completo e não é.
+      </p>
+
+      <h3>7. Vários inspetores, várias unidades, vários clientes</h3>
+      <p>
+        Para empresa de inspeção, o problema multiplica. Cada cliente tem seu parque, cada inspetor
+        preenche de um jeito, e o cliente pede o relatório por WhatsApp no dia da fiscalização. Controlar
+        isso em planilhas separadas por cliente é administrável até certo ponto; depois, o tempo gasto
+        localizando e reenviando documento passa a competir com o tempo de inspeção. É o cenário em que
+        um <a href="portal-do-cliente-para-empresa-de-inspecao.html">portal do cliente para empresa de
+        inspeção</a> deixa de ser luxo.
+      </p>
+
+      <div class="split-img" style="margin:1.8rem 0 2.2rem"><img src="../img/sistema/sis-calibracao.webp" alt="Tela de calibrações do Sistema NR13 para o equipamento VASO A23, com manômetro e válvula de segurança cadastrados como componentes e lotes de calibração datados aguardando calibração" width="1591" height="990" loading="lazy"></div>
+
+      <h2>Sinais de que a planilha já passou do ponto</h2>
+      <p>
+        Se três ou mais itens abaixo descrevem a sua situação, a planilha deixou de ser uma ferramenta de
+        controle e virou um risco:
+      </p>
+      <ul>
+        <li>existe mais de uma cópia "oficial" e já houve discussão sobre qual está certa;</li>
+        <li>um equipamento foi encontrado com inspeção ou calibração vencida sem que ninguém tenha sido avisado;</li>
+        <li>para achar o relatório de uma inspeção é preciso procurar no e-mail de alguém;</li>
+        <li>o controle de PSV e manômetro está em outra planilha, ou não está em lugar nenhum;</li>
+        <li>só uma pessoa consegue responder "quando vence?" com segurança;</li>
+        <li>já houve fórmula quebrada, coluna apagada ou data digitada errada descoberta tarde;</li>
+        <li>o <a href="livro-de-registro-de-seguranca-nr13.html">livro de registro de segurança</a> não
+        bate com as datas da planilha, ou é preenchido só quando alguém lembra;</li>
+        <li>um equipamento novo entrou em operação e demorou para aparecer no controle;</li>
+        <li>o cliente ou a auditoria pede um documento e a resposta leva dias, não minutos.</li>
+      </ul>
+      <p>
+        Nenhum desses sinais é, sozinho, uma irregularidade. Mas todos apontam para o mesmo lugar: em
+        algum momento um prazo vai passar, e a descoberta vai acontecer na pior hora. Se o prontuário
+        é o que está faltando, o caminho está em
+        <a href="caldeira-sem-prontuario-o-que-fazer.html">caldeira sem prontuário: o que fazer</a>.
+      </p>
+
+      <h2>Se vai continuar na planilha, faça direito</h2>
+      <p>
+        Para parque pequeno, a resposta honesta pode ser manter a planilha. Nesse caso, algumas regras
+        evitam a maior parte das falhas descritas acima:
+      </p>
+      <ul>
+        <li><strong>Um único arquivo</strong>, em local compartilhado com controle de versão (nuvem ou
+        servidor), nunca anexado em e-mail.</li>
+        <li><strong>Uma linha por prazo</strong>, não por equipamento: exame externo, exame interno, PSV
+        e manômetro em linhas próprias, cada uma com sua data e sua regra.</li>
+        <li><strong>Fórmulas protegidas</strong>: células de cálculo bloqueadas, edição só nas colunas de
+        entrada.</li>
+        <li><strong>Categoria como dado de entrada</strong>, conferida contra a
+        <a href="categoria-de-vaso-de-pressao-como-classificar.html">classificação do vaso de pressão</a>,
+        e prazo reduzido pelo PH registrado em coluna própria, com referência ao relatório.</li>
+        <li><strong>Link para o documento</strong> em cada linha: o caminho do relatório, do certificado,
+        do prontuário. Se o link não existe, o documento não existe para fins de controle.</li>
+        <li><strong>Revisão mensal com data</strong>, feita por uma pessoa e conferida por outra.</li>
+      </ul>
+      <p>
+        Uma planilha assim continua sem alerta ativo e sem trilha de auditoria, mas é defensável para
+        poucos equipamentos e um responsável bem definido.
+      </p>
+
+      <h2>O que migrar: inventário antes de trocar de ferramenta</h2>
+      <p>
+        O erro mais comum na migração é copiar a planilha para o sistema novo e considerar o trabalho
+        feito. A planilha é só a ponta. O que precisa ir para o sistema é o conjunto que ela deveria
+        controlar e não controlava:
+      </p>
+      <ul>
+        <li><strong>Cadastro do equipamento</strong>: tag, tipo, fabricante, número de série, ano de
+        fabricação, PMTA, fluido, categoria, localização.</li>
+        <li><strong>Prontuário</strong>: dados de projeto, desenhos, código de construção, materiais,
+        características funcionais.</li>
+        <li><strong>Histórico de inspeções</strong>: cada inspeção com data de realização, tipo de exame,
+        parecer e o <a href="relatorio-de-inspecao-de-vaso-de-pressao.html">relatório de inspeção</a>
+        correspondente em PDF.</li>
+        <li><strong>Registro de segurança</strong>: termo de abertura e anotações existentes.</li>
+        <li><strong>Dispositivos de segurança</strong>: válvulas de segurança e manômetros com número de
+        série, pressão de ajuste e certificados de calibração.</li>
+        <li><strong>Documentos de responsabilidade</strong>: ARTs, memórias de cálculo, laudos de
+        reparo ou alteração.</li>
+        <li><strong>Pendências abertas</strong>: recomendações de relatórios anteriores ainda não
+        cumpridas, com prazo.</li>
+      </ul>
+
+      <h2>Checklist de migração sem perder histórico</h2>
+      <p>
+        A ordem importa. Cada etapa depende da anterior, e pular a conferência final é o jeito mais
+        rápido de levar para o sistema novo os mesmos erros da planilha.
+      </p>
+      <ol>
+        <li id="passo-1"><strong>Congelar uma única versão oficial da planilha.</strong> Recolha as cópias que circulam por e-mail e pastas, eleja uma como oficial, salve-a como somente leitura com a data no nome e avise a equipe de que as outras deixam de valer.</li>
+        <li id="passo-2"><strong>Sanear o cadastro de equipamentos.</strong> Confira tag, tipo, fabricante, número de série, PMTA, fluido e categoria de cada equipamento contra a placa de identificação e o prontuário. Elimine duplicados e equipamentos já desativados.</li>
+        <li id="passo-3"><strong>Levantar os anexos que estão fora da planilha.</strong> Para cada equipamento, localize prontuário, relatórios de inspeção anteriores, registro de segurança, certificados de calibração de PSV e manômetro, memória de cálculo e ARTs. Anote o que falta.</li>
+        <li id="passo-4"><strong>Padronizar nomes e formatos dos arquivos.</strong> Renomeie os arquivos com tag, tipo de documento e data, converta digitalizações para PDF legível e separe um diretório por equipamento antes de importar.</li>
+        <li id="passo-5"><strong>Cadastrar equipamentos e importar o histórico.</strong> Cadastre cada equipamento no sistema e lance as inspeções passadas com as datas reais de realização, anexando o relatório correspondente, em vez de lançar apenas a última.</li>
+        <li id="passo-6"><strong>Cadastrar dispositivos de segurança e calibrações.</strong> Vincule válvulas de segurança e manômetros ao equipamento em que estão instalados, com número de série e data do último certificado, para que o vencimento de cada um seja controlado separadamente.</li>
+        <li id="passo-7"><strong>Conferir vencimentos contra a planilha antiga.</strong> Compare, equipamento por equipamento, a próxima data calculada pelo sistema com a da planilha. Toda divergência é investigada: ou a planilha tinha fórmula errada, ou o cadastro entrou incompleto.</li>
+        <li id="passo-8"><strong>Aposentar a planilha sem apagá-la.</strong> Defina uma data de corte a partir da qual só o sistema vale, arquive a planilha congelada junto com o registro da migração e retire o acesso de edição.</li>
+      </ol>
+      <div class="callout">
+        <p>
+          <b>A lista de documentos faltantes é um resultado, não um problema da migração.</b> Quase toda
+          migração revela relatório perdido, certificado que nunca chegou ou equipamento sem prontuário.
+          Isso já era verdade na planilha — só não estava visível. Trate essa lista como plano de ação,
+          com responsável e prazo, e não adie a migração até que ela esteja zerada.
+        </p>
+      </div>
+      <p>
+        Para estabelecimentos que pensam em estruturar um
+        <a href="spie-servico-proprio-de-inspecao-vale-a-pena.html">Serviço Próprio de Inspeção de
+        Equipamentos</a>, essa migração é pré-requisito prático: sem controle documental rastreável, o
+        SPIE não se sustenta em auditoria.
+      </p>
+
+      <div class="split-img" style="margin:1.8rem 0 2.2rem"><img src="../img/sistema/sis-livro.webp" alt="Tela Livro Registro do Sistema NR13 listando vasos de pressão e autoclave por tag, com número de registros, termo de abertura gerado e data do último registro" width="1592" height="982" loading="lazy"></div>
+
+      <h2>Como o Sistema NR13 resolve o que a planilha não resolve</h2>
+      <p>
+        No <a href="../sistema-nr13.html">Sistema NR13</a>, cada ponto de falha da planilha tem um
+        correspondente. Há uma única base, acessada pela web, em vez de cópias por e-mail. A próxima data
+        é calculada a partir da categoria cadastrada e o alerta de vencimento sai por equipamento, sem
+        depender de alguém abrir o arquivo. Prontuário, relatórios e certificados ficam anexados ao
+        próprio equipamento. O registro de segurança é preenchido automaticamente: cada relatório salvo
+        adiciona a anotação de inspeção correspondente.
+      </p>
+      <p>
+        As válvulas de segurança e os manômetros são cadastrados uma vez como componentes do equipamento,
+        e cada nova inspeção abre um lote de calibração para os mesmos itens — o que elimina a planilha
+        paralela de calibração. Em campo, o inspetor preenche o checklist pelo celular e o
+        <a href="como-gerar-laudo-nr13.html">laudo NR-13</a> sai em PDF pronto para assinar. Para empresa
+        de inspeção, o cliente acessa os próprios documentos pelo portal, sem pedir por WhatsApp.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-buy btn-lg" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="artigo">Assinar o Sistema NR13</a>
+        <a class="btn btn-outline" href="software-de-gestao-nr13-como-escolher.html">Como escolher um software NR-13</a>
+      </div>
+
+      <h2 id="faq">Perguntas frequentes sobre planilha de inspeção NR-13</h2>
+      <div class="faq">
+        <details>
+          <summary>Planilha de Excel é aceita para controle de inspeção NR-13?</summary>
+          <div class="faq-body"><p>A NR-13 exige que a documentação do equipamento exista, esteja atualizada e disponível: prontuário, registro de segurança, projeto de instalação quando aplicável, relatórios de inspeção e certificados dos dispositivos. Ela não obriga o uso de software. A planilha é uma ferramenta de controle de prazos; o que o fiscal cobra são os documentos, e a planilha não substitui nenhum deles.</p></div>
+        </details>
+        <details>
+          <summary>Com quantos equipamentos a planilha deixa de funcionar?</summary>
+          <div class="faq-body"><p>Não existe um número fixo. O que derruba a planilha é a combinação de quantidade de equipamentos, quantidade de datas por equipamento (exame externo, interno, PSV, manômetro), número de pessoas editando e número de clientes ou unidades. Um parque pequeno, com um responsável e uma única cópia, costuma funcionar bem; várias dezenas de equipamentos com mais de um editor raramente funcionam.</p></div>
+        </details>
+        <details>
+          <summary>Dá para migrar para um sistema sem perder o histórico das inspeções?</summary>
+          <div class="faq-body"><p>Sim, desde que o histórico seja lançado como inspeções com as datas reais de realização e com o relatório correspondente anexado, e não apenas como a última data de vencimento. O ponto crítico é reunir antes os documentos que estão fora da planilha, em e-mails e pastas, e conferir os vencimentos calculados pelo sistema contra a planilha antiga.</p></div>
+        </details>
+        <details>
+          <summary>A planilha pode substituir o livro de registro de segurança?</summary>
+          <div class="faq-body"><p>Não. O registro de segurança é um documento próprio do equipamento, com termo de abertura e anotações das inspeções e ocorrências, e precisa estar disponível no estabelecimento. Uma aba de planilha editável por qualquer pessoa, sem controle de quem alterou o quê, não cumpre esse papel.</p></div>
+        </details>
+        <details>
+          <summary>Vale a pena manter planilha e sistema ao mesmo tempo?</summary>
+          <div class="faq-body"><p>Só durante a migração, como conferência. Depois da data de corte, manter as duas atualizadas cria exatamente o problema que se queria resolver: duas fontes da verdade que divergem. A planilha antiga deve ser arquivada congelada, sem acesso de edição.</p></div>
+        </details>
+      </div>
+
+      <h2>Precisa disso resolvido por engenharia habilitada?</h2>
+      <p>
+        Organizar o controle resolve metade do problema; a outra metade é ter as inspeções em dia. A
+        Axial Engenharia executa <strong>inspeção NR-13</strong> com Profissional Habilitado e ART
+        registrada, reconstitui prontuário e registro de segurança quando faltam, e atende
+        presencialmente <strong>Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari e
+        Fundão</strong>, com deslocamento programado para Anchieta, Aracruz e Linhares. Mande a sua
+        planilha atual ou a foto da placa do equipamento pelo WhatsApp e o escopo volta no mesmo dia útil.
+      </p>
+      <div class="btn-row" style="margin-bottom:1.6rem">
+        <a class="btn btn-primary" href="https://wa.me/5527992534407" rel="noopener">Falar com a engenharia</a>
+        <a class="btn btn-outline" href="../sistema-nr13.html">Ver o Sistema NR13</a>
+      </div>
+    </article>
+
+    <aside class="landing-aside">
+      <div class="aside-box">
+        <h3>Resolva no sistema</h3>
+        <p>
+          O <strong>Sistema NR13</strong> substitui a planilha por uma base única: prontuário, livro de
+          registro de segurança, calibrações de PSV e manômetro e relatórios anexados por equipamento —
+          com alerta antes de o prazo vencer.
+        </p>
+        <p><a class="btn btn-buy" href="../sistema-nr13.html">Conhecer o Sistema NR13</a></p>
+      </div>
+      <div class="aside-box">
+        <h3>Antes de migrar, separe</h3>
+        <ul>
+          <li>A versão oficial da planilha, congelada</li>
+          <li>Lista de equipamentos com tag e placa</li>
+          <li>Prontuários e relatórios anteriores em PDF</li>
+          <li>Certificados de PSV e manômetro vigentes</li>
+          <li>ARTs e memórias de cálculo</li>
+          <li>Recomendações ainda pendentes</li>
+        </ul>
+      </div>
+      <div class="aside-box">
+        <h3>Continue lendo</h3>
+        <ul>
+          <li><a href="software-de-gestao-nr13-como-escolher.html">Como escolher software NR-13</a></li>
+          <li><a href="sistema-de-inspecao-nr13.html">Sistema de inspeção NR-13</a></li>
+          <li><a href="livro-de-registro-de-seguranca-nr13.html">Livro de registro de segurança</a></li>
+          <li><a href="periodicidade-de-inspecao-nr13-por-categoria.html">Periodicidade de inspeção NR-13</a></li>
+          <li><a href="calibracao-de-valvula-de-seguranca-psv.html">Calibração de válvula de segurança</a></li>
+          <li><a href="portal-do-cliente-para-empresa-de-inspecao.html">Portal do cliente para empresa de inspeção</a></li>
+        </ul>
+      </div>
+      <div class="aside-box">
+        <h3>Serviços relacionados</h3>
+        <ul>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13 em Vitória — ES</a></li>
+          <li><a href="../laudos-tecnicos-e-art-vitoria-es.html">Laudos técnicos e ART</a></li>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec-soft" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-tags">
+      <span class="sec-tags-lbl">Termos de busca desta página</span>
+      <ul>
+        <li><span>planilha de inspeção NR13 com alerta de vencimento</span></li>
+        <li><span>modelo de planilha de controle NR-13 em Excel</span></li>
+        <li><a href="periodicidade-de-inspecao-nr13-por-categoria.html">como calcular vencimento de inspeção de vaso de pressão</a></li>
+        <li><a href="calibracao-de-valvula-de-seguranca-psv.html">controle de calibração de PSV em planilha</a></li>
+        <li><span>planilha de controle de caldeiras e vasos de pressão</span></li>
+        <li><a href="software-de-gestao-nr13-como-escolher.html">trocar planilha por software de gestão NR-13</a></li>
+        <li><span>como migrar histórico de inspeção da planilha</span></li>
+        <li><a href="livro-de-registro-de-seguranca-nr13.html">planilha substitui livro de registro de segurança</a></li>
+        <li><span>equipamento vencido que a planilha não avisou</span></li>
+        <li><a href="portal-do-cliente-para-empresa-de-inspecao.html">empresa de inspeção com vários clientes em planilha</a></li>
+        <li><a href="../sistema-nr13.html">sistema online para controle de inspeção NR-13</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA: SISTEMA NR13 ============ -->
+<section class="sys-band">
+  <div class="sys-band-bg" aria-hidden="true">
+    <img src="../img/sistema-hero.webp" alt="" width="1920" height="1080" loading="lazy">
+  </div>
+  <div class="wrap sys-band-grid">
+    <div>
+      <span class="eyebrow">Software próprio</span>
+      <h2>Pare de caçar documento: coloque a NR-13 dentro de um sistema</h2>
+      <p>
+        Prontuário digital, livro de registro de segurança gerado automaticamente, memória de
+        cálculo conforme ASME VIII, controle de calibração de PSV e manômetros, checklist de
+        inspeção pelo celular e portal para o seu cliente baixar o laudo na hora da fiscalização.
+      </p>
+      <ul class="sys-band-list">
+        <li>Cadastro de caldeiras, vasos de pressão, tubulações e tanques</li>
+        <li>Relatório de inspeção em PDF, pronto para assinar</li>
+        <li>Alerta de vencimento por equipamento</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-buy btn-lg" href="../sistema-nr13.html">Conhecer o Sistema NR13</a>
+        <a class="btn btn-ghost" href="https://pay.kiwify.com.br/O9KdzEI" rel="noopener" data-cta="faixa">Assinar agora</a>
+      </div>
+    </div>
+    <div class="sys-band-shot">
+      <img src="../img/sistema/sis-portal.webp" alt="Tela do Sistema NR13 com controle de vencimentos e prazos de inspeção por equipamento" width="1607" height="977" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICAÇÕES E REFERÊNCIAS NORMATIVAS ============ -->
+<section class="sec-soft certs-sec">
+  <div class="wrap">
+    <div class="certs-head">
+      <span class="eyebrow">Referências técnicas</span>
+      <h2>Normas e certificações que sustentam cada laudo</h2>
+      <p>
+        Inspeção, ensaio e projeto conduzidos sob códigos reconhecidos no Brasil e no exterior,
+        por profissionais qualificados nos organismos de certificação da área.
+      </p>
+    </div>
+
+    <ul class="certs">
+      <li>
+        <span class="cert-logo"><img src="../img/cert-inmetro.webp" alt="Logotipo do Inmetro" width="111" height="130" loading="lazy" decoding="async"></span>
+        <span class="cert-nome">Inmetro</span>
+        <span class="cert-desc">Instrumentos de medição com calibração rastreável à Rede Brasileira de Calibração.</span>
+      </li>
+      <li>
+        <span class="cert-logo"><img src="../img/cert-asme.webp" alt="Logotipo da ASME — American Society of Mechanical Engineers" width="218" height="130" loading="lazy" decoding="async"></span>
+        <span class="cert-nome">ASME</span>
+        <span class="cert-desc">Código ASME Seção VIII no cálculo e na avaliação de vasos de pressão e caldeiras.</span>
+      </li>
+      <li>
+        <span class="cert-logo"><img src="../img/cert-abnt.webp" alt="Logotipo da ABNT — Associação Brasileira de Normas Técnicas" width="125" height="130" loading="lazy" decoding="async"></span>
+        <span class="cert-nome">ABNT</span>
+        <span class="cert-desc">Normas NBR aplicáveis a cada laudo técnico, ensaio e projeto estrutural.</span>
+      </li>
+      <li>
+        <span class="cert-logo"><img src="../img/cert-abendi.webp" alt="Logotipo da Abendi — Associação Brasileira de Ensaios Não Destrutivos e Inspeção" width="279" height="130" loading="lazy" decoding="async"></span>
+        <span class="cert-nome">Abendi</span>
+        <span class="cert-desc">Ensaios não destrutivos executados por profissional qualificado pelo SNQC.</span>
+      </li>
+      <li>
+        <span class="cert-logo"><img src="../img/cert-cmse.webp" alt="Selo CMSE — Certified Machinery Safety Expert" width="136" height="130" loading="lazy" decoding="async"></span>
+        <span class="cert-nome">CMSE</span>
+        <span class="cert-desc">Certified Machinery Safety Expert aplicado à adequação de máquinas à NR-12.</span>
+      </li>
+    </ul>
+
+    <p class="certs-nota">Logotipos exibidos como referência às normas, códigos e qualificações aplicados nos serviços.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true">
+    <img src="../img/rodape-industrial.webp" alt="" width="1920" height="620" loading="lazy">
+  </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="../icon-192.png" alt="Axial Engenharia" width="48" height="48" loading="lazy">
+          <span class="brand-txt">
+            <span class="brand-name">Axial Engenharia</span>
+            <span class="brand-tag">Engenharia Mecânica · ES</span>
+          </span>
+        </div>
+        <p>
+          Engenharia mecânica aplicada à segurança de equipamentos: inspeção NR-13, adequação NR-12,
+          PMOC, ensaios não destrutivos e sistemas de combate a incêndio em toda a Grande Vitória — ES.
+        </p>
+        <span class="footer-reg">Responsável técnico habilitado · ART registrada em todo serviço · Atendimento em toda a Grande Vitória — ES</span>
+        <div class="social-row">
+          <a href="https://wa.me/5527992534407" rel="noopener" aria-label="WhatsApp da Axial Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.08.8.83-3-.2-.31a8.22 8.22 0 1115.13-4.4c0 4.53-3.68 8.24-8.2 8.24zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.11-.23-.17-.48-.29z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>
+          Av. Henrique Moscoso, 2250<br>
+          Jaburuna — Vila Velha/ES<br>
+          CEP: 29100-650
+        </p>
+        <p><a href="tel:+5527992534407">(27) 99253-4407</a></p>
+        <p><a href="mailto:nr13sistema@gmail.com">nr13sistema@gmail.com</a></p>
+        <p>Segunda a sexta, 08h às 18h</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="../inspecao-nr13-vitoria-es.html">Inspeção NR-13</a></li>
+          <li><a href="../adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="../pmoc-vitoria-es.html">PMOC e qualidade do ar</a></li>
+          <li><a href="../ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="../combate-a-incendio-vitoria-es.html">Combate a incêndio</a></li>
+          <li><a href="../sistema-nr13.html">Sistema NR13 — gestão online</a></li>
+          <li><a href="../sistema-nr12.html">Sistema NR12 — NR-12 e NR-10</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Conteúdo técnico</h4>
+        <ul>
+          <li><a href="index.html">Todos os artigos</a></li>
+          <li><a href="como-gerar-laudo-nr13.html">Como gerar laudo NR-13</a></li>
+          <li><a href="como-inspecionar-vaso-de-pressao.html">Como inspecionar vaso de pressão</a></li>
+          <li><a href="como-inspecionar-caldeira-nr13.html">Como inspecionar caldeira</a></li>
+          <li><a href="como-calibrar-manometro.html">Como calibrar manômetro</a></li>
+          <li><a href="periodicidade-de-inspecao-nr13-por-categoria.html">Periodicidade de inspeção NR-13</a></li>
+          <li><a href="checklist-de-inspecao-nr13.html">Checklist de inspeção NR-13</a></li>
+          <li><a href="sistema-de-inspecao-nr13.html">Sistema de inspeção NR-13</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-home">
+      <a class="btn btn-ghost" href="../index.html#inicio">Voltar para a página inicial</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ano">2026</span> Axial Engenharia. Todos os direitos reservados. · <a href="../privacidade.html">Política de Privacidade</a></span>
+      <span class="disclaimer">
+        Conteúdo informativo. Não substitui a inspeção de segurança por Profissional Habilitado nem a
+        ART registrada no CREA-ES, exigidas pela NR-13.
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5527992534407" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.5 14.04c-.2.57-1.19 1.1-1.66 1.17-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.02-3.48-4.14-3.65-.12-.16-.99-1.31-.99-2.5s.63-1.77.85-2.02c.22-.25.49-.31.65-.31h.48c.16.01.36-.06.56.42.2.5.7 1.72.76 1.84.06.13.1.27.02.44-.09.16-.13.26-.25.41-.12.15-.26.33-.37.44-.13.12-.25.25-.11.5.14.25.64 1.06 1.37 1.71.94.84 1.73 1.1 1.98 1.22.25.12.4.1.54-.06.15-.17.63-.72.79-.97.17-.25.33-.21.56-.12.22.08 1.43.68 1.68.8.25.12.42.18.48.29.05.1.05.59-.15 1.17z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="../js/meta-pixel.js?v=20260912a" defer></script>
+<script src="../js/wa-form.js?v=20260912a" defer></script>
+<script src="../js/site.js?v=20260912a" defer></script>
+</body>
+</html>

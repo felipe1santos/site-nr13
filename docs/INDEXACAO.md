@@ -28,6 +28,116 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## Lote 26/09/2026 — cluster estruturas metálicas (7) + câmara fria (4)
+
+Pedido do sócio (25/09): "dar uma bombada" em estrutura metálica — uma página por assunto — e mais
+portas de entrada para câmara fria. 11 landings novas na raiz, modelo `camaras-frias-vitoria-es.html`
+(`pg-obras`, hero 3D, sem faixa de sistema, CTA WhatsApp). Fotos novas do Pexels em `img/`
+(originais em `img/_raw/pexels/`, nome do arquivo termina no ID da foto no Pexels).
+
+| URL | Consulta principal | Ângulo (o que evita canibalizar) | Schema |
+|---|---|---|---|
+| `estruturas-metalicas-vitoria-es` | estruturas metálicas em Vitória ES | **Pilar do cluster**: sistema construtivo, tipos, corrosão, linka as 6 filhas | Service + Breadcrumb + FAQ |
+| `fornecimento-de-aco-estrutural-vitoria-es` | fornecimento de aço estrutural | **Material**: perfis, aços, certificado de usina, plano de corte | Service + Breadcrumb + FAQ |
+| `fabricacao-de-estruturas-metalicas-vitoria-es` | fabricação de estruturas metálicas | **Fábrica**: corte, furação, solda AWS D1.1, inspeção, pintura | Service + Breadcrumb + FAQ |
+| `montagem-de-estruturas-metalicas-vitoria-es` | montagem de estruturas metálicas | **Campo (edificação)**: base, içamento, torque, prumo, NR-35 — ≠ montagem-industrial (equipamento/pipe rack) | Service + Breadcrumb + FAQ |
+| `galpao-metalico-vitoria-es` | galpão metálico | **Sistema estrutural do galpão**: pórtico, vão, ponte rolante — ≠ construcao-de-galpoes (obra completa) | Service + Breadcrumb + FAQ |
+| `cobertura-metalica-para-quadra-vitoria-es` | cobertura metálica para quadra | **Só a cobertura**: arco/duas águas, vão, telha, vento — ≠ construcao-de-galpoes-e-quadras (piso/obra) | Service + Breadcrumb + FAQ |
+| `obra-em-estrutura-metalica-completa-vitoria-es` | obra em estrutura metálica completa / turnkey | **Modelo de contratação**: contrato único do estudo à entrega | Service + Breadcrumb + FAQ |
+| `camara-fria-para-restaurante-vitoria-es` | câmara fria para restaurante | **Segmento food service**: rush, cozinha apertada, condensadora longe do salão | Service + Breadcrumb + FAQ |
+| `camara-fria-para-acougue-e-supermercado-vitoria-es` | câmara fria para açougue e supermercado | **Segmento varejo**: trilho de carcaça, câmaras por produto, expositores | Service + Breadcrumb + FAQ |
+| `manutencao-de-camara-fria-vitoria-es` | manutenção de câmara fria | **Dor**: câmara existente que não gela, gelo, conserto e preventiva | Service + Breadcrumb + FAQ |
+| `quanto-custa-camara-fria-vitoria-es` | quanto custa uma câmara fria | **Custo**: o que forma o preço, câmara usada, orçamento comparável | Service + Breadcrumb + FAQ |
+
+Links internos: coluna "Obras e estruturas" do rodapé de todas as páginas da raiz ganhou
+**Estruturas metálicas**; home `#obras` ganhou 4 cards (estruturas metálicas, galpão metálico,
+cobertura de quadra, obra completa) e 7 termos no `.sec-tags` (os termos "montagem de estrutura
+metálica" e "cobertura de quadra poliesportiva" passaram a apontar para as páginas novas);
+"Continue lendo" recíproco em construcao-de-galpoes, montagem-industrial, projetos-estruturais,
+camaras-frias e patologias-e-corrosao. Sitemap: 54 → 65 URLs.
+
+> **Acompanhar canibalização:** `montagem-industrial-vitoria-es` tem "Estrutura Metálica" no
+> `<title>` e um bloco de estruturas de galpão/mezanino. Se ela e `montagem-de-estruturas-metalicas`
+> passarem a disputar a mesma consulta, tirar "Estrutura Metálica" do title da industrial.
+
+### Fila de indexação — 26/09 (cluster)
+
+- [ ] https://nr13sistema.com.br/estruturas-metalicas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/fornecimento-de-aco-estrutural-vitoria-es.html
+- [ ] https://nr13sistema.com.br/fabricacao-de-estruturas-metalicas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/montagem-de-estruturas-metalicas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/galpao-metalico-vitoria-es.html
+- [ ] https://nr13sistema.com.br/cobertura-metalica-para-quadra-vitoria-es.html
+- [ ] https://nr13sistema.com.br/obra-em-estrutura-metalica-completa-vitoria-es.html
+- [ ] https://nr13sistema.com.br/camara-fria-para-restaurante-vitoria-es.html
+- [ ] https://nr13sistema.com.br/camara-fria-para-acougue-e-supermercado-vitoria-es.html
+- [ ] https://nr13sistema.com.br/manutencao-de-camara-fria-vitoria-es.html
+- [ ] https://nr13sistema.com.br/quanto-custa-camara-fria-vitoria-es.html
+
+---
+
+## Lote 26/09/2026 — 7 artigos do blog (fila "Próximos lotes de conteúdo")
+
+Criados os 7 artigos que estavam `[ ]` em "Próximos lotes de conteúdo". Todos no `sitemap.xml`
+(`lastmod` 2026-09-26; sitemap passou de 47 para 54 URLs), no hub `blog/index.html` (card, termo
+em "Assuntos cobertos" e `hasPart` do JSON-LD) e com links recíprocos em páginas do mesmo tema.
+
+| Página | Keyword principal | Recíproca em |
+|---|---|---|
+| `blog/spie-servico-proprio-de-inspecao-vale-a-pena` | SPIE serviço próprio de inspeção | periodicidade (aside + sec-tags), inspecao-nr13-vitoria-es |
+| `blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar` | planilha de inspeção NR13 | software-de-gestao-nr13-como-escolher, sistema-de-inspecao-nr13 |
+| `blog/portal-do-cliente-para-empresa-de-inspecao` | portal do cliente para empresa de inspeção | sistema-de-inspecao-nr13, laudo-nr13-em-minutos, como-gerar-laudo-nr13 |
+| `blog/apreciacao-de-riscos-o-que-e` | apreciação de riscos NR-12 | adequacao-nr12-vitoria-es, sistema-nr12 |
+| `blog/quanto-custa-adequar-maquina-nr12` | quanto custa adequar máquina NR-12 | adequacao-nr12-vitoria-es, sistema-nr12 |
+| `blog/pmoc-obrigatorio-quem-precisa` | PMOC obrigatório: quem precisa | pmoc-vitoria-es, manutencao-predial-para-condominios |
+| `blog/qualidade-do-ar-interior-parametros` | parâmetros de qualidade do ar interior | pmoc-vitoria-es, exaustao-e-coifas-industriais |
+
+Artigos NR-12 fecham com faixa do **Sistema NR12** (WhatsApp, sem Kiwify); artigos PMOC fecham com
+`cta-band` de WhatsApp, sem faixa de sistema (regra 6 do LEIA-ME).
+
+### Fila de indexação — 26/09
+
+- [ ] https://nr13sistema.com.br/blog/spie-servico-proprio-de-inspecao-vale-a-pena.html
+- [ ] https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html
+- [ ] https://nr13sistema.com.br/blog/portal-do-cliente-para-empresa-de-inspecao.html
+- [ ] https://nr13sistema.com.br/blog/apreciacao-de-riscos-o-que-e.html
+- [ ] https://nr13sistema.com.br/blog/quanto-custa-adequar-maquina-nr12.html
+- [ ] https://nr13sistema.com.br/blog/pmoc-obrigatorio-quem-precisa.html
+- [ ] https://nr13sistema.com.br/blog/qualidade-do-ar-interior-parametros.html
+
+---
+
+## Indexação — 25/09/2026
+
+Reconciliado com o relatório **Páginas** do Search Console (dados de 20/09): 39 indexadas, 32 não
+indexadas. As pendências reais eram só **11 URLs em "Detectada, mas não indexada"** — 10 landings
+do lote de 04/09 e `sistema-nr12.html`. O resto das não indexadas é 404 antigo, canônica
+alternativa, redirecionamento e `app.nr13sistema.com.br/login` (fora de escopo). Todas as 47 URLs
+do sitemap respondem 200. `laudo-de-playground` e `laudos-tecnicos-e-art` não aparecem mais como
+não indexadas.
+
+Cada URL foi inspecionada antes do pedido e a URL na tela foi conferida por JS antes do clique.
+
+- [x] https://nr13sistema.com.br/sistema-nr12.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/camaras-frias-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html — "Indexação solicitada"
+- [?] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — pedido disparado, mas a tela
+  re-renderizou antes de exibir a confirmação. Provavelmente contou na cota. Refazer se continuar
+  "Detectada, mas não indexada".
+
+### Fila para 26/09 — cota esgotada ("A cota foi excedida") no 10º pedido
+
+- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
+- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
+- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — só se o [?] acima não tiver pegado
+
+---
+
 ## Deploy e indexação — 04/09/2026 (noite)
 
 ### Deploy: FEITO
@@ -613,20 +723,20 @@ Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 - [x] `blog/medicao-de-espessura-por-ultrassom.html` — 16/08/2026
 - [x] `blog/inspecao-de-tubulacao-e-tanque-nr13.html` — 16/08/2026
 - [x] `blog/placa-de-identificacao-ilegivel-o-que-fazer.html` — 16/08/2026
-- [ ] `blog/spie-servico-proprio-de-inspecao-vale-a-pena.html`
+- [x] `blog/spie-servico-proprio-de-inspecao-vale-a-pena.html` — 26/09/2026
 
 **Cluster produto** (pilar: `/sistema-nr13.html`)
 - [x] `blog/sistema-de-inspecao-nr13.html` — 12/08/2026
 - [x] `blog/laudo-nr13-em-minutos.html` — 16/08/2026
 - [x] `blog/relatorio-nr13-em-minutos.html` — 16/08/2026
 - [x] `blog/checklist-de-inspecao-nr13-em-minutos.html` — 16/08/2026
-- [ ] `blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html`
-- [ ] `blog/portal-do-cliente-para-empresa-de-inspecao.html`
+- [x] `blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html` — 26/09/2026
+- [x] `blog/portal-do-cliente-para-empresa-de-inspecao.html` — 26/09/2026
 
 **Cluster NR-12** (pilar: `/adequacao-nr12-vitoria-es.html`)
-- [ ] `blog/apreciacao-de-riscos-o-que-e.html`
-- [ ] `blog/quanto-custa-adequar-maquina-nr12.html`
+- [x] `blog/apreciacao-de-riscos-o-que-e.html` — 26/09/2026
+- [x] `blog/quanto-custa-adequar-maquina-nr12.html` — 26/09/2026
 
 **Cluster PMOC** (pilar: `/pmoc-vitoria-es.html`)
-- [ ] `blog/pmoc-obrigatorio-quem-precisa.html`
-- [ ] `blog/qualidade-do-ar-interior-parametros.html`
+- [x] `blog/pmoc-obrigatorio-quem-precisa.html` — 26/09/2026
+- [x] `blog/qualidade-do-ar-interior-parametros.html` — 26/09/2026

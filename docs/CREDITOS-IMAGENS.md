@@ -129,3 +129,44 @@ Mesma origem e licença do lote anterior: **Pexels**, uso comercial livre. Baixa
 ```bash
 ffmpeg -y -i img/_raw/NOME.jpg \n  -vf "scale=L:A:force_original_aspect_ratio=increase,crop=L:A" \n  -quality 72 -compression_level 6 img/NOME.webp
 ```
+
+---
+
+## Lote 26/09/2026 — estruturas metálicas e câmara fria
+
+Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pexels/`).
+
+| Arquivo no site | Pexels |
+|---|---|
+| `hero-estruturas-metalicas.webp` | https://www.pexels.com/photo/31197870/ |
+| `metalica-trelica.webp` | https://www.pexels.com/photo/32239084/ |
+| `metalica-icamento-portico.webp` | https://www.pexels.com/photo/29274538/ |
+| `hero-aco-estrutural.webp` | https://www.pexels.com/photo/36003983/ |
+| `aco-cantoneiras-ponte.webp` | https://www.pexels.com/photo/36003989/ |
+| `aco-perfis-cintados.webp` | https://www.pexels.com/photo/36003984/ |
+| `hero-fabricacao-metalica.webp` | https://www.pexels.com/photo/22717514/ |
+| `fabricacao-corte-tubos.webp` | https://www.pexels.com/photo/17167908/ |
+| `fabricacao-linha-solda.webp` | https://www.pexels.com/photo/16045268/ |
+
+| `montagem-guindaste-carga.webp` | https://www.pexels.com/photo/36344778/ |
+| `hero-galpao-metalico.webp` | https://www.pexels.com/photo/236709/ |
+| `galpao-ponte-rolante.webp` | https://www.pexels.com/photo/29224601/ |
+| `galpao-fabrica-vigas.webp` | https://www.pexels.com/photo/15947587/ |
+| `hero-quadra-metalica.webp` | https://www.pexels.com/photo/32474981/ |
+| `quadra-arco-metalico.webp` | https://www.pexels.com/photo/11301810/ |
+| `quadra-montagem-trelica.webp` | https://www.pexels.com/photo/13532460/ |
+| `hero-obra-metalica.webp` | https://www.pexels.com/photo/36695445/ |
+| `obra-metalica-portico.webp` | https://www.pexels.com/photo/31516265/ |
+| `obra-metalica-soldador.webp` | https://www.pexels.com/photo/14539151/ |
+| `hero-camara-restaurante.webp` | https://www.pexels.com/photo/4947388/ |
+| `restaurante-cozinha-inox.webp` | https://www.pexels.com/photo/12193823/ |
+| `restaurante-preparo.webp` | https://www.pexels.com/photo/2696064/ |
+| `hero-camara-acougue.webp` | https://www.pexels.com/photo/6138720/ |
+| `acougue-expositor-carnes.webp` | https://www.pexels.com/photo/14315452/ |
+| `supermercado-refrigeradores.webp` | https://www.pexels.com/photo/29409104/ |
+| `hero-manutencao-refrigeracao.webp` | https://www.pexels.com/photo/5463575/ |
+| `manutencao-unidade-condensadora.webp` | https://www.pexels.com/photo/5463587/ |
+| `manutencao-camara-estocagem.webp` | https://www.pexels.com/photo/28657994/ |
+| `hero-custo-camara-fria.webp` | https://www.pexels.com/photo/209251/ |
+| `custo-conteineres-reefer.webp` | https://www.pexels.com/photo/31185127/ |
+| `hero-montagem-metalica.webp` | https://www.pexels.com/photo/14539147/ (trocada: a primeira foto mostrava montador sem cinto) |
