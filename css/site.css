@@ -59,7 +59,9 @@ body {
   color: var(--txt);
   background: var(--white);
   font-feature-settings: "cv05" 1, "ss01" 1;
-  overflow-x: hidden;
+  /* clip, e não hidden: hidden transforma o body num contêiner de rolagem que
+     nunca rola, e aí nenhum position: sticky do site (header, aside) funciona */
+  overflow-x: clip;
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--navy-600); text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -549,7 +551,7 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
 .landing-layout > * { min-width: 0; }
 .prose { min-width: 0; }
 .prose > * { overflow-wrap: break-word; }
-.landing-aside { position: sticky; top: 110px; display: grid; gap: 1.2rem; }
+.landing-aside { position: static; display: grid; gap: 1.2rem; }  /* o aside costuma ser mais alto que a tela: sticky esconderia os cards de baixo */
 .aside-box { border: 1px solid var(--line); border-radius: var(--r-lg); padding: 1.3rem; background: var(--white); }
 .aside-box.dark { background: var(--navy-800); border-color: var(--navy-700); color: var(--steel-200); }
 .aside-box.dark h3, .aside-box.dark strong { color: var(--white); }
@@ -1493,6 +1495,16 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
 }
 .pg-obras .landing-aside .aside-fill li { margin-bottom: .45rem; }
 .pg-obras .landing-aside .aside-fill a { color: var(--navy-800); }
+
+/* O aside inteiro costuma ser mais alto que a tela (1.100 a 1.500px), e aí o
+   sticky não prende: a coluna direita acabava no primeiro terço da página e o
+   resto ficava em branco. Em tela larga o aside estica até a altura do artigo,
+   deixa de ser sticky, e só o último card acompanha a rolagem. */
+@media (min-width: 901px) {
+  /* flex, e não grid: em grid o sticky fica preso à própria célula */
+  .pg-obras .landing-aside { display: flex; flex-direction: column; align-self: stretch; }
+  .pg-obras .landing-aside .aside-fill { position: sticky; top: 100px; }
+}
 
 @media (max-width: 1080px) {
   .pg-obras .landing-layout { grid-template-columns: minmax(0, 1fr) 320px; }
