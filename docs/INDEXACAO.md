@@ -62,17 +62,22 @@ camaras-frias e patologias-e-corrosao. Sitemap: 54 → 65 URLs.
 
 ### Fila de indexação — 26/09 (cluster)
 
-- [ ] https://nr13sistema.com.br/estruturas-metalicas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/fornecimento-de-aco-estrutural-vitoria-es.html
-- [ ] https://nr13sistema.com.br/fabricacao-de-estruturas-metalicas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/montagem-de-estruturas-metalicas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/galpao-metalico-vitoria-es.html
-- [ ] https://nr13sistema.com.br/cobertura-metalica-para-quadra-vitoria-es.html
-- [ ] https://nr13sistema.com.br/obra-em-estrutura-metalica-completa-vitoria-es.html
-- [ ] https://nr13sistema.com.br/camara-fria-para-restaurante-vitoria-es.html
-- [ ] https://nr13sistema.com.br/camara-fria-para-acougue-e-supermercado-vitoria-es.html
-- [ ] https://nr13sistema.com.br/manutencao-de-camara-fria-vitoria-es.html
-- [ ] https://nr13sistema.com.br/quanto-custa-camara-fria-vitoria-es.html
+Deploy: commit `4364651` + Redeploy manual no Coolify; as 65 URLs do sitemap responderam 200.
+Sitemap reenviado ("Sitemap enviado", 47 → 65 URLs). Cada URL inspecionada ("O URL não está no
+Google") e conferida na tela antes do clique. **11 pedidos aceitos; a cota acabou no 12º**
+(`blog/apreciacao-de-riscos-o-que-e`, "A cota foi excedida").
+
+- [x] https://nr13sistema.com.br/estruturas-metalicas-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/fornecimento-de-aco-estrutural-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/fabricacao-de-estruturas-metalicas-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/montagem-de-estruturas-metalicas-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/galpao-metalico-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/cobertura-metalica-para-quadra-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/obra-em-estrutura-metalica-completa-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/camara-fria-para-restaurante-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/camara-fria-para-acougue-e-supermercado-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/manutencao-de-camara-fria-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/quanto-custa-camara-fria-vitoria-es.html — "Indexação solicitada"
 
 ---
 
@@ -95,7 +100,7 @@ em "Assuntos cobertos" e `hasPart` do JSON-LD) e com links recíprocos em págin
 Artigos NR-12 fecham com faixa do **Sistema NR12** (WhatsApp, sem Kiwify); artigos PMOC fecham com
 `cta-band` de WhatsApp, sem faixa de sistema (regra 6 do LEIA-ME).
 
-### Fila de indexação — 26/09
+### Fila de indexação — 27/09 (cota de 26/09 esgotada; páginas já no ar, 200)
 
 - [ ] https://nr13sistema.com.br/blog/spie-servico-proprio-de-inspecao-vale-a-pena.html
 - [ ] https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html
