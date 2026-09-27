@@ -297,6 +297,10 @@ que o `aside` sticky parava de acompanhar. Nas landings do cluster de obras:
 - abaixo de 1080px a coluna direita encolhe para 320px, e abaixo de 900px o layout vira uma
   coluna só.
 
+Desde 26/09/2026 o `aside` desse cluster estica até a altura do artigo e **só o último card
+(`.aside-fill`) é sticky** — o aside inteiro não pode ser sticky porque é mais alto que a tela.
+E o `body` usa `overflow-x: clip`, nunca `hidden`: `hidden` anula todo `position: sticky` do site.
+
 Ao criar landing nova nesse cluster, **role a página inteira antes de publicar** e verifique se
 existe algum trecho longo com o lado direito vazio. Se existir, o conteúdo do `aside` está curto
 demais para a altura da página.

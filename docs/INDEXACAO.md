@@ -28,6 +28,30 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## Reescrita comercial — 27/09/2026 (cluster estruturas metálicas)
+
+Pedido do Felipe: títulos de intenção comercial ("empresa que instala estrutura metálica"), texto direto,
+mais fotos, tabelas e prova de especialidade para converter no WhatsApp. **URLs mantidas** (indexação já
+solicitada em 26/09 e links no site todo); mudaram title, H1, description, corpo e JSON-LD. Sem números,
+depoimentos ou garantias inventados — garantia só a legal (art. 618 do CC).
+
+| URL | Title novo | Keyword comercial |
+|---|---|---|
+| `estruturas-metalicas-vitoria-es` | Empresa de Estrutura Metálica em Vitória ES | Axial | empresa de estrutura metálica |
+| `montagem-de-estruturas-metalicas-vitoria-es` | Empresa de Montagem de Estrutura Metálica em Vitória ES | empresa que instala estrutura metálica |
+| `fabricacao-de-estruturas-metalicas-vitoria-es` | Fabricação de Estrutura Metálica Sob Medida — Vitória ES | fábrica / fabricação sob medida |
+| `fornecimento-de-aco-estrutural-vitoria-es` | Perfil Metálico e Aço Estrutural — Fornecimento Vitória ES | perfil metálico, viga W |
+| `galpao-metalico-vitoria-es` | Galpão Metálico em Vitória ES — Fabricação e Montagem | empresa de galpão metálico |
+| `cobertura-metalica-para-quadra-vitoria-es` | Cobertura de Quadra em Vitória ES — Estrutura Metálica | empresa de cobertura de quadra |
+| `obra-em-estrutura-metalica-completa-vitoria-es` | Construtora de Estrutura Metálica Chave na Mão — Vitória ES | construtora metálica chave na mão |
+
+Cada página: hero com selos (ART, engenheiro responsável, projeto-fabricação-montagem, norma) e WhatsApp com
+mensagem própria, 6 diferenciais, 3–4 tabelas, 7 etapas com entregável, CTA no meio, checklist do orçamento,
+FAQ de 7 objeções. 27 fotos novas do Pexels (créditos em `docs/CREDITOS-IMAGENS.md`). Não re-solicitar
+indexação só por isso: o pedido de 26/09 ainda está na fila do Google e o rastreio pega a versão nova.
+
+---
+
 ## Lote 26/09/2026 — cluster estruturas metálicas (7) + câmara fria (4)
 
 Pedido do sócio (25/09): "dar uma bombada" em estrutura metálica — uma página por assunto — e mais

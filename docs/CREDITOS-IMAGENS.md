@@ -170,3 +170,32 @@ Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pe
 | `hero-custo-camara-fria.webp` | https://www.pexels.com/photo/209251/ |
 | `custo-conteineres-reefer.webp` | https://www.pexels.com/photo/31185127/ |
 | `hero-montagem-metalica.webp` | https://www.pexels.com/photo/14539147/ (trocada: a primeira foto mostrava montador sem cinto) |
+
+## Lote 27/09/2026 — reescrita do cluster estruturas metálicas
+
+| Arquivo no site | Pexels |
+|---|---|
+| `metalica-portico-ceu.webp` | https://www.pexels.com/photo/26346370/ |
+| `metalica-trelicas-cobertura.webp` | https://www.pexels.com/photo/12762731/ |
+| `metalica-engenheiros-projeto.webp` | https://www.pexels.com/photo/8961146/ |
+| `aco-patio-perfis.webp` | https://www.pexels.com/photo/36003982/ |
+| `aco-perfis-empilhados.webp` | https://www.pexels.com/photo/36003991/ |
+| `aco-corte-serra.webp` | https://www.pexels.com/photo/36003975/ |
+| `fabricacao-solda-faiscas.webp` | https://www.pexels.com/photo/5846247/ |
+| `fabricacao-soldador-oficina.webp` | https://www.pexels.com/photo/7849743/ |
+| `fabricacao-corte-cnc.webp` | https://www.pexels.com/photo/29988963/ |
+| `fabricacao-pintura-cabine.webp` | https://www.pexels.com/photo/36215202/ |
+| `montagem-guindaste-esteira.webp` | https://www.pexels.com/photo/33708754/ |
+| `galpao-fachada-duas-aguas.webp` | https://www.pexels.com/photo/18709802/ |
+| `galpao-portao-metalico.webp` | https://www.pexels.com/photo/3964672/ |
+| `galpao-fechamento-lateral.webp` | https://www.pexels.com/photo/9280923/ |
+| `galpao-trelica-cobertura.webp` | https://www.pexels.com/photo/8633645/ |
+| `quadra-ginasio-trelicas.webp` | https://www.pexels.com/photo/6539267/ |
+| `quadra-ginasio-piso.webp` | https://www.pexels.com/photo/20414085/ |
+| `quadra-cobertura-vidro.webp` | https://www.pexels.com/photo/15850543/ |
+| `obra-engenheira-tablet.webp` | https://www.pexels.com/photo/8960944/ |
+| `obra-equipe-telhas.webp` | https://www.pexels.com/photo/30514132/ |
+| `obra-vista-aerea.webp` | https://www.pexels.com/photo/2314022/ |
+| `montagem-plataforma-tesoura.webp` | https://www.pexels.com/photo/15109997/ |
+| `montagem-guindastes-viga.webp` | https://www.pexels.com/photo/13832413/ |
+| `montagem-fixacao-galvanizado.webp` | https://www.pexels.com/photo/13532463/ |
