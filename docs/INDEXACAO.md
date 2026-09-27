@@ -28,6 +28,24 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## Correção de escopo — 27/09/2026: a Axial NÃO fabrica estrutura metálica
+
+O Felipe corrigiu: a empresa **não fabrica**; faz **projeto, fornecimento de material e montagem**. As 7 páginas do
+cluster diziam fabricação própria e foram corrigidas no mesmo dia (selo "Projeto, material e montagem"; a estrutura
+vem do fabricante que o cliente contrata, a Axial especifica, confere na chegada e monta).
+
+- `fabricacao-de-estruturas-metalicas-vitoria-es` — **reposicionada** (URL mantida): agora é "Montagem de Estrutura
+  Metálica Pré-Fabricada — Vitória ES" (cliente já comprou a estrutura; a Axial confere e monta). Fotos de oficina trocadas.
+- `obra-em-estrutura-metalica-completa-vitoria-es` — "Obra em Estrutura Metálica: Projeto e Montagem — Vitória ES";
+  saiu "construtora / chave na mão / turnkey"; fundação e obra civil ficam com terceiro do cliente.
+- `galpao-metalico-vitoria-es` — title "Galpão Metálico em Vitória ES — Projeto e Montagem".
+- `fornecimento-de-aco-estrutural-vitoria-es` — saiu corte/furação como serviço próprio (não confirmado).
+- Home (cards e `.sec-tags`), `projetos-estruturais`, `construcao-de-galpoes` e o FAQ de `montagem-industrial`
+  ("pacote com fabricação em oficina") também corrigidos.
+- **Pendente de confirmação:** `exaustao-e-coifas-industriais` diz que a empresa fabrica dutos.
+
+---
+
 ## Reescrita comercial — 27/09/2026 (cluster estruturas metálicas)
 
 Pedido do Felipe: títulos de intenção comercial ("empresa que instala estrutura metálica"), texto direto,
@@ -39,7 +57,7 @@ depoimentos ou garantias inventados — garantia só a legal (art. 618 do CC).
 |---|---|---|
 | `estruturas-metalicas-vitoria-es` | Empresa de Estrutura Metálica em Vitória ES | Axial | empresa de estrutura metálica |
 | `montagem-de-estruturas-metalicas-vitoria-es` | Empresa de Montagem de Estrutura Metálica em Vitória ES | empresa que instala estrutura metálica |
-| `fabricacao-de-estruturas-metalicas-vitoria-es` | Fabricação de Estrutura Metálica Sob Medida — Vitória ES | fábrica / fabricação sob medida |
+| `fabricacao-de-estruturas-metalicas-vitoria-es` | ~~Fabricação…~~ → Montagem de Estrutura Metálica Pré-Fabricada — Vitória ES | montagem de estrutura pré-fabricada |
 | `fornecimento-de-aco-estrutural-vitoria-es` | Perfil Metálico e Aço Estrutural — Fornecimento Vitória ES | perfil metálico, viga W |
 | `galpao-metalico-vitoria-es` | Galpão Metálico em Vitória ES — Fabricação e Montagem | empresa de galpão metálico |
 | `cobertura-metalica-para-quadra-vitoria-es` | Cobertura de Quadra em Vitória ES — Estrutura Metálica | empresa de cobertura de quadra |

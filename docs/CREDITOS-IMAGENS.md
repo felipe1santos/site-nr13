@@ -199,3 +199,15 @@ Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pe
 | `montagem-plataforma-tesoura.webp` | https://www.pexels.com/photo/15109997/ |
 | `montagem-guindastes-viga.webp` | https://www.pexels.com/photo/13832413/ |
 | `montagem-fixacao-galvanizado.webp` | https://www.pexels.com/photo/13532463/ |
+
+## Lote 27/09/2026 (tarde) — correção de escopo: fotos de montagem no lugar das de oficina
+
+| Arquivo no site | Pexels |
+|---|---|
+| `hero-estrutura-pre-fabricada.webp` | https://www.pexels.com/photo/2314023/ |
+| `pre-fabricada-icamento-pilar.webp` | https://www.pexels.com/photo/13061689/ |
+| `pre-fabricada-portico-obra.webp` | https://www.pexels.com/photo/31688485/ |
+| `pre-fabricada-chumbadores.webp` | https://www.pexels.com/photo/36449514/ |
+| `pre-fabricada-parafusos-telha.webp` | https://www.pexels.com/photo/12623796/ |
+| `aco-estoque-barras.webp` | https://www.pexels.com/photo/36878025/ |
+| `galpao-portico-silhueta.webp` | https://www.pexels.com/photo/31197869/ |
