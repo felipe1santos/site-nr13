@@ -211,3 +211,33 @@ Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pe
 | `pre-fabricada-parafusos-telha.webp` | https://www.pexels.com/photo/12623796/ |
 | `aco-estoque-barras.webp` | https://www.pexels.com/photo/36878025/ |
 | `galpao-portico-silhueta.webp` | https://www.pexels.com/photo/31197869/ |
+
+## Lote 30/09/2026 — páginas de montagem: laje, sobrado, mezanino e guia de treliças/perfis
+
+| Arquivo no site | Pexels |
+|---|---|
+| `hero-laje-metalica.webp` | https://www.pexels.com/photo/35383408/ |
+| `laje-estrutura-pavimentos.webp` | https://www.pexels.com/photo/8014692/ |
+| `laje-armadura-concretagem.webp` | https://www.pexels.com/photo/11581108/ |
+| `laje-ligacao-viga-pilar.webp` | https://www.pexels.com/photo/12951624/ |
+| `laje-chapa-de-ligacao.webp` | https://www.pexels.com/photo/36003962/ |
+| `laje-solda-viga.webp` | https://www.pexels.com/photo/15109995/ |
+| `hero-sobrado-metalico.webp` | https://www.pexels.com/photo/31197870/ |
+| `sobrado-esqueleto-metalico.webp` | https://www.pexels.com/photo/31197871/ |
+| `sobrado-fachada-moderna.webp` | https://www.pexels.com/photo/323775/ |
+| `sobrado-varanda-metalica.webp` | https://www.pexels.com/photo/1022936/ |
+| `sobrado-escada-metalica.webp` | https://www.pexels.com/photo/16613541/ |
+| `sobrado-solda-viga.webp` | https://www.pexels.com/photo/14539147/ |
+| `hero-mezanino-metalico.webp` | https://www.pexels.com/photo/4628583/ |
+| `mezanino-residencial-loft.webp` | https://www.pexels.com/photo/12913378/ |
+| `mezanino-escada-pavimentos.webp` | https://www.pexels.com/photo/15301649/ |
+| `mezanino-passarela.webp` | https://www.pexels.com/photo/4534506/ |
+| `mezanino-escada-loft.webp` | https://www.pexels.com/photo/38661242/ |
+| `mezanino-montador-viga.webp` | https://www.pexels.com/photo/14482908/ |
+| `hero-trelicas-perfis.webp` | https://www.pexels.com/photo/8287570/ |
+| `perfis-ue-galvanizados.webp` | https://www.pexels.com/photo/36003986/ |
+| `perfis-vigas-cruzadas.webp` | https://www.pexels.com/photo/31921202/ |
+| `perfis-medicao-paquimetro.webp` | https://www.pexels.com/photo/36003974/ |
+| `trelica-cobertura-ceu.webp` | https://www.pexels.com/photo/32239084/ |
+| `perfis-pilares-portico.webp` | https://www.pexels.com/photo/13261149/ |
+| `trelica-espacial.webp` | https://www.pexels.com/photo/10329046/ |

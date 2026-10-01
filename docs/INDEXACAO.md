@@ -28,6 +28,36 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## Lote 30/09/2026 — montagem metálica: laje, sobrado, mezanino + guia de treliças/perfis/aços
+
+Pedido do Felipe: mais páginas de montagem de estrutura metálica (laje, sobrado, galpão…), "somos
+especialistas em montagem", design parecido com a home, **sem three.js**, muitas fotos, botões
+interativos com calculadora e tipos de elementos/materiais (treliças, aços). Escopo respeitado: só
+**montagem**; projeto e material como opcionais; fabricação sempre do fabricante do cliente.
+Galpão não ganhou página nova — `galpao-metalico-vitoria-es` já atende essa intenção.
+
+| URL | Consulta principal | Ângulo (o que evita canibalizar) | Interativo | Schema |
+|---|---|---|---|---|
+| `estrutura-metalica-para-laje-vitoria-es` | estrutura metálica para laje / steel deck | **Laje sobre aço**: steel deck, treliçada, alveolar, ampliação | Calculadora de carga, concreto e fôrma; abas de elementos | WebPage + Service + Breadcrumb + FAQ (@graph) |
+| `sobrado-em-estrutura-metalica-vitoria-es` | sobrado / casa em estrutura metálica | **Residencial**: esqueleto pilar–viga, metálica × concreto, ≠ steel frame | Estimativa de aço (t) e pilares; abas de partes da casa | WebPage + Service + Breadcrumb + FAQ |
+| `mezanino-metalico-vitoria-es` | mezanino metálico | **Mezanino**: piso existente, tipos de piso, guarda-corpo NBR 14718 | Pilares, carga total e carga no pilar; abas de piso | WebPage + Service + Breadcrumb + FAQ |
+| `trelicas-perfis-e-acos-estruturais` | tipos de treliça / perfil metálico / aço estrutural | **Informacional** (topo de funil e citação por IA) | Abas de treliça e perfil com diagrama SVG; calculadora de peso | TechArticle + Breadcrumb + FAQ |
+
+Layout novo `.pg-mt` (seção 31 do `css/site.css`, CSS `?v=20260930a` só nessas 4 — mudança aditiva) e
+`js/montagem-calc.js`. Conteúdo nasce no HTML (abas abertas e resultado inicial escritos); JS só organiza.
+25 fotos novas do Pexels (`docs/CREDITOS-IMAGENS.md`). Links: home `.sec-tags` de obras, "Continue
+lendo" de estruturas-metalicas, montagem e galpão. Sitemap 65 → 69. Criado `/llms.txt` (índice do
+site para assistentes de IA, gerado do sitemap).
+
+### Fila de indexação — 30/09
+
+- [ ] https://nr13sistema.com.br/estrutura-metalica-para-laje-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/sobrado-em-estrutura-metalica-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/mezanino-metalico-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/trelicas-perfis-e-acos-estruturais.html — aguardando deploy
+
+---
+
 ## Correção de escopo — 27/09/2026: a Axial NÃO fabrica estrutura metálica
 
 O Felipe corrigiu: a empresa **não fabrica**; faz **projeto, fornecimento de material e montagem**. As 7 páginas do
