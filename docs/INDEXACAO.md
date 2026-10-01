@@ -51,10 +51,29 @@ site para assistentes de IA, gerado do sitemap).
 
 ### Fila de indexação — 30/09
 
-- [ ] https://nr13sistema.com.br/estrutura-metalica-para-laje-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/sobrado-em-estrutura-metalica-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/mezanino-metalico-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/trelicas-perfis-e-acos-estruturais.html — aguardando deploy
+Deploy: commit `60b9fac` + Redeploy no Coolify (Livewire `deploy` no app **SITE NR13**, uuid
+`hs48o0ko8cwc0g48gg0k4oos` — o link do Dashboard leva para APP CARDAPIO, não usar). 4 páginas, `llms.txt`
+e sitemap (69) responderam 200. **Sitemap reenviado** ("Sitemap enviado"; o campo pede a URL completa
+`https://nr13sistema.com.br/sitemap.xml` — só `sitemap.xml` dá "Endereço do sitemap inválido").
+Cada URL inspecionada e conferida na tela antes do clique. **10 pedidos aceitos.**
+
+- [x] https://nr13sistema.com.br/estrutura-metalica-para-laje-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/sobrado-em-estrutura-metalica-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/mezanino-metalico-vitoria-es.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/trelicas-perfis-e-acos-estruturais.html — "Indexação solicitada"
+- [x] https://nr13sistema.com.br/blog/apreciacao-de-riscos-o-que-e.html — estava "Rastreada, mas não indexada"; solicitada
+- [x] https://nr13sistema.com.br/blog/quanto-custa-adequar-maquina-nr12.html — estava "Detectada, mas não indexada"; solicitada
+- [x] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html — estava "Detectada, mas não indexada"; solicitada
+- [x] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html — estava "Detectada, mas não indexada"; solicitada
+- [x] https://nr13sistema.com.br/ — já indexada; recrawl pedido porque agora linka as 4 páginas novas
+- [x] https://nr13sistema.com.br/montagem-de-estruturas-metalicas-vitoria-es.html — já indexada; recrawl pelos links novos
+
+**Inspecionadas e já no Google (nenhum pedido gasto):** blog/spie, blog/planilha, blog/portal-do-cliente,
+blog/pmoc-obrigatorio, blog/qualidade-do-ar, montagem-industrial, laudos-tecnicos-e-art, laudo-de-playground,
+camaras-frias, construcao-de-galpoes-e-quadras, exaustao-e-coifas, laudo-de-acessibilidade,
+manutencao-predial, nt23, patologias-e-corrosao, estruturas-metalicas, fabricacao-de-estruturas-metalicas.
+Com isso, as filas antigas de 25/09, 26/09 e 27/09 abaixo estão **resolvidas** (os `[ ]` lá ficaram
+históricos). Próximo passo: daqui a ~7 dias, inspecionar as 8 solicitadas hoje.
 
 ---
 
@@ -172,7 +191,7 @@ em "Assuntos cobertos" e `hasPart` do JSON-LD) e com links recíprocos em págin
 Artigos NR-12 fecham com faixa do **Sistema NR12** (WhatsApp, sem Kiwify); artigos PMOC fecham com
 `cta-band` de WhatsApp, sem faixa de sistema (regra 6 do LEIA-ME).
 
-### Fila de indexação — 27/09 (cota de 26/09 esgotada; páginas já no ar, 200)
+### Fila de indexação — 27/09 (cota de 26/09 esgotada; páginas já no ar, 200) — RESOLVIDA em 30/09, ver lote 30/09
 
 - [ ] https://nr13sistema.com.br/blog/spie-servico-proprio-de-inspecao-vale-a-pena.html
 - [ ] https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html
@@ -207,7 +226,7 @@ Cada URL foi inspecionada antes do pedido e a URL na tela foi conferida por JS a
   re-renderizou antes de exibir a confirmação. Provavelmente contou na cota. Refazer se continuar
   "Detectada, mas não indexada".
 
-### Fila para 26/09 — cota esgotada ("A cota foi excedida") no 10º pedido
+### Fila para 26/09 — cota esgotada ("A cota foi excedida") no 10º pedido — RESOLVIDA em 30/09, ver lote 30/09
 
 - [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
 - [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
