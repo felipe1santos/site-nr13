@@ -241,3 +241,17 @@ Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pe
 | `trelica-cobertura-ceu.webp` | https://www.pexels.com/photo/32239084/ |
 | `perfis-pilares-portico.webp` | https://www.pexels.com/photo/13261149/ |
 | `trelica-espacial.webp` | https://www.pexels.com/photo/10329046/ |
+
+## Lote 30/09/2026 — playground, piso emborrachado, grama sintética, AVCB e projeto de incêndio
+
+| Arquivo no site | Pexels |
+|---|---|
+| `hero-instalacao-playground.webp` | https://www.pexels.com/photo/38192851/ |
+| `playground-piso-azul.webp` | https://www.pexels.com/photo/38192851/ |
+| `playground-balanco.webp` | https://www.pexels.com/photo/35015567/ |
+| `hero-piso-emborrachado.webp` | https://www.pexels.com/photo/16097569/ |
+| `hero-grama-sintetica.webp` | https://www.pexels.com/photo/34989777/ |
+| `grama-sintetica-piscina.webp` | https://www.pexels.com/photo/347138/ |
+| `hero-avcb-bombeiros.webp` | https://www.pexels.com/photo/16517206/ |
+| `hero-projeto-incendio.webp` | https://www.pexels.com/photo/36259607/ |
+| `extintor-parede.webp` | https://www.pexels.com/photo/4805958/ |
