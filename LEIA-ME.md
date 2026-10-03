@@ -263,27 +263,11 @@ sem emenda visível. Ele não deve subir além de ~20%, senão volta a apagar a 
 > cobrindo tudo). Se um dia forem migradas, é só acrescentar `pg-obras` ao `<body>` delas —
 > mas conferir o contraste caso a caso, porque cada foto tem um ponto claro diferente.
 
-### 12. Efeito 3D na primeira dobra
+### 12. Sem efeito 3D na primeira dobra
 
-As 12 landings do cluster de obras têm uma malha técnica animada sobre o hero, feita com
-**three.js servido do próprio domínio** (`js/three.min.js`) — o site não usa CDN, e essa regra
-vale também aqui.
-
-O script é `js/hero-fx.js` e ele **se desliga sozinho** quando:
-
-- não existe `.hero-fx` na página ou o `THREE` não carregou;
-- o visitante pediu `prefers-reduced-motion: reduce`;
-- a largura da janela é menor que 900px (economia de bateria no celular);
-- o navegador não tem WebGL;
-- a aba está em segundo plano ou o hero saiu da viewport.
-
-Em qualquer um desses casos **o hero fica exatamente como sem o efeito** — o canvas nasce com
-`opacity: 0` e só recebe a classe `.on` depois de montar.
-
-**Custo:** o `three.min.js` tem ~654KB. Ele entra com `defer`, depois do HTML e do CSS, e não
-disputa banda com a imagem do hero, que é o LCP. Ainda assim é o arquivo mais pesado do site —
-se o Core Web Vitals piorar, o caminho é trocar por um efeito em canvas 2D, que faz o mesmo
-desenho sem a biblioteca.
+O efeito de malha animada com three.js (`js/three.min.js` + `js/hero-fx.js`, ~654KB) foi
+**removido em 03/10/2026** a pedido do Felipe. O hero das landings de obras voltou a usar a malha
+estática (`.hero::before`). Não reintroduzir biblioteca 3D sem pedido explícito.
 
 ### 13. Corpo da landing: a coluna direita não pode morrer no meio
 
