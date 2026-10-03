@@ -28,6 +28,53 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 03/10/2026 — cluster recarga veicular e elétrica (parceria eletricista, comissão 20%)
+
+Origem: proposta de parceria de um eletricista da Grande Vitória (Wallbox, infraestrutura, quadros,
+proteções). A Axial capta o cliente pelo site e repassa a execução, ficando com 20%. As páginas não
+citam o parceiro pelo nome e não afirmam equipe própria de eletricistas.
+
+Páginas novas (sitemap 74 → 77 URLs):
+
+- [ ] https://nr13sistema.com.br/instalacao-de-wallbox-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/carregador-de-carro-eletrico-para-empresas-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/montagem-de-quadro-eletrico-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — recrawl (links novos para o cluster)
+- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (77 URLs)
+
+Links internos: rodapé de 45 páginas, 2 cards novos na home (wallbox e quadro elétrico) + 3 termos
+na seção de serviços, NT 23 linkando as três.
+
+---
+
+## 01/10/2026 — varredura de inspeção (0 pedidos gastos)
+
+Lote de 30/09 (playground, piso emborrachado, grama sintética, AVCB, projeto de incêndio — commit
+`8143c51`) **ainda não está no ar**: as 5 URLs dão 404 porque o Redeploy no Coolify não foi feito.
+Não solicitar antes de responderem 200.
+
+Inspecionadas hoje e **já no Google** (nenhum pedido necessário): inspecao-nr13, adequacao-nr12, pmoc,
+ensaios-nao-destrutivos, combate-a-incendio, instalacao-sistema-de-incendio, cobertura-metalica-para-quadra,
+galpao-metalico, fornecimento-de-aco-estrutural, obra-em-estrutura-metalica-completa, camara-fria-para-restaurante,
+camara-fria-para-acougue-e-supermercado, manutencao-de-camara-fria, quanto-custa-camara-fria, sistema-nr13,
+sistema-nr12, blog/ (índice), blog/bloco-padrao, blog/caldeira-sem-prontuario, blog/calibracao-de-valvula-psv,
+blog/categoria-de-vaso-de-pressao.
+
+### Fila — assim que o Redeploy for feito
+
+- [ ] https://nr13sistema.com.br/instalacao-de-playground-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/piso-emborrachado-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/grama-sintetica-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/avcb-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/projeto-de-incendio-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — recrawl (title novo + links)
+- [ ] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html — recrawl (title novo)
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (title novo)
+- [ ] https://nr13sistema.com.br/ — recrawl (cards e links novos)
+- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (69 → 74 URLs)
+
+---
+
 ## Lote 30/09/2026 — montagem metálica: laje, sobrado, mezanino + guia de treliças/perfis/aços
 
 Pedido do Felipe: mais páginas de montagem de estrutura metálica (laje, sobrado, galpão…), "somos

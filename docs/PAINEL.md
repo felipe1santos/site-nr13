@@ -1,0 +1,64 @@
+# Painel do projeto — o que foi feito e o que falta
+
+Ponto de partida de toda sessão. Cada assunto tem um arquivo próprio com o detalhe; aqui fica só o
+estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de trabalho.**
+
+| Assunto | Arquivo de controle |
+|---|---|
+| Indexação no Google (Search Console) | [INDEXACAO.md](INDEXACAO.md) |
+| Backlinks, perfis e diretórios | [BACKLINKS.md](BACKLINKS.md) |
+| Redirecionamentos e bugs do servidor (nginx) | [NGINX-REDIRECTS.md](NGINX-REDIRECTS.md) |
+| Origem das imagens | [CREDITOS-IMAGENS.md](CREDITOS-IMAGENS.md) |
+| Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
+
+_Atualizado em 03/10/2026._
+
+---
+
+## Estado atual
+
+- **Site:** 78 páginas, 77 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 03/10/2026.
+- **Deploy:** push vai para `felipe1santos/site-nr13`; **publicar exige Redeploy manual no Coolify**
+  (app *SITE NR13*). Sem Redeploy a página nova dá 404 e não pode ser indexada.
+- **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
+
+## Falta fazer — em ordem
+
+1. **Redeploy no Coolify** — publica os lotes de 30/09 (playground, piso, grama, AVCB, projeto de
+   incêndio) e de 03/10 (wallbox, recarga para empresas, quadro elétrico). Conferir com `curl`.
+2. **Solicitar indexação** das URLs da fila em `INDEXACAO.md` assim que responderem 200
+   (inspecionar antes; ~10 pedidos/dia) e reenviar o sitemap (77 URLs).
+3. **Google Perfil da Empresa** — conferir se as edições (nome Axial Engenharia, categoria, descrição)
+   foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
+4. **Bing Places** — conferir publicação e pegar a URL pública.
+5. **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apple → Apontador → Solutudo → GuiaMais →
+   Cylex → Hotfrog → TeleListas → Facebook → Pinterest → …). Felipe faz login/verificação; assistente
+   preenche e pede OK antes de enviar.
+6. **Servidor (VPS, Felipe):** 301 de `www` → sem `www`, 301 das 4 URLs antigas, `Cache-Control` de
+   assets, MIME do `site.webmanifest` — blocos prontos em `NGINX-REDIRECTS.md`.
+
+## Decisões pendentes do Felipe
+
+- Horário oficial: 08h–18h (site) ou 09h–18h (Google)?
+- Área atendida no Google: tirar Brasil / Rio de Janeiro / Aracruz?
+- URL exata do canal do YouTube.
+- CNPJ: o comprovante disponível não é da Axial nem tem CNAE de engenharia — qual CNPJ usar, se algum.
+- Parceria de recarga veicular: confirmar com o eletricista parceiro **qualificação NR-10**, se emite
+  ou não responsabilidade técnica, garantia do serviço e prazo de atendimento — as páginas foram
+  escritas sem prometer nada disso além do que o site já dizia (ART pela engenharia quando a obra exige).
+
+## Parcerias comerciais
+
+| Data | Parceiro | Serviços | Modelo | Páginas no site |
+|---|---|---|---|---|
+| 03/10/2026 | Eletricista da Grande Vitória (Weverton) | Wallbox, infraestrutura e passagem de cabos, quadros, proteções, adequação para carregadores | Axial capta pelo site e repassa; fica com **20%** | `instalacao-de-wallbox-vitoria-es`, `carregador-de-carro-eletrico-para-empresas-vitoria-es`, `montagem-de-quadro-eletrico-vitoria-es` (+ NT 23 já existente) |
+
+## Linha do tempo
+
+- **03/10/2026** — Google Perfil da Empresa convertido para Axial Engenharia (montagem de estrutura
+  metálica); Bing Places importado do Google; 3 landings do cluster recarga veicular/elétrica criadas,
+  linkadas no rodapé (45 páginas), na home e na NT 23; sitemap 74 → 77; criado este painel.
+- **01/10/2026** — varredura de inspeção no Search Console (0 pedidos); lote de 30/09 ainda 404.
+- **30/09/2026** — 5 landings (playground, piso, grama, AVCB, projeto de incêndio) + 4 de montagem
+  metálica; checklist de backlinks criado.
+- Antes disso: ver `INDEXACAO.md` (lotes desde 10/08/2026).
