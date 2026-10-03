@@ -28,6 +28,11 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 03/10/2026 — 10 pedidos aceitos (cota do dia usada) + sitemap 77
+
+Deploy via Livewire no Coolify; 3 URLs novas + 5 do lote de 30/09 solicitadas, NT 23 e home
+em recrawl. Próximo dia: os 3 recrawls restantes do lote de 01/10. Inspecionar o lote ~10/10.
+
 ## 03/10/2026 — cluster recarga veicular e elétrica (parceria eletricista, comissão 20%)
 
 Origem: proposta de parceria de um eletricista da Grande Vitória (Wallbox, infraestrutura, quadros,
@@ -36,11 +41,11 @@ citam o parceiro pelo nome e não afirmam equipe própria de eletricistas.
 
 Páginas novas (sitemap 74 → 77 URLs):
 
-- [ ] https://nr13sistema.com.br/instalacao-de-wallbox-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/carregador-de-carro-eletrico-para-empresas-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/montagem-de-quadro-eletrico-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — recrawl (links novos para o cluster)
-- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (77 URLs)
+- [x] https://nr13sistema.com.br/instalacao-de-wallbox-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/carregador-de-carro-eletrico-para-empresas-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/montagem-de-quadro-eletrico-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — recrawl solicitado 03/10/2026
+- [x] Sitemap reenviado 03/10/2026 — "Processado", 77 páginas encontradas
 
 Links internos: rodapé de 45 páginas, 2 cards novos na home (wallbox e quadro elétrico) + 3 termos
 na seção de serviços, NT 23 linkando as três.
@@ -60,18 +65,20 @@ camara-fria-para-acougue-e-supermercado, manutencao-de-camara-fria, quanto-custa
 sistema-nr12, blog/ (índice), blog/bloco-padrao, blog/caldeira-sem-prontuario, blog/calibracao-de-valvula-psv,
 blog/categoria-de-vaso-de-pressao.
 
-### Fila — assim que o Redeploy for feito
+### Fila — Redeploy feito em 03/10/2026 (todas respondem 200)
 
-- [ ] https://nr13sistema.com.br/instalacao-de-playground-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/piso-emborrachado-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/grama-sintetica-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/avcb-vitoria-es.html — aguardando deploy
-- [ ] https://nr13sistema.com.br/projeto-de-incendio-vitoria-es.html — aguardando deploy
+_Restam 3 recrawls para o próximo dia de cota (laudo-de-playground, laudos-tecnicos, acessibilidade)._
+
+- [x] https://nr13sistema.com.br/instalacao-de-playground-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/piso-emborrachado-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/grama-sintetica-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/avcb-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
+- [x] https://nr13sistema.com.br/projeto-de-incendio-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
 - [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — recrawl (title novo + links)
 - [ ] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html — recrawl (title novo)
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (title novo)
-- [ ] https://nr13sistema.com.br/ — recrawl (cards e links novos)
-- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (69 → 74 URLs)
+- [x] https://nr13sistema.com.br/ — recrawl solicitado 03/10/2026 (cards de 30/09 e 03/10)
+- [x] Sitemap reenviado em 03/10/2026 já com 77 URLs (ver lote de 03/10)
 
 ---
 
