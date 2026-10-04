@@ -45,7 +45,8 @@ _Atualizado em 03/10/2026._
    foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
 4. **Bing Places** — publicação prevista para 10–15/10 (ETA 7–12 dias). Quando publicar: pegar a URL
    pública e conferir a categoria ("Fabricantes de aço" veio errada da sincronização).
-5. **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apple → Apontador → Solutudo → GuiaMais →
+5. **Apple Business — pausado** (Felipe volta depois; dados prontos no Histórico de 04/10 em `BACKLINKS.md`).
+   **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apontador → Solutudo → GuiaMais →
    Cylex → Hotfrog → TeleListas → Facebook → Pinterest → …). Felipe faz login/verificação; assistente
    preenche e pede OK antes de enviar.
 6. **Parcerias e pautas** — e-mail pronto para Portal da Engenharia e JSST (aguarda OK para enviar);

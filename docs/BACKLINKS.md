@@ -3,7 +3,7 @@
 Arquivo único para não nos perdermos. **Toda vez que um cadastro for feito, atualizar a linha:**
 status, data e a URL exata do perfil/página onde o link aparece.
 
-Legenda de status: ⬜ falta · 🟡 em andamento (conta criada, perfil incompleto ou aguardando
+Legenda de status: ⬜ falta · ⏸️ pausado · 🟡 em andamento (conta criada, perfil incompleto ou aguardando
 aprovação) · ✅ feito (link conferido no ar) · ❌ descartado (anotar o motivo)
 
 **Como dividimos o trabalho:** criar conta, definir senha e confirmar e-mail/SMS é com o Felipe — o
@@ -19,7 +19,7 @@ Regra de ouro: **nome, endereço e telefone (NAP) idênticos em todos os cadastr
 
 | Feitos | Em andamento | Faltam | Descartados |
 |---|---|---|---|
-| 0 | 2 | 31 | 0 |
+| 0 | 2 | 31 (1 pausado: Apple) | 0 |
 
 _Atualizado em 03/10/2026. Google (edições em análise) e Bing (publicação pendente) em andamento.
 Histórico detalhado no fim do arquivo._
@@ -32,7 +32,7 @@ Histórico detalhado no fim do arquivo._
 |---|---|---|---|---|---|---|---|
 | 1 | Perfil da Empresa no Google | Coloca no mapa e no "perto de mim"; maior peso local | https://business.google.com/ | 🟡 | 03/10/2026 | Código da loja 00600901835709135614 | Perfil já existia como "nr13sistema" (Empresa de Software). Convertido: nome **Axial Engenharia**, categoria principal **Montadora de estruturas metálicas** + **Engenheiro**, descrição nova (montagem, sem "fabricação"). Endereço oculto (área de atendimento). Edições "em análise". Ver pendências no Histórico |
 | 2 | Bing Places | Bing, ChatGPT/Copilot usam esses dados | https://www.bingplaces.com/ | 🟡 | 03/10/2026 | (sai depois da publicação) | Importado do Google com sincronização **semanal**; já veio como "Axial Engenharia"; status "Publicação pendente". O perfil Elit Rocket da mesma conta Google também foi importado |
-| 3 | Apple Business Connect | Mapas do iPhone e Siri | https://businessconnect.apple.com/ | ⬜ | | | |
+| 3 | Apple Business Connect | Mapas do iPhone e Siri | https://business.apple.com/ | ⏸️ | 04/10/2026 | | **Pausado a pedido do Felipe — voltar depois.** Não importa do Google: cadastro do zero. Felipe cria a conta (dados para colar no Histórico de 04/10); assistente cadastra o local |
 | 4 | Foursquare for Business | Alimenta dados de local de vários apps | https://business.foursquare.com/ | ⬜ | | | |
 
 ## 2. Redes e perfis próprios
@@ -92,7 +92,7 @@ _Colar aqui os sites que o Felipe mandar; vão para a tabela certa depois de ver
 |---|---|---|---|---|---|
 | 1 | Google Business Profile | 🟡 | 03/10/2026 | | = linha 1 |
 | 2 | Bing Places | 🟡 | 03/10/2026 | | = linha 2 |
-| 3 | Apple Business Connect | ⬜ | | | = linha 3; pede Apple ID — Felipe faz login |
+| 3 | Apple Business Connect | ⏸️ | 04/10/2026 | | = linha 3; pausado — retomar depois |
 | 4 | Apontador | ⬜ | | | = linha 15 |
 | 5 | Solutudo | ⬜ | | | = linha 17 |
 | 6 | GuiaMais | ⬜ | | | = linha 14; se virar venda de plano, não contratar |
@@ -173,6 +173,21 @@ e comentário em blog com link. O Google ignora ou pune — e páginas novas sã
 ---
 
 ## Histórico (mais recente primeiro)
+
+### 04/10/2026 — Apple Business pausado
+- Felipe abriu https://business.apple.com/signup, mas a tela é **criação de conta** (o assistente não
+  preenche). Decidiu deixar para depois.
+- **Para retomar:** Felipe preenche e cria a conta com estes dados, depois o assistente cadastra o local
+  (Axial Engenharia, categoria de montagem de estrutura metálica, 08h–18h, 10 cidades, endereço oculto,
+  site, descrição):
+  ```
+  Nome da organização:  68.218.633 DAYSE BRANDAO FERREIRA   (nome jurídico do CNPJ — ou razão social própria da Axial, se houver)
+  E-mail comercial:     nr13sistema@gmail.com
+  Site:                 https://nr13sistema.com.br/
+  País/região:          Brasil
+  Endereço:             Av. Henrique Moscoso, 2250, Apto ___ — Jaburuna, Vila Velha/ES — 29100-650
+  ```
+- Por que vale a pena: Apple Maps/Siri em todo iPhone; não há importação do Google como no Bing.
 
 ### 03/10/2026 (tarde)
 - Google: nome **Axial Engenharia aprovado**. Enviados (em análise): horário seg–sex **08h–18h**, YouTube
