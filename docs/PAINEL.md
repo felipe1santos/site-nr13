@@ -41,7 +41,7 @@ _Atualizado em 03/10/2026._
    laudo-de-playground, laudos-tecnicos-e-art e laudo-de-acessibilidade. ~10/10: inspecionar o lote.
 3. **Google Perfil da Empresa** — conferir se as edições (nome Axial Engenharia, categoria, descrição)
    foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
-4. **Bing Places** — conferir publicação e pegar a URL pública.
+4. **Bing Places** — conferir publicação e pegar a URL pública (sessão expirou; Felipe precisa logar de novo).
 5. **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apple → Apontador → Solutudo → GuiaMais →
    Cylex → Hotfrog → TeleListas → Facebook → Pinterest → …). Felipe faz login/verificação; assistente
    preenche e pede OK antes de enviar.
@@ -50,11 +50,10 @@ _Atualizado em 03/10/2026._
 
 ## Decisões tomadas (03/10/2026 — Felipe: "você decide")
 
-- **Horário oficial:** segunda a sexta, **08h–18h** (o que o site já mostra). Google precisa ser
-  corrigido de 09h para 08h.
+- **Horário oficial:** segunda a sexta, **08h–18h** (o que o site já mostra). Google corrigido em 03/10 (em análise).
 - **Área atendida:** a mesma do site — Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari, Fundão,
-  Anchieta, Aracruz, Linhares. Tirar "Brasil" e "Rio de Janeiro" do Google.
-- **YouTube:** https://www.youtube.com/@nr13sistema — já no `sameAs` da home; falta no Google.
+  Anchieta, Aracruz, Linhares. Google ajustado em 03/10.
+- **YouTube:** https://www.youtube.com/@nr13sistema — no `sameAs` da home (no ar) e enviado ao Google.
 - **CNPJ:** não usar o comprovante disponível (não é da Axial). Diretório que exigir CNPJ fica pendente.
 - **Perfil duplicado de Cariacica no Google:** remoção é exclusão de dados — fica para o Felipe
   (Gerenciador → marcar o perfil → Remover). Enquanto não verificado, não aparece no Maps.

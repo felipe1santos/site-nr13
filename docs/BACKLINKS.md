@@ -121,7 +121,7 @@ Endereço:  Av. Henrique Moscoso, 2250 — Jaburuna, Vila Velha/ES — CEP 29100
 Telefone:  (27) 99253-4407   (WhatsApp)
 E-mail:    nr13sistema@gmail.com
 Site:      https://nr13sistema.com.br/
-Horário:   Segunda a sexta, 08h às 18h   (⚠ no Google está 09h–18h — Felipe decide qual vale)
+Horário:   Segunda a sexta, 08h às 18h   (decidido 03/10; Google corrigido)
 Área:      Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari, Fundão
 ```
 
@@ -173,6 +173,14 @@ e comentário em blog com link. O Google ignora ou pune — e páginas novas sã
 ---
 
 ## Histórico (mais recente primeiro)
+
+### 03/10/2026 (tarde)
+- Google: nome **Axial Engenharia aprovado**. Enviados (em análise): horário seg–sex **08h–18h**, YouTube
+  `https://www.youtube.com/@nr13sistema`. Área de atendimento trocada para as 10 cidades do site
+  (Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari, Fundão, Anchieta, Aracruz, Linhares) — saiu
+  "Brasil" e "Rio de Janeiro".
+- Site: YouTube no `sameAs` da home (no ar).
+- Bing: sessão expirou — conferir publicação exige novo login do Felipe.
 
 ### 03/10/2026
 - **Google Perfil da Empresa:** a conta (perone.fs@gmail.com) já tinha 3 perfis — *Elit Rocket*
