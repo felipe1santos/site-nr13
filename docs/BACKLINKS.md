@@ -180,7 +180,13 @@ e comentário em blog com link. O Google ignora ou pune — e páginas novas sã
   (Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari, Fundão, Anchieta, Aracruz, Linhares) — saiu
   "Brasil" e "Rio de Janeiro".
 - Site: YouTube no `sameAs` da home (no ar).
-- Bing: sessão expirou — conferir publicação exige novo login do Felipe.
+- Bing (Felipe logou de novo): ressincronizado com o Google — já tem horário 08h–18h, as 10 áreas,
+  descrição nova e YouTube. Status "Publicação pendente", **ETA de 7 a 12 dias** (Bing avisa por e-mail).
+  ID da listagem: bizid=1c3cda87-f520-4cf9-a597-274895c3cc53.
+  ⚠ O Bing traduziu "Montadora de estruturas metálicas" para **"Fabricantes de aço"** (+ "Serviços
+  profissionais"). A Axial não fabrica, mas com sincronização ativa a categoria **não é editável no Bing**.
+  Decisão: manter a categoria certa no Google (pesa mais) e rever quando o Bing publicar — se a
+  categoria continuar errada, avaliar desligar a sincronização e editar à mão.
 
 ### 03/10/2026
 - **Google Perfil da Empresa:** a conta (perone.fs@gmail.com) já tinha 3 perfis — *Elit Rocket*

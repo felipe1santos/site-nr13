@@ -41,7 +41,8 @@ _Atualizado em 03/10/2026._
    laudo-de-playground, laudos-tecnicos-e-art e laudo-de-acessibilidade. ~10/10: inspecionar o lote.
 3. **Google Perfil da Empresa** — conferir se as edições (nome Axial Engenharia, categoria, descrição)
    foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
-4. **Bing Places** — conferir publicação e pegar a URL pública (sessão expirou; Felipe precisa logar de novo).
+4. **Bing Places** — publicação prevista para 10–15/10 (ETA 7–12 dias). Quando publicar: pegar a URL
+   pública e conferir a categoria ("Fabricantes de aço" veio errada da sincronização).
 5. **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apple → Apontador → Solutudo → GuiaMais →
    Cylex → Hotfrog → TeleListas → Facebook → Pinterest → …). Felipe faz login/verificação; assistente
    preenche e pede OK antes de enviar.
