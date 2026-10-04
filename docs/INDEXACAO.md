@@ -28,6 +28,23 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 03/10/2026 (noite) — 5 guias técnicos para backlink natural (sitemap 77 → 82)
+
+Cota do dia já usada nos 10 pedidos da tarde — **solicitar no próximo dia de cota**, nesta ordem:
+
+- [ ] https://nr13sistema.com.br/checklist-recebimento-estrutura-metalica.html — aguardando cota
+- [ ] https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html — aguardando cota
+- [ ] https://nr13sistema.com.br/carregador-carro-eletrico-condominio-modelo-de-ata.html — aguardando cota
+- [ ] https://nr13sistema.com.br/compressor-de-ar-e-vaso-de-pressao-nr13.html — aguardando cota
+- [ ] https://nr13sistema.com.br/maresia-pintura-galvanizacao-estrutura-metalica-es.html — aguardando cota
+- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (82 URLs)
+
+Depois deles, os 3 recrawls do lote de 01/10 (laudo-de-playground, laudos-tecnicos, acessibilidade).
+Links recíprocos: montagem, galpão, patologias, NT 23, wallbox, recarga empresas, quadro, inspeção NR-13,
+blog/categoria-de-vaso + 5 termos na home.
+
+---
+
 ## 03/10/2026 — 10 pedidos aceitos (cota do dia usada) + sitemap 77
 
 Deploy via Livewire no Coolify; 3 URLs novas + 5 do lote de 30/09 solicitadas, NT 23 e home

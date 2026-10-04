@@ -87,8 +87,14 @@ assuntos novos e têm formato que outros sites gostam de citar (modelo, tabela, 
    — conteúdo local com tabela de sistemas de pintura por distância do mar; atrai fabricantes e arquitetos.
 4. **Calculadora "Meu padrão aguenta um wallbox?"** — ferramenta simples (carga instalada × potência do
    carregador). Ferramenta gratuita é o formato que mais ganha link espontâneo.
-5. **"ALCB, AAFCB ou ALPCB: qual documento do Corpo de Bombeiros do ES a sua edificação precisa"**
-   — tabela-resumo por área e ocupação; poucas fontes explicam o caso do CBMES.
+5. ~~ALCB/AAFCB/ALPCB~~ trocado por **"Compressor de ar é vaso de pressão? Quando a NR-13 se aplica"** —
+   os critérios de enquadramento do CBMES não foram confirmados em fonte; o compressor tem base normativa
+   firme e conversa com os parceiros de compressores. ALCB fica para quando houver a NT do CBMES em mãos.
+
+**Publicados em 03/10/2026:** `checklist-recebimento-estrutura-metalica.html`,
+`carregador-carro-eletrico-condominio-modelo-de-ata.html`, `maresia-pintura-galvanizacao-estrutura-metalica-es.html`,
+`calculadora-wallbox-padrao-de-entrada.html` (com `js/wallbox-calc.js`), `compressor-de-ar-e-vaso-de-pressao-nr13.html`.
+O checklist saiu como lista na página (sem PDF por enquanto).
 
 ---
 

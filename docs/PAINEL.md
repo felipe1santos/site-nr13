@@ -29,7 +29,7 @@ _Atualizado em 03/10/2026._
 
 ## Estado atual
 
-- **Site:** 78 páginas, 77 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 03/10/2026.
+- **Site:** 83 páginas, 82 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 03/10/2026.
 - **Efeito three.js:** removido em 03/10/2026 (pedido do Felipe) — hero com malha estática.
 - **Deploy:** push vai para `felipe1santos/site-nr13`; **publicar exige Redeploy manual no Coolify**
   (app *SITE NR13*). Sem Redeploy a página nova dá 404 e não pode ser indexada.
@@ -38,8 +38,9 @@ _Atualizado em 03/10/2026._
 ## Falta fazer — em ordem
 
 1. ~~Redeploy~~ feito 03/10 — lotes de 30/09 e 03/10 no ar (200).
-2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota: recrawl de
-   laudo-de-playground, laudos-tecnicos-e-art e laudo-de-acessibilidade. ~10/10: inspecionar o lote.
+2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota: os 5 guias
+   novos (fila em INDEXACAO.md) + reenviar sitemap (82), depois recrawl de laudo-de-playground,
+   laudos-tecnicos-e-art e laudo-de-acessibilidade. ~10/10: inspecionar o lote.
 3. **Google Perfil da Empresa** — conferir se as edições (nome Axial Engenharia, categoria, descrição)
    foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
 4. **Bing Places** — publicação prevista para 10–15/10 (ETA 7–12 dias). Quando publicar: pegar a URL
@@ -82,7 +83,8 @@ _Atualizado em 03/10/2026._
   metálica); Bing Places importado do Google; 3 landings do cluster recarga veicular/elétrica criadas,
   linkadas no rodapé (45 páginas), na home e na NT 23; sitemap 74 → 77; criado este painel; efeito three.js removido do site; Redeploy feito;
   10 pedidos de indexação aceitos e sitemap reenviado (77 processadas); Google com horário/área/YouTube;
-  Bing ressincronizado (ETA 7–12 dias); pesquisa de parcerias e pautas.
+  Bing ressincronizado (ETA 7–12 dias); pesquisa de parcerias e pautas; 5 guias técnicos publicados (checklist de recebimento, calculadora de
+  wallbox, modelo de ata para condomínio, maresia, compressor e NR-13).
 - **01/10/2026** — varredura de inspeção no Search Console (0 pedidos); lote de 30/09 ainda 404.
 - **30/09/2026** — 5 landings (playground, piso, grama, AVCB, projeto de incêndio) + 4 de montagem
   metálica; checklist de backlinks criado.

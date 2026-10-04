@@ -102,3 +102,11 @@
 ## Institucional
 
 - [Engenharia Mecânica em Vitória ES — NR-13, NR-12 e PMOC](https://nr13sistema.com.br/): Engenharia mecânica na Grande Vitória/ES: inspeção NR-13 de caldeiras e vasos de pressão, adequação NR-12, PMOC, ensaios não destrutivos e combate a incêndio. Laudo com ART e orçamento no mesmo dia.
+
+## Guias técnicos (03/10/2026)
+
+- [Checklist de recebimento de estrutura metálica](https://nr13sistema.com.br/checklist-recebimento-estrutura-metalica.html): O que conferir antes de pagar a montagem: documentos, prumo, parafusos, soldas, chumbadores, pintura.
+- [Carregador em condomínio: passo a passo e modelo de ata](https://nr13sistema.com.br/carregador-carro-eletrico-condominio-modelo-de-ata.html): Estudo, rateio, assembleia e modelo de ata para síndicos.
+- [Maresia e estrutura metálica: pintura e galvanização](https://nr13sistema.com.br/maresia-pintura-galvanizacao-estrutura-metalica-es.html): Categorias de corrosividade, galvanização a fogo, pintura e sistema duplex.
+- [Calculadora: meu padrão aguenta um wallbox?](https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html): Ferramenta gratuita de estimativa de carga para wallbox.
+- [Compressor de ar é vaso de pressão? NR-13](https://nr13sistema.com.br/compressor-de-ar-e-vaso-de-pressao-nr13.html): Regra P×V > 8, exemplos de reservatórios e exigências da NR-13.
