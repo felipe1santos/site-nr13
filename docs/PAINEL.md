@@ -8,6 +8,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Indexação no Google (Search Console) | [INDEXACAO.md](INDEXACAO.md) |
 | Backlinks, perfis e diretórios | [BACKLINKS.md](BACKLINKS.md) |
 | Redirecionamentos e bugs do servidor (nginx) | [NGINX-REDIRECTS.md](NGINX-REDIRECTS.md) |
+| Parcerias, associações, portais e pautas | [PARCERIAS-E-PAUTAS.md](PARCERIAS-E-PAUTAS.md) |
 | Origem das imagens | [CREDITOS-IMAGENS.md](CREDITOS-IMAGENS.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
@@ -46,7 +47,9 @@ _Atualizado em 03/10/2026._
 5. **Diretórios** na ordem da seção 6 de `BACKLINKS.md` (Apple → Apontador → Solutudo → GuiaMais →
    Cylex → Hotfrog → TeleListas → Facebook → Pinterest → …). Felipe faz login/verificação; assistente
    preenche e pede OK antes de enviar.
-6. **Servidor (VPS, Felipe):** 301 de `www` → sem `www`, 301 das 4 URLs antigas, `Cache-Control` de
+6. **Parcerias e pautas** — e-mail pronto para Portal da Engenharia e JSST (aguarda OK para enviar);
+   lista de parceiros (compressores, caldeiraria) e 5 artigos novos em `PARCERIAS-E-PAUTAS.md`.
+7. **Servidor (VPS, Felipe):** 301 de `www` → sem `www`, 301 das 4 URLs antigas, `Cache-Control` de
    assets, MIME do `site.webmanifest` — blocos prontos em `NGINX-REDIRECTS.md`.
 
 ## Decisões tomadas (03/10/2026 — Felipe: "você decide")
@@ -78,7 +81,8 @@ _Atualizado em 03/10/2026._
 - **03/10/2026** — Google Perfil da Empresa convertido para Axial Engenharia (montagem de estrutura
   metálica); Bing Places importado do Google; 3 landings do cluster recarga veicular/elétrica criadas,
   linkadas no rodapé (45 páginas), na home e na NT 23; sitemap 74 → 77; criado este painel; efeito three.js removido do site; Redeploy feito;
-  10 pedidos de indexação aceitos e sitemap reenviado (77 processadas).
+  10 pedidos de indexação aceitos e sitemap reenviado (77 processadas); Google com horário/área/YouTube;
+  Bing ressincronizado (ETA 7–12 dias); pesquisa de parcerias e pautas.
 - **01/10/2026** — varredura de inspeção no Search Console (0 pedidos); lote de 30/09 ainda 404.
 - **30/09/2026** — 5 landings (playground, piso, grama, AVCB, projeto de incêndio) + 4 de montagem
   metálica; checklist de backlinks criado.
