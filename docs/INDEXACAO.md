@@ -32,12 +32,12 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 Cota do dia já usada nos 10 pedidos da tarde — **solicitar no próximo dia de cota**, nesta ordem:
 
-- [ ] https://nr13sistema.com.br/checklist-recebimento-estrutura-metalica.html — aguardando cota
-- [ ] https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html — aguardando cota
+- [x] https://nr13sistema.com.br/checklist-recebimento-estrutura-metalica.html — solicitada 04/10/2026 (madrugada)
+- [ ] https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html — 04/10 madrugada deu "cota excedida": a cota vira no horário do Pacífico (~04h/05h de Brasília), pedir depois disso
 - [ ] https://nr13sistema.com.br/carregador-carro-eletrico-condominio-modelo-de-ata.html — aguardando cota
 - [ ] https://nr13sistema.com.br/compressor-de-ar-e-vaso-de-pressao-nr13.html — aguardando cota
 - [ ] https://nr13sistema.com.br/maresia-pintura-galvanizacao-estrutura-metalica-es.html — aguardando cota
-- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (82 URLs)
+- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (82 URLs) — tentativa de 04/10 não registrou (aba em segundo plano); refazer com a aba em primeiro plano
 
 Depois deles, os 3 recrawls do lote de 01/10 (laudo-de-playground, laudos-tecnicos, acessibilidade).
 Links recíprocos: montagem, galpão, patologias, NT 23, wallbox, recarga empresas, quadro, inspeção NR-13,

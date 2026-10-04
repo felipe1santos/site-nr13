@@ -38,8 +38,8 @@ _Atualizado em 03/10/2026._
 ## Falta fazer — em ordem
 
 1. ~~Redeploy~~ feito 03/10 — lotes de 30/09 e 03/10 no ar (200).
-2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota: os 5 guias
-   novos (fila em INDEXACAO.md) + reenviar sitemap (82), depois recrawl de laudo-de-playground,
+2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota (vira ~04h/05h de Brasília): 4 guias
+   novos (checklist já pedido; fila em INDEXACAO.md) + reenviar sitemap (82), depois recrawl de laudo-de-playground,
    laudos-tecnicos-e-art e laudo-de-acessibilidade. ~10/10: inspecionar o lote.
 3. **Google Perfil da Empresa** — conferir se as edições (nome Axial Engenharia, categoria, descrição)
    foram aprovadas; resolver as pendências listadas no histórico de `BACKLINKS.md`.
