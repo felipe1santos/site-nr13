@@ -48,15 +48,24 @@ _Atualizado em 03/10/2026._
 6. **Servidor (VPS, Felipe):** 301 de `www` → sem `www`, 301 das 4 URLs antigas, `Cache-Control` de
    assets, MIME do `site.webmanifest` — blocos prontos em `NGINX-REDIRECTS.md`.
 
-## Decisões pendentes do Felipe
+## Decisões tomadas (03/10/2026 — Felipe: "você decide")
 
-- Horário oficial: 08h–18h (site) ou 09h–18h (Google)?
-- Área atendida no Google: tirar Brasil / Rio de Janeiro / Aracruz?
-- URL exata do canal do YouTube.
-- CNPJ: o comprovante disponível não é da Axial nem tem CNAE de engenharia — qual CNPJ usar, se algum.
-- Parceria de recarga veicular: confirmar com o eletricista parceiro **qualificação NR-10**, se emite
-  ou não responsabilidade técnica, garantia do serviço e prazo de atendimento — as páginas foram
-  escritas sem prometer nada disso além do que o site já dizia (ART pela engenharia quando a obra exige).
+- **Horário oficial:** segunda a sexta, **08h–18h** (o que o site já mostra). Google precisa ser
+  corrigido de 09h para 08h.
+- **Área atendida:** a mesma do site — Vitória, Vila Velha, Serra, Cariacica, Viana, Guarapari, Fundão,
+  Anchieta, Aracruz, Linhares. Tirar "Brasil" e "Rio de Janeiro" do Google.
+- **YouTube:** https://www.youtube.com/@nr13sistema — já no `sameAs` da home; falta no Google.
+- **CNPJ:** não usar o comprovante disponível (não é da Axial). Diretório que exigir CNPJ fica pendente.
+- **Perfil duplicado de Cariacica no Google:** remoção é exclusão de dados — fica para o Felipe
+  (Gerenciador → marcar o perfil → Remover). Enquanto não verificado, não aparece no Maps.
+
+## Pendências que só o Felipe resolve
+
+- Criar conta / fazer login em cada diretório (Apple, Apontador, Solutudo, GuiaMais, Cylex, Hotfrog,
+  TeleListas, Facebook, Pinterest…) — o assistente não cria conta nem entra com senha.
+- Confirmar com o parceiro eletricista NR-10, garantia e prazo antes de citar nas páginas.
+- Deixar a janela do Chrome aberta (não minimizada) quando o assistente for editar o Google:
+  minimizada, o painel congela.
 
 ## Parcerias comerciais
 
