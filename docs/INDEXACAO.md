@@ -50,12 +50,12 @@ Escopo declarado: laudo, plano de adequação e vistoria de conferência. **Exec
 (fica com a empreiteira do cliente). Links recíprocos: laudo-de-acessibilidade-nbr9050 (texto + Continue
 lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
 
-- [?] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — 07/10 inspecionada ("não está no Google") e pedido clicado; aparece "Testando", mas a confirmação não ficou na tela. **Inspecionar no próximo dia de cota**; se ainda fora, pedir de novo
+- [?] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — 07/10 inspecionada ("não está no Google") e pedido clicado; aparece "Testando", mas a confirmação não ficou na tela. Reinspecionada 07/10 à tarde: ainda fora e novo pedido deu "cota excedida" → **pedir de novo no próximo dia de cota**
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — 07/10 "não está no Google"; pedido deu **"A cota foi excedida"** → próximo dia de cota
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
 - [ ] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (links novos; já estava na fila de 01/10)
-- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (86 URLs) — tentativa de 07/10 não registrou (aba do Chrome em segundo plano, `visibilityState=hidden`); refazer com a janela visível
+- [x] Sitemap (86 URLs) reenviado 07/10/2026 com a janela visível — "Sitemap enviado"
 
 ---
 
