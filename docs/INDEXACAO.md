@@ -28,6 +28,32 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 07/10/2026 — cluster acessibilidade: 4 landings com ART (sitemap 82 → 86)
+
+Pedido do Felipe: páginas de laudo técnico de acessibilidade com ART, imagens profissionais, hero sem
+efeito (sem a malha `.hero::before`, via `<style>` inline só nessas páginas — CSS global intocado).
+Cada uma declara o recorte no 1º bloco e aponta para a página principal NBR 9050 (sem canibalizar).
+
+| URL | Consulta principal | Recorte |
+|---|---|---|
+| `laudo-de-acessibilidade-para-alvara-vitoria-es` | laudo de acessibilidade para alvará | Prefeitura / LBI art. 60 |
+| `laudo-de-acessibilidade-para-condominio-vitoria-es` | acessibilidade em condomínio | Área comum, assembleia |
+| `laudo-de-acessibilidade-ministerio-publico-vitoria-es` | notificação MP / TAC acessibilidade | Ofício, inquérito, TAC, cumprimento |
+| `art-de-acessibilidade-vitoria-es` | ART de acessibilidade / ART ou RRT | Responsabilidade técnica |
+
+Escopo declarado: laudo, plano de adequação e vistoria de conferência. **Execução de obra não é afirmada**
+(fica com a empreiteira do cliente). Links recíprocos: laudo-de-acessibilidade-nbr9050 (texto + Continue
+lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
+
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (links novos; já estava na fila de 01/10)
+- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (86 URLs)
+
+---
+
 ## 03/10/2026 (noite) — 5 guias técnicos para backlink natural (sitemap 77 → 82)
 
 Cota do dia já usada nos 10 pedidos da tarde — **solicitar no próximo dia de cota**, nesta ordem:

@@ -255,3 +255,30 @@ Baixadas do Pexels pelo ID (o número no fim do nome do original em `img/_raw/pe
 | `hero-avcb-bombeiros.webp` | https://www.pexels.com/photo/16517206/ |
 | `hero-projeto-incendio.webp` | https://www.pexels.com/photo/36259607/ |
 | `extintor-parede.webp` | https://www.pexels.com/photo/4805958/ |
+
+---
+
+## Lote 07/10/2026 — cluster acessibilidade (4 landings)
+
+Pexels, uso comercial livre. Originais em `img/_raw/pexels/<nome>-<id>.jpg`; heroes 1600x800 e corpo
+1200x800, crop central, `-quality 72 -compression_level 6`. Cada `alt` conferido contra a foto
+renderizada. Pinterest foi descartado de propósito: pin não traz licença de uso comercial.
+
+| Arquivo no site | Pexels | Página |
+|---|---|---|
+| `hero-acessibilidade-alvara.webp` | https://www.pexels.com/photo/6809658/ | alvará |
+| `acessibilidade-sanitario-placa.webp` | https://www.pexels.com/photo/35597510/ | alvará |
+| `acessibilidade-medicao-parede.webp` | https://www.pexels.com/photo/8470795/ | alvará |
+| `acessibilidade-piso-tatil.webp` | https://www.pexels.com/photo/36772563/ | alvará |
+| `hero-acessibilidade-condominio.webp` | https://www.pexels.com/photo/11986023/ | condomínio |
+| `acessibilidade-elevador-botoeira.webp` | https://www.pexels.com/photo/16026071/ | condomínio |
+| `condominio-area-piscina.webp` | https://www.pexels.com/photo/17175418/ | condomínio |
+| `acessibilidade-vagas-estacionamento.webp` | https://www.pexels.com/photo/7393925/ | condomínio |
+| `hero-acessibilidade-ministerio-publico.webp` | https://www.pexels.com/photo/7876093/ | Ministério Público |
+| `acessibilidade-assinatura-tac.webp` | https://www.pexels.com/photo/8730998/ | Ministério Público |
+| `acessibilidade-calcada-rampa.webp` | https://www.pexels.com/photo/36738295/ | Ministério Público |
+| `acessibilidade-corredor-cadeira.webp` | https://www.pexels.com/photo/11781911/ | Ministério Público |
+| `hero-art-acessibilidade.webp` | https://www.pexels.com/photo/8293673/ | ART |
+| `acessibilidade-analise-planta.webp` | https://www.pexels.com/photo/6614824/ | ART |
+| `acessibilidade-engenheira-registro.webp` | https://www.pexels.com/photo/8488034/ | ART |
+| `acessibilidade-planta-escala.webp` | https://www.pexels.com/photo/4134179/ | ART |
