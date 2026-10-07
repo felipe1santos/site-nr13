@@ -40,7 +40,7 @@ _Atualizado em 07/10/2026._
 ## Falta fazer — em ordem
 
 0. **Indexação do lote de acessibilidade (07/10):** cota acabou no 2º pedido de 07/10. Próximo dia de cota, com a
-   janela do Chrome visível: condomínio, MP, ART, conferir alvará, recrawl NBR 9050. Sitemap 86 já reenviado em 07/10.
+   janela do Chrome visível: alvará, condomínio, MP, ART, recrawl NBR 9050. Sitemap 86 já reenviado em 07/10.
 
 1. ~~Redeploy~~ feito 03/10 — lotes de 30/09 e 03/10 no ar (200).
 2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota (vira ~04h/05h de Brasília): 4 guias

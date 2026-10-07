@@ -43,14 +43,14 @@ Cada uma declara o recorte no 1º bloco e aponta para a página principal NBR 90
 
 Deploy: commit `e52b310` em `felipe1santos/site-nr13` + Redeploy via Livewire; 4 URLs e sitemap (86) respondendo 200 em 07/10.
 
-**Ordem para o próximo dia de cota (depois de ~05h de Brasília, janela do Chrome visível):** condomínio,
-Ministério Público, ART, conferir alvará, recrawl da NBR 9050; depois a fila de 03/10 abaixo (inspecionar antes).
+**Ordem para o próximo dia de cota (depois de ~05h de Brasília, janela do Chrome visível):** alvará, condomínio,
+Ministério Público, ART, recrawl da NBR 9050; depois a fila de 03/10 abaixo (inspecionar antes).
 
 Escopo declarado: laudo, plano de adequação e vistoria de conferência. **Execução de obra não é afirmada**
 (fica com a empreiteira do cliente). Links recíprocos: laudo-de-acessibilidade-nbr9050 (texto + Continue
 lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
 
-- [?] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — 07/10 inspecionada ("não está no Google") e pedido clicado; aparece "Testando", mas a confirmação não ficou na tela. Reinspecionada 07/10 à tarde: ainda fora e novo pedido deu "cota excedida" → **pedir de novo no próximo dia de cota**
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — 07/10 inspecionada ("não está no Google") e pedido clicado; aparece "Testando", mas a confirmação não ficou na tela. Reinspecionada 07/10 à tarde: ainda fora e novo pedido deu "cota excedida" → **pedir de novo no próximo dia de cota**
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — 07/10 "não está no Google"; pedido deu **"A cota foi excedida"** → próximo dia de cota
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
 - [ ] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
