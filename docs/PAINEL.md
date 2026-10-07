@@ -12,7 +12,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Origem das imagens | [CREDITOS-IMAGENS.md](CREDITOS-IMAGENS.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 03/10/2026._
+_Atualizado em 07/10/2026._
 
 ## Regras fixas (pedido do Felipe)
 
@@ -29,13 +29,18 @@ _Atualizado em 03/10/2026._
 
 ## Estado atual
 
-- **Site:** 83 páginas, 82 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 03/10/2026.
+- **Site:** 87 páginas, 86 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 07/10/2026.
+- **07/10/2026:** 4 landings de acessibilidade com ART no ar (alvará, condomínio, Ministério Público/TAC, ART) —
+  hero sem efeito, 16 fotos novas do Pexels (Pinterest descartado: sem licença comercial). Detalhe em `INDEXACAO.md`.
 - **Efeito three.js:** removido em 03/10/2026 (pedido do Felipe) — hero com malha estática.
 - **Deploy:** push vai para `felipe1santos/site-nr13`; **publicar exige Redeploy manual no Coolify**
   (app *SITE NR13*). Sem Redeploy a página nova dá 404 e não pode ser indexada.
 - **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
 
 ## Falta fazer — em ordem
+
+0. **Indexação do lote de acessibilidade (07/10):** cota acabou no 2º pedido de 07/10. Próximo dia de cota, com a
+   janela do Chrome visível: condomínio, MP, ART, conferir alvará, recrawl NBR 9050, reenviar sitemap (86).
 
 1. ~~Redeploy~~ feito 03/10 — lotes de 30/09 e 03/10 no ar (200).
 2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota (vira ~04h/05h de Brasília): 4 guias
