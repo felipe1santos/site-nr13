@@ -10,9 +10,10 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Redirecionamentos e bugs do servidor (nginx) | [NGINX-REDIRECTS.md](NGINX-REDIRECTS.md) |
 | Parcerias, associações, portais e pautas | [PARCERIAS-E-PAUTAS.md](PARCERIAS-E-PAUTAS.md) |
 | Origem das imagens | [CREDITOS-IMAGENS.md](CREDITOS-IMAGENS.md) |
+| Pesquisa de demanda (volumes de busca na GV) | [PESQUISA-DEMANDA-GV.md](PESQUISA-DEMANDA-GV.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 07/10/2026._
+_Atualizado em 08/10/2026._
 
 ## Regras fixas (pedido do Felipe)
 
@@ -29,7 +30,11 @@ _Atualizado em 07/10/2026._
 
 ## Estado atual
 
-- **Site:** 87 páginas, 86 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 07/10/2026.
+- **Site:** 101 páginas, 100 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 08/10/2026.
+- **08/10/2026:** pesquisa de volume de busca na Grande Vitória (Planejador do Google Ads) + **14 landings de serviços novos
+  criadas no disco, SEM deploy** — topografia, regularização/habite-se, vistoria cautelar, vistoria de entrega, reforma
+  NBR 16280, laudo SPDA, estanqueidade de gás, projeto elétrico/padrão EDP, NR-10, linha de vida NR-35, inspeção predial,
+  LTCAT, licenciamento ambiental, sondagem SPT. Detalhe em `PESQUISA-DEMANDA-GV.md` e `INDEXACAO.md`.
 - **07/10/2026:** 4 landings de acessibilidade com ART no ar (alvará, condomínio, Ministério Público/TAC, ART) —
   hero sem efeito, 16 fotos novas do Pexels (Pinterest descartado: sem licença comercial). Detalhe em `INDEXACAO.md`.
 - **Efeito three.js:** removido em 03/10/2026 (pedido do Felipe) — hero com malha estática.
@@ -38,6 +43,13 @@ _Atualizado em 07/10/2026._
 - **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
 
 ## Falta fazer — em ordem
+
+00. **Lote de 08/10 (14 landings) — decidir quem executa antes do deploy.** Para cada serviço: Axial executa, parceiro
+   executa (modelo wallbox, comissão) ou não publica. Exigem habilitação específica: LTCAT (eng. de segurança),
+   georreferenciamento (credenciado INCRA), gás (RT cadastrado no CBMES), projeto elétrico/NR-10 (eng. eletricista),
+   sondagem (empresa com equipamento), licenciamento (área ambiental). Depois: commit + push + Redeploy + curl 200 +
+   reenviar sitemap (100) + pedir indexação (fila em INDEXACAO.md). Se alguma página for descartada, apagar o arquivo,
+   a linha do sitemap e os links recíprocos (14 páginas em "Continue lendo" + bloco no pilar de laudos).
 
 0. **Indexação do lote de acessibilidade (07/10):** cota acabou no 2º pedido de 07/10. Próximo dia de cota, com a
    janela do Chrome visível: alvará, condomínio, MP, ART, recrawl NBR 9050. Sitemap 86 já reenviado em 07/10.
@@ -84,6 +96,10 @@ _Atualizado em 07/10/2026._
 | 03/10/2026 | Eletricista da Grande Vitória (Weverton) | Wallbox, infraestrutura e passagem de cabos, quadros, proteções, adequação para carregadores | Axial capta pelo site e repassa; fica com **20%** | `instalacao-de-wallbox-vitoria-es`, `carregador-de-carro-eletrico-para-empresas-vitoria-es`, `montagem-de-quadro-eletrico-vitoria-es` (+ NT 23 já existente) |
 
 ## Linha do tempo
+
+- **08/10/2026** — pesquisa de demanda na Grande Vitória (Planejador do Google Ads, faixas; 2 agentes de pesquisa web:
+  volumes/concorrência e leis locais); 14 landings criadas com 4–5 fotos Pexels cada (55 WebP novas), links recíprocos em
+  14 páginas + pilar de laudos, sitemap 86 → 100, auditoria OK. Deploy pendente da decisão sobre quem executa.
 
 - **03/10/2026** — Google Perfil da Empresa convertido para Axial Engenharia (montagem de estrutura
   metálica); Bing Places importado do Google; 3 landings do cluster recarga veicular/elétrica criadas,

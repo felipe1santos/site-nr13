@@ -282,3 +282,68 @@ renderizada. Pinterest foi descartado de propósito: pin não traz licença de u
 | `acessibilidade-analise-planta.webp` | https://www.pexels.com/photo/6614824/ | ART |
 | `acessibilidade-engenheira-registro.webp` | https://www.pexels.com/photo/8488034/ | ART |
 | `acessibilidade-planta-escala.webp` | https://www.pexels.com/photo/4134179/ | ART |
+
+
+## Lote 08/10/2026 — 14 landings de serviços novos
+
+Pexels, uso comercial livre. Originais em `img/_raw/pexels/`; heroes 1600x800 e corpo 1200x800, crop
+central, `-quality 72 -compression_level 6`. `alt` conferido contra folha de contato. A busca
+via `fetch` dentro da aba passou a travar (desafio anti-bot); navegar direto para
+`/pt-br/procurar/<termo>/` e ler o `__NEXT_DATA__` funcionou.
+
+| Arquivo no site | Pexels | Página |
+|---|---|---|
+| `hero-levantamento-topografico.webp` | https://www.pexels.com/photo/5802821/ | topografia |
+| `topografia-estacao-total.webp` | https://www.pexels.com/photo/36930873/ | topografia |
+| `topografia-gps-rtk.webp` | https://www.pexels.com/photo/24245275/ | topografia |
+| `topografia-nivel-terreno.webp` | https://www.pexels.com/photo/7499043/ | topografia |
+| `hero-regularizacao-de-imovel.webp` | https://www.pexels.com/photo/7937319/ | regularização |
+| `regularizacao-documentos-obra.webp` | https://www.pexels.com/photo/8470057/ | regularização, reforma |
+| `regularizacao-planta-medicao.webp` | https://www.pexels.com/photo/4792479/ | regularização |
+| `regularizacao-sobrado-obra.webp` | https://www.pexels.com/photo/39988462/ | regularização |
+| `hero-vistoria-cautelar.webp` | https://www.pexels.com/photo/69483/ | cautelar |
+| `cautelar-trinca-parede.webp` | https://www.pexels.com/photo/12326415/ | cautelar |
+| `cautelar-obra-vizinhos.webp` | https://www.pexels.com/photo/33987633/ | cautelar |
+| `cautelar-engenheira-vistoria.webp` | https://www.pexels.com/photo/7937365/ | cautelar |
+| `hero-vistoria-entrega-imovel.webp` | https://www.pexels.com/photo/9826456/ | entrega |
+| `entrega-vistoria-janela.webp` | https://www.pexels.com/photo/8293642/ | entrega |
+| `entrega-chaves-apartamento.webp` | https://www.pexels.com/photo/7489107/ | entrega |
+| `entrega-fissura-parede.webp` | https://www.pexels.com/photo/7717787/ | entrega |
+| `hero-reforma-nbr-16280.webp` | https://www.pexels.com/photo/15798784/ | reforma |
+| `reforma-comodo-em-obra.webp` | https://www.pexels.com/photo/36035072/ | reforma |
+| `reforma-planta-tecnica.webp` | https://www.pexels.com/photo/4458210/ | reforma |
+| `hero-laudo-spda.webp` | https://www.pexels.com/photo/5533498/ | SPDA |
+| `spda-cobertura-antenas.webp` | https://www.pexels.com/photo/26604099/ | SPDA |
+| `spda-torre-descarga.webp` | https://www.pexels.com/photo/12397980/ | SPDA |
+| `spda-multimetro-medicao.webp` | https://www.pexels.com/photo/14319099/ | SPDA, NR-10 |
+| `hero-estanqueidade-gas.webp` | https://www.pexels.com/photo/16752780/ | gás |
+| `gas-reguladores-manometro.webp` | https://www.pexels.com/photo/8943269/ | gás |
+| `gas-tubulacao-medidor.webp` | https://www.pexels.com/photo/8581897/ | gás |
+| `gas-chama-fogao.webp` | https://www.pexels.com/photo/3722212/ | gás |
+| `hero-projeto-eletrico.webp` | https://www.pexels.com/photo/11924298/ | projeto elétrico |
+| `eletrico-medidor-quadro.webp` | https://www.pexels.com/photo/13785838/ | projeto elétrico |
+| `eletrico-projeto-papel.webp` | https://www.pexels.com/photo/10985350/ | projeto elétrico |
+| `eletrico-quadro-residencial.webp` | https://www.pexels.com/photo/32497160/ | projeto elétrico |
+| `hero-laudo-nr10.webp` | https://www.pexels.com/photo/17843269/ | NR-10 |
+| `nr10-quadro-externo.webp` | https://www.pexels.com/photo/17842832/ | NR-10 |
+| `nr10-subestacao-corredor.webp` | https://www.pexels.com/photo/13172736/ | NR-10 |
+| `hero-linha-de-vida-nr35.webp` | https://www.pexels.com/photo/39025636/ | NR-35 |
+| `nr35-cinto-telhado.webp` | https://www.pexels.com/photo/38346822/ | NR-35 |
+| `nr35-telhado-equipe.webp` | https://www.pexels.com/photo/16647524/ | NR-35 |
+| `nr35-cobertura-cabo.webp` | https://www.pexels.com/photo/33728679/ | NR-35 |
+| `hero-inspecao-predial.webp` | https://www.pexels.com/photo/209279/ | inspeção predial |
+| `inspecao-predial-checklist.webp` | https://www.pexels.com/photo/8293680/ | inspeção predial |
+| `inspecao-predial-torres.webp` | https://www.pexels.com/photo/10917489/ | inspeção predial |
+| `inspecao-predial-plataforma.webp` | https://www.pexels.com/photo/13787815/ | inspeção predial |
+| `hero-ltcat-insalubridade.webp` | https://www.pexels.com/photo/29224625/ | LTCAT |
+| `ltcat-protetor-auricular.webp` | https://www.pexels.com/photo/8488000/ | LTCAT |
+| `ltcat-produtos-quimicos.webp` | https://www.pexels.com/photo/209230/ | LTCAT |
+| `ltcat-mascara-tubulacao.webp` | https://www.pexels.com/photo/17166070/ | LTCAT |
+| `hero-licenciamento-ambiental.webp` | https://www.pexels.com/photo/7625721/ | licenciamento |
+| `licenciamento-vistoria-campo.webp` | https://www.pexels.com/photo/3580281/ | licenciamento |
+| `licenciamento-ete-tanques.webp` | https://www.pexels.com/photo/5712211/ | licenciamento |
+| `licenciamento-rio-mata.webp` | https://www.pexels.com/photo/9871902/ | licenciamento |
+| `hero-sondagem-de-solo.webp` | https://www.pexels.com/photo/7910062/ | sondagem |
+| `sondagem-trado-solo.webp` | https://www.pexels.com/photo/14840752/ | sondagem |
+| `sondagem-perfuratriz-obra.webp` | https://www.pexels.com/photo/15109993/ | sondagem |
+| `sondagem-maquina-canteiro.webp` | https://www.pexels.com/photo/29470002/ | sondagem |

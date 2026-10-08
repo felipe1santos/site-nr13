@@ -28,6 +28,50 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 08/10/2026 — 14 landings de serviços novos (pesquisa de demanda; sitemap 86 → 100)
+
+Pedido do Felipe: pesquisar o volume de buscas de serviços de engenharia na Grande Vitória e criar
+páginas dos serviços que a Axial ainda não atende. Pesquisa completa em `PESQUISA-DEMANDA-GV.md`.
+Mesmo padrão do lote de 07/10 (hero sem malha, 4–5 fotos Pexels, recorte declarado no 1º bloco).
+
+| URL | Consulta principal | Recorte |
+|---|---|---|
+| `levantamento-topografico-vitoria-es` | levantamento topográfico / topografia | Topografia ES 1 mil–10 mil (maior volume) |
+| `regularizacao-de-imovel-vitoria-es` | regularização de imóvel / habite-se | Leis municipais de regularização |
+| `vistoria-cautelar-de-vizinhanca-vitoria-es` | vistoria cautelar de vizinhança | Antes de obra/demolição (CPC BR até R$ 28,79) |
+| `vistoria-de-entrega-de-imovel-vitoria-es` | vistoria de entrega de apartamento | Recebimento de imóvel novo |
+| `laudo-de-reforma-nbr-16280-vitoria-es` | laudo de reforma NBR 16280 / ART de reforma | Reforma em unidade de condomínio |
+| `laudo-spda-vitoria-es` | laudo SPDA / para-raios | Inspeção e laudo (instalação fica na página de incêndio) |
+| `laudo-de-estanqueidade-de-gas-vitoria-es` | laudo de estanqueidade de gás | NT 18 CBMES, renovação do alvará |
+| `projeto-eletrico-e-padrao-de-entrada-vitoria-es` | projeto elétrico / padrão de entrada EDP | Ligação nova e aumento de carga |
+| `laudo-nr10-prontuario-eletrico-vitoria-es` | laudo NR-10 / prontuário elétrico | Empresas acima de 75 kW |
+| `linha-de-vida-nr35-vitoria-es` | linha de vida NR-35 | Galpões, coberturas e fachadas |
+| `inspecao-predial-vitoria-es` | inspeção predial NBR 16747 | Diagnóstico (manutenção fica em manutencao-predial) |
+| `ltcat-e-laudo-de-insalubridade-vitoria-es` | LTCAT / laudo de insalubridade | NR-15, NR-16, eSocial |
+| `licenciamento-ambiental-vitoria-es` | licenciamento ambiental | IEMA, prefeitura, AGERH |
+| `sondagem-de-solo-vitoria-es` | sondagem SPT / sondagem de solo | NBR 6484 e NBR 8036 |
+
+**Deploy: NÃO feito — aguardando o Felipe confirmar quem executa cada serviço** (ver PAINEL, decisão pendente).
+Links recíprocos: laudos-tecnicos-e-art (bloco novo em "Tipos de laudo") + Continue lendo de 14 páginas existentes.
+
+- [ ] https://nr13sistema.com.br/levantamento-topografico-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/regularizacao-de-imovel-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/vistoria-cautelar-de-vizinhanca-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/vistoria-de-entrega-de-imovel-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-reforma-nbr-16280-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-spda-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-estanqueidade-de-gas-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/projeto-eletrico-e-padrao-de-entrada-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-nr10-prontuario-eletrico-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/linha-de-vida-nr35-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/inspecao-predial-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/ltcat-e-laudo-de-insalubridade-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/licenciamento-ambiental-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/sondagem-de-solo-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] Sitemap (100 URLs) — reenviar depois do deploy
+
+---
+
 ## 07/10/2026 — cluster acessibilidade: 4 landings com ART (sitemap 82 → 86)
 
 Pedido do Felipe: páginas de laudo técnico de acessibilidade com ART, imagens profissionais, hero sem
