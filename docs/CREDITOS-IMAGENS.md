@@ -347,3 +347,47 @@ via `fetch` dentro da aba passou a travar (desafio anti-bot); navegar direto par
 | `sondagem-trado-solo.webp` | https://www.pexels.com/photo/14840752/ | sondagem |
 | `sondagem-perfuratriz-obra.webp` | https://www.pexels.com/photo/15109993/ | sondagem |
 | `sondagem-maquina-canteiro.webp` | https://www.pexels.com/photo/29470002/ | sondagem |
+
+
+## Lote 08/10/2026 — acessibilidade, 2ª rodada (9 páginas)
+
+Pexels, uso comercial livre. Mesmo tratamento do lote anterior. Fotos reais de Vila Velha, Vitória (Terceira Ponte)
+e Guarapari. A foto 13871327 e a 9808741 aparecem em 2 páginas cada (limite da regra).
+
+| Arquivo no site | Pexels | Página |
+|---|---|---|
+| `hero-acessibilidade-escola.webp` | https://www.pexels.com/photo/289740/ | escola |
+| `acessibilidade-escola-corredor.webp` | https://www.pexels.com/photo/29636314/ | escola |
+| `acessibilidade-estudante-cadeira.webp` | https://www.pexels.com/photo/8524612/ | escola |
+| `acessibilidade-sala-de-aula.webp` | https://www.pexels.com/photo/36650153/ | escola |
+| `hero-acessibilidade-clinica.webp` | https://www.pexels.com/photo/8459996/ | clínica |
+| `acessibilidade-clinica-corredor-cadeira.webp` | https://www.pexels.com/photo/6129141/ | clínica |
+| `acessibilidade-clinica-atendimento.webp` | https://www.pexels.com/photo/30688589/ | clínica |
+| `acessibilidade-clinica-espera.webp` | https://www.pexels.com/photo/31377751/ | clínica |
+| `hero-acessibilidade-hotel.webp` | https://www.pexels.com/photo/15176820/ | hotel |
+| `acessibilidade-hotel-recepcao.webp` | https://www.pexels.com/photo/7821349/ | hotel |
+| `acessibilidade-hotel-quarto.webp` | https://www.pexels.com/photo/30767889/ | hotel |
+| `acessibilidade-banheiro-barra-chuveiro.webp` | https://www.pexels.com/photo/13871327/ | hotel |
+| `hero-banheiro-acessivel.webp` | https://www.pexels.com/photo/13871327/ | guia banheiro |
+| `hero-acessibilidade-igreja.webp` | https://www.pexels.com/photo/16820349/ | igreja |
+| `acessibilidade-igreja-bancos.webp` | https://www.pexels.com/photo/7219526/ | igreja |
+| `acessibilidade-igreja-corredor.webp` | https://www.pexels.com/photo/35697216/ | igreja |
+| `acessibilidade-rampa-corrimao.webp` | https://www.pexels.com/photo/9808741/ | igreja |
+| `hero-rampa-nbr9050.webp` | https://www.pexels.com/photo/9808741/ | guia rampa |
+| `hero-acessibilidade-vila-velha.webp` | https://www.pexels.com/photo/10075477/ | Vila Velha |
+| `acessibilidade-escada-entrada.webp` | https://www.pexels.com/photo/3964820/ | Vila Velha |
+| `acessibilidade-vaga-simbolo.webp` | https://www.pexels.com/photo/26651561/ | Vila Velha, Guarapari |
+| `acessibilidade-terceira-ponte.webp` | https://www.pexels.com/photo/23356023/ | Vila Velha |
+| `hero-acessibilidade-guarapari.webp` | https://www.pexels.com/photo/15181120/ | Guarapari |
+| `acessibilidade-guarapari-orla.webp` | https://www.pexels.com/photo/15138937/ | Guarapari |
+| `acessibilidade-guarapari-aerea.webp` | https://www.pexels.com/photo/7876475/ | Guarapari |
+| `hero-quanto-custa-laudo-acessibilidade.webp` | https://www.pexels.com/photo/7937315/ | quanto custa |
+| `acessibilidade-orcamento-contrato.webp` | https://www.pexels.com/photo/8470830/ | quanto custa |
+| `acessibilidade-planta-tecnica.webp` | https://www.pexels.com/photo/4458197/ | quanto custa |
+| `acessibilidade-sanitario-publico.webp` | https://www.pexels.com/photo/20846593/ | quanto custa |
+| `acessibilidade-banheiro-barras.webp` | https://www.pexels.com/photo/10421641/ | guia banheiro |
+| `acessibilidade-placa-banheiro.webp` | https://www.pexels.com/photo/13554363/ | guia banheiro |
+| `acessibilidade-dispenser-porta.webp` | https://www.pexels.com/photo/189472/ | guia banheiro |
+| `acessibilidade-rampa-entrada-beco.webp` | https://www.pexels.com/photo/30917750/ | guia rampa |
+| `acessibilidade-rampa-garagem.webp` | https://www.pexels.com/photo/15143512/ | guia rampa |
+| `acessibilidade-passarela-rampa.webp` | https://www.pexels.com/photo/17839549/ | guia rampa |

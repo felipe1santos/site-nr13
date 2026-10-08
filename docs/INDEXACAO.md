@@ -28,6 +28,40 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 
 ---
 
+## 08/10/2026 — acessibilidade, 2ª rodada: 9 páginas testando novos ângulos (sitemap 100 → 109)
+
+Pedido do Felipe: "ranqueia isso com mais páginas, testando novas formas de abordar". Quatro abordagens no
+mesmo cluster, todas ligadas ao hub `laudo-de-acessibilidade-nbr9050` (bloco novo "por tipo de imóvel, cidade e
+guia técnico"): **segmento**, **cidade**, **preço** e **guia técnico** (schema Article). Comparar desempenho por
+abordagem no Search Console daqui a 30–60 dias (impressões/cliques por URL) para decidir o próximo lote.
+
+| URL | Consulta principal | Abordagem |
+|---|---|---|
+| `laudo-de-acessibilidade-para-escola-vitoria-es` | acessibilidade em escolas | Segmento |
+| `laudo-de-acessibilidade-para-clinica-vitoria-es` | acessibilidade clínica / consultório | Segmento (RDC 50, Vigilância) |
+| `laudo-de-acessibilidade-para-hotel-e-pousada-es` | acessibilidade hotel / pousada | Segmento (LBI art. 45, Dec. 9.296) |
+| `laudo-de-acessibilidade-para-igreja-vitoria-es` | acessibilidade igreja / templo | Segmento (local de reunião) |
+| `laudo-de-acessibilidade-vila-velha-es` | laudo de acessibilidade Vila Velha | Cidade |
+| `laudo-de-acessibilidade-guarapari-es` | laudo de acessibilidade Guarapari | Cidade (turismo) |
+| `quanto-custa-laudo-de-acessibilidade-es` | quanto custa laudo de acessibilidade | Intenção de preço |
+| `banheiro-acessivel-nbr-9050-medidas` | banheiro acessível NBR 9050 medidas | Guia técnico (Article) |
+| `rampa-de-acessibilidade-nbr-9050-inclinacao` | rampa NBR 9050 inclinação | Guia técnico (Article) |
+
+Links recíprocos: hub NBR 9050, alvará, condomínio, MP, ART, playground, AVCB, PMOC (Continue lendo).
+
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-escola-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-clinica-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-hotel-e-pousada-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-igreja-vitoria-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-vila-velha-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-guarapari-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/quanto-custa-laudo-de-acessibilidade-es.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/banheiro-acessivel-nbr-9050-medidas.html — criada 08/10; aguardando deploy
+- [ ] https://nr13sistema.com.br/rampa-de-acessibilidade-nbr-9050-inclinacao.html — criada 08/10; aguardando deploy
+- [ ] Sitemap (109 URLs) — reenviar depois do deploy
+
+---
+
 ## 08/10/2026 — 14 landings de serviços novos (pesquisa de demanda; sitemap 86 → 100)
 
 Pedido do Felipe: pesquisar o volume de buscas de serviços de engenharia na Grande Vitória e criar
@@ -51,24 +85,24 @@ Mesmo padrão do lote de 07/10 (hero sem malha, 4–5 fotos Pexels, recorte decl
 | `licenciamento-ambiental-vitoria-es` | licenciamento ambiental | IEMA, prefeitura, AGERH |
 | `sondagem-de-solo-vitoria-es` | sondagem SPT / sondagem de solo | NBR 6484 e NBR 8036 |
 
-**Deploy: NÃO feito — aguardando o Felipe confirmar quem executa cada serviço** (ver PAINEL, decisão pendente).
+**Subido em 08/10/2026:** commit `ac70bc1` + Redeploy (Livewire); 14 URLs e sitemap (100) respondendo 200. Felipe confirmou: parceiros executam, Axial orça e direciona — texto "equipe pronta para atender toda a demanda" incluído.
 Links recíprocos: laudos-tecnicos-e-art (bloco novo em "Tipos de laudo") + Continue lendo de 14 páginas existentes.
 
-- [ ] https://nr13sistema.com.br/levantamento-topografico-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/regularizacao-de-imovel-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/vistoria-cautelar-de-vizinhanca-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/vistoria-de-entrega-de-imovel-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-reforma-nbr-16280-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-spda-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-estanqueidade-de-gas-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/projeto-eletrico-e-padrao-de-entrada-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-nr10-prontuario-eletrico-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/linha-de-vida-nr35-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/inspecao-predial-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/ltcat-e-laudo-de-insalubridade-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/licenciamento-ambiental-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/sondagem-de-solo-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] Sitemap (100 URLs) — reenviar depois do deploy
+- [x] https://nr13sistema.com.br/levantamento-topografico-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [ ] https://nr13sistema.com.br/regularizacao-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — 08/10 pedido deu "A cota foi excedida" → 1º da fila no próximo dia
+- [x] https://nr13sistema.com.br/vistoria-cautelar-de-vizinhanca-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [ ] https://nr13sistema.com.br/vistoria-de-entrega-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-reforma-nbr-16280-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] https://nr13sistema.com.br/laudo-spda-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [ ] https://nr13sistema.com.br/laudo-de-estanqueidade-de-gas-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/projeto-eletrico-e-padrao-de-entrada-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-nr10-prontuario-eletrico-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/linha-de-vida-nr35-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] https://nr13sistema.com.br/inspecao-predial-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [ ] https://nr13sistema.com.br/ltcat-e-laudo-de-insalubridade-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/licenciamento-ambiental-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [ ] https://nr13sistema.com.br/sondagem-de-solo-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] Sitemap (100 URLs) reenviado 08/10/2026 ~05h — "Sitemap enviado"
 
 ---
 
@@ -94,10 +128,10 @@ Escopo declarado: laudo, plano de adequação e vistoria de conferência. **Exec
 (fica com a empreiteira do cliente). Links recíprocos: laudo-de-acessibilidade-nbr9050 (texto + Continue
 lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
 
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — 07/10 inspecionada ("não está no Google") e pedido clicado; aparece "Testando", mas a confirmação não ficou na tela. Reinspecionada 07/10 à tarde: ainda fora e novo pedido deu "cota excedida" → **pedir de novo no próximo dia de cota**
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — 07/10 "não está no Google"; pedido deu **"A cota foi excedida"** → próximo dia de cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
-- [ ] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — no ar (200) desde 07/10; aguardando cota
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-alvara-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
+- [x] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
 - [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (links novos; já estava na fila de 01/10)
 - [x] Sitemap (86 URLs) reenviado 07/10/2026 com a janela visível — "Sitemap enviado"
 
