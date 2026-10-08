@@ -30,11 +30,14 @@ _Atualizado em 08/10/2026._
 
 ## Estado atual
 
-- **Site:** 101 páginas, 100 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 08/10/2026.
-- **08/10/2026:** pesquisa de volume de busca na Grande Vitória (Planejador do Google Ads) + **14 landings de serviços novos
-  criadas no disco, SEM deploy** — topografia, regularização/habite-se, vistoria cautelar, vistoria de entrega, reforma
-  NBR 16280, laudo SPDA, estanqueidade de gás, projeto elétrico/padrão EDP, NR-10, linha de vida NR-35, inspeção predial,
-  LTCAT, licenciamento ambiental, sondagem SPT. Detalhe em `PESQUISA-DEMANDA-GV.md` e `INDEXACAO.md`.
+- **Site:** 110 páginas, 109 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 08/10/2026.
+- **08/10/2026:** pesquisa de volume (`PESQUISA-DEMANDA-GV.md`) → **14 landings de serviços novos NO AR** (commit `ac70bc1`).
+  Felipe decidiu: **parceiros executam, Axial orça e direciona** — páginas dizem "equipe pronta para atender toda a demanda".
+  Depois, **9 páginas de acessibilidade** testando 4 abordagens (segmento, cidade, preço, guia técnico) — commit `15f30b8`.
+- **Indexação 08/10:** 8 pedidos aceitos (4 acessibilidade de 07/10 + SPDA, cautelar, inspeção predial, topografia),
+  cota acabou no 9º. Sitemap reenviado. Fila restante em `INDEXACAO.md`.
+- **Hook de início de sessão** (`.claude/settings.local.json` → `.claude/hooks/fila-indexacao.js`): toda sessão nova
+  lista as URLs `[ ]` de `INDEXACAO.md` para pedir indexação antes de qualquer outra coisa (pedido do Felipe).
 - **07/10/2026:** 4 landings de acessibilidade com ART no ar (alvará, condomínio, Ministério Público/TAC, ART) —
   hero sem efeito, 16 fotos novas do Pexels (Pinterest descartado: sem licença comercial). Detalhe em `INDEXACAO.md`.
 - **Efeito three.js:** removido em 03/10/2026 (pedido do Felipe) — hero com malha estática.
@@ -44,15 +47,12 @@ _Atualizado em 08/10/2026._
 
 ## Falta fazer — em ordem
 
-00. **Lote de 08/10 (14 landings) — decidir quem executa antes do deploy.** Para cada serviço: Axial executa, parceiro
-   executa (modelo wallbox, comissão) ou não publica. Exigem habilitação específica: LTCAT (eng. de segurança),
-   georreferenciamento (credenciado INCRA), gás (RT cadastrado no CBMES), projeto elétrico/NR-10 (eng. eletricista),
-   sondagem (empresa com equipamento), licenciamento (área ambiental). Depois: commit + push + Redeploy + curl 200 +
-   reenviar sitemap (100) + pedir indexação (fila em INDEXACAO.md). Se alguma página for descartada, apagar o arquivo,
-   a linha do sitemap e os links recíprocos (14 páginas em "Continue lendo" + bloco no pilar de laudos).
+00. **Próximo dia de cota (depois de ~05h):** pedir indexação na ordem: regularização (deu cota excedida), reforma NBR 16280,
+   estanqueidade de gás, NR-10, projeto elétrico, entrega de imóvel, linha de vida, LTCAT, licenciamento, sondagem;
+   depois as 9 de acessibilidade de 08/10 (hub NBR 9050 primeiro, como recrawl). ~2 dias de cota no total.
+   **Em 30–60 dias:** comparar no Search Console o desempenho das 4 abordagens de acessibilidade para decidir o próximo lote.
 
-0. **Indexação do lote de acessibilidade (07/10):** cota acabou no 2º pedido de 07/10. Próximo dia de cota, com a
-   janela do Chrome visível: alvará, condomínio, MP, ART, recrawl NBR 9050. Sitemap 86 já reenviado em 07/10.
+0. ~~Indexação do lote de acessibilidade (07/10)~~ — alvará, condomínio, MP e ART solicitados em 08/10. Falta só o recrawl da NBR 9050 (entra com o lote de 08/10).
 
 1. ~~Redeploy~~ feito 03/10 — lotes de 30/09 e 03/10 no ar (200).
 2. **Indexação:** 10 pedidos aceitos em 03/10 + sitemap (77) processado. Próximo dia de cota (vira ~04h/05h de Brasília): 4 guias
@@ -97,7 +97,11 @@ _Atualizado em 08/10/2026._
 
 ## Linha do tempo
 
-- **08/10/2026** — pesquisa de demanda na Grande Vitória (Planejador do Google Ads, faixas; 2 agentes de pesquisa web:
+- **08/10/2026 (madrugada)** — Felipe confirmou parceiros para os 14 serviços; texto "equipe pronta" incluído; deploy
+  `ac70bc1`; 8 indexações + sitemap 100; hook de fila de indexação criado; 9 páginas de acessibilidade (escola, clínica,
+  hotel/pousada, igreja, Vila Velha, Guarapari, quanto custa, guia de banheiro, guia de rampa) — deploy `15f30b8`, sitemap 109.
+
+- **08/10/2026 (início)** — pesquisa de demanda na Grande Vitória (Planejador do Google Ads, faixas; 2 agentes de pesquisa web:
   volumes/concorrência e leis locais); 14 landings criadas com 4–5 fotos Pexels cada (55 WebP novas), links recíprocos em
   14 páginas + pilar de laudos, sitemap 86 → 100, auditoria OK. Deploy pendente da decisão sobre quem executa.
 

@@ -47,18 +47,21 @@ abordagem no Search Console daqui a 30–60 dias (impressões/cliques por URL) p
 | `banheiro-acessivel-nbr-9050-medidas` | banheiro acessível NBR 9050 medidas | Guia técnico (Article) |
 | `rampa-de-acessibilidade-nbr-9050-inclinacao` | rampa NBR 9050 inclinação | Guia técnico (Article) |
 
+**Ordem para o próximo dia de cota (depois de ~05h):** terminar o lote das 14 (regularização primeiro), depois
+hub NBR 9050 (recrawl), quanto custa, Vila Velha, clínica, escola, banheiro, rampa, igreja, hotel, Guarapari.
+
 Links recíprocos: hub NBR 9050, alvará, condomínio, MP, ART, playground, AVCB, PMOC (Continue lendo).
 
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-escola-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-clinica-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-hotel-e-pousada-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-igreja-vitoria-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-vila-velha-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-guarapari-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/quanto-custa-laudo-de-acessibilidade-es.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/banheiro-acessivel-nbr-9050-medidas.html — criada 08/10; aguardando deploy
-- [ ] https://nr13sistema.com.br/rampa-de-acessibilidade-nbr-9050-inclinacao.html — criada 08/10; aguardando deploy
-- [ ] Sitemap (109 URLs) — reenviar depois do deploy
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-escola-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-clinica-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-hotel-e-pousada-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-igreja-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-vila-velha-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-guarapari-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/quanto-custa-laudo-de-acessibilidade-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/banheiro-acessivel-nbr-9050-medidas.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [ ] https://nr13sistema.com.br/rampa-de-acessibilidade-nbr-9050-inclinacao.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [x] Sitemap (109 URLs) reenviado 08/10/2026 — "Sitemap enviado"
 
 ---
 
