@@ -41,6 +41,8 @@
     var href = link.getAttribute('href') || '';
 
     if (href.indexOf('pay.kiwify.com.br') !== -1) {
+      /* página com o formulário do CRM (js/crm-form.js): o evento sai depois do formulário */
+      if (window.crmFormAtivo) return;
       fbq('track', 'InitiateCheckout', {
         content_name: 'Assinatura Sistema NR13',
         content_type: 'product',
