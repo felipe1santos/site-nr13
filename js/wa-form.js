@@ -10,11 +10,64 @@
    guardado mesmo se a pessoa desistir no meio, e a conversa começa com a pergunta dela — não
    com uma frase pronta.
 
+   As duas etapas também vão para o CRM (crm.nr13sistema.com.br), oferta "Orçamentos": a etapa 1
+   cria o card com a página de origem e as UTMs, a etapa 2 junta a dúvida ao card. É assim que o CRM
+   sabe que o contato veio do site; quem manda mensagem direto no número não vira card.
+
    O modal é montado por JS: nenhuma das 34 páginas precisa carregar a marcação. */
 (function () {
   'use strict';
 
   var ENDPOINT = 'https://formspree.io/f/xvznaowy';
+
+  var CRM_URL = 'https://hjjfhgwbnhxvjnysdgbb.supabase.co/rest/v1/rpc/submit_lead_form';
+  var CRM_KEY = 'sb_publishable_TkAdBwmO3UrKh2QP08w-rQ_wPudPTsP'; /* chave pública: o banco só aceita a função do formulário */
+  var CRM_OFERTA = '0d7c4e2a-5b1f-4a8e-b3c6-9f2a71e4c805';           /* Orçamentos */
+  var CHAVE_ORIGEM = 'crm_src';                                       /* mesma chave do crm-form.js */
+
+  /* Primeiro toque: UTM, clique de anúncio e página de entrada ficam guardados até o lead se identificar. */
+  try {
+    var q = new URLSearchParams(location.search);
+    var toque = {};
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'].forEach(function (k) {
+      if (q.get(k)) toque[k] = q.get(k);
+    });
+    if (!localStorage.getItem(CHAVE_ORIGEM) || Object.keys(toque).length) {
+      toque.landing = location.href.split('#')[0];
+      toque.referrer = document.referrer || '';
+      localStorage.setItem(CHAVE_ORIGEM, JSON.stringify(toque));
+    }
+  } catch (e) { /* navegador sem storage: segue sem origem */ }
+
+  function origemCrm() {
+    var s = {};
+    try { s = JSON.parse(localStorage.getItem(CHAVE_ORIGEM) || '{}'); } catch (e) { /* ignora */ }
+    return {
+      page: location.hostname + location.pathname,
+      landing: s.landing, referrer: s.referrer,
+      utmSource: s.utm_source || (s.gclid ? 'google' : s.fbclid ? 'facebook' : undefined),
+      utmMedium: s.utm_medium || (s.gclid || s.fbclid ? 'cpc' : undefined),
+      utmCampaign: s.utm_campaign, utmContent: s.utm_content, utmTerm: s.utm_term,
+      gclid: s.gclid, fbclid: s.fbclid
+    };
+  }
+
+  /* Falha do CRM nunca segura o visitante: o Formspree continua sendo o registro garantido.
+     keepalive deixa o envio terminar mesmo com a página indo para o WhatsApp. */
+  function enviarAoCrm(c, respostas) {
+    try {
+      fetch(CRM_URL, {
+        method: 'POST',
+        keepalive: true,
+        headers: { 'Content-Type': 'application/json', apikey: CRM_KEY, Authorization: 'Bearer ' + CRM_KEY },
+        body: JSON.stringify({
+          p_offer: CRM_OFERTA,
+          p_data: { name: c.nome, phone: c.whatsapp, email: c.email, answers: respostas },
+          p_source: origemCrm()
+        })
+      }).catch(function () {});
+    } catch (e) { /* ignora */ }
+  }
 
   /* Quem já se identificou nesta aba não repete nome e telefone: o próximo clique cai direto
      na etapa da dúvida. A dúvida, essa sim, é pedida toda vez. */
@@ -212,6 +265,7 @@
       }).then(function () {
         contato = { nome: nome, whatsapp: fone, email: email };
         gravarContato(contato);
+        enviarAoCrm(contato, [{ key: 'origem', label: 'Botão clicado', value: origem || '(link sem rótulo)' }]);
         /* o pixel escuta este evento e registra o Lead */
         document.dispatchEvent(new CustomEvent('axial:lead', { detail: { origem: origem } }));
         pintar(telaDuvida());
@@ -228,6 +282,12 @@
 
     limparErro();
     botao.disabled = true;
+    if (contato) {
+      enviarAoCrm(contato, [
+        { key: 'origem', label: 'Botão clicado', value: origem || '(link sem rótulo)' },
+        { key: 'duvida', label: 'Dúvida', value: duvida }
+      ]);
+    }
     document.dispatchEvent(new CustomEvent('axial:contato', { detail: { origem: origem } }));
     irParaWhatsApp(duvida);
   }
