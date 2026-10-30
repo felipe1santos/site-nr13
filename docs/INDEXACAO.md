@@ -1025,14 +1025,14 @@ Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 ### Lote 30/10/2026 — 10 páginas (playground, carregador em condomínio, SPDA, engenharia civil, alvará)
 
 Critério: Search Console 28 dias (72 cliques/3,73 mil impressões, contra 38/1,53 mil): site subindo; quedas em `blog/checklist-de-inspecao-nr13`, `blog/sistema-de-inspecao-nr13` (impressões), `adequacao-nr12`, `combate-a-incendio`; `avcb` com 286 impressões e 3 cliques, com muitas buscas de "alvará bombeiros".
-Criado: 30/10/2026. Subido: push `4931c9e` feito, Redeploy pendente (URLs ainda 404). Indexado: pendente.
+Criado: 30/10/2026. Subido: `253941c` + Redeploy 30/10, todas 200; sitemap reenviado e processado (119). Indexado: 5 pedidos aceitos em 30/10; a 6ª deu "cota excedida".
 
-- [ ] `playground-para-condominio-vitoria-es.html` — criado 30/10/2026
-- [ ] `playground-para-escola-e-creche-vitoria-es.html` — criado 30/10/2026
-- [ ] `carregador-de-carro-eletrico-em-condominio-vitoria-es.html` — criado 30/10/2026
-- [ ] `instalacao-de-carregador-de-carro-eletrico-vila-velha-es.html` — criado 30/10/2026
-- [ ] `instalacao-de-spda-para-raios-vitoria-es.html` — criado 30/10/2026
-- [ ] `spda-para-condominio-vitoria-es.html` — criado 30/10/2026
+- [x] `playground-para-condominio-vitoria-es.html` — pedido aceito 30/10/2026
+- [x] `playground-para-escola-e-creche-vitoria-es.html` — pedido aceito 30/10/2026
+- [x] `carregador-de-carro-eletrico-em-condominio-vitoria-es.html` — pedido aceito 30/10/2026
+- [x] `instalacao-de-carregador-de-carro-eletrico-vila-velha-es.html` — pedido aceito 30/10/2026
+- [x] `instalacao-de-spda-para-raios-vitoria-es.html` — pedido aceito 30/10/2026
+- [ ] `spda-para-condominio-vitoria-es.html` — cota excedida em 30/10; refazer primeiro
 - [ ] `engenheiro-civil-vitoria-es.html` — criado 30/10/2026
 - [ ] `laudo-estrutural-vitoria-es.html` — criado 30/10/2026
 - [ ] `acompanhamento-de-obra-vitoria-es.html` — criado 30/10/2026
