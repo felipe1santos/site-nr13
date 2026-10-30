@@ -13,7 +13,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Pesquisa de demanda (volumes de busca na GV) | [PESQUISA-DEMANDA-GV.md](PESQUISA-DEMANDA-GV.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 08/10/2026._
+_Atualizado em 30/10/2026._
 
 ## Regras fixas (pedido do Felipe)
 
@@ -30,6 +30,7 @@ _Atualizado em 08/10/2026._
 
 ## Estado atual
 
+- **30/10/2026:** 10 landings criadas e no GitHub (commit `4931c9e`), **aguardando Redeploy** — sem ele, 404 e sem indexação. Site 120 páginas, sitemap 119. Lei ES 12.857/2026 incluída nas páginas de recarga.
 - **Site:** 110 páginas, 109 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 08/10/2026.
 - **08/10/2026:** pesquisa de volume (`PESQUISA-DEMANDA-GV.md`) → **14 landings de serviços novos NO AR** (commit `ac70bc1`).
   Felipe decidiu: **parceiros executam, Axial orça e direciona** — páginas dizem "equipe pronta para atender toda a demanda".
@@ -49,6 +50,8 @@ _Atualizado em 08/10/2026._
 - **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
 
 ## Falta fazer — em ordem
+
+000. **Lote 30/10:** Redeploy no Coolify → curl 200 → reenviar sitemap (119) → solicitar indexação das 10 (lista em `INDEXACAO.md`). Felipe confirmar o escopo civil: laudo estrutural, acompanhamento de obra e engenheiro civil usam o texto "equipe pronta". Depois, seguir a fila antiga.
 
 00. **Próximo dia de cota (depois de ~05h):** pedir indexação na ordem: regularização (deu cota excedida), reforma NBR 16280,
    estanqueidade de gás, NR-10, projeto elétrico, entrega de imóvel, linha de vida, LTCAT, licenciamento, sondagem;
@@ -99,6 +102,8 @@ _Atualizado em 08/10/2026._
 | 03/10/2026 | Eletricista da Grande Vitória (Weverton) | Wallbox, infraestrutura e passagem de cabos, quadros, proteções, adequação para carregadores | Axial capta pelo site e repassa; fica com **20%** | `instalacao-de-wallbox-vitoria-es`, `carregador-de-carro-eletrico-para-empresas-vitoria-es`, `montagem-de-quadro-eletrico-vitoria-es` (+ NT 23 já existente) |
 
 ## Linha do tempo
+
+- **30/10/2026** — Search Console 28 dias: 72 cliques/3,73 mil impressões contra 38/1,53 mil. Criadas 10 páginas: playground (condomínio, escola), carregador (condomínio, Vila Velha), SPDA (instalação, condomínio), civil (engenheiro civil, laudo estrutural, acompanhamento de obra) e renovação do alvará. Links em 19 páginas + home; ata e NT 23 atualizadas com a Lei 12.857/2026. Push `4931c9e`; Redeploy barrado pelo controle de permissões.
 
 - **28/10/2026** — CRM: oferta Orçamentos criada (migration `0005_offer_orcamentos.sql` no repo crm, rodada pelo Felipe no
   SQL Editor); wa-form.js envia leads do site para ela; cache `?v=20261028a`; deploy `b48a667` + Redeploy; teste ponta a ponta OK.
