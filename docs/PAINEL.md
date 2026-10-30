@@ -43,6 +43,9 @@ _Atualizado em 08/10/2026._
 - **Efeito three.js:** removido em 03/10/2026 (pedido do Felipe) — hero com malha estática.
 - **Deploy:** push vai para `felipe1santos/site-nr13`; **publicar exige Redeploy manual no Coolify**
   (app *SITE NR13*). Sem Redeploy a página nova dá 404 e não pode ser indexada.
+- **Leads → CRM (28/10/2026):** o `js/wa-form.js` (porteiro de todo botão de WhatsApp, 109 páginas) manda as 2 etapas
+  para o CRM (crm.nr13sistema.com.br), oferta **Orçamentos** (id `0d7c4e2a-5b1f-4a8e-b3c6-9f2a71e4c805`), com página,
+  UTMs, botão clicado e dúvida. Formspree continua. Mensagem direta no número NÃO vira card. Deploy `b48a667`.
 - **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
 
 ## Falta fazer — em ordem
@@ -96,6 +99,9 @@ _Atualizado em 08/10/2026._
 | 03/10/2026 | Eletricista da Grande Vitória (Weverton) | Wallbox, infraestrutura e passagem de cabos, quadros, proteções, adequação para carregadores | Axial capta pelo site e repassa; fica com **20%** | `instalacao-de-wallbox-vitoria-es`, `carregador-de-carro-eletrico-para-empresas-vitoria-es`, `montagem-de-quadro-eletrico-vitoria-es` (+ NT 23 já existente) |
 
 ## Linha do tempo
+
+- **28/10/2026** — CRM: oferta Orçamentos criada (migration `0005_offer_orcamentos.sql` no repo crm, rodada pelo Felipe no
+  SQL Editor); wa-form.js envia leads do site para ela; cache `?v=20261028a`; deploy `b48a667` + Redeploy; teste ponta a ponta OK.
 
 - **08/10/2026 (madrugada)** — Felipe confirmou parceiros para os 14 serviços; texto "equipe pronta" incluído; deploy
   `ac70bc1`; 8 indexações + sitemap 100; hook de fila de indexação criado; 9 páginas de acessibilidade (escola, clínica,

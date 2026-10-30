@@ -1019,3 +1019,21 @@ Cada artigo novo entra no `sitemap.xml` **e** nesta lista no mesmo dia.
 **Cluster PMOC** (pilar: `/pmoc-vitoria-es.html`)
 - [x] `blog/pmoc-obrigatorio-quem-precisa.html` — 26/09/2026
 - [x] `blog/qualidade-do-ar-interior-parametros.html` — 26/09/2026
+
+---
+
+### Lote 30/10/2026 — 10 páginas (playground, carregador em condomínio, SPDA, engenharia civil, alvará)
+
+Critério: Search Console 28 dias (72 cliques/3,73 mil impressões, contra 38/1,53 mil): site subindo; quedas em `blog/checklist-de-inspecao-nr13`, `blog/sistema-de-inspecao-nr13` (impressões), `adequacao-nr12`, `combate-a-incendio`; `avcb` com 286 impressões e 3 cliques, com muitas buscas de "alvará bombeiros".
+Criado: 30/10/2026. Subido: pendente. Indexado: pendente.
+
+- [ ] `playground-para-condominio-vitoria-es.html` — criado 30/10/2026
+- [ ] `playground-para-escola-e-creche-vitoria-es.html` — criado 30/10/2026
+- [ ] `carregador-de-carro-eletrico-em-condominio-vitoria-es.html` — criado 30/10/2026
+- [ ] `instalacao-de-carregador-de-carro-eletrico-vila-velha-es.html` — criado 30/10/2026
+- [ ] `instalacao-de-spda-para-raios-vitoria-es.html` — criado 30/10/2026
+- [ ] `spda-para-condominio-vitoria-es.html` — criado 30/10/2026
+- [ ] `engenheiro-civil-vitoria-es.html` — criado 30/10/2026
+- [ ] `laudo-estrutural-vitoria-es.html` — criado 30/10/2026
+- [ ] `acompanhamento-de-obra-vitoria-es.html` — criado 30/10/2026
+- [ ] `renovacao-de-alvara-dos-bombeiros-es.html` — criado 30/10/2026
