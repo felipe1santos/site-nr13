@@ -63,16 +63,21 @@ preço, cidade ou segmento. Serviços novos da pesquisa de 08/10 (`PESQUISA-DEMA
 que o modelo "parceiros executam, Axial orça" vale para todos os serviços. Links novos nas páginas-mãe
 (AVCB, renovação, laudos técnicos, LTCAT, NR-10, regularização).
 
-- [ ] https://nr13sistema.com.br/avaliacao-de-imoveis-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/pericia-de-engenharia-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/pgr-programa-de-gerenciamento-de-riscos-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/termografia-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/laudo-de-periculosidade-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/quanto-custa-alvara-dos-bombeiros-es.html — ângulo preço; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/alvara-dos-bombeiros-vila-velha-es.html — ângulo cidade; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/alvara-dos-bombeiros-para-restaurante-es.html — ângulo segmento; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/avcb-para-condominio-vitoria-es.html — ângulo segmento; criada 15/11/2026; aguardando deploy
-- [ ] https://nr13sistema.com.br/habite-se-vitoria-es.html — ângulo obrigação/documento; criada 15/11/2026; aguardando deploy
+- Deploy: commit `e7d5fa8` + Redeploy no Coolify; as 10 respondem 200; sitemap (129) reenviado — "Sitemap enviado".
+- Indexação: **10/10 pedidos aceitos** ("Indexação solicitada"), ~03h de Brasília.
+- Atenção: o botão no GSC agora se chama "Solicitar indexação" (só a inicial maiúscula), não mais "SOLICITAR INDEXAÇÃO".
+- **~15/12/2026:** comparar no GSC serviços novos × ângulos (preço, cidade, segmento) para decidir o próximo lote.
+
+- [x] https://nr13sistema.com.br/avaliacao-de-imoveis-vitoria-es.html — serviço novo; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/pericia-de-engenharia-vitoria-es.html — serviço novo; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/pgr-programa-de-gerenciamento-de-riscos-vitoria-es.html — serviço novo; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/termografia-vitoria-es.html — serviço novo; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/laudo-de-periculosidade-vitoria-es.html — serviço novo; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/quanto-custa-alvara-dos-bombeiros-es.html — ângulo preço; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/alvara-dos-bombeiros-vila-velha-es.html — ângulo cidade; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/alvara-dos-bombeiros-para-restaurante-es.html — ângulo segmento; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/avcb-para-condominio-vitoria-es.html — ângulo segmento; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
+- [x] https://nr13sistema.com.br/habite-se-vitoria-es.html — ângulo obrigação/documento; criada 15/11/2026; no ar (200) commit `e7d5fa8` + Redeploy — **indexação solicitada em 15/11/2026**
 
 ## 08/10/2026 — acessibilidade, 2ª rodada: 9 páginas testando novos ângulos (sitemap 100 → 109)
 

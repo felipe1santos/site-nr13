@@ -13,7 +13,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Pesquisa de demanda (volumes de busca na GV) | [PESQUISA-DEMANDA-GV.md](PESQUISA-DEMANDA-GV.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 30/10/2026._
+_Atualizado em 15/11/2026._
 
 ## Regras fixas (pedido do Felipe)
 
@@ -30,6 +30,7 @@ _Atualizado em 30/10/2026._
 
 ## Estado atual
 
+- **15/11/2026 (lote):** 10 landings novas no ar (`e7d5fa8`, Redeploy feito, todas 200) — 5 serviços novos (avaliação de imóveis, perícia, PGR, termografia, periculosidade) + 5 ângulos (quanto custa o alvará, alvará Vila Velha, alvará restaurante, AVCB condomínio, habite-se). Sitemap 129 reenviado; **10/10 indexações aceitas**. Site 130 páginas. Felipe: regra de parceiros vale para todos os serviços.
 - **15/11/2026:** fila de indexação zerada — as 4 restantes e as 11 pedidas em 05/11 já estão no Google; sitemap reenviado. Nenhuma página nova fora do registro.
 - **05/11/2026:** fila de indexação reconciliada com o Search Console: 73 URLs inspecionadas, 58 já estavam no Google, 11 pedidos aceitos (cota acabou no 12º). Faltam 4: rampa NBR 9050, acessibilidade igreja, hotel/pousada e Guarapari. Guia Vila Velha enviado (aprovação até 15 dias). Felipe autorizou o assistente a fazer toda a indexação no GSC sem pedir OK (ver topo do `INDEXACAO.md`).
 - **30/10/2026:** 10 landings no ar (`253941c`, Redeploy feito, todas 200). Sitemap 119 processado. 5 indexações aceitas; cota acabou na 6ª. Site 120 páginas, sitemap 119. Lei ES 12.857/2026 incluída nas páginas de recarga.
@@ -54,6 +55,8 @@ _Atualizado em 30/10/2026._
 ## Falta fazer — em ordem
 
 000. ~~Lote 30/10~~ — as 5 restantes já estavam no Google (inspeção 05/11).
+
+0000. **~15/12/2026:** inspecionar o lote de 15/11 e comparar serviços novos × ângulos no Search Console.
 
 00. ~~4 restantes de acessibilidade~~ — já indexadas (inspeção 15/11).
    **Em 30–60 dias:** comparar no Search Console o desempenho das 4 abordagens de acessibilidade para decidir o próximo lote.
