@@ -19,9 +19,9 @@ Regra de ouro: **nome, endereço e telefone (NAP) idênticos em todos os cadastr
 
 | Feitos | Em andamento | Faltam | Descartados |
 |---|---|---|---|
-| 0 | 2 | 31 (1 pausado: Apple) | 0 |
+| 0 | 3 | 31 (1 pausado: Apple) | 0 |
 
-_Atualizado em 03/10/2026. Google (edições em análise) e Bing (publicação pendente) em andamento.
+_Atualizado em 05/11/2026. Google (edições em análise), Bing (publicação pendente) e Guia Vila Velha (aprovação até 15 dias) em andamento.
 Histórico detalhado no fim do arquivo._
 
 ---
@@ -69,6 +69,7 @@ Histórico detalhado no fim do arquivo._
 | 22 | CNPJ.biz | https://cnpj.biz/ | ⬜ | | | Idem |
 | 23 | Empresaqui | https://www.empresaqui.com.br/ | ⬜ | | | Idem |
 | 24 | Reclame Aqui (perfil da empresa) | https://www.reclameaqui.com.br/ | ⬜ | | | Selo de confiança; responder rápido se houver queixa |
+| 34 | Guia Vila Velha | https://guia.vilavelha.net.br/ | 🟡 | 05/11/2026 | (sai após aprovação) | Conta "axial-engenharia" (Felipe criou). Anúncio grátis enviado, categoria Engenharia; aprovação manual em até 15 dias. Sem fotos |
 
 ## 5. Links do nicho — os que mais sobem ranking (fazer em paralelo)
 
@@ -173,6 +174,16 @@ e comentário em blog com link. O Google ignora ou pune — e páginas novas sã
 ---
 
 ## Histórico (mais recente primeiro)
+
+### 05/11/2026 — Guia Vila Velha
+- Felipe criou a conta (usuário `axial-engenharia`) e logou; assistente preencheu e enviou o anúncio grátis.
+- Dados: Axial Engenharia · Av. Henrique Moscoso, 2250, Jaburuna, Vila Velha/ES, 29100-650 · (27) 99253-4407
+  celular/WhatsApp · nr13sistema@gmail.com · https://nr13sistema.com.br/ · seg–sex 08h–18h · categoria
+  **Engenharia** · descrição com NR-13, NR-12, PMOC, END, incêndio, acessibilidade e montagem de estrutura
+  metálica (sem "fabricação") · palavras-chave preenchidas.
+- Fotos puladas (só há fotos de banco no site). Resposta do site: "pendente de aprovação, até 15 dias".
+- **Falta:** conferir ~20/11 se o anúncio foi aprovado, anotar a URL e marcar ✅; subir logo/fotos reais em
+  "Gerenciar minhas empresas" quando houver.
 
 ### 04/10/2026 — Apple Business pausado
 - Felipe abriu https://business.apple.com/signup, mas a tela é **criação de conta** (o assistente não

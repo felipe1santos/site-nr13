@@ -9,6 +9,34 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 > Só faz sentido solicitar indexação de URL que já está **no ar** — a página precisa
 > responder 200 no domínio antes do pedido.
 
+## AUTORIZAÇÃO E REGRA DE COTA (Felipe, 05/11/2026)
+
+- **Autorização permanente:** o assistente está autorizado pelo Felipe a entrar no Google Search Console
+  usando a extensão Claude in Chrome (conta já logada no Chrome) e fazer **toda a indexação que for
+  necessária** — inspecionar URLs, solicitar indexação e reenviar o sitemap — sem pedir confirmação a cada vez.
+- **Inspecionar URL não gasta cota. Solicitar indexação gasta** (limite de ~10 pedidos por dia; a cota vira
+  ~05h de Brasília). Por isso: **inspecionar todas as URLs pendentes primeiro e só solicitar indexação das que
+  voltarem "O URL não está no Google"**. As que já estão no Google recebem apenas a anotação "já indexada (data)".
+- A fila `[ ]` deste arquivo não é fonte de verdade: muitas URLs marcadas como pendentes já estão indexadas.
+
+
+## 15/11/2026 — fila zerada
+
+- `node docs/auditar-indexacao.js`: 120 páginas, 119 no sitemap, nenhuma página fora do registro.
+- As 4 pendentes (hotel/pousada, igreja, Guarapari, rampa NBR 9050) respondem 200 e **já estavam no Google** — nenhum pedido gasto.
+- As 11 solicitadas em 05/11 foram reinspecionadas: **todas no Google**.
+- Sitemap reenviado ("Sitemap enviado").
+
+## 05/11/2026 — reconciliação da fila com o Search Console
+
+- 67 URLs `[ ]` na fila; todas respondem 200 (curl).
+- Inspeção (grátis) das 67: **52 já estavam no Google** → marcadas `[x]` "já indexada".
+- **15 fora do Google** → 11 pedidos aceitos ("Indexação solicitada"); a cota acabou no 12º ("A cota foi excedida").
+  1 pedido (sondagem) deu "Ops… algo deu errado" na 1ª tentativa e foi aceito na 2ª.
+- Itens antigos em formato curto (sistema-nr12, SPDA condomínio, engenheiro civil, laudo estrutural,
+  acompanhamento de obra, renovação de alvará): inspecionados, **todos já no Google**.
+- **Faltam 4** (ficam `[ ]`): rampa NBR 9050, acessibilidade igreja, hotel/pousada e Guarapari — solicitar no próximo dia depois de ~05h.
+
 ## REGRA PERMANENTE — auditar indexação antes de fechar qualquer sessão
 
 **Obrigatório em toda sessão de trabalho no site**, mesmo que nenhuma página tenha sido criada:
@@ -27,6 +55,24 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 > linha fica `[ ]` com a observação "aguardando deploy".
 
 ---
+
+## 15/11/2026 — lote de 10: 5 serviços novos + 5 ângulos novos (sitemap 119 → 129)
+
+Escolha pelo Search Console (3 meses): "alvará/AVCB bombeiros" em dezenas de variações, posição 5–9, sem página de
+preço, cidade ou segmento. Serviços novos da pesquisa de 08/10 (`PESQUISA-DEMANDA-GV.md`). Felipe confirmou em 15/11
+que o modelo "parceiros executam, Axial orça" vale para todos os serviços. Links novos nas páginas-mãe
+(AVCB, renovação, laudos técnicos, LTCAT, NR-10, regularização).
+
+- [ ] https://nr13sistema.com.br/avaliacao-de-imoveis-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/pericia-de-engenharia-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/pgr-programa-de-gerenciamento-de-riscos-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/termografia-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/laudo-de-periculosidade-vitoria-es.html — serviço novo; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/quanto-custa-alvara-dos-bombeiros-es.html — ângulo preço; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/alvara-dos-bombeiros-vila-velha-es.html — ângulo cidade; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/alvara-dos-bombeiros-para-restaurante-es.html — ângulo segmento; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/avcb-para-condominio-vitoria-es.html — ângulo segmento; criada 15/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/habite-se-vitoria-es.html — ângulo obrigação/documento; criada 15/11/2026; aguardando deploy
 
 ## 08/10/2026 — acessibilidade, 2ª rodada: 9 páginas testando novos ângulos (sitemap 100 → 109)
 
@@ -52,15 +98,15 @@ hub NBR 9050 (recrawl), quanto custa, Vila Velha, clínica, escola, banheiro, ra
 
 Links recíprocos: hub NBR 9050, alvará, condomínio, MP, ART, playground, AVCB, PMOC (Continue lendo).
 
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-escola-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-clinica-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-hotel-e-pousada-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-para-igreja-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-vila-velha-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-guarapari-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/quanto-custa-laudo-de-acessibilidade-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/banheiro-acessivel-nbr-9050-medidas.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
-- [ ] https://nr13sistema.com.br/rampa-de-acessibilidade-nbr-9050-inclinacao.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-escola-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-clinica-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-hotel-e-pousada-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — 05/11/2026: inspecionada, fora do Google; cota do dia esgotada → solicitar no próximo dia — **15/11/2026: inspecionada, já indexada** (sem pedido)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-igreja-vitoria-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — 05/11/2026: inspecionada, fora do Google; cota do dia esgotada → solicitar no próximo dia — **15/11/2026: inspecionada, já indexada** (sem pedido)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-vila-velha-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-guarapari-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — 05/11/2026: inspecionada, fora do Google; cota do dia esgotada → solicitar no próximo dia — **15/11/2026: inspecionada, já indexada** (sem pedido)
+- [x] https://nr13sistema.com.br/quanto-custa-laudo-de-acessibilidade-es.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/banheiro-acessivel-nbr-9050-medidas.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/rampa-de-acessibilidade-nbr-9050-inclinacao.html — criada e no ar (200) em 08/10, commit `15f30b8`; aguardando cota — 05/11/2026: inspecionada, fora do Google; cota do dia esgotada → solicitar no próximo dia — **15/11/2026: inspecionada, já indexada** (sem pedido)
 - [x] Sitemap (109 URLs) reenviado 08/10/2026 — "Sitemap enviado"
 
 ---
@@ -92,19 +138,19 @@ Mesmo padrão do lote de 07/10 (hero sem malha, 4–5 fotos Pexels, recorte decl
 Links recíprocos: laudos-tecnicos-e-art (bloco novo em "Tipos de laudo") + Continue lendo de 14 páginas existentes.
 
 - [x] https://nr13sistema.com.br/levantamento-topografico-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
-- [ ] https://nr13sistema.com.br/regularizacao-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — 08/10 pedido deu "A cota foi excedida" → 1º da fila no próximo dia
+- [x] https://nr13sistema.com.br/regularizacao-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — 08/10 pedido deu "A cota foi excedida" → 1º da fila no próximo dia — ✅ já indexada (inspeção GSC 05/11/2026)
 - [x] https://nr13sistema.com.br/vistoria-cautelar-de-vizinhanca-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
-- [ ] https://nr13sistema.com.br/vistoria-de-entrega-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-de-reforma-nbr-16280-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] https://nr13sistema.com.br/vistoria-de-entrega-de-imovel-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-reforma-nbr-16280-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
 - [x] https://nr13sistema.com.br/laudo-spda-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
-- [ ] https://nr13sistema.com.br/laudo-de-estanqueidade-de-gas-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/projeto-eletrico-e-padrao-de-entrada-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/laudo-nr10-prontuario-eletrico-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/linha-de-vida-nr35-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] https://nr13sistema.com.br/laudo-de-estanqueidade-de-gas-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/projeto-eletrico-e-padrao-de-entrada-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-nr10-prontuario-eletrico-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/linha-de-vida-nr35-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
 - [x] https://nr13sistema.com.br/inspecao-predial-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
-- [ ] https://nr13sistema.com.br/ltcat-e-laudo-de-insalubridade-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/licenciamento-ambiental-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
-- [ ] https://nr13sistema.com.br/sondagem-de-solo-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota
+- [x] https://nr13sistema.com.br/ltcat-e-laudo-de-insalubridade-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/licenciamento-ambiental-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/sondagem-de-solo-vitoria-es.html — criada e no ar (200) em 08/10; aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
 - [x] Sitemap (100 URLs) reenviado 08/10/2026 ~05h — "Sitemap enviado"
 
 ---
@@ -135,7 +181,7 @@ lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
 - [x] https://nr13sistema.com.br/laudo-de-acessibilidade-para-condominio-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
 - [x] https://nr13sistema.com.br/laudo-de-acessibilidade-ministerio-publico-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
 - [x] https://nr13sistema.com.br/art-de-acessibilidade-vitoria-es.html — **Indexação solicitada 08/10/2026 ~05h** (inspecionada: "não está no Google")
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (links novos; já estava na fila de 01/10)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (links novos; já estava na fila de 01/10) — ✅ já indexada (inspeção GSC 05/11/2026)
 - [x] Sitemap (86 URLs) reenviado 07/10/2026 com a janela visível — "Sitemap enviado"
 
 ---
@@ -145,11 +191,11 @@ lendo), laudos-tecnicos-e-art, manutencao-predial-para-condominios, avcb.
 Cota do dia já usada nos 10 pedidos da tarde — **solicitar no próximo dia de cota**, nesta ordem:
 
 - [x] https://nr13sistema.com.br/checklist-recebimento-estrutura-metalica.html — solicitada 04/10/2026 (madrugada)
-- [ ] https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html — 04/10 madrugada deu "cota excedida": a cota vira no horário do Pacífico (~04h/05h de Brasília), pedir depois disso
-- [ ] https://nr13sistema.com.br/carregador-carro-eletrico-condominio-modelo-de-ata.html — aguardando cota
-- [ ] https://nr13sistema.com.br/compressor-de-ar-e-vaso-de-pressao-nr13.html — aguardando cota
-- [ ] https://nr13sistema.com.br/maresia-pintura-galvanizacao-estrutura-metalica-es.html — aguardando cota
-- [ ] Reenviar `https://nr13sistema.com.br/sitemap.xml` (82 URLs) — tentativa de 04/10 não registrou (aba em segundo plano); refazer com a aba em primeiro plano
+- [x] https://nr13sistema.com.br/calculadora-wallbox-padrao-de-entrada.html — 04/10 madrugada deu "cota excedida": a cota vira no horário do Pacífico (~04h/05h de Brasília), pedir depois disso — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/carregador-carro-eletrico-condominio-modelo-de-ata.html — aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/compressor-de-ar-e-vaso-de-pressao-nr13.html — aguardando cota — **indexação solicitada em 05/11/2026** (inspeção: fora do Google)
+- [x] https://nr13sistema.com.br/maresia-pintura-galvanizacao-estrutura-metalica-es.html — aguardando cota — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] Reenviar `https://nr13sistema.com.br/sitemap.xml` (82 URLs) — **reenviado em 15/11/2026 ("Sitemap enviado", 119 URLs)** — tentativa de 04/10 não registrou (aba em segundo plano); refazer com a aba em primeiro plano
 
 Depois deles, os 3 recrawls do lote de 01/10 (laudo-de-playground, laudos-tecnicos, acessibilidade).
 Links recíprocos: montagem, galpão, patologias, NT 23, wallbox, recarga empresas, quadro, inspeção NR-13,
@@ -203,9 +249,9 @@ _Restam 3 recrawls para o próximo dia de cota (laudo-de-playground, laudos-tecn
 - [x] https://nr13sistema.com.br/grama-sintetica-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
 - [x] https://nr13sistema.com.br/avcb-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
 - [x] https://nr13sistema.com.br/projeto-de-incendio-vitoria-es.html — solicitada 03/10/2026 (estava "não está no Google")
-- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — recrawl (title novo + links)
-- [ ] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html — recrawl (title novo)
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (title novo)
+- [x] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — recrawl (title novo + links) — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html — recrawl (title novo) — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — recrawl (title novo) — ✅ já indexada (inspeção GSC 05/11/2026)
 - [x] https://nr13sistema.com.br/ — recrawl solicitado 03/10/2026 (cards de 30/09 e 03/10)
 - [x] Sitemap reenviado em 03/10/2026 já com 77 URLs (ver lote de 03/10)
 
@@ -376,13 +422,13 @@ Artigos NR-12 fecham com faixa do **Sistema NR12** (WhatsApp, sem Kiwify); artig
 
 ### Fila de indexação — 27/09 (cota de 26/09 esgotada; páginas já no ar, 200) — RESOLVIDA em 30/09, ver lote 30/09
 
-- [ ] https://nr13sistema.com.br/blog/spie-servico-proprio-de-inspecao-vale-a-pena.html
-- [ ] https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html
-- [ ] https://nr13sistema.com.br/blog/portal-do-cliente-para-empresa-de-inspecao.html
-- [ ] https://nr13sistema.com.br/blog/apreciacao-de-riscos-o-que-e.html
-- [ ] https://nr13sistema.com.br/blog/quanto-custa-adequar-maquina-nr12.html
-- [ ] https://nr13sistema.com.br/blog/pmoc-obrigatorio-quem-precisa.html
-- [ ] https://nr13sistema.com.br/blog/qualidade-do-ar-interior-parametros.html
+- [x] https://nr13sistema.com.br/blog/spie-servico-proprio-de-inspecao-vale-a-pena.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/planilha-de-inspecao-nr13-por-que-para-de-funcionar.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/portal-do-cliente-para-empresa-de-inspecao.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/apreciacao-de-riscos-o-que-e.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/quanto-custa-adequar-maquina-nr12.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/pmoc-obrigatorio-quem-precisa.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/qualidade-do-ar-interior-parametros.html — ✅ já indexada (inspeção GSC 05/11/2026)
 
 ---
 
@@ -411,9 +457,9 @@ Cada URL foi inspecionada antes do pedido e a URL na tela foi conferida por JS a
 
 ### Fila para 26/09 — cota esgotada ("A cota foi excedida") no 10º pedido — RESOLVIDA em 30/09, ver lote 30/09
 
-- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
-- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — só se o [?] acima não tiver pegado
+- [x] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — só se o [?] acima não tiver pegado — ✅ já indexada (inspeção GSC 05/11/2026)
 
 ---
 
@@ -483,17 +529,17 @@ exibida no topo é a URL pretendida**. Solicitar consome cota; inspecionar não.
 
 ### Fila para amanhã (05/09) — 11 URLs, cota renovada
 
-- [ ] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html
-- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html
-- [ ] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html
-- [ ] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html
-- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html
-- [ ] https://nr13sistema.com.br/camaras-frias-vitoria-es.html
-- [ ] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html
-- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html
-- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html
+- [x] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/camaras-frias-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
 
 - [x] ~~laudos-tecnicos-e-art-vitoria-es.html~~ — solicitada e já indexada em 04/09
 
@@ -639,19 +685,19 @@ Sitemap vai a **46 URLs**. Todas as 12 páginas fecham com `cta-band` para Whats
 
 ### Fila de indexação (ordem de prioridade)
 
-- [ ] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html
-- [ ] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html
-- [ ] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html
-- [ ] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html
-- [ ] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html
-- [ ] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html
-- [ ] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html
-- [ ] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html
-- [ ] https://nr13sistema.com.br/camaras-frias-vitoria-es.html
-- [ ] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html
-- [ ] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html
-- [ ] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html
-- [ ] https://nr13sistema.com.br/ — recrawl da home, que ganhou a seção `#obras`
+- [x] https://nr13sistema.com.br/laudos-tecnicos-e-art-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/manutencao-predial-para-condominios-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/reformas-e-recuperacao-de-fachadas-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/projetos-estruturais-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-acessibilidade-nbr9050-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/patologias-e-corrosao-estrutural-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/construcao-de-galpoes-e-quadras-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/laudo-de-playground-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/camaras-frias-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/exaustao-e-coifas-industriais-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/montagem-industrial-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/nt23-recarga-de-veiculos-eletricos-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/ — recrawl da home, que ganhou a seção `#obras` — ✅ já indexada (inspeção GSC 05/11/2026)
 
 ### Palavra-chave alvo e ângulo de cada página
 
@@ -730,10 +776,10 @@ Dez solicitações manuais aceitas; na décima primeira o Search Console respond
 
 ## Fila do próximo dia
 
-- [ ] https://nr13sistema.com.br/adequacao-nr12-vitoria-es.html
-- [ ] https://nr13sistema.com.br/pmoc-vitoria-es.html
-- [ ] https://nr13sistema.com.br/ensaios-nao-destrutivos-vitoria-es.html
-- [ ] https://nr13sistema.com.br/combate-a-incendio-vitoria-es.html
+- [x] https://nr13sistema.com.br/adequacao-nr12-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/pmoc-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/ensaios-nao-destrutivos-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/combate-a-incendio-vitoria-es.html — ✅ já indexada (inspeção GSC 05/11/2026)
 
 ## Execução de 13/08/2026 — deploy no ar e cota estourada
 
@@ -779,13 +825,13 @@ Dois problemas confirmados na SERP:
 ### Fila para o próximo dia (cota renovada)
 
 - [x] ~~blog/como-calibrar-manometro.html~~ — confirmada indexada, saiu da fila
-- [ ] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html
-- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html
-- [ ] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html
-- [ ] https://nr13sistema.com.br/ — recrawl da home, necessário para o Google atualizar o favicon
+- [x] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/ — recrawl da home, necessário para o Google atualizar o favicon — ✅ já indexada (inspeção GSC 05/11/2026)
 
 > Solicitação manual apenas **acelera** o rastreamento. As 24 URLs já estão no sitemap, então o
 > Google chega nelas sozinho. O que realmente trava a home continua sendo o 301 de `www`, ainda
@@ -797,9 +843,9 @@ Dois problemas confirmados na SERP:
 Sitemap vai a **33 URLs**. Páginas de fundo de funil: a busca por "em minutos" é de quem já
 decidiu que o problema é tempo e está procurando ferramenta.
 
-- [ ] https://nr13sistema.com.br/blog/laudo-nr13-em-minutos.html
-- [ ] https://nr13sistema.com.br/blog/relatorio-nr13-em-minutos.html
-- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13-em-minutos.html
+- [x] https://nr13sistema.com.br/blog/laudo-nr13-em-minutos.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/relatorio-nr13-em-minutos.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13-em-minutos.html — ✅ já indexada (inspeção GSC 05/11/2026)
 
 | URL | Consulta principal | Ângulo (o que evita canibalizar) | Schema |
 |---|---|---|---|
@@ -836,13 +882,13 @@ Ordem de execução depois do deploy:
 1. Reenviar `https://nr13sistema.com.br/sitemap.xml` no Search Console (30 URLs).
 2. Solicitar indexação manual na ordem de prioridade abaixo (teto de ~10 por dia).
 
-- [ ] https://nr13sistema.com.br/blog/relatorio-de-inspecao-de-vaso-de-pressao.html
-- [ ] https://nr13sistema.com.br/blog/como-fazer-checklist-nr13.html
-- [ ] https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html
-- [ ] https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html
-- [ ] https://nr13sistema.com.br/blog/inspecao-de-tubulacao-e-tanque-nr13.html
-- [ ] https://nr13sistema.com.br/blog/placa-de-identificacao-ilegivel-o-que-fazer.html
-- [ ] https://nr13sistema.com.br/blog/ — recrawl do índice, que ganhou 6 cards novos
+- [x] https://nr13sistema.com.br/blog/relatorio-de-inspecao-de-vaso-de-pressao.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/como-fazer-checklist-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/como-calibrar-medidor-de-ultrassom.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/inspecao-de-tubulacao-e-tanque-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/placa-de-identificacao-ilegivel-o-que-fazer.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/ — recrawl do índice, que ganhou 6 cards novos — ✅ já indexada (inspeção GSC 05/11/2026)
 
 Palavra-chave alvo de cada uma:
 
@@ -877,16 +923,16 @@ individual respeita o teto de ~10 por dia, então a fila abaixo vai em duas roda
 
 Ordem de prioridade (intenção de busca mais forte primeiro):
 
-- [ ] https://nr13sistema.com.br/blog/como-gerar-laudo-nr13.html
-- [ ] https://nr13sistema.com.br/blog/como-inspecionar-vaso-de-pressao.html
-- [ ] https://nr13sistema.com.br/blog/como-inspecionar-caldeira-nr13.html
-- [ ] https://nr13sistema.com.br/blog/como-calibrar-manometro.html
-- [ ] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html
-- [ ] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html
-- [ ] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html
-- [ ] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html
+- [x] https://nr13sistema.com.br/blog/como-gerar-laudo-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/como-inspecionar-vaso-de-pressao.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/como-inspecionar-caldeira-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/como-calibrar-manometro.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/sistema-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/periodicidade-de-inspecao-nr13-por-categoria.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/checklist-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/calibracao-de-valvula-de-seguranca-psv.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/bloco-padrao-de-inspecao-nr13.html — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] https://nr13sistema.com.br/blog/vida-remanescente-e-taxa-de-corrosao.html — ✅ já indexada (inspeção GSC 05/11/2026)
 
 Palavra-chave alvo de cada uma:
 
@@ -969,7 +1015,7 @@ Palavra-chave alvo de cada uma:
 
 ## Página nova — 12/09/2026
 
-- [ ] `sistema-nr12.html` — página de produto do **Sistema NR12** (software de gestão NR-12
+- [x] `sistema-nr12.html` — página de produto do **Sistema NR12** (software de gestão NR-12 — ✅ já indexada (inspeção GSC 05/11/2026)
   com módulo NR-10 integrado). Já está no `sitemap.xml` (`lastmod` 2026-09-12), linkada no
   menu principal e no rodapé de todas as páginas do site. **Aguardando deploy**: só solicitar
   indexação depois que `https://nr13sistema.com.br/sistema-nr12.html` responder 200.
@@ -1032,8 +1078,8 @@ Criado: 30/10/2026. Subido: `253941c` + Redeploy 30/10, todas 200; sitemap reenv
 - [x] `carregador-de-carro-eletrico-em-condominio-vitoria-es.html` — pedido aceito 30/10/2026
 - [x] `instalacao-de-carregador-de-carro-eletrico-vila-velha-es.html` — pedido aceito 30/10/2026
 - [x] `instalacao-de-spda-para-raios-vitoria-es.html` — pedido aceito 30/10/2026
-- [ ] `spda-para-condominio-vitoria-es.html` — cota excedida em 30/10; refazer primeiro
-- [ ] `engenheiro-civil-vitoria-es.html` — criado 30/10/2026
-- [ ] `laudo-estrutural-vitoria-es.html` — criado 30/10/2026
-- [ ] `acompanhamento-de-obra-vitoria-es.html` — criado 30/10/2026
-- [ ] `renovacao-de-alvara-dos-bombeiros-es.html` — criado 30/10/2026
+- [x] `spda-para-condominio-vitoria-es.html` — cota excedida em 30/10; refazer primeiro — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] `engenheiro-civil-vitoria-es.html` — criado 30/10/2026 — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] `laudo-estrutural-vitoria-es.html` — criado 30/10/2026 — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] `acompanhamento-de-obra-vitoria-es.html` — criado 30/10/2026 — ✅ já indexada (inspeção GSC 05/11/2026)
+- [x] `renovacao-de-alvara-dos-bombeiros-es.html` — criado 30/10/2026 — ✅ já indexada (inspeção GSC 05/11/2026)

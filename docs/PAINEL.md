@@ -30,6 +30,8 @@ _Atualizado em 30/10/2026._
 
 ## Estado atual
 
+- **15/11/2026:** fila de indexação zerada — as 4 restantes e as 11 pedidas em 05/11 já estão no Google; sitemap reenviado. Nenhuma página nova fora do registro.
+- **05/11/2026:** fila de indexação reconciliada com o Search Console: 73 URLs inspecionadas, 58 já estavam no Google, 11 pedidos aceitos (cota acabou no 12º). Faltam 4: rampa NBR 9050, acessibilidade igreja, hotel/pousada e Guarapari. Guia Vila Velha enviado (aprovação até 15 dias). Felipe autorizou o assistente a fazer toda a indexação no GSC sem pedir OK (ver topo do `INDEXACAO.md`).
 - **30/10/2026:** 10 landings no ar (`253941c`, Redeploy feito, todas 200). Sitemap 119 processado. 5 indexações aceitas; cota acabou na 6ª. Site 120 páginas, sitemap 119. Lei ES 12.857/2026 incluída nas páginas de recarga.
 - **Site:** 110 páginas, 109 URLs no sitemap. Auditoria `node docs/auditar-indexacao.js` OK em 08/10/2026.
 - **08/10/2026:** pesquisa de volume (`PESQUISA-DEMANDA-GV.md`) → **14 landings de serviços novos NO AR** (commit `ac70bc1`).
@@ -47,15 +49,13 @@ _Atualizado em 30/10/2026._
 - **Leads → CRM (28/10/2026):** o `js/wa-form.js` (porteiro de todo botão de WhatsApp, 109 páginas) manda as 2 etapas
   para o CRM (crm.nr13sistema.com.br), oferta **Orçamentos** (id `0d7c4e2a-5b1f-4a8e-b3c6-9f2a71e4c805`), com página,
   UTMs, botão clicado e dúvida. Formspree continua. Mensagem direta no número NÃO vira card. Deploy `b48a667`.
-- **Backlinks:** 0 no ar · 2 em andamento (Google, Bing) · 31 faltando.
+- **Backlinks:** 0 no ar · 3 em andamento (Google, Bing, Guia Vila Velha — enviado 05/11, aprovação até 15 dias) · 31 faltando.
 
 ## Falta fazer — em ordem
 
-000. **Lote 30/10, próximo dia de cota (depois de ~05h):** solicitar as 5 restantes: SPDA para condomínio, engenheiro civil, laudo estrutural, acompanhamento de obra, renovação do alvará. Felipe confirmar o escopo civil: laudo estrutural, acompanhamento de obra e engenheiro civil usam o texto "equipe pronta". Depois, seguir a fila antiga.
+000. ~~Lote 30/10~~ — as 5 restantes já estavam no Google (inspeção 05/11).
 
-00. **Próximo dia de cota (depois de ~05h):** pedir indexação na ordem: regularização (deu cota excedida), reforma NBR 16280,
-   estanqueidade de gás, NR-10, projeto elétrico, entrega de imóvel, linha de vida, LTCAT, licenciamento, sondagem;
-   depois as 9 de acessibilidade de 08/10 (hub NBR 9050 primeiro, como recrawl). ~2 dias de cota no total.
+00. ~~4 restantes de acessibilidade~~ — já indexadas (inspeção 15/11).
    **Em 30–60 dias:** comparar no Search Console o desempenho das 4 abordagens de acessibilidade para decidir o próximo lote.
 
 0. ~~Indexação do lote de acessibilidade (07/10)~~ — alvará, condomínio, MP e ART solicitados em 08/10. Falta só o recrawl da NBR 9050 (entra com o lote de 08/10).
