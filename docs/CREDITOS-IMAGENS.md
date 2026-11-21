@@ -391,3 +391,29 @@ e Guarapari. A foto 13871327 e a 9808741 aparecem em 2 páginas cada (limite da 
 | `acessibilidade-rampa-entrada-beco.webp` | https://www.pexels.com/photo/30917750/ | guia rampa |
 | `acessibilidade-rampa-garagem.webp` | https://www.pexels.com/photo/15143512/ | guia rampa |
 | `acessibilidade-passarela-rampa.webp` | https://www.pexels.com/photo/17839549/ | guia rampa |
+
+### Lote 21/11/2026 — landings do Sistema NR13 por dor (Pexels, licença Pexels)
+
+| Arquivo | Origem | Página |
+|---|---|---|
+| `hero-nr13-vencimento-inspecao.webp` | https://www.pexels.com/photo/31257317/ | controle de vencimento |
+| `nr13-manometros-painel.webp` | https://www.pexels.com/photo/10290630/ | controle de vencimento |
+| `hero-nr13-prontuario-digital.webp` | https://www.pexels.com/photo/29372694/ | prontuário digital |
+| `nr13-arquivo-documentos.webp` | https://www.pexels.com/photo/8872363/ | prontuário digital |
+| `hero-nr13-autoclave.webp` | https://www.pexels.com/photo/8851368/ | autoclave |
+| `nr13-autoclave-esterilizacao.webp` | https://www.pexels.com/photo/6627664/ | autoclave |
+| `nr13-autoclave-laboratorio.webp` | https://www.pexels.com/photo/18471472/ | autoclave |
+| `hero-nr13-caldeira.webp` | https://www.pexels.com/photo/36152008/ | caldeiras |
+| `nr13-caldeira-vapor-operador.webp` | https://www.pexels.com/photo/29411310/ | caldeiras |
+| `hero-nr13-fiscalizacao.webp` | https://www.pexels.com/photo/7937365/ | fiscalização |
+| `nr13-fiscalizacao-valvula.webp` | https://www.pexels.com/photo/17166070/ | fiscalização |
+| `hero-nr13-varias-unidades.webp` | https://www.pexels.com/photo/6034676/ | várias unidades |
+| `nr13-unidades-tanques.webp` | https://www.pexels.com/photo/31403876/ | várias unidades |
+| `hero-nr13-empresa-de-inspecao.webp` | https://www.pexels.com/photo/32845690/ | empresa de inspeção |
+| `nr13-inspetor-tablet.webp` | https://www.pexels.com/photo/32845694/ | empresa de inspeção |
+| `hero-nr13-calibracao.webp` | https://www.pexels.com/photo/36826987/ | calibração |
+| `nr13-valvula-seguranca-manometros.webp` | https://www.pexels.com/photo/7865898/ | calibração |
+| `hero-nr13-engenheiro-autonomo.webp` | https://www.pexels.com/photo/32845692/ | engenheiro autônomo |
+| `nr13-valvula-ajuste.webp` | https://www.pexels.com/photo/29226619/ | calibração, engenheiro autônomo |
+| `hero-nr13-inventario.webp` | https://www.pexels.com/photo/2569842/ | inventário |
+| `nr13-inventario-tubulacao.webp` | https://www.pexels.com/photo/17728787/ | inventário |

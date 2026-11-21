@@ -20,6 +20,21 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 - A fila `[ ]` deste arquivo não é fonte de verdade: muitas URLs marcadas como pendentes já estão indexadas.
 
 
+## 21/11/2026 — lote de 10 landings do Sistema NR13 por dor do usuário (sitemap 129 → 139)
+
+Cada página ataca uma dor diferente de quem tem ou inspeciona caldeira, vaso de pressão e autoclave (prazo vencido, prontuário perdido, autoclave, caldeira, fiscalização, várias unidades, empresa de inspeção, calibração, engenheiro autônomo, inventário). Todas com botão de WhatsApp (hero, meio, aside, fim e flutuante) + faixa do sistema. 21 fotos novas do Pexels (ver CREDITOS-IMAGENS.md).
+
+- [ ] https://nr13sistema.com.br/controle-de-vencimento-de-inspecao-nr13.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/prontuario-digital-nr13-caldeira-e-vaso-de-pressao.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/software-nr13-para-autoclave.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/software-de-gestao-de-caldeiras-nr13.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/fiscalizacao-nr13-documentos-exigidos.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/gestao-nr13-para-varias-unidades.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/software-para-empresa-de-inspecao-nr13.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/controle-de-calibracao-de-valvula-de-seguranca-e-manometro.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/software-nr13-para-engenheiro-autonomo.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+- [ ] https://nr13sistema.com.br/inventario-de-vasos-de-pressao-nr13.html — software NR-13, dor específica; criada 21/11/2026; aguardando deploy
+
 ## 15/11/2026 — fila zerada
 
 - `node docs/auditar-indexacao.js`: 120 páginas, 119 no sitemap, nenhuma página fora do registro.
