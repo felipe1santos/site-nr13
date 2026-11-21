@@ -30,6 +30,8 @@ _Atualizado em 21/11/2026._
 
 ## Estado atual
 
+- **21/11/2026 (lote Sistema NR13):** 10 landings do software, cada uma atacando uma dor diferente (vencimento de inspeção, prontuário digital, autoclave, caldeiras, fiscalização, várias unidades, empresa de inspeção, calibração PSV/manômetro, engenheiro autônomo, inventário). Botão "Falar comigo no WhatsApp" em todas + faixa do sistema. 21 fotos novas do Pexels. Links recíprocos em `sistema-nr13.html`, 12 posts do blog e na página do compressor. Commit `d45de28` + Redeploy, todas 200. Sitemap 139 reenviado; **10/10 indexações aceitas**. Site 140 páginas. **~21/12:** comparar no GSC qual dor puxa mais impressão e clique.
+
 - **15/11/2026 (lote):** 10 landings novas no ar (`e7d5fa8`, Redeploy feito, todas 200) — 5 serviços novos (avaliação de imóveis, perícia, PGR, termografia, periculosidade) + 5 ângulos (quanto custa o alvará, alvará Vila Velha, alvará restaurante, AVCB condomínio, habite-se). Sitemap 129 reenviado; **10/10 indexações aceitas**. Site 130 páginas. Felipe: regra de parceiros vale para todos os serviços.
 - **15/11/2026:** fila de indexação zerada — as 4 restantes e as 11 pedidas em 05/11 já estão no Google; sitemap reenviado. Nenhuma página nova fora do registro.
 - **05/11/2026:** fila de indexação reconciliada com o Search Console: 73 URLs inspecionadas, 58 já estavam no Google, 11 pedidos aceitos (cota acabou no 12º). Faltam 4: rampa NBR 9050, acessibilidade igreja, hotel/pousada e Guarapari. Guia Vila Velha enviado (aprovação até 15 dias). Felipe autorizou o assistente a fazer toda a indexação no GSC sem pedir OK (ver topo do `INDEXACAO.md`).
