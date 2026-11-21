@@ -13,7 +13,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Pesquisa de demanda (volumes de busca na GV) | [PESQUISA-DEMANDA-GV.md](PESQUISA-DEMANDA-GV.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 15/11/2026._
+_Atualizado em 21/11/2026._
 
 ## Regras fixas (pedido do Felipe)
 
