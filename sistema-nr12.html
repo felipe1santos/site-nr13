@@ -32,7 +32,7 @@
 <link rel="preload" as="image" href="img/nr12-sistema/hero-nr12-mobile.webp" media="(max-width: 720px)" fetchpriority="high">
 <link rel="preload" as="image" imagesrcset="img/nr12-sistema/hero-nr12-1100.webp 1100w, img/nr12-sistema/hero-nr12-1672.webp 1672w" imagesizes="100vw" media="(min-width: 721px)" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261125b">
-<link rel="stylesheet" href="css/nr12.css?v=20261125s">
+<link rel="stylesheet" href="css/nr12.css?v=20261125t">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -244,50 +244,95 @@
   <a href="index.html">Início</a> › <span>Sistema NR12</span>
 </div>
 
-<!-- ============ O PROBLEMA ============ -->
-<section class="porque-sec">
-  <div class="wrap">
-    <div class="porque-head">
-      <div>
-        <h2>Máquina protegida sem documento é máquina autuada.</h2>
-      </div>
+<!-- ============ DOCUMENTOS GERADOS ============ -->
+<section id="documentos" class="dc-sec">
+  <div class="wrap wrap-90">
+    <div class="sec-head">
+      <span class="eyebrow">O que sai do sistema</span>
+      <h2>Nove documentos. Zero Word.</h2>
       <p>
-        Na maioria das autuações que atendemos, a proteção estava lá. Faltava o papel:
-        <span class="t-preto">apreciação de risco assinada, categoria justificada, plano com prazo e
-        treinamento válido</span>. Sem isso, a proteção instalada não conta.
+        O que você cadastra vira documento: PDF numerado, com revisão e código de validação, pronto
+        para o profissional habilitado assinar.
       </p>
     </div>
 
-    <div class="vs3-wrap">
-    <div class="vs3 vs3-ruim">
-      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 8v5M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>Como costuma ser<small>Controle em planilha e pasta</small></h3>
-      <ul>
-        <li>Apreciação de risco em planilha pessoal, diferente em cada engenheiro</li>
-        <li>Categoria de segurança escolhida "por experiência", sem memória de cálculo</li>
-        <li>Checklist em papel, transcrito dias depois e com foto perdida no celular</li>
-        <li>Plano de ação sem prazo, sem responsável e sem verificação de eficácia</li>
-        <li>Prontuário espalhado entre manutenção, SESMT e o fornecedor da máquina</li>
-        <li>Treinamento de operador vencido e ninguém percebeu</li>
-        <li>Painel elétrico da máquina tratado como se fosse outro mundo</li>
-        <li>Fiscalização do MTE na porta e três dias caçando documento</li>
-      </ul>
-    </div>
-    <div class="vs3 vs3-bom">
-      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Com o Sistema NR12<small>Método único, rastreável por TAG</small></h3>
-      <ul>
-        <li>Método único de apreciação de risco para todo o parque de máquinas</li>
-        <li>HRN e categoria NBR 14153 calculados, com os parâmetros registrados</li>
-        <li>Checklist no celular, com foto anexada à não conformidade na hora</li>
-        <li>Plano de ação por máquina, com prazo, responsável e status</li>
-        <li>Prontuário digital da máquina, sempre acessível por TAG</li>
-        <li>Alerta automático de treinamento NR-12 e NR-10 a vencer</li>
-        <li>Painel de comando no módulo NR-10, ligado à mesma máquina</li>
-        <li>Laudo, ART e registro fotográfico saem em PDF em segundos</li>
-      </ul>
-    </div>
+    <ul class="n12-docs">
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Laudo de Apreciação de Risco (LAR)</h3>
+        <p>Perigos por zona, HRN atual e residual, categoria de segurança, conformidade item a item e conclusão.</p>
+        <span class="tg tg-rev">LAR-2026-0001</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Laudo de Validação (LVA)</h3>
+        <p>Prova que as proteções instaladas funcionam e que o risco residual ficou aceitável.</p>
+        <span class="tg tg-rev">LVA-2026-0001</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Gestão</span>
+        <h3>Plano / Cronograma de Ações</h3>
+        <p>Medidas com prioridade, prazo e responsável, geradas direto dos perigos do laudo.</p>
+        <span class="tg tg-rev">001-2026/PA</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Gestão</span>
+        <h3>Inventário de Máquinas e Equipamentos</h3>
+        <p>A lista do parque por TAG, setor, fabricante, ano e situação de cada máquina.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Relatório Técnico / Diagnóstico</h3>
+        <p>O retrato do parque antes da adequação, com as não conformidades priorizadas.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Manual de Instruções de Segurança</h3>
+        <p>Instruções de operação segura da máquina, exigidas pela NR-12 quando o manual original falta.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Campo</span>
+        <h3>Check-list NR-12</h3>
+        <p>A verificação item a item aplicada em campo, com foto de cada não conformidade.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">NR-10</span>
+        <h3>Prontuário das Instalações Elétricas</h3>
+        <p>O prontuário que a NR-10 exige, ligado às mesmas máquinas do inventário.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">NR-10</span>
+        <h3>Laudo de Aterramento</h3>
+        <p>Medições de resistência e continuidade do aterramento, com o painel de cada máquina.</p>
+      </li>
+    </ul>
+
+    <div class="n12-folhas-head">
+      <div>
+        <h3>Folhas de um laudo de apreciação de risco gerado pelo sistema</h3>
+        <p>
+          <span class="tg tg-rev">LAR-2027-0042 · Rev.00</span>
+          Prensa excêntrica PE-02 · 18 páginas · dados de exemplo. Clique numa folha para ampliar.
+        </p>
+      </div>
     </div>
 
+    <ul class="n12-folhas">
+      <li><a href="img/nr12-sistema/laudo-pagina-01.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy" alt="Capa do laudo com dados do cliente, foto da máquina, HRN atual e residual e conclusão"></a><span>Capa e conclusão</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-04.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-04.webp" width="1000" height="1414" loading="lazy" alt="Página de metodologia com o processo da NBR ISO 12100 e as tabelas do HRN"></a><span>Metodologia HRN</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-06.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-06.webp" width="1000" height="1414" loading="lazy" alt="Resumo executivo com HRN por perigo em escala e conformidade NR-12 por capítulo"></a><span>Resumo executivo</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-07.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-07.webp" width="1000" height="1414" loading="lazy" alt="Quadro do perigo P-01 com identificação, fotos com marcadores e cálculo do HRN"></a><span>Perigo P-01</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-08.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-08.webp" width="1000" height="1414" loading="lazy" alt="Medidas de redução de risco, diagrama de categoria e PLr e distâncias de segurança"></a><span>Categoria e PLr</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-13.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-13.webp" width="1000" height="1414" loading="lazy" alt="Tabela de conformidade com a NR-12 item a item"></a><span>NR-12 item a item</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-15.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-15.webp" width="1000" height="1414" loading="lazy" alt="Plano de medidas e prioridades com cronograma sugerido"></a><span>Plano e cronograma</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-16.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-16.webp" width="1000" height="1414" loading="lazy" alt="Conclusão, limitações, responsabilidade técnica e controle de revisões"></a><span>Conclusão e assinaturas</span></li>
+    </ul>
   </div>
+
+  <dialog class="n12-lb" id="n12Lb" aria-label="Folha do laudo ampliada">
+    <button type="button" class="n12-lb-x" aria-label="Fechar">×</button>
+    <img src="" alt="">
+  </dialog>
 </section>
 
 <!-- ============ MÓDULOS ============ -->
@@ -341,85 +386,48 @@
   </div>
 </section>
 
-<!-- ============ FLUXO COMPLETO DA NR-12 ============ -->
-<section class="sec-soft" id="fluxo">
+<!-- ============ O PROBLEMA ============ -->
+<section class="porque-sec">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">O fluxo que o sistema conduz</span>
-      <h2>A ordem certa da NR-12. Sem pular etapa.</h2>
+    <div class="porque-head">
+      <div>
+        <h2>Máquina protegida sem documento é máquina autuada.</h2>
+      </div>
       <p>
-        Primeiro <span class="t-petro">identificar o perigo</span>, depois
-        <span class="t-petro">estimar o risco</span>, só então especificar a proteção — e no fim
-        provar que o <span class="t-preto">risco residual ficou aceitável</span>.
+        Na maioria das autuações que atendemos, a proteção estava lá. Faltava o papel:
+        <span class="t-preto">apreciação de risco assinada, categoria justificada, plano com prazo e
+        treinamento válido</span>. Sem isso, a proteção instalada não conta.
       </p>
     </div>
 
-    <ol class="fx">
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">01</span>
-        <div>
-          <span class="fluxo-norma">Inventário</span>
-          <h3>Levantar tudo o que tem parte móvel</h3>
-          <p>TAG, setor, fabricante, ano, série, foto e criticidade. Máquina fora da lista é a que aparece no auto de infração.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">02</span>
-        <div>
-          <span class="fluxo-norma">NR-12 · Anexos</span>
-          <h3>Verificar a conformidade no celular</h3>
-          <p>Checklist ao lado da máquina. Cada <strong>não conformidade sai com foto</strong> e já ligada ao plano daquela TAG.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">03</span>
-        <div>
-          <span class="fluxo-norma">NBR ISO 12100</span>
-          <h3>Apreciação de risco por zona de perigo</h3>
-          <p>HRN com os quatro parâmetros guardados: <span class="t-preto">é essa memória que sustenta a defesa técnica</span> anos depois.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">04</span>
-        <div>
-          <span class="fluxo-norma">NBR 14153 · ISO 13849-1</span>
-          <h3>Categoria de segurança do comando</h3>
-          <p>Gravidade, exposição e possibilidade de evitar entram no grafo e saem como <strong>categoria B, 1, 2, 3 ou 4</strong>.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">05</span>
-        <div>
-          <span class="fluxo-norma">Projeto</span>
-          <h3>Especificar a proteção certa</h3>
-          <p>Proteção fixa ou móvel intertravada, cortina de luz, bimanual, emergência e bloqueio de energias — sem improviso.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">06</span>
-        <div>
-          <span class="fluxo-norma">Plano de ação</span>
-          <h3>Prazo, responsável e status por máquina</h3>
-          <p>Cada medida vira ação rastreável até o perigo de origem. <span class="t-preto">A fiscalização pede junto com o laudo.</span></p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">07</span>
-        <div>
-          <span class="fluxo-norma">Validação</span>
-          <h3>Risco residual e laudo com ART</h3>
-          <p>Risco reavaliado com os mesmos parâmetros, lado a lado com o inicial, e <strong>laudo em PDF</strong> para assinar.</p>
-        </div>
-      </li>
-      <li class="fx-item" data-reveal>
-        <span class="fx-num">08</span>
-        <div>
-          <span class="fluxo-norma">Rotina</span>
-          <h3>Manter a conformidade viva</h3>
-          <p>Reinspeção, manutenção das proteções, <strong>treinamentos NR-12 e NR-10</strong> e histórico completo por TAG.</p>
-        </div>
-      </li>
-    </ol>
+    <div class="vs3-wrap">
+    <div class="vs3 vs3-ruim">
+      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 8v5M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>Como costuma ser<small>Controle em planilha e pasta</small></h3>
+      <ul>
+        <li>Apreciação de risco em planilha pessoal, diferente em cada engenheiro</li>
+        <li>Categoria de segurança escolhida "por experiência", sem memória de cálculo</li>
+        <li>Checklist em papel, transcrito dias depois e com foto perdida no celular</li>
+        <li>Plano de ação sem prazo, sem responsável e sem verificação de eficácia</li>
+        <li>Prontuário espalhado entre manutenção, SESMT e o fornecedor da máquina</li>
+        <li>Treinamento de operador vencido e ninguém percebeu</li>
+        <li>Painel elétrico da máquina tratado como se fosse outro mundo</li>
+        <li>Fiscalização do MTE na porta e três dias caçando documento</li>
+      </ul>
+    </div>
+    <div class="vs3 vs3-bom">
+      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Com o Sistema NR12<small>Método único, rastreável por TAG</small></h3>
+      <ul>
+        <li>Método único de apreciação de risco para todo o parque de máquinas</li>
+        <li>HRN e categoria NBR 14153 calculados, com os parâmetros registrados</li>
+        <li>Checklist no celular, com foto anexada à não conformidade na hora</li>
+        <li>Plano de ação por máquina, com prazo, responsável e status</li>
+        <li>Prontuário digital da máquina, sempre acessível por TAG</li>
+        <li>Alerta automático de treinamento NR-12 e NR-10 a vencer</li>
+        <li>Painel de comando no módulo NR-10, ligado à mesma máquina</li>
+        <li>Laudo, ART e registro fotográfico saem em PDF em segundos</li>
+      </ul>
+    </div>
+    </div>
 
   </div>
 </section>
@@ -761,183 +769,87 @@
   </div>
 </section>
 
-<!-- ============ TELAS ============ -->
-<section id="telas" class="sec-soft">
-  <div class="wrap split n12-tela" data-reveal>
-    <figure class="n12-shot">
-      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Apreciações · PE-02</b></span>
-      <img src="img/nr12-sistema/tela-apreciacao.webp" width="1504" height="784" loading="lazy"
-           alt="Tela real de apreciação de risco do Sistema NR12: índice com máquina, limites de uso, perigos P-01 e P-02, checklist NR-12 e conclusão, seleção da zona de perigo e prévia do laudo com HRN atual e residual">
-    </figure>
-    <div>
-      <span class="eyebrow">Apreciação de risco</span>
-      <h3 class="n12-tela-h">Um perigo por vez, com a prévia do laudo ao lado</h3>
-      <p>
-        O índice guia a apreciação na ordem da <strong>NBR ISO 12100</strong>: máquina, limites de
-        uso, perigos, checklist NR-12 e conclusão. Cada perigo nasce em uma
-        <span class="t-petro">zona de perigo</span> sugerida para aquele tipo de máquina.
-      </p>
-      <p>
-        À direita, a prévia mostra o que vai para o PDF: HRN atual
-        <span class="tg tg-err">256 Alto</span> e residual <span class="tg tg-warn">32 Atenção</span>,
-        número de perigos, não conformidades e a conclusão.
-      </p>
-    </div>
-  </div>
-
-  <div class="wrap split rev n12-tela" data-reveal>
-    <div>
-      <span class="eyebrow">Plano de ação</span>
-      <h3 class="n12-tela-h">Cada medida aponta para o perigo que a originou</h3>
-      <p>
-        As ações saem do laudo com a origem gravada — <span class="tg tg-rev">LAR-2026-0001 · P-01</span> —,
-        o tipo de adequação, o prazo e o progresso. Adequação física gera
-        <span class="tg tg-info">OS</span> para a manutenção.
-      </p>
-      <p>
-        Filtro por atrasadas, em andamento e concluídas. Quando a última fecha como
-        <span class="tg tg-ok">Concluída</span>, o laudo de validação já tem o que precisa.
-      </p>
-    </div>
-    <figure class="n12-shot">
-      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Plano de ações</b></span>
-      <img src="img/nr12-sistema/tela-plano-de-acao.webp" width="1514" height="540" loading="lazy"
-           alt="Tela real do plano de ações do Sistema NR12 com sete ações ligadas aos perigos P-01 e P-02 do laudo LAR-2026-0001, prazo, barra de progresso e situação concluída">
-    </figure>
-  </div>
-
-  <div class="wrap split n12-tela" data-reveal>
-    <figure class="n12-shot">
-      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Laudos e documentos</b></span>
-      <img src="img/nr12-sistema/tela-laudos.webp" width="1504" height="784" loading="lazy"
-           alt="Tela real de laudos e documentos do Sistema NR12 com gavetas por tipo: inventário, plano e cronograma, apreciação de risco, validação de sistemas de segurança, relatório técnico e manual de instruções">
-    </figure>
-    <div>
-      <span class="eyebrow">Laudos e documentos</span>
-      <h3 class="n12-tela-h">Uma gaveta para cada documento da norma</h3>
-      <p>
-        Gestão, avaliação técnica e responsabilidade separadas. Cada gaveta mostra número e
-        revisão, data de emissão e se o documento <span class="tg tg-info">Exige RT + ART</span>.
-      </p>
-      <p>
-        Nova revisão não apaga a anterior: o histórico fica guardado e
-        <span class="t-preto">a versão vigente é sempre a que aparece primeiro</span>.
-      </p>
-    </div>
-  </div>
-
-  <div class="wrap split rev n12-tela" data-reveal>
-    <div>
-      <span class="eyebrow">Laudo emitido</span>
-      <h3 class="n12-tela-h">O PDF abre dentro do sistema, com código de validação</h3>
-      <p>
-        O laudo emitido ganha código de autenticidade
-        (<span class="t-cod">RF5B-E3J5-S7QB-DKWH</span>), fica <span class="tg tg-ok">Vigente</span>
-        e pode ser baixado ou impresso na hora.
-      </p>
-      <p>
-        Pelo mesmo painel você gera o link de <strong>ciência do cliente</strong>: o responsável
-        da empresa confirma que recebeu o laudo, sem troca de e-mail.
-      </p>
-    </div>
-    <figure class="n12-shot">
-      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>LAR-2026-0001</b></span>
-      <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" loading="lazy"
-           alt="Tela real do visualizador de laudo do Sistema NR12 com a capa do laudo de apreciação de risco, identificação, código de autenticidade e ciência do cliente">
-    </figure>
-  </div>
-
-</section>
-
-<!-- ============ DOCUMENTOS GERADOS ============ -->
-<section id="documentos" class="dc-sec">
-  <div class="wrap wrap-90">
+<!-- ============ FLUXO COMPLETO DA NR-12 ============ -->
+<section class="sec-soft" id="fluxo">
+  <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">O que sai do sistema</span>
-      <h2>Nove documentos. Zero Word.</h2>
+      <span class="eyebrow">O fluxo que o sistema conduz</span>
+      <h2>A ordem certa da NR-12. Sem pular etapa.</h2>
       <p>
-        O que você cadastra vira documento: PDF numerado, com revisão e código de validação, pronto
-        para o profissional habilitado assinar.
+        Primeiro <span class="t-petro">identificar o perigo</span>, depois
+        <span class="t-petro">estimar o risco</span>, só então especificar a proteção — e no fim
+        provar que o <span class="t-preto">risco residual ficou aceitável</span>.
       </p>
     </div>
 
-    <ul class="n12-docs">
-      <li>
-        <span class="tg tg-info">Avaliação técnica</span>
-        <h3>Laudo de Apreciação de Risco (LAR)</h3>
-        <p>Perigos por zona, HRN atual e residual, categoria de segurança, conformidade item a item e conclusão.</p>
-        <span class="tg tg-rev">LAR-2026-0001</span>
+    <ol class="fx">
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">01</span>
+        <div>
+          <span class="fluxo-norma">Inventário</span>
+          <h3>Levantar tudo o que tem parte móvel</h3>
+          <p>TAG, setor, fabricante, ano, série, foto e criticidade. Máquina fora da lista é a que aparece no auto de infração.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Avaliação técnica</span>
-        <h3>Laudo de Validação (LVA)</h3>
-        <p>Prova que as proteções instaladas funcionam e que o risco residual ficou aceitável.</p>
-        <span class="tg tg-rev">LVA-2026-0001</span>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">02</span>
+        <div>
+          <span class="fluxo-norma">NR-12 · Anexos</span>
+          <h3>Verificar a conformidade no celular</h3>
+          <p>Checklist ao lado da máquina. Cada <strong>não conformidade sai com foto</strong> e já ligada ao plano daquela TAG.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Gestão</span>
-        <h3>Plano / Cronograma de Ações</h3>
-        <p>Medidas com prioridade, prazo e responsável, geradas direto dos perigos do laudo.</p>
-        <span class="tg tg-rev">001-2026/PA</span>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">03</span>
+        <div>
+          <span class="fluxo-norma">NBR ISO 12100</span>
+          <h3>Apreciação de risco por zona de perigo</h3>
+          <p>HRN com os quatro parâmetros guardados: <span class="t-preto">é essa memória que sustenta a defesa técnica</span> anos depois.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Gestão</span>
-        <h3>Inventário de Máquinas e Equipamentos</h3>
-        <p>A lista do parque por TAG, setor, fabricante, ano e situação de cada máquina.</p>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">04</span>
+        <div>
+          <span class="fluxo-norma">NBR 14153 · ISO 13849-1</span>
+          <h3>Categoria de segurança do comando</h3>
+          <p>Gravidade, exposição e possibilidade de evitar entram no grafo e saem como <strong>categoria B, 1, 2, 3 ou 4</strong>.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Avaliação técnica</span>
-        <h3>Relatório Técnico / Diagnóstico</h3>
-        <p>O retrato do parque antes da adequação, com as não conformidades priorizadas.</p>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">05</span>
+        <div>
+          <span class="fluxo-norma">Projeto</span>
+          <h3>Especificar a proteção certa</h3>
+          <p>Proteção fixa ou móvel intertravada, cortina de luz, bimanual, emergência e bloqueio de energias — sem improviso.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Avaliação técnica</span>
-        <h3>Manual de Instruções de Segurança</h3>
-        <p>Instruções de operação segura da máquina, exigidas pela NR-12 quando o manual original falta.</p>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">06</span>
+        <div>
+          <span class="fluxo-norma">Plano de ação</span>
+          <h3>Prazo, responsável e status por máquina</h3>
+          <p>Cada medida vira ação rastreável até o perigo de origem. <span class="t-preto">A fiscalização pede junto com o laudo.</span></p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">Campo</span>
-        <h3>Check-list NR-12</h3>
-        <p>A verificação item a item aplicada em campo, com foto de cada não conformidade.</p>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">07</span>
+        <div>
+          <span class="fluxo-norma">Validação</span>
+          <h3>Risco residual e laudo com ART</h3>
+          <p>Risco reavaliado com os mesmos parâmetros, lado a lado com o inicial, e <strong>laudo em PDF</strong> para assinar.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">NR-10</span>
-        <h3>Prontuário das Instalações Elétricas</h3>
-        <p>O prontuário que a NR-10 exige, ligado às mesmas máquinas do inventário.</p>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">08</span>
+        <div>
+          <span class="fluxo-norma">Rotina</span>
+          <h3>Manter a conformidade viva</h3>
+          <p>Reinspeção, manutenção das proteções, <strong>treinamentos NR-12 e NR-10</strong> e histórico completo por TAG.</p>
+        </div>
       </li>
-      <li>
-        <span class="tg tg-info">NR-10</span>
-        <h3>Laudo de Aterramento</h3>
-        <p>Medições de resistência e continuidade do aterramento, com o painel de cada máquina.</p>
-      </li>
-    </ul>
+    </ol>
 
-    <div class="n12-folhas-head">
-      <div>
-        <h3>Folhas de um laudo de apreciação de risco gerado pelo sistema</h3>
-        <p>
-          <span class="tg tg-rev">LAR-2027-0042 · Rev.00</span>
-          Prensa excêntrica PE-02 · 18 páginas · dados de exemplo. Clique numa folha para ampliar.
-        </p>
-      </div>
-    </div>
-
-    <ul class="n12-folhas">
-      <li><a href="img/nr12-sistema/laudo-pagina-01.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy" alt="Capa do laudo com dados do cliente, foto da máquina, HRN atual e residual e conclusão"></a><span>Capa e conclusão</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-04.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-04.webp" width="1000" height="1414" loading="lazy" alt="Página de metodologia com o processo da NBR ISO 12100 e as tabelas do HRN"></a><span>Metodologia HRN</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-06.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-06.webp" width="1000" height="1414" loading="lazy" alt="Resumo executivo com HRN por perigo em escala e conformidade NR-12 por capítulo"></a><span>Resumo executivo</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-07.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-07.webp" width="1000" height="1414" loading="lazy" alt="Quadro do perigo P-01 com identificação, fotos com marcadores e cálculo do HRN"></a><span>Perigo P-01</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-08.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-08.webp" width="1000" height="1414" loading="lazy" alt="Medidas de redução de risco, diagrama de categoria e PLr e distâncias de segurança"></a><span>Categoria e PLr</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-13.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-13.webp" width="1000" height="1414" loading="lazy" alt="Tabela de conformidade com a NR-12 item a item"></a><span>NR-12 item a item</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-15.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-15.webp" width="1000" height="1414" loading="lazy" alt="Plano de medidas e prioridades com cronograma sugerido"></a><span>Plano e cronograma</span></li>
-      <li><a href="img/nr12-sistema/laudo-pagina-16.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-16.webp" width="1000" height="1414" loading="lazy" alt="Conclusão, limitações, responsabilidade técnica e controle de revisões"></a><span>Conclusão e assinaturas</span></li>
-    </ul>
   </div>
-
-  <dialog class="n12-lb" id="n12Lb" aria-label="Folha do laudo ampliada">
-    <button type="button" class="n12-lb-x" aria-label="Fechar">×</button>
-    <img src="" alt="">
-  </dialog>
 </section>
 
 <!-- ============ NÃO CONFORMIDADES ============ -->
@@ -1359,14 +1271,14 @@
           <li><a href="#calculadora">categoria B, 1, 2, 3 e 4 da NBR 14153</a></li>
           <li><a href="#calculadora">S1 S2 F1 F2 P1 P2 grafo de riscos</a></li>
           <li><a href="#fluxo">risco residual depois da proteção</a></li>
-          <li><a href="#telas">software de gestão NR-12</a></li>
-          <li><a href="#telas">sistema de apreciação de risco de máquinas online</a></li>
-          <li><a href="#telas">planilha de apreciação de risco NR-12 substituta</a></li>
-          <li><a href="#telas">programa para laudo NR-12 com ART</a></li>
-          <li><a href="#telas">controle de treinamento NR-12 e NR-10 vencimento</a></li>
-          <li><a href="#telas">prontuário de máquina digital por TAG</a></li>
-          <li><a href="#telas">gestão de plano de ação de segurança do trabalho</a></li>
-          <li><a href="#telas">software para engenharia de segurança de máquinas</a></li>
+          <li><a href="#documentos">software de gestão NR-12</a></li>
+          <li><a href="#documentos">sistema de apreciação de risco de máquinas online</a></li>
+          <li><a href="#documentos">planilha de apreciação de risco NR-12 substituta</a></li>
+          <li><a href="#documentos">programa para laudo NR-12 com ART</a></li>
+          <li><a href="#documentos">controle de treinamento NR-12 e NR-10 vencimento</a></li>
+          <li><a href="#documentos">prontuário de máquina digital por TAG</a></li>
+          <li><a href="#documentos">gestão de plano de ação de segurança do trabalho</a></li>
+          <li><a href="#documentos">software para engenharia de segurança de máquinas</a></li>
           <li><a href="#contratar">análise de risco elétrico choque e arco elétrico</a></li>
           <li><a href="#contratar">laudo de aterramento com valores medidos</a></li>
           <li><a href="#contratar">relatório de termografia de painel elétrico</a></li>
@@ -1391,13 +1303,13 @@
           <li><a href="#modulos">sistema NR-12 na nuvem</a></li>
           <li><a href="#calculadora">calculadora de risco de máquina online</a></li>
           <li><a href="#contratar">sistema que atende NR-12 e NR-10 junto</a></li>
-          <li><a href="#telas">exemplo de laudo NR-12</a></li>
+          <li><a href="#documentos">exemplo de laudo NR-12</a></li>
           <li><a href="sistema-nr13.html">software NR-13 para caldeiras e vasos</a></li>
-          <li><a href="#telas">inventário de máquinas com TAG e criticidade</a></li>
+          <li><a href="#documentos">inventário de máquinas com TAG e criticidade</a></li>
           <li><a href="#documentos">memorial de apreciação de risco NR-12</a></li>
-          <li><a href="#telas">matriz de risco HRN por zona de perigo</a></li>
-          <li><a href="#telas">checklist NR-12 digital com foto</a></li>
-          <li><a href="#telas">plano de ação de adequação por setor</a></li>
+          <li><a href="#documentos">matriz de risco HRN por zona de perigo</a></li>
+          <li><a href="#documentos">checklist NR-12 digital com foto</a></li>
+          <li><a href="#documentos">plano de ação de adequação por setor</a></li>
           <li><a href="#documentos">laudo de conformidade NR-12 em PDF</a></li>
           <li><a href="#contratar">prontuário de instalações elétricas NR-10</a></li>
       </ul>
@@ -1497,7 +1409,7 @@
           <li><a href="sistema-nr12.html#calculadora">Calculadora de risco</a></li>
           <li><a href="sistema-nr12.html#modulos">Módulos do sistema</a></li>
           <li><a href="sistema-nr12.html#contratar">Planos e preços</a></li>
-          <li><a href="sistema-nr12.html#telas">Telas por dentro</a></li>
+          <li><a href="sistema-nr12.html#documentos">Telas por dentro</a></li>
           <li><a href="sistema-nr12.html#faq-sistema">Perguntas frequentes</a></li>
           <li><a href="sistema-nr13.html">Sistema NR13 — caldeiras e vasos</a></li>
         </ul>

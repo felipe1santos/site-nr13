@@ -1275,3 +1275,44 @@
   }
   .n12-hero .sys-strip { display: none; }
 }
+
+/* ---------- 34. "Máquina autuada": duas tabelas lado a lado, cores vivas ---------- */
+.vs3 { border: 0; box-shadow: var(--shadow); }
+.vs3-ruim { border-top: 0; }
+.vs3-bom { border-top: 0; }
+.vs3-cab { border-bottom: 0; padding: .85rem 1.1rem; font-size: 1.05rem; }
+.vs3-ruim .vs3-cab { background: #DC2626; color: var(--white); }
+.vs3-bom .vs3-cab { background: #009A3D; color: var(--white); }
+.vs3-cab small { color: rgba(255, 255, 255, .85); }
+.vs3-ruim .vs3-ico { background: rgba(255, 255, 255, .2); color: var(--white); }
+.vs3-bom .vs3-ico { background: rgba(255, 255, 255, .2); color: var(--white); }
+.vs3 ul { grid-template-columns: 1fr; }
+.vs3 li, .vs3 li:nth-child(odd) { border-right: 0; }
+.vs3 li, .vs3 li:nth-last-child(2) { border-bottom: 1px solid rgba(0, 0, 0, .06); }
+.vs3 li:last-child { border-bottom: 0; }
+.vs3 li { padding: .62rem 1rem .62rem 2.5rem; font-size: .92rem; }
+.vs3-ruim li { background: #FEE2E2; color: #7f1d1d; }
+.vs3-ruim li:nth-child(even) { background: #FDD5D5; }
+.vs3-bom li { background: #DEFFE8; color: #064e24; font-weight: 600; }
+.vs3-bom li:nth-child(even) { background: #CCF7DA; }
+.vs3 li::before {
+  width: 18px; height: 18px; left: .9rem; top: .66rem; border-radius: 50%; opacity: 1;
+  background-repeat: no-repeat; background-position: center; background-size: 11px;
+}
+.vs3-ruim li::before {
+  background-color: #DC2626;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 3l6 6M9 3L3 9' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+.vs3-bom li::before {
+  background-color: #009A3D;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3 4.7-5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+@media (min-width: 900px) {
+  .vs3-wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; align-items: stretch; }
+  .vs3 { display: flex; flex-direction: column; }
+  .vs3 ul { flex: 1; grid-auto-rows: 1fr; }
+}
+@media (max-width: 720px) {
+  .vs3 li { padding: .55rem .8rem .55rem 2.3rem; font-size: .86rem; }
+  .vs3 li::before { left: .7rem; top: .6rem; }
+}
