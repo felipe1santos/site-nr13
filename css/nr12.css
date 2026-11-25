@@ -1316,22 +1316,3 @@
   .vs3 li { padding: .55rem .8rem .55rem 2.3rem; font-size: .86rem; }
   .vs3 li::before { left: .7rem; top: .6rem; }
 }
-
-/* ---------- 35. Página do Sistema NR13 (mesmos componentes) ---------- */
-.co-tag-13 .co-t1 { font-size: 22px; }
-.co-tag-13 .co-t2 { font-size: 29px; }
-.n12-callout-d .co-tag-13 ~ * { }
-.ts-head { margin-top: clamp(2.6rem, 5vw, 3.6rem); }
-.ts-grade { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.6rem); }
-.ts-grade a { display: block; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); transition: box-shadow .2s ease, transform .2s ease; }
-.ts-grade a:hover { box-shadow: var(--shadow-hi); transform: translateY(-2px); }
-.ts-grade a:focus-visible { outline: 3px solid var(--orange-500); outline-offset: 3px; }
-.ts-grade img { display: block; width: 100%; height: auto; }
-.ts-grade span { display: block; margin-top: .55rem; font-size: .88rem; font-weight: 600; color: var(--navy-800); }
-.mx-foto-tela { border: 1px solid var(--line); box-shadow: var(--shadow-hi); }
-.mx-foto-tela img { aspect-ratio: auto; }
-.pc-topo-13 { padding-top: 1.6rem; }
-@media (max-width: 720px) {
-  .ts-grade { grid-template-columns: 1fr; }
-  .mx-foto-tela { display: block; }
-}
