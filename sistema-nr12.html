@@ -29,9 +29,9 @@
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#0a1f33">
 
-<link rel="preload" as="image" href="img/nr12-sistema/tela-visualizador-laudo.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/nr12-sistema/hero-engenheiro.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261003">
-<link rel="stylesheet" href="css/nr12.css?v=20261125b">
+<link rel="stylesheet" href="css/nr12.css?v=20261125c">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -201,17 +201,16 @@
     </div>
 
     <figure class="n12-hero-vis">
-      <div class="n12-browser">
+      <img class="n12-hero-foto" src="img/nr12-sistema/hero-engenheiro.webp" width="1100" height="974" fetchpriority="high"
+           alt="Engenheiro de segurança do trabalho com capacete e óculos de proteção conferindo documento no chão de fábrica">
+      <div class="n12-browser n12-hero-tela">
         <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>nr12.nr1sistema.com.br</b></span>
-        <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" fetchpriority="high"
-             alt="Tela real do Sistema NR12 mostrando o laudo de apreciação de risco LAR-2026-0001 aberto no visualizador, com código de validação e ciência do cliente">
+        <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" loading="lazy"
+             alt="Tela real do Sistema NR12 com o laudo de apreciação de risco LAR-2026-0001 aberto no visualizador">
       </div>
-      <img class="n12-hero-folha" src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy"
-           alt="Capa do laudo de apreciação de risco gerado pelo sistema para uma prensa excêntrica">
       <figcaption class="n12-hero-cap">
         <span class="tg tg-rev">LAR-2026-0001 · Rev.00</span>
         <span class="tg tg-ok">Vigente</span>
-        <span>Tela real, empresa de demonstração</span>
       </figcaption>
     </figure>
   </div>
@@ -248,54 +247,33 @@
       </p>
     </div>
 
-    <div class="vs2">
-      <div class="vs2-cab vs2-cab-ruim">
-        <span class="vs2-cab-ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 8v5M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-        </span>
-        <b>Como costuma ser</b>
-        <span>Controle em planilha e pasta</span>
-      </div>
-      <div class="vs2-cab-mid" aria-hidden="true"></div>
-      <div class="vs2-cab vs2-cab-bom">
-        <span class="vs2-cab-ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-        </span>
-        <b>Com o Sistema NR12</b>
-        <span>Método único, rastreável por TAG</span>
-      </div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Apreciação de risco em planilha pessoal, diferente em cada engenheiro</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Método único de apreciação de risco para todo o parque de máquinas</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Categoria de segurança escolhida "por experiência", sem memória de cálculo</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>HRN e categoria NBR 14153 calculados, com os parâmetros registrados</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Checklist em papel, transcrito dias depois e com foto perdida no celular</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Checklist no celular, com foto anexada à não conformidade na hora</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Plano de ação sem prazo, sem responsável e sem verificação de eficácia</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Plano de ação por máquina, com prazo, responsável e status</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Prontuário espalhado entre manutenção, SESMT e o fornecedor da máquina</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Prontuário digital da máquina, sempre acessível por TAG</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Treinamento de operador vencido e ninguém percebeu</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Alerta automático de treinamento NR-12 e NR-10 a vencer</div>
-
-      <div class="vs2-cel vs2-ruim"><span class="vs2-lbl">Hoje</span>Painel elétrico da máquina tratado como se fosse outro mundo</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom"><span class="vs2-lbl">Com o sistema</span>Painel de comando no módulo NR-10, ligado à mesma máquina</div>
-
-      <div class="vs2-cel vs2-ruim vs2-ultima"><span class="vs2-lbl">Hoje</span>Fiscalização do MTE na porta e três dias caçando documento</div>
-      <div class="vs2-seta" aria-hidden="true"><i></i></div>
-      <div class="vs2-cel vs2-bom vs2-ultima"><span class="vs2-lbl">Com o sistema</span>Laudo, ART e registro fotográfico saem em PDF em segundos</div>
+    <div class="vs3-wrap">
+    <div class="vs3 vs3-ruim">
+      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 8v5M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>Como costuma ser<small>Controle em planilha e pasta</small></h3>
+      <ul>
+        <li>Apreciação de risco em planilha pessoal, diferente em cada engenheiro</li>
+        <li>Categoria de segurança escolhida "por experiência", sem memória de cálculo</li>
+        <li>Checklist em papel, transcrito dias depois e com foto perdida no celular</li>
+        <li>Plano de ação sem prazo, sem responsável e sem verificação de eficácia</li>
+        <li>Prontuário espalhado entre manutenção, SESMT e o fornecedor da máquina</li>
+        <li>Treinamento de operador vencido e ninguém percebeu</li>
+        <li>Painel elétrico da máquina tratado como se fosse outro mundo</li>
+        <li>Fiscalização do MTE na porta e três dias caçando documento</li>
+      </ul>
+    </div>
+    <div class="vs3 vs3-bom">
+      <h3 class="vs3-cab"><span class="vs3-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Com o Sistema NR12<small>Método único, rastreável por TAG</small></h3>
+      <ul>
+        <li>Método único de apreciação de risco para todo o parque de máquinas</li>
+        <li>HRN e categoria NBR 14153 calculados, com os parâmetros registrados</li>
+        <li>Checklist no celular, com foto anexada à não conformidade na hora</li>
+        <li>Plano de ação por máquina, com prazo, responsável e status</li>
+        <li>Prontuário digital da máquina, sempre acessível por TAG</li>
+        <li>Alerta automático de treinamento NR-12 e NR-10 a vencer</li>
+        <li>Painel de comando no módulo NR-10, ligado à mesma máquina</li>
+        <li>Laudo, ART e registro fotográfico saem em PDF em segundos</li>
+      </ul>
+    </div>
     </div>
 
     <div class="sec-tags sec-tags-marquee">

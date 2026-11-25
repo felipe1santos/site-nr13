@@ -566,8 +566,13 @@
 .n12-hero-login a { color: var(--white); font-weight: 600; text-underline-offset: 3px; }
 .n12-hero-login a:hover { color: var(--orange-400); }
 
-.n12-hero-vis { position: relative; margin: 0 calc(-1 * clamp(0px, 5vw, 96px)) 0 0; padding: 0 0 2.4rem 2.2rem; }
+.n12-hero-vis { position: relative; margin: 0; padding: 0 0 0 16%; }
 .n12-hero .btn-row .btn { padding-inline: 1.3rem; }
+.n12-hero-foto {
+  display: block; width: 100%; height: auto; aspect-ratio: 1100 / 974; object-fit: cover;
+  border-radius: var(--r-lg); border: 1px solid rgba(255, 255, 255, .14);
+}
+.n12-hero-tela { position: absolute; left: 0; bottom: 8%; width: 64%; }
 .n12-browser, .n12-shot {
   background: var(--white); border-radius: var(--r-lg); overflow: hidden;
   border: 1px solid rgba(255, 255, 255, .18);
@@ -583,13 +588,8 @@
   margin-left: .6rem; font-family: var(--f-body); font-size: .72rem; font-weight: 500;
   color: var(--steel-500); background: var(--white); border-radius: 999px; padding: .12rem .8rem;
 }
-.n12-hero-folha {
-  position: absolute; left: 0; bottom: 0; width: 24%; height: auto;
-  border-radius: 3px; border: 1px solid rgba(255, 255, 255, .25);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, .5); transform: rotate(-3deg);
-}
 .n12-hero-cap {
-  position: absolute; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: center;
+  position: absolute; right: .8rem; top: .8rem; display: flex; flex-wrap: wrap; align-items: center;
   justify-content: flex-end; gap: .45rem; font-size: .78rem; color: var(--steel-300);
 }
 
@@ -722,7 +722,7 @@
 /* ---------- 16. Responsivo da revisão ---------- */
 @media (max-width: 1024px) {
   .sys-hero .wrap.n12-hero-grid { grid-template-columns: 1fr; }
-  .n12-hero-vis { max-width: 720px; margin-right: 0; }
+  .n12-hero-vis { max-width: 620px; }
   .n12-docs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .n12-precos-grid { grid-template-columns: 1fr; }
   .n12-plano { max-width: 480px; }
@@ -738,9 +738,8 @@
 }
 @media (max-width: 560px) {
   .n12-docs { grid-template-columns: 1fr; }
-  .n12-hero-vis { padding: 0 0 1.6rem 1rem; }
-  .n12-hero-folha { width: 30%; }
-  .n12-hero-cap span:last-child { display: none; }
+  .n12-hero-vis { padding-left: 10%; }
+  .n12-hero-tela { width: 72%; bottom: 6%; }
   .n12-plano-head, .n12-plano-lista, .n12-plano-preco { padding-inline: 1.15rem; }
   .n12-plano-sub { margin-inline: 1.15rem; }
 }
@@ -770,4 +769,59 @@
   .vs2-ruim { margin-bottom: .2rem; }
   .vs2-bom { margin-bottom: .7rem; }
   .vs2-lbl { margin-bottom: .15rem; font-size: .58rem; }
+}
+
+/* ---------- 18. "Hoje × Com o sistema": duas tabelas, uma embaixo da outra ---------- */
+.vs3-wrap { display: grid; gap: 1rem; }
+.vs3 { border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; background: var(--white); }
+.vs3-ruim { border-top: 3px solid var(--red-600); }
+.vs3-bom { border-top: 3px solid var(--green-600); }
+.vs3-cab {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .25rem .6rem; margin: 0;
+  padding: .7rem 1rem; background: var(--steel-50); border-bottom: 1px solid var(--line);
+  font-size: 1rem; color: var(--navy-900);
+}
+.vs3-cab small { font-family: var(--f-body); font-size: .8rem; font-weight: 500; color: var(--steel-500); }
+.vs3-ico { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; flex: none; }
+.vs3-ico svg { width: 15px; height: 15px; }
+.vs3-ruim .vs3-ico { background: #FBEAE8; color: #B42318; }
+.vs3-bom .vs3-ico { background: #DEFFE8; color: #009A3D; }
+.vs3 ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.vs3 li {
+  position: relative; padding: .55rem 1rem .55rem 2.1rem; font-size: .9rem; line-height: 1.4;
+  border-bottom: 1px solid var(--line);
+}
+.vs3 li:nth-child(odd) { border-right: 1px solid var(--line); }
+.vs3 li:nth-last-child(-n+2) { border-bottom: 0; }
+.vs3 li::before { content: ""; position: absolute; left: 1rem; top: 1.05em; width: 7px; height: 7px; border-radius: 50%; }
+.vs3-ruim li { color: var(--txt-soft); }
+.vs3-ruim li::before { background: #B42318; opacity: .55; }
+.vs3-bom li { color: var(--txt); font-weight: 500; }
+.vs3-bom li::before { background: #009A3D; }
+@media (max-width: 720px) {
+  .vs3 ul { grid-template-columns: 1fr; }
+  .vs3 li:nth-child(odd) { border-right: 0; }
+  .vs3 li:nth-last-child(2) { border-bottom: 1px solid var(--line); }
+  .vs3 li { padding: .5rem .8rem .5rem 1.8rem; font-size: .85rem; }
+  .vs3 li::before { left: .8rem; }
+  .vs3-cab { padding: .6rem .8rem; }
+}
+
+/* ---------- 19. Celular: grupos de cards viram faixa com rolagem lateral ---------- */
+@media (max-width: 720px) {
+  .feat-stack, .check-grid, .n12-docs, .steps-flow {
+    display: grid; grid-auto-flow: column; grid-template-columns: none;
+    grid-auto-columns: 82%; gap: .75rem;
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; padding-bottom: .4rem;
+    margin-inline: calc(-1 * (100vw - 100%) / 2); padding-inline: calc((100vw - 100%) / 2);
+    scroll-padding-inline: calc((100vw - 100%) / 2);
+    width: auto;
+  }
+  .feat-stack::-webkit-scrollbar, .check-grid::-webkit-scrollbar,
+  .n12-docs::-webkit-scrollbar, .steps-flow::-webkit-scrollbar { display: none; }
+  .feat-stack > *, .check-grid > *, .n12-docs > *, .steps-flow > * { scroll-snap-align: start; }
+  .steps-flow .step:not(:last-child)::after { display: none; }
+  .check-card, .n12-docs li { padding: .95rem 1rem; }
+  .check-card p, .n12-docs p { font-size: .84rem; }
 }
