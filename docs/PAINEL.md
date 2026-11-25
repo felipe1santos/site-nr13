@@ -108,6 +108,12 @@ _Atualizado em 21/11/2026._
 
 ## Linha do tempo
 
+- **25/11/2026 (noite)** — `sistema-nr13.html` refeita no mesmo modelo da NR12: hero com foto (Pexels espelhada) e
+  chamada "Inspeção registrada · Vaso V-01 · PMTA 2,33 MPa", botão Entrar (app.nr13sistema.com.br), 9 documentos +
+  6 folhas do relatório CAL-01 (redigido: sem fabricante real/E2E) + 4 telas reais do app (nomes de clientes trocados
+  por demo no print), módulos, tabelas Hoje × Sistema, 8 etapas, 6 falhas em carrossel, preço vertical 1:1,6 (R$ 197,
+  Kiwify), termos no FAQ. Vídeo, "Para quem", CTA e certificações removidos.
+
 - **25/11/2026** — `sistema-nr12.html` refeita: hero com tela real do sistema + capa do laudo, botão **Entrar**
   (→ nr12.nr1sistema.com.br) no topo e no hero, 8 etapas em grade compacta, telas reais (apreciação, plano de ação,
   laudos, visualizador) no lugar dos SVG, seção "9 documentos gerados" + 8 folhas do laudo LAR-2027-0042 com lightbox,
