@@ -31,7 +31,7 @@
 
 <link rel="preload" as="image" href="img/nr12-sistema/hero-engenheiro.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261003">
-<link rel="stylesheet" href="css/nr12.css?v=20261125i">
+<link rel="stylesheet" href="css/nr12.css?v=20261125j">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -1199,9 +1199,17 @@
 
     <article class="n12-plano pc-card" data-reveal>
       <div class="pc-inclui">
-        <header class="n12-plano-head">
-          <span class="n12-plano-nome">Sistema NR12</span>
-          <span class="tg tg-info">NR-12 + NR-10 de brinde</span>
+        <header class="n12-plano-head pc-topo">
+          <div class="pc-titulo">
+            <span class="n12-plano-nome">Sistema NR12</span>
+            <span class="tg tg-info">NR-12 + NR-10 de brinde</span>
+          </div>
+          <label class="pc-toggle">
+            <span class="pc-toggle-a">Anual</span>
+            <input type="checkbox" role="switch" id="pcCiclo" aria-label="Cobrança mensal">
+            <span class="pc-trilho" aria-hidden="true"><i></i></span>
+            <span class="pc-toggle-m">Mensal</span>
+          </label>
         </header>
         <h3 class="n12-plano-sub">O que vem na assinatura</h3>
         <ul class="n12-plano-lista">
@@ -1220,11 +1228,6 @@
       </div>
 
       <div class="n12-plano-preco">
-        <fieldset class="n12-ciclo">
-          <legend class="sr-only">Escolha o ciclo de cobrança</legend>
-          <label><input type="radio" name="ciclo" value="anual" checked><span>Anual</span></label>
-          <label><input type="radio" name="ciclo" value="mensal"><span>Mensal</span></label>
-        </fieldset>
 
         <!-- TODO checkout: trocar os dois href pelo link de checkout de cada plano quando estiver pronto -->
         <div class="n12-ciclo-anual">

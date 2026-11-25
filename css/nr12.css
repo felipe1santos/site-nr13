@@ -1156,3 +1156,21 @@
 .pc-card .pc-inclui { flex: 1; }
 .pc-card .n12-plano-preco { margin-top: auto; }
 @media (min-width: 1025px) { .pc-card { aspect-ratio: 1 / 1.6; } }
+
+/* preço: título com tag embaixo, toggle anual/mensal no canto, valor centralizado */
+.pc-topo { align-items: flex-start; flex-wrap: nowrap; }
+.pc-titulo { display: flex; flex-direction: column; align-items: flex-start; gap: .4rem; }
+.pc-toggle { display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; flex: none; margin: .2rem 0 0; position: relative; }
+.pc-toggle input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.pc-toggle-a, .pc-toggle-m { font-size: .82rem; font-weight: 600; color: var(--steel-500); transition: color .2s ease; }
+.pc-toggle-a { color: #0F766E; }
+.pc-trilho { width: 44px; height: 24px; border-radius: 999px; background: #0F766E; position: relative; transition: background .2s ease; }
+.pc-trilho i { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--white); box-shadow: 0 1px 3px rgba(6, 20, 34, .3); transition: transform .22s cubic-bezier(.3, .8, .3, 1); }
+.pc-toggle:has(input:checked) .pc-trilho i { transform: translateX(20px); }
+.pc-toggle:has(input:checked) .pc-toggle-a { color: var(--steel-500); }
+.pc-toggle:has(input:checked) .pc-toggle-m { color: #0F766E; }
+.pc-toggle input:focus-visible + .pc-trilho { outline: 3px solid var(--orange-500); outline-offset: 2px; }
+.pc-card:has(#pcCiclo:checked) .n12-ciclo-mensal { display: block; }
+.pc-card:has(#pcCiclo:checked) .n12-ciclo-anual { display: none; }
+.pc-card .n12-plano-preco { text-align: center; }
+.pc-card .n12-valor-nota { justify-content: center; }
