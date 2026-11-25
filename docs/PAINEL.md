@@ -108,6 +108,12 @@ _Atualizado em 21/11/2026._
 
 ## Linha do tempo
 
+- **25/11/2026** — `sistema-nr12.html` refeita: hero com tela real do sistema + capa do laudo, botão **Entrar**
+  (→ nr12.nr1sistema.com.br) no topo e no hero, 8 etapas em grade compacta, telas reais (apreciação, plano de ação,
+  laudos, visualizador) no lugar dos SVG, seção "9 documentos gerados" + 8 folhas do laudo LAR-2027-0042 com lightbox,
+  área de preços (R$ 197/mês ou R$ 997/ano, Pix/cartão/boleto). **Pendente:** link de checkout — os botões "Adquirir"
+  apontam para o WhatsApp (TODO no HTML). Imagens em `img/nr12-sistema/`; tags com a paleta do sistema (`.tg-*` em nr12.css).
+
 - **30/10/2026** — Search Console 28 dias: 72 cliques/3,73 mil impressões contra 38/1,53 mil. Criadas 10 páginas: playground (condomínio, escola), carregador (condomínio, Vila Velha), SPDA (instalação, condomínio), civil (engenheiro civil, laudo estrutural, acompanhamento de obra) e renovação do alvará. Links em 19 páginas + home; ata e NT 23 atualizadas com a Lei 12.857/2026. Deploy `253941c` autorizado pelo Felipe; 5 indexações aceitas, cota acabou na 6ª.
 
 - **28/10/2026** — CRM: oferta Orçamentos criada (migration `0005_offer_orcamentos.sql` no repo crm, rodada pelo Felipe no

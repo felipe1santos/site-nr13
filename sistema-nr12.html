@@ -29,9 +29,9 @@
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#0a1f33">
 
-<link rel="preload" as="image" href="img/hero-sistema-nr12.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/nr12-sistema/tela-visualizador-laudo.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261003">
-<link rel="stylesheet" href="css/nr12.css?v=20260913b">
+<link rel="stylesheet" href="css/nr12.css?v=20261125">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -45,7 +45,11 @@
   "applicationSubCategory": "Gestão de segurança de máquinas e conformidade NR-12 e NR-10",
   "operatingSystem": "Web (navegador), Android e iOS via navegador",
   "url": "https://nr13sistema.com.br/sistema-nr12.html",
-  "screenshot": "https://nr13sistema.com.br/img/hero-sistema-nr12.webp",
+  "screenshot": "https://nr13sistema.com.br/img/nr12-sistema/tela-visualizador-laudo.webp",
+  "offers": [
+    { "@type": "Offer", "name": "Plano mensal", "price": "197.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" },
+    { "@type": "Offer", "name": "Plano anual", "price": "997.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
+  ],
   "inLanguage": "pt-BR",
   "description": "Software online de gestão de segurança de máquinas e equipamentos conforme NR-12, com módulo NR-10 integrado: inventário de máquinas por TAG e setor, apreciação de risco com cálculo de HRN, definição da categoria de segurança conforme ABNT NBR 14153, plano de ação com prazo e responsável, prontuário digital da máquina, checklist de verificação pelo celular, controle de treinamentos, prontuário de instalações elétricas e emissão de laudo técnico para assinatura do profissional habilitado com ART.",
   "featureList": [
@@ -59,7 +63,7 @@
     "Módulo NR-10: prontuário de instalações elétricas e análise de risco elétrico",
     "Controle de treinamentos NR-12, NR-10 básico e complementar SEP",
     "Registro de bloqueio e etiquetagem de energias (lockout/tagout)",
-    "Geração do laudo técnico de conformidade NR-12 em PDF",
+    "Geração em PDF do laudo de apreciação de risco, laudo de validação, plano de ações, inventário, relatório técnico, manual de instruções, check-list NR-12, prontuário elétrico e laudo de aterramento",
     "Portal do cliente com a documentação de cada máquina"
   ],
   "provider": {
@@ -142,7 +146,7 @@
     {
       "@type": "Question",
       "name": "Quanto custa e como contrato o Sistema NR12?",
-      "acceptedAnswer": { "@type": "Answer", "text": "O Sistema NR12 é contratado por conversa direta com a engenharia, porque o escopo depende do tamanho do parque de máquinas e de quantas unidades entram. Chame no WhatsApp (27) 99253-4407: apresentamos o sistema rodando, avaliamos o seu inventário e passamos a proposta com a implantação assistida das primeiras máquinas." }
+      "acceptedAnswer": { "@type": "Answer", "text": "A assinatura custa R$ 197 por mês ou R$ 997 por ano, com acesso total: máquinas, setores, unidades e usuários sem limite, módulo NR-10 e os nove documentos em PDF. O pagamento aceita Pix, cartão ou boleto, e a implantação assistida das primeiras máquinas está incluída." }
     }
   ]
 }
@@ -166,8 +170,10 @@
       <a href="blog/index.html">Conteúdo</a>
       <a href="index.html#atendimento">Onde atendemos</a>
       <a href="index.html#contato">Contato</a>
-      <a class="btn btn-primary" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20conhecer%20o%20Sistema%20NR12." rel="noopener" data-cta="nav">Falar com a engenharia</a>
+      <a class="btn n12-btn-login" href="https://nr12.nr1sistema.com.br/" rel="noopener" data-cta="login-nav">Entrar</a>
+      <a class="btn btn-primary" href="#contratar" data-cta="nav">Assinar</a>
     </nav>
+    <a class="n12-login-mob" href="https://nr12.nr1sistema.com.br/" rel="noopener" data-cta="login-mob">Entrar</a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
   </div>
 </header>
@@ -175,55 +181,47 @@
 <main>
 
 <!-- ============ HERO ============ -->
-<section class="sys-hero hero-split" id="inicio">
-  <div class="sys-hero-bg">
-    <img src="img/hero-sistema-nr12.webp" alt="Linha de prensas industriais alinhadas no chão de fábrica, com painéis de comando e áreas de operação sinalizadas" width="1600" height="900" fetchpriority="high">
-  </div>
-
-  <div class="wrap">
-    <div class="hero-split-inner">
+<section class="sys-hero n12-hero" id="inicio">
+  <div class="wrap n12-hero-grid">
+    <div class="n12-hero-txt">
       <span class="eyebrow">Sistema NR12 · Software online</span>
-      <h1>Software de gestão NR-12 com <em>módulo NR-10 integrado</em></h1>
-      <p class="sys-hero-lead">
-        O fluxo completo da norma, na ordem certa: do inventário de máquinas ao laudo com ART.
+      <h1>Software de gestão NR-12 com módulo NR-10 integrado</h1>
+      <p class="n12-hero-lead">
+        Do inventário de máquinas ao <strong>laudo de apreciação de risco em PDF</strong>: HRN por
+        perigo, categoria de segurança pela NBR 14153, plano de ação com prazo e documento pronto
+        para o engenheiro assinar com ART.
       </p>
-      <p class="sys-hero-sub">
-        O <strong>Sistema NR12</strong> é o software de <strong>segurança de máquinas e
-        equipamentos</strong> que conduz a adequação inteira dentro de um método só: inventário
-        por TAG e setor, <strong>checklist NR-12 pelo celular</strong>, apreciação de risco com
-        <span class="t-petro">HRN</span>, <span class="t-petro">categoria de segurança conforme a
-        ABNT NBR 14153</span>, plano de ação com prazo e laudo pronto para o profissional
-        habilitado assinar. A parte elétrica da mesma máquina entra pelo
-        <strong>módulo NR-10</strong>, sem cadastro duplicado.
-      </p>
-      <div class="hero-badges">
-        <span class="hero-badge">Inventário de máquinas</span>
-        <span class="hero-badge">Apreciação de risco</span>
-        <span class="hero-badge">Categoria NBR 14153</span>
-        <span class="hero-badge">Plano de ação</span>
-        <span class="hero-badge">Módulo NR-10</span>
-      </div>
       <div class="btn-row">
-        <a class="btn btn-buy btn-lg" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20conhecer%20o%20Sistema%20NR12%20e%20o%20m%C3%B3dulo%20NR-10." rel="noopener" data-cta="hero">Falar com a engenharia</a>
-        <a class="btn btn-ghost btn-lg" href="#calculadora">Calcular o risco da minha máquina</a>
+        <a class="btn btn-buy btn-lg" href="#contratar" data-cta="hero">Ver planos e assinar</a>
+        <a class="btn btn-ghost btn-lg" href="#documentos">Ver o laudo gerado</a>
       </div>
-      <p class="hero-assinatura">
-        Engenheiro responsável com <b>ART registrada no CREA-ES</b> · Implantação assistida nas primeiras máquinas
+      <p class="n12-hero-login">
+        Já é assinante? <a href="https://nr12.nr1sistema.com.br/" rel="noopener" data-cta="login-hero">Entrar no sistema</a>
       </p>
     </div>
-  </div>
 
-  <div class="wrap sys-wordmark">
-    <b>Sistema NR12</b>
-    <span>Gestão de segurança de máquinas e instalações elétricas</span>
+    <figure class="n12-hero-vis">
+      <div class="n12-browser">
+        <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>nr12.nr1sistema.com.br</b></span>
+        <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" fetchpriority="high"
+             alt="Tela real do Sistema NR12 mostrando o laudo de apreciação de risco LAR-2026-0001 aberto no visualizador, com código de validação e ciência do cliente">
+      </div>
+      <img class="n12-hero-folha" src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy"
+           alt="Capa do laudo de apreciação de risco gerado pelo sistema para uma prensa excêntrica">
+      <figcaption class="n12-hero-cap">
+        <span class="tg tg-rev">LAR-2026-0001 · Rev.00</span>
+        <span class="tg tg-ok">Vigente</span>
+        <span>Tela real, empresa de demonstração</span>
+      </figcaption>
+    </figure>
   </div>
 
   <div class="sys-strip sys-strip-5">
     <div class="wrap">
       <div><b>NR-12</b><span>Máquinas e equipamentos</span></div>
       <div><b>NR-10</b><span>Módulo elétrico integrado</span></div>
-      <div><b>HRN</b><span>Risco calculado por zona de perigo</span></div>
-      <div><b>08</b><span>Etapas do fluxo da norma</span></div>
+      <div><b>HRN</b><span>Risco calculado por perigo</span></div>
+      <div><b>9</b><span>Tipos de documento gerados</span></div>
       <div><b>ART</b><span>Laudo assinado por habilitado</span></div>
     </div>
   </div>
@@ -329,211 +327,78 @@
       <span class="eyebrow">O fluxo que o sistema conduz</span>
       <h2>Oito etapas, na ordem que a NR-12 pede</h2>
       <p>
-        Adequação de máquina que começa pela compra da proteção acaba em retrabalho. O sistema
-        obriga a sequência técnica correta: primeiro <span class="t-petro">identificar o perigo</span>,
-        depois <span class="t-petro">estimar o risco</span>, só então
-        <span class="t-petro">especificar a medida de proteção</span> — e no fim provar que o
-        <span class="t-preto">risco residual ficou aceitável</span>.
+        Primeiro <span class="t-petro">identificar o perigo</span>, depois
+        <span class="t-petro">estimar o risco</span>, só então especificar a proteção — e no fim
+        provar que o <span class="t-preto">risco residual ficou aceitável</span>.
       </p>
     </div>
 
-    <div class="fluxo-layout">
-      <div class="fluxo">
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">01</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">Inventário</span>
-            <h3>Levantar tudo o que tem parte móvel</h3>
-            <p>
-              Cada máquina entra com <strong>TAG, setor, fabricante, ano, número de série, tensão,
-              foto e criticidade</strong>. Torno, fresadora, serra circular, serra fita, prensa,
-              guilhotina, dobradeira, calandra, injetora, extrusora, misturador, esteira, ponte
-              rolante, compressor: o que tem <span class="t-petro">zona de perigo</span> entra no
-              inventário. Máquina que não está na lista é a que aparece no auto de infração.
-            </p>
-          </div>
+    <ol class="fx">
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">01</span>
+        <div>
+          <span class="fluxo-norma">Inventário</span>
+          <h3>Levantar tudo o que tem parte móvel</h3>
+          <p>TAG, setor, fabricante, ano, série, foto e criticidade. Máquina fora da lista é a que aparece no auto de infração.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">02</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">NR-12 · Anexos</span>
-            <h3>Verificar a conformidade máquina por máquina</h3>
-            <p>
-              Checklist aplicado no celular, ao lado do equipamento: proteção fixa, proteção móvel
-              intertravada, parada de emergência, distância de segurança, sinalização, dispositivo
-              de partida, condição do painel. Cada <strong>não conformidade sai com foto anexada</strong>
-              e já nasce ligada ao plano de ação daquela TAG.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">02</span>
+        <div>
+          <span class="fluxo-norma">NR-12 · Anexos</span>
+          <h3>Verificar a conformidade no celular</h3>
+          <p>Checklist ao lado da máquina. Cada <strong>não conformidade sai com foto</strong> e já ligada ao plano daquela TAG.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">03</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">NBR ISO 12100</span>
-            <h3>Apreciação de risco por zona de perigo</h3>
-            <p>
-              Perigo identificado, risco estimado e risco avaliado — um registro por
-              <span class="t-petro">zona de perigo</span>, não um por máquina. O sistema aplica o
-              método <span class="t-petro">HRN</span>, que multiplica probabilidade de ocorrência,
-              frequência de exposição, grau de dano possível e número de pessoas expostas, e guarda
-              os quatro parâmetros escolhidos. <span class="t-preto">É essa memória que sustenta a
-              defesa técnica</span> quando alguém questiona a decisão dois anos depois.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">03</span>
+        <div>
+          <span class="fluxo-norma">NBR ISO 12100</span>
+          <h3>Apreciação de risco por zona de perigo</h3>
+          <p>HRN com os quatro parâmetros guardados: <span class="t-preto">é essa memória que sustenta a defesa técnica</span> anos depois.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">04</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">NBR 14153 · ISO 13849-1</span>
-            <h3>Definir a categoria de segurança do comando</h3>
-            <p>
-              Gravidade do dano, frequência de exposição e possibilidade de evitar o dano entram no
-              grafo de riscos e saem como <strong>categoria B, 1, 2, 3 ou 4</strong>. É essa
-              categoria que define se basta uma proteção fixa ou se a máquina exige
-              <span class="t-petro">canal duplo com relé de segurança e autodiagnóstico</span> —
-              e é o número que mais gera divergência entre fornecedor e engenharia.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">04</span>
+        <div>
+          <span class="fluxo-norma">NBR 14153 · ISO 13849-1</span>
+          <h3>Categoria de segurança do comando</h3>
+          <p>Gravidade, exposição e possibilidade de evitar entram no grafo e saem como <strong>categoria B, 1, 2, 3 ou 4</strong>.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">05</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">Projeto</span>
-            <h3>Especificar a medida de proteção certa</h3>
-            <p>
-              Com o risco estimado e a categoria definida, o sistema organiza a especificação:
-              proteção fixa, proteção móvel com <strong>chave de segurança de acionamento positivo</strong>,
-              cortina de luz com distância calculada pelo tempo de parada, comando bimanual, parada
-              de emergência e dispositivo de bloqueio de energias. Sai projeto mecânico e elétrico,
-              não improviso de serralheria.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">05</span>
+        <div>
+          <span class="fluxo-norma">Projeto</span>
+          <h3>Especificar a proteção certa</h3>
+          <p>Proteção fixa ou móvel intertravada, cortina de luz, bimanual, emergência e bloqueio de energias — sem improviso.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">06</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">Plano de ação</span>
-            <h3>Prazo, responsável e custo por máquina</h3>
-            <p>
-              Cada não conformidade vira item de plano com <strong>prazo, responsável, custo
-              estimado e status</strong>. O gestor enxerga quantas máquinas estão adequadas, quantas
-              estão em execução e quantas ainda não começaram — por setor e por unidade.
-              <span class="t-preto">É o documento que a fiscalização pede junto com o laudo.</span>
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">06</span>
+        <div>
+          <span class="fluxo-norma">Plano de ação</span>
+          <h3>Prazo, responsável e status por máquina</h3>
+          <p>Cada medida vira ação rastreável até o perigo de origem. <span class="t-preto">A fiscalização pede junto com o laudo.</span></p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">07</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">Validação</span>
-            <h3>Risco residual, tempo de parada e laudo</h3>
-            <p>
-              Instalada a proteção, o risco é reavaliado com os mesmos parâmetros: o sistema mostra
-              o <span class="t-petro">risco residual</span> lado a lado com o risco inicial. Medição
-              do tempo de parada total, teste da função de segurança e, então, o
-              <strong>laudo técnico de conformidade NR-12</strong> montado para o profissional
-              habilitado conferir, assinar e registrar a <span class="t-preto">ART no CREA</span>.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">07</span>
+        <div>
+          <span class="fluxo-norma">Validação</span>
+          <h3>Risco residual e laudo com ART</h3>
+          <p>Risco reavaliado com os mesmos parâmetros, lado a lado com o inicial, e <strong>laudo em PDF</strong> para assinar.</p>
         </div>
-
-        <div class="fluxo-item" data-reveal>
-          <span class="fluxo-num">08</span>
-          <div class="fluxo-txt">
-            <span class="fluxo-norma">Rotina</span>
-            <h3>Manter a conformidade viva</h3>
-            <p>
-              Adequação não é projeto com data de fim. O sistema controla reinspeção periódica,
-              manutenção das proteções, validade dos <strong>treinamentos NR-12 e NR-10</strong>,
-              revisão da apreciação de risco quando muda ferramental ou layout e o histórico
-              completo por TAG.
-            </p>
-          </div>
+      </li>
+      <li class="fx-item" data-reveal>
+        <span class="fx-num">08</span>
+        <div>
+          <span class="fluxo-norma">Rotina</span>
+          <h3>Manter a conformidade viva</h3>
+          <p>Reinspeção, manutenção das proteções, <strong>treinamentos NR-12 e NR-10</strong> e histórico completo por TAG.</p>
         </div>
-
-      </div>
-
-      <aside class="fluxo-aside" data-reveal>
-        <div class="ill-wrap">
-          <svg class="ill" viewBox="0 0 420 520" role="img" aria-labelledby="illFluxoT">
-            <title id="illFluxoT">Ilustração: máquina com proteção fixa, cortina de luz, relé de segurança e laudo de conformidade</title>
-            <defs>
-              <pattern id="hachura" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                <line x1="0" y1="0" x2="0" y2="10" stroke="#93a6b8" stroke-width="2"/>
-              </pattern>
-            </defs>
-
-            <!-- piso -->
-            <rect x="0" y="430" width="420" height="6" rx="3" fill="#c6d1db"/>
-            <rect x="24" y="436" width="372" height="40" fill="none" stroke="#e6ebf0" stroke-width="2" stroke-dasharray="6 8"/>
-
-            <!-- corpo da máquina -->
-            <rect x="120" y="210" width="200" height="220" rx="6" fill="#0f2c47"/>
-            <rect x="120" y="210" width="200" height="26" rx="6" fill="#0a1f33"/>
-            <rect x="146" y="256" width="148" height="86" rx="4" fill="#061422"/>
-            <!-- ponto de operação -->
-            <rect x="168" y="282" width="104" height="34" rx="3" fill="#f26522"/>
-            <path d="M186 292h72M186 300h56M186 308h64" stroke="#ffe9dd" stroke-width="3" stroke-linecap="round"/>
-            <!-- martelo / cabeçote -->
-            <rect x="186" y="226" width="68" height="34" rx="3" fill="#4a6480"/>
-            <path d="M220 260v18" stroke="#93a6b8" stroke-width="5" stroke-linecap="round"/>
-            <!-- base -->
-            <rect x="132" y="386" width="176" height="44" rx="4" fill="#0a1f33"/>
-            <path d="M152 402h44M152 414h68" stroke="#4a6480" stroke-width="4" stroke-linecap="round"/>
-
-            <!-- proteção fixa hachurada (guarda) -->
-            <rect x="110" y="300" width="30" height="130" rx="3" fill="url(#hachura)" opacity=".5"/>
-            <rect x="110" y="300" width="30" height="130" rx="3" fill="none" stroke="#4a6480" stroke-width="2.5"/>
-            <rect x="300" y="300" width="30" height="130" rx="3" fill="url(#hachura)" opacity=".5"/>
-            <rect x="300" y="300" width="30" height="130" rx="3" fill="none" stroke="#4a6480" stroke-width="2.5"/>
-
-            <!-- cortina de luz -->
-            <rect x="62" y="250" width="18" height="180" rx="4" fill="#0a5a6e"/>
-            <rect x="356" y="250" width="18" height="180" rx="4" fill="#0a5a6e"/>
-            <g stroke="#ff8547" stroke-width="2.5" stroke-dasharray="7 7" stroke-linecap="round">
-              <path d="M80 276h276M80 312h276M80 348h276M80 384h276"/>
-            </g>
-            <circle cx="71" cy="266" r="4" fill="#ff8547"/>
-            <circle cx="365" cy="266" r="4" fill="#ff8547"/>
-
-            <!-- relé de segurança -->
-            <rect x="272" y="112" width="120" height="74" rx="6" fill="#ffffff" stroke="#c6d1db" stroke-width="2"/>
-            <rect x="272" y="112" width="120" height="8" rx="4" fill="#0e6f85"/>
-            <text x="286" y="142" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0a1f33" font-weight="600">CAT. 4</text>
-            <text x="286" y="160" font-family="Inter, sans-serif" font-size="11" fill="#4a6480">Relé de segurança</text>
-            <circle cx="300" cy="174" r="4.5" fill="#1a7f52"/>
-            <circle cx="316" cy="174" r="4.5" fill="#1a7f52"/>
-            <circle cx="332" cy="174" r="4.5" fill="#f26522"/>
-            <path d="M320 186v24" stroke="#93a6b8" stroke-width="2.5" stroke-dasharray="5 5"/>
-
-            <!-- laudo -->
-            <rect x="28" y="96" width="118" height="146" rx="6" fill="#ffffff" stroke="#c6d1db" stroke-width="2"/>
-            <rect x="28" y="96" width="118" height="8" rx="4" fill="#f26522"/>
-            <path d="M46 128h82M46 144h82M46 160h58M46 176h70M46 192h44" stroke="#c6d1db" stroke-width="5" stroke-linecap="round"/>
-            <circle cx="118" cy="212" r="17" fill="none" stroke="#1a7f52" stroke-width="3"/>
-            <path d="M110 212l6 6 11-13" stroke="#1a7f52" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <text x="46" y="116" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">LAUDO NR-12</text>
-
-            <!-- botão de emergência -->
-            <circle cx="345" cy="246" r="17" fill="#ffe9dd" stroke="#b3261e" stroke-width="2.5"/>
-            <circle cx="345" cy="246" r="9" fill="#b3261e"/>
-
-            <!-- operador estilizado -->
-            <circle cx="52" cy="322" r="15" fill="#f26522"/>
-            <path d="M52 340c-16 0-26 12-26 28v62h52v-62c0-16-10-28-26-28Z" fill="#0f2c47"/>
-            <path d="M36 306h32l-4-9H40l-4 9Z" fill="#ff8547"/>
-          </svg>
-          <span class="ill-cap">Perigo → risco → categoria → proteção → risco residual</span>
-        </div>
-      </aside>
-    </div>
+      </li>
+    </ol>
 
     <div class="sec-tags sec-tags-marquee">
       <span class="sec-tags-lbl">Etapas mais buscadas</span>
@@ -1100,352 +965,197 @@
     <div class="sec-head">
       <span class="eyebrow">Por dentro do sistema</span>
       <h2>As telas que o seu time vai usar</h2>
-      <p>Representação da interface do Sistema NR12, com dados de demonstração.</p>
+      <p>Capturas reais do Sistema NR12, com a empresa de demonstração cadastrada.</p>
     </div>
   </div>
 
-  <div class="wrap split mod-block" data-reveal>
-    <div class="mock frame-app">
-      <svg viewBox="0 0 880 540" role="img" aria-labelledby="mockInvT">
-        <title id="mockInvT">Tela de inventário de máquinas do Sistema NR12, com cards por TAG, setor, HRN e categoria de segurança</title>
-        <rect width="880" height="540" fill="#f4f7f9"/>
-        <!-- topo -->
-        <rect width="880" height="56" fill="#0a1f33"/>
-        <circle cx="30" cy="28" r="10" fill="#0e6f85"/>
-        <text x="50" y="33" font-family="Archivo, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Sistema NR12</text>
-        <rect x="190" y="15" width="150" height="26" rx="13" fill="#0f2c47"/>
-        <text x="206" y="32" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Máquinas</text>
-        <rect x="700" y="14" width="150" height="28" rx="4" fill="#f26522"/>
-        <text x="722" y="33" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff">+ Nova máquina</text>
-        <!-- lateral -->
-        <rect y="56" width="150" height="484" fill="#0f2c47"/>
-        <g font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">
-          <rect x="14" y="80" width="122" height="28" rx="4" fill="#163a5c"/>
-          <text x="28" y="99" fill="#ffffff">Inventário</text>
-          <text x="28" y="133">Apreciação</text>
-          <text x="28" y="165">Plano de ação</text>
-          <text x="28" y="197">Checklists</text>
-          <text x="28" y="229">Treinamentos</text>
-          <text x="28" y="261">Módulo NR-10</text>
-          <text x="28" y="293">Laudos</text>
-        </g>
-        <!-- filtros -->
-        <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#4a6480">
-          <rect x="176" y="78" width="92" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-          <text x="190" y="94">SETOR: TODOS</text>
-          <rect x="278" y="78" width="104" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-          <text x="292" y="94">RISCO: ALTO +</text>
-          <rect x="392" y="78" width="96" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-          <text x="406" y="94">STATUS: TODOS</text>
-        </g>
-        <!-- cards -->
-        <g>
-          <!-- card 1 -->
-          <rect x="176" y="118" width="330" height="190" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-          <rect x="176" y="118" width="330" height="4" fill="#b3261e"/>
-          <rect x="192" y="138" width="86" height="66" rx="4" fill="#e6ebf0"/>
-          <path d="M206 186l16-20 12 14 10-10 14 16z" fill="#93a6b8"/>
-          <circle cx="216" cy="158" r="6" fill="#c6d1db"/>
-          <text x="292" y="152" font-family="Archivo, sans-serif" font-size="15" font-weight="700" fill="#061422">Prensa excêntrica 60 t</text>
-          <text x="292" y="171" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4a6480">TAG PRE-004 · ESTAMPARIA</text>
-          <rect x="292" y="182" width="74" height="20" rx="3" fill="#ffe9dd"/>
-          <text x="302" y="196" font-family="IBM Plex Mono, monospace" font-size="10" fill="#b3261e">HRN 128</text>
-          <rect x="372" y="182" width="58" height="20" rx="3" fill="#e4f1f4"/>
-          <text x="382" y="196" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0a5a6e">CAT. 4</text>
-          <g font-family="Inter, sans-serif" font-size="11" fill="#43596c">
-            <text x="192" y="232">Proteção do ponto de operação</text>
-            <text x="192" y="252">Cortina de luz</text>
-            <text x="192" y="272">Bloqueio de energias</text>
-            <text x="192" y="292">Treinamento do operador</text>
-          </g>
-          <g font-family="IBM Plex Mono, monospace" font-size="10">
-            <text x="430" y="232" fill="#b3261e">PENDENTE</text>
-            <text x="430" y="252" fill="#b3261e">PENDENTE</text>
-            <text x="430" y="272" fill="#1a7f52">OK</text>
-            <text x="430" y="292" fill="#1a7f52">OK</text>
-          </g>
-
-          <!-- card 2 -->
-          <rect x="522" y="118" width="330" height="190" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-          <rect x="522" y="118" width="330" height="4" fill="#f26522"/>
-          <rect x="538" y="138" width="86" height="66" rx="4" fill="#e6ebf0"/>
-          <circle cx="581" cy="171" r="20" fill="none" stroke="#93a6b8" stroke-width="5"/>
-          <path d="M581 151v40" stroke="#93a6b8" stroke-width="4"/>
-          <text x="638" y="152" font-family="Archivo, sans-serif" font-size="15" font-weight="700" fill="#061422">Serra fita horizontal</text>
-          <text x="638" y="171" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4a6480">TAG SER-011 · CALDEIRARIA</text>
-          <rect x="638" y="182" width="70" height="20" rx="3" fill="#fff3e2"/>
-          <text x="648" y="196" font-family="IBM Plex Mono, monospace" font-size="10" fill="#d9500f">HRN 64</text>
-          <rect x="714" y="182" width="58" height="20" rx="3" fill="#e4f1f4"/>
-          <text x="724" y="196" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0a5a6e">CAT. 3</text>
-          <g font-family="Inter, sans-serif" font-size="11" fill="#43596c">
-            <text x="538" y="232">Proteção móvel intertravada</text>
-            <text x="538" y="252">Parada de emergência</text>
-            <text x="538" y="272">Sinalização NBR 7195</text>
-            <text x="538" y="292">Apreciação de risco</text>
-          </g>
-          <g font-family="IBM Plex Mono, monospace" font-size="10">
-            <text x="776" y="232" fill="#1a7f52">OK</text>
-            <text x="776" y="252" fill="#1a7f52">OK</text>
-            <text x="776" y="272" fill="#d9500f">EM EXEC.</text>
-            <text x="776" y="292" fill="#1a7f52">OK</text>
-          </g>
-        </g>
-
-        <!-- barra de conformidade -->
-        <rect x="176" y="330" width="676" height="90" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-        <text x="196" y="358" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">CONFORMIDADE DO PARQUE · 128 MÁQUINAS</text>
-        <rect x="196" y="372" width="636" height="12" rx="6" fill="#e6ebf0"/>
-        <rect x="196" y="372" width="394" height="12" rx="6" fill="#1a7f52"/>
-        <rect x="590" y="372" width="140" height="12" fill="#f26522"/>
-        <rect x="730" y="372" width="102" height="12" rx="6" fill="#b3261e"/>
-        <g font-family="Inter, sans-serif" font-size="11" fill="#43596c">
-          <text x="196" y="404">62% adequadas</text>
-          <text x="420" y="404">22% em execução</text>
-          <text x="660" y="404">16% não iniciadas</text>
-        </g>
-
-        <!-- rodapé lista -->
-        <rect x="176" y="440" width="676" height="76" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-        <text x="196" y="466" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">PRÓXIMAS AÇÕES</text>
-        <g font-family="Inter, sans-serif" font-size="11" fill="#43596c">
-          <text x="196" y="490">PRE-004 · instalar cortina de luz · venc. 12/10 · João</text>
-          <text x="196" y="508">QGBT-02 · termografia anual · venc. 28/10 · Marina</text>
-        </g>
-      </svg>
-    </div>
+  <div class="wrap split n12-tela" data-reveal>
+    <figure class="n12-shot">
+      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Apreciações · PE-02</b></span>
+      <img src="img/nr12-sistema/tela-apreciacao.webp" width="1504" height="784" loading="lazy"
+           alt="Tela real de apreciação de risco do Sistema NR12: índice com máquina, limites de uso, perigos P-01 e P-02, checklist NR-12 e conclusão, seleção da zona de perigo e prévia do laudo com HRN atual e residual">
+    </figure>
     <div>
-      <span class="eyebrow">Módulo 01 · Inventário</span>
-      <h3 style="font-size:clamp(1.3rem,1.1rem+.8vw,1.7rem)">Toda máquina com parte móvel em uma lista só</h3>
+      <span class="eyebrow">Apreciação de risco</span>
+      <h3 class="n12-tela-h">Um perigo por vez, com a prévia do laudo ao lado</h3>
       <p>
-        Cada equipamento vira um card com foto, <strong>TAG</strong>, setor, HRN da zona de perigo
-        mais crítica, <span class="t-petro">categoria de segurança adotada</span> e o status de cada
-        medida de proteção. O que está pendente aparece como pendente —
-        <span class="t-preto">não como espaço em branco</span>.
+        O índice guia a apreciação na ordem da <strong>NBR ISO 12100</strong>: máquina, limites de
+        uso, perigos, checklist NR-12 e conclusão. Cada perigo nasce em uma
+        <span class="t-petro">zona de perigo</span> sugerida para aquele tipo de máquina.
       </p>
       <p>
-        No topo, o percentual de conformidade do parque por setor e por unidade. É o número que a
-        diretoria pergunta e que ninguém consegue responder quando o controle vive em planilha.
+        À direita, a prévia mostra o que vai para o PDF: HRN atual
+        <span class="tg tg-err">256 Alto</span> e residual <span class="tg tg-warn">32 Atenção</span>,
+        número de perigos, não conformidades e a conclusão.
       </p>
     </div>
   </div>
 
-  <div class="mod-link" data-reveal aria-hidden="true">
-    <span class="mod-link-rail"><i></i></span>
-    <svg class="mod-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13"/><path d="M6 13l6 6 6-6"/></svg>
-  </div>
-
-  <div class="wrap split rev mod-block" data-reveal>
+  <div class="wrap split rev n12-tela" data-reveal>
     <div>
-      <span class="eyebrow">Módulo 02 · Apreciação de risco</span>
-      <h3 style="font-size:clamp(1.3rem,1.1rem+.8vw,1.7rem)">A conta que sustenta a categoria, escrita por extenso</h3>
+      <span class="eyebrow">Plano de ação</span>
+      <h3 class="n12-tela-h">Cada medida aponta para o perigo que a originou</h3>
       <p>
-        Para cada <span class="t-petro">zona de perigo</span> o sistema registra o perigo
-        identificado, os quatro parâmetros do <strong>HRN</strong>, a faixa de risco resultante e o
-        caminho percorrido no grafo da <strong>NBR 14153</strong> até a categoria. Nada de número
-        que apareceu do nada no relatório.
+        As ações saem do laudo com a origem gravada — <span class="tg tg-rev">LAR-2026-0001 · P-01</span> —,
+        o tipo de adequação, o prazo e o progresso. Adequação física gera
+        <span class="tg tg-info">OS</span> para a manutenção.
       </p>
       <p>
-        Depois da proteção instalada, a mesma tela mostra o <span class="t-petro">risco residual</span>
-        ao lado do risco inicial. <span class="t-preto">Essa comparação é o que prova que a medida
-        foi eficaz</span> — e é exatamente o que falta na maioria dos laudos que revisamos.
+        Filtro por atrasadas, em andamento e concluídas. Quando a última fecha como
+        <span class="tg tg-ok">Concluída</span>, o laudo de validação já tem o que precisa.
       </p>
     </div>
-    <div class="mock frame-app">
-      <svg viewBox="0 0 880 540" role="img" aria-labelledby="mockRiscoT">
-        <title id="mockRiscoT">Tela de apreciação de risco do Sistema NR12, com parâmetros do HRN, matriz de risco e comparação entre risco inicial e residual</title>
-        <rect width="880" height="540" fill="#f4f7f9"/>
-        <rect width="880" height="56" fill="#0a1f33"/>
-        <text x="28" y="34" font-family="Archivo, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Apreciação de risco · PRE-004</text>
-        <rect x="700" y="14" width="150" height="28" rx="4" fill="#0e6f85"/>
-        <text x="726" y="33" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Gerar memorial</text>
-
-        <!-- painel de parâmetros -->
-        <rect x="28" y="84" width="380" height="270" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-        <text x="48" y="112" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">ZONA DE PERIGO · PONTO DE OPERAÇÃO</text>
-        <g font-family="Inter, sans-serif" font-size="12" fill="#43596c">
-          <text x="48" y="146">Probabilidade de ocorrência</text>
-          <text x="48" y="180">Frequência de exposição</text>
-          <text x="48" y="214">Grau de dano possível</text>
-          <text x="48" y="248">Pessoas expostas</text>
-        </g>
-        <g font-family="IBM Plex Mono, monospace" font-size="12" fill="#061422" font-weight="600">
-          <text x="300" y="146">4,0</text>
-          <text x="300" y="180">4,0</text>
-          <text x="300" y="214">8,0</text>
-          <text x="300" y="248">1,0</text>
-        </g>
-        <g>
-          <rect x="48" y="152" width="320" height="5" rx="3" fill="#e6ebf0"/><rect x="48" y="152" width="128" height="5" rx="3" fill="#f26522"/>
-          <rect x="48" y="186" width="320" height="5" rx="3" fill="#e6ebf0"/><rect x="48" y="186" width="256" height="5" rx="3" fill="#f26522"/>
-          <rect x="48" y="220" width="320" height="5" rx="3" fill="#e6ebf0"/><rect x="48" y="220" width="171" height="5" rx="3" fill="#b3261e"/>
-          <rect x="48" y="254" width="320" height="5" rx="3" fill="#e6ebf0"/><rect x="48" y="254" width="27" height="5" rx="3" fill="#1a7f52"/>
-        </g>
-        <line x1="48" y1="284" x2="368" y2="284" stroke="#dbe3ea" stroke-width="1.5"/>
-        <text x="48" y="312" font-family="Inter, sans-serif" font-size="13" fill="#061422" font-weight="600">HRN calculado</text>
-        <text x="300" y="314" font-family="Archivo, sans-serif" font-size="26" font-weight="800" fill="#b3261e">128</text>
-        <text x="48" y="336" font-family="IBM Plex Mono, monospace" font-size="10" fill="#b3261e">RISCO MUITO ALTO · AÇÃO IMEDIATA</text>
-
-        <!-- grafo de riscos -->
-        <rect x="428" y="84" width="424" height="270" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-        <text x="448" y="112" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">GRAFO DE RISCOS · ABNT NBR 14153</text>
-        <g stroke="#c6d1db" stroke-width="2" fill="none">
-          <path d="M456 216h48"/>
-          <path d="M504 216l36-54M504 216l36 54"/>
-          <path d="M540 162l30-26M540 162l30 26M540 270l30-26M540 270l30 26"/>
-          <path d="M570 136h34M570 188h34M570 244h34M570 296h34"/>
-        </g>
-        <path d="M456 216h48l36 54 30 26h34" stroke="#f26522" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <g font-family="IBM Plex Mono, monospace" font-size="10" fill="#4a6480">
-          <text x="448" y="208">INÍCIO</text>
-          <text x="508" y="196">S2</text>
-          <text x="546" y="286">F2</text>
-          <text x="578" y="292">P2</text>
-        </g>
-        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#93a6b8">
-          <text x="612" y="140">B</text><text x="612" y="192">1</text><text x="612" y="248">2</text>
-        </g>
-        <circle cx="624" cy="296" r="16" fill="#0e6f85"/>
-        <text x="618" y="301" font-family="Archivo, sans-serif" font-size="15" font-weight="800" fill="#ffffff">4</text>
-        <text x="652" y="292" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#061422">Categoria 4</text>
-        <text x="652" y="309" font-family="Inter, sans-serif" font-size="11" fill="#43596c">Redundância com autodiagnóstico</text>
-        <rect x="448" y="326" width="386" height="1" fill="#dbe3ea"/>
-
-        <!-- comparação inicial x residual -->
-        <rect x="28" y="374" width="824" height="140" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-        <text x="48" y="402" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="#4a6480">RISCO INICIAL × RISCO RESIDUAL APÓS PROTEÇÃO</text>
-        <text x="48" y="436" font-family="Inter, sans-serif" font-size="12" fill="#43596c">Antes</text>
-        <rect x="120" y="424" width="620" height="16" rx="8" fill="#e6ebf0"/>
-        <rect x="120" y="424" width="496" height="16" rx="8" fill="#b3261e"/>
-        <text x="756" y="437" font-family="IBM Plex Mono, monospace" font-size="12" fill="#b3261e" font-weight="600">HRN 128</text>
-        <text x="48" y="478" font-family="Inter, sans-serif" font-size="12" fill="#43596c">Depois</text>
-        <rect x="120" y="466" width="620" height="16" rx="8" fill="#e6ebf0"/>
-        <rect x="120" y="466" width="62" height="16" rx="8" fill="#1a7f52"/>
-        <text x="756" y="479" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1a7f52" font-weight="600">HRN 4,0</text>
-      </svg>
-    </div>
+    <figure class="n12-shot">
+      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Plano de ações</b></span>
+      <img src="img/nr12-sistema/tela-plano-de-acao.webp" width="1514" height="540" loading="lazy"
+           alt="Tela real do plano de ações do Sistema NR12 com sete ações ligadas aos perigos P-01 e P-02 do laudo LAR-2026-0001, prazo, barra de progresso e situação concluída">
+    </figure>
   </div>
 
-  <div class="mod-link" data-reveal aria-hidden="true">
-    <span class="mod-link-rail"><i></i></span>
-    <svg class="mod-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13"/><path d="M6 13l6 6 6-6"/></svg>
-  </div>
-
-  <div class="wrap split mod-block" data-reveal>
-    <div class="phone-wrap">
-      <div class="phone">
-        <div class="phone-screen">
-          <svg viewBox="0 0 402 877" preserveAspectRatio="xMidYMin slice" role="img" aria-labelledby="mockMobT">
-            <title id="mockMobT">Checklist NR-12 aberto no celular, com itens de proteção, respostas e foto de não conformidade</title>
-            <rect width="402" height="877" fill="#f4f7f9"/>
-            <rect width="402" height="118" fill="#0a1f33"/>
-            <text x="24" y="56" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1.6" fill="#93a6b8">CHECKLIST NR-12</text>
-            <text x="24" y="84" font-family="Archivo, sans-serif" font-size="22" font-weight="700" fill="#ffffff">PRE-004 · Prensa 60 t</text>
-            <text x="24" y="106" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Estamparia · Linha A</text>
-
-            <!-- progresso -->
-            <rect x="24" y="142" width="354" height="8" rx="4" fill="#e6ebf0"/>
-            <rect x="24" y="142" width="212" height="8" rx="4" fill="#f26522"/>
-            <text x="24" y="176" font-family="IBM Plex Mono, monospace" font-size="11" fill="#4a6480">12 DE 20 ITENS</text>
-
-            <!-- itens -->
-            <g>
-              <rect x="24" y="196" width="354" height="76" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="44" y="226" font-family="Inter, sans-serif" font-size="14" fill="#061422">Proteção fixa nas transmissões</text>
-              <rect x="44" y="238" width="58" height="24" rx="4" fill="#1a7f52"/>
-              <text x="60" y="255" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">Sim</text>
-              <rect x="110" y="238" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="128" y="255" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Não</text>
-              <rect x="176" y="238" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="196" y="255" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">N/A</text>
-            </g>
-
-            <g>
-              <rect x="24" y="288" width="354" height="192" rx="6" fill="#ffffff" stroke="#b3261e" stroke-width="2"/>
-              <text x="44" y="318" font-family="Inter, sans-serif" font-size="14" fill="#061422">Proteção do ponto de operação</text>
-              <rect x="44" y="330" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="60" y="347" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Sim</text>
-              <rect x="110" y="330" width="58" height="24" rx="4" fill="#b3261e"/>
-              <text x="128" y="347" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">Não</text>
-              <rect x="176" y="330" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="196" y="347" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">N/A</text>
-
-              <rect x="44" y="368" width="314" height="52" rx="4" fill="#f4f7f9"/>
-              <text x="58" y="390" font-family="Inter, sans-serif" font-size="12" fill="#43596c">Ponto de operação acessível pela</text>
-              <text x="58" y="408" font-family="Inter, sans-serif" font-size="12" fill="#43596c">frente, sem cortina de luz.</text>
-
-              <rect x="44" y="432" width="72" height="32" rx="4" fill="#e6ebf0"/>
-              <path d="M58 456l12-14 8 9 7-7 11 12z" fill="#93a6b8"/>
-              <circle cx="66" cy="444" r="4" fill="#c6d1db"/>
-              <rect x="124" y="432" width="72" height="32" rx="4" fill="#e6ebf0"/>
-              <path d="M138 456l12-14 8 9 7-7 11 12z" fill="#93a6b8"/>
-              <rect x="204" y="432" width="72" height="32" rx="4" fill="#ffe9dd" stroke="#f26522" stroke-dasharray="4 4"/>
-              <path d="M240 440v16M232 448h16" stroke="#f26522" stroke-width="2.5" stroke-linecap="round"/>
-            </g>
-
-            <g>
-              <rect x="24" y="496" width="354" height="76" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="44" y="526" font-family="Inter, sans-serif" font-size="14" fill="#061422">Parada de emergência acessível</text>
-              <rect x="44" y="538" width="58" height="24" rx="4" fill="#1a7f52"/>
-              <text x="60" y="555" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">Sim</text>
-              <rect x="110" y="538" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="128" y="555" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Não</text>
-              <rect x="176" y="538" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="196" y="555" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">N/A</text>
-            </g>
-
-            <g>
-              <rect x="24" y="588" width="354" height="76" rx="6" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="44" y="618" font-family="Inter, sans-serif" font-size="14" fill="#061422">Dispositivo de bloqueio de energia</text>
-              <rect x="44" y="630" width="58" height="24" rx="4" fill="#1a7f52"/>
-              <text x="60" y="647" font-family="Inter, sans-serif" font-size="12" fill="#ffffff">Sim</text>
-              <rect x="110" y="630" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="128" y="647" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">Não</text>
-              <rect x="176" y="630" width="58" height="24" rx="4" fill="#ffffff" stroke="#dbe3ea"/>
-              <text x="196" y="647" font-family="Inter, sans-serif" font-size="12" fill="#93a6b8">N/A</text>
-            </g>
-
-            <!-- botão -->
-            <rect x="24" y="700" width="354" height="52" rx="5" fill="#f26522"/>
-            <text x="112" y="732" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#ffffff">Salvar e gerar ações</text>
-            <text x="24" y="784" font-family="Inter, sans-serif" font-size="12" fill="#4a6480">2 não conformidades vão para o plano</text>
-            <text x="24" y="804" font-family="Inter, sans-serif" font-size="12" fill="#4a6480">de ação da PRE-004.</text>
-          </svg>
-        </div>
-        <span class="phone-notch" aria-hidden="true"></span>
-        <span class="phone-btn phone-btn-power" aria-hidden="true"></span>
-        <span class="phone-btn phone-btn-vol" aria-hidden="true"></span>
-      </div>
-      <div class="phone-cap">Checklist NR-12 · verificação responsiva no celular</div>
-    </div>
+  <div class="wrap split n12-tela" data-reveal>
+    <figure class="n12-shot">
+      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>Laudos e documentos</b></span>
+      <img src="img/nr12-sistema/tela-laudos.webp" width="1504" height="784" loading="lazy"
+           alt="Tela real de laudos e documentos do Sistema NR12 com gavetas por tipo: inventário, plano e cronograma, apreciação de risco, validação de sistemas de segurança, relatório técnico e manual de instruções">
+    </figure>
     <div>
-      <span class="eyebrow">Módulo 03 · Verificação em campo</span>
-      <h3 style="font-size:clamp(1.3rem,1.1rem+.8vw,1.7rem)">O checklist vai junto no bolso</h3>
+      <span class="eyebrow">Laudos e documentos</span>
+      <h3 class="n12-tela-h">Uma gaveta para cada documento da norma</h3>
       <p>
-        Proteção fixa, proteção móvel, intertravamento, parada de emergência, distância de segurança,
-        sinalização e dispositivo de bloqueio: tudo marcado no celular,
-        <strong>ao lado da máquina</strong>, com foto tirada na hora e anexada à não conformidade.
+        Gestão, avaliação técnica e responsabilidade separadas. Cada gaveta mostra número e
+        revisão, data de emissão e se o documento <span class="tg tg-info">Exige RT + ART</span>.
       </p>
       <p>
-        Terminou a verificação, o checklist é salvo e cada "Não" já vira
-        <span class="t-petro">item de plano de ação</span> com prazo sugerido.
-        <span class="t-preto">Acabou a prancheta transcrita dois dias depois</span>, com foto que
-        ninguém sabe de qual máquina era.
+        Nova revisão não apaga a anterior: o histórico fica guardado e
+        <span class="t-preto">a versão vigente é sempre a que aparece primeiro</span>.
       </p>
     </div>
+  </div>
+
+  <div class="wrap split rev n12-tela" data-reveal>
+    <div>
+      <span class="eyebrow">Laudo emitido</span>
+      <h3 class="n12-tela-h">O PDF abre dentro do sistema, com código de validação</h3>
+      <p>
+        O laudo emitido ganha código de autenticidade
+        (<span class="t-cod">RF5B-E3J5-S7QB-DKWH</span>), fica <span class="tg tg-ok">Vigente</span>
+        e pode ser baixado ou impresso na hora.
+      </p>
+      <p>
+        Pelo mesmo painel você gera o link de <strong>ciência do cliente</strong>: o responsável
+        da empresa confirma que recebeu o laudo, sem troca de e-mail.
+      </p>
+    </div>
+    <figure class="n12-shot">
+      <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>LAR-2026-0001</b></span>
+      <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" loading="lazy"
+           alt="Tela real do visualizador de laudo do Sistema NR12 com a capa do laudo de apreciação de risco, identificação, código de autenticidade e ciência do cliente">
+    </figure>
   </div>
 
   <div class="wrap sec-tags">
     <span class="sec-tags-lbl">Telas e documentos gerados</span>
     <ul>
       <li><a href="#telas">inventário de máquinas com TAG e criticidade</a></li>
-      <li><a href="#telas">memorial de apreciação de risco NR-12</a></li>
+      <li><a href="#documentos">memorial de apreciação de risco NR-12</a></li>
       <li><a href="#telas">matriz de risco HRN por zona de perigo</a></li>
       <li><a href="#telas">checklist NR-12 digital com foto</a></li>
       <li><a href="#telas">plano de ação de adequação por setor</a></li>
-      <li><a href="#telas">laudo de conformidade NR-12 em PDF</a></li>
+      <li><a href="#documentos">laudo de conformidade NR-12 em PDF</a></li>
       <li><a href="#nr10">prontuário de instalações elétricas NR-10</a></li>
     </ul>
   </div>
+</section>
+
+<!-- ============ DOCUMENTOS GERADOS ============ -->
+<section id="documentos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">O que sai do sistema</span>
+      <h2>Nove documentos, gerados com os dados que você já cadastrou</h2>
+      <p>
+        Nada de copiar a apreciação para o Word. O documento sai em PDF, numerado, com revisão e
+        código de validação, pronto para o profissional habilitado assinar.
+      </p>
+    </div>
+
+    <ul class="n12-docs">
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Laudo de Apreciação de Risco (LAR)</h3>
+        <p>Perigos por zona, HRN atual e residual, categoria de segurança, conformidade item a item e conclusão.</p>
+        <span class="tg tg-rev">LAR-2026-0001</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Laudo de Validação (LVA)</h3>
+        <p>Prova que as proteções instaladas funcionam e que o risco residual ficou aceitável.</p>
+        <span class="tg tg-rev">LVA-2026-0001</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Gestão</span>
+        <h3>Plano / Cronograma de Ações</h3>
+        <p>Medidas com prioridade, prazo e responsável, geradas direto dos perigos do laudo.</p>
+        <span class="tg tg-rev">001-2026/PA</span>
+      </li>
+      <li>
+        <span class="tg tg-info">Gestão</span>
+        <h3>Inventário de Máquinas e Equipamentos</h3>
+        <p>A lista do parque por TAG, setor, fabricante, ano e situação de cada máquina.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Relatório Técnico / Diagnóstico</h3>
+        <p>O retrato do parque antes da adequação, com as não conformidades priorizadas.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Avaliação técnica</span>
+        <h3>Manual de Instruções de Segurança</h3>
+        <p>Instruções de operação segura da máquina, exigidas pela NR-12 quando o manual original falta.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">Campo</span>
+        <h3>Check-list NR-12</h3>
+        <p>A verificação item a item aplicada em campo, com foto de cada não conformidade.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">NR-10</span>
+        <h3>Prontuário das Instalações Elétricas</h3>
+        <p>O prontuário que a NR-10 exige, ligado às mesmas máquinas do inventário.</p>
+      </li>
+      <li>
+        <span class="tg tg-info">NR-10</span>
+        <h3>Laudo de Aterramento</h3>
+        <p>Medições de resistência e continuidade do aterramento, com o painel de cada máquina.</p>
+      </li>
+    </ul>
+
+    <div class="n12-folhas-head">
+      <div>
+        <h3>Folhas de um laudo de apreciação de risco gerado pelo sistema</h3>
+        <p>
+          <span class="tg tg-rev">LAR-2027-0042 · Rev.00</span>
+          Prensa excêntrica PE-02 · 18 páginas · dados de exemplo. Clique numa folha para ampliar.
+        </p>
+      </div>
+    </div>
+
+    <ul class="n12-folhas">
+      <li><a href="img/nr12-sistema/laudo-pagina-01.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy" alt="Capa do laudo com dados do cliente, foto da máquina, HRN atual e residual e conclusão"></a><span>Capa e conclusão</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-04.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-04.webp" width="1000" height="1414" loading="lazy" alt="Página de metodologia com o processo da NBR ISO 12100 e as tabelas do HRN"></a><span>Metodologia HRN</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-06.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-06.webp" width="1000" height="1414" loading="lazy" alt="Resumo executivo com HRN por perigo em escala e conformidade NR-12 por capítulo"></a><span>Resumo executivo</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-07.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-07.webp" width="1000" height="1414" loading="lazy" alt="Quadro do perigo P-01 com identificação, fotos com marcadores e cálculo do HRN"></a><span>Perigo P-01</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-08.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-08.webp" width="1000" height="1414" loading="lazy" alt="Medidas de redução de risco, diagrama de categoria e PLr e distâncias de segurança"></a><span>Categoria e PLr</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-13.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-13.webp" width="1000" height="1414" loading="lazy" alt="Tabela de conformidade com a NR-12 item a item"></a><span>NR-12 item a item</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-15.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-15.webp" width="1000" height="1414" loading="lazy" alt="Plano de medidas e prioridades com cronograma sugerido"></a><span>Plano e cronograma</span></li>
+      <li><a href="img/nr12-sistema/laudo-pagina-16.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-16.webp" width="1000" height="1414" loading="lazy" alt="Conclusão, limitações, responsabilidade técnica e controle de revisões"></a><span>Conclusão e assinaturas</span></li>
+    </ul>
+  </div>
+
+  <dialog class="n12-lb" id="n12Lb" aria-label="Folha do laudo ampliada">
+    <button type="button" class="n12-lb-x" aria-label="Fechar">×</button>
+    <img src="" alt="">
+  </dialog>
 </section>
 
 <!-- ============ NÃO CONFORMIDADES ============ -->
@@ -1698,48 +1408,89 @@
   </div>
 </section>
 
-<!-- ============ CONTRATAR ============ -->
-<section id="contratar" class="oferta-sec">
-  <div class="wrap">
-    <div class="sec-head" style="max-width:820px">
-      <span class="eyebrow">Falar com a engenharia</span>
-      <h2>Coloque o parque de máquinas dentro da norma a partir desta semana</h2>
+<!-- ============ CONTRATAR / PREÇOS ============ -->
+<section id="contratar" class="oferta-sec n12-precos">
+  <div class="wrap n12-precos-grid">
+    <div class="n12-precos-txt">
+      <span class="eyebrow">Planos</span>
+      <h2>Uma assinatura, o sistema inteiro</h2>
       <p>
-        O Sistema NR12 é apresentado rodando, com o seu inventário real na tela. Sem formulário
-        longo, sem fila: a conversa começa no WhatsApp e quem responde é engenharia, não vendedor.
+        Sem limite de máquinas e sem taxa de implantação. NR-12 e NR-10 no mesmo acesso, com todos
+        os documentos liberados.
+      </p>
+      <ul class="n12-precos-selos">
+        <li>Implantação assistida: cadastramos com você as primeiras máquinas</li>
+        <li>Suporte técnico em português, com engenharia — não com robô</li>
+      </ul>
+      <p class="n12-precos-duvida">
+        Dúvida antes de assinar?
+        <a href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20Sistema%20NR12." rel="noopener" data-cta="precos-duvida">Fale com a engenharia no WhatsApp</a>
       </p>
     </div>
 
-    <div class="oferta" data-reveal>
-      <div class="oferta-main">
-        <span class="oferta-tag">Sistema NR12 · NR-12 + NR-10</span>
-        <h3>Tudo o que a norma pede, em um só acesso</h3>
-        <ul class="oferta-lista">
-          <li><strong>Inventário sem limite de máquinas</strong>, setores, unidades e usuários</li>
-          <li>Apreciação de risco com HRN e categoria de segurança NBR 14153</li>
-          <li>Checklist NR-12 pelo celular, com registro fotográfico</li>
-          <li>Plano de ação com prazo, responsável, custo e status</li>
-          <li>Prontuário digital da máquina e histórico por TAG</li>
-          <li>Módulo NR-10: prontuário elétrico, aterramento, termografia e LOTO</li>
-          <li>Controle de treinamentos NR-12, NR-10 básico e SEP</li>
-          <li>Laudo de conformidade em PDF e portal do cliente</li>
-          <li>Implantação assistida e suporte técnico em português</li>
-        </ul>
-      </div>
+    <article class="n12-plano" data-reveal>
+      <header class="n12-plano-head">
+        <span class="n12-plano-nome">Sistema NR12</span>
+        <span class="tg tg-info">NR-12 + NR-10</span>
+      </header>
 
-      <aside class="oferta-buy">
-        <span class="oferta-preco-lbl">Demonstração e proposta</span>
-        <span class="oferta-preco">WhatsApp</span>
-        <p class="oferta-preco-nota">O escopo depende do tamanho do parque. Falamos, olhamos o seu inventário e passamos a proposta.</p>
-        <a class="btn btn-buy btn-lg" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20uma%20demonstra%C3%A7%C3%A3o%20do%20Sistema%20NR12%20com%20o%20m%C3%B3dulo%20NR-10." rel="noopener" data-cta="oferta">Falar no WhatsApp agora</a>
-        <ul class="oferta-selos">
-          <li>Engenheiro responsável, com ART registrada</li>
-          <li>Atendimento em toda a Grande Vitória — ES</li>
-          <li>Implantação assistida nas primeiras máquinas</li>
-        </ul>
-        <a class="oferta-wa" href="tel:+5527992534407">Prefere ligar? (27) 99253-4407</a>
-      </aside>
-    </div>
+      <h3 class="n12-plano-sub">O que vem na assinatura</h3>
+      <ul class="n12-plano-lista">
+        <li><strong>Máquinas, setores, unidades e usuários sem limite</strong></li>
+        <li>Inventário por TAG, com foto, dados de placa e criticidade</li>
+        <li>Apreciação de risco por zona de perigo com HRN</li>
+        <li>Categoria de segurança NBR 14153 e PLr</li>
+        <li>Checklist NR-12 pelo celular, com foto</li>
+        <li>Plano de ação com prazo, responsável, OS e progresso</li>
+        <li>Módulo NR-10: prontuário elétrico e aterramento</li>
+        <li>Controle de treinamentos NR-12 e NR-10</li>
+        <li><strong>Os 9 documentos em PDF</strong>: LAR, LVA, plano de ações, inventário, relatório técnico, manual de instruções, check-list, prontuário elétrico e laudo de aterramento</li>
+        <li>Código de validação e ciência do cliente por link</li>
+        <li>Implantação assistida e suporte técnico</li>
+      </ul>
+
+      <div class="n12-plano-preco">
+        <fieldset class="n12-ciclo">
+          <legend class="sr-only">Escolha o ciclo de cobrança</legend>
+          <label><input type="radio" name="ciclo" value="anual" checked><span>Anual</span></label>
+          <label><input type="radio" name="ciclo" value="mensal"><span>Mensal</span></label>
+        </fieldset>
+
+        <!-- TODO checkout: trocar os dois href pelo link de checkout de cada plano quando estiver pronto -->
+        <div class="n12-ciclo-anual">
+          <p class="n12-valor"><span>R$</span> 997<small>/ano</small></p>
+          <p class="n12-valor-nota">Equivale a R$ 83 por mês. <span class="tg tg-ok">Economize R$ 1.367 no ano</span></p>
+          <a class="btn btn-buy btn-lg" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20adquirir%20o%20Sistema%20NR12%20no%20plano%20anual%20(R%24%20997)." rel="noopener" data-cta="adquirir-anual">Adquirir o plano anual</a>
+        </div>
+        <div class="n12-ciclo-mensal">
+          <p class="n12-valor"><span>R$</span> 197<small>/mês</small></p>
+          <p class="n12-valor-nota">Cobrança mês a mês, com acesso total.</p>
+          <a class="btn btn-buy btn-lg" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20adquirir%20o%20Sistema%20NR12%20no%20plano%20mensal%20(R%24%20197%2Fm%C3%AAs)." rel="noopener" data-cta="adquirir-mensal">Adquirir o plano mensal</a>
+        </div>
+
+        <div class="n12-pagto">
+          <span class="n12-pagto-lbl">Pague com Pix, cartão ou boleto</span>
+          <ul class="n12-pagto-ico">
+            <li title="Pix">
+              <svg viewBox="0 0 48 32" role="img" aria-label="Pix"><rect width="48" height="32" rx="4" fill="#fff"/><g transform="translate(9 6)" fill="#32BCAD"><path d="M15.2 15.9a3 3 0 0 1-2.1-.9l-3-3a.6.6 0 0 0-.8 0l-3 3a3 3 0 0 1-2.1.9h-.6l3.8 3.8a3 3 0 0 0 4.3 0l3.8-3.8z"/><path d="M4.2 4.1a3 3 0 0 1 2.1.9l3 3a.6.6 0 0 0 .8 0l3-3a3 3 0 0 1 2.1-.9h.4L11.8.3a3 3 0 0 0-4.3 0L3.7 4.1z"/><path d="m18.8 7.9-2.3-2.3h-1.3a2 2 0 0 0-1.5.6l-3 3a1.5 1.5 0 0 1-2.1 0l-3-3a2 2 0 0 0-1.5-.6H2.8L.6 7.9a3 3 0 0 0 0 4.3l2.2 2.2h1.3a2 2 0 0 0 1.5-.6l3-3a1.5 1.5 0 0 1 2.1 0l3 3a2 2 0 0 0 1.5.6h1.3l2.3-2.3a3 3 0 0 0 0-4.2z"/></g><text x="35" y="20" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#32BCAD">pix</text></svg>
+            </li>
+            <li title="Visa">
+              <svg viewBox="0 0 48 32" role="img" aria-label="Visa"><rect width="48" height="32" rx="4" fill="#fff"/><text x="24" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#1A1F71">VISA</text></svg>
+            </li>
+            <li title="Mastercard">
+              <svg viewBox="0 0 48 32" role="img" aria-label="Mastercard"><rect width="48" height="32" rx="4" fill="#fff"/><circle cx="20" cy="16" r="8" fill="#EB001B"/><circle cx="28" cy="16" r="8" fill="#F79E1B"/><path d="M24 9.1a8 8 0 0 1 0 13.8 8 8 0 0 1 0-13.8z" fill="#FF5F00"/></svg>
+            </li>
+            <li title="Elo">
+              <svg viewBox="0 0 48 32" role="img" aria-label="Elo"><rect width="48" height="32" rx="4" fill="#000"/><text x="28" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">elo</text><circle cx="13" cy="12" r="2" fill="#FFCB05"/><circle cx="13" cy="17" r="2" fill="#00A4E0"/><circle cx="13" cy="22" r="2" fill="#EF4123"/></svg>
+            </li>
+            <li title="Boleto">
+              <svg viewBox="0 0 48 32" role="img" aria-label="Boleto bancário"><rect width="48" height="32" rx="4" fill="#fff"/><g fill="#10202e"><rect x="8" y="7" width="2" height="14"/><rect x="11.5" y="7" width="1" height="14"/><rect x="14" y="7" width="3" height="14"/><rect x="18.5" y="7" width="1" height="14"/><rect x="21" y="7" width="2" height="14"/><rect x="24.5" y="7" width="1" height="14"/><rect x="27" y="7" width="3" height="14"/><rect x="31.5" y="7" width="1" height="14"/><rect x="34" y="7" width="2" height="14"/><rect x="37.5" y="7" width="2.5" height="14"/></g><text x="24" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.5" font-weight="700" fill="#10202e">BOLETO</text></svg>
+            </li>
+          </ul>
+          <span class="n12-pagto-seg">Pagamento seguro</span>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -1777,7 +1528,7 @@
       </details>
       <details>
         <summary>Quanto custa e como contrato o Sistema NR12?</summary>
-        <div class="faq-body"><p>O Sistema NR12 é contratado por conversa direta com a engenharia, porque o escopo depende do tamanho do parque de máquinas e de quantas unidades entram. Chame no WhatsApp <a href="https://wa.me/5527992534407" rel="noopener">(27) 99253-4407</a>: apresentamos o sistema rodando, avaliamos o seu inventário e passamos a proposta com a implantação assistida das primeiras máquinas.</p></div>
+        <div class="faq-body"><p>A assinatura custa <strong>R$ 197 por mês</strong> ou <strong>R$ 997 por ano</strong>, com acesso total: máquinas, setores, unidades e usuários sem limite, módulo NR-10 e os nove documentos em PDF. O pagamento aceita Pix, cartão ou boleto — veja os <a href="#contratar">planos</a>. A implantação assistida das primeiras máquinas está incluída. Dúvidas: WhatsApp <a href="https://wa.me/5527992534407" rel="noopener">(27) 99253-4407</a>.</p></div>
       </details>
     </div>
 
@@ -1801,11 +1552,11 @@
     <div class="sys-cta">
       <div>
         <h2 style="font-size:clamp(1.4rem,1.1rem+1vw,1.9rem)">A máquina foi protegida. Falta o documento provar.</h2>
-        <p>Fale com a engenharia, veja o sistema rodando e comece pelo setor de maior risco.</p>
+        <p>A partir de R$ 83 por mês no plano anual, com os nove documentos liberados.</p>
       </div>
       <div class="btn-row">
-        <a class="btn btn-buy btn-lg" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20conhecer%20o%20Sistema%20NR12." rel="noopener" data-cta="rodape">Falar no WhatsApp</a>
-        <a class="btn btn-ghost" href="#calculadora">Calcular o risco antes</a>
+        <a class="btn btn-buy btn-lg" href="#contratar" data-cta="rodape">Ver planos</a>
+        <a class="btn btn-ghost" href="https://wa.me/5527992534407?text=Ol%C3%A1!%20Quero%20conhecer%20o%20Sistema%20NR12." rel="noopener" data-cta="rodape-wa">Falar no WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1979,5 +1730,22 @@
 <script src="js/wa-form.js?v=20261028a" defer></script>
 <script src="js/site.js?v=20260912a" defer></script>
 <script src="js/nr12-risco.js?v=20260913b" defer></script>
+<script>
+/* folhas do laudo: abre a imagem ampliada num <dialog>; sem JS o link abre a imagem */
+(function () {
+  var dlg = document.getElementById('n12Lb');
+  if (!dlg || typeof dlg.showModal !== 'function') return;
+  var img = dlg.querySelector('img');
+  document.querySelectorAll('[data-lb]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var t = a.querySelector('img');
+      img.src = a.href; img.alt = t ? t.alt : '';
+      dlg.showModal();
+    });
+  });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.closest('.n12-lb-x')) dlg.close(); });
+})();
+</script>
 </body>
 </html>
