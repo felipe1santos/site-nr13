@@ -1640,7 +1640,10 @@ table.tec td:first-child { font-weight: 600; color: var(--navy-800); }
 
 /* ---------- Cursor do site: seta terracota com contorno branco ---------- */
 html, body, * { cursor: url("../img/cursor.svg") 4 4, auto !important; }
-a, button, label, summary, select, [role="button"], [role="switch"], [role="tab"], input[type="radio"], input[type="checkbox"] {
-  cursor: url("../img/cursor.svg") 4 4, pointer !important;
+a, button, label, summary, select, [role="button"], [role="switch"], [role="tab"], input[type="radio"], input[type="checkbox"],
+a *, button *, label *, summary *, [role="button"] *, [role="switch"] *, [role="tab"] *,
+.n12-plano-lista li, .n12-plano-lista li *, .n12-docs li, .n12-docs li *, [data-lb], [data-lb] * {
+  cursor: url("../img/cursor-luva.svg") 13 3, pointer !important;
 }
+button:disabled, button:disabled * { cursor: url("../img/cursor.svg") 4 4, not-allowed !important; }
 input:not([type="radio"]):not([type="checkbox"]):not([type="range"]), textarea, [contenteditable="true"] { cursor: text !important; }

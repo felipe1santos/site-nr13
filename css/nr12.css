@@ -1200,3 +1200,6 @@
 .pc-card { max-width: 630px; }
 .pc-card .n12-plano-sub { text-align: left; margin-inline: 2.1rem; }
 @media (max-width: 560px) { .pc-card .n12-plano-sub { margin-inline: 1.4rem; } }
+/* grafo da calculadora: menos respiro em volta, desenho maior */
+.calc-top .calc-fluxo { padding-inline: clamp(1rem, 2vw, 1.5rem); }
+.calc-top .calc-arvore { margin-inline: -.3rem; }
