@@ -119,6 +119,9 @@ _Atualizado em 21/11/2026._
   (lista sem cards, logo após o problema); calculadora com formulário ao lado do caminho e resultado embaixo, sem botão
   de WhatsApp; "Seis falhas que viram auto" em carrossel com ilustração SVG; folhas do laudo em carrossel grande;
   preço em card horizontal 1.6:1 centralizado; NR-10 virou brinde no fim; 65 termos SEO em duas faixas animadas acima do rodapé.
+  Revisão 4: calculadora a 90% da largura, fórmula do HRN em uma linha sobre o grafo, sem "Medidas técnicas";
+  documentos a 90% com hover azul e quadrados no fundo; folhas em grade 3×; preço vertical de novo; seção NR-10
+  removida (fica como brinde só no card de preço); termos dentro do FAQ, 2 linhas, parados, com setas.
 
 - **30/10/2026** — Search Console 28 dias: 72 cliques/3,73 mil impressões contra 38/1,53 mil. Criadas 10 páginas: playground (condomínio, escola), carregador (condomínio, Vila Velha), SPDA (instalação, condomínio), civil (engenheiro civil, laudo estrutural, acompanhamento de obra) e renovação do alvará. Links em 19 páginas + home; ata e NT 23 atualizadas com a Lei 12.857/2026. Deploy `253941c` autorizado pelo Felipe; 5 indexações aceitas, cota acabou na 6ª.
 

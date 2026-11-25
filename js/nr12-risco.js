@@ -206,12 +206,14 @@
     outCatTx.textContent = CAT_TXT[cat];
     outPrazo.textContent = faixa.prazo;
 
-    outMed.innerHTML = '';
-    var lista = medidas(cat, hrn, eletrico);
-    for (var i = 0; i < lista.length; i++) {
-      var li = document.createElement('li');
-      li.textContent = lista[i];
-      outMed.appendChild(li);
+    if (outMed) {
+      outMed.innerHTML = '';
+      var lista = medidas(cat, hrn, eletrico);
+      for (var i = 0; i < lista.length; i++) {
+        var li = document.createElement('li');
+        li.textContent = lista[i];
+        outMed.appendChild(li);
+      }
     }
 
     var msg = 'Olá! Usei a calculadora de risco NR-12 do site.\n' +

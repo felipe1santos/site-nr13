@@ -31,7 +31,7 @@
 
 <link rel="preload" as="image" href="img/nr12-sistema/hero-engenheiro.webp" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261003">
-<link rel="stylesheet" href="css/nr12.css?v=20261125e">
+<link rel="stylesheet" href="css/nr12.css?v=20261125h">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -411,7 +411,7 @@
 
 <!-- ============ CALCULADORA DE RISCO ============ -->
 <section class="calc-sec" id="calculadora">
-  <div class="wrap">
+  <div class="wrap wrap-90">
     <div class="sec-head" style="max-width:860px">
       <span class="eyebrow">Ferramenta gratuita · sem cadastro</span>
       <h2>Descubra agora o risco da sua máquina</h2>
@@ -540,10 +540,7 @@
       </form>
       <!-- fluxograma: mostra ao vivo o caminho que a seleção percorre -->
       <div class="calc-fluxo" aria-hidden="true">
-        <div class="calc-fluxo-head">
-          <span class="calc-fluxo-eyebrow">Como o resultado é montado</span>
-          <h3>O caminho da sua seleção, parâmetro por parâmetro</h3>
-        </div>
+        <h3 class="sr-only">O caminho da sua seleção, parâmetro por parâmetro</h3>
 
         <div class="hrn-chain">
           <div class="hrn-node">
@@ -736,9 +733,6 @@
         </div>
 
         <div class="calc-res-c">
-        <h4>Medidas técnicas indicadas</h4>
-        <ul class="calc-lista" id="cMedidas"></ul>
-
         <p class="calc-nota">
           Resultado preliminar de triagem. A NR-12 exige apreciação de risco formal conforme a ABNT
           NBR ISO 12100, elaborada por profissional legalmente habilitado, com ART registrada. Esta
@@ -841,8 +835,8 @@
 </section>
 
 <!-- ============ DOCUMENTOS GERADOS ============ -->
-<section id="documentos">
-  <div class="wrap">
+<section id="documentos" class="dc-sec">
+  <div class="wrap wrap-90">
     <div class="sec-head">
       <span class="eyebrow">O que sai do sistema</span>
       <h2>Nove documentos. Zero Word.</h2>
@@ -913,11 +907,7 @@
       </div>
     </div>
 
-    <div class="fl-nav">
-      <button type="button" class="fz-btn" data-fl="-1" aria-label="Folha anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button type="button" class="fz-btn" data-fl="1" aria-label="Próxima folha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-    </div>
-    <ul class="n12-folhas" tabindex="0" aria-label="Folhas do laudo, role para os lados">
+    <ul class="n12-folhas">
       <li><a href="img/nr12-sistema/laudo-pagina-01.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-01.webp" width="1000" height="1414" loading="lazy" alt="Capa do laudo com dados do cliente, foto da máquina, HRN atual e residual e conclusão"></a><span>Capa e conclusão</span></li>
       <li><a href="img/nr12-sistema/laudo-pagina-04.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-04.webp" width="1000" height="1414" loading="lazy" alt="Página de metodologia com o processo da NBR ISO 12100 e as tabelas do HRN"></a><span>Metodologia HRN</span></li>
       <li><a href="img/nr12-sistema/laudo-pagina-06.webp" data-lb><img src="img/nr12-sistema/laudo-pagina-06.webp" width="1000" height="1414" loading="lazy" alt="Resumo executivo com HRN por perigo em escala e conformidade NR-12 por capítulo"></a><span>Resumo executivo</span></li>
@@ -1317,54 +1307,28 @@
       </details>
     </div>
 
-  </div>
-</section>
 
-<!-- ============ MÓDULO NR-10 (BRINDE) ============ -->
-<section class="nr10-band br-sec" id="nr10">
-  <div class="wrap br-grid">
-    <div class="br-intro">
-      <span class="br-selo">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="1.5"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-5-7-3s2 3 7 3zm0 0c2-4 6-5 7-3s-2 3-7 3z"/></svg>
-        Brinde na assinatura
-      </span>
-      <h2>Módulo NR-10 incluso. Sem pagar a mais.</h2>
-      <p>
-        O painel que a NR-12 exige intertravado é o mesmo que a NR-10 exige documentado. Por isso
-        a parte elétrica vem junto: mesma máquina, mesmo cadastro, mesmo prontuário.
-      </p>
-      <a class="btn btn-buy btn-lg" href="#contratar" data-cta="nr10">Assinar e levar o NR-10</a>
-    </div>
-
-    <ul class="br-lista">
-      <li><b>Prontuário de Instalações Elétricas</b>Memorial, unifilares e dispositivos de proteção por unidade.</li>
-      <li><b>Laudo de aterramento</b>Valores medidos, instrumento e certificado de calibração.</li>
-      <li><b>Análise de risco elétrico</b>Choque, arco elétrico, zona de risco e vestimenta.</li>
-      <li><b>Termografia dos painéis</b>Imagem térmica, ponto quente e prioridade de correção.</li>
-      <li><b>Bloqueio e etiquetagem</b>Quem bloqueou, quando liberou e quais energias.</li>
-      <li><b>Treinamento NR-10 e SEP</b>Reciclagem bienal com alerta de vencimento.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ TERMOS RELACIONADOS ============ -->
-<section class="tg2-sec" aria-label="Termos relacionados">
-  <div class="wrap"><h2 class="tg2-tit">Termos relacionados</h2></div>
-  <div class="tg2">
-      <div class="tg2-linha">
-        <ul class="tg2-faixa">
+    <div class="tg3">
+      <div class="tg3-head">
+        <h3>Termos relacionados</h3>
+        <div class="fz-nav">
+          <button type="button" class="fz-btn" data-tg="-1" aria-label="Termos anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" class="fz-btn" data-tg="1" aria-label="Mais termos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <ul class="tg3-lista" data-passo="pagina">
           <li><a href="adequacao-nr12-vitoria-es.html">gestão de conformidade NR-12</a></li>
           <li><a href="#fluxo">apreciação de risco de máquinas NBR ISO 12100</a></li>
           <li><a href="#calculadora">como calcular HRN de máquina</a></li>
           <li><a href="#calculadora">categoria de segurança NBR 14153 tabela</a></li>
           <li><a href="#modulos">prontuário de máquina NR-12 modelo</a></li>
           <li><a href="#modulos">plano de ação de adequação de máquinas</a></li>
-          <li><a href="#nr10">prontuário de instalações elétricas digital</a></li>
+          <li><a href="#contratar">prontuário de instalações elétricas digital</a></li>
           <li><a href="#nao-conformidades">não conformidades mais comuns na NR-12</a></li>
           <li><a href="#modulos">checklist NR-12 no celular</a></li>
           <li><a href="adequacao-nr12-vitoria-es.html">laudo de conformidade NR-12 com ART</a></li>
           <li><a href="#fluxo">risco residual após proteção de máquina</a></li>
-          <li><a href="#nr10">análise de risco elétrico arco elétrico NR-10</a></li>
+          <li><a href="#contratar">análise de risco elétrico arco elétrico NR-10</a></li>
           <li><a href="#calculadora">apreciação de risco NR-12 passo a passo</a></li>
           <li><a href="#calculadora">grafo de riscos NBR 14153 como usar</a></li>
           <li><a href="#modulos">inventário de máquinas e equipamentos industriais</a></li>
@@ -1385,50 +1349,11 @@
           <li><a href="#telas">prontuário de máquina digital por TAG</a></li>
           <li><a href="#telas">gestão de plano de ação de segurança do trabalho</a></li>
           <li><a href="#telas">software para engenharia de segurança de máquinas</a></li>
-          <li><a href="#nr10">análise de risco elétrico choque e arco elétrico</a></li>
-        </ul>
-        <ul class="tg2-faixa" aria-hidden="true">
-          <li><a tabindex="-1" href="adequacao-nr12-vitoria-es.html">gestão de conformidade NR-12</a></li>
-          <li><a tabindex="-1" href="#fluxo">apreciação de risco de máquinas NBR ISO 12100</a></li>
-          <li><a tabindex="-1" href="#calculadora">como calcular HRN de máquina</a></li>
-          <li><a tabindex="-1" href="#calculadora">categoria de segurança NBR 14153 tabela</a></li>
-          <li><a tabindex="-1" href="#modulos">prontuário de máquina NR-12 modelo</a></li>
-          <li><a tabindex="-1" href="#modulos">plano de ação de adequação de máquinas</a></li>
-          <li><a tabindex="-1" href="#nr10">prontuário de instalações elétricas digital</a></li>
-          <li><a tabindex="-1" href="#nao-conformidades">não conformidades mais comuns na NR-12</a></li>
-          <li><a tabindex="-1" href="#modulos">checklist NR-12 no celular</a></li>
-          <li><a tabindex="-1" href="adequacao-nr12-vitoria-es.html">laudo de conformidade NR-12 com ART</a></li>
-          <li><a tabindex="-1" href="#fluxo">risco residual após proteção de máquina</a></li>
-          <li><a tabindex="-1" href="#nr10">análise de risco elétrico arco elétrico NR-10</a></li>
-          <li><a tabindex="-1" href="#calculadora">apreciação de risco NR-12 passo a passo</a></li>
-          <li><a tabindex="-1" href="#calculadora">grafo de riscos NBR 14153 como usar</a></li>
-          <li><a tabindex="-1" href="#modulos">inventário de máquinas e equipamentos industriais</a></li>
-          <li><a tabindex="-1" href="#modulos">plano de adequação de máquinas com prazo</a></li>
-          <li><a tabindex="-1" href="#fluxo">cálculo de distância de segurança cortina de luz</a></li>
-          <li><a tabindex="-1" href="#fluxo">medição de tempo de parada de máquina</a></li>
-          <li><a tabindex="-1" href="adequacao-nr12-vitoria-es.html">adequação de máquinas à NR-12 em Vitória ES</a></li>
-          <li><a tabindex="-1" href="#calculadora">HRN = probabilidade × frequência × dano × pessoas expostas</a></li>
-          <li><a tabindex="-1" href="#calculadora">faixas de risco HRN desprezível a inaceitável</a></li>
-          <li><a tabindex="-1" href="#calculadora">categoria B, 1, 2, 3 e 4 da NBR 14153</a></li>
-          <li><a tabindex="-1" href="#calculadora">S1 S2 F1 F2 P1 P2 grafo de riscos</a></li>
-          <li><a tabindex="-1" href="#fluxo">risco residual depois da proteção</a></li>
-          <li><a tabindex="-1" href="#telas">software de gestão NR-12</a></li>
-          <li><a tabindex="-1" href="#telas">sistema de apreciação de risco de máquinas online</a></li>
-          <li><a tabindex="-1" href="#telas">planilha de apreciação de risco NR-12 substituta</a></li>
-          <li><a tabindex="-1" href="#telas">programa para laudo NR-12 com ART</a></li>
-          <li><a tabindex="-1" href="#telas">controle de treinamento NR-12 e NR-10 vencimento</a></li>
-          <li><a tabindex="-1" href="#telas">prontuário de máquina digital por TAG</a></li>
-          <li><a tabindex="-1" href="#telas">gestão de plano de ação de segurança do trabalho</a></li>
-          <li><a tabindex="-1" href="#telas">software para engenharia de segurança de máquinas</a></li>
-          <li><a tabindex="-1" href="#nr10">análise de risco elétrico choque e arco elétrico</a></li>
-        </ul>
-      </div>
-      <div class="tg2-linha tg2-rev">
-        <ul class="tg2-faixa">
-          <li><a href="#nr10">laudo de aterramento com valores medidos</a></li>
-          <li><a href="#nr10">relatório de termografia de painel elétrico</a></li>
-          <li><a href="#nr10">procedimento de bloqueio e etiquetagem lockout tagout</a></li>
-          <li><a href="#nr10">controle de treinamento NR-10 básico e SEP</a></li>
+          <li><a href="#contratar">análise de risco elétrico choque e arco elétrico</a></li>
+          <li><a href="#contratar">laudo de aterramento com valores medidos</a></li>
+          <li><a href="#contratar">relatório de termografia de painel elétrico</a></li>
+          <li><a href="#contratar">procedimento de bloqueio e etiquetagem lockout tagout</a></li>
+          <li><a href="#contratar">controle de treinamento NR-10 básico e SEP</a></li>
           <li><a href="nt23-recarga-de-veiculos-eletricos-vitoria-es.html">instalação elétrica e NT 23</a></li>
           <li><a href="adequacao-nr12-vitoria-es.html">consultoria em segurança de máquinas</a></li>
           <li><a href="index.html#servicos">engenharia de manutenção industrial</a></li>
@@ -1447,7 +1372,7 @@
           <li><a href="#modulos">melhor software de gestão NR-12</a></li>
           <li><a href="#modulos">sistema NR-12 na nuvem</a></li>
           <li><a href="#calculadora">calculadora de risco de máquina online</a></li>
-          <li><a href="#nr10">sistema que atende NR-12 e NR-10 junto</a></li>
+          <li><a href="#contratar">sistema que atende NR-12 e NR-10 junto</a></li>
           <li><a href="#telas">exemplo de laudo NR-12</a></li>
           <li><a href="sistema-nr13.html">software NR-13 para caldeiras e vasos</a></li>
           <li><a href="#telas">inventário de máquinas com TAG e criticidade</a></li>
@@ -1456,43 +1381,9 @@
           <li><a href="#telas">checklist NR-12 digital com foto</a></li>
           <li><a href="#telas">plano de ação de adequação por setor</a></li>
           <li><a href="#documentos">laudo de conformidade NR-12 em PDF</a></li>
-          <li><a href="#nr10">prontuário de instalações elétricas NR-10</a></li>
-        </ul>
-        <ul class="tg2-faixa" aria-hidden="true">
-          <li><a tabindex="-1" href="#nr10">laudo de aterramento com valores medidos</a></li>
-          <li><a tabindex="-1" href="#nr10">relatório de termografia de painel elétrico</a></li>
-          <li><a tabindex="-1" href="#nr10">procedimento de bloqueio e etiquetagem lockout tagout</a></li>
-          <li><a tabindex="-1" href="#nr10">controle de treinamento NR-10 básico e SEP</a></li>
-          <li><a tabindex="-1" href="nt23-recarga-de-veiculos-eletricos-vitoria-es.html">instalação elétrica e NT 23</a></li>
-          <li><a tabindex="-1" href="adequacao-nr12-vitoria-es.html">consultoria em segurança de máquinas</a></li>
-          <li><a tabindex="-1" href="index.html#servicos">engenharia de manutenção industrial</a></li>
-          <li><a tabindex="-1" href="montagem-industrial-vitoria-es.html">metalúrgica e caldeiraria</a></li>
-          <li><a tabindex="-1" href="camaras-frias-vitoria-es.html">indústria de alimentos e frigorífico</a></li>
-          <li><a tabindex="-1" href="index.html#servicos">marcenaria e movelaria</a></li>
-          <li><a tabindex="-1" href="index.html#atendimento">gestão de conformidade multiplanta</a></li>
-          <li><a tabindex="-1" href="sistema-nr13.html">quem já usa o Sistema NR13</a></li>
-          <li><a tabindex="-1" href="#contratar">como contratar o Sistema NR12</a></li>
-          <li><a tabindex="-1" href="#contratar">migração de planilha de NR-12 para sistema</a></li>
-          <li><a tabindex="-1" href="index.html#contato">treinamento de equipe de segurança do trabalho</a></li>
-          <li><a tabindex="-1" href="blog/apreciacao-de-riscos-o-que-e.html">o que é apreciação de riscos NR-12</a></li>
-          <li><a tabindex="-1" href="blog/quanto-custa-adequar-maquina-nr12.html">quanto custa adequar máquina à NR-12</a></li>
-          <li><a tabindex="-1" href="adequacao-nr12-vitoria-es.html">adequação NR-12 com laudo e ART</a></li>
-          <li><a tabindex="-1" href="index.html#contato">suporte técnico em português</a></li>
-          <li><a tabindex="-1" href="#modulos">melhor software de gestão NR-12</a></li>
-          <li><a tabindex="-1" href="#modulos">sistema NR-12 na nuvem</a></li>
-          <li><a tabindex="-1" href="#calculadora">calculadora de risco de máquina online</a></li>
-          <li><a tabindex="-1" href="#nr10">sistema que atende NR-12 e NR-10 junto</a></li>
-          <li><a tabindex="-1" href="#telas">exemplo de laudo NR-12</a></li>
-          <li><a tabindex="-1" href="sistema-nr13.html">software NR-13 para caldeiras e vasos</a></li>
-          <li><a tabindex="-1" href="#telas">inventário de máquinas com TAG e criticidade</a></li>
-          <li><a tabindex="-1" href="#documentos">memorial de apreciação de risco NR-12</a></li>
-          <li><a tabindex="-1" href="#telas">matriz de risco HRN por zona de perigo</a></li>
-          <li><a tabindex="-1" href="#telas">checklist NR-12 digital com foto</a></li>
-          <li><a tabindex="-1" href="#telas">plano de ação de adequação por setor</a></li>
-          <li><a tabindex="-1" href="#documentos">laudo de conformidade NR-12 em PDF</a></li>
-          <li><a tabindex="-1" href="#nr10">prontuário de instalações elétricas NR-10</a></li>
-        </ul>
-      </div>
+          <li><a href="#contratar">prontuário de instalações elétricas NR-10</a></li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1587,7 +1478,7 @@
           <li><a href="sistema-nr12.html#fluxo">Fluxo completo da NR-12</a></li>
           <li><a href="sistema-nr12.html#calculadora">Calculadora de risco</a></li>
           <li><a href="sistema-nr12.html#modulos">Módulos do sistema</a></li>
-          <li><a href="sistema-nr12.html#nr10">Módulo NR-10</a></li>
+          <li><a href="sistema-nr12.html#contratar">Planos e preços</a></li>
           <li><a href="sistema-nr12.html#telas">Telas por dentro</a></li>
           <li><a href="sistema-nr12.html#faq-sistema">Perguntas frequentes</a></li>
           <li><a href="sistema-nr13.html">Sistema NR13 — caldeiras e vasos</a></li>
@@ -1620,11 +1511,12 @@
 <script src="js/meta-pixel.js?v=20260912a" defer></script>
 <script src="js/wa-form.js?v=20261028a" defer></script>
 <script src="js/site.js?v=20260912a" defer></script>
-<script src="js/nr12-risco.js?v=20261125" defer></script>
+<script src="js/nr12-risco.js?v=20261125b" defer></script>
 <script>
 /* carrosséis (falhas e folhas do laudo) + ampliação das folhas */
 (function () {
   function passo(trilho) {
+    if (trilho.getAttribute('data-passo') === 'pagina') return trilho.clientWidth * 0.8;
     var item = trilho.firstElementChild;
     if (!item) return trilho.clientWidth;
     var gap = parseFloat(getComputedStyle(trilho).columnGap) || 0;
@@ -1665,7 +1557,7 @@
     arrastavel(trilho);
     botoes.forEach(function (b) {
       b.addEventListener('click', function () {
-        var dir = parseInt(b.getAttribute('data-fz') || b.getAttribute('data-fl'), 10);
+        var dir = parseInt(b.getAttribute('data-fz') || b.getAttribute('data-fl') || b.getAttribute('data-tg'), 10);
         trilho.scrollBy({ left: dir * passo(trilho), behavior: 'smooth' });
       });
     });
@@ -1674,7 +1566,7 @@
       var p = passo(trilho), i = Math.round(trilho.scrollLeft / p);
       var fim = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 4;
       botoes.forEach(function (b) {
-        var d = parseInt(b.getAttribute('data-fz') || b.getAttribute('data-fl'), 10);
+        var d = parseInt(b.getAttribute('data-fz') || b.getAttribute('data-fl') || b.getAttribute('data-tg'), 10);
         b.disabled = d < 0 ? trilho.scrollLeft < 4 : fim;
       });
       if (aoMudar) aoMudar(i, p);
@@ -1698,7 +1590,7 @@
       d.addEventListener('click', function () { fz.scrollTo({ left: k * passo(fz), behavior: 'smooth' }); });
     });
   }
-  ligar(document.querySelector('.n12-folhas'), [].slice.call(document.querySelectorAll('[data-fl]')));
+  ligar(document.querySelector('.tg3-lista'), [].slice.call(document.querySelectorAll('[data-tg]')));
 
   var dlg = document.getElementById('n12Lb');
   if (!dlg || typeof dlg.showModal !== 'function') return;
