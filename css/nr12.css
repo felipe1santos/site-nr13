@@ -1174,3 +1174,29 @@
 .pc-card:has(#pcCiclo:checked) .n12-ciclo-anual { display: none; }
 .pc-card .n12-plano-preco { text-align: center; }
 .pc-card .n12-valor-nota { justify-content: center; }
+
+/* preço: título centralizado, itens com hover, valor maior */
+.pc-topo { position: relative; justify-content: center; padding-top: 3.2rem; }
+.pc-titulo { align-items: center; text-align: center; }
+.pc-toggle { position: absolute; top: 1.2rem; right: 1.6rem; margin: 0; }
+.pc-card .n12-plano-nome { font-size: 1.55rem; }
+.pc-card .n12-plano-sub { text-align: center; margin-inline: 2rem; }
+.pc-card .n12-plano-lista { padding: 0 1.4rem; gap: .1rem; }
+.pc-card .n12-plano-lista li {
+  padding: .5rem .7rem .5rem 2.1rem; border-radius: 6px; cursor: pointer;
+  transition: background .18s ease, color .18s ease;
+}
+.pc-card .n12-plano-lista li::before { left: .8rem; top: .9em; }
+.pc-card .n12-plano-lista li:hover { background: #E3F2F6; color: var(--sys-teal-600); }
+.oferta-sec .pc-card .n12-plano-lista li:hover strong { color: var(--sys-teal-600); }
+.pc-card .n12-valor { font-size: clamp(3rem, 2.4rem + 2vw, 3.9rem); }
+.pc-card .n12-valor span { font-size: 1.35rem; }
+.pc-card .n12-valor small { font-size: 1.15rem; }
+@media (max-width: 560px) {
+  .pc-topo { padding-top: 3.4rem; }
+  .pc-toggle { right: 50%; transform: translateX(50%); }
+  .pc-card .n12-plano-lista { padding: 0 .7rem; }
+}
+.pc-card { max-width: 630px; }
+.pc-card .n12-plano-sub { text-align: left; margin-inline: 2.1rem; }
+@media (max-width: 560px) { .pc-card .n12-plano-sub { margin-inline: 1.4rem; } }
