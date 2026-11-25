@@ -1150,3 +1150,9 @@
 @media (max-width: 1024px) {
   .calc-top { grid-template-columns: 1fr; }
 }
+
+/* preço: card vertical na proporção 1 : 1,6 (largura : altura) */
+.pc-card { width: 100%; max-width: 560px; aspect-ratio: 1 / 1.6; }
+.pc-card .pc-inclui { flex: 1; }
+.pc-card .n12-plano-preco { margin-top: auto; }
+@media (min-width: 1025px) { .pc-card { aspect-ratio: 1 / 1.6; } }
