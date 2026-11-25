@@ -418,3 +418,4 @@ e Guarapari. A foto 13871327 e a 9808741 aparecem em 2 páginas cada (limite da 
 | `hero-nr13-inventario.webp` | https://www.pexels.com/photo/2569842/ | inventário |
 | `nr13-inventario-tubulacao.webp` | https://www.pexels.com/photo/17728787/ | inventário |
 | `nr12-sistema/hero-engenheiro.webp` | `nr12-engenheiro-seguranca.jpg` | Pexels 32845698 (logo do capacete removido) |
+| `nr12-sistema/hero-nr12-{1100,1672,mobile}.webp` | `nr12-hero-engenheiro-celular.png` | Imagem enviada pelo Felipe em 25/11/2026 |

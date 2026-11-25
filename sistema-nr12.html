@@ -29,9 +29,10 @@
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#0a1f33">
 
-<link rel="preload" as="image" href="img/nr12-sistema/hero-engenheiro.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/nr12-sistema/hero-nr12-mobile.webp" media="(max-width: 720px)" fetchpriority="high">
+<link rel="preload" as="image" imagesrcset="img/nr12-sistema/hero-nr12-1100.webp 1100w, img/nr12-sistema/hero-nr12-1672.webp 1672w" imagesizes="100vw" media="(min-width: 721px)" fetchpriority="high">
 <link rel="stylesheet" href="css/site.css?v=20261125b">
-<link rel="stylesheet" href="css/nr12.css?v=20261125o">
+<link rel="stylesheet" href="css/nr12.css?v=20261125s">
 <!-- marca que o JS vai animar, antes da primeira pintura: evita piscar o conteúdo -->
 <script>document.documentElement.className += " js-anim";</script>
 
@@ -182,6 +183,33 @@
 
 <!-- ============ HERO ============ -->
 <section class="sys-hero n12-hero" id="inicio">
+  <div class="n12-hero-midia">
+  <picture class="n12-hero-foto-bg">
+    <source media="(max-width: 720px)" srcset="img/nr12-sistema/hero-nr12-mobile.webp" width="800" height="1000">
+    <img src="img/nr12-sistema/hero-nr12-1672.webp" srcset="img/nr12-sistema/hero-nr12-1100.webp 1100w, img/nr12-sistema/hero-nr12-1672.webp 1672w" sizes="100vw" width="1672" height="941" fetchpriority="high"
+         alt="Engenheiro de segurança com capacete, protetor auricular e colete refletivo fotografando com o celular uma prensa hidráulica sinalizada">
+  </picture>
+  <svg class="n12-callout n12-callout-d" viewBox="0 0 1672 941" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+    <circle class="co-pulso" cx="1279" cy="338" r="18"/>
+    <circle class="co-ponto" cx="1279" cy="338" r="8"/>
+    <path class="co-linha" d="M1290 352 L1356 478 H1398"/>
+    <g class="co-tag">
+      <rect x="1398" y="444" width="268" height="68" rx="8"/>
+      <text class="co-t1" x="1414" y="470">REGISTRANDO EVIDÊNCIA</text>
+      <text class="co-t2" x="1414" y="497">Máquina PE-02 · HRN 256</text>
+    </g>
+  </svg>
+  <svg class="n12-callout n12-callout-m" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <circle class="co-pulso" cx="624" cy="352" r="20"/>
+    <circle class="co-ponto" cx="624" cy="352" r="9"/>
+    <path class="co-linha" d="M630 336 L690 236 V150"/>
+    <g class="co-tag">
+      <rect x="470" y="70" width="312" height="78" rx="10"/>
+      <text class="co-t1" x="488" y="100">REGISTRANDO EVIDÊNCIA</text>
+      <text class="co-t2" x="488" y="132">Máquina PE-02 · HRN 256</text>
+    </g>
+  </svg>
+  </div>
   <div class="wrap n12-hero-grid">
     <div class="n12-hero-txt">
       <span class="eyebrow">Sistema NR12 · Software online</span>
@@ -199,19 +227,6 @@
       </p>
     </div>
 
-    <figure class="n12-hero-vis">
-      <img class="n12-hero-foto" src="img/nr12-sistema/hero-engenheiro.webp" width="1100" height="974" fetchpriority="high"
-           alt="Engenheiro de segurança do trabalho com capacete e óculos de proteção conferindo documento no chão de fábrica">
-      <div class="n12-browser n12-hero-tela">
-        <span class="n12-browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>nr12.nr1sistema.com.br</b></span>
-        <img src="img/nr12-sistema/tela-visualizador-laudo.webp" width="1514" height="734" loading="lazy"
-             alt="Tela real do Sistema NR12 com o laudo de apreciação de risco LAR-2026-0001 aberto no visualizador">
-      </div>
-      <figcaption class="n12-hero-cap">
-        <span class="tg tg-rev">LAR-2026-0001 · Rev.00</span>
-        <span class="tg tg-ok">Vigente</span>
-      </figcaption>
-    </figure>
   </div>
 
   <div class="sys-strip sys-strip-5">
