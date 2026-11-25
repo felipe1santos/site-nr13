@@ -1203,3 +1203,8 @@
 /* grafo da calculadora: menos respiro em volta, desenho maior */
 .calc-top .calc-fluxo { padding-inline: clamp(1rem, 2vw, 1.5rem); }
 .calc-top .calc-arvore { margin-inline: -.3rem; }
+
+/* faixa do hero: duas linhas por item, mais baixa */
+.sys-strip-5 .wrap > div { padding: .7rem 1.1rem .75rem; }
+.sys-strip-5 b { font-size: 1.15rem; line-height: 1.15; margin-bottom: .12rem; }
+.sys-strip-5 span { display: block; font-size: .62rem; letter-spacing: .06em; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
