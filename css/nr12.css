@@ -825,3 +825,228 @@
   .check-card, .n12-docs li { padding: .95rem 1rem; }
   .check-card p, .n12-docs p { font-size: .84rem; }
 }
+
+/* ==========================================================================
+   Revisão 25/11/2026 (3) — módulos refeitos, calculadora lado a lado,
+   carrossel de falhas, folhas maiores, preço horizontal, NR-10 brinde,
+   termos em duas faixas.
+   ========================================================================== */
+
+/* ---------- 20. Módulos: lista em duas colunas, sem cards ---------- */
+.mx-sec { background: var(--white); }
+.mx-grid {
+  display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 4.5rem); align-items: start;
+}
+.mx-intro h2 { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.1; margin-bottom: .9rem; text-wrap: balance; }
+.mx-intro > p { color: var(--txt-soft); font-size: 1.05rem; max-width: 30em; margin-bottom: 1.6rem; }
+.mx-foto { margin: 0; border-radius: var(--r-lg); overflow: hidden; }
+.mx-foto img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.mx-lista {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+.mx-lista li {
+  display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: .9rem;
+  padding: 1.15rem 0; border-top: 1px solid var(--line);
+}
+.mx-ico {
+  width: 40px; height: 40px; padding: 9px; border-radius: 10px;
+  background: var(--orange-100); fill: none; stroke: var(--orange-600);
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.mx-lista h3 { font-size: 1rem; margin: .15rem 0 .3rem; color: var(--navy-900); }
+.mx-lista p { font-size: .9rem; line-height: 1.5; color: var(--txt-soft); margin: 0; }
+
+/* ---------- 21. Calculadora: formulário | caminho, resultado embaixo ---------- */
+.calc-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.calc-top .calc-fluxo { margin: 0; border: 0; border-radius: 0; background: #071a29; }
+.calc-top .calc-arvore svg { min-width: 0; }
+.calc-res {
+  margin-top: 1px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(1.2rem, 3vw, 2.2rem); align-items: start;
+  border: 1px solid rgba(255, 255, 255, .16); border-top: 0; border-radius: 0 0 var(--r-lg) var(--r-lg);
+}
+#calcRisco .calc-top { border-radius: var(--r-lg) var(--r-lg) 0 0; }
+.calc-res .calc-vis { margin-top: 0; }
+.calc-res .calc-tiles { margin-bottom: 0; }
+.calc-res .calc-lista { margin-bottom: .8rem; }
+.calc-res .calc-nota { margin-top: 0; }
+
+/* ---------- 22. Carrossel: falhas que viram auto ---------- */
+.fz-sec { background: var(--steel-50); }
+.fz-head { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.6rem; }
+.fz-head h2 { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.1; margin-bottom: .6rem; text-wrap: balance; }
+.fz-head p { color: var(--txt-soft); font-size: 1.02rem; max-width: 36em; margin: 0; }
+.fz-nav, .fl-nav { display: flex; align-items: center; gap: .5rem; flex: none; }
+.fz-cont { font-family: var(--f-mono); font-size: .85rem; color: var(--steel-500); margin-right: .4rem; font-variant-numeric: tabular-nums; }
+.fz-cont b { color: var(--navy-900); }
+.fz-btn {
+  width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; cursor: pointer;
+  background: var(--white); border: 1.5px solid var(--steel-200); color: var(--navy-800);
+  transition: background .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
+}
+.fz-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.fz-btn:hover { background: var(--navy-900); border-color: var(--navy-900); color: var(--white); }
+.fz-btn:active { transform: scale(.94); }
+.fz-btn:focus-visible { outline: 3px solid var(--orange-500); outline-offset: 2px; }
+.fz-btn[disabled] { opacity: .4; cursor: default; background: var(--white); color: var(--navy-800); border-color: var(--steel-200); }
+
+.fz-trilho, .n12-folhas {
+  display: grid; grid-auto-flow: column; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+.fz-trilho::-webkit-scrollbar, .n12-folhas::-webkit-scrollbar { display: none; }
+.fz-trilho.is-arrastando, .n12-folhas.is-arrastando { cursor: grabbing; scroll-snap-type: none; user-select: none; }
+.fz-trilho:focus-visible, .n12-folhas:focus-visible { outline: 3px solid var(--orange-500); outline-offset: 4px; }
+.fz-trilho { grid-auto-columns: 100%; gap: 1.2rem; border-radius: var(--r-lg); }
+.fz-slide {
+  scroll-snap-align: start; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center; gap: clamp(1.5rem, 4vw, 3.5rem);
+  background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: clamp(1.4rem, 3.5vw, 2.8rem);
+}
+.fz-txt h3 { font-size: clamp(1.4rem, 1.1rem + 1.1vw, 2rem); line-height: 1.12; margin: .8rem 0 .7rem; color: var(--navy-900); text-wrap: balance; }
+.fz-txt p { color: var(--txt-soft); font-size: 1rem; line-height: 1.6; margin: 0 0 1rem; max-width: 34em; }
+.fz-txt .fz-fix { margin: 0; padding-top: .9rem; border-top: 1px solid var(--line); font-size: .92rem; color: var(--navy-800); font-weight: 600; }
+.fz-ill { display: block; width: 100%; height: auto; max-height: 320px; background: var(--steel-50); border-radius: var(--r-lg); }
+.fz-dots { display: flex; justify-content: center; gap: .25rem; margin-top: 1rem; }
+.fz-dots button { width: 28px; height: 28px; border: 0; background: none; cursor: pointer; display: grid; place-items: center; padding: 0; }
+.fz-dots button::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--steel-200); transition: width .25s ease, background .25s ease; }
+.fz-dots button[aria-selected="true"]::before { width: 22px; background: var(--orange-500); }
+.fz-dots button:focus-visible { outline: 2px solid var(--orange-500); border-radius: 6px; }
+
+/* ilustrações das falhas */
+.fz-ill .i-corpo { fill: #dfe6ec; stroke: var(--navy-700); stroke-width: 2.5; }
+.fz-ill .i-escuro { fill: var(--navy-700); }
+.fz-ill .i-metal { fill: #93a6b8; stroke: var(--navy-700); stroke-width: 2; }
+.fz-ill .i-traco { fill: none; stroke: var(--navy-700); stroke-width: 2.5; stroke-linecap: round; }
+.fz-ill .i-mao { fill: #f3c9a8; stroke: var(--navy-700); stroke-width: 2.5; stroke-linejoin: round; }
+.fz-ill .i-alvo { fill: none; stroke: #B42318; stroke-width: 2.5; stroke-dasharray: 7 6; }
+.fz-ill .i-alerta { fill: #FBF2DE; stroke: #8A5A00; stroke-width: 2.5; stroke-linejoin: round; }
+.fz-ill .i-alerta-tx { fill: none; stroke: #8A5A00; stroke-width: 3; stroke-linecap: round; }
+.fz-ill .i-engr { fill: none; stroke: #93a6b8; stroke-width: 7; stroke-dasharray: 9 6; }
+.fz-ill .i-grade { fill: rgba(255, 255, 255, .7); stroke: var(--navy-700); stroke-width: 2.5; stroke-linejoin: round; }
+.fz-ill .i-grade-l { fill: none; stroke: #93a6b8; stroke-width: 2; }
+.fz-ill .i-piso { fill: none; stroke: var(--steel-300); stroke-width: 3; stroke-linecap: round; }
+.fz-ill .i-tracejado { fill: none; stroke: #B42318; stroke-width: 2.5; stroke-dasharray: 8 6; }
+.fz-ill .i-amarelo { fill: #f2c12e; stroke: var(--navy-700); stroke-width: 2; }
+.fz-ill .i-vermelho { fill: #B42318; stroke: var(--navy-700); stroke-width: 2; }
+.fz-ill .i-caixa { fill: #d9b98b; stroke: #7a5a2e; stroke-width: 2.5; }
+.fz-ill .i-seta { fill: none; stroke: #B42318; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 7 6; }
+.fz-ill .i-ima { fill: none; stroke: #B42318; stroke-width: 7; stroke-linecap: round; }
+.fz-ill .i-fita { fill: #f2c12e; opacity: .9; }
+.fz-ill .i-laranja { fill: var(--orange-500); }
+.fz-ill .i-x { fill: none; stroke: #B42318; stroke-width: 6; stroke-linecap: round; }
+.fz-ill .i-folha { fill: var(--white); stroke: var(--navy-700); stroke-width: 2.5; }
+.fz-ill .i-folha2 { fill: #e9eef3; stroke: var(--steel-300); stroke-width: 2.5; }
+.fz-ill .i-linhas { fill: none; stroke: var(--steel-200); stroke-width: 7; stroke-linecap: round; }
+.fz-ill .i-carimbo { fill: rgba(251, 234, 232, .92); stroke: #B42318; stroke-width: 3; }
+.fz-ill .i-carimbo-tx { fill: #B42318; font: 800 20px var(--f-display); letter-spacing: .06em; }
+.fz-ill .i-copia { fill: none; stroke: var(--steel-500); stroke-width: 3; stroke-linecap: round; }
+
+/* ---------- 23. Folhas do laudo: faixa com folhas grandes ---------- */
+.n12-folhas-head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; }
+#documentos .fl-nav { justify-content: flex-end; margin: -3.6rem 0 1.2rem; }
+.n12-folhas { grid-template-columns: none; grid-auto-columns: clamp(300px, 31%, 420px); gap: 1.4rem; padding-bottom: .4rem; }
+.n12-folhas li { scroll-snap-align: start; }
+.n12-folhas a { -webkit-user-drag: none; }
+.n12-folhas img { -webkit-user-drag: none; user-select: none; }
+
+/* ---------- 24. Preço: card horizontal centralizado ---------- */
+.pc-head { text-align: center; max-width: 40em; margin: 0 auto 2.2rem; }
+.pc-head h2 { color: var(--white); font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem); line-height: 1.1; margin-bottom: .7rem; }
+.pc-head p { color: var(--steel-300); font-size: 1.05rem; margin: 0; }
+.pc-card {
+  max-width: 1000px; margin-inline: auto; flex-direction: row;
+  display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+}
+.pc-inclui { padding-bottom: 1.6rem; }
+.pc-card .n12-plano-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.4rem; margin-bottom: 0; }
+.pc-card .n12-plano-preco {
+  border-top: 0; border-left: 1px solid var(--line); border-radius: 0 var(--r-lg) var(--r-lg) 0;
+  display: flex; flex-direction: column; justify-content: center; padding: 1.8rem 1.7rem;
+}
+.pc-duvida { text-align: center; color: var(--steel-300); font-size: .95rem; margin: 1.6rem 0 0; }
+.pc-duvida a { color: var(--white); font-weight: 600; text-underline-offset: 3px; }
+
+/* ---------- 25. NR-10 como brinde ---------- */
+.br-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.br-selo {
+  display: inline-flex; align-items: center; gap: .5rem; margin-bottom: 1rem;
+  background: #DEFFE8; color: #009A3D; font-weight: 700; font-size: .85rem;
+  padding: .4rem .8rem .4rem .6rem; border-radius: 999px;
+}
+.br-selo svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.br-intro h2 { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.1; margin-bottom: .9rem; text-wrap: balance; }
+.br-intro p { color: rgba(255, 255, 255, .8); font-size: 1.04rem; margin-bottom: 1.6rem; max-width: 32em; }
+.br-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: rgba(255, 255, 255, .14); border: 1px solid rgba(255, 255, 255, .14); border-radius: var(--r-lg); overflow: hidden; }
+.br-lista li { background: rgba(6, 39, 51, .92); padding: 1rem 1.1rem; font-size: .88rem; line-height: 1.45; color: rgba(255, 255, 255, .72); }
+.br-lista b { display: block; color: var(--white); font-size: .95rem; margin-bottom: .25rem; }
+
+/* ---------- 26. Termos relacionados: duas faixas em movimento ---------- */
+.tg2-sec { padding: clamp(2.2rem, 4vw, 3.2rem) 0; background: var(--white); border-top: 1px solid var(--line); overflow: hidden; }
+.tg2-tit { font-size: .95rem; font-weight: 700; color: var(--steel-500); margin: 0 0 1rem; }
+.tg2 { display: grid; gap: .6rem; }
+.tg2-linha {
+  display: flex; width: max-content;
+  animation: tg2-anda 110s linear infinite;
+}
+.tg2-rev { animation-direction: reverse; animation-duration: 130s; }
+.tg2:hover .tg2-linha, .tg2:focus-within .tg2-linha { animation-play-state: paused; }
+.tg2-faixa { display: flex; gap: .5rem; list-style: none; margin: 0; padding: 0 .5rem 0 0; }
+.tg2-faixa a {
+  display: block; white-space: nowrap; text-decoration: none;
+  font-size: .8rem; color: var(--txt-soft); background: var(--steel-50);
+  border: 1px solid var(--line); border-radius: 999px; padding: .4rem .85rem;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.tg2-faixa a:hover { color: var(--orange-600); border-color: var(--orange-500); background: var(--orange-100); }
+.tg2-faixa a:focus-visible { outline: 2px solid var(--orange-500); outline-offset: 2px; }
+@keyframes tg2-anda { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .tg2-linha { animation: none; }
+  .tg2 { overflow-x: auto; }
+  .tg2-faixa[aria-hidden="true"] { display: none; }
+}
+
+/* ---------- 27. Responsivo da revisão 3 ---------- */
+@media (max-width: 1024px) {
+  .mx-grid { grid-template-columns: 1fr; }
+  .mx-foto { display: none; }
+  .calc-top { grid-template-columns: 1fr; }
+  .calc-res { grid-template-columns: 1fr 1fr; }
+  .calc-res .calc-res-c { grid-column: 1 / -1; }
+  .pc-card { grid-template-columns: 1fr; max-width: 560px; }
+  .pc-card .n12-plano-preco { border-left: 0; border-top: 1px solid var(--line); border-radius: 0 0 var(--r-lg) var(--r-lg); }
+  .br-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .mx-lista { grid-template-columns: 1fr; }
+  .mx-lista li { padding: .85rem 0; }
+  .fz-head { display: block; }
+  .fz-nav { margin-top: 1rem; }
+  .fz-slide { grid-template-columns: 1fr; gap: 1.1rem; padding: 1.1rem; }
+  .fz-ill { order: -1; max-height: 210px; }
+  .fz-txt h3 { margin-top: .6rem; }
+  .fz-txt p { font-size: .93rem; }
+  .n12-folhas { grid-auto-columns: 86%; margin-inline: calc(-1 * (100vw - 100%) / 2); padding-inline: calc((100vw - 100%) / 2); scroll-padding-inline: calc((100vw - 100%) / 2); }
+  #documentos .fl-nav { margin: 0 0 1rem; justify-content: flex-start; }
+  .n12-folhas-head { display: block; }
+  .calc-res { grid-template-columns: 1fr; }
+  .pc-card .n12-plano-lista { grid-template-columns: 1fr; }
+  .br-lista { grid-template-columns: 1fr; }
+}
+
+/* ---------- 28. Ajustes finos ---------- */
+.calc-opt i { font-family: var(--f-body); text-transform: none; letter-spacing: 0; font-size: .86rem; }
+@media (min-width: 1025px) {
+  .pc-card { aspect-ratio: 1.6 / 1; }
+  .pc-inclui { display: flex; flex-direction: column; padding-bottom: 2rem; }
+  .pc-card .n12-plano-lista { flex: 1; align-content: space-evenly; row-gap: .9rem; }
+}
+.n12-plano-head { flex-wrap: wrap; }
+@media (max-width: 720px) {
+  .n12-folhas { margin-inline: 0; padding-inline: 0; scroll-padding-inline: 0; grid-auto-columns: 88%; }
+}

@@ -219,7 +219,7 @@
               'HRN: ' + outHRN.textContent + ' (' + faixa.nome + ')\n' +
               'Categoria de segurança sugerida: ' + cat + '\n' +
               'Quero falar sobre a adequação e o Sistema NR12.';
-    outWa.href = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg);
+    if (outWa) outWa.href = 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg);
   }
 
   function aplicarPreset() {
