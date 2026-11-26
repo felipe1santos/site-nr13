@@ -1727,3 +1727,45 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]), textarea, 
 .docs-btn-wa { background: var(--white); color: var(--green-600); border: 1px solid var(--green-600); font-weight: 700; }
 .docs-btn-wa:hover { background: var(--green-600); color: var(--white); }
 .docs-pagina .nav a { white-space: nowrap; }
+
+/* ===== Documentação: grupos do sumário, legendas numeradas, diagramas ===== */
+.docs-indice-grupo {
+  margin: .7rem .6rem .2rem; font-family: var(--f-mono); font-size: .68rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--steel-500);
+}
+.docs-indice nav > .docs-indice-grupo:first-child { margin-top: .4rem; }
+.docs-indice ol + .docs-indice-grupo { border-top: 1px solid var(--line); padding-top: .7rem; }
+
+.legenda-print { list-style: none; counter-reset: leg; padding-left: 0 !important; margin: -.6rem 0 2rem; display: grid; gap: .45rem; }
+.legenda-print li { counter-increment: leg; position: relative; padding-left: 2.3rem; margin: 0; line-height: 1.55; }
+.legenda-print li::before {
+  content: counter(leg); position: absolute; left: 0; top: .05rem; width: 1.55rem; height: 1.55rem; border-radius: 50%;
+  background: var(--orange-500); color: var(--white); font-weight: 700; font-size: .82rem;
+  display: grid; place-items: center; box-shadow: 0 0 0 2px var(--white), 0 0 0 3px var(--orange-100);
+}
+
+.fluxo { display: flex; flex-wrap: wrap; align-items: stretch; gap: .45rem; margin: 1.2rem 0 .6rem; }
+.fluxo-passo {
+  flex: 1 1 130px; min-width: 120px; display: grid; align-content: start; gap: .2rem; position: relative;
+  border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--white); padding: .75rem .8rem;
+  box-shadow: 0 2px 8px rgba(10, 31, 51, .06);
+}
+.fluxo-passo b { color: var(--navy-900); font-size: .95rem; }
+.fluxo-passo small { color: var(--txt-soft); font-size: .8rem; line-height: 1.35; }
+.fluxo-passo em { font-style: normal; font-size: .78rem; font-weight: 600; color: var(--navy-700); margin-top: .25rem; padding-top: .35rem; border-top: 1px dashed var(--line); }
+.fluxo-n {
+  width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--navy-800); color: var(--white);
+  font-size: .78rem; font-weight: 700; display: grid; place-items: center; margin-bottom: .15rem;
+}
+.fluxo-destaque { border-color: var(--orange-500); background: var(--orange-100); }
+.fluxo-destaque .fluxo-n { background: var(--orange-500); }
+.fluxo-seta { align-self: center; color: var(--orange-500); font-weight: 700; font-size: 1.2rem; }
+.fluxo-compacto .fluxo-passo { flex-basis: 110px; padding: .6rem .7rem; }
+.fluxo-nota { font-size: .92rem; color: var(--txt-soft); margin-top: .2rem; }
+@media (max-width: 760px) { .fluxo-seta { transform: rotate(90deg); flex-basis: 100%; text-align: center; } .fluxo-passo { flex-basis: 100%; } }
+
+.formula { font-family: var(--f-mono); font-size: 1.1rem; background: var(--steel-50); border: 1px solid var(--line); border-radius: var(--r); padding: .6rem .9rem; display: inline-block; }
+.faixas-hrn { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0; }
+.faixa { padding: .35rem .7rem; border-radius: var(--r); font-size: .85rem; color: var(--white); }
+.faixa-raro { background: #5b6b7c; } .faixa-baixo { background: #1a7f52; } .faixa-atencao { background: #9a7a00; }
+.faixa-signif { background: #b0561e; } .faixa-alto { background: #c62828; } .faixa-extremo { background: #7f1010; }

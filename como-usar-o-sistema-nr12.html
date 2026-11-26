@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Como usar o Sistema NR12: guia de laudos e documentos</title>
-<meta name="description" content="Guia do Sistema NR12 passo a passo: para que serve cada laudo (inventário, apreciação de risco, plano de ação, validação, manual, aterramento, prontuário NR-10).">
+<title>Documentação do Sistema NR12: como usar, passo a passo</title>
+<meta name="description" content="Documentação completa do Sistema NR12: cada tela e botão, inspeção de campo, apreciação de risco, HRN, assinatura do RT, ART, não conformidades, plano de ação e laudos.">
 <meta name="keywords" content="como usar o Sistema NR12, manual do sistema NR-12, documentação sistema NR12, laudos NR-12 passo a passo, apreciação de risco no sistema, plano de ação NR-12, laudo de validação NR-12, manual de instruções de segurança, prontuário NR-10, laudo de aterramento">
 
 <link rel="canonical" href="https://nr13sistema.com.br/como-usar-o-sistema-nr12.html">
@@ -16,10 +16,10 @@
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Axial Engenharia">
-<meta property="og:title" content="Como usar o Sistema NR12: guia de laudos e documentos">
+<meta property="og:title" content="Documentação do Sistema NR12: como usar, passo a passo">
 <meta property="og:description" content="Passo a passo do Sistema NR12: da foto da máquina ao laudo assinado, e para que serve cada documento.">
 <meta property="og:url" content="https://nr13sistema.com.br/como-usar-o-sistema-nr12.html">
-<meta property="og:image" content="https://nr13sistema.com.br/img/como-usar-nr12-dossie-maquina.webp">
+<meta property="og:image" content="https://nr13sistema.com.br/img/doc-nr12-dossie.webp">
 <meta property="og:locale" content="pt_BR">
 <meta property="article:published_time" content="2026-11-26">
 <meta name="twitter:card" content="summary_large_image">
@@ -32,20 +32,20 @@
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#0a1f33">
 
-<link rel="stylesheet" href="css/site.css?v=20261126d">
+<link rel="stylesheet" href="css/site.css?v=20261126e">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Como usar o Sistema NR12: o caminho de uma máquina e para que serve cada laudo",
-  "description": "Guia do Sistema NR12 passo a passo: para que serve cada laudo (inventário, apreciação de risco, plano de ação, validação, manual, aterramento, prontuário NR-10).",
+  "headline": "Documentação do Sistema NR12: como usar cada tela, do cadastro ao laudo assinado",
+  "description": "Documentação completa do Sistema NR12: cada tela e botão, inspeção de campo, apreciação de risco, HRN, assinatura do RT, ART, não conformidades, plano de ação e laudos.",
   "inLanguage": "pt-BR",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://nr13sistema.com.br/como-usar-o-sistema-nr12.html"
   },
-  "image": "https://nr13sistema.com.br/img/como-usar-nr12-dossie-maquina.webp",
+  "image": "https://nr13sistema.com.br/img/doc-nr12-dossie.webp",
   "datePublished": "2026-11-26",
   "dateModified": "2026-11-26",
   "author": {
@@ -90,7 +90,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Como usar o sistema",
+      "name": "Documentação",
       "item": "https://nr13sistema.com.br/como-usar-o-sistema-nr12.html"
     }
   ]
@@ -103,26 +103,34 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "📑 Nesta documentação</summary>\n      <nav aria-label=\"Sumário da documentação\">\n        <p class=\"docs-indice-grupo\">Começo</p>\n        <ol>\n          <li><a href=\"#visao-geral\">🎯 Visão geral</a></li>\n          <li><a href=\"#fluxo\">🗺️ O fluxo completo</a></li>\n          <li><a href=\"#primeiros-passos\">🚀 Primeiros passos</a></li>\n          <li><a href=\"#papeis\">👥 Quem faz o quê</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Menu · Trabalho</p>\n        <ol>\n          <li><a href=\"#painel\">📊 Painel</a></li>\n          <li><a href=\"#jornada\">🧭 Jornada de conformidade</a></li>\n          <li><a href=\"#tarefas\">📥 Minhas tarefas</a></li>\n          <li><a href=\"#visitas\">☑️ Visitas (inspeção de campo)</a></li>\n          <li><a href=\"#apreciacoes\">📋 Apreciações</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Apreciação de risco</p>\n        <ol>\n          <li><a href=\"#criar-apreciacao\">➕ Criar e escolher responsáveis</a></li>\n          <li><a href=\"#assistente\">📱 Assistente de campo</a></li>\n          <li><a href=\"#hrn\">🔢 HRN, PLr e categoria</a></li>\n          <li><a href=\"#mesa\">🖥️ Mesa de revisão</a></li>\n          <li><a href=\"#assinatura\">✍️ Assinatura do RT e emissão</a></li>\n          <li><a href=\"#ao-emitir\">⚙️ O que acontece ao emitir</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Menu · Planta</p>\n        <ol>\n          <li><a href=\"#maquinas\">🏭 Máquinas</a></li>\n          <li><a href=\"#dossie\">🗂️ Dossiê da máquina</a></li>\n          <li><a href=\"#plano\">🗓️ Plano de ação e OS</a></li>\n          <li><a href=\"#aterramento\">⚡ Aterramento</a></li>\n          <li><a href=\"#ncs\">⚠️ Não conformidades</a></li>\n          <li><a href=\"#validacao\">✅ Validação (LVA)</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Menu · Documentos</p>\n        <ol>\n          <li><a href=\"#laudos-e-docs\">📄 Laudos e docs</a></li>\n          <li><a href=\"#cada-documento\">📚 Cada documento</a></li>\n          <li><a href=\"#documento-emitido\">🔒 Documento emitido e validação</a></li>\n          <li><a href=\"#arts\">📜 ARTs</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Menu · Configurações</p>\n        <ol>\n          <li><a href=\"#empresa\">🏢 Dados da empresa</a></li>\n          <li><a href=\"#emitente\">🖋️ Empresa emitente</a></li>\n          <li><a href=\"#equipe\">👷 Equipe e registro do RT</a></li>\n          <li><a href=\"#metodologia\">Σ Metodologia</a></li>\n          <li><a href=\"#importar\">📥 Importar planilha</a></li>\n        </ol>\n        <p class=\"docs-indice-grupo\">Dia a dia</p>\n        <ol>\n          <li><a href=\"#campo-offline\">📶 Celular, QR e sem internet</a></li>\n          <li><a href=\"#rotina\">📆 Rotina sugerida</a></li>\n          <li><a href=\"#faq\">❓ Perguntas frequentes</a></li>\n        </ol>\n      </nav>\n    </details>\n    <a class=\"docs-entrar\" href=\"sistema-nr12.html\" data-cta=\"docs-lateral\">🚀 Conhecer o Sistema NR12</a>\n  </aside>\n\n  <article class=\"docs-conteudo\">\n\n    <!-- ===================================================== COMEÇO -->\n    <h2 id=\"visao-geral\">🎯 Visão geral</h2>\n    <p>\n      A <strong>NR-12</strong> exige que as máquinas sejam seguras e que a empresa <strong>prove isso com documentos</strong>;\n      a <strong>NR-10</strong> faz o mesmo com a parte elétrica. O Sistema NR12 organiza esse trabalho em etapas — cadastrar,\n      inspecionar, avaliar o risco, corrigir, comprovar — e gera, em cada uma, o documento oficial que comprova o que foi feito,\n      com número, revisão, assinatura do responsável técnico e código de validação.\n    </p>\n    <p>Três ideias explicam quase tudo no sistema:</p>\n    <ul>\n      <li><b>Tudo pertence a uma máquina.</b> Inspeção, perigo, não conformidade, ação, ordem de serviço, foto e documento são sempre de uma máquina. Por isso o <a href=\"#dossie\">dossiê da máquina</a> é o centro do sistema.</li>\n      <li><b>Nada de número digitado à mão no laudo.</b> O risco é calculado pelo sistema, a situação da máquina vem do último laudo emitido e cada documento sai do que está registrado.</li>\n      <li><b>Documento emitido não muda.</b> Corrigiu algo? Emite-se uma revisão nova; a anterior fica no histórico e continua conferível.</li>\n    </ul>\n\n    <h2 id=\"fluxo\">🗺️ O fluxo completo</h2>\n    <p>A ordem do trabalho para cada máquina. Cada caixa é uma etapa; embaixo, o documento que ela gera.</p>\n    <div class=\"fluxo\" role=\"img\" aria-label=\"Fluxo: cadastro, inspeção de campo, apreciação de risco, plano de ação, execução, validação e documentos\">\n      <div class=\"fluxo-passo\"><span class=\"fluxo-n\">1</span><b>Cadastrar</b><small>máquina, TAG, setor, energias</small><em>📄 Inventário</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><span class=\"fluxo-n\">2</span><b>Inspecionar</b><small>check-list de turno em campo</small><em>📄 Check-list mensal</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo fluxo-destaque\"><span class=\"fluxo-n\">3</span><b>Apreciar o risco</b><small>perigos, fotos, HRN, medidas</small><em>📄 Laudo LAR (RT + ART)</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><span class=\"fluxo-n\">4</span><b>Planejar</b><small>ações com prazo e responsável</small><em>📄 Plano de ação</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><span class=\"fluxo-n\">5</span><b>Executar</b><small>OS, foto do depois</small><em>—</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo fluxo-destaque\"><span class=\"fluxo-n\">6</span><b>Validar</b><small>testes e risco verificado</small><em>📄 Laudo LVA (RT + ART)</em></div>\n      <div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><span class=\"fluxo-n\">7</span><b>Manter</b><small>manual, revisão periódica</small><em>📄 Manual · revisão em 12 meses</em></div>\n    </div>\n    <p class=\"fluxo-nota\">\n      Em paralelo: o que reprova na inspeção (2) vira <b>proposta de não conformidade</b> → <b>NC</b> → <b>ação</b>, e entra no mesmo plano (4).\n      Os documentos da empresa inteira — <b>Relatório Técnico</b>, <b>Laudo de Aterramento</b> e <b>Prontuário NR-10</b> — podem ser emitidos a qualquer momento.\n    </p>\n\n    <h2 id=\"primeiros-passos\">🚀 Primeiros passos</h2>\n    <p>\n      No computador, o quadro <b>“Comece por aqui”</b> fica no canto inferior esquerdo (no celular, aparece no Painel). Ele lista sete passos e\n      marca cada um como feito <b>pelo que existe no banco</b>, não por cliques:\n    </p>\n    <ol>\n      <li><b>Cadastre os dados da sua empresa</b> — fica feito quando o CNPJ está preenchido (<a href=\"#empresa\">Dados da empresa</a>).</li>\n      <li><b>Cadastre a empresa emitente do laudo</b> — quem emite e assina (<a href=\"#emitente\">Empresa emitente</a>).</li>\n      <li><b>Cadastre a equipe e o responsável técnico</b> — ao menos um membro com registro profissional (<a href=\"#equipe\">Equipe</a>).</li>\n      <li><b>Cadastre as máquinas</b> — à mão ou com <b>Importar planilha</b> (<a href=\"#maquinas\">Máquinas</a>).</li>\n      <li><b>Cadastre a ART</b> — com o PDF emitido pelo CREA (<a href=\"#arts\">ARTs</a>).</li>\n      <li><b>Faça a primeira apreciação em campo</b> — fica feito quando ela chega à análise (<a href=\"#assistente\">Assistente</a>).</li>\n      <li><b>Emita o primeiro laudo</b> (<a href=\"#assinatura\">Assinatura e emissão</a>).</li>\n    </ol>\n    <div class=\"callout\"><p>💡 Antes da primeira emissão, o RT precisa também <b>aprovar a metodologia</b> em <a href=\"#metodologia\">Configurações › Metodologia</a>. Sem isso, a assinatura é recusada.</p></div>\n\n    <h2 id=\"papeis\">👥 Quem faz o quê</h2>\n    <p>Cada pessoa tem um <b>papel</b> na <a href=\"#equipe\">Equipe</a>. Os itens do menu que a pessoa não pode usar nem aparecem.</p>\n    <div class=\"tabela-wrap\">\n      <p class=\"tabela-dica\">Role para o lado para ver a tabela inteira</p>\n      <table class=\"tec\">\n        <thead><tr><th>Papel</th><th>O que faz no sistema</th></tr></thead>\n        <tbody>\n          <tr><td>Administrador (master)</td><td>Tudo, inclusive equipe, dados da empresa e emitente.</td></tr>\n          <tr><td>Gestor</td><td>Planeja e distribui o trabalho, cadastra máquinas e ARTs, revisa propostas de NC, cria ações, emite documentos de gestão. <b>Não assina laudo</b> e não valida ação.</td></tr>\n          <tr><td>Engenheiro</td><td>Analisa na mesa de revisão; com registro no CREA vigente, é o <b>RT que assina</b> laudos, aprova a metodologia e valida ações.</td></tr>\n          <tr><td>Técnico / inspetor</td><td>Coleta em campo: fotos, perigos, checklist e HRN proposto; faz e finaliza inspeções.</td></tr>\n          <tr><td>Manutenção</td><td>Executa as ações do plano e anexa a foto do depois.</td></tr>\n          <tr><td>Operador</td><td>Faz o check-list de turno da máquina.</td></tr>\n          <tr><td>Cliente / consulta</td><td>Só consulta máquinas e laudos emitidos.</td></tr>\n        </tbody>\n      </table>\n    </div>\n\n    <!-- ===================================================== TRABALHO -->\n    <h2 id=\"painel\">📊 Painel</h2>\n    <p>É a tela inicial: um retrato do que precisa de atenção agora. Os números são somados no servidor e valem para os filtros escolhidos.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-painel.webp\" alt=\"Painel do Sistema NR12 com próximo passo, filtros, indicadores e gráfico de ações por situação\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Próximo passo</b> — a recomendação mais urgente, uma de cada vez (ex.: importar máquinas, ver ações atrasadas, revisar propostas, continuar inspeção).</li>\n      <li><b>Botão do próximo passo</b> — leva direto à tela que resolve.</li>\n      <li><b>Jornada de conformidade</b> — abre a visão por etapas da empresa (<a href=\"#jornada\">veja abaixo</a>).</li>\n      <li><b>Filtros</b> — Unidade, Setor, Prazo (30 dias, 90 dias, vencido, este ano) e Situação da ação. Valem para todos os quadros.</li>\n      <li><b>Indicadores</b> — Ativos, Sem apreciação, NCs abertas, Ações atrasadas, Vencendo e Concluídas. Clique para abrir a lista correspondente.</li>\n      <li><b>Gráficos</b> — Ações por situação, Prazos, Unidades, Setores, Máquinas com mais pendências, Evolução mensal, Custo das adequações e Classificação de risco. Cada barra de máquina abre o dossiê dela.</li>\n    </ol>\n\n    <h2 id=\"jornada\">🧭 Jornada de conformidade</h2>\n    <p>Mostra em que ponto a <b>empresa inteira</b> está, em nove etapas, cada uma com um selo — <b>Em dia</b>, <b>Atenção</b>, <b>Crítico</b>, <b>Não iniciado</b> ou <b>Bloqueado</b> — a <b>próxima ação</b> e um botão para ela.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-jornada.webp\" alt=\"Jornada de conformidade com as etapas Inventário de máquinas e Checklist e inspeção, selos e próxima ação\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Etapa</b> — 1 Inventário · 2 Checklist e inspeção · 3 Apreciação de risco · 4 Não conformidades · 5 Plano de ações · 6 Execução e OS · 7 Validação · 8 Documentos · 9 Monitoramento.</li>\n      <li><b>Selo</b> — a apreciação fica <b>Bloqueada</b> enquanto a metodologia não for aprovada.</li>\n      <li><b>Números da etapa</b> — ex.: máquinas sem setor, sem TAG, sem foto.</li>\n      <li><b>Próxima ação</b> — o que fazer para a etapa ficar em dia.</li>\n      <li><b>Botão</b> — abre a lista já filtrada (ex.: só as máquinas sem setor).</li>\n    </ol>\n\n    <h2 id=\"tarefas\">📥 Minhas tarefas</h2>\n    <p>As apreciações que estão <b>com você agora</b>, agrupadas pelo que você precisa fazer: <b>Para coletar</b> (inspetor), <b>Assinar a elaboração</b>, <b>Para revisar</b> (analista), <b>Para assinar</b> (RT), <b>Para emitir</b> e <b>Prontas para validar</b>. Dentro de cada grupo, a mais antiga vem primeiro.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-tarefas.webp\" alt=\"Minhas tarefas com o filtro por grupo Todas, Coletar, Elaboração, Revisar, Assinar, Emitir e Validar\" width=\"1400\" height=\"383\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Filtro por grupo</b> — com a quantidade de cada um.</li>\n      <li><b>Lista vazia</b> — “Nada com você agora”; o botão leva ao quadro de apreciações.</li>\n    </ol>\n    <p>O botão <b>Abrir</b> de cada cartão leva ao lugar certo: o inspetor vai para o <a href=\"#assistente\">assistente de campo</a>; analista e RT vão para a <a href=\"#mesa\">mesa de revisão</a>; “validar” vai para o dossiê da máquina.</p>\n\n    <h2 id=\"visitas\">☑️ Visitas — inspeção de campo</h2>\n    <p>\n      A inspeção de campo é o <b>check-list de turno</b> da máquina (formulário “Check-list de Segurança NR-12 (turno)”). É dela que nascem as\n      não conformidades do dia a dia. A tela se chama <b>Inspeção em campo</b>.\n    </p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-visitas.webp\" alt=\"Tela Inspeção em campo com busca, botão Ler QR e a máquina com inspeção em andamento\" width=\"1400\" height=\"237\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Busca</b> — por TAG, nome, inventário, unidade ou setor.</li>\n      <li><b>Ler QR</b> — aponte a câmera para a etiqueta da máquina e o check-list abre direto.</li>\n      <li><b>Continuar preenchimento X/Y</b> — há uma inspeção começada nesta máquina.</li>\n      <li><b>Inspecionar / Continuar</b> — abre o check-list. Se já existe um rascunho no aparelho ou no servidor, ele é retomado (nunca cria duas).</li>\n      <li><b>Dossiê</b> — abre a ficha completa da máquina.</li>\n    </ol>\n    <h3>Respondendo o check-list</h3>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-inspecao.webp\" alt=\"Item do check-list com as respostas Conforme, Não conforme, Não aplicável e Não verificado, observação e fotos\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Progresso</b> — “X de Y respondidos”.</li>\n      <li><b>Cancelar inspeção</b> — só com a inspeção em andamento, por quem a abriu, gestor ou administrador, com motivo (mínimo 5 letras). As respostas ficam só para consulta e nada vira NC.</li>\n      <li><b>Índice</b> — todos os itens, marcados C, NC, NA, NV ou pendente; avisa quantos obrigatórios faltam.</li>\n      <li><b>Respostas</b> — <b>Conforme</b>; <b>Não conforme</b> (vira proposta de NC, revisada depois); <b>Não aplicável</b>; <b>Não verificado</b> (não conta como conforme: fica como pendência). NA e NV exigem motivo escrito.</li>\n      <li><b>Observação</b> — grava sozinha enquanto você digita.</li>\n      <li><b>Fotos deste item</b> — até 8 por item, depois de responder.</li>\n      <li><b>Próximo</b> — no último item vira <b>Finalizar</b>. Não finaliza se faltar item obrigatório.</li>\n      <li><b>Salvar e continuar depois</b> — sai sem perder nada.</li>\n    </ol>\n    <div class=\"callout\"><p>🔁 <b>Ao finalizar</b>, cada resposta “Não conforme” vira uma <b>proposta de não conformidade</b>, que alguém autorizado revisa em <a href=\"#ncs\">Não conformidades › Propostas de NC</a>. Inspeção finalizada não pode ser alterada: para corrigir, faça uma inspeção nova.</p></div>\n\n    <h2 id=\"apreciacoes\">📋 Apreciações</h2>\n    <p>O quadro de todas as apreciações de risco e validações, por etapa, e com quem cada uma está.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-apreciacoes-quadro.webp\" alt=\"Quadro de apreciações com colunas Em campo, Em análise, Com o RT, Assinadas, Emitidas e Em adequação\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Lista / Quadro</b> — a mesma informação em tabela ou em colunas.</li>\n      <li><b>Filtros</b> — busca, etapa, equipamento e tipo (apreciação e/ou validação).</li>\n      <li><b>Colunas</b> — Em campo, Em análise, Com o RT, Assinadas, Emitidas, Em adequação.</li>\n      <li><b>Cartão</b> — máquina, responsável e há quanto tempo está na etapa. Clique para abrir.</li>\n    </ol>\n\n    <!-- ===================================================== APRECIAÇÃO -->\n    <h2 id=\"criar-apreciacao\">➕ Criar a apreciação e escolher os responsáveis</h2>\n    <p>A apreciação de risco passa por seis etapas, e cada etapa tem um dono:</p>\n    <div class=\"fluxo fluxo-compacto\" role=\"img\" aria-label=\"Etapas da apreciação: Planejada, Em campo, Em análise, Com o RT, Assinada, Emitida\">\n      <div class=\"fluxo-passo\"><b>Planejada</b><small>criada, aguarda a visita</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Em campo</b><small>inspetor coleta</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Em análise</b><small>analista revisa</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Com o RT</b><small>RT confere</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Assinada</b><small>PDF sendo gerado</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo fluxo-destaque\"><b>Emitida</b><small>PDF oficial</small></div>\n    </div>\n    <p class=\"fluxo-nota\">A análise pode <b>devolver ao campo</b> e o RT pode <b>devolver à análise</b> — sempre com um comentário dizendo o que corrigir, que fica no histórico.</p>\n    <ol>\n      <li>No <a href=\"#dossie\">dossiê da máquina</a>, clique em <b>Apreciação de risco</b> (ou, no celular, em <b>Capturar › Abrir pela máquina</b>).</li>\n      <li>Escolha o <b>Inspetor</b> (obrigatório; o padrão é você), o <b>Analista</b> (opcional — sem analista, o RT revisa) e o <b>Responsável técnico</b> (só aparece quem é engenheiro com registro vigente).</li>\n      <li>Clique em <b>Criar a apreciação</b>. Se o inspetor é você, o assistente abre; senão, ela aparece nas tarefas dele.</li>\n    </ol>\n    <p>Os responsáveis podem ser trocados depois, na mesa, pelo botão <b>Trocar</b> — até a assinatura. A troca fica registrada.</p>\n\n    <h2 id=\"assistente\">📱 Assistente de campo</h2>\n    <p>\n      É onde o inspetor coleta tudo, no celular ou tablet, <b>mesmo sem internet</b>. São cinco passos; o topo mostra o andamento e o estado\n      do salvamento (“Salvo”, “Salvo no aparelho · aguardando sinal”).\n    </p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-assistente-maquina.webp\" alt=\"Passo Máquina do assistente de campo com os cinco passos, escolha do tipo de máquina e alerta\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Os cinco passos</b> — Máquina, Limites, Perigos, Checklist NR-12, Revisão. Toque num número para ir direto.</li>\n      <li><b>Aviso de etapa</b> — depois que sai do campo, o assistente fica só para consulta.</li>\n      <li><b>Que máquina é esta?</b> — escolher o tipo traz sugestões de perigos e regras do anexo da NR-12.</li>\n      <li><b>Alerta do tipo</b> — ex.: em prensa de chaveta, cortina de luz não é aceita como proteção.</li>\n      <li><b>Próximo</b> — avança; nada se perde ao voltar.</li>\n    </ol>\n    <p><b>Passo 1 · Máquina:</b> tipo, <b>Foto geral</b>, <b>Placa de identificação</b> (até 3 fotos) e os dados da placa (fabricante, modelo, série, ano, capacidade).</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-assistente-limites.webp\" alt=\"Passo Limites com uso previsto e mau uso previsível em etiquetas de escolha\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Uso previsto</b> — toque nas etiquetas para marcar.</li>\n      <li><b>Outro… (digite ou dite)</b> — inclui o que não está na lista.</li>\n      <li><b>Mau uso previsível</b> — o atalho que o operador toma quando a produção aperta.</li>\n    </ol>\n    <p><b>Passo 2 · Limites:</b> uso previsto, mau uso previsível e <b>Fases e pessoas expostas</b> (o botão <b>Sugerir pelo tipo</b> preenche a partir do tipo de máquina).</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-assistente-perigos.webp\" alt=\"Passo Perigos com dois perigos registrados, HRN de cada um, botão Adicionar perigo e perigos sugeridos\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Perigos registrados</b> — código (P-01, P-02…), zona, <b>HRN</b> com a faixa de cor e número de fotos.</li>\n      <li><b>Adicionar perigo</b> — começa um perigo do zero.</li>\n      <li><b>Sugeridos para o tipo</b> — toque e o perigo nasce já preenchido.</li>\n    </ol>\n    <p><b>Passo 3 · Perigos.</b> Cada perigo tem seis telas:</p>\n    <ol>\n      <li><b>Onde?</b> — a zona de perigo (ex.: Z1 zona de prensagem).</li>\n      <li><b>O quê?</b> — que perigo é, a fase (operação, preparação, limpeza, manutenção, transporte), a tarefa, o tipo (ISO 12100), quem fica exposto, a origem e a consequência.</li>\n      <li><b>Fotos</b> — fotografe o ponto de perigo e use <b>Marcar foto</b> para desenhar marcador, retângulo, elipse, zona, seta, traço, texto ou cota. A foto original nunca é alterada.</li>\n      <li><b>HRN atual</b> — “Qual o risco hoje, como está?”: escolha os quatro fatores e o risco aparece na hora. É uma <b>proposta</b>: o RT confirma no escritório.</li>\n      <li><b>Comando de segurança</b> — se a proteção depende de comando (intertravamento, cortina, bimanual, emergência), escolha S, F e P para ver o <b>PLr</b> e a <b>categoria</b> exigidos; registre abertura e distância medidas, em mm.</li>\n      <li><b>Medidas e residual</b> — as medidas de proteção, cada uma com nível (1 projeto seguro, 2 proteção, 3 informação), e o risco residual depois delas. Se a gravidade mudar, diga por quê.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-assistente-checklist.webp\" alt=\"Checklist NR-12 do assistente com o item 12.1.9 e as respostas Conforme, Não conforme e Não aplicável\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Item da NR-12</b> — o número e o texto do item.</li>\n      <li><b>Resposta</b> — Conforme e Não aplicável avançam sozinhos; <b>Não conforme</b> pede o perigo ligado, observação e até 4 fotos.</li>\n      <li><b>Observação</b> — digite ou dite pelo teclado.</li>\n    </ol>\n    <p><b>Passo 4 · Checklist NR-12:</b> um item por vez; <b>Próximo sem resposta</b> pula para o que falta.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-assistente-revisao.webp\" alt=\"Passo Revisão com o resumo de perigos, itens respondidos e não conformes, e o botão Enviar para análise\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Resumo</b> — perigos, itens respondidos, não conformes.</li>\n      <li><b>Pendências</b> — tipo não definido, perigo sem foto, HRN incompleto, medida sem nível, checklist incompleto… Cada uma leva ao lugar de corrigir.</li>\n      <li><b>Enviar para análise</b> — as pendências não travam: o analista recebe a lista. Sem sinal, o envio espera na fila.</li>\n    </ol>\n\n    <h2 id=\"hrn\">🔢 HRN, PLr e categoria</h2>\n    <p>O <b>HRN</b> (Hazard Rating Number) mede o tamanho de cada risco multiplicando quatro fatores:</p>\n    <p class=\"formula\"><b>HRN = GPL × PO × FE × NP</b></p>\n    <div class=\"tabela-wrap\">\n      <p class=\"tabela-dica\">Role para o lado para ver a tabela inteira</p>\n      <table class=\"tec\">\n        <thead><tr><th>Fator</th><th>O que pergunta</th><th>Escala (exemplos)</th></tr></thead>\n        <tbody>\n          <tr><td>GPL</td><td>Grau de possível lesão</td><td>0,1 arranhão · 2 fratura grave · 8 amputação de mão · 15 fatalidade</td></tr>\n          <tr><td>PO</td><td>Probabilidade de ocorrência</td><td>0,03 quase impossível · 2 possível · 8 provável · 15 certeza</td></tr>\n          <tr><td>FE</td><td>Frequência de exposição</td><td>0,5 anual · 1,5 semanal · 2,5 diária · 5 constante</td></tr>\n          <tr><td>NP</td><td>Número de pessoas expostas</td><td>1 (1–2) · 2 (3–7) · 4 (8–15) · 8 (16–50) · 12 (acima de 50)</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <div class=\"faixas-hrn\" role=\"list\" aria-label=\"Faixas de HRN\">\n      <span role=\"listitem\" class=\"faixa faixa-raro\"><b>Raro</b> 0–1</span>\n      <span role=\"listitem\" class=\"faixa faixa-baixo\"><b>Baixo</b> até 5</span>\n      <span role=\"listitem\" class=\"faixa faixa-atencao\"><b>Atenção</b> até 50</span>\n      <span role=\"listitem\" class=\"faixa faixa-signif\"><b>Significativo</b> até 100</span>\n      <span role=\"listitem\" class=\"faixa faixa-alto\"><b>Alto</b> até 500</span>\n      <span role=\"listitem\" class=\"faixa faixa-extremo\"><b>Extremo</b> acima de 500</span>\n    </div>\n    <ul>\n      <li>A partir de <b>Significativo</b>, o perigo exige medida de proteção e risco residual; residual a partir de Significativo exige justificativa.</li>\n      <li>A faixa define o <b>prazo</b> da ação gerada pelo laudo: Extremo imediato, Alto 30 dias, Significativo 90, Atenção 180, Baixo e Raro 365.</li>\n      <li>Quando a proteção depende de comando elétrico, <b>S</b> (gravidade), <b>F</b> (frequência) e <b>P</b> (possibilidade de evitar) dão o <b>PLr</b> (ISO 13849-1) e a <b>categoria</b> (NBR 14153) que o comando precisa ter. Essas tabelas são aprovadas pelo RT em <a href=\"#metodologia\">Metodologia</a>.</li>\n    </ul>\n\n    <h2 id=\"mesa\">🖥️ Mesa de revisão</h2>\n    <p>\n      É a tela do escritório. O analista confere e completa o que veio do campo; o RT revisa, confirma o HRN e assina. No computador são três\n      colunas — <b>Índice</b>, <b>Editor</b> e <b>Prévia, pendências e histórico</b>; no celular, três abas. A mesa precisa de internet.\n    </p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-perigo-hrn.webp\" alt=\"Perigo na mesa de revisão com foto marcada, HRN atual 256 alto confirmado pelo RT e o bloco de comando de segurança\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Fotos e marcação</b> — a foto do perigo com o que o inspetor marcou.</li>\n      <li><b>HRN atual</b> — o valor proposto em campo. O RT usa <b>Confirmar HRN</b>, <b>Confirmar HRN alterado</b> ou <b>Definir e confirmar HRN</b>; se mudar, o valor anterior fica na auditoria.</li>\n      <li><b>Confirmado por</b> — quem confirmou e quando.</li>\n      <li><b>Comando de segurança e distâncias</b> — S, F, P, PLr, categoria e medidas de distância.</li>\n    </ol>\n    <p><b>O que se faz na mesa:</b></p>\n    <ul>\n      <li><b>Índice</b> — Máquina, Limites de uso, Perigos (do mais grave ao mais leve), Checklist NR-12 e Conclusão; ✓ completo, ● com pendência, ○ a fazer. Dá para <b>Adicionar perigo</b>.</li>\n      <li><b>Editor do perigo</b> — identificação, fotos, HRN atual, comando de segurança, medidas de proteção, risco residual (com a justificativa “por que o residual é aceito?”) e comentários.</li>\n      <li><b>Dados do laudo</b> — velocidade, acionamento, alimentação, processo, legenda das zonas; objetivo e escopo; documentação analisada; <b>instrumentos usados</b> (calibração vencida aparece marcada); recomendação imediata.</li>\n      <li><b>Conclusão</b> — <b>Apta</b>, <b>Apta com restrições</b> ou <b>Inapta</b>, com o texto.</li>\n      <li><b>Comentários</b> — por perigo ou do laudo, com “Marcar como resolvido”.</li>\n      <li><b>Prévia do PDF</b> — o laudo como vai sair, com a marca “RASCUNHO”, sem número e sem assinatura.</li>\n      <li>Limites e checklist <b>não se editam na mesa</b>: para corrigir, devolva ao campo.</li>\n    </ul>\n    <p><b>Botões por etapa:</b> em análise, <b>Enviar ao RT</b> ou <b>Devolver ao campo</b>; com o RT, <b>Confirmar e preparar assinatura</b> (só o RT, sem nenhuma pendência) ou <b>Devolver à análise</b>. Quando um botão está desabilitado, o motivo aparece embaixo dele.</p>\n    <div class=\"callout\"><p>🚦 <b>Pendências:</b> cada uma diz se <b>trava o envio ao RT</b> ou <b>trava a assinatura</b> — por exemplo HRN não confirmado pelo RT, risco Significativo sem medida, residual não avaliado, cortina de luz em máquina que não aceita, conclusão não definida.</p></div>\n\n    <h2 id=\"assinatura\">✍️ Assinatura do RT e emissão</h2>\n    <p><b>Confirmar e preparar assinatura</b> abre o diálogo <b>Assinar e emitir</b> — assinatura eletrônica do responsável técnico (Lei 14.063/2020):</p>\n    <ol>\n      <li><b>Resumo do laudo</b> — HRN máximo atual e residual, perigos, NCs e conclusão. O servidor confere de novo as pendências.</li>\n      <li><b>ART do laudo</b> — <b>Vincular uma ART cadastrada</b> (só aparecem as que têm o PDF do CREA e são do RT) ou, se a empresa permitir, <b>Emitir sem ART, com justificativa</b> (mínimo 20 letras, impressa no Anexo A).</li>\n      <li><b>Conferência</b> — marque “Revisei os perigos, as medidas e a conclusão.”</li>\n      <li><b>Confirmar identidade</b> — senha ou <b>código por e-mail</b> (6 dígitos). Quem entra com Google usa o código.</li>\n      <li><b>Assinar e emitir</b> — grava a assinatura com a impressão digital (SHA-256) do conteúdo, a etapa vira <b>Assinada</b> e o PDF oficial é gerado. Se a geração falhar, há <b>Tentar gerar de novo</b> — sem nova assinatura.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-mesa.webp\" alt=\"Mesa de revisão de apreciação emitida com o selo Apreciação emitida, índice e prévia do laudo abertos\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Apreciação emitida</b> — o número do PDF oficial (ex.: LAR-2026-0001) e <b>Abrir o documento</b>.</li>\n      <li><b>Responsáveis</b> — inspetor, analista e RT.</li>\n      <li><b>Folha de leitura</b> — emitida, a apreciação fica somente para leitura, numa folha corrida.</li>\n      <li><b>Índice</b> — atalhos para cada seção.</li>\n      <li><b>Prévia do laudo</b> — resumo (HRN máximo atual e residual, perigos, NCs, conclusão).</li>\n      <li><b>Pendências, comentários e histórico</b> — toda passagem de etapa fica registrada.</li>\n    </ol>\n    <p>O inspetor também assina a <b>elaboração</b> (botão <b>Assinar elaboração</b> em Minhas tarefas ou no aviso da mesa); no laudo, ela aparece como assinatura “Elaboração (inspeção de campo)”.</p>\n\n    <h2 id=\"ao-emitir\">⚙️ O que acontece ao emitir</h2>\n    <ul>\n      <li>🔢 O laudo ganha <b>número oficial</b> (ex.: LAR-2026-0001, por emitente e ano) e <b>código de validação</b> de 16 caracteres, impresso no rodapé e no QR.</li>\n      <li>🗓️ Cada medida “a implantar” vira uma <b>ação no plano</b>, com código AC-AAAA-NNNNN e prazo pela faixa do HRN. Medida de nível 3 vira ação de procedimento; as demais, adequação física.</li>\n      <li>🏷️ A <b>situação NR-12 da máquina</b> passa a ser a conclusão do laudo: Apta, Apta com restrições ou Inapta.</li>\n      <li>🔒 O laudo fica <b>imutável</b>. Mudou algo? Faça uma revisão.</li>\n    </ul>\n\n    <!-- ===================================================== PLANTA -->\n    <h2 id=\"maquinas\">🏭 Máquinas</h2>\n    <p>O inventário: a lista de todas as máquinas e equipamentos. Tudo no sistema se pendura aqui.</p>\n    <ul>\n      <li><b>Colunas</b> — foto, nome, TAG, setor, <b>situação NR-12</b> (cor pela conclusão do último laudo; “Não avaliada” antes do primeiro) e número de NCs abertas.</li>\n      <li><b>Busca</b> — TAG, nome, inventário, fabricante, modelo ou série, sem precisar de acento.</li>\n      <li><b>Filtros</b> — unidade e setor.</li>\n      <li><b>Etiquetas QR</b> — PDF com a etiqueta de cada máquina (60 × 32 mm, 24 por folha A4) para imprimir e colar.</li>\n      <li><b>Nova máquina</b> — Unidade (obrigatória; dá para criar uma nova), Setor, <b>Nome</b> (obrigatório), TAG (única), nº de inventário, fabricante, modelo, série e capacidade.</li>\n    </ul>\n    <div class=\"callout\"><p>🏷️ <b>TAG e setor fazem diferença:</b> sem eles a máquina existe, mas não é encontrável em campo. A Jornada mostra quantas estão sem TAG, sem setor e sem foto.</p></div>\n\n    <h2 id=\"dossie\">🗂️ Dossiê da máquina</h2>\n    <p>Tudo sobre uma máquina num lugar só. Clique em qualquer máquina da lista para abrir.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-dossie.webp\" alt=\"Dossiê da prensa PE-02 com os botões numerados: foto, identificação, energias, etiqueta QR, inspeção, apreciação, abas, situação, jornada e ficha técnica\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Foto principal</b> — a que aparece na lista e na capa do laudo. Clique para ampliar; sem foto, <b>Adicionar foto</b>.</li>\n      <li><b>Identificação</b> — TAG, fabricante, modelo, ano, unidade e setor.</li>\n      <li><b>Selo da inspeção</b> — Nunca inspecionada, Inspeção em andamento ou Inspecionada; ao lado, as pendências (NCs, ações atrasadas, OS abertas).</li>\n      <li><b>Energias</b> — marque com um clique as energias da máquina (elétrica, pneumática…). Alimentam o laudo, o manual e o prontuário NR-10.</li>\n      <li><b>Etiqueta QR</b> — imprime a etiqueta desta máquina.</li>\n      <li><b>Iniciar / Continuar inspeção</b> — abre o check-list de turno numa janela.</li>\n      <li><b>Apreciação de risco</b> — cria a apreciação; se houver uma aberta, vira <b>Continuar apreciação</b> ou <b>Continuar validação</b>.</li>\n      <li><b>Abas</b> — Resumo, Fotos, Inspeções, Riscos e HRN, Não conformidades, Plano de ações, Ordens de serviço, Validações (o número é quantos registros há).</li>\n      <li><b>Situação NR-12</b> — Em adequação (x de y ações), Pronta para validar (com <b>Iniciar validação</b>), Em validação ou <b>Máquina conforme · revisão até…</b>.</li>\n      <li><b>Jornada desta máquina</b> — sete etapas: Cadastrada, Inspecionada, Riscos avaliados, Não conformidades, Ações, Validação, Documentos. Verde concluído, amarelo em andamento, vermelho precisa de atenção. Não é porcentagem de conformidade.</li>\n      <li><b>Ficha técnica</b> — os dados que entram no cabeçalho dos laudos. Campo vazio aparece como “Não informado”.</li>\n    </ol>\n    <p>No canto superior direito aparece o aviso <b>Próximo passo</b> desta máquina (ex.: “nunca foi inspecionada — comece pela inspeção”). Ele recolhe sozinho e pode ser reaberto pelo selo no topo.</p>\n    <h3>Aba Fotos</h3>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-fotos.webp\" alt=\"Aba Fotos do dossiê com explicação da foto principal, botões Tirar foto e Escolher arquivo e a categoria Visão geral\" width=\"1400\" height=\"442\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Foto principal</b> — escolha abrindo a foto e usando <b>Tornar principal</b>.</li>\n      <li><b>Tirar foto / Escolher arquivo</b> — antes de enviar, escolha a categoria, escreva a legenda e descarte o que ficou ruim (até 24 por vez).</li>\n      <li><b>Categorias</b> — Visão geral, Placa, Painel e comandos, Riscos, Inspeção, Antes, Durante, Depois da adequação, Detalhe técnico, Validação, Documentos.</li>\n    </ol>\n    <p>As fotos ficam em armazenamento privado e são reaproveitadas por inspeção, risco, NC, ação e validação, sem duplicar o arquivo. No visor ampliado há zoom, setas, legenda editável e <b>Remover daqui</b>.</p>\n    <h3>As outras abas</h3>\n    <ul>\n      <li><b>Inspeções</b> — cada check-list feito, com data e situação (Finalizada, Em andamento, Cancelada). Clique para abrir.</li>\n      <li><b>Riscos e HRN</b> — as apreciações da máquina, com versão, situação e quem aprovou.</li>\n      <li><b>Não conformidades</b> — código, título, situação e a ação de tratamento com prazo (ou “Sem ação criada”).</li>\n      <li><b>Plano de ações</b> — as ações da máquina com progresso, prazo e os selos <b>OS</b> e <b>validada</b>.</li>\n      <li><b>Ordens de serviço</b> — código, situação, abertura, execução e custo (mão de obra + peças).</li>\n      <li><b>Validações</b> — as conferências de cada ação executada, com quem validou.</li>\n    </ul>\n\n    <h2 id=\"plano\">🗓️ Plano de ação e ordens de serviço</h2>\n    <p>Todas as ações de adequação da empresa, venham do laudo ou de uma não conformidade.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-plano-de-acao.webp\" alt=\"Plano de ações com códigos AC-2026, origem LAR-2026-0001 P-01, tipo de adequação, prazo, progresso e situação\" width=\"1400\" height=\"492\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Recortes</b> — Todas, Atrasadas, Em andamento, Concluídas, com a contagem.</li>\n      <li><b>Código</b> — AC-AAAA-NNNNN.</li>\n      <li><b>Origem</b> — o laudo e o perigo de onde a ação veio (ex.: LAR-2026-0001 · P-01). Clique para abrir o laudo.</li>\n      <li><b>OS</b> — este tipo de ação exige ordem de serviço.</li>\n      <li><b>Progresso</b> — calculado pelas etapas registradas, nunca digitado.</li>\n    </ol>\n    <h3>Dentro de uma ação</h3>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-acao-ciclo.webp\" alt=\"Detalhe da ação com origem no laudo e o ciclo Criada, Planejada, Execução iniciada, Execução concluída, Aguardando validação e Validada\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Origem no laudo</b> — foto do perigo, laudo, código do perigo e faixa do HRN.</li>\n      <li><b>Progresso</b> — vai até 90% com a execução concluída; só chega a 100% com a validação aprovada.</li>\n      <li><b>Ciclo</b> — Criada → Planejada → OS aberta → Execução iniciada → Execução concluída → Aguardando validação → Validada. Use <b>Registrar</b> no próximo passo; os passos andam em ordem.</li>\n      <li><b>Validada</b> — conferida e aprovada.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-acao-campos.webp\" alt=\"Campos 5W2H da ação, prazo, situação e custo, e o bloco de evidências com Foto depois\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>5W2H</b> — o que será feito, por que, onde, quem executa e como. Use <b>Editar</b> para ajustar.</li>\n      <li><b>Prazo, situação e custo</b> — tipo de adequação, prazo, dificuldade, custo previsto e real, início e conclusão.</li>\n      <li><b>Evidências</b> — a foto de depois <b>comprova</b> a execução, mas não valida a ação.</li>\n      <li><b>Foto depois</b> — fotografe a medida instalada no mesmo enquadramento da foto do perigo.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-acao-os.webp\" alt=\"Foto depois da adequação, botão Abrir Ordem de Serviço e o bloco de validações aprovadas\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Depois da adequação</b> — as fotos que comprovam a execução.</li>\n      <li><b>Abrir Ordem de Serviço</b> — tipo (corretiva, preventiva, adequação…), prazo e equipe. Gera OS-AAAA-NNNNN. Quando o serviço termina, <b>Registrar execução</b> com data, custos e o que foi feito.</li>\n      <li><b>Validações</b> — <b>Validar</b> abre “Validar execução”: <b>Aprovada</b> conclui a ação (100%); <b>Reprovada</b> devolve para tratativa.</li>\n    </ol>\n    <div class=\"callout\"><p>✅ <b>Para validar uma ação</b> é preciso: execução marcada como concluída, OS com execução registrada (quando o tipo exige), responsável definido e ao menos uma <b>foto do depois</b>. A tela lista o que falta.</p></div>\n\n    <h2 id=\"aterramento\">⚡ Aterramento</h2>\n    <p>As medições de resistência de aterramento, ponto a ponto, que geram o <b>Laudo de Aterramento</b>.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-aterramento.webp\" alt=\"Tela Aterramento com dois pontos medidos, valor, limite e resultado conforme ou não conforme\" width=\"1400\" height=\"310\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Registrar medição</b> — máquina (ou unidade, para painel e malha), ponto, valor em Ω, <b>limite</b> (10 Ω por padrão, editável por ponto), data, instrumento e método.</li>\n      <li><b>Resumo</b> — pontos medidos, conformes e não conformes.</li>\n      <li><b>Medido e limite</b> — de cada ponto.</li>\n      <li><b>Resultado</b> — calculado pelo sistema: conforme quando o valor é menor ou igual ao limite.</li>\n      <li><b>Ver o laudo</b> — abre o Laudo de Aterramento em Laudos e docs, para prévia e emissão.</li>\n    </ol>\n    <p><b>Salvar e medir outro ponto</b> mantém máquina, data, instrumento e método — é só trocar o ponto e o valor.</p>\n\n    <h2 id=\"ncs\">⚠️ Não conformidades</h2>\n    <p>Tudo o que foi encontrado fora da norma e o que já virou ação.</p>\n    <div class=\"fluxo fluxo-compacto\" role=\"img\" aria-label=\"Ciclo da não conformidade\">\n      <div class=\"fluxo-passo\"><b>Item reprovado</b><small>na inspeção de campo</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Proposta</b><small>aguardando revisão</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>NC Aberta</b><small>confirmada</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Em tratativa</b><small>ação criada</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo\"><b>Aguardando validação</b><small>execução concluída</small></div><div class=\"fluxo-seta\" aria-hidden=\"true\">→</div>\n      <div class=\"fluxo-passo fluxo-destaque\"><b>Encerrada</b><small>ação validada</small></div>\n    </div>\n    <p class=\"fluxo-nota\">A situação da NC acompanha as ações dela automaticamente. Se a validação for reprovada, a NC reabre.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-nao-conformidades.webp\" alt=\"Tela Não conformidades com busca, filtros, botão Propostas de NC e o atalho Inspecionar em campo\" width=\"1400\" height=\"383\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Busca</b> — máquina, TAG, código ou descrição.</li>\n      <li><b>Filtros</b> — unidade, situação e <b>Mais filtros</b> (setor, origem, com ou sem ação).</li>\n      <li><b>Propostas de NC</b> — o que as inspeções apontaram e ainda precisa de revisão.</li>\n      <li><b>Lista vazia</b> — as NCs nascem das inspeções: o atalho leva a inspecionar.</li>\n    </ol>\n    <h3>De onde vêm as NCs</h3>\n    <ul>\n      <li><b>Inspeção de campo:</b> cada “Não conforme” vira <b>proposta</b>. Em <b>Propostas de NC</b> (abas Aguardando revisão, Confirmadas, Rejeitadas, Duplicadas, Agrupadas), quem tem permissão escolhe: <b>Confirmar e criar a NC</b> (as fotos do item vão junto), <b>Já existe NC</b>, <b>Juntar a outra proposta</b> ou <b>Rejeitar</b> (com motivo).</li>\n      <li><b>Importação de planilha</b> de plano de ação.</li>\n      <li>Os itens não conformes do <b>checklist do laudo de apreciação</b> ficam no próprio laudo e viram as medidas e ações dele.</li>\n    </ul>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-propostas.webp\" alt=\"Propostas de não conformidade com as abas Aguardando revisão, Confirmadas, Rejeitadas, Duplicadas e Agrupadas\" width=\"1400\" height=\"401\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Abas</b> — cada proposta fica numa aba conforme a decisão.</li>\n      <li><b>Inspecionar em campo</b> — quando não há nada a revisar.</li>\n    </ol>\n    <h3>Como tratar uma NC</h3>\n    <ol>\n      <li>Na lista de NCs, clique em <b>Criar ação de tratamento</b>: o que será feito, tipo de adequação (os que exigem OS aparecem marcados), responsável e prazo.</li>\n      <li>A ação nasce “Pendente” (AC-AAAA-NNNNN) e a NC passa a <b>Em tratativa</b>.</li>\n      <li>Siga o <a href=\"#plano\">ciclo da ação</a>: OS, execução, foto do depois.</li>\n      <li>Com a execução concluída, a NC fica <b>Aguardando validação</b>; com a validação aprovada, <b>Encerrada</b>.</li>\n    </ol>\n    <p><b>Onde as NCs aparecem nos documentos:</b> no <b>Relatório Técnico</b> (abertas e encerradas) e no <b>Check-list</b> mensal (diário de bordo). O prazo da NC é o da ação dela.</p>\n\n    <h2 id=\"validacao\">✅ Validação da adequação (laudo LVA)</h2>\n    <p>Prova que as correções do laudo foram <b>feitas e funcionam</b>. Fica disponível quando <b>todas as ações do laudo estão concluídas</b>: a máquina aparece como <b>Pronta para validar</b> no dossiê e em Minhas tarefas.</p>\n    <ol>\n      <li>No dossiê, clique em <b>Iniciar validação</b> e escolha os responsáveis. O sistema copia do laudo os perigos com medida, o HRN atual e o residual projetado.</li>\n      <li><b>Em campo</b> (dois passos: Perigos com medida e Revisão), para cada perigo:\n        <ul>\n          <li><b>As medidas foram implantadas?</b> — implantada, parcial ou não implantada;</li>\n          <li><b>Testes funcionais</b> — use os sugeridos ou adicione (ex.: “abrir a porta com a máquina ligada → a máquina para”), cada um Ok ou Falha;</li>\n          <li><b>Distância de segurança medida</b>;</li>\n          <li><b>Foto antes × depois</b> — a foto do laudo fica congelada; a do depois pode copiar as marcações da antes;</li>\n          <li><b>HRN residual verificado</b> — lado a lado com o atual e o projetado;</li>\n          <li><b>Categoria e PL alcançados</b>.</li>\n        </ul>\n      </li>\n      <li>Na mesa, conclusão: <b>Conforme</b>, <b>Conforme com ressalvas</b> ou <b>Não conforme</b>. O sistema sugere pelos dados e recusa “Conforme” com medida não implantada, teste com falha ou residual acima de Atenção.</li>\n      <li>O RT assina e emite, como na apreciação. O número é LVA-AAAA-NNNN.</li>\n    </ol>\n    <div class=\"callout\"><p>🏁 <b>Depois de emitida:</b> com <b>Conforme</b>, a máquina passa a <b>Máquina conforme</b> e ganha a data da próxima revisão (12 meses, por padrão). Com <b>Não conforme</b>, as medidas reprovadas voltam ao plano como ações novas.</p></div>\n\n    <!-- ===================================================== DOCUMENTOS -->\n    <h2 id=\"laudos-e-docs\">📄 Laudos e docs</h2>\n    <p>Onde ficam todos os documentos emitidos, em três grupos: <b>Gestão</b>, <b>Avaliação técnica</b> e <b>Responsabilidade e evidências</b>.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-laudos-e-docs.webp\" alt=\"Laudos e documentos com busca, filtros, contadores, grupos e a linha de cada documento vigente com o botão Abrir\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Busca</b> — número, máquina, TAG, cliente ou código de validação.</li>\n      <li><b>Filtros</b> — vigentes ou substituídos, tipo, data, responsável e unidade.</li>\n      <li><b>Contadores</b> — arquivos emitidos, ARTs, anexos e assinaturas.</li>\n      <li><b>Grupo</b> — Gestão (inventário e plano), Avaliação técnica, Responsabilidade e evidências.</li>\n      <li><b>Situação do tipo</b> — <i>Vigente · número · revisão · data</i>, “Ainda não emitido — os dados já permitem emitir”, “Sem dados para emitir ainda” ou “Aguardando o responsável técnico”.</li>\n      <li><b>Abrir</b> — todas as revisões daquele tipo; dentro, <b>Prévia e nova revisão</b>.</li>\n    </ol>\n    <ul>\n      <li><b>Revisar e emitir</b> — abre o leitor com a <b>prévia</b> (marca “Rascunho”) e o botão <b>Emitir Rev. NN</b>. A emissão entra na fila (“Na fila”, “Emitindo · N%”) e o documento aparece como vigente.</li>\n      <li><b>“N alterações desde a Rev. X”</b> — os dados mudaram depois da emissão: confira a prévia e emita a revisão nova.</li>\n      <li>Os laudos de <b>Apreciação</b> e de <b>Validação</b> não são emitidos aqui: saem da <a href=\"#assinatura\">mesa de revisão</a>, pela assinatura do RT.</li>\n      <li>Revisão nova <b>não apaga</b> a anterior: “Ver histórico” lista todas.</li>\n    </ul>\n\n    <h2 id=\"cada-documento\">📚 Cada documento: para que serve e quando emitir</h2>\n    <div class=\"tabela-wrap\">\n      <p class=\"tabela-dica\">Role para o lado para ver a tabela inteira</p>\n      <table class=\"tec\">\n        <thead><tr><th>Documento</th><th>Para que serve</th><th>De onde sai</th><th>Quando emitir</th></tr></thead>\n        <tbody>\n          <tr><td>Inventário de Máquinas</td><td>A lista oficial das máquinas da empresa.</td><td>Cadastro de máquinas.</td><td>No início e quando entrar ou sair máquina.</td></tr>\n          <tr><td>Apreciação de Risco (LAR)</td><td>O diagnóstico de cada máquina: perigos, risco e medidas. Assinado pelo RT com ART.</td><td>Assistente de campo + mesa de revisão.</td><td>Uma por máquina; refazer se a máquina mudar.</td></tr>\n          <tr><td>Plano / Cronograma de Adequação</td><td>Todas as ações com prazo e andamento — o compromisso da empresa.</td><td>Plano de ação.</td><td>Depois das apreciações e a cada atualização relevante.</td></tr>\n          <tr><td>Validação (LVA)</td><td>A prova de que a correção foi feita e funciona.</td><td>Validação em campo + mesa.</td><td>Quando as ações da máquina terminam.</td></tr>\n          <tr><td>Manual de Instruções de Segurança</td><td>Fica junto à máquina: uso permitido e proibido, zonas de perigo, emergência, bloqueio de energias, capacitação.</td><td>Apreciação emitida (+ validação, se houver).</td><td>Depois da apreciação; revisão nova após validar.</td></tr>\n          <tr><td>Check-list de Segurança</td><td>Prova da conferência de rotina, máquina por máquina, mês a mês.</td><td>Inspeções finalizadas do mês.</td><td>Mensal, por máquina.</td></tr>\n          <tr><td>Relatório Técnico / Diagnóstico</td><td>O retrato da empresa inteira: conformes, NCs, ações atrasadas.</td><td>Tudo o que está registrado.</td><td>Ao fechar etapas ou para a diretoria.</td></tr>\n          <tr><td>Laudo de Aterramento</td><td>Medições do fio terra de máquinas e painéis contra o limite.</td><td>Planta › Aterramento.</td><td>Anual e após reforma elétrica.</td></tr>\n          <tr><td>Prontuário NR-10</td><td>A pasta da parte elétrica (carga acima de 75 kW): o que existe e o que falta anexar, item a item.</td><td>Máquinas elétricas, aterramento, documentos, equipe, ARTs.</td><td>Sempre atualizado.</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-manual.webp\" alt=\"Manual de instruções de segurança com zonas de perigo e medidas de proteção implantadas e validadas\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Zonas de perigo</b> — do laudo de apreciação.</li>\n      <li><b>Situação da medida</b> — “Implantada (validada)” quando a validação comprovou; “A implantar” antes dela.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-prontuario.webp\" alt=\"Prontuário NR-10 com a composição item a item da norma, a situação e a evidência de cada exigência\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Item da NR-10</b> — 10.2.3 e 10.2.4 a–g.</li>\n      <li><b>Situação</b> — no sistema, parcial ou anexar ao prontuário.</li>\n      <li><b>Evidência</b> — o que o sistema já tem (ex.: laudo de aterramento, manuais, profissionais).</li>\n    </ol>\n    <div class=\"callout\"><p>🔌 O prontuário só fica disponível com ao menos uma máquina com a energia <b>Elétrica</b> marcada no dossiê. Manual e check-list são por máquina: <b>Gerar manual</b> e <b>Gerar check-list</b> pedem a máquina (e o mês).</p></div>\n\n    <h2 id=\"documento-emitido\">🔒 Documento emitido, ciência do cliente e validação</h2>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-documento.webp\" alt=\"Página do documento emitido com visualizador, botões Baixar e Imprimir, identificação, código de validação e ciência do cliente\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Visualizador</b> — rolagem contínua, zoom e seleção de texto.</li>\n      <li><b>Baixar / Imprimir</b> — o PDF original (arquivo “número-revNN.pdf”).</li>\n      <li><b>Identificação</b> — tipo, organização, emissão, quem solicitou, páginas.</li>\n      <li><b>Autenticidade</b> — o código de validação e o SHA-256 do arquivo.</li>\n      <li><b>Ciência do cliente</b> — gere um link (vale 30 dias, uso único) para o cliente ler o laudo e registrar que recebeu. Ciência não é concordância técnica.</li>\n    </ol>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-validacao-publica.webp\" alt=\"Página pública de validação mostrando documento autêntico e vigente, código e SHA-256\" width=\"936\" height=\"460\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Situação</b> — “Documento autêntico e vigente” ou “substituído pela revisão NN”.</li>\n      <li><b>Código de validação</b> — o mesmo impresso no PDF.</li>\n      <li><b>SHA-256</b> — a impressão digital do arquivo gravado.</li>\n      <li><b>Como conferir</b> — compare o SHA-256 do arquivo recebido com o da página.</li>\n    </ol>\n    <p>Qualquer pessoa com o código <b>confere se o documento é válido</b> — número, revisão, data, emitente e RT. A consulta <b>não dá acesso ao conteúdo</b> do documento nem aos dados da empresa.</p>\n\n    <h2 id=\"arts\">📜 ARTs</h2>\n    <p>As Anotações de Responsabilidade Técnica emitidas no CREA, com o PDF original. Uma ART pode cobrir vários laudos.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-arts.webp\" alt=\"Tela ARTs vazia com o botão Cadastrar ART\" width=\"1400\" height=\"383\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Cadastrar ART</b> — número, tipo (inicial, complementar, substitutiva, múltipla), RT (em branco vale para qualquer RT da empresa), contratante, atividade, datas, chave e link de verificação do CREA (vira QR no Anexo A) e o <b>PDF da ART</b> (obrigatório, até 20 MB).</li>\n    </ol>\n    <p>A ART é vinculada ao laudo <b>na assinatura</b> e entra como <b>Anexo A</b>, com as páginas do PDF copiadas no laudo. ART já usada em laudo emitido fica travada e não pode ser excluída.</p>\n\n    <!-- ===================================================== CONFIGURAÇÕES -->\n    <h2 id=\"empresa\">🏢 Dados da empresa</h2>\n    <p>O <b>cliente</b>: a empresa dona das máquinas. Aparece como contratante nos laudos e no plano.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-empresa.webp\" alt=\"Dados da empresa com identificação, CNPJ e endereço\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Identificação</b> — razão social, fantasia, CNPJ, inscrição estadual, CNAE, grau de risco (NR-4), funcionários.</li>\n      <li><b>CNPJ</b> — os dígitos são conferidos ao digitar.</li>\n      <li><b>Endereço e contato</b>.</li>\n    </ol>\n\n    <h2 id=\"emitente\">🖋️ Empresa emitente</h2>\n    <p><b>Você</b>: quem emite e assina os laudos. Aparece no cabeçalho e define a numeração.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-emitente.webp\" alt=\"Empresa emitente com logo, selo Padrão, numeração LAR e botões Editar e Novo emitente\" width=\"1400\" height=\"219\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Emitente</b> — logo, razão social, CNPJ e registro no CREA (pessoa jurídica).</li>\n      <li><b>Padrão</b> — o emitente usado nos novos laudos.</li>\n      <li><b>Numeração</b> — prefixo do laudo (LAR → LAR-2027-0042) e da validação (LVA).</li>\n      <li><b>Editar</b> — inclusive o <b>logotipo</b> (SVG recomendado, ou PNG/JPG).</li>\n      <li><b>Novo emitente</b> — pode haver mais de um.</li>\n    </ol>\n\n    <h2 id=\"equipe\">👷 Equipe e registro do RT</h2>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-equipe.webp\" alt=\"Equipe com papel Administrador, situação ativa, registro profissional CREA-SP e botão Convidar pessoa\" width=\"1400\" height=\"228\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Papel</b> — define o que a pessoa pode fazer (<a href=\"#papeis\">veja a tabela</a>).</li>\n      <li><b>Registro profissional</b> — conselho (CREA ou CFT), UF, número e validade.</li>\n      <li><b>Editar</b> — cadastra ou atualiza o registro. Só assina laudo quem é engenheiro e tem registro vigente.</li>\n      <li><b>Convidar pessoa</b> — e-mail, nome e papel; a pessoa recebe o convite e define a senha.</li>\n    </ol>\n    <p>A <b>assinatura é eletrônica</b>: não há imagem de assinatura para enviar. O RT confirma a identidade com senha ou código no momento de emitir.</p>\n\n    <h2 id=\"metodologia\">Σ Metodologia</h2>\n    <p>As tabelas de risco usadas no laudo. As matrizes de <b>categoria</b> (NBR 14153) e de <b>PLr</b> (ISO 13849-1) precisam da conferência do RT da empresa antes do primeiro laudo oficial.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-metodologia.webp\" alt=\"Metodologia com a tabela de categoria de segurança NBR 14153 e o selo aprovada pelo RT\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Tabela S/F/P</b> — gravidade, frequência e possibilidade de evitar → categoria ou PL.</li>\n      <li><b>Aprovada por</b> — o RT que conferiu, com o registro e a data. Sem aprovação, o botão é <b>Conferi e aprovo para esta empresa</b>.</li>\n    </ol>\n\n    <h2 id=\"importar\">📥 Importar planilha</h2>\n    <p>Traz o inventário de máquinas ou o plano de ações de uma planilha .xlsx, sem recadastrar à mão.</p>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-importar.webp\" alt=\"Importar planilha com as etapas Arquivo, Mapeamento, Simulação e Concluído e o botão Escolher arquivo\" width=\"1400\" height=\"670\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Etapas</b> — Arquivo → Mapeamento → Simulação → Concluído.</li>\n      <li><b>O que você vai importar</b> — Inventário de máquinas ou Plano / cronograma de ações.</li>\n      <li><b>Escolher arquivo</b> — o arquivo é lido no navegador; nada é gravado antes de você confirmar.</li>\n    </ol>\n    <ul>\n      <li><b>Mapeamento</b> — cada coluna da planilha vira um campo; TAG, inventário e série nunca viram número (“1.410” continua “1.410”).</li>\n      <li><b>Simulação</b> — mostra o que será criado, o que já existe (nada é sobrescrito) e o que foi rejeitado, com o motivo, antes de gravar.</li>\n      <li><b>Tudo ou nada</b> — o lote entra inteiro numa transação. Errou? <b>Desfazer esta importação</b> (recusa se já houver trabalho feito em cima).</li>\n      <li>A mesma planilha importada de novo não duplica: as linhas existentes são puladas.</li>\n    </ul>\n\n    <!-- ===================================================== DIA A DIA -->\n    <h2 id=\"campo-offline\">📶 Celular, QR e sem internet</h2>\n    <ul>\n      <li><b>Celular:</b> a barra inferior tem Tarefas, Máquinas, <b>Capturar</b> (apreciações em campo), Sincronizar e Mais (o menu completo).</li>\n      <li><b>Etiqueta QR:</b> apontada pela câmera comum do celular, abre o dossiê da máquina; pelo <b>Ler QR</b> da tela Visitas, abre direto o check-list.</li>\n      <li><b>Sem internet:</b> inspeção, assistente de campo e fotos continuam funcionando. Tudo fica salvo no aparelho e sobe sozinho quando o sinal volta (o topo mostra “N pendente(s)”). Só é preciso ter aberto aquela inspeção ou apreciação uma vez com sinal.</li>\n      <li><b>Precisa de internet:</b> mesa de revisão, mudança de etapa, assinatura e emissão.</li>\n    </ul>\n    <figure class=\"print-sistema\">\n      <img src=\"img/doc-nr12-capturar.webp\" alt=\"Tela Capturar com as apreciações em campo do usuário e a busca para abrir pela máquina\" width=\"1296\" height=\"586\" loading=\"lazy\" decoding=\"async\">\n    </figure>\n    <ol class=\"legenda-print\">\n      <li><b>Em campo comigo</b> — as apreciações atribuídas a você para coletar.</li>\n      <li><b>Abrir pela máquina</b> — busque pela TAG, nome ou patrimônio para começar.</li>\n    </ol>\n\n    <h2 id=\"rotina\">📆 Rotina sugerida</h2>\n    <ol>\n      <li><b>Implantação:</b> siga o “Comece por aqui” — empresa, emitente, equipe e RT, metodologia aprovada, máquinas (ou planilha), ART. Emita o <b>Inventário</b>.</li>\n      <li><b>Para cada máquina:</b> apreciação de risco (campo → mesa → RT) e, emitida, o <b>Manual</b>.</li>\n      <li><b>Toda semana:</b> revise as propostas de NC, crie as ações de tratamento e acompanhe o <b>Plano de ação</b> pelo Painel.</li>\n      <li><b>Quando as ações de uma máquina terminam:</b> validação (LVA) e revisão nova do manual.</li>\n      <li><b>Todo turno:</b> o operador faz o check-list; <b>todo mês</b>, emita o Check-list de cada máquina.</li>\n      <li><b>Todo ano:</b> medições de aterramento, laudo e prontuário NR-10 atualizado; revisão das apreciações conforme a data de cada máquina.</li>\n      <li><b>Para mostrar resultado:</b> emita o Relatório Técnico.</li>\n    </ol>\n\n    <h2 id=\"faq\">❓ Perguntas frequentes</h2>\n    <div class=\"faq\">\n      <details>\n        <summary>Qual a diferença entre a inspeção de campo e a apreciação de risco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A inspeção de campo é o check-list de rotina (de turno): rápida, feita pelo operador ou técnico, e o que reprova vira proposta de não conformidade. A apreciação de risco é o estudo completo da máquina — perigos, fotos, HRN, comando de segurança e medidas — revisado na mesa e assinado pelo RT, e gera o laudo oficial."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Qual a diferença entre a apreciação de risco e a validação?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A apreciação de risco é o diagnóstico: mostra os perigos da máquina, o tamanho de cada risco e as proteções necessárias. A validação vem depois do conserto e comprova que as proteções foram instaladas e funcionam. A apreciação diz o que fazer; a validação prova que foi feito."
+        "text": "A apreciação é o diagnóstico: o que está errado e o que fazer. A validação vem depois das correções e prova, com testes e risco medido de novo, que as medidas foram implantadas e funcionam. A apreciação diz o que fazer; a validação prova que foi feito."
       }
     },
     {
       "@type": "Question",
-      "name": "O manual de instruções de segurança substitui o manual do fabricante?",
+      "name": "Como uma não conformidade é encerrada?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ele complementa o manual do fabricante com as instruções de segurança da máquina como ela está na planta. Quando o manual do fabricante não existe, a NR-12 admite que ele seja reconstituído por profissional habilitado, e é esse papel que o manual gerado pelo sistema cumpre."
+        "text": "Automaticamente, pelas ações dela: com ação criada a NC fica Em tratativa; com a execução concluída, Aguardando validação; quando todas as ações são validadas e aprovadas, Encerrada, com a data. Se a validação for reprovada, a NC reabre."
       }
     },
     {
       "@type": "Question",
-      "name": "Toda empresa precisa do prontuário NR-10?",
+      "name": "Onde eu subo as fotos e os arquivos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A NR-10 exige o prontuário das instalações elétricas dos estabelecimentos com carga instalada superior a 75 kW. O sistema consolida o que já existe (laudo de aterramento, manuais, profissionais habilitados, ações elétricas) e indica item a item o que ainda precisa ser anexado."
+        "text": "Fotos da máquina na aba Fotos do dossiê; fotos de cada item na inspeção e no assistente de campo; fotos de antes, durante e depois na ação; o PDF da ART em ARTs; o logotipo em Empresa emitente. Tudo fica em armazenamento privado da empresa."
       }
     },
     {
@@ -130,7 +138,23 @@
       "name": "O que acontece quando eu mudo um dado depois de emitir um documento?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "O documento emitido não muda: ele é oficial e imutável. O sistema avisa quantas alterações aconteceram desde a última revisão, e você emite uma revisão nova. A revisão anterior continua no histórico, com número, data e código de validação."
+        "text": "O documento emitido não muda. Em Laudos e docs aparece “N alterações desde a Rev. X”: confira a prévia e emita a revisão nova. A anterior continua no histórico e o código dela continua conferindo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar o sistema sem internet em campo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, para inspeção, assistente de campo e fotos: tudo fica no aparelho e sincroniza sozinho quando o sinal volta. Mesa de revisão, assinatura e emissão precisam de internet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quem pode assinar um laudo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Só o responsável técnico atribuído à apreciação, com papel de engenheiro e registro profissional vigente cadastrado em Equipe, depois de a metodologia ter sido aprovada pelo RT da empresa."
       }
     }
   ]
@@ -169,29 +193,67 @@
     <nav class="docs-migalhas" aria-label="Você está em">
       <a href="index.html">Início</a> <span aria-hidden="true">›</span> <a href="sistema-nr12.html">Sistema NR12</a> <span aria-hidden="true">›</span> <span>Documentação</span>
     </nav>
-    <h1>Como usar o Sistema NR12</h1>
-    <p class="docs-sub">O caminho de uma máquina, do primeiro cadastro ao laudo assinado — e para que serve cada documento, com as telas reais do sistema.</p>
+    <h1>Documentação do Sistema NR12</h1>
+    <p class="docs-sub">Como o sistema funciona de ponta a ponta: cada tela do menu, cada botão, a ordem de preenchimento e em que momento emitir cada documento — com as telas reais.</p>
   </div>
 </header>
 
 <div class="docs-wrap docs-corpo">
   <aside class="docs-lateral">
     <details class="docs-indice" open>
-      <summary>📑 Nesta página</summary>
+      <summary>📑 Nesta documentação</summary>
       <nav aria-label="Sumário da documentação">
+        <p class="docs-indice-grupo">Começo</p>
         <ol>
-          <li><a href="#objetivo">🎯 Para que serve o sistema</a></li>
-          <li><a href="#caminho">🗺️ O caminho de uma máquina — visão geral</a></li>
-          <li><a href="#passo-1">📋 Passo 1 — Cadastrar as máquinas e emitir o Inventário</a></li>
-          <li><a href="#passo-2">🔍 Passo 2 — Apreciação de Risco (o laudo principal)</a></li>
-          <li><a href="#passo-3">🗓️ Passo 3 — Plano de Ação (o que fazer e quando)</a></li>
-          <li><a href="#passo-4">🔧 Passo 4 — Executar as correções</a></li>
-          <li><a href="#passo-5">✅ Passo 5 — Validação (a prova do conserto)</a></li>
-          <li><a href="#passo-6">📘 Passo 6 — Manual de Instruções de Segurança</a></li>
-          <li><a href="#passo-7">☑️ Passo 7 — Check-list do dia a dia</a></li>
-          <li><a href="#empresa">🏭 Documentos da empresa inteira</a></li>
-          <li><a href="#laudos-e-docs">📄 Onde ficam os documentos e como revisar</a></li>
-          <li><a href="#resumo">🧭 Resumo: um documento, uma frase</a></li>
+          <li><a href="#visao-geral">🎯 Visão geral</a></li>
+          <li><a href="#fluxo">🗺️ O fluxo completo</a></li>
+          <li><a href="#primeiros-passos">🚀 Primeiros passos</a></li>
+          <li><a href="#papeis">👥 Quem faz o quê</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Trabalho</p>
+        <ol>
+          <li><a href="#painel">📊 Painel</a></li>
+          <li><a href="#jornada">🧭 Jornada de conformidade</a></li>
+          <li><a href="#tarefas">📥 Minhas tarefas</a></li>
+          <li><a href="#visitas">☑️ Visitas (inspeção de campo)</a></li>
+          <li><a href="#apreciacoes">📋 Apreciações</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Apreciação de risco</p>
+        <ol>
+          <li><a href="#criar-apreciacao">➕ Criar e escolher responsáveis</a></li>
+          <li><a href="#assistente">📱 Assistente de campo</a></li>
+          <li><a href="#hrn">🔢 HRN, PLr e categoria</a></li>
+          <li><a href="#mesa">🖥️ Mesa de revisão</a></li>
+          <li><a href="#assinatura">✍️ Assinatura do RT e emissão</a></li>
+          <li><a href="#ao-emitir">⚙️ O que acontece ao emitir</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Planta</p>
+        <ol>
+          <li><a href="#maquinas">🏭 Máquinas</a></li>
+          <li><a href="#dossie">🗂️ Dossiê da máquina</a></li>
+          <li><a href="#plano">🗓️ Plano de ação e OS</a></li>
+          <li><a href="#aterramento">⚡ Aterramento</a></li>
+          <li><a href="#ncs">⚠️ Não conformidades</a></li>
+          <li><a href="#validacao">✅ Validação (LVA)</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Documentos</p>
+        <ol>
+          <li><a href="#laudos-e-docs">📄 Laudos e docs</a></li>
+          <li><a href="#cada-documento">📚 Cada documento</a></li>
+          <li><a href="#documento-emitido">🔒 Documento emitido e validação</a></li>
+          <li><a href="#arts">📜 ARTs</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Configurações</p>
+        <ol>
+          <li><a href="#empresa">🏢 Dados da empresa</a></li>
+          <li><a href="#emitente">🖋️ Empresa emitente</a></li>
+          <li><a href="#equipe">👷 Equipe e registro do RT</a></li>
+          <li><a href="#metodologia">Σ Metodologia</a></li>
+          <li><a href="#importar">📥 Importar planilha</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Dia a dia</p>
+        <ol>
+          <li><a href="#campo-offline">📶 Celular, QR e sem internet</a></li>
           <li><a href="#rotina">📆 Rotina sugerida</a></li>
           <li><a href="#faq">❓ Perguntas frequentes</a></li>
         </ol>
@@ -201,289 +263,702 @@
   </aside>
 
   <article class="docs-conteudo">
-<h2 id="objetivo">🎯 Para que serve o sistema</h2>
-      <p>
-        A <strong>NR-12</strong> obriga a empresa a ter máquinas seguras — e a <strong>provar isso com documento</strong>.
-        A <strong>NR-10</strong> faz o mesmo com a parte elétrica. O fiscal, o auditor ou o cliente não veem a máquina
-        segura: veem os papéis. O Sistema NR12 organiza esse trabalho em etapas e gera, em cada uma, o documento que
-        comprova o que foi feito.
-      </p>
-      <p>
-        Todo documento sai com <strong>número oficial, revisão, data e código de validação</strong> — quem recebe o
-        PDF confere na internet se ele é válido e autêntico (a consulta confirma o documento, não abre o conteúdo). E nenhum número é digitado à mão no documento: tudo vem do
-        que foi registrado no sistema.
-      </p>
-      <div class="callout">
-        <p>💡 <b>Regra de ouro:</b> os laudos não são avulsos. Cada um corresponde a um momento do trabalho e usa o que
-        foi feito no momento anterior. Siga a ordem abaixo e os documentos se completam sozinhos.</p>
-      </div>
 
-      <h2 id="caminho">🗺️ O caminho de uma máquina — visão geral</h2>
-      <p>Usando como exemplo uma <strong>prensa mecânica</strong>, a história completa é esta:</p>
-      <div class="tabela-wrap">
-        <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
-        <table class="tec">
-          <thead>
-            <tr><th>Etapa</th><th>O que você faz</th><th>Documento gerado</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>1. 📋 Cadastrar</td><td>Cadastra a prensa e as demais máquinas</td><td>Inventário de Máquinas</td></tr>
-            <tr><td>2. 🔍 Avaliar</td><td>Fotografa, registra os perigos e o sistema calcula o risco</td><td>Apreciação de Risco (assinada pelo RT)</td></tr>
-            <tr><td>3. 🗓️ Planejar</td><td>As correções viram ações com prazo</td><td>Plano / Cronograma de Adequação</td></tr>
-            <tr><td>4. 🔧 Consertar</td><td>A manutenção instala as proteções</td><td>— (as ações vão sendo concluídas)</td></tr>
-            <tr><td>5. ✅ Comprovar</td><td>Fotografa o depois e testa as proteções</td><td>Validação (assinada pelo RT)</td></tr>
-            <tr><td>6. 📘 Instruir</td><td>Gera as instruções para quem opera</td><td>Manual de Instruções de Segurança</td></tr>
-            <tr><td>7. ☑️ Manter</td><td>O operador confere a máquina a cada turno</td><td>Check-list de Segurança (mensal)</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p>
-        Além desses, há três documentos que olham a <strong>empresa inteira</strong>: o Relatório Técnico, o Laudo de
-        Aterramento e o Prontuário NR-10. Eles estão explicados <a href="#empresa">mais abaixo</a>.
-      </p>
+    <!-- ===================================================== COMEÇO -->
+    <h2 id="visao-geral">🎯 Visão geral</h2>
+    <p>
+      A <strong>NR-12</strong> exige que as máquinas sejam seguras e que a empresa <strong>prove isso com documentos</strong>;
+      a <strong>NR-10</strong> faz o mesmo com a parte elétrica. O Sistema NR12 organiza esse trabalho em etapas — cadastrar,
+      inspecionar, avaliar o risco, corrigir, comprovar — e gera, em cada uma, o documento oficial que comprova o que foi feito,
+      com número, revisão, assinatura do responsável técnico e código de validação.
+    </p>
+    <p>Três ideias explicam quase tudo no sistema:</p>
+    <ul>
+      <li><b>Tudo pertence a uma máquina.</b> Inspeção, perigo, não conformidade, ação, ordem de serviço, foto e documento são sempre de uma máquina. Por isso o <a href="#dossie">dossiê da máquina</a> é o centro do sistema.</li>
+      <li><b>Nada de número digitado à mão no laudo.</b> O risco é calculado pelo sistema, a situação da máquina vem do último laudo emitido e cada documento sai do que está registrado.</li>
+      <li><b>Documento emitido não muda.</b> Corrigiu algo? Emite-se uma revisão nova; a anterior fica no histórico e continua conferível.</li>
+    </ul>
 
-      <h2 id="passo-1">📋 Passo 1 — Cadastrar as máquinas e emitir o Inventário</h2>
-      <p>
-        <strong>Para que serve:</strong> é a lista oficial de todas as máquinas da empresa. A NR-12 exige que a empresa
-        saiba o que tem, e todos os outros documentos partem dela.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>No menu <b>Planta › Máquinas</b>, clique em <b>Nova máquina</b> (ou importe a planilha que você já tem).</li>
-        <li>Preencha o essencial: nome, <b>TAG</b>, fabricante, modelo, ano, unidade e setor. Coloque uma foto.</li>
-        <li>No cabeçalho da máquina, marque as <b>Energias</b> que ela usa (elétrica, pneumática, hidráulica…). Isso
-          alimenta a apreciação, o manual e o prontuário NR-10.</li>
-        <li>Em <b>Laudos e docs</b>, abra <b>Inventário de Máquinas</b> e clique em <b>Revisar e emitir</b>.</li>
-      </ol>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-maquinas.webp" alt="Tela Máquinas do Sistema NR12 com a prensa PE-02 listada, setor Estamparia e situação Conforme" width="1400" height="301" loading="lazy" decoding="async">
-        <figcaption>📸 A lista de máquinas: TAG, setor e a <b>situação NR-12</b> que o último laudo definiu.</figcaption>
-      </figure>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-dossie-maquina.webp" alt="Dossiê da máquina no Sistema NR12 com foto, energias marcadas, abas e a jornada de conformidade em sete etapas" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 O dossiê da máquina: energias, abas (fotos, inspeções, riscos, ações, validações) e a <b>jornada</b> — o que já foi feito e o que falta.</figcaption>
-      </figure>
+    <h2 id="fluxo">🗺️ O fluxo completo</h2>
+    <p>A ordem do trabalho para cada máquina. Cada caixa é uma etapa; embaixo, o documento que ela gera.</p>
+    <div class="fluxo" role="img" aria-label="Fluxo: cadastro, inspeção de campo, apreciação de risco, plano de ação, execução, validação e documentos">
+      <div class="fluxo-passo"><span class="fluxo-n">1</span><b>Cadastrar</b><small>máquina, TAG, setor, energias</small><em>📄 Inventário</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">2</span><b>Inspecionar</b><small>check-list de turno em campo</small><em>📄 Check-list mensal</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><span class="fluxo-n">3</span><b>Apreciar o risco</b><small>perigos, fotos, HRN, medidas</small><em>📄 Laudo LAR (RT + ART)</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">4</span><b>Planejar</b><small>ações com prazo e responsável</small><em>📄 Plano de ação</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">5</span><b>Executar</b><small>OS, foto do depois</small><em>—</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><span class="fluxo-n">6</span><b>Validar</b><small>testes e risco verificado</small><em>📄 Laudo LVA (RT + ART)</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">7</span><b>Manter</b><small>manual, revisão periódica</small><em>📄 Manual · revisão em 12 meses</em></div>
+    </div>
+    <p class="fluxo-nota">
+      Em paralelo: o que reprova na inspeção (2) vira <b>proposta de não conformidade</b> → <b>NC</b> → <b>ação</b>, e entra no mesmo plano (4).
+      Os documentos da empresa inteira — <b>Relatório Técnico</b>, <b>Laudo de Aterramento</b> e <b>Prontuário NR-10</b> — podem ser emitidos a qualquer momento.
+    </p>
 
-      <h2 id="passo-2">🔍 Passo 2 — Apreciação de Risco (o laudo principal)</h2>
-      <p>
-        <strong>Para que serve:</strong> é o <b>diagnóstico da máquina</b>. Diz o que está errado, o quanto cada risco é
-        grave e qual proteção é necessária. É o documento mais importante do sistema, assinado pelo
-        <b>responsável técnico (RT)</b> com ART. Ao ser emitido, ele cria automaticamente as ações de correção.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>No dossiê da máquina, clique em <b>Apreciação de risco</b> e escolha os responsáveis (inspetor, analista, RT).</li>
-        <li><b>Em campo</b> (celular ou tablet): o inspetor fotografa a máquina, marca as zonas de perigo na foto e
-          registra cada perigo — onde está, em que tarefa acontece, quem fica exposto e o que pode acontecer.</li>
-        <li>O sistema calcula o <b>HRN</b> (tamanho do risco) e, quando a proteção depende de comando elétrico, a
-          <b>categoria</b> e o <b>PLr</b> exigidos.</li>
-        <li><b>No escritório</b> (Mesa de revisão): o analista confere tudo, o RT revisa, assina com senha e o PDF
-          oficial é gerado.</li>
-      </ol>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-apreciacoes.webp" alt="Lista de apreciações no Sistema NR12 com a apreciação e a validação da prensa PE-02 emitidas" width="1400" height="301" loading="lazy" decoding="async">
-        <figcaption>📸 <b>Apreciações</b>: em que etapa cada laudo está e com quem. Clique na linha para abrir.</figcaption>
-      </figure>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-perigo-hrn.webp" alt="Perigo registrado no Sistema NR12 com foto marcada, HRN atual 256 classificado como alto e perguntas de gravidade e exposição" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 Um perigo registrado: foto com marcação, <b>HRN atual 256 (alto)</b> confirmado pelo RT e as perguntas que definem o comando de segurança.</figcaption>
-      </figure>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-apreciacao-emitida.webp" alt="Apreciação emitida no Sistema NR12 com o selo verde do PDF oficial LAR-2026-0001 e o botão Abrir o documento" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 Apreciação emitida: o selo verde mostra o número oficial e abre o PDF. Emitida, ela fica somente para leitura.</figcaption>
-      </figure>
-      <div class="callout">
-        <p>⚠️ <b>Atenção:</b> classificação de risco importada de planilha não substitui a apreciação. O número de risco
-        só vale quando é calculado no sistema, com metodologia aprovada, e assinado pelo RT.</p>
-      </div>
+    <h2 id="primeiros-passos">🚀 Primeiros passos</h2>
+    <p>
+      No computador, o quadro <b>“Comece por aqui”</b> fica no canto inferior esquerdo (no celular, aparece no Painel). Ele lista sete passos e
+      marca cada um como feito <b>pelo que existe no banco</b>, não por cliques:
+    </p>
+    <ol>
+      <li><b>Cadastre os dados da sua empresa</b> — fica feito quando o CNPJ está preenchido (<a href="#empresa">Dados da empresa</a>).</li>
+      <li><b>Cadastre a empresa emitente do laudo</b> — quem emite e assina (<a href="#emitente">Empresa emitente</a>).</li>
+      <li><b>Cadastre a equipe e o responsável técnico</b> — ao menos um membro com registro profissional (<a href="#equipe">Equipe</a>).</li>
+      <li><b>Cadastre as máquinas</b> — à mão ou com <b>Importar planilha</b> (<a href="#maquinas">Máquinas</a>).</li>
+      <li><b>Cadastre a ART</b> — com o PDF emitido pelo CREA (<a href="#arts">ARTs</a>).</li>
+      <li><b>Faça a primeira apreciação em campo</b> — fica feito quando ela chega à análise (<a href="#assistente">Assistente</a>).</li>
+      <li><b>Emita o primeiro laudo</b> (<a href="#assinatura">Assinatura e emissão</a>).</li>
+    </ol>
+    <div class="callout"><p>💡 Antes da primeira emissão, o RT precisa também <b>aprovar a metodologia</b> em <a href="#metodologia">Configurações › Metodologia</a>. Sem isso, a assinatura é recusada.</p></div>
 
-      <h2 id="passo-3">🗓️ Passo 3 — Plano de Ação (o que fazer e quando)</h2>
-      <p>
-        <strong>Para que serve:</strong> junta, de <b>todas as máquinas</b>, as correções que as apreciações mandaram
-        fazer, cada uma com <b>prazo, responsável e andamento</b>. É o compromisso da empresa — e é o que o fiscal pede
-        para ver o progresso.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>As ações já nascem da apreciação emitida — não é preciso digitá-las.</li>
-        <li>Em <b>Planta › Plano de ação</b>, ajuste prazos e responsáveis e acompanhe o progresso.</li>
-        <li>Ações de obra (proteção, sensor, painel) geram <b>OS</b> para a manutenção.</li>
-        <li>Em <b>Laudos e docs</b>, emita o <b>Plano / Cronograma de Adequação</b> sempre que quiser registrar a situação.</li>
-      </ol>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-plano-de-acao.webp" alt="Plano de ações do Sistema NR12 com sete ações da prensa PE-02, tipo de adequação, prazo, progresso e situação concluída" width="1400" height="497" loading="lazy" decoding="async">
-        <figcaption>📸 O Plano de ação: cada ação mostra de qual laudo e de qual perigo veio (ex.: LAR-2026-0001 · P-01).</figcaption>
-      </figure>
+    <h2 id="papeis">👥 Quem faz o quê</h2>
+    <p>Cada pessoa tem um <b>papel</b> na <a href="#equipe">Equipe</a>. Os itens do menu que a pessoa não pode usar nem aparecem.</p>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Papel</th><th>O que faz no sistema</th></tr></thead>
+        <tbody>
+          <tr><td>Administrador (master)</td><td>Tudo, inclusive equipe, dados da empresa e emitente.</td></tr>
+          <tr><td>Gestor</td><td>Planeja e distribui o trabalho, cadastra máquinas e ARTs, revisa propostas de NC, cria ações, emite documentos de gestão. <b>Não assina laudo</b> e não valida ação.</td></tr>
+          <tr><td>Engenheiro</td><td>Analisa na mesa de revisão; com registro no CREA vigente, é o <b>RT que assina</b> laudos, aprova a metodologia e valida ações.</td></tr>
+          <tr><td>Técnico / inspetor</td><td>Coleta em campo: fotos, perigos, checklist e HRN proposto; faz e finaliza inspeções.</td></tr>
+          <tr><td>Manutenção</td><td>Executa as ações do plano e anexa a foto do depois.</td></tr>
+          <tr><td>Operador</td><td>Faz o check-list de turno da máquina.</td></tr>
+          <tr><td>Cliente / consulta</td><td>Só consulta máquinas e laudos emitidos.</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-      <h2 id="passo-4">🔧 Passo 4 — Executar as correções</h2>
-      <p>
-        A manutenção instala as proteções, sensores, botões de emergência e sinalização. Este passo <b>não gera
-        laudo</b>: cada ação é atualizada (em andamento, concluída) e as ordens de serviço são fechadas. Quando todas as
-        ações de uma máquina estão concluídas, o sistema mostra que ela está <b>pronta para validar</b>.
-      </p>
+    <!-- ===================================================== TRABALHO -->
+    <h2 id="painel">📊 Painel</h2>
+    <p>É a tela inicial: um retrato do que precisa de atenção agora. Os números são somados no servidor e valem para os filtros escolhidos.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-painel.webp" alt="Painel do Sistema NR12 com próximo passo, filtros, indicadores e gráfico de ações por situação" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Próximo passo</b> — a recomendação mais urgente, uma de cada vez (ex.: importar máquinas, ver ações atrasadas, revisar propostas, continuar inspeção).</li>
+      <li><b>Botão do próximo passo</b> — leva direto à tela que resolve.</li>
+      <li><b>Jornada de conformidade</b> — abre a visão por etapas da empresa (<a href="#jornada">veja abaixo</a>).</li>
+      <li><b>Filtros</b> — Unidade, Setor, Prazo (30 dias, 90 dias, vencido, este ano) e Situação da ação. Valem para todos os quadros.</li>
+      <li><b>Indicadores</b> — Ativos, Sem apreciação, NCs abertas, Ações atrasadas, Vencendo e Concluídas. Clique para abrir a lista correspondente.</li>
+      <li><b>Gráficos</b> — Ações por situação, Prazos, Unidades, Setores, Máquinas com mais pendências, Evolução mensal, Custo das adequações e Classificação de risco. Cada barra de máquina abre o dossiê dela.</li>
+    </ol>
 
-      <h2 id="passo-5">✅ Passo 5 — Validação (a prova do conserto)</h2>
-      <p>
-        <strong>Para que serve:</strong> comprova que as correções foram <b>feitas e funcionam</b>. Enquanto a apreciação
-        diz "o que fazer", a validação prova "foi feito". Com ela emitida, a máquina passa a <b>Conforme</b> e ganha a
-        data da próxima revisão.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>No dossiê da máquina, abra a validação pela jornada (etapa <b>Validação</b>).</li>
-        <li>Em campo, para cada perigo: fotografe a proteção instalada, faça os <b>testes</b> (ex.: abrir a porta e
-          verificar se a máquina para) e registre o resultado.</li>
-        <li>O sistema recalcula o risco <b>depois</b> da correção e o RT assina. Sai o <b>Laudo de Validação (LVA)</b>.</li>
-      </ol>
+    <h2 id="jornada">🧭 Jornada de conformidade</h2>
+    <p>Mostra em que ponto a <b>empresa inteira</b> está, em nove etapas, cada uma com um selo — <b>Em dia</b>, <b>Atenção</b>, <b>Crítico</b>, <b>Não iniciado</b> ou <b>Bloqueado</b> — a <b>próxima ação</b> e um botão para ela.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-jornada.webp" alt="Jornada de conformidade com as etapas Inventário de máquinas e Checklist e inspeção, selos e próxima ação" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Etapa</b> — 1 Inventário · 2 Checklist e inspeção · 3 Apreciação de risco · 4 Não conformidades · 5 Plano de ações · 6 Execução e OS · 7 Validação · 8 Documentos · 9 Monitoramento.</li>
+      <li><b>Selo</b> — a apreciação fica <b>Bloqueada</b> enquanto a metodologia não for aprovada.</li>
+      <li><b>Números da etapa</b> — ex.: máquinas sem setor, sem TAG, sem foto.</li>
+      <li><b>Próxima ação</b> — o que fazer para a etapa ficar em dia.</li>
+      <li><b>Botão</b> — abre a lista já filtrada (ex.: só as máquinas sem setor).</li>
+    </ol>
 
-      <h2 id="passo-6">📘 Passo 6 — Manual de Instruções de Segurança</h2>
-      <p>
-        <strong>Para que serve:</strong> é o documento que fica <b>junto à máquina</b>, para quem trabalha nela. Não é para
-        o fiscal analisar o risco: ele ensina o operador e o mantenedor — para que a máquina serve, o que é proibido,
-        onde estão os perigos, como parar em emergência e como bloquear as energias antes de uma manutenção. A NR-12
-        exige que toda máquina tenha manual; quando o do fabricante não existe, é este que cumpre o papel.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>Em <b>Laudos e docs › Manual de Instruções de Segurança</b>, clique em <b>Gerar manual</b>.</li>
-        <li>Escolha a máquina. Só aparecem as que já têm <b>apreciação emitida</b> — o manual sai dela.</li>
-        <li>Confira a prévia e clique em <b>Emitir</b>. Imprima e deixe junto à máquina.</li>
-      </ol>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-manual-seguranca.webp" alt="Manual de instruções de segurança gerado pelo Sistema NR12 com as zonas de perigo da prensa e as medidas de proteção marcadas como implantadas e validadas" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 O Manual da prensa: zonas de perigo e cada medida de proteção — <b>implantada (validada)</b> quando a validação comprovou.</figcaption>
-      </figure>
-      <div class="callout">
-        <p>🔁 <b>Dica:</b> depois da validação, emita uma <b>revisão nova</b> do manual. As medidas passam de "A implantar"
-        para "Implantada (validada)", e o manual mostra a máquina como ela está de verdade.</p>
-      </div>
+    <h2 id="tarefas">📥 Minhas tarefas</h2>
+    <p>As apreciações que estão <b>com você agora</b>, agrupadas pelo que você precisa fazer: <b>Para coletar</b> (inspetor), <b>Assinar a elaboração</b>, <b>Para revisar</b> (analista), <b>Para assinar</b> (RT), <b>Para emitir</b> e <b>Prontas para validar</b>. Dentro de cada grupo, a mais antiga vem primeiro.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-tarefas.webp" alt="Minhas tarefas com o filtro por grupo Todas, Coletar, Elaboração, Revisar, Assinar, Emitir e Validar" width="1400" height="383" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Filtro por grupo</b> — com a quantidade de cada um.</li>
+      <li><b>Lista vazia</b> — “Nada com você agora”; o botão leva ao quadro de apreciações.</li>
+    </ol>
+    <p>O botão <b>Abrir</b> de cada cartão leva ao lugar certo: o inspetor vai para o <a href="#assistente">assistente de campo</a>; analista e RT vão para a <a href="#mesa">mesa de revisão</a>; “validar” vai para o dossiê da máquina.</p>
 
-      <h2 id="passo-7">☑️ Passo 7 — Check-list do dia a dia</h2>
-      <p>
-        <strong>Para que serve:</strong> prova que a empresa <b>cuida da máquina na rotina</b>. Antes de trabalhar, o operador
-        confere: a proteção está no lugar? O botão de emergência funciona? O check-list do mês junta essas conferências
-        e registra o que foi encontrado de errado.
-      </p>
-      <p><strong>Como fazer:</strong></p>
-      <ol>
-        <li>No dossiê da máquina, clique em <b>Iniciar inspeção</b> (ou leia o <b>QR</b> colado na máquina pelo celular).</li>
-        <li>Responda os itens e finalize a inspeção.</li>
-        <li>No fim do mês, em <b>Laudos e docs › Check-list de Segurança</b>, clique em <b>Gerar check-list</b>, escolha a
-          máquina e o mês e emita.</li>
-      </ol>
+    <h2 id="visitas">☑️ Visitas — inspeção de campo</h2>
+    <p>
+      A inspeção de campo é o <b>check-list de turno</b> da máquina (formulário “Check-list de Segurança NR-12 (turno)”). É dela que nascem as
+      não conformidades do dia a dia. A tela se chama <b>Inspeção em campo</b>.
+    </p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-visitas.webp" alt="Tela Inspeção em campo com busca, botão Ler QR e a máquina com inspeção em andamento" width="1400" height="237" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Busca</b> — por TAG, nome, inventário, unidade ou setor.</li>
+      <li><b>Ler QR</b> — aponte a câmera para a etiqueta da máquina e o check-list abre direto.</li>
+      <li><b>Continuar preenchimento X/Y</b> — há uma inspeção começada nesta máquina.</li>
+      <li><b>Inspecionar / Continuar</b> — abre o check-list. Se já existe um rascunho no aparelho ou no servidor, ele é retomado (nunca cria duas).</li>
+      <li><b>Dossiê</b> — abre a ficha completa da máquina.</li>
+    </ol>
+    <h3>Respondendo o check-list</h3>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-inspecao.webp" alt="Item do check-list com as respostas Conforme, Não conforme, Não aplicável e Não verificado, observação e fotos" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Progresso</b> — “X de Y respondidos”.</li>
+      <li><b>Cancelar inspeção</b> — só com a inspeção em andamento, por quem a abriu, gestor ou administrador, com motivo (mínimo 5 letras). As respostas ficam só para consulta e nada vira NC.</li>
+      <li><b>Índice</b> — todos os itens, marcados C, NC, NA, NV ou pendente; avisa quantos obrigatórios faltam.</li>
+      <li><b>Respostas</b> — <b>Conforme</b>; <b>Não conforme</b> (vira proposta de NC, revisada depois); <b>Não aplicável</b>; <b>Não verificado</b> (não conta como conforme: fica como pendência). NA e NV exigem motivo escrito.</li>
+      <li><b>Observação</b> — grava sozinha enquanto você digita.</li>
+      <li><b>Fotos deste item</b> — até 8 por item, depois de responder.</li>
+      <li><b>Próximo</b> — no último item vira <b>Finalizar</b>. Não finaliza se faltar item obrigatório.</li>
+      <li><b>Salvar e continuar depois</b> — sai sem perder nada.</li>
+    </ol>
+    <div class="callout"><p>🔁 <b>Ao finalizar</b>, cada resposta “Não conforme” vira uma <b>proposta de não conformidade</b>, que alguém autorizado revisa em <a href="#ncs">Não conformidades › Propostas de NC</a>. Inspeção finalizada não pode ser alterada: para corrigir, faça uma inspeção nova.</p></div>
 
-      <h2 id="empresa">🏭 Documentos da empresa inteira</h2>
+    <h2 id="apreciacoes">📋 Apreciações</h2>
+    <p>O quadro de todas as apreciações de risco e validações, por etapa, e com quem cada uma está.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-apreciacoes-quadro.webp" alt="Quadro de apreciações com colunas Em campo, Em análise, Com o RT, Assinadas, Emitidas e Em adequação" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Lista / Quadro</b> — a mesma informação em tabela ou em colunas.</li>
+      <li><b>Filtros</b> — busca, etapa, equipamento e tipo (apreciação e/ou validação).</li>
+      <li><b>Colunas</b> — Em campo, Em análise, Com o RT, Assinadas, Emitidas, Em adequação.</li>
+      <li><b>Cartão</b> — máquina, responsável e há quanto tempo está na etapa. Clique para abrir.</li>
+    </ol>
 
-      <h3>📊 Relatório Técnico / Diagnóstico NR-12</h3>
-      <p>
-        É o <b>resumo geral</b>: quantas máquinas estão conformes, com restrição ou inaptas, quantas não conformidades
-        estão abertas e quais ações estão atrasadas. Serve para mostrar ao dono da empresa, ao cliente ou a um auditor
-        como está a situação toda. Gere ao fechar uma etapa do projeto ou quando pedirem um resumo.
-      </p>
+    <!-- ===================================================== APRECIAÇÃO -->
+    <h2 id="criar-apreciacao">➕ Criar a apreciação e escolher os responsáveis</h2>
+    <p>A apreciação de risco passa por seis etapas, e cada etapa tem um dono:</p>
+    <div class="fluxo fluxo-compacto" role="img" aria-label="Etapas da apreciação: Planejada, Em campo, Em análise, Com o RT, Assinada, Emitida">
+      <div class="fluxo-passo"><b>Planejada</b><small>criada, aguarda a visita</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Em campo</b><small>inspetor coleta</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Em análise</b><small>analista revisa</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Com o RT</b><small>RT confere</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Assinada</b><small>PDF sendo gerado</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><b>Emitida</b><small>PDF oficial</small></div>
+    </div>
+    <p class="fluxo-nota">A análise pode <b>devolver ao campo</b> e o RT pode <b>devolver à análise</b> — sempre com um comentário dizendo o que corrigir, que fica no histórico.</p>
+    <ol>
+      <li>No <a href="#dossie">dossiê da máquina</a>, clique em <b>Apreciação de risco</b> (ou, no celular, em <b>Capturar › Abrir pela máquina</b>).</li>
+      <li>Escolha o <b>Inspetor</b> (obrigatório; o padrão é você), o <b>Analista</b> (opcional — sem analista, o RT revisa) e o <b>Responsável técnico</b> (só aparece quem é engenheiro com registro vigente).</li>
+      <li>Clique em <b>Criar a apreciação</b>. Se o inspetor é você, o assistente abre; senão, ela aparece nas tarefas dele.</li>
+    </ol>
+    <p>Os responsáveis podem ser trocados depois, na mesa, pelo botão <b>Trocar</b> — até a assinatura. A troca fica registrada.</p>
 
-      <h3>⚡ Laudo de Aterramento</h3>
-      <p>
-        Mede se o <b>fio terra</b> das máquinas e dos painéis protege contra choque. Cada ponto medido é comparado ao
-        limite — <b>10 Ω por padrão</b>, que pode ser mudado ponto a ponto quando o projeto pedir. Quem diz se o ponto é
-        conforme é o sistema (valor menor ou igual ao limite), não quem digita. Normalmente se faz <b>uma vez por ano</b>.
-      </p>
-      <ol>
-        <li>Em <b>Planta › Aterramento</b>, clique em <b>Registrar medição</b>.</li>
-        <li>Escolha a máquina (ou a unidade, para painel e malha), o ponto, o valor medido e o instrumento.</li>
-        <li>Use <b>Salvar e medir outro ponto</b> para seguir na mesma máquina sem redigitar.</li>
-        <li>Em <b>Laudos e docs › Laudo de Aterramento</b>, confira a prévia e emita.</li>
-      </ol>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-aterramento.webp" alt="Tela Aterramento do Sistema NR12 com dois pontos medidos na prensa: painel elétrico 12,5 ohms não conforme e carcaça do motor 4,2 ohms conforme" width="1400" height="310" loading="lazy" decoding="async">
-        <figcaption>📸 Medições de aterramento: valor, limite e resultado calculado — 12,5 Ω acima de 10 Ω sai <b>não conforme</b>.</figcaption>
-      </figure>
+    <h2 id="assistente">📱 Assistente de campo</h2>
+    <p>
+      É onde o inspetor coleta tudo, no celular ou tablet, <b>mesmo sem internet</b>. São cinco passos; o topo mostra o andamento e o estado
+      do salvamento (“Salvo”, “Salvo no aparelho · aguardando sinal”).
+    </p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-assistente-maquina.webp" alt="Passo Máquina do assistente de campo com os cinco passos, escolha do tipo de máquina e alerta" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Os cinco passos</b> — Máquina, Limites, Perigos, Checklist NR-12, Revisão. Toque num número para ir direto.</li>
+      <li><b>Aviso de etapa</b> — depois que sai do campo, o assistente fica só para consulta.</li>
+      <li><b>Que máquina é esta?</b> — escolher o tipo traz sugestões de perigos e regras do anexo da NR-12.</li>
+      <li><b>Alerta do tipo</b> — ex.: em prensa de chaveta, cortina de luz não é aceita como proteção.</li>
+      <li><b>Próximo</b> — avança; nada se perde ao voltar.</li>
+    </ol>
+    <p><b>Passo 1 · Máquina:</b> tipo, <b>Foto geral</b>, <b>Placa de identificação</b> (até 3 fotos) e os dados da placa (fabricante, modelo, série, ano, capacidade).</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-assistente-limites.webp" alt="Passo Limites com uso previsto e mau uso previsível em etiquetas de escolha" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Uso previsto</b> — toque nas etiquetas para marcar.</li>
+      <li><b>Outro… (digite ou dite)</b> — inclui o que não está na lista.</li>
+      <li><b>Mau uso previsível</b> — o atalho que o operador toma quando a produção aperta.</li>
+    </ol>
+    <p><b>Passo 2 · Limites:</b> uso previsto, mau uso previsível e <b>Fases e pessoas expostas</b> (o botão <b>Sugerir pelo tipo</b> preenche a partir do tipo de máquina).</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-assistente-perigos.webp" alt="Passo Perigos com dois perigos registrados, HRN de cada um, botão Adicionar perigo e perigos sugeridos" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Perigos registrados</b> — código (P-01, P-02…), zona, <b>HRN</b> com a faixa de cor e número de fotos.</li>
+      <li><b>Adicionar perigo</b> — começa um perigo do zero.</li>
+      <li><b>Sugeridos para o tipo</b> — toque e o perigo nasce já preenchido.</li>
+    </ol>
+    <p><b>Passo 3 · Perigos.</b> Cada perigo tem seis telas:</p>
+    <ol>
+      <li><b>Onde?</b> — a zona de perigo (ex.: Z1 zona de prensagem).</li>
+      <li><b>O quê?</b> — que perigo é, a fase (operação, preparação, limpeza, manutenção, transporte), a tarefa, o tipo (ISO 12100), quem fica exposto, a origem e a consequência.</li>
+      <li><b>Fotos</b> — fotografe o ponto de perigo e use <b>Marcar foto</b> para desenhar marcador, retângulo, elipse, zona, seta, traço, texto ou cota. A foto original nunca é alterada.</li>
+      <li><b>HRN atual</b> — “Qual o risco hoje, como está?”: escolha os quatro fatores e o risco aparece na hora. É uma <b>proposta</b>: o RT confirma no escritório.</li>
+      <li><b>Comando de segurança</b> — se a proteção depende de comando (intertravamento, cortina, bimanual, emergência), escolha S, F e P para ver o <b>PLr</b> e a <b>categoria</b> exigidos; registre abertura e distância medidas, em mm.</li>
+      <li><b>Medidas e residual</b> — as medidas de proteção, cada uma com nível (1 projeto seguro, 2 proteção, 3 informação), e o risco residual depois delas. Se a gravidade mudar, diga por quê.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-assistente-checklist.webp" alt="Checklist NR-12 do assistente com o item 12.1.9 e as respostas Conforme, Não conforme e Não aplicável" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Item da NR-12</b> — o número e o texto do item.</li>
+      <li><b>Resposta</b> — Conforme e Não aplicável avançam sozinhos; <b>Não conforme</b> pede o perigo ligado, observação e até 4 fotos.</li>
+      <li><b>Observação</b> — digite ou dite pelo teclado.</li>
+    </ol>
+    <p><b>Passo 4 · Checklist NR-12:</b> um item por vez; <b>Próximo sem resposta</b> pula para o que falta.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-assistente-revisao.webp" alt="Passo Revisão com o resumo de perigos, itens respondidos e não conformes, e o botão Enviar para análise" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Resumo</b> — perigos, itens respondidos, não conformes.</li>
+      <li><b>Pendências</b> — tipo não definido, perigo sem foto, HRN incompleto, medida sem nível, checklist incompleto… Cada uma leva ao lugar de corrigir.</li>
+      <li><b>Enviar para análise</b> — as pendências não travam: o analista recebe a lista. Sem sinal, o envio espera na fila.</li>
+    </ol>
 
-      <h3>🗂️ Prontuário das Instalações Elétricas — NR-10</h3>
-      <p>
-        É a <b>pasta organizada de tudo da parte elétrica</b>, exigida das empresas com carga instalada acima de
-        <b>75 kW</b>. O sistema junta o que já tem — máquinas elétricas, laudo de aterramento, manuais, profissionais com
-        registro, ações elétricas, ARTs — e diz, <b>item a item da NR-10</b>, o que está completo, o que está parcial e o
-        que ainda precisa ser anexado (esquemas unifilares, certificados de EPI, treinamentos NR-10).
-      </p>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-prontuario-nr10.webp" alt="Prontuário NR-10 gerado pelo Sistema NR12 com a composição item a item da norma e a situação de cada exigência" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 A composição do prontuário: cada exigência com a situação (no sistema, parcial, anexar) e a evidência.</figcaption>
-      </figure>
-      <div class="callout">
-        <p>🔌 <b>Para o prontuário aparecer:</b> marque a energia <b>Elétrica</b> no cabeçalho das máquinas. Sem máquina
-        elétrica marcada, o sistema não tem o que consolidar.</p>
-      </div>
+    <h2 id="hrn">🔢 HRN, PLr e categoria</h2>
+    <p>O <b>HRN</b> (Hazard Rating Number) mede o tamanho de cada risco multiplicando quatro fatores:</p>
+    <p class="formula"><b>HRN = GPL × PO × FE × NP</b></p>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Fator</th><th>O que pergunta</th><th>Escala (exemplos)</th></tr></thead>
+        <tbody>
+          <tr><td>GPL</td><td>Grau de possível lesão</td><td>0,1 arranhão · 2 fratura grave · 8 amputação de mão · 15 fatalidade</td></tr>
+          <tr><td>PO</td><td>Probabilidade de ocorrência</td><td>0,03 quase impossível · 2 possível · 8 provável · 15 certeza</td></tr>
+          <tr><td>FE</td><td>Frequência de exposição</td><td>0,5 anual · 1,5 semanal · 2,5 diária · 5 constante</td></tr>
+          <tr><td>NP</td><td>Número de pessoas expostas</td><td>1 (1–2) · 2 (3–7) · 4 (8–15) · 8 (16–50) · 12 (acima de 50)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="faixas-hrn" role="list" aria-label="Faixas de HRN">
+      <span role="listitem" class="faixa faixa-raro"><b>Raro</b> 0–1</span>
+      <span role="listitem" class="faixa faixa-baixo"><b>Baixo</b> até 5</span>
+      <span role="listitem" class="faixa faixa-atencao"><b>Atenção</b> até 50</span>
+      <span role="listitem" class="faixa faixa-signif"><b>Significativo</b> até 100</span>
+      <span role="listitem" class="faixa faixa-alto"><b>Alto</b> até 500</span>
+      <span role="listitem" class="faixa faixa-extremo"><b>Extremo</b> acima de 500</span>
+    </div>
+    <ul>
+      <li>A partir de <b>Significativo</b>, o perigo exige medida de proteção e risco residual; residual a partir de Significativo exige justificativa.</li>
+      <li>A faixa define o <b>prazo</b> da ação gerada pelo laudo: Extremo imediato, Alto 30 dias, Significativo 90, Atenção 180, Baixo e Raro 365.</li>
+      <li>Quando a proteção depende de comando elétrico, <b>S</b> (gravidade), <b>F</b> (frequência) e <b>P</b> (possibilidade de evitar) dão o <b>PLr</b> (ISO 13849-1) e a <b>categoria</b> (NBR 14153) que o comando precisa ter. Essas tabelas são aprovadas pelo RT em <a href="#metodologia">Metodologia</a>.</li>
+    </ul>
 
-      <h2 id="laudos-e-docs">📄 Onde ficam os documentos e como revisar</h2>
-      <p>
-        Tudo o que é emitido fica em <b>Documentos › Laudos e docs</b>, separado em três grupos: <b>Gestão</b>
-        (inventário e plano), <b>Avaliação técnica</b> (apreciação, validação, relatório, manual) e
-        <b>Responsabilidade e evidências</b> (check-list, prontuário, aterramento).
-      </p>
-      <figure class="print-sistema">
-        <img src="img/como-usar-nr12-laudos-e-docs.webp" alt="Tela Laudos e documentos do Sistema NR12 com filtros, contadores e os documentos vigentes por grupo" width="1400" height="670" loading="lazy" decoding="async">
-        <figcaption>📸 Laudos e docs: o número vigente de cada documento, a revisão e quantos arquivos já foram emitidos.</figcaption>
-      </figure>
-      <ul>
-        <li>🔢 <b>Número e revisão:</b> o primeiro documento sai como <b>Rev. 00</b>. Cada nova emissão vira Rev. 01, 02…</li>
-        <li>🔔 <b>Alterações:</b> quando os dados mudam depois de emitir, aparece "N alterações desde a Rev. X". Abra a
-          prévia e emita a revisão nova.</li>
-        <li>🔒 <b>Imutável:</b> documento emitido não muda. As revisões antigas ficam no histórico.</li>
-        <li>✅ <b>Autenticidade:</b> cada PDF traz um código de validação. Com ele, quem recebeu o documento confere na internet se ele é <b>válido e autêntico</b> — número, revisão e data de emissão. O código não dá acesso ao documento nem aos dados da empresa: só confirma que aquele PDF foi emitido pelo sistema e não foi alterado.</li>
-        <li>👀 <b>Ler sem baixar:</b> o leitor abre o PDF no centro da tela, com zoom, busca de texto, baixar e imprimir.</li>
-      </ul>
+    <h2 id="mesa">🖥️ Mesa de revisão</h2>
+    <p>
+      É a tela do escritório. O analista confere e completa o que veio do campo; o RT revisa, confirma o HRN e assina. No computador são três
+      colunas — <b>Índice</b>, <b>Editor</b> e <b>Prévia, pendências e histórico</b>; no celular, três abas. A mesa precisa de internet.
+    </p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-perigo-hrn.webp" alt="Perigo na mesa de revisão com foto marcada, HRN atual 256 alto confirmado pelo RT e o bloco de comando de segurança" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Fotos e marcação</b> — a foto do perigo com o que o inspetor marcou.</li>
+      <li><b>HRN atual</b> — o valor proposto em campo. O RT usa <b>Confirmar HRN</b>, <b>Confirmar HRN alterado</b> ou <b>Definir e confirmar HRN</b>; se mudar, o valor anterior fica na auditoria.</li>
+      <li><b>Confirmado por</b> — quem confirmou e quando.</li>
+      <li><b>Comando de segurança e distâncias</b> — S, F, P, PLr, categoria e medidas de distância.</li>
+    </ol>
+    <p><b>O que se faz na mesa:</b></p>
+    <ul>
+      <li><b>Índice</b> — Máquina, Limites de uso, Perigos (do mais grave ao mais leve), Checklist NR-12 e Conclusão; ✓ completo, ● com pendência, ○ a fazer. Dá para <b>Adicionar perigo</b>.</li>
+      <li><b>Editor do perigo</b> — identificação, fotos, HRN atual, comando de segurança, medidas de proteção, risco residual (com a justificativa “por que o residual é aceito?”) e comentários.</li>
+      <li><b>Dados do laudo</b> — velocidade, acionamento, alimentação, processo, legenda das zonas; objetivo e escopo; documentação analisada; <b>instrumentos usados</b> (calibração vencida aparece marcada); recomendação imediata.</li>
+      <li><b>Conclusão</b> — <b>Apta</b>, <b>Apta com restrições</b> ou <b>Inapta</b>, com o texto.</li>
+      <li><b>Comentários</b> — por perigo ou do laudo, com “Marcar como resolvido”.</li>
+      <li><b>Prévia do PDF</b> — o laudo como vai sair, com a marca “RASCUNHO”, sem número e sem assinatura.</li>
+      <li>Limites e checklist <b>não se editam na mesa</b>: para corrigir, devolva ao campo.</li>
+    </ul>
+    <p><b>Botões por etapa:</b> em análise, <b>Enviar ao RT</b> ou <b>Devolver ao campo</b>; com o RT, <b>Confirmar e preparar assinatura</b> (só o RT, sem nenhuma pendência) ou <b>Devolver à análise</b>. Quando um botão está desabilitado, o motivo aparece embaixo dele.</p>
+    <div class="callout"><p>🚦 <b>Pendências:</b> cada uma diz se <b>trava o envio ao RT</b> ou <b>trava a assinatura</b> — por exemplo HRN não confirmado pelo RT, risco Significativo sem medida, residual não avaliado, cortina de luz em máquina que não aceita, conclusão não definida.</p></div>
 
-      <h2 id="resumo">🧭 Resumo: um documento, uma frase</h2>
-      <div class="tabela-wrap">
-        <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
-        <table class="tec">
-          <thead>
-            <tr><th>Documento</th><th>Em uma frase</th><th>Quando</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Inventário</td><td>Quais máquinas eu tenho.</td><td>No início e quando entrar ou sair máquina</td></tr>
-            <tr><td>Apreciação de Risco</td><td>O que está errado em cada máquina.</td><td>Uma por máquina; refazer se a máquina mudar</td></tr>
-            <tr><td>Plano de Ação</td><td>O que vou fazer e até quando.</td><td>Depois das apreciações; revisar no andamento</td></tr>
-            <tr><td>Validação</td><td>Provei que consertei.</td><td>Quando as ações da máquina terminam</td></tr>
-            <tr><td>Manual de Instruções</td><td>Como trabalhar com segurança nesta máquina.</td><td>Depois da apreciação; nova revisão após validar</td></tr>
-            <tr><td>Check-list</td><td>Confiro a máquina todo dia.</td><td>Mensal, por máquina</td></tr>
-            <tr><td>Relatório Técnico</td><td>Como está a empresa toda.</td><td>Ao fechar etapas ou para a diretoria</td></tr>
-            <tr><td>Aterramento</td><td>O fio terra protege.</td><td>Anual e após reforma elétrica</td></tr>
-            <tr><td>Prontuário NR-10</td><td>A pasta completa da parte elétrica.</td><td>Sempre atualizado</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <h2 id="assinatura">✍️ Assinatura do RT e emissão</h2>
+    <p><b>Confirmar e preparar assinatura</b> abre o diálogo <b>Assinar e emitir</b> — assinatura eletrônica do responsável técnico (Lei 14.063/2020):</p>
+    <ol>
+      <li><b>Resumo do laudo</b> — HRN máximo atual e residual, perigos, NCs e conclusão. O servidor confere de novo as pendências.</li>
+      <li><b>ART do laudo</b> — <b>Vincular uma ART cadastrada</b> (só aparecem as que têm o PDF do CREA e são do RT) ou, se a empresa permitir, <b>Emitir sem ART, com justificativa</b> (mínimo 20 letras, impressa no Anexo A).</li>
+      <li><b>Conferência</b> — marque “Revisei os perigos, as medidas e a conclusão.”</li>
+      <li><b>Confirmar identidade</b> — senha ou <b>código por e-mail</b> (6 dígitos). Quem entra com Google usa o código.</li>
+      <li><b>Assinar e emitir</b> — grava a assinatura com a impressão digital (SHA-256) do conteúdo, a etapa vira <b>Assinada</b> e o PDF oficial é gerado. Se a geração falhar, há <b>Tentar gerar de novo</b> — sem nova assinatura.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-mesa.webp" alt="Mesa de revisão de apreciação emitida com o selo Apreciação emitida, índice e prévia do laudo abertos" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Apreciação emitida</b> — o número do PDF oficial (ex.: LAR-2026-0001) e <b>Abrir o documento</b>.</li>
+      <li><b>Responsáveis</b> — inspetor, analista e RT.</li>
+      <li><b>Folha de leitura</b> — emitida, a apreciação fica somente para leitura, numa folha corrida.</li>
+      <li><b>Índice</b> — atalhos para cada seção.</li>
+      <li><b>Prévia do laudo</b> — resumo (HRN máximo atual e residual, perigos, NCs, conclusão).</li>
+      <li><b>Pendências, comentários e histórico</b> — toda passagem de etapa fica registrada.</li>
+    </ol>
+    <p>O inspetor também assina a <b>elaboração</b> (botão <b>Assinar elaboração</b> em Minhas tarefas ou no aviso da mesa); no laudo, ela aparece como assinatura “Elaboração (inspeção de campo)”.</p>
 
-      <h2 id="rotina">📆 Rotina sugerida</h2>
-      <ol>
-        <li><b>Início do trabalho no cliente:</b> cadastre as máquinas (ou importe a planilha) e emita o Inventário.</li>
-        <li><b>Para cada máquina:</b> faça a apreciação de risco e emita o Manual.</li>
-        <li><b>Toda semana:</b> acompanhe o Plano de ação e atualize as ações concluídas.</li>
-        <li><b>Quando uma máquina terminar as ações:</b> faça a validação e emita a revisão nova do manual.</li>
-        <li><b>Todo mês:</b> gere o check-list de cada máquina a partir das inspeções de turno.</li>
-        <li><b>Todo ano:</b> meça o aterramento, emita o laudo e atualize o prontuário NR-10.</li>
-        <li><b>Para mostrar resultado:</b> emita o Relatório Técnico.</li>
-      </ol>
+    <h2 id="ao-emitir">⚙️ O que acontece ao emitir</h2>
+    <ul>
+      <li>🔢 O laudo ganha <b>número oficial</b> (ex.: LAR-2026-0001, por emitente e ano) e <b>código de validação</b> de 16 caracteres, impresso no rodapé e no QR.</li>
+      <li>🗓️ Cada medida “a implantar” vira uma <b>ação no plano</b>, com código AC-AAAA-NNNNN e prazo pela faixa do HRN. Medida de nível 3 vira ação de procedimento; as demais, adequação física.</li>
+      <li>🏷️ A <b>situação NR-12 da máquina</b> passa a ser a conclusão do laudo: Apta, Apta com restrições ou Inapta.</li>
+      <li>🔒 O laudo fica <b>imutável</b>. Mudou algo? Faça uma revisão.</li>
+    </ul>
 
-      <h2 id="faq">❓ Perguntas frequentes</h2>
-      <div class="faq">
-        <details>
-          <summary>Qual a diferença entre a apreciação de risco e a validação?</summary>
-          <div class="faq-body"><p>A apreciação de risco é o diagnóstico: mostra os perigos da máquina, o tamanho de cada risco e as proteções necessárias. A validação vem depois do conserto e comprova que as proteções foram instaladas e funcionam. A apreciação diz o que fazer; a validação prova que foi feito.</p></div>
-        </details>
-        <details>
-          <summary>O manual de instruções de segurança substitui o manual do fabricante?</summary>
-          <div class="faq-body"><p>Ele complementa o manual do fabricante com as instruções de segurança da máquina como ela está na planta. Quando o manual do fabricante não existe, a NR-12 admite que ele seja reconstituído por profissional habilitado, e é esse papel que o manual gerado pelo sistema cumpre.</p></div>
-        </details>
-        <details>
-          <summary>Toda empresa precisa do prontuário NR-10?</summary>
-          <div class="faq-body"><p>A NR-10 exige o prontuário das instalações elétricas dos estabelecimentos com carga instalada superior a 75 kW. O sistema consolida o que já existe (laudo de aterramento, manuais, profissionais habilitados, ações elétricas) e indica item a item o que ainda precisa ser anexado.</p></div>
-        </details>
-        <details>
-          <summary>O que acontece quando eu mudo um dado depois de emitir um documento?</summary>
-          <div class="faq-body"><p>O documento emitido não muda: ele é oficial e imutável. O sistema avisa quantas alterações aconteceram desde a última revisão, e você emite uma revisão nova. A revisão anterior continua no histórico, com número, data e código de validação.</p></div>
-        </details>
-      </div>
+    <!-- ===================================================== PLANTA -->
+    <h2 id="maquinas">🏭 Máquinas</h2>
+    <p>O inventário: a lista de todas as máquinas e equipamentos. Tudo no sistema se pendura aqui.</p>
+    <ul>
+      <li><b>Colunas</b> — foto, nome, TAG, setor, <b>situação NR-12</b> (cor pela conclusão do último laudo; “Não avaliada” antes do primeiro) e número de NCs abertas.</li>
+      <li><b>Busca</b> — TAG, nome, inventário, fabricante, modelo ou série, sem precisar de acento.</li>
+      <li><b>Filtros</b> — unidade e setor.</li>
+      <li><b>Etiquetas QR</b> — PDF com a etiqueta de cada máquina (60 × 32 mm, 24 por folha A4) para imprimir e colar.</li>
+      <li><b>Nova máquina</b> — Unidade (obrigatória; dá para criar uma nova), Setor, <b>Nome</b> (obrigatório), TAG (única), nº de inventário, fabricante, modelo, série e capacidade.</li>
+    </ul>
+    <div class="callout"><p>🏷️ <b>TAG e setor fazem diferença:</b> sem eles a máquina existe, mas não é encontrável em campo. A Jornada mostra quantas estão sem TAG, sem setor e sem foto.</p></div>
+
+    <h2 id="dossie">🗂️ Dossiê da máquina</h2>
+    <p>Tudo sobre uma máquina num lugar só. Clique em qualquer máquina da lista para abrir.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-dossie.webp" alt="Dossiê da prensa PE-02 com os botões numerados: foto, identificação, energias, etiqueta QR, inspeção, apreciação, abas, situação, jornada e ficha técnica" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Foto principal</b> — a que aparece na lista e na capa do laudo. Clique para ampliar; sem foto, <b>Adicionar foto</b>.</li>
+      <li><b>Identificação</b> — TAG, fabricante, modelo, ano, unidade e setor.</li>
+      <li><b>Selo da inspeção</b> — Nunca inspecionada, Inspeção em andamento ou Inspecionada; ao lado, as pendências (NCs, ações atrasadas, OS abertas).</li>
+      <li><b>Energias</b> — marque com um clique as energias da máquina (elétrica, pneumática…). Alimentam o laudo, o manual e o prontuário NR-10.</li>
+      <li><b>Etiqueta QR</b> — imprime a etiqueta desta máquina.</li>
+      <li><b>Iniciar / Continuar inspeção</b> — abre o check-list de turno numa janela.</li>
+      <li><b>Apreciação de risco</b> — cria a apreciação; se houver uma aberta, vira <b>Continuar apreciação</b> ou <b>Continuar validação</b>.</li>
+      <li><b>Abas</b> — Resumo, Fotos, Inspeções, Riscos e HRN, Não conformidades, Plano de ações, Ordens de serviço, Validações (o número é quantos registros há).</li>
+      <li><b>Situação NR-12</b> — Em adequação (x de y ações), Pronta para validar (com <b>Iniciar validação</b>), Em validação ou <b>Máquina conforme · revisão até…</b>.</li>
+      <li><b>Jornada desta máquina</b> — sete etapas: Cadastrada, Inspecionada, Riscos avaliados, Não conformidades, Ações, Validação, Documentos. Verde concluído, amarelo em andamento, vermelho precisa de atenção. Não é porcentagem de conformidade.</li>
+      <li><b>Ficha técnica</b> — os dados que entram no cabeçalho dos laudos. Campo vazio aparece como “Não informado”.</li>
+    </ol>
+    <p>No canto superior direito aparece o aviso <b>Próximo passo</b> desta máquina (ex.: “nunca foi inspecionada — comece pela inspeção”). Ele recolhe sozinho e pode ser reaberto pelo selo no topo.</p>
+    <h3>Aba Fotos</h3>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-fotos.webp" alt="Aba Fotos do dossiê com explicação da foto principal, botões Tirar foto e Escolher arquivo e a categoria Visão geral" width="1400" height="442" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Foto principal</b> — escolha abrindo a foto e usando <b>Tornar principal</b>.</li>
+      <li><b>Tirar foto / Escolher arquivo</b> — antes de enviar, escolha a categoria, escreva a legenda e descarte o que ficou ruim (até 24 por vez).</li>
+      <li><b>Categorias</b> — Visão geral, Placa, Painel e comandos, Riscos, Inspeção, Antes, Durante, Depois da adequação, Detalhe técnico, Validação, Documentos.</li>
+    </ol>
+    <p>As fotos ficam em armazenamento privado e são reaproveitadas por inspeção, risco, NC, ação e validação, sem duplicar o arquivo. No visor ampliado há zoom, setas, legenda editável e <b>Remover daqui</b>.</p>
+    <h3>As outras abas</h3>
+    <ul>
+      <li><b>Inspeções</b> — cada check-list feito, com data e situação (Finalizada, Em andamento, Cancelada). Clique para abrir.</li>
+      <li><b>Riscos e HRN</b> — as apreciações da máquina, com versão, situação e quem aprovou.</li>
+      <li><b>Não conformidades</b> — código, título, situação e a ação de tratamento com prazo (ou “Sem ação criada”).</li>
+      <li><b>Plano de ações</b> — as ações da máquina com progresso, prazo e os selos <b>OS</b> e <b>validada</b>.</li>
+      <li><b>Ordens de serviço</b> — código, situação, abertura, execução e custo (mão de obra + peças).</li>
+      <li><b>Validações</b> — as conferências de cada ação executada, com quem validou.</li>
+    </ul>
+
+    <h2 id="plano">🗓️ Plano de ação e ordens de serviço</h2>
+    <p>Todas as ações de adequação da empresa, venham do laudo ou de uma não conformidade.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-plano-de-acao.webp" alt="Plano de ações com códigos AC-2026, origem LAR-2026-0001 P-01, tipo de adequação, prazo, progresso e situação" width="1400" height="492" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Recortes</b> — Todas, Atrasadas, Em andamento, Concluídas, com a contagem.</li>
+      <li><b>Código</b> — AC-AAAA-NNNNN.</li>
+      <li><b>Origem</b> — o laudo e o perigo de onde a ação veio (ex.: LAR-2026-0001 · P-01). Clique para abrir o laudo.</li>
+      <li><b>OS</b> — este tipo de ação exige ordem de serviço.</li>
+      <li><b>Progresso</b> — calculado pelas etapas registradas, nunca digitado.</li>
+    </ol>
+    <h3>Dentro de uma ação</h3>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-acao-ciclo.webp" alt="Detalhe da ação com origem no laudo e o ciclo Criada, Planejada, Execução iniciada, Execução concluída, Aguardando validação e Validada" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Origem no laudo</b> — foto do perigo, laudo, código do perigo e faixa do HRN.</li>
+      <li><b>Progresso</b> — vai até 90% com a execução concluída; só chega a 100% com a validação aprovada.</li>
+      <li><b>Ciclo</b> — Criada → Planejada → OS aberta → Execução iniciada → Execução concluída → Aguardando validação → Validada. Use <b>Registrar</b> no próximo passo; os passos andam em ordem.</li>
+      <li><b>Validada</b> — conferida e aprovada.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-acao-campos.webp" alt="Campos 5W2H da ação, prazo, situação e custo, e o bloco de evidências com Foto depois" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>5W2H</b> — o que será feito, por que, onde, quem executa e como. Use <b>Editar</b> para ajustar.</li>
+      <li><b>Prazo, situação e custo</b> — tipo de adequação, prazo, dificuldade, custo previsto e real, início e conclusão.</li>
+      <li><b>Evidências</b> — a foto de depois <b>comprova</b> a execução, mas não valida a ação.</li>
+      <li><b>Foto depois</b> — fotografe a medida instalada no mesmo enquadramento da foto do perigo.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-acao-os.webp" alt="Foto depois da adequação, botão Abrir Ordem de Serviço e o bloco de validações aprovadas" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Depois da adequação</b> — as fotos que comprovam a execução.</li>
+      <li><b>Abrir Ordem de Serviço</b> — tipo (corretiva, preventiva, adequação…), prazo e equipe. Gera OS-AAAA-NNNNN. Quando o serviço termina, <b>Registrar execução</b> com data, custos e o que foi feito.</li>
+      <li><b>Validações</b> — <b>Validar</b> abre “Validar execução”: <b>Aprovada</b> conclui a ação (100%); <b>Reprovada</b> devolve para tratativa.</li>
+    </ol>
+    <div class="callout"><p>✅ <b>Para validar uma ação</b> é preciso: execução marcada como concluída, OS com execução registrada (quando o tipo exige), responsável definido e ao menos uma <b>foto do depois</b>. A tela lista o que falta.</p></div>
+
+    <h2 id="aterramento">⚡ Aterramento</h2>
+    <p>As medições de resistência de aterramento, ponto a ponto, que geram o <b>Laudo de Aterramento</b>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-aterramento.webp" alt="Tela Aterramento com dois pontos medidos, valor, limite e resultado conforme ou não conforme" width="1400" height="310" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Registrar medição</b> — máquina (ou unidade, para painel e malha), ponto, valor em Ω, <b>limite</b> (10 Ω por padrão, editável por ponto), data, instrumento e método.</li>
+      <li><b>Resumo</b> — pontos medidos, conformes e não conformes.</li>
+      <li><b>Medido e limite</b> — de cada ponto.</li>
+      <li><b>Resultado</b> — calculado pelo sistema: conforme quando o valor é menor ou igual ao limite.</li>
+      <li><b>Ver o laudo</b> — abre o Laudo de Aterramento em Laudos e docs, para prévia e emissão.</li>
+    </ol>
+    <p><b>Salvar e medir outro ponto</b> mantém máquina, data, instrumento e método — é só trocar o ponto e o valor.</p>
+
+    <h2 id="ncs">⚠️ Não conformidades</h2>
+    <p>Tudo o que foi encontrado fora da norma e o que já virou ação.</p>
+    <div class="fluxo fluxo-compacto" role="img" aria-label="Ciclo da não conformidade">
+      <div class="fluxo-passo"><b>Item reprovado</b><small>na inspeção de campo</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Proposta</b><small>aguardando revisão</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>NC Aberta</b><small>confirmada</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Em tratativa</b><small>ação criada</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Aguardando validação</b><small>execução concluída</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><b>Encerrada</b><small>ação validada</small></div>
+    </div>
+    <p class="fluxo-nota">A situação da NC acompanha as ações dela automaticamente. Se a validação for reprovada, a NC reabre.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-nao-conformidades.webp" alt="Tela Não conformidades com busca, filtros, botão Propostas de NC e o atalho Inspecionar em campo" width="1400" height="383" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Busca</b> — máquina, TAG, código ou descrição.</li>
+      <li><b>Filtros</b> — unidade, situação e <b>Mais filtros</b> (setor, origem, com ou sem ação).</li>
+      <li><b>Propostas de NC</b> — o que as inspeções apontaram e ainda precisa de revisão.</li>
+      <li><b>Lista vazia</b> — as NCs nascem das inspeções: o atalho leva a inspecionar.</li>
+    </ol>
+    <h3>De onde vêm as NCs</h3>
+    <ul>
+      <li><b>Inspeção de campo:</b> cada “Não conforme” vira <b>proposta</b>. Em <b>Propostas de NC</b> (abas Aguardando revisão, Confirmadas, Rejeitadas, Duplicadas, Agrupadas), quem tem permissão escolhe: <b>Confirmar e criar a NC</b> (as fotos do item vão junto), <b>Já existe NC</b>, <b>Juntar a outra proposta</b> ou <b>Rejeitar</b> (com motivo).</li>
+      <li><b>Importação de planilha</b> de plano de ação.</li>
+      <li>Os itens não conformes do <b>checklist do laudo de apreciação</b> ficam no próprio laudo e viram as medidas e ações dele.</li>
+    </ul>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-propostas.webp" alt="Propostas de não conformidade com as abas Aguardando revisão, Confirmadas, Rejeitadas, Duplicadas e Agrupadas" width="1400" height="401" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Abas</b> — cada proposta fica numa aba conforme a decisão.</li>
+      <li><b>Inspecionar em campo</b> — quando não há nada a revisar.</li>
+    </ol>
+    <h3>Como tratar uma NC</h3>
+    <ol>
+      <li>Na lista de NCs, clique em <b>Criar ação de tratamento</b>: o que será feito, tipo de adequação (os que exigem OS aparecem marcados), responsável e prazo.</li>
+      <li>A ação nasce “Pendente” (AC-AAAA-NNNNN) e a NC passa a <b>Em tratativa</b>.</li>
+      <li>Siga o <a href="#plano">ciclo da ação</a>: OS, execução, foto do depois.</li>
+      <li>Com a execução concluída, a NC fica <b>Aguardando validação</b>; com a validação aprovada, <b>Encerrada</b>.</li>
+    </ol>
+    <p><b>Onde as NCs aparecem nos documentos:</b> no <b>Relatório Técnico</b> (abertas e encerradas) e no <b>Check-list</b> mensal (diário de bordo). O prazo da NC é o da ação dela.</p>
+
+    <h2 id="validacao">✅ Validação da adequação (laudo LVA)</h2>
+    <p>Prova que as correções do laudo foram <b>feitas e funcionam</b>. Fica disponível quando <b>todas as ações do laudo estão concluídas</b>: a máquina aparece como <b>Pronta para validar</b> no dossiê e em Minhas tarefas.</p>
+    <ol>
+      <li>No dossiê, clique em <b>Iniciar validação</b> e escolha os responsáveis. O sistema copia do laudo os perigos com medida, o HRN atual e o residual projetado.</li>
+      <li><b>Em campo</b> (dois passos: Perigos com medida e Revisão), para cada perigo:
+        <ul>
+          <li><b>As medidas foram implantadas?</b> — implantada, parcial ou não implantada;</li>
+          <li><b>Testes funcionais</b> — use os sugeridos ou adicione (ex.: “abrir a porta com a máquina ligada → a máquina para”), cada um Ok ou Falha;</li>
+          <li><b>Distância de segurança medida</b>;</li>
+          <li><b>Foto antes × depois</b> — a foto do laudo fica congelada; a do depois pode copiar as marcações da antes;</li>
+          <li><b>HRN residual verificado</b> — lado a lado com o atual e o projetado;</li>
+          <li><b>Categoria e PL alcançados</b>.</li>
+        </ul>
+      </li>
+      <li>Na mesa, conclusão: <b>Conforme</b>, <b>Conforme com ressalvas</b> ou <b>Não conforme</b>. O sistema sugere pelos dados e recusa “Conforme” com medida não implantada, teste com falha ou residual acima de Atenção.</li>
+      <li>O RT assina e emite, como na apreciação. O número é LVA-AAAA-NNNN.</li>
+    </ol>
+    <div class="callout"><p>🏁 <b>Depois de emitida:</b> com <b>Conforme</b>, a máquina passa a <b>Máquina conforme</b> e ganha a data da próxima revisão (12 meses, por padrão). Com <b>Não conforme</b>, as medidas reprovadas voltam ao plano como ações novas.</p></div>
+
+    <!-- ===================================================== DOCUMENTOS -->
+    <h2 id="laudos-e-docs">📄 Laudos e docs</h2>
+    <p>Onde ficam todos os documentos emitidos, em três grupos: <b>Gestão</b>, <b>Avaliação técnica</b> e <b>Responsabilidade e evidências</b>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-laudos-e-docs.webp" alt="Laudos e documentos com busca, filtros, contadores, grupos e a linha de cada documento vigente com o botão Abrir" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Busca</b> — número, máquina, TAG, cliente ou código de validação.</li>
+      <li><b>Filtros</b> — vigentes ou substituídos, tipo, data, responsável e unidade.</li>
+      <li><b>Contadores</b> — arquivos emitidos, ARTs, anexos e assinaturas.</li>
+      <li><b>Grupo</b> — Gestão (inventário e plano), Avaliação técnica, Responsabilidade e evidências.</li>
+      <li><b>Situação do tipo</b> — <i>Vigente · número · revisão · data</i>, “Ainda não emitido — os dados já permitem emitir”, “Sem dados para emitir ainda” ou “Aguardando o responsável técnico”.</li>
+      <li><b>Abrir</b> — todas as revisões daquele tipo; dentro, <b>Prévia e nova revisão</b>.</li>
+    </ol>
+    <ul>
+      <li><b>Revisar e emitir</b> — abre o leitor com a <b>prévia</b> (marca “Rascunho”) e o botão <b>Emitir Rev. NN</b>. A emissão entra na fila (“Na fila”, “Emitindo · N%”) e o documento aparece como vigente.</li>
+      <li><b>“N alterações desde a Rev. X”</b> — os dados mudaram depois da emissão: confira a prévia e emita a revisão nova.</li>
+      <li>Os laudos de <b>Apreciação</b> e de <b>Validação</b> não são emitidos aqui: saem da <a href="#assinatura">mesa de revisão</a>, pela assinatura do RT.</li>
+      <li>Revisão nova <b>não apaga</b> a anterior: “Ver histórico” lista todas.</li>
+    </ul>
+
+    <h2 id="cada-documento">📚 Cada documento: para que serve e quando emitir</h2>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Documento</th><th>Para que serve</th><th>De onde sai</th><th>Quando emitir</th></tr></thead>
+        <tbody>
+          <tr><td>Inventário de Máquinas</td><td>A lista oficial das máquinas da empresa.</td><td>Cadastro de máquinas.</td><td>No início e quando entrar ou sair máquina.</td></tr>
+          <tr><td>Apreciação de Risco (LAR)</td><td>O diagnóstico de cada máquina: perigos, risco e medidas. Assinado pelo RT com ART.</td><td>Assistente de campo + mesa de revisão.</td><td>Uma por máquina; refazer se a máquina mudar.</td></tr>
+          <tr><td>Plano / Cronograma de Adequação</td><td>Todas as ações com prazo e andamento — o compromisso da empresa.</td><td>Plano de ação.</td><td>Depois das apreciações e a cada atualização relevante.</td></tr>
+          <tr><td>Validação (LVA)</td><td>A prova de que a correção foi feita e funciona.</td><td>Validação em campo + mesa.</td><td>Quando as ações da máquina terminam.</td></tr>
+          <tr><td>Manual de Instruções de Segurança</td><td>Fica junto à máquina: uso permitido e proibido, zonas de perigo, emergência, bloqueio de energias, capacitação.</td><td>Apreciação emitida (+ validação, se houver).</td><td>Depois da apreciação; revisão nova após validar.</td></tr>
+          <tr><td>Check-list de Segurança</td><td>Prova da conferência de rotina, máquina por máquina, mês a mês.</td><td>Inspeções finalizadas do mês.</td><td>Mensal, por máquina.</td></tr>
+          <tr><td>Relatório Técnico / Diagnóstico</td><td>O retrato da empresa inteira: conformes, NCs, ações atrasadas.</td><td>Tudo o que está registrado.</td><td>Ao fechar etapas ou para a diretoria.</td></tr>
+          <tr><td>Laudo de Aterramento</td><td>Medições do fio terra de máquinas e painéis contra o limite.</td><td>Planta › Aterramento.</td><td>Anual e após reforma elétrica.</td></tr>
+          <tr><td>Prontuário NR-10</td><td>A pasta da parte elétrica (carga acima de 75 kW): o que existe e o que falta anexar, item a item.</td><td>Máquinas elétricas, aterramento, documentos, equipe, ARTs.</td><td>Sempre atualizado.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-manual.webp" alt="Manual de instruções de segurança com zonas de perigo e medidas de proteção implantadas e validadas" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Zonas de perigo</b> — do laudo de apreciação.</li>
+      <li><b>Situação da medida</b> — “Implantada (validada)” quando a validação comprovou; “A implantar” antes dela.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-prontuario.webp" alt="Prontuário NR-10 com a composição item a item da norma, a situação e a evidência de cada exigência" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Item da NR-10</b> — 10.2.3 e 10.2.4 a–g.</li>
+      <li><b>Situação</b> — no sistema, parcial ou anexar ao prontuário.</li>
+      <li><b>Evidência</b> — o que o sistema já tem (ex.: laudo de aterramento, manuais, profissionais).</li>
+    </ol>
+    <div class="callout"><p>🔌 O prontuário só fica disponível com ao menos uma máquina com a energia <b>Elétrica</b> marcada no dossiê. Manual e check-list são por máquina: <b>Gerar manual</b> e <b>Gerar check-list</b> pedem a máquina (e o mês).</p></div>
+
+    <h2 id="documento-emitido">🔒 Documento emitido, ciência do cliente e validação</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-documento.webp" alt="Página do documento emitido com visualizador, botões Baixar e Imprimir, identificação, código de validação e ciência do cliente" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Visualizador</b> — rolagem contínua, zoom e seleção de texto.</li>
+      <li><b>Baixar / Imprimir</b> — o PDF original (arquivo “número-revNN.pdf”).</li>
+      <li><b>Identificação</b> — tipo, organização, emissão, quem solicitou, páginas.</li>
+      <li><b>Autenticidade</b> — o código de validação e o SHA-256 do arquivo.</li>
+      <li><b>Ciência do cliente</b> — gere um link (vale 30 dias, uso único) para o cliente ler o laudo e registrar que recebeu. Ciência não é concordância técnica.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-validacao-publica.webp" alt="Página pública de validação mostrando documento autêntico e vigente, código e SHA-256" width="936" height="460" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Situação</b> — “Documento autêntico e vigente” ou “substituído pela revisão NN”.</li>
+      <li><b>Código de validação</b> — o mesmo impresso no PDF.</li>
+      <li><b>SHA-256</b> — a impressão digital do arquivo gravado.</li>
+      <li><b>Como conferir</b> — compare o SHA-256 do arquivo recebido com o da página.</li>
+    </ol>
+    <p>Qualquer pessoa com o código <b>confere se o documento é válido</b> — número, revisão, data, emitente e RT. A consulta <b>não dá acesso ao conteúdo</b> do documento nem aos dados da empresa.</p>
+
+    <h2 id="arts">📜 ARTs</h2>
+    <p>As Anotações de Responsabilidade Técnica emitidas no CREA, com o PDF original. Uma ART pode cobrir vários laudos.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-arts.webp" alt="Tela ARTs vazia com o botão Cadastrar ART" width="1400" height="383" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Cadastrar ART</b> — número, tipo (inicial, complementar, substitutiva, múltipla), RT (em branco vale para qualquer RT da empresa), contratante, atividade, datas, chave e link de verificação do CREA (vira QR no Anexo A) e o <b>PDF da ART</b> (obrigatório, até 20 MB).</li>
+    </ol>
+    <p>A ART é vinculada ao laudo <b>na assinatura</b> e entra como <b>Anexo A</b>, com as páginas do PDF copiadas no laudo. ART já usada em laudo emitido fica travada e não pode ser excluída.</p>
+
+    <!-- ===================================================== CONFIGURAÇÕES -->
+    <h2 id="empresa">🏢 Dados da empresa</h2>
+    <p>O <b>cliente</b>: a empresa dona das máquinas. Aparece como contratante nos laudos e no plano.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-empresa.webp" alt="Dados da empresa com identificação, CNPJ e endereço" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Identificação</b> — razão social, fantasia, CNPJ, inscrição estadual, CNAE, grau de risco (NR-4), funcionários.</li>
+      <li><b>CNPJ</b> — os dígitos são conferidos ao digitar.</li>
+      <li><b>Endereço e contato</b>.</li>
+    </ol>
+
+    <h2 id="emitente">🖋️ Empresa emitente</h2>
+    <p><b>Você</b>: quem emite e assina os laudos. Aparece no cabeçalho e define a numeração.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-emitente.webp" alt="Empresa emitente com logo, selo Padrão, numeração LAR e botões Editar e Novo emitente" width="1400" height="219" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Emitente</b> — logo, razão social, CNPJ e registro no CREA (pessoa jurídica).</li>
+      <li><b>Padrão</b> — o emitente usado nos novos laudos.</li>
+      <li><b>Numeração</b> — prefixo do laudo (LAR → LAR-2027-0042) e da validação (LVA).</li>
+      <li><b>Editar</b> — inclusive o <b>logotipo</b> (SVG recomendado, ou PNG/JPG).</li>
+      <li><b>Novo emitente</b> — pode haver mais de um.</li>
+    </ol>
+
+    <h2 id="equipe">👷 Equipe e registro do RT</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-equipe.webp" alt="Equipe com papel Administrador, situação ativa, registro profissional CREA-SP e botão Convidar pessoa" width="1400" height="228" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Papel</b> — define o que a pessoa pode fazer (<a href="#papeis">veja a tabela</a>).</li>
+      <li><b>Registro profissional</b> — conselho (CREA ou CFT), UF, número e validade.</li>
+      <li><b>Editar</b> — cadastra ou atualiza o registro. Só assina laudo quem é engenheiro e tem registro vigente.</li>
+      <li><b>Convidar pessoa</b> — e-mail, nome e papel; a pessoa recebe o convite e define a senha.</li>
+    </ol>
+    <p>A <b>assinatura é eletrônica</b>: não há imagem de assinatura para enviar. O RT confirma a identidade com senha ou código no momento de emitir.</p>
+
+    <h2 id="metodologia">Σ Metodologia</h2>
+    <p>As tabelas de risco usadas no laudo. As matrizes de <b>categoria</b> (NBR 14153) e de <b>PLr</b> (ISO 13849-1) precisam da conferência do RT da empresa antes do primeiro laudo oficial.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-metodologia.webp" alt="Metodologia com a tabela de categoria de segurança NBR 14153 e o selo aprovada pelo RT" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Tabela S/F/P</b> — gravidade, frequência e possibilidade de evitar → categoria ou PL.</li>
+      <li><b>Aprovada por</b> — o RT que conferiu, com o registro e a data. Sem aprovação, o botão é <b>Conferi e aprovo para esta empresa</b>.</li>
+    </ol>
+
+    <h2 id="importar">📥 Importar planilha</h2>
+    <p>Traz o inventário de máquinas ou o plano de ações de uma planilha .xlsx, sem recadastrar à mão.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-importar.webp" alt="Importar planilha com as etapas Arquivo, Mapeamento, Simulação e Concluído e o botão Escolher arquivo" width="1400" height="670" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Etapas</b> — Arquivo → Mapeamento → Simulação → Concluído.</li>
+      <li><b>O que você vai importar</b> — Inventário de máquinas ou Plano / cronograma de ações.</li>
+      <li><b>Escolher arquivo</b> — o arquivo é lido no navegador; nada é gravado antes de você confirmar.</li>
+    </ol>
+    <ul>
+      <li><b>Mapeamento</b> — cada coluna da planilha vira um campo; TAG, inventário e série nunca viram número (“1.410” continua “1.410”).</li>
+      <li><b>Simulação</b> — mostra o que será criado, o que já existe (nada é sobrescrito) e o que foi rejeitado, com o motivo, antes de gravar.</li>
+      <li><b>Tudo ou nada</b> — o lote entra inteiro numa transação. Errou? <b>Desfazer esta importação</b> (recusa se já houver trabalho feito em cima).</li>
+      <li>A mesma planilha importada de novo não duplica: as linhas existentes são puladas.</li>
+    </ul>
+
+    <!-- ===================================================== DIA A DIA -->
+    <h2 id="campo-offline">📶 Celular, QR e sem internet</h2>
+    <ul>
+      <li><b>Celular:</b> a barra inferior tem Tarefas, Máquinas, <b>Capturar</b> (apreciações em campo), Sincronizar e Mais (o menu completo).</li>
+      <li><b>Etiqueta QR:</b> apontada pela câmera comum do celular, abre o dossiê da máquina; pelo <b>Ler QR</b> da tela Visitas, abre direto o check-list.</li>
+      <li><b>Sem internet:</b> inspeção, assistente de campo e fotos continuam funcionando. Tudo fica salvo no aparelho e sobe sozinho quando o sinal volta (o topo mostra “N pendente(s)”). Só é preciso ter aberto aquela inspeção ou apreciação uma vez com sinal.</li>
+      <li><b>Precisa de internet:</b> mesa de revisão, mudança de etapa, assinatura e emissão.</li>
+    </ul>
+    <figure class="print-sistema">
+      <img src="img/doc-nr12-capturar.webp" alt="Tela Capturar com as apreciações em campo do usuário e a busca para abrir pela máquina" width="1296" height="586" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Em campo comigo</b> — as apreciações atribuídas a você para coletar.</li>
+      <li><b>Abrir pela máquina</b> — busque pela TAG, nome ou patrimônio para começar.</li>
+    </ol>
+
+    <h2 id="rotina">📆 Rotina sugerida</h2>
+    <ol>
+      <li><b>Implantação:</b> siga o “Comece por aqui” — empresa, emitente, equipe e RT, metodologia aprovada, máquinas (ou planilha), ART. Emita o <b>Inventário</b>.</li>
+      <li><b>Para cada máquina:</b> apreciação de risco (campo → mesa → RT) e, emitida, o <b>Manual</b>.</li>
+      <li><b>Toda semana:</b> revise as propostas de NC, crie as ações de tratamento e acompanhe o <b>Plano de ação</b> pelo Painel.</li>
+      <li><b>Quando as ações de uma máquina terminam:</b> validação (LVA) e revisão nova do manual.</li>
+      <li><b>Todo turno:</b> o operador faz o check-list; <b>todo mês</b>, emita o Check-list de cada máquina.</li>
+      <li><b>Todo ano:</b> medições de aterramento, laudo e prontuário NR-10 atualizado; revisão das apreciações conforme a data de cada máquina.</li>
+      <li><b>Para mostrar resultado:</b> emita o Relatório Técnico.</li>
+    </ol>
+
+    <h2 id="faq">❓ Perguntas frequentes</h2>
+    <div class="faq">
+      <details>
+        <summary>Qual a diferença entre a inspeção de campo e a apreciação de risco?</summary>
+        <div class="faq-body"><p>A inspeção de campo é o check-list de rotina (de turno): rápida, feita pelo operador ou técnico, e o que reprova vira proposta de não conformidade. A apreciação de risco é o estudo completo da máquina — perigos, fotos, HRN, comando de segurança e medidas — revisado na mesa e assinado pelo RT, e gera o laudo oficial.</p></div>
+      </details>
+      <details>
+        <summary>Qual a diferença entre a apreciação de risco e a validação?</summary>
+        <div class="faq-body"><p>A apreciação é o diagnóstico: o que está errado e o que fazer. A validação vem depois das correções e prova, com testes e risco medido de novo, que as medidas foram implantadas e funcionam. A apreciação diz o que fazer; a validação prova que foi feito.</p></div>
+      </details>
+      <details>
+        <summary>Como uma não conformidade é encerrada?</summary>
+        <div class="faq-body"><p>Automaticamente, pelas ações dela: com ação criada a NC fica Em tratativa; com a execução concluída, Aguardando validação; quando todas as ações são validadas e aprovadas, Encerrada, com a data. Se a validação for reprovada, a NC reabre.</p></div>
+      </details>
+      <details>
+        <summary>Onde eu subo as fotos e os arquivos?</summary>
+        <div class="faq-body"><p>Fotos da máquina na aba Fotos do dossiê; fotos de cada item na inspeção e no assistente de campo; fotos de antes, durante e depois na ação; o PDF da ART em ARTs; o logotipo em Empresa emitente. Tudo fica em armazenamento privado da empresa.</p></div>
+      </details>
+      <details>
+        <summary>O que acontece quando eu mudo um dado depois de emitir um documento?</summary>
+        <div class="faq-body"><p>O documento emitido não muda. Em Laudos e docs aparece “N alterações desde a Rev. X”: confira a prévia e emita a revisão nova. A anterior continua no histórico e o código dela continua conferindo.</p></div>
+      </details>
+      <details>
+        <summary>Posso usar o sistema sem internet em campo?</summary>
+        <div class="faq-body"><p>Sim, para inspeção, assistente de campo e fotos: tudo fica no aparelho e sincroniza sozinho quando o sinal volta. Mesa de revisão, assinatura e emissão precisam de internet.</p></div>
+      </details>
+      <details>
+        <summary>Quem pode assinar um laudo?</summary>
+        <div class="faq-body"><p>Só o responsável técnico atribuído à apreciação, com papel de engenheiro e registro profissional vigente cadastrado em Equipe, depois de a metodologia ter sido aprovada pelo RT da empresa.</p></div>
+      </details>
+    </div>
 
     <section class="docs-ajuda" aria-label="Ajuda">
       <div>
