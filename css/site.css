@@ -1769,3 +1769,10 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]), textarea, 
 .faixa { padding: .35rem .7rem; border-radius: var(--r); font-size: .85rem; color: var(--white); }
 .faixa-raro { background: #5b6b7c; } .faixa-baixo { background: #1a7f52; } .faixa-atencao { background: #9a7a00; }
 .faixa-signif { background: #b0561e; } .faixa-alto { background: #c62828; } .faixa-extremo { background: #7f1010; }
+
+/* Documentação: prints estreitos (janelas e recortes pequenos) não esticam; fórmulas uma por linha */
+.print-sistema.print-estreito img { width: auto; max-width: 100%; margin-inline: auto; }
+.docs-conteudo .formula { display: table; max-width: 100%; margin: .5rem 0; }
+.sys-hero-doc { margin: 1rem 0 0; font-size: .95rem; color: rgba(255,255,255,.85); }
+.sys-hero-doc a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.sys-hero-doc a:hover { color: #ffd2b8; }

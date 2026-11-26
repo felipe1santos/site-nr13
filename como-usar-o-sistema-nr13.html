@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documentação do Sistema NR13: como usar, passo a passo</title>
+<meta name="description" content="Sistema NR13 passo a passo: cada tela e botão, caldeiras e vasos, memorial ASME, inspeção pelo celular, relatório, prontuário e registro de segurança.">
+<meta name="keywords" content="como usar o Sistema NR13, manual do sistema NR-13, documentação sistema NR13, software NR-13 passo a passo, relatório de inspeção NR-13, prontuário de vaso de pressão, registro de segurança NR-13, memorial de cálculo ASME">
+
+<link rel="canonical" href="https://nr13sistema.com.br/como-usar-o-sistema-nr13.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Axial Engenharia">
+<meta name="geo.region" content="BR-ES">
+<meta name="geo.placename" content="Vila Velha, Espírito Santo">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axial Engenharia">
+<meta property="og:title" content="Documentação do Sistema NR13: como usar, passo a passo">
+<meta property="og:description" content="Passo a passo do Sistema NR13: do cadastro da caldeira ou do vaso ao relatório finalizado, com as telas reais.">
+<meta property="og:url" content="https://nr13sistema.com.br/como-usar-o-sistema-nr13.html">
+<meta property="og:image" content="https://nr13sistema.com.br/img/doc-nr13-ficha.webp">
+<meta property="og:locale" content="pt_BR">
+<meta property="article:published_time" content="2026-11-26">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0a1f33">
+
+<link rel="stylesheet" href="css/site.css?v=20261126f">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Documentação do Sistema NR13: como usar cada tela, do cadastro ao relatório finalizado",
+  "description": "Sistema NR13 passo a passo: cada tela e botão, caldeiras e vasos, memorial ASME, inspeção pelo celular, relatório, prontuário e registro de segurança.",
+  "inLanguage": "pt-BR",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://nr13sistema.com.br/como-usar-o-sistema-nr13.html"
+  },
+  "image": "https://nr13sistema.com.br/img/doc-nr13-ficha.webp",
+  "datePublished": "2026-11-26",
+  "dateModified": "2026-11-26",
+  "author": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "url": "https://nr13sistema.com.br/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Axial Engenharia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nr13sistema.com.br/icon-512.png"
+    }
+  },
+  "about": [
+    "Sistema NR13",
+    "NR-13",
+    "Caldeiras",
+    "Vasos de pressão",
+    "Inspeção de segurança",
+    "Prontuário NR-13"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://nr13sistema.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sistema NR13",
+      "item": "https://nr13sistema.com.br/sistema-nr13.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Documentação",
+      "item": "https://nr13sistema.com.br/como-usar-o-sistema-nr13.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Preciso cadastrar o equipamento antes de criar uma inspeção?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A inspeção é sempre de um equipamento: crie a TAG em Equipamentos e depois o container em Inspeções. Com o memorial e a categoria feitos antes, os formulários já chegam com pressões, espessura nominal e material preenchidos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso fazer a inspeção pelo celular sem internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Os ensaios e as fotos ficam salvos no aparelho e sobem sozinhos quando a conexão volta. A condição é ter aberto o equipamento com internet antes, para que os dados dele estejam no aparelho."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso editar um relatório depois de finalizado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O relatório finalizado é um PDF trancado, com código de verificação. Para corrigir, use Duplicar: nasce um rascunho novo com os dados copiados, que você revisa e finaliza. O original continua como estava."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que um equipamento aparece como “sem prazo” no Dashboard?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque ainda não há relatório finalizado com Próx. Interna ou Próx. Externa preenchidas nas Configurações, nem vida remanescente calculada na ficha. Relatório em rascunho não gera prazo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre Calibrações e Certificados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calibrações são os instrumentos instalados em cada equipamento do cliente, como manômetros e válvulas de segurança. Certificados são os instrumentos padrão da sua empresa, usados para medir e calibrar, e valem para todos os equipamentos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Meu cliente pode acompanhar os documentos dele?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, pelo Portal do Cliente. Crie o acesso em Clientes, na aba Portal do cliente, e vincule os equipamentos a ele na ficha. O cliente só consulta: vê os relatórios finalizados, o prontuário, o livro de registro e as calibrações."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Para que serve o código de verificação do relatório?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É o SHA-256 do PDF gerado na emissão. Qualquer alteração no arquivo muda o código, então ele comprova que o documento é o mesmo que foi emitido. O código aparece no visualizador do relatório arquivado."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="docs-pagina">
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html">
+      <img src="icon-192.png" alt="Axial Engenharia — engenharia mecânica e inspeção NR-13 em Vitória ES" width="40" height="40">
+      <span class="brand-txt">
+        <span class="brand-name">Axial Engenharia</span>
+        <span class="brand-tag">Engenharia Mecânica · ES</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="sistema-nr13.html" aria-current="page">Sistema NR13</a>
+      <a href="sistema-nr12.html">Sistema NR12</a>
+      <a href="blog/index.html">Conteúdo</a>
+      <a href="index.html#atendimento">Onde atendemos</a>
+      <a href="index.html#contato">Contato</a>
+      <a class="btn btn-primary" href="sistema-nr13.html" data-cta="nav">Conhecer o sistema</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main class="docs">
+
+<header class="docs-topo">
+  <div class="docs-wrap">
+    <nav class="docs-migalhas" aria-label="Você está em">
+      <a href="index.html">Início</a> <span aria-hidden="true">›</span> <a href="sistema-nr13.html">Sistema NR13</a> <span aria-hidden="true">›</span> <span>Documentação</span>
+    </nav>
+    <h1>Documentação do Sistema NR13</h1>
+    <p class="docs-sub">Como o sistema funciona de ponta a ponta: cada tela do menu, cada botão, o que se preenche em campo e no escritório, e em que momento emitir cada documento — com as telas reais.</p>
+  </div>
+</header>
+
+<div class="docs-wrap docs-corpo">
+  <aside class="docs-lateral">
+    <details class="docs-indice" open>
+      <summary>📑 Nesta documentação</summary>
+      <nav aria-label="Sumário da documentação">
+        <p class="docs-indice-grupo">Começo</p>
+        <ol>
+          <li><a href="#visao-geral">🎯 Visão geral</a></li>
+          <li><a href="#fluxo">🗺️ O fluxo completo</a></li>
+          <li><a href="#primeiros-passos">🚀 Primeiros passos</a></li>
+          <li><a href="#menu">🧭 O menu</a></li>
+          <li><a href="#papeis">👥 Quem faz o quê</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Operação</p>
+        <ol>
+          <li><a href="#dashboard">📊 Dashboard</a></li>
+          <li><a href="#agenda">📅 Agenda</a></li>
+          <li><a href="#equipamentos">🛢️ Equipamentos</a></li>
+          <li><a href="#ficha">🗂️ Ficha do equipamento</a></li>
+          <li><a href="#categoria">🏷️ Categoria NR-13</a></li>
+          <li><a href="#memorial">Σ Memorial de cálculo</a></li>
+          <li><a href="#caldeira">🔥 Caldeiras</a></li>
+          <li><a href="#prazos">⏳ Vida remanescente e prazos</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Inspeções</p>
+        <ol>
+          <li><a href="#inspecoes">📋 Inspeções e containers</a></li>
+          <li><a href="#container">📦 Dentro do container</a></li>
+          <li><a href="#checklist">☑️ Checklist NR-13</a></li>
+          <li><a href="#fotos">📷 Fotos e descrições</a></li>
+          <li><a href="#visual">👁️ Exame visual externo e interno</a></li>
+          <li><a href="#ultrassom">📏 Medição de espessura</a></li>
+          <li><a href="#th">💧 Teste hidrostático</a></li>
+          <li><a href="#ensaios-caldeira">🔥 Ensaios de caldeira e imagens</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Documentos</p>
+        <ol>
+          <li><a href="#relatorios">📄 Relatórios</a></li>
+          <li><a href="#criar-relatorio">➕ Criar relatório</a></li>
+          <li><a href="#editor">✏️ Revisar o rascunho</a></li>
+          <li><a href="#finalizar">🔒 Finalizar e código de verificação</a></li>
+          <li><a href="#relatorio-emitido">📁 Relatório emitido</a></li>
+          <li><a href="#prontuarios">📘 Prontuários</a></li>
+          <li><a href="#registros">📒 Registros de Segurança</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Instrumentos</p>
+        <ol>
+          <li><a href="#calibracoes">🎚️ Calibrações</a></li>
+          <li><a href="#certificados">🏅 Certificados dos padrões</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Menu · Cadastros</p>
+        <ol>
+          <li><a href="#meus-dados">🏢 Meus dados</a></li>
+          <li><a href="#equipe">👷 Equipe (quem assina)</a></li>
+          <li><a href="#clientes">🤝 Clientes</a></li>
+          <li><a href="#portal">🌐 Portal do Cliente</a></li>
+          <li><a href="#acessos">🔑 Acessos</a></li>
+        </ol>
+        <p class="docs-indice-grupo">Dia a dia</p>
+        <ol>
+          <li><a href="#offline">📶 Celular e sem internet</a></li>
+          <li><a href="#conta">👤 Sua conta e o aplicativo</a></li>
+          <li><a href="#info">ℹ️ Central de ajuda</a></li>
+          <li><a href="#rotina">📆 Rotina sugerida</a></li>
+          <li><a href="#faq">❓ Perguntas frequentes</a></li>
+        </ol>
+      </nav>
+    </details>
+    <a class="docs-entrar" href="sistema-nr13.html" data-cta="docs-lateral">🚀 Conhecer o Sistema NR13</a>
+  </aside>
+
+  <article class="docs-conteudo">
+
+    <!-- ===================================================== COMEÇO -->
+    <h2 id="visao-geral">🎯 Visão geral</h2>
+    <p>
+      A <strong>NR-13</strong> exige que caldeiras e vasos de pressão sejam inspecionados por um profissional legalmente habilitado (PLH),
+      dentro de prazos, e que a empresa guarde a documentação de cada equipamento: prontuário, registro de segurança, relatórios de inspeção
+      e certificados dos dispositivos. O Sistema NR13 organiza esse trabalho e gera esses documentos a partir do que foi cadastrado e medido.
+    </p>
+    <p>Quatro ideias explicam quase tudo no sistema:</p>
+    <ul>
+      <li><b>Tudo pertence a um equipamento</b>, identificado pela <b>TAG</b>. Ficha, memorial, inspeções, relatórios, prontuário, registros e calibrações são sempre de uma TAG.</li>
+      <li><b>Campo e escritório são dois tempos.</b> No celular você preenche os ensaios da inspeção; no computador, gera o relatório, que puxa sozinho os dados de campo, da ficha, do memorial, da sua empresa e do cliente.</li>
+      <li><b>Rascunho é trabalho; finalizado é documento.</b> Enquanto é rascunho, tudo se edita. Ao finalizar, o sistema gera o PDF definitivo, calcula o <b>código de verificação (SHA-256)</b> e tranca o arquivo.</li>
+      <li><b>O sistema funciona sem internet.</b> O que você salva fica no aparelho e sobe sozinho para o servidor quando a conexão volta.</li>
+    </ul>
+
+    <h2 id="fluxo">🗺️ O fluxo completo</h2>
+    <p>A ordem do trabalho para cada equipamento. Cada caixa é uma etapa; embaixo, o que ela produz.</p>
+    <div class="fluxo" role="img" aria-label="Fluxo: cadastrar, calcular memorial, categorizar, inspecionar em campo, gerar relatório, finalizar e acompanhar prazos">
+      <div class="fluxo-passo"><span class="fluxo-n">1</span><b>Cadastrar</b><small>TAG, tipo, unidade, dados de placa</small><em>🗂️ Ficha</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">2</span><b>Calcular</b><small>casco, tampos, material, pressão</small><em>Σ Memorial (PMTA, PTH)</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">3</span><b>Categorizar</b><small>volume e classe do fluido</small><em>🏷️ Categoria I–V / A–B</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><span class="fluxo-n">4</span><b>Inspecionar</b><small>ensaios no celular, com fotos</small><em>📦 Container de inspeção</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">5</span><b>Gerar</b><small>assistente em 3 etapas</small><em>📄 Relatório em rascunho</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><span class="fluxo-n">6</span><b>Finalizar</b><small>laudo APTO/INAPTO, assinaturas</small><em>🔒 PDF + código SHA-256</em></div>
+      <div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><span class="fluxo-n">7</span><b>Acompanhar</b><small>próximas inspeções e validades</small><em>📊 Dashboard e vencimentos</em></div>
+    </div>
+    <p class="fluxo-nota">
+      Em paralelo, a qualquer momento: o <b>prontuário</b> (montado no sistema ou anexado em PDF), os <b>registros de segurança</b>
+      (manutenções, reparos, trocas de dispositivo) e as <b>calibrações</b> dos manômetros e válvulas do equipamento.
+    </p>
+
+    <h2 id="primeiros-passos">🚀 Primeiros passos</h2>
+    <p>No primeiro acesso, o quadro <b>“Comece por aqui”</b> aparece no canto da tela com sete passos. Cada passo só é marcado quando o dado existe de verdade — não basta abrir a tela.</p>
+    <ol class="passos">
+      <li><b>Cadastre os dados da sua empresa</b> em <a href="#meus-dados">Meus dados</a>: razão social, CNPJ, endereço e a <b>logo</b>, que saem no cabeçalho de todos os documentos.</li>
+      <li><b>Cadastre a equipe e o engenheiro responsável</b> em <a href="#equipe">Equipe</a>, com CREA e a imagem da assinatura.</li>
+      <li><b>Cadastre um cliente</b> em <a href="#clientes">Clientes</a> — a empresa dona do equipamento, que vira o contratante nos documentos.</li>
+      <li><b>Cadastre um equipamento</b> em <a href="#equipamentos">Equipamentos</a> e complete a ficha, o memorial e a categoria.</li>
+      <li><b>Crie uma inspeção</b> em <a href="#inspecoes">Inspeções</a> e preencha os ensaios em campo.</li>
+      <li><b>Gere o primeiro relatório</b> em <a href="#relatorios">Relatórios</a>.</li>
+      <li><b>Agende um serviço</b> na <a href="#agenda">Agenda</a>.</li>
+    </ol>
+    <p>Com os sete feitos, aparece <b>“Tudo pronto!”</b> e o quadro pode ser fechado em <b>Entendi</b>.</p>
+
+    <h2 id="menu">🧭 O menu</h2>
+    <p>O menu lateral é dividido em grupos. Os grupos recolhem com um clique, e o botão ☰ no topo encolhe o menu para só os ícones (no celular, ele abre o menu como gaveta).</p>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-menu.webp" alt="Menu lateral do Sistema NR13 com os grupos Operação, Documentos, Instrumentos e Cadastros e o item Info" width="430" height="744" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Operação</b> — <a href="#dashboard">Dashboard</a>, <a href="#agenda">Agenda</a>, <a href="#equipamentos">Equipamentos</a> (com a contagem) e <a href="#inspecoes">Inspeções</a>.</li>
+      <li><b>Documentos</b> — <a href="#relatorios">Relatórios</a>, <a href="#prontuarios">Prontuários</a> e <a href="#registros">Registros de Segurança</a>.</li>
+      <li><b>Instrumentos</b> — <a href="#calibracoes">Calibrações</a> (acessórios de cada equipamento) e <a href="#certificados">Certificados</a> (padrões de medição da empresa).</li>
+      <li><b>Cadastros</b> — <a href="#meus-dados">Meus dados</a>, <a href="#equipe">Equipe</a>, <a href="#clientes">Clientes</a> e <a href="#acessos">Acessos</a>. Meus dados e Acessos só aparecem para a conta principal.</li>
+      <li><b>Info</b> — a <a href="#info">central de ajuda</a>, visível para todos os acessos.</li>
+    </ol>
+
+    <h2 id="papeis">👥 Quem faz o quê</h2>
+    <p>A conta que contratou o sistema é a <b>conta principal (mestre)</b>. Ela cria logins para a equipe em <a href="#acessos">Acessos</a> e marca o que cada um pode ver. Os itens que a pessoa não pode usar somem do menu.</p>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Acesso</th><th>O que faz no sistema</th></tr></thead>
+        <tbody>
+          <tr><td>Administrador (conta principal)</td><td>Tudo, inclusive Meus dados (dados e logo da empresa) e Acessos (logins da equipe e dos clientes).</td></tr>
+          <tr><td>Gerente</td><td>Gerencia os equipamentos e vê quase tudo, exceto Meus dados e Acessos.</td></tr>
+          <tr><td>Inspetor</td><td>Preenche inspeções em campo. Não vê as fichas nem gera relatórios.</td></tr>
+          <tr><td>Personalizado</td><td>Você escolhe módulo por módulo o que o login pode ver e usar.</td></tr>
+          <tr><td>Cliente</td><td>Só o <a href="#portal">Portal do Cliente</a>: consulta, sem editar, os equipamentos e documentos finalizados da empresa dele.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout"><p>🔐 <b>Sessão única:</b> a mesma conta não fica aberta em dois aparelhos ao mesmo tempo. Ao entrar em outro aparelho, o anterior é desconectado com o aviso “Sua sessão foi encerrada”. Por isso, crie um login para cada pessoa.</p></div>
+    <div class="callout"><p>✍️ <b>Quem assina os documentos não precisa ter login.</b> Engenheiros e técnicos que assinam são cadastrados em <a href="#equipe">Equipe</a>; os logins de acesso ao sistema são outra coisa, criados em <a href="#acessos">Acessos</a>.</p></div>
+
+    <!-- ===================================================== OPERAÇÃO -->
+    <h2 id="dashboard">📊 Dashboard</h2>
+    <p>A primeira tela depois do login. Mostra os prazos de toda a empresa: inspeções dos equipamentos, calibrações dos acessórios e validade dos certificados dos padrões.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-dashboard.webp" alt="Dashboard do Sistema NR13 com indicadores de prazos vencidos, situação dos equipamentos, prazos por tipo e tabela de vencidos e a vencer" width="1378" height="744" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Prazos vencidos</b> — quantos itens já passaram do prazo, com o mais antigo em destaque. <b>Ver</b> abre a lista. Ao lado: <b>Vencendo nos próximos 30 dias</b> e <b>Equipamentos cadastrados sob NR-13</b>.</li>
+      <li><b>Taxa de conformidade</b> — a porcentagem de itens com prazo em dia.</li>
+      <li><b>Situação dos equipamentos</b> — barra com Vencido, Vence em até 30 dias, Em dia e Sem prazo calculado. Clique numa faixa para ver os equipamentos dela.</li>
+      <li><b>Prazos por tipo</b> — inspeções, calibrações e certificados, cada um com seus vencidos.</li>
+      <li><b>Vencidos e a vencer</b> — a lista de prazos, filtrável por origem (Todos, Inspeções, Calibrações, Certificados). Situação: <b>Crítico</b> (vencido), <b>Atenção</b> (até 30 dias), <b>Operacional</b> ou <b>Sem prazo</b>. Clique na linha para abrir o equipamento.</li>
+      <li><b>Exibindo prazos</b> — janela da lista: vencendo em até 15, 30, 60 ou 90 dias, ou só os vencidos.</li>
+      <li><b>Sincronização</b> — mostra se tudo já subiu para o servidor (<a href="#offline">veja abaixo</a>).</li>
+      <li><b>Sua conta</b> — o ponto vermelho no avatar avisa que há prazo vencido na empresa.</li>
+    </ol>
+    <p>Mais abaixo, o gráfico <b>Vencimentos por mês</b> mostra quantos prazos vencem em cada mês do ano escolhido.</p>
+    <div class="callout"><p>📌 <b>De onde vem o prazo de inspeção:</b> do <b>último relatório finalizado</b> do equipamento (a menor data entre “Próx. Interna” e “Próx. Externa”). Sem essas datas, o sistema usa a <a href="#prazos">vida remanescente</a>. Relatório em rascunho não gera prazo — <a href="#prazos">veja a regra completa</a>.</p></div>
+
+    <h2 id="agenda">📅 Agenda</h2>
+    <p>Os serviços agendados da sua empresa, com faturamento previsto e realizado. Abre na visão <b>Semana</b> (das 6h às 20h); também há <b>Dia</b> e <b>Mês</b>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-agenda.webp" alt="Agenda semanal com o resumo de faturamento e o formulário de novo serviço aberto" width="1378" height="656" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Faturamento do mês</b> — Previsto (serviços agendados), Realizado (concluídos) e o número de serviços. Cancelados ficam fora das contas; serviço sem valor aparece como “sem valor”, não como zero.</li>
+      <li><b>+ Novo serviço</b> — abre o formulário. Clicar num horário vazio da grade também cria um serviço naquele horário.</li>
+      <li><b>Visualização</b> — Semana, Dia ou Mês. As setas e <b>Hoje</b> navegam no calendário.</li>
+      <li><b>Tipo e Status</b> — Inspeção, Manutenção, Visita ou Lembrete; Agendado, Concluído ou Cancelado. O status decide se o valor entra em previsto ou realizado.</li>
+      <li><b>Equipamento (TAG) e Valor</b> — opcionais. O endereço, o responsável e o telefone do serviço vêm do cadastro do cliente escolhido.</li>
+    </ol>
+    <p>Só o <b>Título do serviço</b> é obrigatório. A Agenda é controle da sua empresa: ela não alimenta relatório, prontuário nem prazo de inspeção.</p>
+
+    <h2 id="equipamentos">🛢️ Equipamentos</h2>
+    <p>O cadastro de todos os equipamentos sob NR-13. Os mais novos aparecem primeiro, e a lista carrega mais conforme você rola.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-equipamentos.webp" alt="Lista de equipamentos com TAG, descrição, cliente, categoria, PMTA, PTH, vida remanescente e resultado do memorial" width="1378" height="702" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Tipo</b> — Todos, Vasos, Caldeiras ou Autoclaves, com a contagem de cada.</li>
+      <li><b>Busca</b> — por TAG, descrição, fabricante, nº de série ou cliente.</li>
+      <li><b>Filtrar</b> — tipo, categoria (I a V), cliente e fabricante.</li>
+      <li><b>Grade ou lista</b> — cartões com foto ou tabela. A escolha fica lembrada no aparelho.</li>
+      <li><b>Criar equipamento</b> — abre o cadastro (abaixo).</li>
+      <li><b>Categoria, PMTA e PTH</b> — PMTA e PTH são as <b>adotadas</b> na ficha (seção Pressões da Documentação), na unidade do equipamento.</li>
+      <li><b>Resultado</b> — o resultado do memorial de cálculo: Aprovado, Reprovado ou Pendente (sem memorial ou com campo faltando). A barra de <b>vida remanescente</b> aparece quando ela foi calculada.</li>
+    </ol>
+
+    <h3>Criar um equipamento</h3>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-criar-equipamento.webp" alt="Janela Criar Equipamento com TAG, tipo de equipamento e unidade de medida" width="360" height="558" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>TAG do equipamento</b> — a identificação única (ex.: V-200). O sistema grava em maiúsculas e não aceita TAG repetida.</li>
+      <li><b>Tipo</b> — Vaso de Pressão, Autoclave (cilíndrica, retangular, vertical de tampo removível ou de bancada) ou Caldeira (flamotubular, ASME Seção I).</li>
+      <li><b>Unidade de medida</b> — SI (MPa), Técnico (kgf/cm²) ou Petrobras (bar). Define como as pressões aparecem na ficha e nos documentos. <b>Não pode ser alterada depois.</b></li>
+    </ol>
+    <p>Ao criar, a ficha do equipamento abre direto.</p>
+
+    <h2 id="ficha">🗂️ Ficha do equipamento</h2>
+    <p>Tudo o que se sabe do equipamento, em seções empilhadas na mesma página. É dela que saem os dados da placa, da caracterização e do prontuário nos documentos.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-ficha.webp" alt="Ficha do vaso de pressão com resumo, foto de identificação, prontuário NR-13, categoria e memorial de cálculo" width="1378" height="702" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Resumo</b> — Categoria NR-13, PMTA adotada, vida remanescente, fabricante e volume.</li>
+      <li><b>Foto de identificação</b> — uma foto do equipamento (JPG ou PNG, tirada na hora ou da galeria). Ela vai para a <b>capa do relatório</b>. As fotos técnicas ficam nos ensaios da inspeção, não aqui.</li>
+      <li><b>Prontuário NR-13</b> — atalho para o <a href="#prontuarios">prontuário</a> deste equipamento: anexar um PDF existente ou criar em Prontuários.</li>
+      <li><b>Categoria NR-13</b> — enquadramento, classe do fluido, grupo de potencial de risco e categoria final (<a href="#categoria">como é calculada</a>). O lápis edita.</li>
+      <li><b>Memorial de Cálculo</b> — PMTA calculada, PTH, resultado e espessuras mínimas. <b>Ver</b> mostra as expressões; <b>Editar Memorial</b> abre a <a href="#memorial">calculadora</a>.</li>
+      <li><b>Excluir</b> — o sistema avisa que apaga a ficha, o memorial, as inspeções, os relatórios e os prontuários do equipamento, e que não é possível desfazer. O livro de registro de segurança permanece arquivado.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-ficha-pressoes.webp" alt="Seções Pressões da Documentação, Vida Remanescente e Dados do Equipamento e Empresa na ficha" width="1378" height="702" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Pressões da Documentação (Adotado)</b> — PMO, PMTA e PTH que você adota para as folhas do relatório (placa, prontuário, resumo de inspeções). Preenchidas, <b>valem no lugar das calculadas</b>; em branco, a documentação usa o cálculo. <b>Usar calculadas</b> copia os valores do memorial.</li>
+      <li><b>Vida Remanescente</b> — espessura anterior e atual, datas e espessura mínima requerida. O sistema já traz as duas medições mais recentes das inspeções (<a href="#prazos">veja o cálculo</a>).</li>
+      <li><b>Calcular e Salvar</b> — grava a vida remanescente e a próxima inspeção sugerida.</li>
+      <li><b>Dados da Empresa</b> — o cliente dono do equipamento. Escolha em <b>Selecionar empresa cadastrada</b>; sem esse vínculo, o equipamento não aparece no <a href="#portal">Portal do Cliente</a>.</li>
+    </ol>
+    <p>A seção <b>Dados do Equipamento</b> guarda nº de série, descrição, localização, fabricante, ano, código de projeto, edição, adenda e tipo de construção. A caixa <b>Ocultar datas de inspeção/validade na placa</b> controla a folha da placa de identificação.</p>
+    <div class="callout"><p>🔧 <b>Manômetros e válvulas de segurança</b> de vasos e autoclaves não ficam na ficha: eles são cadastrados como acessórios em <a href="#calibracoes">Calibrações</a>, onde têm validade, certificado e histórico.</p></div>
+
+    <h2 id="categoria">🏷️ Categoria NR-13 (vasos e autoclaves)</h2>
+    <p>No cartão <b>Categoria NR-13</b> você informa o <b>volume (m³)</b>, a <b>pressão</b> (já vem preenchida com a PMTA do memorial) e o <b>fluido de operação</b>, e clica em <b>Calcular Categoria</b>. O sistema faz três contas:</p>
+    <p class="formula"><b>Enquadramento:</b> P (kPa) × V (m³) &gt; 8 — ou fluido classe A, em qualquer P×V</p>
+    <p class="formula"><b>Grupo de potencial de risco:</b> P (MPa) × V (m³) → G1 ≥ 100 · G2 ≥ 30 · G3 ≥ 2,5 · G4 ≥ 1 · G5 &lt; 1</p>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Classe do fluido</th><th>Grupo 1</th><th>Grupo 2</th><th>Grupo 3</th><th>Grupo 4</th><th>Grupo 5</th></tr></thead>
+        <tbody>
+          <tr><td><b>A</b> — inflamável ou combustível a 200 °C ou mais, tóxico até 20 ppm, hidrogênio, acetileno</td><td>I</td><td>I</td><td>II</td><td>III</td><td>III</td></tr>
+          <tr><td><b>B</b> — combustível abaixo de 200 °C, tóxico acima de 20 ppm</td><td>I</td><td>II</td><td>III</td><td>IV</td><td>IV</td></tr>
+          <tr><td><b>C</b> — vapor de água, gases asfixiantes simples, ar comprimido</td><td>I</td><td>II</td><td>III</td><td>IV</td><td>V</td></tr>
+          <tr><td><b>D</b> — outro fluido</td><td>II</td><td>III</td><td>IV</td><td>V</td><td>V</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Se o equipamento não enquadra (P×V até 8 e fluido que não é classe A), a categoria sai como <b>N/A (Não Enquadra)</b>, com a explicação do item 13.2.1 da norma. Quando o memorial é salvo de novo, a categoria já calculada é refeita com a nova PMTA.</p>
+
+    <h2 id="memorial">Σ Memorial de cálculo</h2>
+    <p>Na ficha, <b>Calcular Memorial</b> (ou <b>Editar Memorial</b>) abre a calculadora. Ela calcula a espessura mínima requerida e a PMTA de cada parte do equipamento pelo código ASME.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-memorial.webp" alt="Tela do memorial de cálculo do vaso com desenho, elementos do vaso, pressão de projeto, diâmetro e botões Gerar cálculo e Salvar memorial" width="1378" height="702" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Vertical ou Horizontal</b> — a orientação do vaso. Ela muda o nome dos tampos (inferior e superior, ou esquerdo e direito).</li>
+      <li><b>Elementos do vaso</b> — tampo, casco cilíndrico e tampo. Clique no item (ou na parte do desenho) para informar tipo, material, tensão admissível S, eficiência de junta E, espessura comercial, sobreespessura de corrosão e temperatura. Cada um mostra “A conferir” até ser preenchido.</li>
+      <li><b>Adicionar bocal</b> — opcional: verificação de abertura e reforço (UG-37).</li>
+      <li><b>Pressão de projeto e diâmetro interno</b> — os dados gerais do cálculo.</li>
+      <li><b>Gerar cálculo</b> — calcula e mostra o memorial abaixo, com o resultado de cada parte.</li>
+      <li><b>Salvar memorial</b> — grava. O sistema avisa se você tentar sair sem salvar.</li>
+    </ol>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Equipamento</th><th>Código e partes</th><th>PMTA e teste</th></tr></thead>
+        <tbody>
+          <tr><td>Vaso de pressão</td><td>ASME VIII Div. 1 — casco (UG-27), tampos elíptico, torisférico, hemisférico, cônico (UG-32) e plano soldado ou aparafusado (UG-34), bocais (UG-37)</td><td>PMTA = a <b>menor</b> entre as partes · PTH = 1,3 × PMTA</td></tr>
+          <tr><td>Autoclave</td><td>Por subtipo: cilíndrica, retangular (placas estaiadas), vertical e de bancada; pode incluir o gerador de vapor</td><td>Conforme o subtipo</td></tr>
+          <tr><td>Caldeira</td><td>ASME Seção I — costado (PG-27.2.2), tubos (PG-27.2.1) e espelhos (PG-46.1)</td><td>PMTA = pressão de projeto · TH = 1,5 × PMTA</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Cada parte é <b>aprovada</b> quando a espessura útil (comercial menos corrosão) é maior ou igual à requerida e a PMTA dela é maior ou igual à pressão de projeto. O resultado geral só é <b>Aprovado</b> se todas forem. O memorial não tem emissão própria: ele entra no relatório (folhas Resumo do Memorial e Memorial de Cálculo) e no prontuário.</p>
+
+    <h2 id="caldeira">🔥 Caldeiras</h2>
+    <p>A ficha da caldeira tem seções próprias. A principal é a <b>Classificação NR-13 da caldeira</b>, feita em três passos.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-caldeira-classificacao.webp" alt="Classificação NR-13 da caldeira com volume, espessura mensurada e categoria B" width="990" height="606" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Volume</b> — corpo, tampos, menos os tubos de gases e a fornalha. Se você tem o volume da placa ou do manual, informe em <b>Total</b>: ele vale no lugar da soma.</li>
+      <li><b>Espessura mensurada</b> — máxima e mínima de cada região, vindas das medições de espessura das inspeções.</li>
+      <li><b>Categoria</b> — <b>A</b> com pressão de 1.960 kPa (19,98 kgf/cm²) ou mais; <b>B</b> abaixo disso. Fora da NR-13 se a pressão for até 60 kPa ou o volume for menor que 100 L.</li>
+      <li><b>Falta</b> — o que ainda impede a classificação completa.</li>
+      <li><b>Lápis</b> — escolhe a pressão usada para classificar: a PMO (padrão da norma) ou a PMTA.</li>
+    </ol>
+    <p>Também na ficha da caldeira: dados de placa (modelo, capacidade de vapor, área de aquecimento), e os blocos recolhíveis <b>Construção</b>, <b>Operação</b> e <b>Instrumentos de segurança e acessórios</b>, que alimentam as folhas próprias da caldeira no relatório. Com 25 anos ou mais de fabricação, o sistema lembra da avaliação de integridade ampliada (13.4.4.6).</p>
+
+    <h2 id="prazos">⏳ Vida remanescente e prazos</h2>
+    <p>O cartão <b>Vida Remanescente (taxa de corrosão)</b> da ficha compara duas medições de espessura:</p>
+    <p class="formula"><b>Taxa de corrosão</b> = (esp. anterior − esp. atual) ÷ anos entre as medições</p>
+    <p class="formula"><b>Vida remanescente</b> = (esp. atual − esp. mínima requerida) ÷ taxa</p>
+    <p class="formula"><b>Próxima inspeção</b> = o menor entre metade da vida e o teto da categoria</p>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Categoria</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th><th>Caldeira</th></tr></thead>
+        <tbody><tr><td>Teto da próxima inspeção</td><td>3 anos</td><td>4 anos</td><td>6 anos</td><td>8 anos</td><td>10 anos</td><td>12 meses</td></tr></tbody>
+      </table>
+    </div>
+    <p>Se a espessura atual já está abaixo da mínima, a vida é zero e o sistema indica reprovar ou reparar. Com só uma medição salva, a espessura anterior vem da nominal e a data, do ano de fabricação — confira antes de salvar.</p>
+    <div class="callout"><p>📅 <b>Qual data vale no Dashboard:</b> primeiro, as datas de <b>Próx. Interna</b> e <b>Próx. Externa</b> que você informa nas <a href="#editor">Configurações do relatório</a> — vale a menor, do último relatório <b>finalizado</b>. Só sem essas datas o sistema usa a próxima inspeção da vida remanescente. Para caldeira, as Configurações têm o botão <b>Sugerir</b>, que propõe 12 meses após a execução (prazo da NR-13 13.4.4.4 a); prazos maiores dependem de condições da norma e são decididos pelo engenheiro.</p></div>
+
+    <!-- ===================================================== INSPEÇÕES -->
+    <h2 id="inspecoes">📋 Inspeções e containers</h2>
+    <p>A tela de Inspeções lista os equipamentos com a quantidade de inspeções de cada um — os mais inspecionados no topo. É a tela que o inspetor usa em campo, pelo celular.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-inspecoes.webp" alt="Lista de inspeções por equipamento com a quantidade de inspeções, cliente, categoria e PMTA" width="1150" height="702" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Tipo</b> — Todos, Vasos, Caldeiras ou Autoclaves.</li>
+      <li><b>Busca</b> — por TAG, equipamento, fabricante ou cliente.</li>
+      <li><b>Criar nova inspeção</b> — escolha o equipamento e o sistema já abre a criação do container.</li>
+      <li><b>Inspeções</b> — quantas rodadas o equipamento já tem. Clique na linha para ver os containers dele.</li>
+    </ol>
+    <p>Um <b>container de inspeção</b> é uma <b>rodada</b> de inspeção do equipamento: ele agrupa os ensaios que serão feitos em campo e guarda o que foi preenchido em cada um. As rodadas anteriores continuam inteiras.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-containers.webp" alt="Containers de inspeção do equipamento V-310 com os ensaios atribuídos a cada rodada" width="1120" height="590" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>+ Nova Inspeção</b> — cria um container novo.</li>
+      <li><b>Ensaios do container</b> — as etiquetas coloridas mostram os ensaios atribuídos. Clique no cartão para abrir.</li>
+      <li><b>Renomear</b> — muda só o nome; os ensaios e o vínculo com relatórios continuam.</li>
+      <li><b>Excluir</b> — pede confirmação no próprio cartão.</li>
+      <li><b>(i)</b> — explica como os containers funcionam.</li>
+    </ol>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-nova-inspecao.webp" alt="Janela Nova Inspeção com nome do container e ensaios a atribuir" width="392" height="564" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Nome do container</b> — ex.: “Inspeção periódica 2026”. Em branco, vira “Inspeção de dd/mm/aaaa”.</li>
+      <li><b>Ensaios a atribuir</b> — marque os que serão feitos. Vasos e autoclaves: Checklist Completo de Inspeção (NR-13), Medição de Espessura (Ultrassom), Inspeção Visual Externa, Inspeção Visual Interna, Teste Hidrostático / Estanqueidade e Relatório de Imagens. Caldeiras têm também Ensaio de Acumulação, Verificação NR-13 da Caldeira e Alimentação de Água e Controle de Nível.</li>
+      <li><b>Criar Container</b> — só libera com pelo menos um ensaio marcado.</li>
+    </ol>
+    <div class="callout"><p>⚠️ Escolha bem os ensaios ao criar: <b>não dá para acrescentar ensaio a um container já criado</b>. Se faltou algum, crie outro container para aquele ensaio.</p></div>
+
+    <h2 id="container">📦 Dentro do container</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-container.webp" alt="Container aberto com cinco ensaios preenchidos e os botões Ver documento, Ver preenchido e Editar" width="1120" height="470" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Pendente ou Preenchido</b> — a situação de cada ensaio. Marcar o ensaio na criação só o <b>atribui</b>: ele entra no relatório depois de preenchido e salvo.</li>
+      <li><b>Ver documento</b> — mostra como o ensaio sai no relatório, em uma prévia avulsa (que não é arquivada).</li>
+      <li><b>Ver preenchido</b> — resumo do que foi respondido, sem abrir o formulário.</li>
+      <li><b>Preencher / Editar</b> — abre o formulário do ensaio.</li>
+    </ol>
+    <p>Em todos os formulários:</p>
+    <ul>
+      <li><b>Salvamento automático</b> cerca de 1 segundo depois de cada alteração e ao voltar. O botão de salvar no rodapé confirma com “Salvo”.</li>
+      <li><b>Campos preenchidos do cadastro</b> — TAG, cliente, endereço, fabricante, pressões e dados do instrumento vêm da ficha, do memorial e dos certificados. Você pode corrigir no ensaio sem mexer no cadastro.</li>
+      <li><b>Resultado do Ensaio</b> — nos exames visuais, ultrassom, teste hidrostático e ensaios de caldeira há os botões <b>APROVADO</b> / <b>REPROVADO</b>. O resultado vai para o “Resumo do que foi inspecionado” do relatório.</li>
+    </ul>
+
+    <h2 id="checklist">☑️ Checklist NR-13</h2>
+    <p>Dentro do container ele aparece como <b>Checklist de Inspeção Visual</b>. É a verificação da documentação e das condições gerais do equipamento, em seções que abrem e fecham.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-checklist.webp" alt="Formulário do checklist com dados gerais e a seção Verificação da Documentação Existente" width="830" height="689" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Inspecionado por</b> — o PLH ou inspetor que fez a inspeção. A data vem com o dia de hoje.</li>
+      <li><b>Seções</b> — 5.1 Verificação da Documentação Existente, 5.2 Resultados da Inspeção, Exame do Prontuário e Registro de Segurança, Exame Externo, Exame Interno, Ensaio Hidrostático, Instrumentos de Controle Instalados e Observações.</li>
+      <li><b>Respostas</b> — na documentação: Existe, Não identificado ou Não aplica; nas demais: Sim, Não ou N/A.</li>
+      <li><b>Observação</b> — opcional, em cada pergunta.</li>
+      <li><b>Salvar Checklist</b> — confirma o salvamento.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-instrumentos.webp" alt="Seção Instrumentos de Controle Instalados com manômetro, termômetro, vacuômetro, pressostato, transmissor e válvula de segurança" width="710" height="558" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Instrumento instalado</b> — manômetro, termômetro, vacuômetro, pressostato, transmissor de pressão e válvula de segurança (PSV). Ao marcar, aparece <b>Vincular calibração</b>, que busca a calibração cadastrada em <a href="#calibracoes">Calibrações</a>.</li>
+      <li><b>Calibrado dentro da validade</b> — com calibração vinculada, o sistema decide sozinho: dentro da validade, vencida na data da inspeção ou reprovada.</li>
+      <li><b>Não possui nenhum instrumento de controle</b> — quando o equipamento não tem nenhum.</li>
+    </ol>
+    <p>O checklist tem duas áreas de fotos: <b>Registro Fotográfico da Documentação</b> e <b>Registro Fotográfico do Checklist</b>. No relatório, ele vira as folhas Verificação da documentação, Checklist e as duas folhas de fotos.</p>
+
+    <h2 id="fotos">📷 Fotos e descrições</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-fotos.webp" alt="Editor de fotos com descrição, setas de ordem, trocar imagem e remover" width="710" height="638" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Descrição</b> — o texto que sai embaixo da foto no relatório. Cada foto tem a sua, e ela acompanha a foto se a ordem mudar.</li>
+      <li><b>Setas</b> — mudam a ordem das fotos (Foto 01, Foto 02…).</li>
+      <li><b>Trocar imagem</b> — no celular pergunta Galeria ou Câmera, e mantém a descrição.</li>
+      <li><b>Remover</b> — tira a foto deste rascunho, com confirmação.</li>
+    </ol>
+    <p><b>+ Adicionar foto</b> aceita várias de uma vez e, no celular, oferece a câmera. Enquanto as fotos são processadas o botão de salvar espera por elas. A foto é comprimida, guardada primeiro no aparelho e enviada ao servidor em seguida — sem sinal, ela sobe depois. No relatório, cabem <b>4 fotos por folha</b>; com mais fotos, o sistema cria folhas extras.</p>
+
+    <h2 id="visual">👁️ Exame visual externo e interno</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-visual-externo.webp" alt="Itens de verificação da inspeção visual externa com SIM, NÃO e N.A. e o resultado de não conformidades" width="710" height="638" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Revise as respostas</b> — só aparece em exames preenchidos antes da pergunta atual existir. Confira e clique em <b>Revisei</b>; sem isso, o relatório não finaliza.</li>
+      <li><b>Resultado</b> — resumo ao vivo: quantas não conformidades e em quais itens.</li>
+      <li><b>SIM = há não conformidade</b> (vermelho). Atenção: aqui SIM é o lado ruim.</li>
+      <li><b>Descreva a não conformidade</b> — obrigatório para cada SIM. Não trava o campo, mas impede finalizar o relatório.</li>
+      <li><b>NÃO = conforme</b> (verde). N.A. = não se aplica.</li>
+    </ol>
+    <p>São 15 itens no externo (juntas, fixação, soldas, suportes, drenagem, alívio de pressão, indicadores de pressão, placa, acessibilidade, ventilação…) e 15 no interno (paredes, trincas, incrustações, erosão, soldas internas, corrosão sob tensão, pite, bocas de inspeção…). A caldeira tem a sua própria lista. Depois dos itens: <b>Observações Gerais</b>, <b>Conclusão Técnica</b>, resultado e fotos.</p>
+    <div class="callout"><p>📝 As não conformidades dos exames saem descritas no relatório, mas <b>as recomendações não são criadas sozinhas</b>: escreva-as na folha de conclusão, na tabela <b>Recomendações de Segurança</b> (dá para guardar textos que se repetem em <a href="#editor">Predefinições</a>).</p></div>
+
+    <h2 id="ultrassom">📏 Medição de espessura (ultrassom)</h2>
+    <p>Os dados do componente (espessura nominal, material, ano) vêm da ficha e do memorial; os do ensaio (aparelho, acoplante, cabeçote, velocidade sônica) vêm do <a href="#certificados">certificado do bloco padrão</a>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-ultrassom.webp" alt="Medidas encontradas por região com pontos na circunferência e linhas do casco" width="710" height="638" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Pontos na circunferência</b> — de 1 a 12 por região (padrão 4: 0°, 90°, 180° e 270°).</li>
+      <li><b>Regiões</b> — tampo superior, costado (casco) e tampo inferior. O casco aceita várias linhas (Casco 1, 2, 3…); a caldeira tem corpo, fornalha, chaminé, parede da reversão e espelhos.</li>
+      <li><b>+ ponto / Remover ponto</b> — acrescenta ou tira linhas do casco.</li>
+    </ol>
+    <div class="callout"><p>📐 <b>Como a medição é avaliada:</b> no relatório, cada região é comparada com a <b>espessura mínima requerida do memorial</b>. Leitura abaixo da mínima sai em <b>vermelho</b>. O APROVADO/REPROVADO do ensaio é marcado por você no formulário. As medições também alimentam a <a href="#prazos">vida remanescente</a> e a folha de espessura do <a href="#prontuarios">prontuário</a>.</p></div>
+
+    <h2 id="th">💧 Teste hidrostático</h2>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-th.webp" alt="Informações gerais do teste hidrostático com pressão de projeto, de trabalho e de teste e fluido" width="710" height="625" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Pressão de Projeto</b> — vem travada do memorial de cálculo.</li>
+      <li><b>Pressão de Teste</b> — sugerida pela PTH; a de trabalho vem da PMO adotada. Sempre na unidade do equipamento.</li>
+      <li><b>Fluido de Teste</b> — informe o fluido usado no teste (o sistema avisa se ficou o fluido de operação).</li>
+      <li><b>Condições do Ensaio</b> — duração, temperatura, normas de referência (ASME VIII Div. 1 / NR-13 por padrão), validade do laudo e procedimento aplicado.</li>
+    </ol>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-th-curva.webp" alt="Curva de pressurização e estabilização com pontos de tempo e pressão" width="710" height="580" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Pontos da curva</b> — cada ponto é um instante do teste.</li>
+      <li><b>Tempo (min) e Pressão</b> — viram o gráfico de pressurização e estabilização do laudo.</li>
+      <li><b>Remover ponto</b> — e <b>+ Adicionar Ponto</b> no fim da lista.</li>
+    </ol>
+    <p>Depois: <b>Parecer Técnico</b>, resultado e fotos — sem limite de fotos, 4 por folha de evidência.</p>
+
+    <h2 id="ensaios-caldeira">🔥 Ensaios de caldeira e relatório de imagens</h2>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Ensaio</th><th>O que se preenche</th><th>Regras</th></tr></thead>
+        <tbody>
+          <tr><td>Ensaio de Acumulação</td><td>Parâmetros, instrumento (vincule a calibração do manômetro), início e término, pressão máxima atingida, suficiência das válvulas, laudo e fotos</td><td>Término depois do início; pressão acima da PMTA com APROVADO bloqueia; calibração vencida gera alerta</td></tr>
+          <tr><td>Verificação NR-13 da Caldeira</td><td>Itens por grupo (dispositivos obrigatórios, identificação, documentação, instalação, operação, válvulas) com Atende / Não atende / N.A.</td><td>“Não atende” exige o que foi encontrado e sai em “Itens da NR-13 não atendidos”</td></tr>
+          <tr><td>Alimentação de Água e Controle de Nível</td><td>Bomba principal, alimentação independente, controle automático, alarme de nível baixo, intertravamento e visores</td><td>Falha no intertravamento impede APROVADO</td></tr>
+          <tr><td>Relatório de Imagens</td><td>Data, observação geral e imagens com título e descrição</td><td>Para emitir: ao menos uma imagem e todas descritas</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================================================== DOCUMENTOS -->
+    <h2 id="relatorios">📄 Relatórios</h2>
+    <p>Todos os relatórios de inspeção de segurança NR-13 da empresa — rascunhos e finalizados.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-relatorios.webp" alt="Lista de relatórios com rascunhos e finalizados, TAG, criação, validade e ações" width="1150" height="388" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Todos, Rascunhos, Finalizados</b> — recortes rápidos. A busca acha por TAG, equipamento, nome ou número do relatório.</li>
+      <li><b>Período e tipo</b> — este mês, este ano, últimos 12 meses, tipo de inspeção, situação, cliente e arquivados.</li>
+      <li><b>Rascunho</b> — ações: continuar editando, editar nome e excluir (definitivo).</li>
+      <li><b>Finalizado</b> — o PDF já está arquivado.</li>
+      <li><b>Ações do finalizado</b> — visualizar, editar o nome, <b>duplicar</b> e arquivar.</li>
+      <li><b>Criar relatório</b> — abre o assistente.</li>
+    </ol>
+
+    <h2 id="criar-relatorio">➕ Criar relatório</h2>
+    <p>Depois de escolher o equipamento, o assistente <b>Configurar novo relatório</b> tem três etapas: <b>Inspeção → Certificados → Resumo</b>.</p>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-relatorio-inspecao.webp" alt="Etapa Inspeção do assistente de relatório com tipo de inspeção e escolha do container" width="556" height="636" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Etapas</b> — o progresso do assistente.</li>
+      <li><b>Tipo de inspeção</b> — Inicial, Periódica (padrão) ou Extraordinária.</li>
+      <li><b>Selecione a inspeção</b> — o container de onde vêm os dados de campo. Cada um mostra a data, quem inspecionou e quantos ensaios têm dados. Há também <b>Não usar container</b>, para gerar sem dados de campo.</li>
+      <li><b>Olho</b> — mostra o conteúdo do container antes de escolher.</li>
+      <li><b>Próximo</b> — segue para Certificados: os lotes ou calibrações avulsas do equipamento, que entram como folhas no fim do relatório.</li>
+    </ol>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-relatorio-resumo.webp" alt="Etapa Resumo do assistente com ensaios que saem no documento e lista de documentos gerados" width="622" height="636" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Desmarque o ensaio</b> que não deve sair no documento.</li>
+      <li><b>Documentos que serão gerados</b> — as folhas: capa, sumário, placa de identificação, caracterização, prontuário, resumo do memorial, memorial de cálculo, inspeções, verificação de documentação, checklist, exames externo e interno, conclusão, laudo de ultrassom, teste hidrostático e relatório de imagens. Folha sem dado na inspeção é avisada (“sai em branco”).</li>
+      <li><b>Ajustar documentos</b> — marca e desmarca folhas; <b>Restaurar padrão</b> volta ao início.</li>
+      <li><b>Gerar documento</b> — cria o relatório em <b>rascunho</b> e abre o editor.</li>
+    </ol>
+
+    <h2 id="editor">✏️ Revisar o rascunho</h2>
+    <p>O relatório abre como <b>rascunho</b>: a prévia mostra o documento inteiro, mas ainda não gera PDF oficial, nem prazo, nem entra no Portal.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-editor.webp" alt="Editor do relatório em rascunho com a barra de ferramentas e a capa do relatório de inspeção de segurança" width="1378" height="528" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Rascunho</b> — o selo do documento em edição (e “Cópia de…”, quando é uma duplicação).</li>
+      <li><b>Atualizar</b> — refaz a prévia depois de mudanças.</li>
+      <li><b>O que falta</b> — lista os campos em branco no documento, para você completar.</li>
+      <li><b>Laudo</b> — marca o resultado: <b>SIM — APTO</b> (pode continuar operando) ou <b>NÃO — INAPTO</b>.</li>
+      <li><b>Salvar rascunho</b>.</li>
+      <li><b>Finalizar relatório</b> — <a href="#finalizar">veja abaixo</a>.</li>
+      <li><b>⋯</b> — Imprimir pré-visualização, Baixar PDF e <b>Configurações</b>.</li>
+    </ol>
+    <p>Também na barra: <b>Predefinições</b>, conjuntos de textos reutilizáveis da empresa (por exemplo, recomendações que se repetem), aplicados com <b>Usar neste relatório</b>. E dá para <b>clicar em qualquer texto do documento</b> e escrever direto nele — a mudança vale só para este relatório, sem alterar o cadastro.</p>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-configuracoes.webp" alt="Configurações do relatório com número, emissão, validade, execução, próximas inspeções, ART e assinantes" width="458" height="414" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Datas</b> — Emissão, Validade, Execução Insp., <b>Próx. Interna</b> e <b>Próx. Externa</b>. As próximas são as que alimentam o <a href="#dashboard">Dashboard</a>. Na caldeira, o botão <b>Sugerir</b> propõe o prazo da NR-13.</li>
+      <li><b>Nº da A.R.T.</b> — a ART desta inspeção (na caldeira, dá para anexar o PDF dela).</li>
+      <li><b>Engenheiro (assina)</b> e <b>Técnico (assina)</b> — escolhidos entre os cadastrados em <a href="#equipe">Equipe</a>. Também: quem assina o termo do livro de registro.</li>
+      <li><b>Aplicar ao documento</b> — sem clicar aqui, as mudanças não entram no relatório.</li>
+    </ol>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-laudo.webp" alt="Janela Laudo da conclusão com SIM APTO e NÃO INAPTO" width="425" height="248" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>SIM — APTO</b> — o equipamento pode continuar operando.</li>
+      <li><b>NÃO — INAPTO</b> — não reúne as condições de segurança. O laudo é obrigatório para finalizar.</li>
+    </ol>
+
+    <h2 id="finalizar">🔒 Finalizar e código de verificação</h2>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-finalizar.webp" alt="Janela Finalizar relatório com nome do documento, aviso de ação irreversível e itens para revisar" width="506" height="402" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Nome do documento</b> — como o relatório aparece na lista e no arquivo baixado.</li>
+      <li><b>Esta ação é irreversível</b> — o sistema gera o PDF definitivo, calcula o código de verificação (SHA-256) e tranca o documento.</li>
+      <li><b>Antes de finalizar, revise</b> — avisos que não impedem (saem em branco). Os que impedem aparecem em <b>Falta preencher para poder finalizar</b>.</li>
+      <li><b>Finalizar relatório</b>.</li>
+    </ol>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Impede finalizar</th><th>Só avisa</th></tr></thead>
+        <tbody>
+          <tr><td>Número do relatório, data de emissão ou tipo de inspeção em branco</td><td>Validade, execução, próximas inspeções interna e externa</td></tr>
+          <tr><td>Engenheiro responsável não selecionado</td><td>Técnico não selecionado</td></tr>
+          <tr><td>Laudo APTO / INAPTO não marcado</td><td>Dados do teste hidrostático (pressão, data, resultado, fluido)</td></tr>
+          <tr><td>Não conformidade sem descrição nos exames visuais, ou exame antigo não revisado</td><td>Observação ou resultado dos exames; aparelho ou resultado do ultrassom</td></tr>
+          <tr><td>Relatório de imagens sem foto ou descrição; itens de caldeira “não atende” sem constatação; acumulação com erro</td><td>Certificado da válvula de segurança não vinculado (a NR-13 pede o número dele no relatório)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>O PDF é gerado, recebe o código e é guardado. Se algo falhar no meio, nada é salvo e você tenta de novo. Sem internet, o documento fica no aparelho e sobe quando a conexão voltar.</p>
+
+    <h2 id="relatorio-emitido">📁 Relatório emitido</h2>
+    <p>O relatório finalizado abre o <b>arquivo arquivado</b>: o mesmo PDF gerado na emissão, sem ser remontado.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-relatorio-final.webp" alt="Visualizador do relatório finalizado com selo Arquivado e código de verificação SHA-256 no rodapé" width="1378" height="656" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Arquivado</b> — selo do documento emitido; ao lado, abrir em outra aba, imprimir e baixar o PDF.</li>
+      <li><b>Código de verificação</b> — o SHA-256 do arquivo, com o número de páginas. Qualquer alteração no PDF muda esse código, então ele comprova que o arquivo é o mesmo que foi emitido.</li>
+      <li><b>Páginas</b> — navegação e zoom.</li>
+    </ol>
+    <ul>
+      <li><b>Corrigir um relatório finalizado:</b> use <b>Duplicar</b>. Nasce um rascunho novo, editável, com os dados de inspeção copiados; emissão, datas, validade e ART começam em branco. O original não muda.</li>
+      <li><b>Editar nome</b> muda só como aparece na lista; o PDF e o código continuam os mesmos.</li>
+      <li><b>Arquivar</b> tira da lista, mas não apaga: o prazo, o Portal e o histórico continuam valendo. Para rever, use o filtro “Arquivados”. Relatório finalizado não se exclui.</li>
+    </ul>
+
+    <h2 id="prontuarios">📘 Prontuários</h2>
+    <p>O prontuário reúne os dados construtivos do equipamento: projeto, materiais, dimensões, croqui, categorização e memorial. Cada equipamento tem <b>um prontuário vigente</b>, e as versões anteriores ficam no histórico.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-prontuarios.webp" alt="Lista de prontuários com prontuário vigente, PDF anexado, revisões, histórico e situação" width="1140" height="298" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Todos, Emitidos, Rascunhos</b> — recortes; <b>Filtrar</b> por tipo, cliente e categoria.</li>
+      <li><b>PDF anexado</b> — prontuário existente enviado em PDF, que entra como está.</li>
+      <li><b>Rev. 02 · Histórico</b> — a revisão vigente e as anteriores, guardadas só para consulta.</li>
+      <li><b>Criar prontuário</b> — escolha o equipamento; o formulário abre com os dados da ficha. O botão ao lado anexa um prontuário existente (só PDF, até 8 MB).</li>
+      <li><b>Emitido</b> — “+ rascunho” indica uma nova revisão em andamento.</li>
+    </ol>
+    <p>Há dois caminhos:</p>
+    <div class="fluxo fluxo-compacto" role="img" aria-label="Prontuário: montar no sistema e emitir, ou anexar PDF existente">
+      <div class="fluxo-passo"><b>Montar</b><small>formulário com dados da ficha</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Salvar rascunho</b><small>completa aos poucos</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Visualizar</b><small>prévia, não grava nada</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><b>Emitir</b><small>PDF + código · Rev. 01, 02…</small></div>
+    </div>
+    <p class="fluxo-nota">Ou: <b>Anexar prontuário existente</b> — o PDF do fabricante ou de uma reconstituição anterior vira o prontuário vigente, sem passar pelo formulário.</p>
+    <p>O formulário tem as seções <b>Empresa proprietária</b>, <b>Identificação do vaso de pressão</b>, <b>Dados do projeto</b>, <b>Especificações dos materiais</b>, <b>Dimensões e croqui 2D</b>, <b>Medição de espessura</b> (escolha o container de onde vem a espessura), <b>Revisão</b> e <b>Responsabilidade técnica</b>. Campos com selo de automático vêm do memorial, da ficha ou do cliente e podem ser alterados. O PDF emitido tem as folhas Identificação, Dados técnicos e categorização, Medição de espessura, Croqui 2D cotado e Resumo do memorial.</p>
+    <div class="callout"><p>📐 <b>Croqui 2D:</b> para vasos de pressão, o botão <b>Croqui 2D do Equipamento</b> abre um editor que desenha o vaso a partir do memorial (diâmetro, espessuras, tampos, material) e você completa com comprimento, virolas, bocais e suportes. O croqui e a folha de dados vão para o prontuário.</p></div>
+    <p><b>Emitir de novo não sobrescreve:</b> cada emissão cria uma revisão nova, e a anterior continua no histórico.</p>
+
+    <h2 id="registros">📒 Registros de Segurança</h2>
+    <p>O livro de registro de segurança de cada equipamento (NR-13, 13.4.1.8 para caldeiras e 13.5.1.7 para vasos): inspeções, manutenções, reparos e demais ocorrências, em ordem cronológica. A lista mostra os equipamentos que já têm registros; abra um para ver a linha do tempo.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-livro.webp" alt="Livro de Registro de Segurança do V-310 com capa, termo de abertura, cadeia íntegra e registros lacrados" width="1180" height="558" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Novo registro</b> — lança uma ocorrência.</li>
+      <li><b>Exportar PDF</b> — o livro completo, com capa e termo de abertura. <b>Ver livro completo</b> mostra na tela.</li>
+      <li><b>Cadeia íntegra</b> — cada registro trancado tem um lacre (SHA-256) ligado ao anterior. Se algo fosse alterado, o selo mudaria para “Cadeia não confere”.</li>
+      <li><b>Capa do Livro</b> e <b>Termo de Abertura</b> — identificação e classificação do equipamento e o termo exigido pela norma.</li>
+      <li><b>Registro lacrado</b> — número sequencial, data, tipo, texto, lacre e “Íntegro”.</li>
+      <li><b>Abrir livro</b> — lavra um termo de abertura (primeiro livro, livro anterior perdido ou encerrado).</li>
+    </ol>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-novo-registro.webp" alt="Janela Novo registro com data e tipo de ocorrência, o que foi feito, descrição e texto que sai no livro" width="556" height="658" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Data e Tipo de ocorrência</b> — obrigatórios. Tipos: manutenção corretiva ou preventiva, reparo, substituição de dispositivo, ajuste/calibração, outra ocorrência e abertura de livro.</li>
+      <li><b>O que foi feito</b> — obrigatório, uma linha do jeito que deve aparecer no livro.</li>
+      <li><b>Texto que sai no livro</b> — o sistema sugere um texto; você pode reescrever.</li>
+      <li><b>Salvar rascunho</b> — o registro nasce como rascunho; abaixo, “Quem realizou” e o responsável técnico que assina.</li>
+    </ol>
+    <div class="fluxo fluxo-compacto" role="img" aria-label="Registro: rascunho, trancar, lacrado">
+      <div class="fluxo-passo"><b>Rascunho</b><small>edita e exclui à vontade</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Trancar</b><small>data, tipo e descrição obrigatórios</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><b>Lacrado</b><small>numerado, oficial, visível no Portal</small></div>
+    </div>
+    <div class="callout"><p>✍️ <b>Os registros são lançados por você.</b> Finalizar um relatório não cria um registro sozinho: depois da inspeção, lance o registro dela no livro do equipamento. Registro trancado não se edita nem se apaga.</p></div>
+
+    <!-- ===================================================== INSTRUMENTOS -->
+    <h2 id="calibracoes">🎚️ Calibrações</h2>
+    <p>Os acessórios <b>de cada equipamento</b> — manômetros, válvulas de segurança (PSV), termômetros, vacuômetros, pressostatos, malhas de pressão (transmissores) e termostatos — e as calibrações deles. A lista mostra cada equipamento com o próximo vencimento; os recortes separam Em dia, A vencer e Vencidas.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-calibracoes.webp" alt="Calibrações do AC-01 com acessórios termostato, transmissor e pressostato, cada um com última calibração, próxima e certificado" width="1150" height="478" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Calibrar acessórios / Calibrações realizadas</b> — os acessórios do equipamento e o histórico de certificados.</li>
+      <li><b>Adicionar acessório</b> — nome (ex.: PSV-01), fabricante, modelo, nº de série, faixa, set point, local e foto. Cadastra uma vez só.</li>
+      <li><b>Situação</b> — Em dia, A vencer (30 dias), Vencido, Reprovado ou Rascunho em aberto, com a última e a próxima calibração.</li>
+      <li><b>Calibrar</b> — abre o formulário de calibração do acessório.</li>
+      <li><b>Histórico</b> — as calibrações anteriores.</li>
+      <li><b>Nova calibração</b> — escolhe o equipamento e o acessório.</li>
+    </ol>
+    <div class="fluxo fluxo-compacto" role="img" aria-label="Calibração: acessório, lote, calibrar, emitir certificado, usar no relatório">
+      <div class="fluxo-passo"><b>Acessório</b><small>cadastrado no equipamento</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Lote</b><small>a rodada daquela inspeção</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>Calibrar</b><small>padrão, condições, resultados</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo fluxo-destaque"><b>Emitir certificado</b><small>PDF + código</small></div><div class="fluxo-seta" aria-hidden="true">→</div>
+      <div class="fluxo-passo"><b>No relatório</b><small>etapa Certificados</small></div>
+    </div>
+    <p>No formulário: número do certificado (sugerido), data da calibração e <b>próxima calibração</b> (sugerida 12 meses depois), lote ou calibração avulsa, <b>padrão utilizado</b> (vem de <a href="#certificados">Certificados</a>, com aviso se estiver vencido), condições ambientais, resultados (valor do padrão, leituras subindo e descendo, incerteza e fator k) e conclusão (aprovado ou reprovado, responsável e texto). <b>Emitir certificado</b> gera o PDF definitivo; corrigir depois exige uma revisão.</p>
+    <p>Calibração feita por laboratório? Use <b>Registrar certificado de laboratório externo</b>: laboratório, nº do certificado, data, validade e o PDF do laboratório (sem o PDF, o relatório cita o certificado mas não o anexa).</p>
+    <div class="callout"><p>🔗 A calibração aparece em três lugares: no <a href="#checklist">checklist</a> (Vincular calibração, no quadro de instrumentos), no <a href="#criar-relatorio">assistente do relatório</a> (etapa Certificados, folhas no fim do documento) e no <a href="#dashboard">Dashboard</a> (validade de cada acessório).</p></div>
+
+    <h2 id="certificados">🏅 Certificados dos padrões</h2>
+    <p>Os <b>instrumentos de referência da sua empresa</b> — os padrões usados para medir e calibrar. Um certificado por padrão, valendo para todos os equipamentos.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-certificados.webp" alt="Certificado do bloco padrão de espessura com validade, destino no relatório, dados do ensaio, PDF e opção de injetar no relatório" width="1090" height="458" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Validade</b> — “Válido até”, “Vence em N dias” (alerta a partir de 30 dias) ou “Vencido há N dias”. Também entra no Dashboard.</li>
+      <li><b>Vai para</b> — onde o certificado é usado. O bloco padrão vai para a folha de ultrassom do relatório e do prontuário; o manômetro padrão, para os certificados de manômetro e o teste hidrostático.</li>
+      <li><b>Dados do ensaio</b> — só no bloco padrão: cabeçote, velocidade sônica, acoplante, superfície e temperatura, que preenchem o formulário de ultrassom.</li>
+      <li><b>PDF do certificado</b> — obrigatório, até 2 MB.</li>
+      <li><b>Injetar no final do relatório</b> — ligado, o PDF do certificado é anexado ao fim do relatório.</li>
+    </ol>
+    <p>Os padrões são: bloco padrão de espessura (ultrassom), manômetro padrão, válvula PSV padrão, pressostato padrão e termômetro padrão. O certificado só entra no relatório se o relatório tiver a folha do ensaio correspondente <b>e</b> a opção de injetar estiver ligada. Editar ou excluir cria uma versão nova: relatórios já salvos mantêm a versão que usaram.</p>
+    <div class="callout"><p>🧭 <b>Calibrações × Certificados:</b> Calibrações são os instrumentos <b>instalados no equipamento</b> do cliente; Certificados são os <b>padrões da sua empresa</b>, usados para inspecionar e calibrar.</p></div>
+
+    <!-- ===================================================== CADASTROS -->
+    <h2 id="meus-dados">🏢 Meus dados</h2>
+    <p>Os dados da <b>sua empresa</b> (a executante), que saem no cabeçalho de relatórios, prontuários e certificados. Só a conta principal edita.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-meus-dados.webp" alt="Meus dados com dados da empresa, endereço e contato, seu acesso e a prévia de como aparece nos documentos" width="990" height="635" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Editar dados</b> — logo, razão social, nome fantasia, CNPJ, telefone, e-mail e endereço.</li>
+      <li><b>Como aparece nos documentos</b> — prévia do cabeçalho.</li>
+      <li><b>Trocar senha</b> — por código enviado ao e-mail ou com a senha atual.</li>
+    </ol>
+    <p>Documentos já emitidos guardam os dados da época: trocar a logo não altera relatório finalizado. Mais abaixo fica o <b>Modelo do relatório</b>, que vale para os próximos relatórios.</p>
+
+    <h2 id="equipe">👷 Equipe (quem assina)</h2>
+    <p>Os profissionais que <b>assinam</b> os documentos: engenheiros (PLH) e inspetores. Ter alguém aqui não cria login — logins são em <a href="#acessos">Acessos</a>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-equipe.webp" alt="Lista da equipe com engenheiro e inspetor, registro profissional e folhas que cada um assina" width="1378" height="178" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Tipo</b> — <b>Engenheiro (assina o laudo)</b> ou <b>Inspetor (executa o ensaio)</b>, com a função exibida na assinatura.</li>
+      <li><b>Assina</b> — quantas folhas do relatório e do prontuário a pessoa assina. O ícone indica se a imagem da assinatura está cadastrada.</li>
+      <li><b>Novo profissional</b> — nome, CREA / registro, e-mail, tipo, função e informações adicionais (ex.: certificação SNQC).</li>
+    </ol>
+    <p><b>Assinatura:</b> envie a imagem da rubrica; o sistema remove o fundo e deixa só o traço. <b>Folhas que este funcionário assina:</b> marque, no relatório e no prontuário, em quais folhas o carimbo dele aparece (engenheiro: todas, por padrão; inspetor: nenhuma). Quem assina cada relatório é escolhido nas <a href="#editor">Configurações do relatório</a>, e os dados são <b>congelados</b> no documento: mudar o cadastro depois não altera relatórios já feitos.</p>
+
+    <h2 id="clientes">🤝 Clientes</h2>
+    <p>As empresas donas dos equipamentos. O cliente vira o <b>contratante</b> nos documentos e é quem pode ter acesso ao <a href="#portal">Portal</a>.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-clientes.webp" alt="Lista de clientes com cidade, telefone, quantidade de equipamentos e situação do portal" width="1378" height="218" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Todos, Com Portal, Sem Portal</b> — recortes por acesso ao portal.</li>
+      <li><b>Portal</b> — Ativo quando o cliente tem login.</li>
+      <li><b>Exportar</b> — a lista em CSV.</li>
+      <li><b>Novo cliente</b> — razão social (obrigatória), fantasia, CNPJ, atividade, contato, telefone, e-mail, endereço e anotações. A busca <b>Buscar empresa no Google</b> preenche os dados a partir do nome e da cidade.</li>
+    </ol>
+    <p>Ao abrir um cliente: abas <b>Dados</b>, <b>Equipamentos</b> (com a situação de cada um), <b>Portal</b> e <b>Localização</b> (mapa). Excluir um cliente o tira da lista, mas não altera equipamentos nem documentos emitidos. O vínculo do equipamento com o cliente é feito na <a href="#ficha">ficha do equipamento</a>, em Dados da Empresa.</p>
+
+    <h2 id="portal">🌐 Portal do Cliente</h2>
+    <p>Uma área <b>só de consulta</b> para o seu cliente acompanhar os equipamentos e os documentos dele.</p>
+    <ol class="passos">
+      <li>Em <b>Clientes</b>, abra o cliente e vá na aba <b>Portal</b>.</li>
+      <li>Clique em <b>Criar acesso</b>, informe o e-mail e uma senha (mínimo 6 caracteres) e confirme em <b>Criar acesso do cliente</b>. O acesso é criado na hora.</li>
+      <li>Confira se os equipamentos do cliente estão vinculados a ele na ficha (Dados da Empresa).</li>
+    </ol>
+    <p>O cliente entra com esse login e vê <b>Seus equipamentos</b> (foto, TAG, categoria, PMTA e situação) e, em cada um, as abas <b>Documentação</b> (relatórios finalizados, para visualizar, imprimir e baixar), <b>Prontuário</b>, <b>Registros</b> (capa, termo de abertura e livro), <b>Histórico</b>, <b>Acessórios</b> (com a próxima calibração) e <b>Calibrações</b>. Rascunhos nunca aparecem no portal.</p>
+
+    <h2 id="acessos">🔑 Acessos</h2>
+    <p>Os logins da sua equipe e o que cada um pode usar. Só a conta principal vê esta tela.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-acessos.webp" alt="Cadastro de novo acesso com perfis Gerente, Inspetor, Personalizado e Cliente, módulos permitidos e lista de acessos" width="1378" height="498" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Perfil</b> — Gerente, Inspetor, Personalizado ou Cliente (este é criado em Clientes).</li>
+      <li><b>O que este acesso pode ver e usar</b> — os módulos: Dashboard, Agenda, Vencimentos, Equipamentos, Inspeções, Relatórios, Prontuários, Calibrações, Certificados dos padrões, Registros de Segurança, Cadastrar Funcionários e Cadastrar Clientes.</li>
+      <li><b>Criar acesso</b> — com e-mail e senha (mínimo 6 caracteres).</li>
+      <li><b>Ações</b> — permissões, resetar senha, bloquear/liberar e excluir.</li>
+    </ol>
+    <p>A tabela mostra o último acesso, a última sincronização, se o login está liberado e se a sessão está em uso. Mudanças de permissão valem no próximo login da pessoa.</p>
+
+    <!-- ===================================================== DIA A DIA -->
+    <h2 id="offline">📶 Celular e sem internet</h2>
+    <p>O sistema roda no navegador do celular, do tablet e do computador, e pode ser instalado como aplicativo (<a href="#conta">veja abaixo</a>). O que você salva vai primeiro para o aparelho e sobe para o servidor numa fila, sozinho.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-sincronizacao.webp" alt="Tela de sincronização com tudo salvo na nuvem, zero na fila e zero com falhas" width="720" height="225" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Na fila / com falhas</b> — o que ainda não chegou ao servidor. As pendências não se perdem ao fechar o aplicativo.</li>
+      <li><b>Tudo sincronizado</b> — nada esperando para subir.</li>
+    </ol>
+    <ul>
+      <li>O selo no topo da tela mostra <b>Sincronizado</b>, <b>Sincronizar (N)</b> ou <b>Offline — salvo no aparelho</b>. Tocar nele abre esta tela.</li>
+      <li><b>Antes de ir a campo sem sinal</b>, abra o equipamento com internet: assim os dados dele ficam no aparelho.</li>
+      <li>Se o mesmo dado foi alterado em dois aparelhos, a tela pede a sua decisão: <b>Manter a minha</b> ou <b>Usar a do servidor</b>. Nada se perde enquanto você não escolhe.</li>
+      <li>Se aparecer “Espaço do aparelho ficando baixo”, sincronize assim que tiver conexão.</li>
+    </ul>
+
+    <h2 id="conta">👤 Sua conta e o aplicativo</h2>
+    <figure class="print-sistema print-estreito">
+      <img src="img/doc-nr13-conta.webp" alt="Menu da conta com acesso rápido, trocar senha, notificações e instalar aplicativo" width="283" height="428" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Trocar senha</b> — por código no e-mail ou com a senha atual. Na tela de login, “Esqueci / trocar senha” faz o mesmo.</li>
+      <li><b>Notificações</b> — mostra “Vencidos” quando há prazo vencido e leva ao Dashboard.</li>
+      <li><b>Instalar aplicativo</b> — instala o sistema na tela inicial do celular ou no computador. Sem o botão do navegador: no Android, menu ⋮ → Adicionar à tela inicial; no iPhone (Safari), Compartilhar → Adicionar à Tela de Início.</li>
+    </ol>
+    <p>O login é com e-mail e senha ou com <b>Entrar com Google</b>, para contas que já têm acesso liberado.</p>
+
+    <h2 id="info">ℹ️ Central de ajuda</h2>
+    <p>O item <b>Info</b>, no fim do menu, é a ajuda dentro do sistema, disponível para todos os logins.</p>
+    <figure class="print-sistema">
+      <img src="img/doc-nr13-info.webp" alt="Central de ajuda do NR-13 com busca, jornada Comece por aqui em 11 etapas e guias por seção" width="910" height="656" loading="lazy" decoding="async">
+    </figure>
+    <ol class="legenda-print">
+      <li><b>Busca</b> — acha guias e dúvidas por palavra.</li>
+      <li><b>Comece por aqui</b> — a jornada em 11 etapas, na ordem do trabalho. Clique numa etapa para ver o que fazer nela.</li>
+      <li><b>Guias por seção</b> — passo a passo de cada módulo.</li>
+      <li><b>Guia completo</b> — a jornada inteira de uma vez.</li>
+    </ol>
+
+    <h2 id="rotina">📆 Rotina sugerida</h2>
+    <div class="tabela-wrap">
+      <p class="tabela-dica">Role para o lado para ver a tabela inteira</p>
+      <table class="tec">
+        <thead><tr><th>Quando</th><th>O que fazer</th></tr></thead>
+        <tbody>
+          <tr><td>Uma vez</td><td>Meus dados e logo, Equipe com assinaturas, certificados dos padrões, logins em Acessos</td></tr>
+          <tr><td>Equipamento novo</td><td>Cliente → equipamento → memorial → categoria → acessórios em Calibrações → prontuário</td></tr>
+          <tr><td>Antes da visita</td><td>Agende na Agenda; abra os equipamentos com internet no celular; crie o container com os ensaios certos</td></tr>
+          <tr><td>Em campo</td><td>Preencha os ensaios e as fotos com descrição; calibre os acessórios do lote</td></tr>
+          <tr><td>No escritório</td><td>Criar relatório → revisar “O que falta” → Configurações (datas, ART, assinantes) → Laudo → Finalizar; lançar o registro no livro</td></tr>
+          <tr><td>Toda semana</td><td>Dashboard: vencidos e a vencer em 30, 60 e 90 dias; validade dos padrões</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="faq">❓ Perguntas frequentes</h2>
+    <div class="faq">
+      <details>
+        <summary>Preciso cadastrar o equipamento antes de criar uma inspeção?</summary>
+        <div class="faq-body"><p>Sim. A inspeção é sempre de um equipamento: crie a TAG em Equipamentos e depois o container em Inspeções. Com o memorial e a categoria feitos antes, os formulários já chegam com pressões, espessura nominal e material preenchidos.</p></div>
+      </details>
+      <details>
+        <summary>Posso fazer a inspeção pelo celular sem internet?</summary>
+        <div class="faq-body"><p>Sim. Os ensaios e as fotos ficam salvos no aparelho e sobem sozinhos quando a conexão volta. A condição é ter aberto o equipamento com internet antes, para que os dados dele estejam no aparelho.</p></div>
+      </details>
+      <details>
+        <summary>Posso editar um relatório depois de finalizado?</summary>
+        <div class="faq-body"><p>Não. O relatório finalizado é um PDF trancado, com código de verificação. Para corrigir, use Duplicar: nasce um rascunho novo com os dados copiados, que você revisa e finaliza. O original continua como estava.</p></div>
+      </details>
+      <details>
+        <summary>Por que um equipamento aparece como “sem prazo” no Dashboard?</summary>
+        <div class="faq-body"><p>Porque ainda não há relatório finalizado com Próx. Interna ou Próx. Externa preenchidas nas Configurações, nem vida remanescente calculada na ficha. Relatório em rascunho não gera prazo.</p></div>
+      </details>
+      <details>
+        <summary>Qual a diferença entre Calibrações e Certificados?</summary>
+        <div class="faq-body"><p>Calibrações são os instrumentos instalados em cada equipamento do cliente, como manômetros e válvulas de segurança. Certificados são os instrumentos padrão da sua empresa, usados para medir e calibrar, e valem para todos os equipamentos.</p></div>
+      </details>
+      <details>
+        <summary>Meu cliente pode acompanhar os documentos dele?</summary>
+        <div class="faq-body"><p>Sim, pelo Portal do Cliente. Crie o acesso em Clientes, na aba Portal do cliente, e vincule os equipamentos a ele na ficha. O cliente só consulta: vê os relatórios finalizados, o prontuário, o livro de registro e as calibrações.</p></div>
+      </details>
+      <details>
+        <summary>Para que serve o código de verificação do relatório?</summary>
+        <div class="faq-body"><p>É o SHA-256 do PDF gerado na emissão. Qualquer alteração no arquivo muda o código, então ele comprova que o documento é o mesmo que foi emitido. O código aparece no visualizador do relatório arquivado.</p></div>
+      </details>
+    </div>
+
+    <section class="docs-ajuda" aria-label="Ajuda">
+      <div>
+        <strong>💬 Ficou alguma dúvida?</strong>
+        <p>Fale com a equipe pelo botão de WhatsApp no canto da tela — a gente abre o sistema junto com você.</p>
+      </div>
+      <div class="docs-ajuda-acoes">
+        <a class="btn btn-buy" href="sistema-nr13.html" data-cta="docs-fim">Conhecer o Sistema NR13</a>
+      </div>
+    </section>
+
+    <nav class="docs-relacionados" aria-label="Leia também">
+      <strong>Leia também</strong>
+      <a href="sistema-nr13.html">Sistema NR13 — caldeiras e vasos de pressão</a>
+      <a href="como-usar-o-sistema-nr12.html">Documentação do Sistema NR12</a>
+      <a href="sistema-nr12.html">Sistema NR12 — NR-12 e NR-10</a>
+    </nav>
+  </article>
+</div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true">
+    <img src="img/rodape-industrial.webp" alt="" width="1920" height="620" loading="lazy">
+  </div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="icon-192.png" alt="Axial Engenharia" width="48" height="48" loading="lazy">
+          <span class="brand-txt">
+            <span class="brand-name">Axial Engenharia</span>
+            <span class="brand-tag">Engenharia Mecânica · ES</span>
+          </span>
+        </div>
+        <p>
+          Engenharia mecânica aplicada à segurança de equipamentos: inspeção NR-13, adequação NR-12,
+          PMOC, ensaios não destrutivos e sistemas de combate a incêndio em toda a Grande Vitória — ES.
+        </p>
+        <span class="footer-reg">Responsável técnico habilitado · ART registrada em todo serviço · Atendimento em toda a Grande Vitória — ES</span>
+        <div class="social-row">
+          <a href="https://wa.me/5527992534407" rel="noopener" aria-label="WhatsApp da Axial Engenharia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.08.8.83-3-.2-.31a8.22 8.22 0 1115.13-4.4c0 4.53-3.68 8.24-8.2 8.24zm4.5-6.16c-.25-.12-1.46-.72-1.68-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.17 1.71 2.6 4.14 3.65.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.11-.23-.17-.48-.29z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contato">
+        <h4>Contato</h4>
+        <p>
+          Av. Henrique Moscoso, 2250<br>
+          Jaburuna — Vila Velha/ES<br>
+          CEP: 29100-650
+        </p>
+        <p><a href="tel:+5527992534407">(27) 99253-4407</a></p>
+        <p><a href="mailto:nr13sistema@gmail.com">nr13sistema@gmail.com</a></p>
+        <p>Segunda a sexta, 08h às 18h</p>
+      </div>
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="inspecao-nr13-vitoria-es.html">Inspeção NR-13</a></li>
+          <li><a href="adequacao-nr12-vitoria-es.html">Adequação NR-12</a></li>
+          <li><a href="pmoc-vitoria-es.html">PMOC e qualidade do ar</a></li>
+          <li><a href="ensaios-nao-destrutivos-vitoria-es.html">Ensaios não destrutivos</a></li>
+          <li><a href="combate-a-incendio-vitoria-es.html">Combate a incêndio</a></li>
+          <li><a href="sistema-nr13.html">Sistema NR13 — gestão online</a></li>
+          <li><a href="sistema-nr12.html">Sistema NR12 — NR-12 e NR-10</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sistema NR12</h4>
+        <ul>
+          <li><a href="como-usar-o-sistema-nr12.html">Como usar o sistema</a></li>
+          <li><a href="sistema-nr12.html#modulos">Módulos</a></li>
+          <li><a href="sistema-nr12.html#documentos">Documentos gerados</a></li>
+          <li><a href="https://nr12.nr1sistema.com.br/" rel="noopener">Entrar no sistema</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-home">
+      <a class="btn btn-ghost" href="index.html#inicio">Voltar para a página inicial</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ano">2026</span> Axial Engenharia. Todos os direitos reservados. · <a href="privacidade.html">Política de Privacidade</a></span>
+      <span class="disclaimer">
+        Conteúdo informativo. Os documentos técnicos exigem responsável técnico habilitado e, quando aplicável,
+        ART registrada no conselho de classe.
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5527992534407" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.34 4.95L2 22l5.2-1.36a9.9 9.9 0 004.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm4.5 14.04c-.2.57-1.19 1.1-1.66 1.17-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.02-3.48-4.14-3.65-.12-.16-.99-1.31-.99-2.5s.63-1.77.85-2.02c.22-.25.49-.31.65-.31h.48c.16.01.36-.06.56.42.2.5.7 1.72.76 1.84.06.13.1.27.02.44-.09.16-.13.26-.25.41-.12.15-.26.33-.37.44-.13.12-.25.25-.11.5.14.25.64 1.06 1.37 1.71.94.84 1.73 1.1 1.98 1.22.25.12.4.1.54-.06.15-.17.63-.72.79-.97.17-.25.33-.21.56-.12.22.08 1.43.68 1.68.8.25.12.42.18.48.29.05.1.05.59-.15 1.17z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="js/meta-pixel.js?v=20260912a" defer></script>
+<script src="js/wa-form.js?v=20261028a" defer></script>
+<script src="js/site.js?v=20260912a" defer></script>
+<script src="js/docs.js?v=20261126a" defer></script>
+</body>
+</html>
