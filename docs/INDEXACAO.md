@@ -20,6 +20,13 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 - A fila `[ ]` deste arquivo não é fonte de verdade: muitas URLs marcadas como pendentes já estão indexadas.
 
 
+## 26/11/2026 — documentação do Sistema NR12 (sitemap 139 → 140)
+
+Guia de uso do Sistema NR12 (pedido do Felipe): o caminho de uma máquina e para que serve cada laudo, com 10 prints reais
+do sistema (conta demo, `img/como-usar-nr12-*.webp`). Link na landing `sistema-nr12.html` (hero e rodapé).
+
+- [ ] https://nr13sistema.com.br/como-usar-o-sistema-nr12.html — documentação do Sistema NR12; criada 26/11/2026
+
 ## 21/11/2026 — lote de 10 landings do Sistema NR13 por dor do usuário (sitemap 129 → 139)
 
 Sitemap reenviado em 21/11/2026 ("Sitemap enviado", 139 URLs). **10/10 pedidos de indexação aceitos** (todas inspecionadas antes: "O URL não está no Google").
