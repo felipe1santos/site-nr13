@@ -25,7 +25,7 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 Documentação completa do Sistema NR12 (pedido do Felipe): cada tela do menu, botões numerados, fluxos e documentos, com 34 telas
 reais anotadas (conta demo, `img/doc-nr12-*.webp`), conferida no código e no sistema. Link na landing `sistema-nr12.html` (hero e rodapé).
 
-- [ ] https://nr13sistema.com.br/como-usar-o-sistema-nr13.html — documentação completa do Sistema NR13 (40 seções, 40 telas anotadas, 7 FAQs); criada 26/11/2026
+- [x] https://nr13sistema.com.br/como-usar-o-sistema-nr13.html — documentação completa do Sistema NR13 (40 seções, 40 telas anotadas, 7 FAQs); criada 26/11/2026; no ar (200) + Redeploy — **indexação solicitada em 26/11/2026**; sitemap reenviado ("Sitemap enviado", 141 URLs)
 - [x] https://nr13sistema.com.br/como-usar-o-sistema-nr12.html — documentação completa do Sistema NR12 (33 seções, 34 telas anotadas); criada 26/11/2026; no ar (200) + Redeploy — **indexação solicitada em 26/11/2026**; sitemap reenviado ("Sitemap enviado", 140 URLs)
 
 ## 21/11/2026 — lote de 10 landings do Sistema NR13 por dor do usuário (sitemap 129 → 139)
