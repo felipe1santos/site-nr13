@@ -1726,3 +1726,4 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]), textarea, 
 .docs-pagina .site-header .wrap { max-width: 1560px; padding-left: clamp(1rem, 3vw, 2.5rem); padding-right: clamp(1rem, 3vw, 2.5rem); }
 .docs-btn-wa { background: var(--white); color: var(--green-600); border: 1px solid var(--green-600); font-weight: 700; }
 .docs-btn-wa:hover { background: var(--green-600); color: var(--white); }
+.docs-pagina .nav a { white-space: nowrap; }
