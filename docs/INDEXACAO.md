@@ -20,6 +20,27 @@ Legenda: `[ ]` pendente · `[x]` indexação solicitada
 - A fila `[ ]` deste arquivo não é fonte de verdade: muitas URLs marcadas como pendentes já estão indexadas.
 
 
+
+## 27/11/2026 — robô de atendimento no WhatsApp com IA (sitemap 141 → 142)
+
+Landing do serviço de agente de IA no WhatsApp (pedido do Felipe): banner no topo, 3 vídeos reais (celular, WhatsApp Web,
+clientes chegando no horário; placas e telefone do cliente borrados), fluxo do atendimento desenhado como no CRM (sem dados da loja),
+FAQ e paleta própria (`css/robo-ia.css`). Nenhuma outra página foi alterada (sem links de entrada ainda).
+
+- [ ] https://nr13sistema.com.br/robo-de-atendimento-whatsapp-com-ia.html — criada 27/11/2026; aguardando deploy para pedir indexação
+
+### 27/11/2026 — auditoria de todas as páginas no Search Console
+
+Relatório "Indexação das páginas" (dado do Google até ~24/11): **138 indexadas**, 26 não indexadas (12 × 404 de URLs antigas,
+10 × alternativa com canônica, 1 redirecionamento, 3 × rastreada mas não indexada). Cruzado com as 141 URLs do sitemap no ar:
+faltavam só 4.
+
+- [x] `como-usar-o-sistema-nr13.html` e `como-usar-o-sistema-nr12.html` — já solicitadas em 26/11 (relatório ainda não atualizou); não repetir.
+- [x] https://nr13sistema.com.br/blog/caldeira-sem-prontuario-o-que-fazer.html — "Rastreada, mas não indexada" (último rastreio 22/10) — **indexação solicitada 27/11/2026**
+- [x] https://nr13sistema.com.br/blog/medicao-de-espessura-por-ultrassom.html — "Rastreada, mas não indexada" — **indexação solicitada 27/11/2026**
+
+Se os 2 posts voltarem a "rastreada, mas não indexada", o problema é conteúdo (fino ou parecido com outro post), não pedido.
+
 ## 26/11/2026 — documentação do Sistema NR12 (sitemap 139 → 140)
 
 Documentação completa do Sistema NR12 (pedido do Felipe): cada tela do menu, botões numerados, fluxos e documentos, com 34 telas

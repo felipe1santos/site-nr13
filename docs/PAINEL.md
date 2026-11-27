@@ -13,7 +13,7 @@ estado atual e o que falta. **Atualizar este painel ao fim de toda sessão de tr
 | Pesquisa de demanda (volumes de busca na GV) | [PESQUISA-DEMANDA-GV.md](PESQUISA-DEMANDA-GV.md) |
 | Regras de SEO e publicação | [../LEIA-ME.md](../LEIA-ME.md) |
 
-_Atualizado em 21/11/2026._
+_Atualizado em 27/11/2026._
 
 ## Regras fixas (pedido do Felipe)
 
@@ -29,6 +29,15 @@ _Atualizado em 21/11/2026._
 ---
 
 ## Estado atual
+
+- **27/11/2026 (robô de atendimento com IA):** landing `robo-de-atendimento-whatsapp-com-ia.html` criada (local, **falta deploy**):
+  banner no topo, 3 vídeos reais (placas e telefone do cliente borrados), fluxo do atendimento desenhado como no CRM sem dados da loja,
+  FAQ, visual igual ao Sistema NR12 (navy + laranja, `css/robo-ia.css`). Nenhuma outra página alterada. Sitemap 142.
+  Banner: Unsplash HoMZWoPRv9c (empresário à noite no celular; o robô Pexels foi recusado como "infantil"). O pin pedido era prévia do **Adobe Stock 930040760** (sem licença); para usar,
+  licenciar no Adobe Stock e trocar `img/robo-ia/banner-atendimento-*.webp`.
+  **27/11 (2ª rodada):** vantagens em destaque, seção de follow-up (lembrete do agendamento + sequência com vídeo para quem demonstrou interesse), funil fictício (9 etapas do CRM), agenda fictícia (duração do serviço + 3 carros por vez + conversa oferecendo horários), tags coloridas.
+  ⚠️ **NÃO PUBLICAR ainda com `img/robo-ia/ilustracao-oficina-PROVISORIA.webp`** (marca d'água de "Para quem serve"): veio do Pinterest, com direito autoral, só para o Felipe ver como fica. Trocar por ilustração licenciada ou própria antes do deploy.
+  **GSC 27/11:** 138 indexadas; pedidos aceitos para `blog/caldeira-sem-prontuario-o-que-fazer.html` e `blog/medicao-de-espessura-por-ultrassom.html`.
 
 - **21/11/2026 (lote Sistema NR13):** 10 landings do software, cada uma atacando uma dor diferente (vencimento de inspeção, prontuário digital, autoclave, caldeiras, fiscalização, várias unidades, empresa de inspeção, calibração PSV/manômetro, engenheiro autônomo, inventário). Botão "Falar comigo no WhatsApp" em todas + faixa do sistema. 21 fotos novas do Pexels. Links recíprocos em `sistema-nr13.html`, 12 posts do blog e na página do compressor. Commit `d45de28` + Redeploy, todas 200. Sitemap 139 reenviado; **10/10 indexações aceitas**. Site 140 páginas. **~21/12:** comparar no GSC qual dor puxa mais impressão e clique.
 
