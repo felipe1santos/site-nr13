@@ -147,7 +147,7 @@
         '<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="wa-mel">' +
         '<p class="wa-erro" role="alert" hidden></p>' +
         '<button type="submit" class="btn btn-primary btn-lg wa-enviar">Continuar</button>' +
-        '<p class="wa-passos"><span class="wa-passo-on">1. Contato</span> · <span>2. Sua dúvida</span></p>' +
+        '<p class="wa-passos"><span class="wa-passo-on">1. Contato</span> · <span>2. ' + rotuloPasso2() + '</span></p>' +
         '<p class="wa-modal-nota">Seus dados são usados só para este atendimento. ' +
           'Veja a <a href="' + linkPrivacidade() + '">Política de Privacidade</a>.</p>' +
       '</form>';
@@ -181,6 +181,77 @@
       '</form>';
   }
 
+  /* ---- etapa 2 alternativa: briefing com perguntas da própria página ----
+     Uma página pode trocar a "dúvida" livre por perguntas próprias definindo, antes deste script,
+     window.AXIAL_WA_BRIEFING = { titulo, sub, passo, botao, campos: [ {id, rotulo, tipo, opcoes, obrigatorio, exemplo} ] }.
+     tipo: 'texto' | 'area' | 'opcoes' (uma escolha) | 'multi' (várias). Sem a variável, nada muda. */
+  var BRIEFING = window.AXIAL_WA_BRIEFING || null;
+
+  function segundaEtapa() {
+    return BRIEFING ? telaBriefing() : telaDuvida();
+  }
+
+  function rotuloPasso2() {
+    return BRIEFING && BRIEFING.passo ? BRIEFING.passo : 'Sua dúvida';
+  }
+
+  function campoBriefing(c) {
+    var id = 'waB_' + c.id;
+    var req = c.obrigatorio ? ' required' : '';
+    var rot = escapar(c.rotulo) + (c.obrigatorio ? '' : ' <span class="wa-opc">(opcional)</span>');
+    if (c.tipo === 'opcoes' || c.tipo === 'multi') {
+      var tipo = c.tipo === 'multi' ? 'checkbox' : 'radio';
+      var ops = c.opcoes.map(function (o, i) {
+        return '<label class="wa-chip"><input type="' + tipo + '" name="' + c.id + '" value="' + escapar(o) + '"' +
+          (i === 0 && tipo === 'radio' ? req : '') + '><span>' + escapar(o) + '</span></label>';
+      }).join('');
+      return '<fieldset class="wa-grupo" data-campo="' + c.id + '"><legend>' + rot + '</legend>' +
+        '<div class="wa-chips">' + ops + '</div></fieldset>';
+    }
+    if (c.tipo === 'area') {
+      return '<label for="' + id + '">' + rot + '</label>' +
+        '<textarea id="' + id + '" name="' + c.id + '" rows="3"' + req +
+        ' placeholder="' + escapar(c.exemplo || '') + '"></textarea>';
+    }
+    return '<label for="' + id + '">' + rot + '</label>' +
+      '<input id="' + id + '" name="' + c.id + '" type="text"' + req +
+      ' placeholder="' + escapar(c.exemplo || '') + '"' + (c.auto ? ' autocomplete="' + c.auto + '"' : '') + '>';
+  }
+
+  function telaBriefing() {
+    var nome = contato && contato.nome ? contato.nome.split(' ')[0] : '';
+    var titulo = (BRIEFING.titulo || 'Conte sobre a sua empresa').replace('{nome}', nome ? escapar(nome) : '');
+    return '' +
+      '<p class="wa-modal-tag">Falar no WhatsApp</p>' +
+      '<h2 id="waFormTitulo">' + titulo.replace(/^,\s*/, '') + '</h2>' +
+      '<p class="wa-modal-sub">' + (BRIEFING.sub || '') + '</p>' +
+      '<form class="wa-form wa-briefing" data-etapa="briefing" novalidate>' +
+        BRIEFING.campos.map(campoBriefing).join('') +
+        '<p class="wa-erro" role="alert" hidden></p>' +
+        '<button type="submit" class="btn btn-primary btn-lg wa-enviar">' + (BRIEFING.botao || 'Enviar') + '</button>' +
+        '<p class="wa-passos"><span>1. Contato</span> · <span class="wa-passo-on">2. ' + rotuloPasso2() + '</span></p>' +
+      '</form>';
+  }
+
+  function lerBriefing(form) {
+    var respostas = [], faltou = null;
+    BRIEFING.campos.forEach(function (c) {
+      var valor = '';
+      if (c.tipo === 'multi') {
+        valor = [].slice.call(form.querySelectorAll('input[name="' + c.id + '"]:checked'))
+          .map(function (i) { return i.value; }).join(', ');
+      } else if (c.tipo === 'opcoes') {
+        var m = form.querySelector('input[name="' + c.id + '"]:checked');
+        valor = m ? m.value : '';
+      } else {
+        valor = (form.elements[c.id].value || '').trim();
+      }
+      if (c.obrigatorio && !valor && !faltou) faltou = c;
+      respostas.push({ key: c.id, label: c.rotulo, value: valor });
+    });
+    return { respostas: respostas, faltou: faltou };
+  }
+
   function escapar(s) {
     return String(s).replace(/[<>&"]/g, '');
   }
@@ -191,7 +262,8 @@
     if (form) form.addEventListener('submit', enviar);
     var fone = modal.querySelector('#waFone');
     if (fone) fone.addEventListener('input', function () { fone.value = mascarar(fone.value); });
-    var primeiro = modal.querySelector('#waNome') || modal.querySelector('#waMsg');
+    var primeiro = modal.querySelector('#waNome') || modal.querySelector('#waMsg') ||
+      modal.querySelector('.wa-briefing input, .wa-briefing textarea');
     if (primeiro) primeiro.focus();
   }
 
@@ -220,7 +292,7 @@
     contato = contato || lerContato();
     modal.removeAttribute('hidden');
     document.body.style.overflow = 'hidden';
-    pintar(contato ? telaDuvida() : telaContato());
+    pintar(contato ? segundaEtapa() : telaContato());
   }
 
   function fechar() {
@@ -268,10 +340,28 @@
         enviarAoCrm(contato, [{ key: 'origem', label: 'Botão clicado', value: origem || '(link sem rótulo)' }]);
         /* o pixel escuta este evento e registra o Lead */
         document.dispatchEvent(new CustomEvent('axial:lead', { detail: { origem: origem } }));
-        pintar(telaDuvida());
+        pintar(segundaEtapa());
       }).catch(function () {
         recuperarDeFalha(botao, rotulo);
       });
+      return;
+    }
+
+    /* Briefing: as respostas vão ao CRM e viram o texto da conversa, uma linha por pergunta. */
+    if (form.getAttribute('data-etapa') === 'briefing') {
+      var lido = lerBriefing(form);
+      if (lido.faltou) return mostrarErro('Responda: ' + lido.faltou.rotulo);
+      limparErro();
+      botao.disabled = true;
+      if (contato) {
+        enviarAoCrm(contato, [{ key: 'origem', label: 'Botão clicado', value: origem || '(link sem rótulo)' }]
+          .concat(lido.respostas.filter(function (r) { return r.value; })));
+      }
+      var texto = (BRIEFING.abertura || 'Olá! Quero um orçamento.') + '\n\n' +
+        lido.respostas.filter(function (r) { return r.value; })
+          .map(function (r) { return '*' + r.label + ':* ' + r.value; }).join('\n');
+      document.dispatchEvent(new CustomEvent('axial:contato', { detail: { origem: origem } }));
+      irParaWhatsApp(texto);
       return;
     }
 

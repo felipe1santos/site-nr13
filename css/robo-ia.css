@@ -379,9 +379,101 @@
 .ria-faq details p { padding: 1rem 1.2rem 0; }
 
 /* cta final com ilustração */
-.ria-cta-ilu { margin: 1.2rem auto 1.4rem; width: min(380px, 80vw); position: relative; }
-.ria-cta-ilu::before { content: ""; position: absolute; inset: 12% 10%; border-radius: 50%; background: radial-gradient(closest-side, rgba(242, 101, 34, .16), transparent); z-index: 0; }
-.ria-cta-ilu img { position: relative; z-index: 1; width: 100%; height: auto; display: block; }
+.ria-cta-ilu {
+  margin: 1.6rem auto 1.8rem; width: min(300px, 70vw); aspect-ratio: 1; border-radius: 50%;
+  background: var(--white); overflow: hidden; display: grid; place-items: center;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, .06), 0 0 0 16px rgba(242, 101, 34, .08), 0 24px 60px rgba(0, 0, 0, .35);
+}
+.ria-cta-ilu img { width: 88%; height: auto; display: block; }
 .ria-cta .ria-cta-lead { font-size: clamp(1.05rem, 1rem + .35vw, 1.25rem); color: var(--steel-200); max-width: 640px; }
 .ria-cta .ria-cta-lead strong { color: var(--white); }
 .ria-cta .btn svg { width: 1.2em; height: 1.2em; fill: currentColor; flex: none; }
+
+/* tags com fundo escuro e texto branco */
+.ria-tags span {
+  background: color-mix(in srgb, var(--t) 88%, #000);
+  border-color: color-mix(in srgb, var(--t) 70%, #000);
+  color: var(--white);
+}
+.ria-tags span::before { background: rgba(255, 255, 255, .75); }
+
+/* globo em volta da bola do CTA */
+.ria-cta-orbita { position: relative; width: min(460px, 92vw); aspect-ratio: 1; margin: .4rem auto .6rem; display: grid; place-items: center; }
+.ria-globo { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ria-cta-orbita .ria-cta-ilu { position: relative; z-index: 1; margin: 0; }
+
+/* briefing do formulário do WhatsApp (etapa 2 nesta página) */
+.ria .wa-modal-caixa { max-width: 560px; }
+.wa-briefing fieldset { border: 0; padding: 0; margin: 0 0 .9rem; }
+.wa-briefing legend { font-size: .8rem; font-weight: 600; color: var(--navy-700); margin-bottom: .45rem; padding: 0; }
+.wa-opc { font-weight: 400; color: var(--steel-500); }
+.wa-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.wa-chip { position: relative; margin: 0 !important; cursor: pointer; }
+.wa-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.wa-chip span {
+  display: inline-block; padding: .42rem .75rem; font-size: .84rem; font-weight: 500; color: var(--navy-800);
+  background: var(--steel-50); border: 1px solid var(--line); border-radius: 999px; transition: all .12s ease;
+}
+.wa-chip:hover span { border-color: var(--orange-400); }
+.wa-chip input:checked + span { background: var(--orange-500); border-color: var(--orange-500); color: var(--white); }
+.wa-chip input:focus-visible + span { outline: 3px solid var(--orange-400); outline-offset: 2px; }
+
+/* antes x depois: blocos vermelho e verde (mesmo desenho do .vs3 do Sistema NR12) */
+.ria-vs-wrap { display: grid; gap: 1rem; }
+.ria-vs { border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; background: var(--white); }
+.ria-vs-ruim { border-top: 3px solid var(--red-600); }
+.ria-vs-bom { border-top: 3px solid var(--green-600); }
+.ria-vs-cab {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .25rem .6rem; margin: 0;
+  padding: .7rem 1rem; background: var(--steel-50); border-bottom: 1px solid var(--line);
+  font-size: 1rem; color: var(--navy-900) !important;
+}
+.ria-vs-cab small { font-family: var(--f-body); font-size: .8rem; font-weight: 500; color: var(--steel-500); }
+.ria-vs-ico { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; flex: none; }
+.ria-vs-ico svg { width: 15px; height: 15px; }
+.ria-vs-ruim .ria-vs-ico { background: #FBEAE8; color: #B42318; }
+.ria-vs-bom .ria-vs-ico { background: #DEFFE8; color: #009A3D; }
+.ria-vs ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ria-vs li { position: relative; padding: .55rem 1rem .55rem 2.1rem; font-size: .9rem; line-height: 1.4; border-bottom: 1px solid var(--line); }
+.ria-vs li:nth-child(odd) { border-right: 1px solid var(--line); }
+.ria-vs li:nth-last-child(-n+2) { border-bottom: 0; }
+.ria-vs li::before { content: ""; position: absolute; left: 1rem; top: 1.05em; width: 7px; height: 7px; border-radius: 50%; }
+.ria-vs-ruim li { color: var(--txt-soft); }
+.ria-vs-ruim li::before { background: #B42318; opacity: .55; }
+.ria-vs-bom li { color: var(--txt); font-weight: 500; }
+.ria-vs-bom li::before { background: #009A3D; }
+@media (max-width: 720px) {
+  .ria-vs ul { grid-template-columns: 1fr; }
+  .ria-vs li:nth-child(odd) { border-right: 0; }
+  .ria-vs li:nth-last-child(2) { border-bottom: 1px solid var(--line); }
+  .ria-vs li { padding: .5rem .8rem .5rem 1.8rem; font-size: .85rem; }
+  .ria-vs li::before { left: .8rem; }
+  .ria-vs-cab { padding: .6rem .8rem; }
+}
+
+/* ilustração do CTA: balanço leve e sem arrastar/selecionar */
+.ria-cta-ilu img {
+  -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; pointer-events: none;
+  animation: ria-flutua 6s ease-in-out infinite; transform-origin: 50% 60%;
+}
+@keyframes ria-flutua {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(-1.2deg); }
+  50% { transform: translateY(-8px) rotate(0deg); }
+  75% { transform: translateY(-4px) rotate(1.2deg); }
+}
+@media (prefers-reduced-motion: reduce) { .ria-cta-ilu img { animation: none; } }
+
+/* hero com a imagem do atendente + notificações: imagem na metade direita, fundindo no navy */
+.ria-banner picture { left: auto; right: 0; width: 64%; }
+.ria-banner picture img {
+  object-fit: cover; object-position: 70% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 22%);
+}
+.ria-banner::before { background: linear-gradient(90deg, rgba(6, 20, 34, 1) 0%, rgba(6, 20, 34, .92) 34%, rgba(6, 20, 34, .2) 52%, rgba(6, 20, 34, 0) 70%); }
+@media (max-width: 760px) {
+  .ria-banner picture { left: 0; width: 100%; height: clamp(15rem, 82vw, 24rem); bottom: auto; }
+  .ria-banner picture img { -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 30%); mask-image: linear-gradient(0deg, transparent 0%, #000 30%); object-position: 50% 30%; }
+  .ria-banner::before { background: linear-gradient(0deg, rgba(6, 20, 34, 1) 0%, rgba(6, 20, 34, .96) 45%, rgba(6, 20, 34, .1) 70%, rgba(6, 20, 34, 0) 100%); }
+}
