@@ -367,3 +367,13 @@
 .fu-texto { color: var(--navy-700); background: var(--steel-100); --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 4h18v13H8l-5 4z'/%3E%3C/svg%3E"); }
 .fu-audio { color: var(--orange-600); background: var(--orange-100); --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='9' y='2' width='6' height='13' rx='3'/%3E%3Cpath d='M5 11a7 7 0 0014 0h-2a5 5 0 01-10 0zM11 18h2v4h-2z'/%3E%3C/svg%3E"); }
 .fu-agenda { color: var(--green-600); background: #e6f4ec; --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 2h2v2h6V2h2v2h3a1 1 0 011 1v15a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1h3zm-2 8v9h14v-9z'/%3E%3C/svg%3E"); }
+
+/* faq: fundo no título ao passar o mouse e mantido quando aberto */
+.ria-faq details { padding: 0; overflow: hidden; transition: border-color .16s ease; }
+.ria-faq summary { padding: 1rem 1.2rem; transition: background-color .16s ease, color .16s ease; }
+.ria-faq summary:hover { background: var(--orange-100); color: var(--navy-900); }
+.ria-faq summary:hover::after { color: var(--orange-600); }
+.ria-faq details[open] { border-color: var(--navy-800); }
+.ria-faq details[open] summary { background: var(--navy-800); color: var(--white); }
+.ria-faq details[open] summary::after { color: var(--orange-400); }
+.ria-faq details p { padding: 1rem 1.2rem 0; }
