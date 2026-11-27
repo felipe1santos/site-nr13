@@ -377,3 +377,11 @@
 .ria-faq details[open] summary { background: var(--navy-800); color: var(--white); }
 .ria-faq details[open] summary::after { color: var(--orange-400); }
 .ria-faq details p { padding: 1rem 1.2rem 0; }
+
+/* cta final com ilustração */
+.ria-cta-ilu { margin: 1.2rem auto 1.4rem; width: min(380px, 80vw); position: relative; }
+.ria-cta-ilu::before { content: ""; position: absolute; inset: 12% 10%; border-radius: 50%; background: radial-gradient(closest-side, rgba(242, 101, 34, .16), transparent); z-index: 0; }
+.ria-cta-ilu img { position: relative; z-index: 1; width: 100%; height: auto; display: block; }
+.ria-cta .ria-cta-lead { font-size: clamp(1.05rem, 1rem + .35vw, 1.25rem); color: var(--steel-200); max-width: 640px; }
+.ria-cta .ria-cta-lead strong { color: var(--white); }
+.ria-cta .btn svg { width: 1.2em; height: 1.2em; fill: currentColor; flex: none; }

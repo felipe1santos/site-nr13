@@ -421,3 +421,4 @@ e Guarapari. A foto 13871327 e a 9808741 aparecem em 2 páginas cada (limite da 
 | `nr12-sistema/hero-nr12-{1100,1672,mobile}.webp` | `nr12-hero-engenheiro-celular.png` | Imagem enviada pelo Felipe em 25/11/2026 |
 | `robo-ia/banner-atendimento-{1100,1920,mobile}.webp` | https://unsplash.com/photos/HoMZWoPRv9c (Vitaly Gariev, Licença Unsplash — uso gratuito; espelhada) | robô de atendimento — substituiu o robô Pexels em 27/11 a pedido do Felipe |
 | `video/robo-ia/*.mp4` | vídeos enviados pelo Felipe (WhatsApp 25 e 26/11/2026) | placas e telefone do cliente borrados em 27/11/2026 |
+| `robo-ia/ilustracao-atendente-ia.webp` | imagem enviada pelo Felipe em 27/11/2026 (área de trabalho, "9f55d5b30bb647f52045cf17b15282e9 (1).jpg") | CTA final do robô de atendimento — origem/licença a confirmar |
